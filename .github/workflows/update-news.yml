@@ -2,11 +2,11 @@ name: Update NOVA News Feed
 
 on:
   schedule:
-    # Her gün 06:23 Türkiye saati.
-    # GitHub cron ifadelerini UTC olarak değerlendirir.
+    # GitHub cron saatleri UTC'dir.
+    # 03:23 UTC = Türkiye saatiyle 06:23.
     - cron: "23 3 * * *"
 
-  # Actions ekranından manuel çalıştırmaya izin verir.
+  # Actions ekranından manuel çalıştırma.
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,7 @@ jobs:
   update-news:
     name: Fetch and publish news
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -30,42 +30,65 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "22"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch latest news
+      - name: Fetch and classify latest news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash-lite
         run: npm run update-news
 
       - name: Validate generated JSON
         run: |
-          node -e "
-            const fs = require('fs');
-            const feed = JSON.parse(
-              fs.readFileSync('data/news.json', 'utf8')
+          node <<'NODE'
+          const fs = require("fs");
+
+          const filePath = "data/news.json";
+
+          if (!fs.existsSync(filePath)) {
+            throw new Error("data/news.json was not generated");
+          }
+
+          const feed = JSON.parse(
+            fs.readFileSync(filePath, "utf8")
+          );
+
+          if (!Array.isArray(feed.articles)) {
+            throw new Error("articles must be an array");
+          }
+
+          if (!feed.generatedAt) {
+            throw new Error("generatedAt is missing");
+          }
+
+          if (typeof feed.total !== "number") {
+            throw new Error("total must be a number");
+          }
+
+          if (feed.total !== feed.articles.length) {
+            throw new Error(
+              `total mismatch: total=${feed.total}, articles=${feed.articles.length}`
             );
+          }
 
-            if (!Array.isArray(feed.articles)) {
-              throw new Error('articles must be an array');
-            }
-
-            if (!feed.generatedAt) {
-              throw new Error('generatedAt is missing');
-            }
-
-            console.log(
-              'Feed validation successful:',
-              feed.total,
-              'articles'
-            );
-          "
+          console.log(
+            `Feed validation successful: ${feed.total} articles`
+          );
+          NODE
 
       - name: Commit updated feed
         run: |
           git config user.name "nova-news-bot"
           git config user.email "nova-news-bot@users.noreply.github.com"
 
-          git add data/news.json package-lock.json
+          git add data/news.json
+
+          if [ -f package-lock.json ]; then
+            git add package-lock.json
+          fi
 
           if git diff --cached --quiet; then
             echo "No file changes detected."
