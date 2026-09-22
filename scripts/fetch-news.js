@@ -454,58 +454,505 @@ function absoluteUrl(value, base) {
 
 function isPublisherUrl(url, expectedDomain) {
   const domain = normalizeDomain(url);
-  return domain && (domain === expectedDomain || domain.endsWith(`.${expectedDomain}`));
+
+  return Boolean(
+    domain &&
+    (
+      domain === expectedDomain ||
+      domain.endsWith(`.${expectedDomain}`)
+    )
+  );
+}
+
+/*
+ * Google News RSS gerçek yayıncı adresi yerine kodlanmış
+ * /rss/articles/... bağlantısı döndürür.
+ *
+ * Normal redirect takibi çoğu zaman yayıncıya ulaşmadığı için
+ * Google News'in garturl çözümleme isteği kullanılır.
+ */
+const decodedGoogleNewsUrls = new Map();
+
+function getGoogleNewsArticleId(sourceUrl) {
+  try {
+    const url = new URL(sourceUrl);
+
+    const parts = url.pathname
+      .split("/")
+      .filter(Boolean);
+
+    const previousPart = parts[parts.length - 2];
+    const articleId = parts[parts.length - 1];
+
+    if (
+      url.hostname === "news.google.com" &&
+      parts.length >= 2 &&
+      ["articles", "read"].includes(previousPart)
+    ) {
+      return articleId;
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+async function getGoogleNewsDecodingParams(articleId) {
+  const response = await fetch(
+    `https://news.google.com/rss/articles/${articleId}`,
+    {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+          "AppleWebKit/537.36 (KHTML, like Gecko) " +
+          "Chrome/129.0.0.0 Safari/537.36",
+
+        Accept:
+          "text/html,application/xhtml+xml," +
+          "application/xml;q=0.9,*/*;q=0.8",
+
+        "Accept-Language": "en-US,en;q=0.9"
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Google News parameter request returned ${response.status}`
+    );
+  }
+
+  const html = await response.text();
+  const $ = cheerio.load(html);
+
+  const element = $(
+    "c-wiz > div[jscontroller][data-n-a-sg][data-n-a-ts]"
+  ).first();
+
+  const signature = element.attr("data-n-a-sg");
+  const timestamp = element.attr("data-n-a-ts");
+
+  if (!signature || !timestamp) {
+    throw new Error(
+      "Google News decoding parameters were not found"
+    );
+  }
+
+  return {
+    signature,
+    timestamp
+  };
+}
+
+function parseBatchExecutePayload(text) {
+  /*
+   * Google'ın yanıtı XSSI koruması ve uzunluk satırları içerebilir.
+   * Bu nedenle Fbv4je kaydını içeren JSON satırları ayrı denenir.
+   */
+  const lines = String(text)
+    .replace(/^\)\]\}'\s*/, "")
+    .split("\n")
+    .map(line => line.trim())
+    .filter(line => line.startsWith("["));
+
+  for (const line of lines) {
+    try {
+      const parsed = JSON.parse(line);
+      const rows = Array.isArray(parsed) ? parsed : [];
+
+      for (const row of rows) {
+        if (
+          Array.isArray(row) &&
+          (
+            row[0] === "wrb.fr" ||
+            row[0] === "w779db"
+          ) &&
+          row[1] === "Fbv4je"
+        ) {
+          const inner = JSON.parse(row[2]);
+
+          if (typeof inner?.[1] === "string") {
+            return inner[1];
+          }
+        }
+      }
+    } catch {
+      // Protokolün diğer satırlarını görmezden gel.
+    }
+  }
+
+  /*
+   * Bazı cevaplarda JSON bloğu iki boş satırdan sonra gelir.
+   */
+  for (const part of String(text).split("\n\n")) {
+    try {
+      const parsed = JSON.parse(part.trim());
+      const rows = Array.isArray(parsed) ? parsed : [];
+
+      for (const row of rows) {
+        if (
+          Array.isArray(row) &&
+          row[1] === "Fbv4je"
+        ) {
+          const inner = JSON.parse(row[2]);
+
+          if (typeof inner?.[1] === "string") {
+            return inner[1];
+          }
+        }
+      }
+    } catch {
+      // Uygun blok bulunana kadar devam et.
+    }
+  }
+
+  return "";
+}
+
+async function decodeGoogleNewsUrl(sourceUrl) {
+  if (decodedGoogleNewsUrls.has(sourceUrl)) {
+    return decodedGoogleNewsUrls.get(sourceUrl);
+  }
+
+  const articleId = getGoogleNewsArticleId(sourceUrl);
+
+  if (!articleId) {
+    return sourceUrl;
+  }
+
+  try {
+    const {
+      signature,
+      timestamp
+    } = await getGoogleNewsDecodingParams(articleId);
+
+    const request = [
+      "Fbv4je",
+
+      `["garturlreq",` +
+        `[[` +
+          `"X","X",["X","X"],null,null,1,1,` +
+          `"US:en",null,1,null,null,null,null,null,0,1` +
+        `],` +
+        `"X","X",1,[1,1,1],1,1,null,0,0,null,0],` +
+        `"${articleId}",${timestamp},"${signature}"]`
+    ];
+
+    const body =
+      `f.req=${encodeURIComponent(
+        JSON.stringify([[request]])
+      )}`;
+
+    const response = await fetch(
+      "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+      {
+        method: "POST",
+
+        headers: {
+          "Content-Type":
+            "application/x-www-form-urlencoded;charset=UTF-8",
+
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+            "AppleWebKit/537.36 (KHTML, like Gecko) " +
+            "Chrome/129.0.0.0 Safari/537.36",
+
+          Accept: "*/*",
+          Origin: "https://news.google.com",
+          Referer: "https://news.google.com/"
+        },
+
+        body
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `Google News decoder returned ${response.status}`
+      );
+    }
+
+    const responseText = await response.text();
+
+    const decodedUrl =
+      parseBatchExecutePayload(responseText);
+
+    if (!decodedUrl) {
+      throw new Error(
+        "Decoded publisher URL was empty"
+      );
+    }
+
+    decodedGoogleNewsUrls.set(
+      sourceUrl,
+      decodedUrl
+    );
+
+    return decodedUrl;
+  } catch (error) {
+    console.warn(
+      `Google News URL decoding failed: ${error.message}`
+    );
+
+    decodedGoogleNewsUrls.set(
+      sourceUrl,
+      ""
+    );
+
+    return "";
+  }
 }
 
 async function resolveAndExtract(candidate) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 25000);
+
+  const timeout = setTimeout(
+    () => controller.abort(),
+    45000
+  );
+
   try {
-    const response = await fetch(candidate.googleNewsUrl, {
-      redirect: "follow",
-      signal: controller.signal,
-      headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; NOVAEditorialBot/3.0; +https://novakonut.com)",
-        Accept: "text/html,application/xhtml+xml"
+    /*
+     * Önce Google News bağlantısını gerçek yayıncı
+     * bağlantısına dönüştür.
+     */
+    const decodedUrl = await decodeGoogleNewsUrl(
+      candidate.googleNewsUrl
+    );
+
+    if (
+      !decodedUrl ||
+      !isPublisherUrl(
+        decodedUrl,
+        candidate.sourceDomain
+      )
+    ) {
+      console.warn(
+        `Publisher URL could not be verified for ` +
+        candidate.sourceDomain
+      );
+
+      return null;
+    }
+
+    /*
+     * Gerçek yayıncı sayfasını indir.
+     */
+    const response = await fetch(
+      decodedUrl,
+      {
+        redirect: "follow",
+        signal: controller.signal,
+
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (compatible; " +
+            "NOVAEditorialBot/3.0; " +
+            "+https://novakonut.com)",
+
+          Accept:
+            "text/html,application/xhtml+xml"
+        }
       }
-    });
+    );
+
+    if (!response.ok) {
+      console.warn(
+        `Publisher returned ${response.status}: ` +
+        candidate.sourceDomain
+      );
+
+      return null;
+    }
+
     const html = await response.text();
+
     let articleUrl = response.url;
     let articleHtml = html;
 
-    if (!isPublisherUrl(articleUrl, candidate.sourceDomain)) {
+    /*
+     * Bazı yayıncılar başka bir alt domaine yönlendirebilir.
+     * Canonical veya og:url üzerinden doğru adres aranır.
+     */
+    if (
+      !isPublisherUrl(
+        articleUrl,
+        candidate.sourceDomain
+      )
+    ) {
       const $news = cheerio.load(html);
+
       const possibleUrls = [
-        $news('meta[property="og:url"]').attr("content"),
-        $news('link[rel="canonical"]').attr("href"),
-        ...$news("a[href]").map((_, node) => $news(node).attr("href")).get()
+        $news(
+          'meta[property="og:url"]'
+        ).attr("content"),
+
+        $news(
+          'link[rel="canonical"]'
+        ).attr("href"),
+
+        ...$news("a[href]")
+          .map(
+            (_, node) =>
+              $news(node).attr("href")
+          )
+          .get()
       ]
         .filter(Boolean)
-        .map(value => absoluteUrl(value, response.url));
-      articleUrl = possibleUrls.find(url => isPublisherUrl(url, candidate.sourceDomain)) || "";
-      if (!articleUrl) return null;
-      const publisherResponse = await fetch(articleUrl, {
-        redirect: "follow",
-        signal: controller.signal,
-        headers: {
-          "User-Agent": "Mozilla/5.0 (compatible; NOVAEditorialBot/3.0; +https://novakonut.com)",
-          Accept: "text/html,application/xhtml+xml"
+        .map(value =>
+          absoluteUrl(
+            value,
+            response.url
+          )
+        );
+
+      articleUrl =
+        possibleUrls.find(url =>
+          isPublisherUrl(
+            url,
+            candidate.sourceDomain
+          )
+        ) || "";
+
+      if (!articleUrl) {
+        return null;
+      }
+
+      const publisherResponse = await fetch(
+        articleUrl,
+        {
+          redirect: "follow",
+          signal: controller.signal,
+
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (compatible; " +
+              "NOVAEditorialBot/3.0; " +
+              "+https://novakonut.com)",
+
+            Accept:
+              "text/html,application/xhtml+xml"
+          }
         }
-      });
-      if (!publisherResponse.ok) return null;
+      );
+
+      if (!publisherResponse.ok) {
+        return null;
+      }
+
       articleUrl = publisherResponse.url;
-      articleHtml = await publisherResponse.text();
+      articleHtml =
+        await publisherResponse.text();
     }
 
-    if (!isPublisherUrl(articleUrl, candidate.sourceDomain)) return null;
-    const $ = cheerio.load(articleHtml);
-    $("script,style,noscript,nav,footer,header,aside,form,button,iframe,svg").remove();
+    if (
+      !isPublisherUrl(
+        articleUrl,
+        candidate.sourceDomain
+      )
+    ) {
+      return null;
+    }
 
+    const $ = cheerio.load(articleHtml);
+
+    /*
+     * Haber görseli önce okunur.
+     */
     const image = absoluteUrl(
-      $('meta[property="og:image"]').attr("content") ||
-      $('meta[name="twitter:image"]').attr("content") || "",
+      $(
+        'meta[property="og:image"]'
+      ).attr("content") ||
+
+      $(
+        'meta[name="twitter:image"]'
+      ).attr("content") ||
+
+      "",
+
       articleUrl
     );
+
+    /*
+     * Görünür HTML metni bulunamazsa JSON-LD
+     * articleBody alanı kullanılacak.
+     */
+    let jsonLdText = "";
+
+    $(
+      "script[type='application/ld+json']"
+    ).each((_, node) => {
+      try {
+        const rawJson =
+          $(node).html() || "null";
+
+        const parsed =
+          JSON.parse(rawJson);
+
+        const records =
+          Array.isArray(parsed)
+            ? parsed
+            : [parsed];
+
+        const queue = [...records];
+
+        while (queue.length > 0) {
+          const record = queue.shift();
+
+          if (
+            !record ||
+            typeof record !== "object"
+          ) {
+            continue;
+          }
+
+          if (
+            typeof record.articleBody ===
+              "string" &&
+            record.articleBody.length >
+              jsonLdText.length
+          ) {
+            jsonLdText = cleanText(
+              record.articleBody
+            );
+          }
+
+          if (
+            Array.isArray(
+              record["@graph"]
+            )
+          ) {
+            queue.push(
+              ...record["@graph"]
+            );
+          }
+        }
+      } catch {
+        // Geçersiz JSON-LD bloklarını atla.
+      }
+    });
+
+    /*
+     * Meta ve JSON-LD okunduktan sonra
+     * gereksiz sayfa alanları kaldırılır.
+     */
+    $(
+      [
+        "script",
+        "style",
+        "noscript",
+        "nav",
+        "footer",
+        "header",
+        "aside",
+        "form",
+        "button",
+        "iframe",
+        "svg"
+      ].join(",")
+    ).remove();
+
     const selectors = [
       "article",
       "main article",
@@ -514,21 +961,63 @@ async function resolveAndExtract(candidate) {
       ".article__body",
       ".story-body",
       ".entry-content",
+      ".post-content",
+      ".content-body",
+      ".article-content",
       "main"
     ];
-    let text = "";
+
+    let text = jsonLdText;
+
     for (const selector of selectors) {
-      const candidateText = cleanText($(selector).first().text());
-      if (candidateText.length > text.length) text = candidateText;
+      const extractedText = cleanText(
+        $(selector)
+          .first()
+          .text()
+      );
+
+      if (
+        extractedText.length >
+        text.length
+      ) {
+        text = extractedText;
+      }
     }
-    if (text.length < MIN_ARTICLE_TEXT) return null;
+
+    /*
+     * Başlık ve birkaç kelimeden oluşan sayfalarla
+     * uzun haber üretilmesini önler.
+     */
+    if (
+      text.length <
+      MIN_ARTICLE_TEXT
+    ) {
+      console.warn(
+        `Insufficient article text ` +
+        `(${text.length}) for ` +
+        candidate.sourceDomain
+      );
+
+      return null;
+    }
+
     return {
       articleUrl,
       image: image || null,
-      sourceText: text.slice(0, MAX_ARTICLE_TEXT)
+
+      sourceText:
+        text.slice(
+          0,
+          MAX_ARTICLE_TEXT
+        )
     };
   } catch (error) {
-    console.warn(`Article extraction failed for ${candidate.sourceDomain}: ${error.message}`);
+    console.warn(
+      `Article extraction failed for ` +
+      `${candidate.sourceDomain}: ` +
+      error.message
+    );
+
     return null;
   } finally {
     clearTimeout(timeout);
