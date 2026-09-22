@@ -1,15 +1,17 @@
 {
   "name": "nova-news-feed",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "AI-curated public news feed for NOVA",
+  "description": "AI-curated bilingual editorial feed for NOVA",
   "scripts": {
-    "update-news": "node scripts/fetch-news.js"
-  },
-  "dependencies": {
-    "rss-parser": "^3.13.0"
+    "update-news": "node scripts/fetch-news.js",
+    "check": "node --check scripts/fetch-news.js"
   },
   "engines": {
     "node": ">=22"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "rss-parser": "3.13.0"
   }
 }
