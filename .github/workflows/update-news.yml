@@ -1,26 +1,23 @@
-name: Update NOVA News Feed
+name: Update NOVA Premium News Feed
 
 on:
   schedule:
-    # GitHub cron saatleri UTC'dir.
-    # 03:23 UTC = Türkiye saatiyle 06:23.
+    # GitHub cron UTC kullanır. 03:23 UTC = Türkiye saatiyle 06:23.
     - cron: "23 3 * * *"
-
-  # Actions ekranından manuel çalıştırma.
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: nova-news-update
+  group: nova-premium-news-update
   cancel-in-progress: true
 
 jobs:
   update-news:
-    name: Fetch and publish news
+    name: Fetch, curate and publish bilingual news
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
 
     steps:
       - name: Checkout repository
@@ -30,70 +27,48 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "22"
-          cache: "npm"
+          cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch and classify latest news
+      - name: Fetch and curate news
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-3.5-flash-lite
         run: npm run update-news
 
-      - name: Validate generated JSON
+      - name: Validate generated feeds
         run: |
           node <<'NODE'
           const fs = require("fs");
-
-          const filePath = "data/news.json";
-
-          if (!fs.existsSync(filePath)) {
-            throw new Error("data/news.json was not generated");
+          for (const language of ["tr", "en"]) {
+            const path = `data/news-${language}.json`;
+            const feed = JSON.parse(fs.readFileSync(path, "utf8"));
+            if (feed.language !== language) throw new Error(`${path}: language mismatch`);
+            if (!Array.isArray(feed.articles)) throw new Error(`${path}: articles must be an array`);
+            if (!feed.generatedAt) throw new Error(`${path}: generatedAt is missing`);
+            if (feed.total !== feed.articles.length) throw new Error(`${path}: total mismatch`);
+            for (const article of feed.articles) {
+              for (const key of ["id", "title", "excerpt", "content", "category", "source", "url", "publishedAt"]) {
+                if (!article[key]) throw new Error(`${path}: ${key} missing on ${article.id || "unknown article"}`);
+              }
+            }
+            console.log(`${path}: ${feed.total} articles validated`);
           }
-
-          const feed = JSON.parse(
-            fs.readFileSync(filePath, "utf8")
-          );
-
-          if (!Array.isArray(feed.articles)) {
-            throw new Error("articles must be an array");
-          }
-
-          if (!feed.generatedAt) {
-            throw new Error("generatedAt is missing");
-          }
-
-          if (typeof feed.total !== "number") {
-            throw new Error("total must be a number");
-          }
-
-          if (feed.total !== feed.articles.length) {
-            throw new Error(
-              `total mismatch: total=${feed.total}, articles=${feed.articles.length}`
-            );
-          }
-
-          console.log(
-            `Feed validation successful: ${feed.total} articles`
-          );
           NODE
 
-      - name: Commit updated feed
+      - name: Commit updated feeds
         run: |
           git config user.name "nova-news-bot"
           git config user.email "nova-news-bot@users.noreply.github.com"
-
-          git add data/news.json
-
+          git add data/news-tr.json data/news-en.json
           if [ -f package-lock.json ]; then
             git add package-lock.json
           fi
-
           if git diff --cached --quiet; then
             echo "No file changes detected."
             exit 0
           fi
-
-          git commit -m "chore: update daily news feed"
+          git commit -m "chore: update premium bilingual news feed"
           git push
