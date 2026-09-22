@@ -1,0 +1,20 @@
+{
+  "status": "initial",
+  "language": "en",
+  "generatedAt": null,
+  "retentionDays": 15,
+  "total": 0,
+  "categories": [
+    "Art & Exhibitions",
+    "Exhibitions",
+    "Galleries & Museums",
+    "Architecture & Design",
+    "Construction",
+    "Urban Transformation",
+    "Kadıköy",
+    "Technical & Legal",
+    "Fashion & Luxury"
+  ],
+  "categoryCounts": {},
+  "articles": []
+}
