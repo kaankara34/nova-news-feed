@@ -249,7 +249,7 @@ function chunk(array, size) {
 }
 
 function extractSource(item) {
-  const node = item.sourceNode;
+  const node = item.sourceNode || item.source;
   const name = cleanText(
     typeof node === "string" ? node : node?._ || node?.value || item.creator || ""
   );
@@ -260,28 +260,36 @@ function extractSource(item) {
 async function discoverCandidates() {
   const all = [];
   for (const group of SOURCE_GROUPS) {
-    for (const domains of chunk(group.domains, 5)) {
+    // Her domain ayrı sorgulanır. Google News RSS bazı durumlarda <source>
+    // düğümünün url niteliğini parser'a aktarmadığı için güvenilir domain,
+    // doğrudan site: sorgusundan alınır.
+    for (const expectedDomain of group.domains) {
+      const domains = [expectedDomain];
       const url = buildGoogleNewsUrl(group, domains);
-      console.log(`Discovering ${group.name}: ${domains.join(", ")}`);
+      console.log(`Discovering ${group.name}: ${expectedDomain}`);
       try {
         const feed = await parser.parseURL(url);
         for (const item of feed.items || []) {
           const source = extractSource(item);
-          if (!source.domain || !domainAllowed(source.domain)) continue;
+          // Sorgu tek bir site: filtresiyle üretildiğinden expectedDomain
+          // kaynak whitelist'inin doğrulanmış parçasıdır. RSS url verirse ayrıca
+          // kontrol edilir; vermezse sonuç sıfırlanmaz.
+          const resolvedDomain = source.domain || expectedDomain;
+          if (!domainAllowed(resolvedDomain)) continue;
           const publishedAt = item.isoDate || item.pubDate;
           if (!isRecent(publishedAt)) continue;
           const title = cleanText(item.title);
           if (!title) continue;
           all.push({
-            id: hash(`${source.domain}|${normalizeTitle(title)}`),
+            id: hash(`${resolvedDomain}|${normalizeTitle(title)}`),
             title,
             description: cleanText(item.contentSnippet || item.content || item.summary || ""),
             publishedAt: new Date(publishedAt).toISOString(),
             googleNewsUrl: item.link,
-            sourceName: source.name || source.domain,
-            sourceUrl: source.url,
-            sourceDomain: source.domain,
-            sourceTier: sourceTier(source.domain),
+            sourceName: source.name || resolvedDomain,
+            sourceUrl: source.url || `https://${resolvedDomain}`,
+            sourceDomain: resolvedDomain,
+            sourceTier: sourceTier(resolvedDomain),
             categoryHint: group.categoryHint,
             discoveryGroup: group.name,
             originalLanguageHint: group.language
