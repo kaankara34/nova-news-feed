@@ -1,8 +1,844 @@
 {
-  "status": "pending",
-  "generatedAt": null,
+  "status": "success",
+  "generatedAt": "2026-09-22T16:20:51.901Z",
   "retentionDays": 15,
-  "total": 0,
-  "categories": {},
-  "articles": []
+  "total": 83,
+  "categories": {
+    "Construction": 25,
+    "Urban Transformation": 10,
+    "Architecture": 23,
+    "Kadıköy": 25
+  },
+  "articles": [
+    {
+      "id": "908576fa52141ccc3b30",
+      "title": "GSK Türkiye'ye Stevie Awards organizasyonundan 4 ödül",
+      "description": "GSK Türkiye'ye Stevie Awards organizasyonundan 4 ödül Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T14:36:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMUtCbU1GSVFGNHpPUEFNUkpKTnQtOEdIZGtfY1JTS1pjWUtoTjhCYkpFR2pDa25mZ0h5c2lUN3Z3dkhSV2VKUmNYLTRWeUwtSkw5NE1fbDkwbnhMWFJvMElnM1ZJR183R25YSGRyMGFab3ZnNmhsVTZyakoxc3ctaDRrV2hVVElpV055MnhjUnZmUkdaTmpTcHBZS0tYeTdialE?oc=5",
+      "image": null
+    },
+    {
+      "id": "b4e57825b7582b0acf64",
+      "title": "Haliç Üniversitesi'nden deprem bölgesine 3 bin 500 fidan",
+      "description": "Haliç Üniversitesi'nden deprem bölgesine 3 bin 500 fidan Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T14:22:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbHRWQ2pWa1A1cFJ1a0x4MkFNemZSaGxscUpBMEZpWGlIVXhZaGpPN2pSanhDQWpibXV0UXIyX0M0VkpoT0dHMDFpN200UUFqMnZWR19jMkpSU1FCX3F2WnZfSHEzSEszUDFYUEVuRnkzYjBDa0hTdWUyVXh3NThQS25DMTE1dEVxSGpsNjlKdkJLb2RnMVJURmxUMEhDaV9Bamh4QzEzcw?oc=5",
+      "image": null
+    },
+    {
+      "id": "c31b699f6e8467ed9af8",
+      "title": "Özdilek Holding Bursa'da 120 milyon dolarlık üretim tesisi açmaya hazırlanıyor",
+      "description": "Özdilek Holding Bursa'da 120 milyon dolarlık üretim tesisi açmaya hazırlanıyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T13:53:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOby1yNklLMXM3NF9yanI4NC03Vl84aVpHVzlIdS00dmp0Y0dTMXlCbmtwXzdGalR6ZmlHbHRmNmNiZGpoQ3QtWDBoMVZHdlJPekFlMUl3bkMwcTNTS3AwR29jR3VDRUhhdU1yQVQ5ZkNrMHI5d3FnWGdVTmZPZUJiQk5OYlNmdlc2TS1jUTZxM2NXYWxIYmJzUGlLakFqeFcyTzBhdnNzZ0ViXzNNOXMwTlpMRUNyelVKa05zLXVWbGg1Uy1kQ1E?oc=5",
+      "image": null
+    },
+    {
+      "id": "bd68db641908669f772e",
+      "title": "İkinci etap restorasyonu tamamlanan Çorum Kalesi, kent turizmine hizmet edecek",
+      "description": "İkinci etap restorasyonu tamamlanan Çorum Kalesi, kent turizmine hizmet edecek Anadolu Ajansı",
+      "category": "Urban Transformation",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T13:08:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaktjT3FEVFpMZGdhTmtyTkktNGhES0VvNmtxYXdWeVdVUnk3dlkxay1neXhoYzZfQzBkbXVKbUNsRXpqaWQwc1QxZGhtckNPOExCYlNkRllFU2NTLVJRMVQxb3BSS2xabVJiNW94RDZtd0dseEs0ZVVvTlNZbkNlZkpGUHZzeHNiREZmaEJYN19FMmVCMGJzR0xMbjhnTGNILTZscGdxalN4WHdOVHpVWkJ2WGxsVFJr?oc=5",
+      "image": null
+    },
+    {
+      "id": "2d5bcd19902521ee39c1",
+      "title": "Cer Loft Konut",
+      "description": "Cer Loft Konut Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-22T12:38:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MZWFTcExyV1EwR21kOE9VWU1WbjNEUXFEemZzbGVxQlo1Z2RrODVoTnRYYlZBSmtaTE9CdTZSR0tERy1zMHlPeFVBZ2xJYWR2ZUFZdWhDQTAxUQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "5b3042d1721e5a17687b",
+      "title": "LCW Home'dan sonbahara özel koleksiyon",
+      "description": "LCW Home'dan sonbahara özel koleksiyon Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T12:09:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWTc1X3QzM2UyczBLejgzcVNnVlBHdU4zMmE0SzVMS0ZLX2dlUmZIdEItNnBwMzNpWGtMeWdVZFVub0ZNcU9YV1dYdC03TlZZM0ZhQkJCZ2p2bDlkSWZ6TXFWVGZYdXRsWGRyRWgyWFVtd2dwdE15WlFna01CblBabl9HYUN0cDl3S0FFc29B?oc=5",
+      "image": null
+    },
+    {
+      "id": "7d8c2a284b483ee6454a",
+      "title": "Hayat Finans'tan \"Aile Finansı Araştırması\"",
+      "description": "Hayat Finans'tan \"Aile Finansı Araştırması\" Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T12:09:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR0VaUFZheG9yTmEzRmt1OWVKWTc5Q1JuN1RscS1OQy1ZM1Zack1QNXFOUnVQZ3JuUE56eTE5aFZXR3lYZ2Z3ZmliNU9tWEw4MFZJejBHRzZOT0pITk1mcndhaXRyc0FDeWgyVmdYZlI5QUZNTTF3eU1ESWJBSlN4ZXVUU3FOekJVclJrVmtRR0l0Ym8?oc=5",
+      "image": null
+    },
+    {
+      "id": "e72e5282f5a2a3968e80",
+      "title": "Albayrak Beton 100 milyon liralık pay geri alım programı başlattı",
+      "description": "Albayrak Beton 100 milyon liralık pay geri alım programı başlattı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T12:01:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcWxrT2ZrTmJXaG9RXzVIOHlmU19SZGhQLTVzTm0zdF9nWjB5SndnbS1xdWJfSWYtWVdKSVJWTEx6aVplYU9VS1NZT2xlb1NKUjA2MGlRTHp6X05MTnRIN3ppTzVURjFTLWdMRVJLWF9yOEFXTjNjUHVvdHRFdFBRSzZjU3hHV05VVWJLVTVYbzFRUXNtUlpHUUdwZnhqUFF3aE52VUlNY3dpcVJSQjFxQjhWOA?oc=5",
+      "image": null
+    },
+    {
+      "id": "972744a634e0de4ef7ef",
+      "title": "Adem Erol Mimarlık Takım Arkadaşı Arıyor.",
+      "description": "Adem Erol Mimarlık Takım Arkadaşı Arıyor. Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-22T10:11:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTGNCWDhoUXU4TFRENnk3NFN6azN2TldJbGM0WU9xY2hHbUY5R3RvX1ZyWkRoRExia0lPdmwwZElTTVFzd0RvbzBvSFFrc1JCODdhU0VlRDM3ak9fN0Z5UHMxQzduS0dwSTd1OG5oalJxVHFVbGNxLWs4VVktQkFZSHpB?oc=5",
+      "image": null
+    },
+    {
+      "id": "c89a368bd609ed33f724",
+      "title": "Gurbetçi arkeolog, ata mirası evleri aslına uygun kerpiç tuğlalarla restore ettiriyor",
+      "description": "Gurbetçi arkeolog, ata mirası evleri aslına uygun kerpiç tuğlalarla restore ettiriyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T09:20:40.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVlA1OEplelpYeE9EOG8yN3lKY0JkUlpUNHcwU0tuTDY3a2FTY0RWOHdSVndOZmIzX0VILXRlQlBHY1BaV0VVeVppQmRVOFMwSllLaWI0aklLOWFYanRLcEthX092blMwT0w3RHY4ZTNJaVBmSGtZVDN6Y05uM0ZBLTBTRF9xejRPT3g4X1VUM2tfZm1aeWJwNTZJdVQ4d1dNVFJCMTFXQ18wbHlUclhTOHhKSThxTm00ancxQy16WE1Gdw?oc=5",
+      "image": null
+    },
+    {
+      "id": "22ecca8a5703eb83ac2b",
+      "title": "Mitsubishi Electric Türkiye güvenli üretim teknolojilerini tanıtacak",
+      "description": "Mitsubishi Electric Türkiye güvenli üretim teknolojilerini tanıtacak Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T08:58:57.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWXpzdk1nSmtTNGVuOXNYRUw3eEVOTVpyZGZoQ1UyTEJlNUVQU2RNa0dsM2tUaWZxeUllNEdFRmFjeGEyTS1mcURIX0VHenhiQnlTVzJLeDVkNUFNa3dOZzlmVG1wTzVtbGpSdThJWV92MktDX1VBOUIzX1pSYTA3LVpnRWRqX0RaenQ1YXlNVVNxZmpUdUlLbEZtQ3VtbjQtMkhVeE1CNVFPb3Frc1QzUHRpdEpZdDg?oc=5",
+      "image": null
+    },
+    {
+      "id": "9b13f675120efe09e414",
+      "title": "Türkiye, toryum kaynaklarını yeni nesil nükleer teknolojilere kazandırmayı hedefliyor",
+      "description": "Türkiye, toryum kaynaklarını yeni nesil nükleer teknolojilere kazandırmayı hedefliyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T08:34:41.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEV6NmNTZkFUM3FVZ0djQWYxMUpFNmxVOEM3a2V3OHpxTTE0UFVWanh5VGctQ2k3T25BZ1VjcWNkbXFUbG1JcnZFOV90T0Nub01fME9RWUhodTBUVXh3TUV3MWFKVXA5M0JIdnZtWFB4SzJOS2t6c0ZoSmZSTW9ydkUtUHJSMW1nc3VlNEZhM2hSeVE4MkNzSWtzYmtFM1BQdWt2SEFJY2N5Q24xOE82a1pjMnJRWEpYM2dMbGp6M0k2TlJlVVlYNkkwNGtraWYtZTNr?oc=5",
+      "image": null
+    },
+    {
+      "id": "b39aa1564e6b4f9d6c2e",
+      "title": "Aile ve Sosyal Hizmetler Bakanlığı, 9 ayda 26 binden fazla kişiye psikososyal destek sağladı",
+      "description": "Aile ve Sosyal Hizmetler Bakanlığı, 9 ayda 26 binden fazla kişiye psikososyal destek sağladı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T08:21:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWi1PUGdqSXFIUmx2RDV3Z3h2NnV1NVBtQW1aUWU2djU1SnZqQ1lJTGRsM0ViVlFvV2FWMWV2dVFCRnhGM3EzTHlfRTBQbm1JM2hSczF6bGExNFlMV3JpR1BZaTRKMkg4WXdMLXFEdXAwZ2VHWVpuTHZ2dVlna2VZS091eGUxZ0lHa1VmUGR2SGRkSzZjdE4wdjVlMTBhcHhfMjNqbEIybzZmcDFNTzJYTkJ5ZXg4SmRQYmNsd2VLRU94Q2dwTmc?oc=5",
+      "image": null
+    },
+    {
+      "id": "89f8515e1d89515ef93c",
+      "title": "İstanbul'da sabah saatlerinde trafik yoğunluğu yüzde 70'e ulaştı",
+      "description": "İstanbul'da sabah saatlerinde trafik yoğunluğu yüzde 70'e ulaştı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T08:05:17.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa2E0M2g5MXNXVm1BS3B5WGhndkpyQ0h0RmhZaTFDeU9OTlVGNGlTRjIxVldmYjlZbkNyLVZFRDhaZzZteXZQclF5dU5SUURQRktnT3lWcUYzMEU0UThHZ1owdl9sZUp3MWdWTEdoQW9iazVxWVVGMXUxZFpldVlRS3hKWjVTSzRadmE5U1lWU29IZ1BERko4LVpGRE0yRzZMOERVNw?oc=5",
+      "image": null
+    },
+    {
+      "id": "f9d02825e9c61baa6117",
+      "title": "Cumhurbaşkanı Erdoğan: Türkiye savunma sanayinde dünya ölçeğinde rağbet gören bir aktör haline gelmiştir",
+      "description": "Cumhurbaşkanı Erdoğan: Türkiye savunma sanayinde dünya ölçeğinde rağbet gören bir aktör haline gelmiştir Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-22T05:04:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNGI5LWVoTEQzM3F4bjZMWDBwaUJTSHJPdWM5Y2FMX3B5VHBRcHRDa3VTQjhzYnVEUHVEREJuQkE1TmcySFduRTBMRHRjU0pBdVRnUm5xMVVGQXBZNjlucGtncGsxNzd6bkdwX2VrbnY3U1dnRFVsdjF1ekk2STQwSGNBV2lrOFh1SnJiUnMtb3hGWG04S0JGQWNWWmhQSTBYM3hqczkyVzBieWV1eDkyc2diMFk3U0JYeF9OODNqbkhCTHBHclhuOVcySlR4ZTg5eEkyWk1KZ3c4Z2s?oc=5",
+      "image": null
+    },
+    {
+      "id": "6ab3d847f5584e2b3739",
+      "title": "Karikatür Evi 2026-2027 Sezonu Atölye Kayıtları",
+      "description": "Karikatür Evi 2026-2027 Sezonu Atölye Kayıtları Kadıköy Belediyesi",
+      "category": "Kadıköy",
+      "source": "Kadıköy Belediyesi",
+      "publishedAt": "2026-09-21T20:38:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1QNnlTTWZXVjNoM2VYUi0yZWNKRERVT3BRZmJIdUFwRVZSall0anNxMGFNbThRazNGY0JQb0VuZTVEZTMtbE5uNHJLZDVYT093ZDl5bTI2NW9uNFZvdUxFNkZrRnFrUWszdVMwdHo5R2RJSm5RYmJjSlRzWXBOQQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "0c374412ef4d9270e001",
+      "title": "ABD-İran hattında diplomasi beklentileri Brent petrolü 100 doların altına çekti",
+      "description": "ABD-İran hattında diplomasi beklentileri Brent petrolü 100 doların altına çekti Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T15:38:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcFlnRmVwdzNVNjVyT2lwVzh1UnZTaFJVOUkxZTZHT084MEdMakFvZXVCVklZczhzLXlHYnI0ZW5LaG5BQXdIRUFYVmo3WFc1VlVKT0hlY192Tk9haVZlVC1icFYxOUZUcnRkTkU0NXRLb0ZBeEpxWk0ycG9TZDQ5U2lkWVhGNVpRUnpoR25SSDRKdVFJejh0TmF6WlRWZnpkU2djcTQ1UEdsamdGU2pRX0FNa01ZMG00YnJRZQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "7e5801b9d18f730e1217",
+      "title": "Filistinli kadın tutuklu: İsrail hapishanelerindeki hücreler mezar gibi, insan yaşamına uygun değil",
+      "description": "Filistinli kadın tutuklu: İsrail hapishanelerindeki hücreler mezar gibi, insan yaşamına uygun değil Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T15:16:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPck0tOXpJYmkxUnJuYVc3TWFWYmJhVjZsLUxrY2QyVkZTOXN2bFRnZHNNcHJINEl3MkpkMVoyem9wRktJLVM4SXc5NXpQb1I4dlNfa1diUjVYQmwybGtGVlRxcVZRYi1tdGxWUHphSnI2dW01c3hyYkp1WGJUY21zdkxIbXFvX0FoQlU1UzN4d2JvNmxLajgwM3pPTzNWblJRZFNxdDdjaE5IdjRBdzFoT2FfWmkwOUZ3bUNxZGNMNDVKVlBZSktHano5aEF3ZXBJaHc?oc=5",
+      "image": null
+    },
+    {
+      "id": "9569f2a6c54e7846c6f6",
+      "title": "Satın Alma, Trabzon Büyükşehir Belediyesi Kültür ve Sanat Merkezi Ulusal Mimari Proje Yarışması",
+      "description": "Satın Alma, Trabzon Büyükşehir Belediyesi Kültür ve Sanat Merkezi Ulusal Mimari Proje Yarışması Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-21T15:01:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZDJuNm9OcUc5U0dXcHI5X2p4UmM1REgtVGFMVi1QaVY2ay1ma29fQ1dlMC04aVpldkhKbE1kaUpubTRoN2l2S3VUTnFuMXBvaEVZWUhkY0ZGTzJlNlZUbmw5RXhBM2xYdDJ1UFVGVjdyRk14MU1UdTEzRld3VGdORWJuMmNlT3hNMkkwclpDVVAwVWQ2X1hubGoxbk5YTEZnQktyX3JVc19OQXM4NF9ERnpPR25tTENWZjg2c1NocS1lZHlsWFhB?oc=5",
+      "image": null
+    },
+    {
+      "id": "0dbcfb4ae130b202f280",
+      "title": "Akasya Pera Mimarlık Ekip Arkadaşları Arıyor.",
+      "description": "Akasya Pera Mimarlık Ekip Arkadaşları Arıyor. Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-21T14:59:27.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVzI2cUhpTjRBTXI5UXF1bXc2VWVpT1BOcXJFQkZud0Fod2M0bW1telgyT19oMDVNSE1scl8tM2hCaGhDbno1S0FPWUlPcnh2XzdWS0N4M0M0QTZ6NG9pQmRZSDM3WDRqdlhLM2RoY0c3Y1dxckp5cnZNS2lvLVBuVEtTTHFCb25E?oc=5",
+      "image": null
+    },
+    {
+      "id": "4da69190914d00312640",
+      "title": "TraMod Awards 2026",
+      "description": "TraMod Awards 2026 Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-21T13:48:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0ybUpaY3NYWVZCdURLNERQVjFfWlp4SFhnZVltcVNYazNTa2djalJyNTI5OWRVbGZNeEVRWWVNQ1d4aGF4UFZ6Y0VOMTlhVURRMUN1ZTdDY1NLcExZZWVrUTJn?oc=5",
+      "image": null
+    },
+    {
+      "id": "79aecadd0b0e7b235a0b",
+      "title": "SEDDK'den \"trafikte hasar tazmin sürecindeki illegal yapılara karşı mücadele\" açıklaması",
+      "description": "SEDDK'den \"trafikte hasar tazmin sürecindeki illegal yapılara karşı mücadele\" açıklaması Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T13:45:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHJjV3RpOGZFMldVa0sxMm5XUGZiNTJoOEFraGg2dkZ6cGFfdnVsS25meGcxZmd4ZGVqcl9lM1NrUEFlWGhYVDFTWE9BS052N0FGcUUzWGptVXpOcWJ3azFTdGlXcWUxOV9OeExVcTBfMFJFY2xkY3RGTGNHRmhPZjE1SzNuWllDWDVKdUF5eHlyYlRjTmJORzlkZGVVQ1Y3VlcxR282V0NzLV9oQUZvUEh1dnItZDNjWnhJdVN0VFlXSmR4?oc=5",
+      "image": null
+    },
+    {
+      "id": "e168097497088aa5bae9",
+      "title": "Karacadağ OSB'de fabrikaların çarkları dönmeye başladı",
+      "description": "Karacadağ OSB'de fabrikaların çarkları dönmeye başladı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T12:20:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVnFOYWRpLWJ2LWpLaUtZWmNvYkJvclZJSmJkTldVamtYUVQzOVFTbUFsM2FFZlgwdDc1cGYzSnZfdWF0bFEyU3p6emxnVE1NWFo5Y25XNmc4TmdWSE53andrUnlvSnQ1RmpYbDV5YjhiandZM2l2Q0dlVlgzLTlkUmZuNlVuaXd0OHlSbngyQlFEQ19GaE5MRVFNZw?oc=5",
+      "image": null
+    },
+    {
+      "id": "89e3aedadebcb3bbd846",
+      "title": "Alzheimer ve demans hastaları İstanbul'daki huzurevinde etkinliklerle yaşama bağlanıyor",
+      "description": "Alzheimer ve demans hastaları İstanbul'daki huzurevinde etkinliklerle yaşama bağlanıyor Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T11:30:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTjRVT3dNXzQ2TWM2c2lNMTVROTB6TEZLcHBUc0tMNjg2aG9XZnVuZl9vdnBvRVdkdF84bHJlNHd5bDVzVHhGZzU0UlhKbzdCRmZYWjJzZnR1N0Z4U0Z5QmJ5aW5uc2RFV2V6RjJkd1dZaDc5UmZHMGtFQ01BSmw5VW1LVmJPRmNIS2Y5Y3ZYOHZMcUUzVFl6Vy1sX3dFdHpsc205aWx6Y2hjNlJ5SWVfQTdaeTYySnlvUWdDWTNIcFl2eGgt?oc=5",
+      "image": null
+    },
+    {
+      "id": "aec23e9e85b0b26d4713",
+      "title": "Açık Kapı Mimarlık Festivali Ekibinde Yer Almak İster misiniz?",
+      "description": "Açık Kapı Mimarlık Festivali Ekibinde Yer Almak İster misiniz? Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-21T10:47:50.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYnl1VnA2ZWtLQWU4R2pFVk5xSVUyNm9uVWNvTDVfZ0NXS3FlWWtDUm9kSURjR2Npdnd3YTFZUURqeHUwME16enFfaTN5MmxhMUV4YkdfbEJ2WWItNzQtbW5vbWJBY2drRDhYWFNVUXJQWUo1WlVyMVhEMTgwdmY3LWxHSnRNd2NIaTBIaXlweXQ3ekVJTENwLQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "7137ee3ae82fab611ce1",
+      "title": "Türkiye'den Suriye'ye dönen Türkmen öğrenciler, eğitimlerini sürdürebilmek için birçok zorluğu aşmak zorunda",
+      "description": "Türkiye'den Suriye'ye dönen Türkmen öğrenciler, eğitimlerini sürdürebilmek için birçok zorluğu aşmak zorunda Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T09:34:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbnJnQVVzYnlzdUtDQkRKb1U0MjlVVFg5OVRZbC1wdlRFVkxqRVpra2NfM0FXamhkVTAzSk00NTVpR2liVHJ4UzYzeWFIaFVhYlJZbmkzSFQ5MXMzUnktNkh0ODFUbFJ1M0R2ZUhwWEhmNlQxOHJrbllZdzB1XzI4Mkxudm56UTNTWDBUaDBIcHh0WVJRVmFhNUFhV0htNk9Vb1lvOHN1V0VwZUVmajd3UDdJT0EtZXZLZ19MUUxkTjNHOUF2dTR5VV93ZEJvVkFlODBBQURsSG1mS2w2?oc=5",
+      "image": null
+    },
+    {
+      "id": "647ae14bd52126cfe56d",
+      "title": "Alzheimer'da erken tanı hayati önem taşıyor",
+      "description": "Alzheimer'da erken tanı hayati önem taşıyor Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T09:21:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTmVuZndtaGQ4V2kwWUJoM1JBMmF2OWpCbEpqdDMzMFZaWDRuWlVCR0tJWTFyZ1QzdFpQcVJyZHkyMWtOaVBaMkVpUlJCSHl0NndWRms1V2lLMnQ1RXBaVW9jR1lfcm85QlNoOFBDX2ZsVmZBSE04dTdiWml0UXRzZ2dzZ3hSemI3MVRtdHRTc3Q2UkJmQ3c?oc=5",
+      "image": null
+    },
+    {
+      "id": "e796da13d3ae2f460347",
+      "title": "Uluslararası Barış Günü'nde dünyadaki ateşkes tablosu kalıcı barış için umut vermiyor",
+      "description": "Uluslararası Barış Günü'nde dünyadaki ateşkes tablosu kalıcı barış için umut vermiyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T08:47:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX2oxTklIYTV5dnBFNS1CVEI4R2VpTzloSFlhTVlVdmJlaVAxejRsOFJ0X3ZZbDdUcXhjc3pWZTBxNGFES0NrcmtYRS1aWWpyUE9XRnlhZmFzRG5RR28zdFB2VUE5VlpHS2J0c0VFenlNS0FEZnM4ZTV1LXlCMWpnREJkV1NqMW1DOFltVmduZzVrYWZXN2tYcHoxcHgyOXV1SEdKaWEzcWEzb0VjMF9JTE1Nck91U0RhNXlKYUdfdUc?oc=5",
+      "image": null
+    },
+    {
+      "id": "a1844fc6216814c2a869",
+      "title": "Fransa'nın güneyindeki 3 vilayet yangın riski nedeniyle kırmızı alarmda",
+      "description": "Fransa'nın güneyindeki 3 vilayet yangın riski nedeniyle kırmızı alarmda Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T08:43:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWWhjeHVzYjY0MUxXQnpQcklXLUpER2p5aVE2N3EzSmlzWG1Rd1J1Yl9wdjVNdW9ob3ZFQ05zMmVTX0M5TFpJMmZQNjg3b2NzM0ZROHZIckdPUEUzNjVPZ2ZqLWZjVjB6eEJlMlM4ci1LVVZJTjNwTlhhN2NVeDdqcGlyME9oZkJwOGF5enhGQ1lKWlFsQUlwT1VsaDYzbzZSS0lMTG9qR291cS1JTGc?oc=5",
+      "image": null
+    },
+    {
+      "id": "6a0de06169fb711a4d4f",
+      "title": "Valide Sultan'ın emaneti Pertevniyal Lisesi 154 yıllık eğitim mirasını sürdürüyor",
+      "description": "Valide Sultan'ın emaneti Pertevniyal Lisesi 154 yıllık eğitim mirasını sürdürüyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T08:15:31.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTlBtbF84UmNoamxwY3ZoUGlqdjdxRnV0Q1U3VW84c2JwbXJPQ0NYNVJOdlN2eTU5WnpEWUFFckNLTVltdkg2cVhvRnZHbWxtWEdpd0d1T2cteGtDNnRsamxBU1V0SGtyX2dyNmx1WnZpdkJJNkdnNFBrSnJtdzVXdTV5TDVwSWNFMjhlUkRON3F5a2Q1bFpZcWF5Q2ZCbl84OGdWRWxoUy1kMzd2Vks0azlYRldwR0N4cUFMcg?oc=5",
+      "image": null
+    },
+    {
+      "id": "e738a997d00182921ec0",
+      "title": "Adana'da 5 büyüklüğünde deprem",
+      "description": "Adana'da 5 büyüklüğünde deprem Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T08:15:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvN2VNMUZ3UHpfOFVIUWhOa2s0SDNLUUVjMkcwU0Vxc3d2ZlZHWEhham1qYWJWYXNpUmFaVzdmbHc3bnMxRUxoUHI5R2E5UThMelVOdjVnTDBRWkdzQlNmN3lUVy1MM0w1Z3NEMnR2Vjh6V2s?oc=5",
+      "image": null
+    },
+    {
+      "id": "f8790c15eba328870ed0",
+      "title": "Çağlayan TUĞAL/ CT Mimarlık Ekip Arkadaşı Arıyor.",
+      "description": "Çağlayan TUĞAL/ CT Mimarlık Ekip Arkadaşı Arıyor. Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-21T08:14:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdWQ3ZXdTcEF2LU16V0Y0WVZ4SWgzM3gwSUpBM0xLUTE3RUNFQmo0eXVBcVpOelI4RU9yZ3Exd1BEX2c5X1pJWWFBeWZEMXZnRklxMk9oTFZBRWNZeWZESExhQlRuYzBlOTZ3dnBLa193SFNhci1tUnBkOGZPUkFRcVdUVFV2WUMyNFNj?oc=5",
+      "image": null
+    },
+    {
+      "id": "f7748af1afdf3c5c2dde",
+      "title": "BM Genel Kurulu, 80 yıldır ilginç anlara sahne oluyor",
+      "description": "BM Genel Kurulu, 80 yıldır ilginç anlara sahne oluyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T08:13:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeHVzWGdEVV8yQ1JTbzRfTjNwTUdPamlLekhsc0d5TjNyYjNwZlVCek1RNUVVb1VfTmxqeEtNUW9kWnlrYmhSZGNOTGRQem5NS1dTa184bkhJVmFpUWRXSDNpQUpLOHBhc0V6MmtBYzV0Yk4za01WZnBQN2hlbjVDMWNCYXdHZ1dmLWREdy1zLU5QVXRhZ1E?oc=5",
+      "image": null
+    },
+    {
+      "id": "7628076dd4e455e8899a",
+      "title": "Sermaye piyasası işlemleri soruşturmalarında 15 şüpheli daha gözaltına alındı",
+      "description": "Sermaye piyasası işlemleri soruşturmalarında 15 şüpheli daha gözaltına alındı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T07:05:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNnNzdjdwOVc2djN2aUlJR0RqVkRxdkpWaVlzem9SQjRnTk5mb0F3a1dXMTBHamJ2VFh4THYzZDdSeTQ1NzRKMnNjb0Y0NmoxLXFScHdaNE81RE5WX3RCRXdvS0h2cVNBclF3S0thazJVT25oQWhDVnRuWTYxUlhUNGRpT0h1dGRYR3F3TG9FX0dOeDRNdHduTkdwRmpQdXhxM0RXWFd5Z2MxdlJlUHJzTWROdXpDcVE1?oc=5",
+      "image": null
+    },
+    {
+      "id": "ed712bfe789ba4c46f60",
+      "title": "İstanbul'da haftanın ilk iş gününde trafik yoğunluğu yaşanıyor",
+      "description": "İstanbul'da haftanın ilk iş gününde trafik yoğunluğu yaşanıyor Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T06:40:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYUl5eFdVRXZSX25RTkJCby1kc3dUS1gxVHJadGpuRV81ZFBKY1RpSzg1dlRCc2FhbVQwbzNBbkJjclZPZ2Y3MUxDd3JqYmhweHhUQ3Vxb3BCTlBDeFFsSmpCRDdQZ3QweGptTjk1SjI1Vjdza09lMmNZaE9tVU9Ld3hxNWhuWjBnM3c3WlRISzRlWk4wSWdjT3MwdnZybEpVZTdZ?oc=5",
+      "image": null
+    },
+    {
+      "id": "4446e0394cae42a08b8e",
+      "title": "Maden Kurtarma Yarışması'nın dördüncüsü yarın Rize'de başlıyor",
+      "description": "Maden Kurtarma Yarışması'nın dördüncüsü yarın Rize'de başlıyor Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T06:01:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLTM1anNoSTBrWk9CTXVvLWlfWnRLMEI3RVQ3NmNrWXBNUkxFZ3o3Q04zb253UVJaQW5JeWI1NDJlb3pEeXZZZ3lMeTMxUUZybEdjbXB5REFsNjF6b0Z3TGVpcUo4Q21hVFZMTXlFdzU2dkEzQWhvOHpVQjMtLWxqVkZuMmlPUVVBdmp6UTNYU0F2c19YbTk5RHR6UzlvdU50WjVkRTBzdU1EMi1VdWZRZ05fSQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "1abf8cdb808e6f234c3b",
+      "title": "Cumhurbaşkanı Erdoğan, ABD'deki Türkevi'ne girişinde sevgi gösterileriyle karşılandı",
+      "description": "Cumhurbaşkanı Erdoğan, ABD'deki Türkevi'ne girişinde sevgi gösterileriyle karşılandı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T05:59:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdmN5c0NFUzBkdFkzaklhc09YOWRhYWFsaWtWOFJJQ1pISnpuMXUtY250M0NoWWtTSHNwVm5sdGxuVkYzdEN6eTdiMmRtc0hTeEdOSXkxY1c2QzctYjhtcl9NT2JBVXBOY0FnUkVrakFjaTFhZjB4Vndhb09rMkg2Y3FBbkViYXZma1pfLUVOSEtqeDJsX0RsOVQwaVkxU0o1b01pbHptOXRFREpkVnFBd1J6bWQtZG1iZHFuRXl3?oc=5",
+      "image": null
+    },
+    {
+      "id": "659fe8f2a90f13abbf12",
+      "title": "Halep'te askeri sahada meydana gelen patlamalarda 4 kişi yaralandı",
+      "description": "Halep'te askeri sahada meydana gelen patlamalarda 4 kişi yaralandı Anadolu Ajansı",
+      "category": "Construction",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T04:14:44.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLUt0VFhwZDEyeGUyWGwwQlRMdWdyVUFabXNhVXVLQlprSEd6Q0VLd1pzWl8tUXVEVkM5SGV5OWtfLWN2LWhLYjd0U3BXMjAxY3F1R1BtczJNQXVaOUp3LWsxYXAtV0lURXNRRlo2ckpNVmVibEZCazZ0REJBVEk3SXMxQ2xrWXUyRFZNcUozMWg5NWl2OUZvSG1sYkJaZklSVWxHUzgzbw?oc=5",
+      "image": null
+    },
+    {
+      "id": "f9851a7539afbf955d5f",
+      "title": "Amedspor, evinde Beşiktaş’ı mağlup etti",
+      "description": "Amedspor, evinde Beşiktaş’ı mağlup etti Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-21T03:47:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNm5WYVdHV2o1a05yTTkyMV94dTFiUVl5S3RxbnRCd1NEWWQ4SHZpd2hlSERWS0NDNGdaUnR2dWgySE9RZ2lrbUktcFk0ejA2eVJEM08wTnpTYlZKcTl0ZUpNQ0ZhNzhEZERpeGFnNkozem5pcmxlV3I5by1ORWFoVy1n?oc=5",
+      "image": null
+    },
+    {
+      "id": "9840e8aec5c6a5be82d1",
+      "title": "Tasarım ve Eğitim Birimi",
+      "description": "Tasarım ve Eğitim Birimi İTÜ Çevre ve Şehircilik Uygulama Araştırma Merkezi",
+      "category": "Architecture",
+      "source": "İTÜ Çevre ve Şehircilik Uygulama Araştırma Merkezi",
+      "publishedAt": "2026-09-21T03:40:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1lODUwRGNnYWlVbENwb3NaYURsTjRkby1LOTdFZkRxWXdyWHhCeXdQWlpFU1JSeVFFQm1oZFBsckU1aVpTdndmUERLSGlBeVQ2RnFLRFNfcnFTM1VhcEVmUF9OdTBRaTF4OVR0dnF1Q29MOWwtSXFj?oc=5",
+      "image": null
+    },
+    {
+      "id": "0474335fdc62fda1df00",
+      "title": "Cumhurbaşkanı Erdoğan, BM 81. Genel Kurulu'na katılmak üzere ABD'ye ulaştı",
+      "description": "Cumhurbaşkanı Erdoğan, BM 81. Genel Kurulu'na katılmak üzere ABD'ye ulaştı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T20:33:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbXJBc1BOOWxlc0UyVE1mWGhYSzhDOUhLdmo3d0w5TTNlTHo1dDZpWkw3eXFvTThISEozVmExTmZiWmwtNzJPVXNkeE43ZlA1Tmx3Zl9iaVUzUFhfZ0I0d1dibXRIUzNKbVBNaFhSR2ZUY2ZjT1MtbllidzNjWlB1cnktUjItYjBMTWxZQ3d6MVpyQkkyWUpDQ0xBc0phOExXMExJdXF0ZVBLNDVTeUlF?oc=5",
+      "image": null
+    },
+    {
+      "id": "73da0cba15f41ee1c4bc",
+      "title": "Trendyol Süper Lig'de görünüm",
+      "description": "Trendyol Süper Lig'de görünüm Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T20:20:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAtOW8yaTUtNGJ6bk9YVmY0UzNNdzJqTGFuaFpJdjVMM1E4WjBWRmo4X2hmVmR4YjhrcVBmaDREYmFGcGM3Y2pfNE5TNmhpOV9DOUtneFdWRnRhTXc5T3Byc08ycWhCbkYyYWw1aTA2RQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "fd57492a52d8961a3b65",
+      "title": "Girit Adası'ndaki yangın kontrol altına alınamadı",
+      "description": "Girit Adası'ndaki yangın kontrol altına alınamadı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T20:18:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNUhINGVZLXd5SFJmOGJoRTFUNm9kZXlKbmJYNlhuYzFDUWw3ZFJfR2lWcGRNcExPWVlOMjI1ak9SMG1Dc0NESnUzNVQ1aGxKZXN0OHR0OEJhU3d4WlZpM2E5aUZYMEYzVnBpZlhkQkdVYUMyVnoxSFVNYVk1TDROb2JSRHNTTC13ck9YbERWNjU?oc=5",
+      "image": null
+    },
+    {
+      "id": "f07c857066b6bbfc1b23",
+      "title": "MİT Başkanı Kalın, Libya Ulusal Birlik Hükümeti Savunma Bakan Vekili Zubi ile İstanbul'da görüştü",
+      "description": "MİT Başkanı Kalın, Libya Ulusal Birlik Hükümeti Savunma Bakan Vekili Zubi ile İstanbul'da görüştü Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T19:48:50.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNFlGOVh0ZFNSMENfQlpPZTFncUtEckRkMG9NS0NxSXVHdUxNMVN4WHo2OTZxS18xTWZDem9KZ18zRkdiOGkzX0JTMFp4a1dGMVktdE9hbngyWjg3Q3hNc3BsYWloN2JpYmItMllvWTQ4NXhKamI2MUVwSnhSMFVodlo3M3lybGZqdVlEVU9hblQxZjk1bXFhMm55cFVHb2xkVWhSOWE5MmFVbmpGdjhtLWhnRkZwZEZNVEsyYkt3VjU1VG9rdW05TFRLUDNJQml2?oc=5",
+      "image": null
+    },
+    {
+      "id": "98fd1dc14191fca4e0e6",
+      "title": "Göztepe ile Çaykur Rizespor 2-2 berabere kaldı",
+      "description": "Göztepe ile Çaykur Rizespor 2-2 berabere kaldı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T19:25:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ19kRDA0OXNJRmJBdnZaaW94aGY1ZWo2VU9ISWRNS1BVdWtTVU5taVBwVF9mS3lweDNsVEdBN0Z1eE4zR1pnamR0aTBFVmNKc3VqVEI1YUlEamducGRMcUo5eURGeUtyRG1DZWdpaEZUcmczUkhCdm1wZUJadkNyZy1aZ2FGWFBqNUFCaw?oc=5",
+      "image": null
+    },
+    {
+      "id": "cc88381e46e89719b8a7",
+      "title": "Milli satranççı Büyükusta Yağız Kaan Erdoğmuş, dünya sıralamasında ilk 20'ye girdi",
+      "description": "Milli satranççı Büyükusta Yağız Kaan Erdoğmuş, dünya sıralamasında ilk 20'ye girdi Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T18:33:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSldtNlFDM3FJT0N4YjRxamRodlZGZEFxSkk2T3Mzb1l0aDVOY191LWV0LXdjMklCV3FoNXNfMFBzNlZFSkp2SmNFeDRWVDRxQUlDYzRaY1YxYmtsQko2Y1lDUENVTUs1WHdwaktNTWJEMFpLZzRxd2RXNzJRRi1PakZNREVXVldIZjU5blVKYUhmdFJLX0FzRllrajNZSUgycTFMTFhJMVYtNU9HNW45UUtscjc2WXp0MlE?oc=5",
+      "image": null
+    },
+    {
+      "id": "ef507d224f4b9c852deb",
+      "title": "Galatasaray, Süper Lig'de son 60 yılın en kötü savunma başlangıcını yaptı",
+      "description": "Galatasaray, Süper Lig'de son 60 yılın en kötü savunma başlangıcını yaptı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T09:10:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWttVlhmZ2dZa0hWUVRtX04xQW5Sai1WQVMzZzhIckJpUXh3dndwY0pUNzJvZndhYlR0bWpQVnpoYjlia00tbUFLLWxCZTROMVV5ZFBlRE5QbjJ3UTVEbGV6TVVXbTBwSDY3Skt2MXlVVDUtdWpoeUI2QjVnV0tOb0VOdkZXZEdDajJQMFZTRzNqSll6b0ZnU1Z5V2ttM3BuLWpGcDBuLUdxOFRRRXc?oc=5",
+      "image": null
+    },
+    {
+      "id": "792d5144fff9962989d7",
+      "title": "Sabancı Holding, COP31'in elektrifikasyon partneri oldu",
+      "description": "Sabancı Holding, COP31'in elektrifikasyon partneri oldu Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T08:46:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZEJ4MERXaDNDVm9yWTRnd1BqZGY2Z0UzRXMzUEYtYmdXQnJaRjZDZEN3cDlzNU5BTWdyLWhpdG12SFNuRWd5UzJBUDVtZ08teDJsaEtkREtFd2JnUjBBLWxlV1dyNDNfYVVfNU9wNHNmekY0VFVMVnVvSnNsOVNTQm13d2NLcXZnSDVqM0FvVmRFV0l4LTdrWENn?oc=5",
+      "image": null
+    },
+    {
+      "id": "14993e01ec2a880518f1",
+      "title": "Fenerbahçe, Süper Lig'de Eyüpspor'u konuk edecek",
+      "description": "Fenerbahçe, Süper Lig'de Eyüpspor'u konuk edecek Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-20T06:38:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYm1URlozakhsc05LRER3enRhUTkybWZmQ2RUZ2ZSZUM1YU1pbVRERWQzWG0xbUg3dTNaN3IzQnpxSVY0clZBSENFUmc4M3RWaVIxWGhuUjljVllCRnNvYm9vZVVBR0xwZUMyU2NfMHVfQzZPRHY4YTFWdmU5VGdueFBybEpFdnN1dHhz?oc=5",
+      "image": null
+    },
+    {
+      "id": "b39d74703267921bc530",
+      "title": "Galatasaray, Süper Lig'de bu sezon ilk yenilgisini yaşadı",
+      "description": "Galatasaray, Süper Lig'de bu sezon ilk yenilgisini yaşadı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T20:08:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWtmU3d4b1R0UWphYzBHN1hnLURfZEZPNkZPTW9yZTJaSzhhUFBnOFctbjE5WkxSb2JsbExpVkpSY3p6TEhBNV9pdnZwSEVMR3h0dktVMVBLWWN0dmRLeXdETXItakxpQ1pTY3g3cFJsOGNic0ZBdGlKY2g5aC1Ec3JwcjRQUlgwcllBdS1HSW5FNlpRXzE0WQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "821360249d90310591cf",
+      "title": "Untitled",
+      "description": "Untitled webapi.ibb.istanbul",
+      "category": "Kadıköy",
+      "source": "webapi.ibb.istanbul",
+      "publishedAt": "2026-09-19T18:36:59.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOW83TkVJbmtNTHZNVUhMeW95bDg3V2RzV3JscDd6bnJlUVZ5ZGJkbGU3VjI0Tm84TjhtYy14WTNQcWs3bUo3cDN2bzFGNU5BcHlmOG9SRjU5ZkZHdmNLMjIzdVFpbG1JMGpqcTNCdDNFQVBFNGpDbWp1dEFNRk1IdndzNHN1ejg?oc=5",
+      "image": null
+    },
+    {
+      "id": "76ba4dc6f51bb25552ac",
+      "title": "Bosphorus Cup'ın 25. yılında kupa Orient Express'in oldu",
+      "description": "Bosphorus Cup'ın 25. yılında kupa Orient Express'in oldu Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T17:37:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcV9xMUpkenNaekJLdHpLLUJnZ1l6Z2ZlUFZWdHRsZ3dFMjVMOWRZeGxwc0VWYnBDZUwzTkp3bmVJZGRFd2o3bnZTZENjTy01V3BDMEVKMF9vZzFwUV9zRE54U2xENVJzX0l6RF80ek9NZE9ZQzUxOWF1Vk1seHlpNkpSTHFRR1JCY1JXa3BUNDdhQkNuRFE?oc=5",
+      "image": null
+    },
+    {
+      "id": "07755d541d6d258ffc73",
+      "title": "Yemen'de Husilere ait mevziler vuruldu, Cevf'te İHA düşürüldü",
+      "description": "Yemen'de Husilere ait mevziler vuruldu, Cevf'te İHA düşürüldü Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T16:01:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTmJIX0doYnd0SWN5dWVmdzJqbkpmNDVsOVZhRVEwb005Uzcyb29uVWVKZmN1eVBWb0hhd2k4SHl1WjJpMlJVRlVQSUJYdW9zTG9ZZVVGSlVjQ3JudnZZMHRoY0dfdVk1Ykk3el9fdlJucTdWWTFkME0tRFZzZ0J3UE9rbjM1ejEwZzhFa1ltd2FfZUM2aWJHSDdvYW4?oc=5",
+      "image": null
+    },
+    {
+      "id": "ba4ccdea01665728b98e",
+      "title": "2026 sonuna kadar 81 ilde akıllı şehir stratejileri ve yol haritaları hazırlanacak",
+      "description": "2026 sonuna kadar 81 ilde akıllı şehir stratejileri ve yol haritaları hazırlanacak Anadolu Ajansı",
+      "category": "Urban Transformation",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T11:06:27.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaHozSTEtU3BBSTM5MS03X3A0d05TX3drelhuaE1RN19wcmxJREZDa2lZbHdTQlhmN3dsdmtHb0FZd1ZnWFVJQkV6bllzaTIxS0N5SGtvQ0YyUFVzTk1tVkdMVjcyMjlZMHI1QmdyTHM4NDF4XzRZQnk3a21xQjZLZElHZEVuLUU5QW50MGJDQXlVMl9BeEpKc3FWQTFlSHlSVVF4cndkdnpvam8?oc=5",
+      "image": null
+    },
+    {
+      "id": "d8a8ac05bf89fef85f4f",
+      "title": "ABD ile Litvanya, Kritik Mineraller Çerçeve Anlaşması imzaladı",
+      "description": "ABD ile Litvanya, Kritik Mineraller Çerçeve Anlaşması imzaladı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T07:38:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMlFMZklHYmROUXZUSTI5bFh0SDRyVlc4NFhWSlJsd2FzTGVDdXB3dzBWc3ZYODVuQlRNbXpSanF6Zlg0djcza2oyc1VPUFdWQmtYa2g1YmVMS0FfTzd5cThwR29adW11UEhQMWd2U3ctN1cyb3JwY0FHT0t2UklLNmNjQ0REYWhCSWNwZHpGbW9ObTZkeWZnRGcxNjBYSGJkcWc?oc=5",
+      "image": null
+    },
+    {
+      "id": "81a416072158f3285daa",
+      "title": "Göztepe, Süper Lig'de yarın Çaykur Rizespor'u ağırlayacak",
+      "description": "Göztepe, Süper Lig'de yarın Çaykur Rizespor'u ağırlayacak Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-19T06:50:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOFBVWTJBNDZhT3ZTYzlncWxKcXFuek16dFg1LUNhYlR4cjBIWEI2eXZ3ZXJoUU1xSmdSY3RxM3QwdUJZa1FqMTNGRVpjeHBic0YzRjE0RmMxT3VhNG1sSm9PV05EZDVMNFdpRThtcUZsbmxqdEs1LWdDeEZNd2szNG1sZVJYdnJ3SG1VYll4Wkg?oc=5",
+      "image": null
+    },
+    {
+      "id": "3aa8cd557a2fd8f895cb",
+      "title": "25. Bosphorus Cup'ta ikinci gün sona erdi",
+      "description": "25. Bosphorus Cup'ta ikinci gün sona erdi Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-18T19:46:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTFhmb0VMZW5WX1h3TnMyWnd6MnYxaUhFZ0xBWFFuc0U2SlJkT0NUNlJCYjZpemJmQlMyVTBvSnNoTzh0YUZ3M1EyLWg0aTZDSjFkZExSWkk0RkwxOFFLZmZvTXpMbnVqOHQzUVBRdjJ3aktUcXJTSWZzZHpOY3l2MjZjMA?oc=5",
+      "image": null
+    },
+    {
+      "id": "d719abc162362b32d3ad",
+      "title": "Süper Lig Maç Programı",
+      "description": "Süper Lig Maç Programı Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-18T17:04:44.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCdUp3T0wyMl9UZ21aZm9ZWDBWaFhKZW1Iei1Wc3I0QVJMS3c5b0JUVTREVy16NjVtczNWQV9jNkVDUjU1d3IweFVJRzh5N24tUHNvallTU2lhQQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "b202e937a63d22f987c3",
+      "title": "Uzay Kongresi'nin maskotu \"Turquoise\" davetlileri \"rekortmen\" patentiyle karşılayacak",
+      "description": "Uzay Kongresi'nin maskotu \"Turquoise\" davetlileri \"rekortmen\" patentiyle karşılayacak Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-18T09:57:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdHlvSzJxckhKVmNweW10UjJqN0NwOERRdXF0RHRJRTZCZU9lYjJ5Mjh5cEFDSTVfYW4wS2lWQ0lqVWVhdXJwT28tZVFPZVdTMllZUVk5SDFFVnl6QjJYZ2hVb29zMGgtUmVxdGQ4endZdDlvVmFtcUZuYmUtcDRZY2NOdUNjZ1RkdVliY1BwYzRCa0h3a2RWLVR1d0M3aWlsdkFLVnZJdkdNaVVWMHFMVXBCeXg0V0RRUnNCWG5MblZWUXE4THZRcw?oc=5",
+      "image": null
+    },
+    {
+      "id": "4a9fcf76273d52434e7f",
+      "title": "Rusya'da halk, milletvekili seçimleri için sandık başında",
+      "description": "Rusya'da halk, milletvekili seçimleri için sandık başında Anadolu Ajansı",
+      "category": "Kadıköy",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-18T09:20:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWGQ4dXhGQ1FheDFQc1B0LVRrWkZrNUtub0gzRy1PWGQtdXRybk1xamxobk41OVhUVXl5ZHpGbGdQTjYwUkpOOWNMakdaSVF5WGh6SDR1Ql9wYVRfYTJGTFVxZkxjc2w2WVllcUU4dWVCVG5UWHhUdlpPRVhydFlZc1otRndGaFVUNW91VWNjaHNOdkZTTmdzYThR?oc=5",
+      "image": null
+    },
+    {
+      "id": "b0c07d184fd29e2140ac",
+      "title": "Kuşadası Belediyesi Hizmet Binası Mimari Proje Yarışması Sonuçlandı",
+      "description": "Kuşadası Belediyesi Hizmet Binası Mimari Proje Yarışması Sonuçlandı Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-18T08:57:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObE1kVWpZZ0pLanhWZTFKa3EtOG50dWo5UHVBS1VZS0ZXdDhvd2xpNjhtTFJ5ZE5CSzZkQ0FmMmx0VEZKYkRFOWMzLUYtVllpX25wVTZvZ1hKWTZrZFp3SUc1cjA4cWF0Rm1qY184d0dOMXhPRnVCaU00ckEwbFk3RVpXWU5aaHVHTDB6Q3Q5RFJZd2Uxcld6ZXBlbW1ISklw?oc=5",
+      "image": null
+    },
+    {
+      "id": "3f6b48184ff8b93ec89a",
+      "title": "Endüstriyel Tasarım Bölümü Öğrenci Projelerinden Örnekler",
+      "description": "Endüstriyel Tasarım Bölümü Öğrenci Projelerinden Örnekler İTÜ | Mimarlık Fakültesi",
+      "category": "Architecture",
+      "source": "İTÜ | Mimarlık Fakültesi",
+      "publishedAt": "2026-09-18T05:50:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaTQ0RW5hcWFsNjZxVHZTLVZZV0R6UC1XQWI5aVl6bUFURXhlamM5a3lBbVlNMEU3R0pKSGpNcFk1TENCRG01dHNEd3J4WVJaODZseU9oQ3M3c053QnJfTU15d3ZJRzh5ZmVCVldWSTdlQUNwTk81eWtrYzBnaWdWbl9Ia2tJUENiTmxYd0VoRTd1OW5wdGFFeVMwZXVfUWRGWWNZbHd2Z1I4bE41eWhobmRPZjZkako4OGNpaHVzVVZtZkhzRmJ4QVo5QnV3VjJfdEFuMGtjcWp5UjhrejJJ?oc=5",
+      "image": null
+    },
+    {
+      "id": "238e81004aa4fb8aee19",
+      "title": "Samsun Büyükşehir Belediyesi Hizmet Binası, Kültür Merkezi ve Cami Kentsel Tasarım ve Mimari Proje Yarışması Üzerine",
+      "description": "Samsun Büyükşehir Belediyesi Hizmet Binası, Kültür Merkezi ve Cami Kentsel Tasarım ve Mimari Proje Yarışması Üzerine Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-18T04:34:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYnpIZ1Zqa3ZldEQ5ckJhX0U0TjdYQ0lFSkpQdm9VR0dMcmx6VVhUV0pXRHc5cy1SaDd0Wldxc3kwUURRUXJUcmJNTmExbmhuSVZ5cFVCTEFHSUgwSjNyYURYVllUQmY3aEU4aERMZWF3X3ZvZlJuNVhVZ0JxdFlOUzZTZWNTWHBCYVBlYzhZeHF6MVNaLXVJckQ1NHNad25GSEVKZWJrcXFXaG1PQ25yZXVlNXR5bC03cHhNdm1IODJxUlZsVEZFUU1DcGJzVF82Y05BZkozMzdXc09KdTJaTw?oc=5",
+      "image": null
+    },
+    {
+      "id": "f9a229ef1e5af123ce93",
+      "title": "Huawei, yeni mikroçip ve bilgisayar kümesi altyapısıyla yapay zeka yarışına güç verecek",
+      "description": "Huawei, yeni mikroçip ve bilgisayar kümesi altyapısıyla yapay zeka yarışına güç verecek Anadolu Ajansı",
+      "category": "Urban Transformation",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-17T19:21:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTHMxTkU0VDllT19fYzY2OFY3M3prOTJpblhwYVZ6dGp0bWhKWlQwUTRGb2U3Uk9vNVRzNDl4bjBXUmEybGdIWmdJREw5TDI0bThFSW41UlYzcGt1SUJSN3djcWVET3JkTV95Yk9LNTlLZTBONjZhMGNzVGhLaVQwTHJPblNEZ2RpRE01dEVGLXc0eWo0RTlfRFg0NWZLVkxoYXE3azE4X1E0eExCbnY3bVROR0xmdHdJWVVidi1PemxNTDVCaV9CaG9paUk0bkp6?oc=5",
+      "image": null
+    },
+    {
+      "id": "dd143c78a5d919d999d4",
+      "title": "6306 sayılı Kanun Kapsamında İlk Satışta Paydaşlara Satılamayan Hisselerin Yeniden Satışına Yönelik İşlemin Yeri ve Zamanının İlan Edilmesine İlişkin Form",
+      "description": "6306 sayılı Kanun Kapsamında İlk Satışta Paydaşlara Satılamayan Hisselerin Yeniden Satışına Yönelik İşlemin Yeri ve Zamanının İlan Edilmesine İlişkin Form T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "category": "Urban Transformation",
+      "source": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "publishedAt": "2026-09-17T17:16:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPS0RzaWZYYVM5TnRyMDdjYzlFeTRuMWtDVGFYTUxJUGVSUV9IX1J6ckNZV0dsQnptRmdvcDRUeUNXUS1WbFBuY1VDdHJEXzd6dUEtMFQxZTJNa2hTck43T1E0aHdIU3dxZFA4akZFXzVPQ1dsY2llR2s5aEtMZjVOZFlHYXhpaXJVME5vNUpOREU3ZE9scXJvX2JxZk9sX0FwOE9Fa0dkVHRLeTg0bUwzWVY0SG96c19CWWczaFlXUDkwa011TjNWTHk4THVNUEFObGVtblhYMjZQUFc5TmYwSHdWTi0tejEzcHh3VzE4a1FrV3VoMlhvLWp0RTVObUl2ekx4d0MyQ1RZY3N3UXB1RTBrd2lBaGwtT0M3Vl9NX1o?oc=5",
+      "image": null
+    },
+    {
+      "id": "408aeab6237449e6bee5",
+      "title": "Bitlis Dereüstü Kentsel Dönüşüm Projesi Kapsamında Restore Edilen Hüsrev Paşa Hamamı' nın Proje Tamamlanması İle Birlikte Oluşacak Yeni Çehresi",
+      "description": "Bitlis Dereüstü Kentsel Dönüşüm Projesi Kapsamında Restore Edilen Hüsrev Paşa Hamamı' nın Proje Tamamlanması İle Birlikte Oluşacak Yeni Çehresi T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "category": "Urban Transformation",
+      "source": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "publishedAt": "2026-09-17T13:52:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxONnNlbVgybFBTUGF4RExyYmc4b01KREJUZjVhVktDbHBBT1Njc3duTWlJUF9tTXNvM0djb1RXRWVOUWNOY01NekQwNFZmUXhzM1hRVXpoT2VWQU1QTnE2bG9uZDdLN2lfSVgwNFZ0NGVVY1R6TWtyNzdlaDFqRjFma19laEhvMXlOMVc0eFZHbXpSZ2NIUUNUYjM0bWVMaUVCQUlFOC1WZ0pWMVhYNWl2Z1NMMU1JYmw2c0trcDljT0xUTUxGTlRGRy1ndjZoVDU4a3RUNFhKaXpIUmxVSXNPV2hwRmptbExIX05EYV9uM0g3dFFySVVUbmtHYXU0bGVPWkxLWl80ZUI?oc=5",
+      "image": null
+    },
+    {
+      "id": "5290527f742c4e76c3d0",
+      "title": "Filistin Esirler Cemiyeti: İsrail hapishanelerinde hasta, yaşlı ve çocuk 9 bin 350 Filistinli esir bulunuyor",
+      "description": "Filistin Esirler Cemiyeti: İsrail hapishanelerinde hasta, yaşlı ve çocuk 9 bin 350 Filistinli esir bulunuyor Anadolu Ajansı",
+      "category": "Urban Transformation",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-16T12:38:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOM2x1ZXdLdnJiUzlSQkVJakJPNkZfeURsc2c1RE4wUUxBU3Azc2FvZU5UWlRvYWh5Qmd4c2hBUUY0cHFxMWJ6alNfWHVwVTdKUHhTZHlWNEpuWmJfUlVqQ1JRY3JGNl90X0pkV2ZwaEJEMlZrSkZzdmg3X1ZoajY2OWhKQTVQR045RkFvV0NuZFZqdjhIS3FfSkQ3MF9VN1pYTUtRX2JjVHhLcVkzdExHbWs4NWY1TkwxNDFSd3RkS3U0UHQ3NUJCTUIzcWNKQ3pKN3NQeDlYeU1BZWlxN1Br?oc=5",
+      "image": null
+    },
+    {
+      "id": "2a8d1a97dee37993c032",
+      "title": "İsrail ordusu, yaralı sağlık görevlisine yardıma gelen Filistinli çocuğu bombalayarak öldürdü",
+      "description": "İsrail ordusu, yaralı sağlık görevlisine yardıma gelen Filistinli çocuğu bombalayarak öldürdü Anadolu Ajansı",
+      "category": "Urban Transformation",
+      "source": "Anadolu Ajansı",
+      "publishedAt": "2026-09-15T22:30:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2x5WkpuR2NuTEtqbVlUUTVsbWdUWnY4NDM3YzBPb0k5RjRkcDMzSzd5NndDS3dVRmVqbDhSZmcyQTdUSXhwamRZZlhVbTVwdUhOeTdsdHRBakstVXBTa2d0ZWl2NzVlZi1IYndHdWxFWmcyVXJVaHpnekFHTWZjVlhKNy03Tl90WmVld2tGenVIVDBZVHlOckFGM250eExpS0Mxc1EwXzV3NzhOMko2SE04c2swMXY0ZmRwVGM0eENnTWoxa1NsM1VYcw?oc=5",
+      "image": null
+    },
+    {
+      "id": "bf2c6c9bf1a673d382f7",
+      "title": "Dereüstü Kentsel Dönüşüm Projesi hız kazanarak ilerlemeye devam ediyor",
+      "description": "Dereüstü Kentsel Dönüşüm Projesi hız kazanarak ilerlemeye devam ediyor T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "category": "Urban Transformation",
+      "source": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "publishedAt": "2026-09-15T16:19:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX1VQZEIwa3Rhdk9Gb3BVQnFKOEl6cU5sQWNjeUQyR2VFaHJBelNiSEd0TUR0eWY2QVUydUdhcXUzOVd2VFRIZ0JmUE9kaFJhZ2dCWnVnM0pQRjhBZXczX2NZRlZaQW9ZSENyNzVsMjdWd2NiTjJacnltTzRJbXUwaDBKcXl4eDcwZG5oU0hjNE01YlJHc3hzMzk0dXpHb3RzYkdwcnR5ZGc?oc=5",
+      "image": null
+    },
+    {
+      "id": "bd2bb620bcf1f80685c1",
+      "title": "\"MTO4901 Meteoroloji Müh. Tasarım I\" Dersini AlacakÖğrencilerin Dikkatine",
+      "description": "\"MTO4901 Meteoroloji Müh. Tasarım I\" Dersini AlacakÖğrencilerin Dikkatine İTÜ | Uçak ve Uzay Bilimleri Fakültesi",
+      "category": "Architecture",
+      "source": "İTÜ | Uçak ve Uzay Bilimleri Fakültesi",
+      "publishedAt": "2026-09-15T12:03:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNWw3WC1tSEd3dzdHZjllMHlPV2JvM1hodFVvMzdNR1RmN2VNTUF2NGhWVEpBUkF2VVp1UmVwdGp4dXJfZHRXRVgybXdUZk5WX2VNZ3dFdmZORzV0QXZmM3lLcjc0Qk51ZDUxRTRvMjdlWHdSRHRMRHdSR3ZaWmJDQi1WT3JHVEtIbGJIRi14MmdzMTNTQ012VFM4RUNiaVlCVFVka1F6WGh3UEpBcXpmN1oyenhnenhRcEhENTl0U2I4YUUxNkpRU3VFRTRKcW9TV3JF?oc=5",
+      "image": null
+    },
+    {
+      "id": "af12a6e11fc4479a3233",
+      "title": "Miras Mimarlık Çalışma Arkadaşı Arıyor",
+      "description": "Miras Mimarlık Çalışma Arkadaşı Arıyor Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-15T08:19:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ndXV3eVJNVGROZU5lSXdzMjdicGR3dHpTRnF3cENta04tSHFhcmxiMmJNUVRRYkRNdFRoM3prLVRfM0RwbTNZdWVPNVoyUjlVV0JDVHM0Zjk1czBmWUxRN3cyNExOMWo2SXVFYVdvWVhPQy1ScFNNMHRTNUVndWs?oc=5",
+      "image": null
+    },
+    {
+      "id": "ba5545b9104f25fdb07f",
+      "title": "Öney Architecture Ekip Arkadaşları Arıyor",
+      "description": "Öney Architecture Ekip Arkadaşları Arıyor Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-14T13:59:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRnZMSHFqclpERUJzWlVlNDJVTkxCanRIWkt2NWExSy1xY3AtWWxkV1NSQmp5RkFGZjJ6aWxTaThyeWY3cVBMUHZEbmV2RjQ5MTlmV3NuRkhCNlh3NXpRbE9vQXRMVHVEeVBjMXhzcjRuT09KN1U1VERuU085VFQ3bzhmZw?oc=5",
+      "image": null
+    },
+    {
+      "id": "a6cbc6d36cd421c1e940",
+      "title": "S.O.S. İstanbul Mimarlık Öğrencilerine Açık Fikir Projesi Yarışması",
+      "description": "S.O.S. İstanbul Mimarlık Öğrencilerine Açık Fikir Projesi Yarışması Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-14T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnBVUldLV1B6SGVfWE9ORE5JdHpXaUlPXzUxQVFLUmVRbi1kU2dHX2pzQlhycW5qRjlIajltTXlSZlFaNW92WGpwNEtwMW9HdFk2WnotajRUbWNSWUFEc2FtSW1NT3N6R0Q2TFpQWHdlaGtxZ2NzajZvc1Y5RFNiUmV2b0daOHh6V2E1YUNISllITndTSURSMVZtVzVXZnhhWUE?oc=5",
+      "image": null
+    },
+    {
+      "id": "9af280b66640f5c17905",
+      "title": "Dereüstü Kentsel Dönüşüm Projesi Kapsamında Millet Bahçesinin Yapımı Devam Ediyor",
+      "description": "Dereüstü Kentsel Dönüşüm Projesi Kapsamında Millet Bahçesinin Yapımı Devam Ediyor T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "category": "Urban Transformation",
+      "source": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "publishedAt": "2026-09-13T13:45:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQN2tnSVBiVXhUVExKalI2OEVNTFBHUW42NnR6VmV3WFc2YnBfN1RDckplR1dJZDd3U0RCbkhrSi1iUUVraWVOUUlDV2lKR242c2dkS1RlbmFTU2djaG5aZGxINC11Z3B4MTBOeWZpSVNEOENoeDU0LUpZa0hqRDVVOGlCanppX3Jfa3dIcjg1bG45WmRXWHlOaXRNNkJMRGI2aGh0elc1Z1pSV0RKN0Utc2xJUUFtNFU?oc=5",
+      "image": null
+    },
+    {
+      "id": "c79bfe5b003c2b57089a",
+      "title": "1. Ödül, Alaşehir Kent Merkezi Kentsel Tasarım Projesi Yarışması",
+      "description": "1. Ödül, Alaşehir Kent Merkezi Kentsel Tasarım Projesi Yarışması Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-13T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNlg0bW0wYnJkdzFIcHFDbDB5cUQtWWk1bHQ5WmFHZTFJS1VBbWFiSExGXzNiYzA3OVVxRFRxNFN6V3FCNXUweHhYNkxnZ1JQeG04eTJWUjRVcWZBUVp0MDFTaVRnVlVpRzczdnhIekJhWWEzczR2TTdCYlpCTFlzaFV3eExRZFk2dFViTVp3T09LWGNpS3NuWjR3?oc=5",
+      "image": null
+    },
+    {
+      "id": "b17ae90aec634531fc4a",
+      "title": "2MK Mimarlık Ekip Arkadaşları Arıyor",
+      "description": "2MK Mimarlık Ekip Arkadaşları Arıyor Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-11T12:18:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMmRkTTQ0TUMxM3FWR2dfSi1zU2YzWXdKcUhGOV9CRF8zck42RXVJb1RPbUhvQnIteTM0RkRObVR0VG9rYzBteWNZWUFFNDJFOHhkVkF3Qm42QnJFbU9HOThlcVhudjdJb3k4Q1VOaFVLMzNkMWY0YzJNWW5MamZ0cHNkS2ZNOUM3SnlzZ3NOUkRJZ1RicnBFVQ?oc=5",
+      "image": null
+    },
+    {
+      "id": "628df896853049ead617",
+      "title": "Tekstil Teknolojileri ve Tasarım Fakültesi",
+      "description": "Tekstil Teknolojileri ve Tasarım Fakültesi İTÜ | Sürekli Eğitim Merkezi",
+      "category": "Architecture",
+      "source": "İTÜ | Sürekli Eğitim Merkezi",
+      "publishedAt": "2026-09-11T10:43:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQU2pqTVhEeE9ZODU3RURTemszTllGOWg2YjM4TDFKa18xN1R2dXJVUWlzRDloemc0NHc1NWxJSzJONTAyQ2dQU2dNVmNaRmNOXzVFTlBmNUJMZ1VROTA4X1BHbHdwN0k4ckNQZXF6RjlRcTA0U3lxQkR3dXUyWExkUk1KT2pGempxOTZYZEtWMHhzTVRjS3hMMF93?oc=5",
+      "image": null
+    },
+    {
+      "id": "a0716c98bf8f7d7de9a0",
+      "title": "Ali AKARSU Mimarlık Ekip Arkadaşları Arıyor",
+      "description": "Ali AKARSU Mimarlık Ekip Arkadaşları Arıyor Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-11T08:50:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYUp6YWJuY1RScEN2MGQ0X0M1UjhBVTJ0XzcyWGhKaDl3SURtQmtpdVRGa1ZnVDA4b2Q1VkstQWhjNzhTRWQzSWFXQlByOXg0RlcteTVkTTNWWU5BNzNCV2ZZN3hjanY4RXh6MGpRcEc5a3NPYjR5TnpDUWowNWhpY251dw?oc=5",
+      "image": null
+    },
+    {
+      "id": "048d0b6bfb36aa3c3e37",
+      "title": "Sıfır Atık Eğitimleri Devam Ediyor",
+      "description": "Sıfır Atık Eğitimleri Devam Ediyor T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "category": "Urban Transformation",
+      "source": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "publishedAt": "2026-09-11T00:21:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQktVWmRWakQ5Z1EtT3djSHp1Z2FlbGRwcGFsMG9FV0ZMZnpDT3luRDRsdjZpWExYZkxfSGp2WV96aWhocE5MREo5S1ZMdUdEYVNFWUYzNVVMeHBOMEhkUzUyUFF1dDhDeG1Tb09YS2lOMWljc0FKblNScjVaeWlWZC1xcw?oc=5",
+      "image": null
+    },
+    {
+      "id": "5cd03d7966d379d6e381",
+      "title": "Batı Akdeniz Mimarlık Dergisi 40. Yıl Özel Sayısı Kapak Tasarım Yarışması",
+      "description": "Batı Akdeniz Mimarlık Dergisi 40. Yıl Özel Sayısı Kapak Tasarım Yarışması Mimarizm",
+      "category": "Architecture",
+      "source": "Mimarizm",
+      "publishedAt": "2026-09-10T16:28:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOHd1QnlfSWlTdjNvUG9PSVlYQVhuNXdwaTcxdVlIblJnZGw5YnNwdUk5TEhIdHdnT0FXUDlSMlNRX2xuUjU1WEZkdHpidG96cDY1S0UzWkxSLVRSaEJZaXlBajU2dmIwX2RUMnRjSEh1eU1QMEwwSHNCNDFveERjdXF4Q2NnNmlITG9ka3kxeGs4a3dZRVVHei1LY005enBHdFUxalFKY0ZKTVhGQ1NJUm4zZ2t6ekdjREgtWmZUWVI4c19pQU95SHR2b2c4aGc?oc=5",
+      "image": null
+    },
+    {
+      "id": "617c71d434bdd4a5667b",
+      "title": "Araştırma Görevlimize Fulbright Doktora Tezi Araştırma Bursu",
+      "description": "Araştırma Görevlimize Fulbright Doktora Tezi Araştırma Bursu İTÜ Haberler",
+      "category": "Architecture",
+      "source": "İTÜ Haberler",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaE1oeFhLRUIybk9oLTlqeTdCdGsyZ0VuaDZvbHczaWpFMVdPaExBQXRELXk2ZURrd1FZX3paaXdkYlNBWXVPVWRFN1l5RktsVzJGMDZKaEc1QU1ub3ZHb3RTaTBNNVoxM2RLUTBDQ0tQa3k0LU13b25UMkVJbjhQTVRNVmd6cWJLcU0ya25obXZ2dGI0Y3laWE5UcDIxQ3lnRS01R0RlckljczRyekllazhZVWZ0bmdobzVxMlNtUF84Zw?oc=5",
+      "image": null
+    },
+    {
+      "id": "ecb26f845c36f5e5f798",
+      "title": "Mimesis Mimarlık Ekip Arkadaşları Arıyor.",
+      "description": "Mimesis Mimarlık Ekip Arkadaşları Arıyor. Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-09T11:39:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tV0I5WlhJQU45dlA1dlNuQTdwNnJBMXoxcjBlQU9QUHpkamdMVXU4dGdDS1JueEhUd1VNVnJ0eVJ4am95Y0dhandsMWZqQ0JNTzlzcWRKdG5IZ29td3NmRk5XWGJNbzlub05KVVc2Q0RqTi15LWM1TzNFWnhUWEk?oc=5",
+      "image": null
+    },
+    {
+      "id": "5891fb7d37ef56019bee",
+      "title": "Erhan Sağır Mimarlık Takım Arkadaşları Arıyor.",
+      "description": "Erhan Sağır Mimarlık Takım Arkadaşları Arıyor. Arkitera",
+      "category": "Architecture",
+      "source": "Arkitera",
+      "publishedAt": "2026-09-08T12:58:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTy05b0k1c0pQSmdISlRJNVZudzhCd3A5OXo1cXN4Y1JyTGFOa1p3ODd0SnlMN1NvbUtmRjd6WTJDU0JHLWJoZ2g4LTBWUHN3WG1FVi1LbGZPaEgxbUhRNERtUTZhbkVMb2xGSEc0UVpTR01XSlpwMVE2djJROEI2a3lQdlNpendPQ2c?oc=5",
+      "image": null
+    }
+  ]
 }
