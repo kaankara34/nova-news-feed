@@ -11,7 +11,8 @@ const GEMINI_MODEL =
   process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
 
 const RETENTION_DAYS = 15;
-const DISCOVERY_LIMIT = 220;
+const DISCOVERY_LIMIT = 360;
+const GROUP_DISCOVERY_LIMIT = 36;
 const MIN_ARTICLE_TEXT = 700;
 const MAX_ARTICLE_TEXT = 9000;
 const REQUEST_DELAY_MS = 1100;
@@ -44,6 +45,25 @@ const CATEGORY_LIMITS = {
   Kadıköy: 3,
   "Technical & Legal": 5,
   "Fashion & Luxury": 3
+};
+
+const CATEGORY_MINIMUMS = {
+  "Art & Exhibitions": 2,
+  Exhibitions: 2,
+  "Galleries & Museums": 2,
+  "Architecture & Design": 3,
+  Construction: 3,
+  "Urban Transformation": 2,
+  Kadıköy: 2,
+  "Technical & Legal": 3,
+  "Fashion & Luxury": 1
+};
+
+const LOCKED_DISCOVERY_CATEGORIES = {
+  "turkey-construction": "Construction",
+  "turkey-urban-transformation": "Urban Transformation",
+  "turkey-official-technical": "Technical & Legal",
+  "istanbul-kadikoy-official": "Kadıköy"
 };
 
 const SOURCE_GROUPS = [
@@ -157,6 +177,43 @@ const SOURCE_GROUPS = [
       "construction OR structural engineering OR concrete OR building safety"
   },
   {
+    name: "turkey-construction",
+    categoryHint: "Construction",
+    language: "tr",
+    domains: [
+      "aa.com.tr",
+      "trthaber.com",
+      "dunya.com",
+      "ekonomim.com",
+      "insaatderyasi.com",
+      "yapi.com.tr",
+      "turkiyeimsad.org",
+      "thbb.org",
+      "tmb.org.tr"
+    ],
+    queries: [
+      "Türkiye (inşaat OR beton OR yapı malzemeleri OR yapı teknolojisi OR mühendislik OR sürdürülebilir yapı)"
+    ]
+  },
+  {
+    name: "turkey-urban-transformation",
+    categoryHint: "Urban Transformation",
+    language: "tr",
+    domains: [
+      "csb.gov.tr",
+      "kdb.gov.tr",
+      "ibb.istanbul",
+      "ipa.istanbul",
+      "resmigazete.gov.tr",
+      "toki.gov.tr",
+      "aa.com.tr",
+      "trthaber.com"
+    ],
+    queries: [
+      "(kentsel dönüşüm OR riskli yapı OR yapı stoku OR Yarısı Bizden OR rezerv yapı alanı) (İstanbul OR Türkiye)"
+    ]
+  },
+  {
     name: "turkey-official-technical",
     categoryHint: "Technical & Legal",
     language: "tr",
@@ -168,10 +225,15 @@ const SOURCE_GROUPS = [
       "afad.gov.tr",
       "imo.org.tr",
       "mimarlarodasi.org.tr",
-      "tubitak.gov.tr"
+      "tubitak.gov.tr",
+      "mevzuat.gov.tr",
+      "turkiye.gov.tr",
+      "thbb.org",
+      "turkiyeimsad.org"
     ],
-    terms:
-      "yapı OR deprem OR beton OR yönetmelik OR kentsel dönüşüm OR imar"
+    queries: [
+      "(deprem yönetmeliği OR yapı güvenliği OR beton OR zemin OR temel OR yapı denetimi OR imar yönetmeliği OR yapı ruhsatı)"
+    ]
   },
   {
     name: "istanbul-kadikoy-official",
@@ -181,10 +243,14 @@ const SOURCE_GROUPS = [
       "kadikoy.bel.tr",
       "ibb.istanbul",
       "ipa.istanbul",
-      "istanbul.gov.tr"
+      "istanbul.gov.tr",
+      "csb.gov.tr",
+      "aa.com.tr",
+      "trthaber.com"
     ],
-    terms:
-      "Kadıköy OR Bağdat Caddesi OR kentsel dönüşüm OR imar OR kültür OR sergi"
+    queries: [
+      "Kadıköy (kentsel dönüşüm OR inşaat OR imar OR yapı ruhsatı OR deprem OR yapı stoku OR mimarlık OR kent tasarımı OR Bağdat Caddesi)"
+    ]
   },
   {
     name: "fashion-luxury",
@@ -246,6 +312,13 @@ const TIER_ONE = new Set([
   "imo.org.tr",
   "kadikoy.bel.tr",
   "ibb.istanbul",
+  "mevzuat.gov.tr",
+  "toki.gov.tr",
+  "aa.com.tr",
+  "trthaber.com",
+  "turkiyeimsad.org",
+  "thbb.org",
+  "tmb.org.tr",
   "istanbulmodern.org",
   "peramuseum.org",
   "sakipsabancimuzesi.org",
@@ -260,7 +333,7 @@ const TIER_ONE = new Set([
 ]);
 
 const ALLOWED_DOMAINS = new Set(
-  SOURCE_GROUPS.flatMap(group => group.domains)
+  SOURCE_GROUPS.flatMap((group) => group.domains)
 );
 
 const parser = new Parser({
@@ -270,14 +343,12 @@ const parser = new Parser({
   },
   headers: {
     "User-Agent":
-      "NOVA-Editorial-Feed/3.0 (+https://novakonut.com)"
+      "NOVA-Editorial-Feed/4.0 (+https://novakonut.com)"
   }
 });
 
-const sleep = milliseconds =>
-  new Promise(resolve =>
-    setTimeout(resolve, milliseconds)
-  );
+const sleep = (ms) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 function cleanText(value = "") {
   return String(value)
@@ -306,7 +377,7 @@ function normalizeDomain(input = "") {
 
 function domainAllowed(domain) {
   return [...ALLOWED_DOMAINS].some(
-    allowed =>
+    (allowed) =>
       domain === allowed ||
       domain.endsWith(`.${allowed}`)
   );
@@ -314,7 +385,7 @@ function domainAllowed(domain) {
 
 function sourceTier(domain) {
   return [...TIER_ONE].some(
-    item =>
+    (item) =>
       domain === item ||
       domain.endsWith(`.${item}`)
   )
@@ -340,30 +411,30 @@ function normalizeTitle(title = "") {
     .trim();
 }
 
-function titleSimilarity(firstTitle, secondTitle) {
-  const firstWords = new Set(
-    normalizeTitle(firstTitle)
+function titleSimilarity(a, b) {
+  const left = new Set(
+    normalizeTitle(a)
       .split(" ")
-      .filter(word => word.length > 2)
+      .filter((word) => word.length > 2)
   );
 
-  const secondWords = new Set(
-    normalizeTitle(secondTitle)
+  const right = new Set(
+    normalizeTitle(b)
       .split(" ")
-      .filter(word => word.length > 2)
+      .filter((word) => word.length > 2)
   );
 
-  if (!firstWords.size || !secondWords.size) {
+  if (!left.size || !right.size) {
     return 0;
   }
 
-  const intersection = [...firstWords]
-    .filter(word => secondWords.has(word))
-    .length;
+  const intersection = [...left].filter((word) =>
+    right.has(word)
+  ).length;
 
   const union = new Set([
-    ...firstWords,
-    ...secondWords
+    ...left,
+    ...right
   ]).size;
 
   return intersection / union;
@@ -378,39 +449,31 @@ function isRecent(dateValue) {
 
   const cutoff =
     Date.now() -
-    RETENTION_DAYS *
-      24 *
-      60 *
-      60 *
-      1000;
+    RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
   return (
     date.getTime() >= cutoff &&
-    date.getTime() <=
-      Date.now() + 60 * 60 * 1000
+    date.getTime() <= Date.now() + 60 * 60 * 1000
   );
 }
 
-function buildGoogleNewsUrl(group, domains) {
-  const sites = domains
-    .map(domain => `site:${domain}`)
+function buildGoogleNewsUrl(
+  group,
+  domainChunk,
+  customQuery = ""
+) {
+  const sites = domainChunk
+    .map((domain) => `site:${domain}`)
     .join(" OR ");
 
   const query =
-    `(${group.terms}) ` +
-    `(${sites}) ` +
-    `when:${RETENTION_DAYS}d`;
+    `(${customQuery || group.terms}) ` +
+    `(${sites}) when:${RETENTION_DAYS}d`;
 
   const params = new URLSearchParams({
     q: query,
-    hl:
-      group.language === "tr"
-        ? "tr"
-        : "en-US",
-    gl:
-      group.language === "tr"
-        ? "TR"
-        : "US",
+    hl: group.language === "tr" ? "tr" : "en-US",
+    gl: group.language === "tr" ? "TR" : "US",
     ceid:
       group.language === "tr"
         ? "TR:tr"
@@ -431,9 +494,7 @@ function chunk(array, size) {
     index < array.length;
     index += size
   ) {
-    output.push(
-      array.slice(index, index + size)
-    );
+    output.push(array.slice(index, index + size));
   }
 
   return output;
@@ -448,9 +509,9 @@ function extractSource(item) {
     typeof node === "string"
       ? node
       : node?._ ||
-        node?.value ||
-        item.creator ||
-        ""
+          node?.value ||
+          item.creator ||
+          ""
   );
 
   const url =
@@ -468,218 +529,245 @@ function extractSource(item) {
 }
 
 async function discoverCandidates() {
-  const allCandidates = [];
+  const groupBuckets = [];
 
   for (const group of SOURCE_GROUPS) {
-    for (
-      const expectedDomain of group.domains
-    ) {
-      const url = buildGoogleNewsUrl(
-        group,
-        [expectedDomain]
-      );
+    const groupItems = [];
 
-      console.log(
-        `Discovering ${group.name}: ` +
-        expectedDomain
-      );
+    for (const expectedDomain of group.domains) {
+      const queries =
+        group.queries || [group.terms];
 
-      try {
-        const feed =
-          await parser.parseURL(url);
-
-        for (
-          const item of feed.items || []
-        ) {
-          const source =
-            extractSource(item);
-
-          const resolvedDomain =
-            source.domain ||
-            expectedDomain;
-
-          if (
-            !domainAllowed(resolvedDomain)
-          ) {
-            continue;
-          }
-
-          const publishedAt =
-            item.isoDate ||
-            item.pubDate;
-
-          if (!isRecent(publishedAt)) {
-            continue;
-          }
-
-          const title =
-            cleanText(item.title);
-
-          if (!title) {
-            continue;
-          }
-
-          allCandidates.push({
-            id: hash(
-              `${resolvedDomain}|` +
-              normalizeTitle(title)
-            ),
-
-            title,
-
-            description: cleanText(
-              item.contentSnippet ||
-              item.content ||
-              item.summary ||
-              ""
-            ),
-
-            publishedAt:
-              new Date(
-                publishedAt
-              ).toISOString(),
-
-            googleNewsUrl: item.link,
-
-            sourceName:
-              source.name ||
-              resolvedDomain,
-
-            sourceUrl:
-              source.url ||
-              `https://${resolvedDomain}`,
-
-            sourceDomain:
-              resolvedDomain,
-
-            sourceTier:
-              sourceTier(
-                resolvedDomain
-              ),
-
-            categoryHint:
-              group.categoryHint,
-
-            discoveryGroup:
-              group.name,
-
-            originalLanguageHint:
-              group.language
-          });
-        }
-      } catch (error) {
-        console.warn(
-          `Discovery failed for ` +
-          `${group.name}: ` +
-          error.message
+      for (const query of queries) {
+        const url = buildGoogleNewsUrl(
+          group,
+          [expectedDomain],
+          query
         );
+
+        console.log(
+          `Discovering ${group.name}: ` +
+          `${expectedDomain} | ${query}`
+        );
+
+        try {
+          const feed =
+            await parser.parseURL(url);
+
+          for (const item of feed.items || []) {
+            const source =
+              extractSource(item);
+
+            const resolvedDomain =
+              source.domain ||
+              expectedDomain;
+
+            if (
+              !domainAllowed(resolvedDomain)
+            ) {
+              continue;
+            }
+
+            const publishedAt =
+              item.isoDate ||
+              item.pubDate;
+
+            if (!isRecent(publishedAt)) {
+              continue;
+            }
+
+            const title =
+              cleanText(item.title);
+
+            if (!title) {
+              continue;
+            }
+
+            groupItems.push({
+              id: hash(
+                `${resolvedDomain}|` +
+                normalizeTitle(title)
+              ),
+              title,
+              description: cleanText(
+                item.contentSnippet ||
+                item.content ||
+                item.summary ||
+                ""
+              ),
+              publishedAt:
+                new Date(
+                  publishedAt
+                ).toISOString(),
+              googleNewsUrl: item.link,
+              sourceName:
+                source.name ||
+                resolvedDomain,
+              sourceUrl:
+                source.url ||
+                `https://${resolvedDomain}`,
+              sourceDomain:
+                resolvedDomain,
+              sourceTier:
+                sourceTier(
+                  resolvedDomain
+                ),
+              categoryHint:
+                group.categoryHint,
+              discoveryGroup:
+                group.name,
+              originalLanguageHint:
+                group.language
+            });
+          }
+        } catch (error) {
+          console.warn(
+            `Discovery failed for ` +
+            `${group.name}/` +
+            `${expectedDomain}: ` +
+            error.message
+          );
+        }
+
+        await sleep(180);
       }
-
-      await sleep(250);
     }
-  }
 
-  allCandidates.sort(
-    (first, second) => {
+    groupItems.sort((a, b) => {
       if (
-        first.sourceTier !==
-        second.sourceTier
+        a.sourceTier !==
+        b.sourceTier
       ) {
         return (
-          first.sourceTier -
-          second.sourceTier
+          a.sourceTier -
+          b.sourceTier
         );
       }
 
       return (
-        new Date(
-          second.publishedAt
-        ) -
-        new Date(
-          first.publishedAt
-        )
+        new Date(b.publishedAt) -
+        new Date(a.publishedAt)
       );
-    }
-  );
+    });
 
-  const uniqueCandidates = [];
+    const uniqueGroupItems = [];
+
+    for (const candidate of groupItems) {
+      const duplicate =
+        uniqueGroupItems.some(
+          (existing) =>
+            titleSimilarity(
+              existing.title,
+              candidate.title
+            ) >= 0.72
+        );
+
+      if (!duplicate) {
+        uniqueGroupItems.push(
+          candidate
+        );
+      }
+
+      if (
+        uniqueGroupItems.length >=
+        GROUP_DISCOVERY_LIMIT
+      ) {
+        break;
+      }
+    }
+
+    console.log(
+      `${group.name} reserved candidates: ` +
+      uniqueGroupItems.length
+    );
+
+    groupBuckets.push(
+      uniqueGroupItems
+    );
+  }
+
+  const unique = [];
+
+  const maxBucketLength =
+    Math.max(
+      0,
+      ...groupBuckets.map(
+        (items) => items.length
+      )
+    );
 
   for (
-    const candidate of allCandidates
+    let index = 0;
+    index < maxBucketLength;
+    index += 1
   ) {
-    const duplicate =
-      uniqueCandidates.some(
-        existing =>
-          existing.sourceDomain ===
-            candidate.sourceDomain &&
-          titleSimilarity(
-            existing.title,
-            candidate.title
-          ) >= 0.78
-      );
+    for (const bucket of groupBuckets) {
+      const candidate =
+        bucket[index];
 
-    if (!duplicate) {
-      uniqueCandidates.push(
-        candidate
-      );
-    }
+      if (!candidate) {
+        continue;
+      }
 
-    if (
-      uniqueCandidates.length >=
-      DISCOVERY_LIMIT
-    ) {
-      break;
+      const duplicate =
+        unique.some(
+          (existing) =>
+            titleSimilarity(
+              existing.title,
+              candidate.title
+            ) >= 0.84
+        );
+
+      if (!duplicate) {
+        unique.push(candidate);
+      }
+
+      if (
+        unique.length >=
+        DISCOVERY_LIMIT
+      ) {
+        return unique;
+      }
     }
   }
 
-  return uniqueCandidates;
+  return unique;
 }
 
 const CLASSIFICATION_RESPONSE_SCHEMA = {
   type: "OBJECT",
-
   properties: {
     decisions: {
       type: "ARRAY",
-
       items: {
         type: "OBJECT",
-
         properties: {
           id: {
             type: "STRING"
           },
-
           accept: {
             type: "BOOLEAN"
           },
-
           category: {
             type: "STRING",
             enum: CATEGORIES
           },
-
           editorialScore: {
             type: "INTEGER"
           },
-
           technicalValue: {
             type: "INTEGER"
           },
-
           brandFit: {
             type: "INTEGER"
           },
-
           eventKey: {
             type: "STRING"
           },
-
           reason: {
             type: "STRING"
           }
         },
-
         required: [
           "id",
           "accept",
@@ -693,50 +781,39 @@ const CLASSIFICATION_RESPONSE_SCHEMA = {
       }
     }
   },
-
   required: ["decisions"]
 };
 
 const EDITORIAL_RESPONSE_SCHEMA = {
   type: "OBJECT",
-
   properties: {
     articles: {
       type: "ARRAY",
-
       items: {
         type: "OBJECT",
-
         properties: {
           id: {
             type: "STRING"
           },
-
           titleTr: {
             type: "STRING"
           },
-
           titleEn: {
             type: "STRING"
           },
-
           excerptTr: {
             type: "STRING"
           },
-
           excerptEn: {
             type: "STRING"
           },
-
           contentTr: {
             type: "STRING"
           },
-
           contentEn: {
             type: "STRING"
           }
         },
-
         required: [
           "id",
           "titleTr",
@@ -749,7 +826,6 @@ const EDITORIAL_RESPONSE_SCHEMA = {
       }
     }
   },
-
   required: ["articles"]
 };
 
@@ -769,22 +845,22 @@ function parseGeminiJson(text) {
   try {
     return JSON.parse(cleaned);
   } catch {
-    // Kontrollü onarıma devam et.
+    // Tolerant repair continues below.
   }
 
-  const firstBrace =
+  const first =
     cleaned.indexOf("{");
 
-  const lastBrace =
+  const last =
     cleaned.lastIndexOf("}");
 
   if (
-    firstBrace >= 0 &&
-    lastBrace > firstBrace
+    first >= 0 &&
+    last > first
   ) {
     cleaned = cleaned.slice(
-      firstBrace,
-      lastBrace + 1
+      first,
+      last + 1
     );
   }
 
@@ -823,11 +899,12 @@ async function callGemini(
 ) {
   const endpoint =
     "https://generativelanguage.googleapis.com/" +
-    `v1beta/models/${encodeURIComponent(
-      GEMINI_MODEL
-    )}:generateContent?key=${encodeURIComponent(
+    "v1beta/models/" +
+    encodeURIComponent(GEMINI_MODEL) +
+    ":generateContent?key=" +
+    encodeURIComponent(
       GEMINI_API_KEY
-    )}`;
+    );
 
   let lastError;
 
@@ -837,54 +914,45 @@ async function callGemini(
     attempt += 1
   ) {
     try {
-      const currentPrompt =
+      const effectivePrompt =
         attempt > 1
           ? `${prompt}
 
-Return only valid JSON.
-Use double quotes for all keys and strings.
-Do not use trailing commas.
-Do not include Markdown or explanations.
-Follow the response schema exactly.`
+Return only valid JSON. Use double-quoted keys and strings. Do not use Markdown code fences or trailing commas.`
           : prompt;
-
-      const generationConfig = {
-        temperature,
-        topP: 0.8,
-        maxOutputTokens,
-        responseMimeType:
-          "application/json",
-
-        ...(responseSchema
-          ? { responseSchema }
-          : {})
-      };
 
       const response = await fetch(
         endpoint,
         {
           method: "POST",
-
           headers: {
             "Content-Type":
               "application/json"
           },
-
           body: JSON.stringify({
             contents: [
               {
                 role: "user",
-
                 parts: [
                   {
                     text:
-                      currentPrompt
+                      effectivePrompt
                   }
                 ]
               }
             ],
-
-            generationConfig
+            generationConfig: {
+              temperature,
+              topP: 0.8,
+              maxOutputTokens,
+              responseMimeType:
+                "application/json",
+              ...(responseSchema
+                ? {
+                    responseSchema
+                  }
+                : {})
+            }
           })
         }
       );
@@ -894,37 +962,26 @@ Follow the response schema exactly.`
           await response.text();
 
         throw new Error(
-          `Gemini API ` +
-          `${response.status}: ` +
-          body.slice(0, 1200)
+          `Gemini API ${response.status}: ` +
+          body.slice(0, 1000)
         );
       }
 
-      const responseBody =
+      const body =
         await response.json();
 
       const responseText =
-        responseBody
-          ?.candidates?.[0]
+        body?.candidates?.[0]
           ?.content?.parts
           ?.map(
-            part =>
+            (part) =>
               part.text || ""
           )
           .join("");
 
       if (!responseText) {
-        const finishReason =
-          responseBody
-            ?.candidates?.[0]
-            ?.finishReason ||
-          "UNKNOWN";
-
         throw new Error(
-          "Gemini returned an " +
-          "empty response. " +
-          `Finish reason: ` +
-          finishReason
+          "Gemini returned an empty response."
         );
       }
 
@@ -933,12 +990,6 @@ Follow the response schema exactly.`
       );
     } catch (error) {
       lastError = error;
-
-      console.warn(
-        `Gemini attempt ` +
-        `${attempt} failed: ` +
-        error.message
-      );
 
       if (attempt === 4) {
         break;
@@ -949,7 +1000,10 @@ Follow the response schema exactly.`
         2 ** (attempt - 1);
 
       console.warn(
-        `Retrying in ${delay} ms`
+        `Gemini attempt ${attempt} ` +
+        `failed; retrying in ` +
+        `${delay} ms: ` +
+        error.message
       );
 
       await sleep(delay);
@@ -964,10 +1018,8 @@ async function classifyCandidates(
 ) {
   const decisions = [];
 
-  const batches = chunk(
-    candidates,
-    20
-  );
+  const batches =
+    chunk(candidates, 20);
 
   for (
     let index = 0;
@@ -982,7 +1034,7 @@ async function classifyCandidates(
 
     const compact =
       batches[index].map(
-        item => ({
+        (item) => ({
           id: item.id,
           title: item.title,
           description:
@@ -996,60 +1048,122 @@ async function classifyCandidates(
           publishedAt:
             item.publishedAt,
           categoryHint:
-            item.categoryHint
+            item.categoryHint,
+          discoveryGroup:
+            item.discoveryGroup
         })
       );
 
     const prompt = `
 You are the senior editor of NOVA, a premium Istanbul residential developer.
 
-Assess the supplied news candidates. The source list has already been curated.
+Assess every supplied news candidate. The source list has already been curated.
 
-Editorial identity:
+EDITORIAL IDENTITY
+
 - International, cultured, technically serious, restrained and premium.
-- Prefer major museums, established galleries, respected art publications,
-  architecture institutions, engineering bodies and primary public authorities.
+- Prefer major museums, established galleries, respected art publications, architecture institutions, engineering bodies and primary public authorities.
 - Technical and legal items must have genuine practical or professional value.
-- Construction items should concern engineering, materials, safety, standards,
-  methods, sustainability or major sector innovation, not company promotion.
-- Fashion items must concern design, craftsmanship, heritage, exhibitions,
-  architecture or serious industry developments, not celebrities or shopping.
+- Construction items should concern engineering, materials, safety, standards, methods, sustainability, building technology or major civil infrastructure.
+- Fashion items must concern design, craftsmanship, heritage, exhibitions, architecture or serious industry developments.
+- Turkish official, municipal, engineering and standards sources should be judged by authority and practical value rather than journalistic polish.
+
+CATEGORY DEFINITIONS
+
+Construction:
+Building construction, structural or civil engineering, concrete, foundations, façades, materials, building systems, construction methods, major infrastructure, sustainability or construction technology.
+
+Urban Transformation:
+Urban renewal, risky-building renewal, building-stock resilience, earthquake preparation, regeneration policy, transformation legislation, financial support programmes or official transformation projects in Turkey.
+
+Kadıköy:
+The subject must have a direct physical, administrative, architectural or technical connection to Kadıköy, Bağdat Caddesi or a named Kadıköy neighbourhood. Kadıköy construction, planning, urban transformation, building stock, earthquake resilience and municipal technical decisions are preferred.
+
+Technical & Legal:
+Building regulations, zoning, permits, building inspections, earthquake engineering, structural safety, concrete or material standards, soil and foundation engineering or official technical publications with direct relevance to Turkish construction.
+
+Architecture & Design:
+Completed architecture, serious design analysis, institutional architectural programmes, exhibitions, materials and recognised design work.
+
+Art & Exhibitions:
+Significant artists, art-world developments, criticism, cultural programmes and major exhibitions.
+
+Exhibitions:
+Specific current or upcoming exhibition programmes, biennials, art fairs and institutional presentations.
+
+Galleries & Museums:
+Museum and gallery programmes, acquisitions, openings, collection developments and significant institutional announcements.
+
+Fashion & Luxury:
+Design, heritage, craftsmanship, fashion exhibitions, material culture and serious luxury-industry developments. Reject celebrity gossip and shopping content.
+
+MANDATORY REJECTIONS
 
 Reject:
-- jobs, recruitment, tenders, advertorials and company promotion;
-- competitor property developments or praise of unrelated construction companies;
-- crime, disaster sensationalism, political polemics, gossip and clickbait;
-- generic regional stories without design, engineering or institutional value;
-- sales decline, housing crash or negative property-market commentary;
-- duplicates or different headlines describing the same event;
-- vague items whose title or description cannot support a reliable decision.
+- jobs and recruitment;
+- tenders and procurement notices;
+- advertisements and advertorials;
+- generic company press releases;
+- competitor residential project promotion;
+- praise of unrelated construction companies;
+- crime or disaster sensationalism;
+- political polemics;
+- celebrity gossip;
+- clickbait;
+- generic regional stories without engineering, design or institutional value;
+- housing-sales decline;
+- housing crash predictions;
+- negative property-market commentary;
+- biomedical, medical, maritime or unrelated energy research;
+- vague stories whose supplied title and description cannot support reliable reporting;
+- duplicate headlines describing the same event.
 
-Allowed categories exactly:
+Do not reject an authoritative ministry, municipality, professional chamber, standards body or engineering institution solely because its wording is formal.
+
+Allowed categories:
 ${JSON.stringify(CATEGORIES)}
 
-Scores are integers from 0 to 100.
+Return one JSON object only:
 
-Accept only when:
-- editorialScore is at least 84;
-- brandFit is at least 82;
-- the item has genuine technical, cultural, architectural or institutional value.
+{
+  "decisions": [
+    {
+      "id": "candidate-id",
+      "accept": true,
+      "category": "exact allowed category",
+      "editorialScore": 0,
+      "technicalValue": 0,
+      "brandFit": 0,
+      "eventKey": "short normalized event identity",
+      "reason": "short factual reason"
+    }
+  ]
+}
 
-Never invent facts.
-Return one decision for every supplied id.
+SCORING
+
+- Scores must be integers between 0 and 100.
+- International art, architecture, fashion and lifestyle items require editorialScore >= 84 and brandFit >= 82.
+- Authoritative Turkish Construction, Urban Transformation, Kadıköy and Technical & Legal items may be accepted from editorialScore 76 and brandFit 78 when they provide direct professional, regulatory or local value.
+- Do not inflate every score.
+- A metadata-poor or vague item must receive a lower score.
+- Include every supplied id exactly once.
+- Never invent facts.
 
 Candidates:
 ${JSON.stringify(compact)}
 `;
 
-    const result = await callGemini(
-      prompt,
-      {
-        maxOutputTokens: 8192,
-        temperature: 0.05,
-        responseSchema:
-          CLASSIFICATION_RESPONSE_SCHEMA
-      }
-    );
+    const result =
+      await callGemini(
+        prompt,
+        {
+          maxOutputTokens: 8192,
+          temperature: 0.05,
+          responseSchema:
+            CLASSIFICATION_RESPONSE_SCHEMA
+        }
+      );
 
     if (
       Array.isArray(
@@ -1066,50 +1180,95 @@ ${JSON.stringify(compact)}
     );
   }
 
-  const decisionMap = new Map(
-    decisions.map(
-      decision => [
-        decision.id,
-        decision
-      ]
-    )
-  );
+  const decisionMap =
+    new Map(
+      decisions.map(
+        (item) => [
+          item.id,
+          item
+        ]
+      )
+    );
 
-  const accepted = candidates
-    .map(candidate => ({
-      ...candidate,
+  const accepted =
+    candidates
+      .map((candidate) => {
+        const rawDecision =
+          decisionMap.get(
+            candidate.id
+          );
 
-      decision:
-        decisionMap.get(
-          candidate.id
-        )
-    }))
-    .filter(item =>
-      item.decision?.accept ===
-        true &&
+        const lockedCategory =
+          LOCKED_DISCOVERY_CATEGORIES[
+            candidate.discoveryGroup
+          ];
 
-      CATEGORIES.includes(
-        item.decision.category
-      ) &&
+        return {
+          ...candidate,
+          decision: rawDecision
+            ? {
+                ...rawDecision,
+                category:
+                  lockedCategory ||
+                  rawDecision.category
+              }
+            : null
+        };
+      })
+      .filter((item) => {
+        if (
+          item.decision?.accept !==
+          true
+        ) {
+          return false;
+        }
 
-      Number(
-        item.decision
-          .editorialScore
-      ) >= 84 &&
+        if (
+          !CATEGORIES.includes(
+            item.decision.category
+          )
+        ) {
+          return false;
+        }
 
-      Number(
-        item.decision.brandFit
-      ) >= 82
-    )
-    .sort(
-      (first, second) => {
+        const protectedCategory =
+          [
+            "Construction",
+            "Urban Transformation",
+            "Kadıköy",
+            "Technical & Legal"
+          ].includes(
+            item.decision.category
+          );
+
+        const minimumEditorial =
+          protectedCategory
+            ? 76
+            : 84;
+
+        const minimumBrandFit =
+          protectedCategory
+            ? 78
+            : 82;
+
+        return (
+          Number(
+            item.decision
+              .editorialScore
+          ) >= minimumEditorial &&
+          Number(
+            item.decision.brandFit
+          ) >= minimumBrandFit
+        );
+      })
+      .sort((a, b) => {
         const scoreDifference =
           Number(
-            second.decision
+            b.decision
               .editorialScore
           ) -
           Number(
-            first.decision
+            a.decision
               .editorialScore
           );
 
@@ -1118,34 +1277,79 @@ ${JSON.stringify(compact)}
         }
 
         return (
-          first.sourceTier -
-          second.sourceTier
+          a.sourceTier -
+          b.sourceTier
         );
-      }
-    );
+      });
 
   const seenEvents =
     new Set();
 
-  return accepted.filter(
-    item => {
-      const eventKey =
-        normalizeTitle(
-          item.decision.eventKey ||
-          item.title
-        );
+  const sourceCategoryCounts =
+    new Map();
 
-      if (
-        seenEvents.has(eventKey)
-      ) {
-        return false;
-      }
+  const deduplicated = [];
 
-      seenEvents.add(eventKey);
+  for (const item of accepted) {
+    const eventKey =
+      normalizeTitle(
+        item.decision.eventKey ||
+        item.title
+      );
 
-      return true;
+    const category =
+      item.decision.category;
+
+    const sourceKey =
+      `${category}|` +
+      item.sourceDomain;
+
+    const tooSimilar =
+      deduplicated.some(
+        (existing) =>
+          existing.decision
+            .category === category &&
+          titleSimilarity(
+            existing.decision
+              .eventKey ||
+              existing.title,
+            item.decision.eventKey ||
+              item.title
+          ) >= 0.58
+      );
+
+    if (
+      seenEvents.has(eventKey) ||
+      tooSimilar
+    ) {
+      continue;
     }
-  );
+
+    if (
+      (
+        sourceCategoryCounts.get(
+          sourceKey
+        ) || 0
+      ) >= 2
+    ) {
+      continue;
+    }
+
+    seenEvents.add(eventKey);
+
+    sourceCategoryCounts.set(
+      sourceKey,
+      (
+        sourceCategoryCounts.get(
+          sourceKey
+        ) || 0
+      ) + 1
+    );
+
+    deduplicated.push(item);
+  }
+
+  return deduplicated;
 }
 
 function absoluteUrl(
@@ -1199,13 +1403,8 @@ function getGoogleNewsArticleId(
     if (
       url.hostname ===
         "news.google.com" &&
-
       parts.length >= 2 &&
-
-      [
-        "articles",
-        "read"
-      ].includes(
+      ["articles", "read"].includes(
         parts[
           parts.length - 2
         ]
@@ -1227,24 +1426,13 @@ async function getGoogleNewsDecodingParams(
 ) {
   const response = await fetch(
     "https://news.google.com/" +
-    `rss/articles/${articleId}`,
+      `rss/articles/${articleId}`,
     {
       headers: {
         "User-Agent":
-          "Mozilla/5.0 " +
-          "(Windows NT 10.0; " +
-          "Win64; x64) " +
-          "AppleWebKit/537.36 " +
-          "(KHTML, like Gecko) " +
-          "Chrome/129.0.0.0 " +
-          "Safari/537.36",
-
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36",
         Accept:
-          "text/html," +
-          "application/xhtml+xml," +
-          "application/xml;" +
-          "q=0.9,*/*;q=0.8",
-
+          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language":
           "en-US,en;q=0.9"
       }
@@ -1253,8 +1441,7 @@ async function getGoogleNewsDecodingParams(
 
   if (!response.ok) {
     throw new Error(
-      "Google News parameter " +
-      "request returned " +
+      "Google News parameter request returned " +
       response.status
     );
   }
@@ -1266,29 +1453,21 @@ async function getGoogleNewsDecodingParams(
     cheerio.load(html);
 
   const element = $(
-    "c-wiz > " +
-      "div[jscontroller]" +
-      "[data-n-a-sg]" +
-      "[data-n-a-ts]"
+    "c-wiz > div[jscontroller][data-n-a-sg][data-n-a-ts]"
   ).first();
 
   const signature =
-    element.attr(
-      "data-n-a-sg"
-    );
+    element.attr("data-n-a-sg");
 
   const timestamp =
-    element.attr(
-      "data-n-a-ts"
-    );
+    element.attr("data-n-a-ts");
 
   if (
     !signature ||
     !timestamp
   ) {
     throw new Error(
-      "Google News decoding " +
-      "parameters were not found"
+      "Google News decoding parameters were not found."
     );
   }
 
@@ -1307,11 +1486,12 @@ function parseBatchExecutePayload(
       ""
     )
     .split("\n")
-    .map(line =>
-      line.trim()
+    .map(
+      (line) => line.trim()
     )
-    .filter(line =>
-      line.startsWith("[")
+    .filter(
+      (line) =>
+        line.startsWith("[")
     );
 
   for (const line of lines) {
@@ -1327,14 +1507,12 @@ function parseBatchExecutePayload(
       for (const row of rows) {
         if (
           Array.isArray(row) &&
-
           (
             row[0] ===
               "wrb.fr" ||
             row[0] ===
               "w779db"
           ) &&
-
           row[1] ===
             "Fbv4je"
         ) {
@@ -1350,13 +1528,13 @@ function parseBatchExecutePayload(
         }
       }
     } catch {
-      // Diğer satırı dene.
+      // Ignore unrelated protocol rows.
     }
   }
 
   for (
     const part of
-      String(text).split("\n\n")
+    String(text).split("\n\n")
   ) {
     try {
       const parsed =
@@ -1364,15 +1542,16 @@ function parseBatchExecutePayload(
           part.trim()
         );
 
-      const rows =
+      for (
+        const row of
         Array.isArray(parsed)
           ? parsed
-          : [];
-
-      for (const row of rows) {
+          : []
+      ) {
         if (
           Array.isArray(row) &&
-          row[1] === "Fbv4je"
+          row[1] ===
+            "Fbv4je"
         ) {
           const inner =
             JSON.parse(row[2]);
@@ -1386,7 +1565,7 @@ function parseBatchExecutePayload(
         }
       }
     } catch {
-      // Diğer bloğu dene.
+      // Continue searching.
     }
   }
 
@@ -1426,83 +1605,52 @@ async function decodeGoogleNewsUrl(
 
     const request = [
       "Fbv4je",
-
-      `["garturlreq",` +
-        `[["X","X",["X","X"],` +
-        `null,null,1,1,"US:en",` +
-        `null,1,null,null,null,null,` +
-        `null,0,1],"X","X",1,` +
-        `[1,1,1],1,1,null,0,0,` +
-        `null,0],` +
-        `"${articleId}",` +
-        `${timestamp},` +
-        `"${signature}"]`
+      `["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${articleId}",${timestamp},"${signature}"]`
     ];
 
-    const requestBody =
+    const body =
       "f.req=" +
       encodeURIComponent(
-        JSON.stringify(
-          [[request]]
-        )
+        JSON.stringify([
+          [request]
+        ])
       );
 
-    const response = await fetch(
-      "https://news.google.com/" +
-      "_/DotsSplashUi/data/" +
-      "batchexecute",
-
-      {
-        method: "POST",
-
-        headers: {
-          "Content-Type":
-            "application/" +
-            "x-www-form-urlencoded;" +
-            "charset=UTF-8",
-
-          "User-Agent":
-            "Mozilla/5.0 " +
-            "(Windows NT 10.0; " +
-            "Win64; x64) " +
-            "AppleWebKit/537.36 " +
-            "(KHTML, like Gecko) " +
-            "Chrome/129.0.0.0 " +
-            "Safari/537.36",
-
-          Accept: "*/*",
-
-          Origin:
-            "https://news.google.com",
-
-          Referer:
-            "https://news.google.com/"
-        },
-
-        body: requestBody
-      }
-    );
+    const response =
+      await fetch(
+        "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type":
+              "application/x-www-form-urlencoded;charset=UTF-8",
+            "User-Agent":
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36",
+            Accept: "*/*",
+            Origin:
+              "https://news.google.com",
+            Referer:
+              "https://news.google.com/"
+          },
+          body
+        }
+      );
 
     if (!response.ok) {
       throw new Error(
-        "Google News decoder " +
-        "returned " +
+        "Google News decoder returned " +
         response.status
       );
     }
 
-    const responseText =
-      await response.text();
-
     const decodedUrl =
       parseBatchExecutePayload(
-        responseText
+        await response.text()
       );
 
     if (!decodedUrl) {
       throw new Error(
-        "Decoded publisher URL " +
-        "was empty"
+        "Decoded publisher URL was empty."
       );
     }
 
@@ -1514,8 +1662,7 @@ async function decodeGoogleNewsUrl(
     return decodedUrl;
   } catch (error) {
     console.warn(
-      "Google News URL " +
-      "decoding failed: " +
+      "Google News URL decoding failed: " +
       error.message
     );
 
@@ -1536,7 +1683,8 @@ async function resolveAndExtract(
 
   const timeout =
     setTimeout(
-      () => controller.abort(),
+      () =>
+        controller.abort(),
       45000
     );
 
@@ -1554,50 +1702,126 @@ async function resolveAndExtract(
       )
     ) {
       console.warn(
-        "Publisher URL could not " +
-        "be verified for " +
+        "Publisher URL could not be verified for " +
         candidate.sourceDomain
       );
 
       return null;
     }
 
-    const response = await fetch(
-      decodedUrl,
-      {
-        redirect: "follow",
-        signal:
-          controller.signal,
-
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 " +
-            "(compatible; " +
-            "NOVAEditorialBot/3.0; " +
-            "+https://novakonut.com)",
-
-          Accept:
-            "text/html," +
-            "application/xhtml+xml"
+    const response =
+      await fetch(
+        decodedUrl,
+        {
+          redirect: "follow",
+          signal:
+            controller.signal,
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (compatible; NOVAEditorialBot/4.0; +https://novakonut.com)",
+            Accept:
+              "text/html,application/xhtml+xml"
+          }
         }
-      }
-    );
+      );
+
+    const html =
+      await response.text();
 
     if (!response.ok) {
       console.warn(
-        `Publisher returned ` +
-        `${response.status}: ` +
+        `Publisher returned ${response.status}: ` +
         candidate.sourceDomain
       );
 
       return null;
     }
 
-    const articleHtml =
-      await response.text();
-
-    const articleUrl =
+    let articleUrl =
       response.url;
+
+    let articleHtml =
+      html;
+
+    if (
+      !isPublisherUrl(
+        articleUrl,
+        candidate.sourceDomain
+      )
+    ) {
+      const $news =
+        cheerio.load(html);
+
+      const possibleUrls = [
+        $news(
+          'meta[property="og:url"]'
+        ).attr("content"),
+        $news(
+          'link[rel="canonical"]'
+        ).attr("href"),
+        ...$news("a[href]")
+          .map(
+            (_, node) =>
+              $news(node).attr(
+                "href"
+              )
+          )
+          .get()
+      ]
+        .filter(Boolean)
+        .map((value) =>
+          absoluteUrl(
+            value,
+            response.url
+          )
+        );
+
+      articleUrl =
+        possibleUrls.find(
+          (url) =>
+            isPublisherUrl(
+              url,
+              candidate.sourceDomain
+            )
+        ) || "";
+
+      if (!articleUrl) {
+        return null;
+      }
+
+      const publisherResponse =
+        await fetch(
+          articleUrl,
+          {
+            redirect: "follow",
+            signal:
+              controller.signal,
+            headers: {
+              "User-Agent":
+                "Mozilla/5.0 (compatible; NOVAEditorialBot/4.0; +https://novakonut.com)",
+              Accept:
+                "text/html,application/xhtml+xml"
+            }
+          }
+        );
+
+      if (
+        !publisherResponse.ok
+      ) {
+        console.warn(
+          `Publisher returned ${publisherResponse.status}: ` +
+          candidate.sourceDomain
+        );
+
+        return null;
+      }
+
+      articleUrl =
+        publisherResponse.url;
+
+      articleHtml =
+        await publisherResponse.text();
+    }
 
     if (
       !isPublisherUrl(
@@ -1616,21 +1840,17 @@ async function resolveAndExtract(
         $(
           'meta[property="og:image"]'
         ).attr("content") ||
-
-        $(
-          'meta[name="twitter:image"]'
-        ).attr("content") ||
-
-        "",
-
+          $(
+            'meta[name="twitter:image"]'
+          ).attr("content") ||
+          "",
         articleUrl
       );
 
     let jsonLdText = "";
 
     $(
-      "script[type=" +
-      "'application/ld+json']"
+      "script[type='application/ld+json']"
     ).each((_, node) => {
       try {
         const parsed =
@@ -1648,9 +1868,7 @@ async function resolveAndExtract(
           ...records
         ];
 
-        while (
-          queue.length
-        ) {
+        while (queue.length) {
           const record =
             queue.shift();
 
@@ -1663,12 +1881,9 @@ async function resolveAndExtract(
           }
 
           if (
-            typeof record
-              .articleBody ===
+            typeof record.articleBody ===
               "string" &&
-
-            record.articleBody
-              .length >
+            record.articleBody.length >
               jsonLdText.length
           ) {
             jsonLdText =
@@ -1688,24 +1903,12 @@ async function resolveAndExtract(
           }
         }
       } catch {
-        // Geçersiz JSON-LD.
+        // Ignore invalid JSON-LD.
       }
     });
 
     $(
-      [
-        "script",
-        "style",
-        "noscript",
-        "nav",
-        "footer",
-        "header",
-        "aside",
-        "form",
-        "button",
-        "iframe",
-        "svg"
-      ].join(",")
+      "script,style,noscript,nav,footer,header,aside,form,button,iframe,svg"
     ).remove();
 
     const selectors = [
@@ -1716,13 +1919,10 @@ async function resolveAndExtract(
       ".article__body",
       ".story-body",
       ".entry-content",
-      ".post-content",
-      ".content-body",
-      ".article-content",
       "main"
     ];
 
-    let extractedText =
+    let text =
       jsonLdText;
 
     for (
@@ -1737,22 +1937,19 @@ async function resolveAndExtract(
 
       if (
         candidateText.length >
-        extractedText.length
+        text.length
       ) {
-        extractedText =
+        text =
           candidateText;
       }
     }
 
     if (
-      extractedText.length <
+      text.length <
       MIN_ARTICLE_TEXT
     ) {
       console.warn(
-        "Insufficient article " +
-        `text (` +
-        `${extractedText.length}) ` +
-        "for " +
+        `Insufficient article text (${text.length}) for ` +
         candidate.sourceDomain
       );
 
@@ -1762,18 +1959,17 @@ async function resolveAndExtract(
     return {
       articleUrl,
       image: image || null,
-
       sourceText:
-        extractedText.slice(
+        text.slice(
           0,
           MAX_ARTICLE_TEXT
         )
     };
   } catch (error) {
     console.warn(
-      "Article extraction " +
-      "failed for " +
-      `${candidate.sourceDomain}: ` +
+      "Article extraction failed for " +
+      candidate.sourceDomain +
+      ": " +
       error.message
     );
 
@@ -1789,16 +1985,14 @@ async function extractSelectedArticles(
   const grouped =
     Object.fromEntries(
       CATEGORIES.map(
-        category => [
+        (category) => [
           category,
           []
         ]
       )
     );
 
-  for (
-    const item of classified
-  ) {
+  for (const item of classified) {
     grouped[
       item.decision.category
     ].push(item);
@@ -1813,32 +2007,30 @@ async function extractSelectedArticles(
       CATEGORY_LIMITS[category];
 
     const attempts =
-      grouped[category]
-        .slice(
-          0,
-          target * 3
-        );
+      grouped[category].slice(
+        0,
+        target * 3
+      );
 
     console.log(
       `Extracting ${category}: ` +
-      `${attempts.length} ` +
-      `candidates for max ` +
-      target
+      `${attempts.length} candidates ` +
+      `for max ${target}`
     );
 
     for (
       const candidate of attempts
     ) {
-      const existingCount =
+      const currentCount =
         extracted.filter(
-          item =>
+          (item) =>
             item.decision
               .category ===
             category
         ).length;
 
       if (
-        existingCount >= target
+        currentCount >= target
       ) {
         break;
       }
@@ -1848,37 +2040,28 @@ async function extractSelectedArticles(
           candidate
         );
 
+      const metadataSourceText = [
+        `Original title: ${candidate.title}`,
+        `RSS summary: ${
+          candidate.description ||
+          "No additional summary supplied."
+        }`,
+        `Publisher: ${candidate.sourceName}`,
+        `Published at: ${candidate.publishedAt}`
+      ].join("\n");
+
       extracted.push({
         ...candidate,
-
         ...(content || {
           articleUrl:
             candidate.googleNewsUrl,
-
           image: null,
-
-          sourceText: [
-            `Original title: ` +
-              candidate.title,
-
-            `RSS summary: ` +
-              (
-                candidate.description ||
-                "No additional summary supplied."
-              ),
-
-            `Publisher: ` +
-              candidate.sourceName,
-
-            `Published at: ` +
-              candidate.publishedAt
-          ].join("\n")
+          sourceText:
+            metadataSourceText
         }),
-
-        contentMode:
-          content
-            ? "full-source"
-            : "metadata-only"
+        contentMode: content
+          ? "full-source"
+          : "metadata-only"
       });
 
       await sleep(200);
@@ -1893,10 +2076,8 @@ async function writeEditorialContent(
 ) {
   const results = [];
 
-  const batches = chunk(
-    articles,
-    3
-  );
+  const batches =
+    chunk(articles, 3);
 
   for (
     let index = 0;
@@ -1904,34 +2085,27 @@ async function writeEditorialContent(
     index += 1
   ) {
     console.log(
-      "Bilingual editorial " +
-      `writing ${index + 1}/` +
+      "Bilingual editorial writing " +
+      `${index + 1}/` +
       batches.length
     );
 
     const input =
       batches[index].map(
-        item => ({
+        (item) => ({
           id: item.id,
-
           originalTitle:
             item.title,
-
           source:
             item.sourceName,
-
           domain:
             item.sourceDomain,
-
           publishedAt:
             item.publishedAt,
-
           category:
             item.decision.category,
-
           contentMode:
             item.contentMode,
-
           sourceText:
             item.sourceText
         })
@@ -1940,34 +2114,94 @@ async function writeEditorialContent(
     const prompt = `
 Act as NOVA's bilingual senior editorial desk.
 
-Using only the supplied source material, create an original Turkish and English editorial treatment for every supplied item.
+Using only the supplied source material, create an original Turkish and English editorial treatment for every item.
 
-Accuracy rules:
-- Do not add any name, number, date, quote, location, technical conclusion or legal interpretation absent from the supplied material.
-- Every item has already passed editorial classification.
+ACCURACY
+
+- Do not add a person, institution, number, date, quotation, location, technical conclusion or legal interpretation that is absent from the source material.
+- Do not disguise uncertainty.
 - Return an editorial result for every supplied id.
-- Never reject an item only because contentMode is metadata-only.
-- Do not reproduce long sentences from the source.
+- Do not reject an item merely because contentMode is metadata-only.
+- Do not reproduce long source sentences.
+- Paraphrase faithfully.
 - Never write promotional praise for a construction company or property developer.
-- For legal and engineering subjects, use neutral and precise language.
-- Clearly attribute official statements to the issuing institution.
+- For laws, regulations and engineering, use precise and neutral language.
+- Clearly attribute regulations and technical claims to the issuing institution.
+- Do not turn a proposal, target or announcement into a completed fact.
+- Do not describe an old event as upcoming when the supplied date indicates otherwise.
 
-Tone:
-- refined, factual, restrained and internationally literate;
-- suitable for a premium architecture and residential-development brand;
-- no clickbait, hype, clichés, advertising language or AI-style filler;
-- Turkish must read as native professional Turkish;
+EDITORIAL TONE
+
+- Refined, factual, restrained and concise.
+- Suitable for a premium architecture and residential-development brand.
+- Internationally literate without sounding pretentious.
+- No clickbait.
+- No advertising language.
+- No clichés.
+- No generic AI filler.
+- Turkish must read as native professional Turkish.
 - English must read as native editorial English.
+- Correct grammar, spelling, institution names and Turkish suffixes.
+- Use digits for measurements, money, dates and large quantities where appropriate.
+- Avoid literal translation structures.
 
-Output requirements:
-- titleTr and titleEn: 7-16 words;
-- excerptTr and excerptEn: 35-60 words;
-- for full-source items, contentTr and contentEn: 180-300 words;
-- for metadata-only items, contentTr and contentEn: 60-110 words;
-- metadata-only content must not add facts absent from the supplied metadata;
-- do not mention NOVA;
-- do not say "this article";
-- return every supplied id exactly once.
+FORBIDDEN WORKFLOW LANGUAGE
+
+Never use phrases such as:
+- supplied information;
+- publisher data;
+- limited source text;
+- according to the records;
+- this content;
+- the source material;
+- provided metadata;
+- yayıncı verilerine göre;
+- sağlanan bilgiler doğrultusunda;
+- sınırlı kaynak metin;
+- paylaşılan kayıtlara göre;
+- bu içerik;
+- eldeki veriler;
+- detaylar için kaynağa başvurulabilir.
+
+Write the verified facts directly.
+
+OUTPUT REQUIREMENTS
+
+For every article produce:
+
+- titleTr and titleEn:
+  7-16 words, factual, specific and elegant.
+
+- excerptTr and excerptEn:
+  30-60 words.
+
+- contentTr and contentEn for full-source:
+  180-300 words.
+
+- contentTr and contentEn for metadata-only:
+  60-110 words.
+
+Metadata-only content must remain strictly within the supplied title and RSS summary. It must still read like a concise editorial news brief, not like a system note.
+
+Do not mention NOVA.
+
+Retain the supplied category exactly.
+
+Return JSON only:
+
+{
+  "articles": [
+    {
+      "id": "article-id",
+      "titleTr": "...",
+      "titleEn": "...",
+      "excerptTr": "...",
+      "excerptEn": "...",
+      "contentTr": "...",
+      "contentEn": "..."
+    }
+  ]
+}
 
 Source material:
 ${JSON.stringify(input)}
@@ -1979,7 +2213,6 @@ ${JSON.stringify(input)}
         {
           maxOutputTokens: 8192,
           temperature: 0.1,
-
           responseSchema:
             EDITORIAL_RESPONSE_SCHEMA
         }
@@ -2000,32 +2233,34 @@ ${JSON.stringify(input)}
     );
   }
 
-  const byId = new Map(
-    results.map(item => [
-      item.id,
-      item
-    ])
-  );
+  const byId =
+    new Map(
+      results.map(
+        (item) => [
+          item.id,
+          item
+        ]
+      )
+    );
 
   return articles
-    .map(article => ({
+    .map((article) => ({
       ...article,
-
       editorial:
         byId.get(article.id)
     }))
-    .filter(article => {
-      const editorial =
+    .filter((article) => {
+      const item =
         article.editorial;
 
       return Boolean(
-        editorial &&
-        editorial.titleTr &&
-        editorial.titleEn &&
-        editorial.excerptTr &&
-        editorial.excerptEn &&
-        editorial.contentTr &&
-        editorial.contentEn
+        item &&
+          item.titleTr &&
+          item.titleEn &&
+          item.excerptTr &&
+          item.excerptEn &&
+          item.contentTr &&
+          item.contentEn
       );
     });
 }
@@ -2040,16 +2275,49 @@ function buildFeed(
   const categoryCounts =
     Object.fromEntries(
       CATEGORIES.map(
-        category => [
+        (category) => [
           category,
           0
         ]
       )
     );
 
+  const preparedArticles = [];
+
+  for (const item of articles) {
+    const localizedTitle =
+      language === "tr"
+        ? item.editorial.titleTr
+        : item.editorial.titleEn;
+
+    const duplicate =
+      preparedArticles.some(
+        (existing) =>
+          existing.category ===
+            item.decision
+              .category &&
+          titleSimilarity(
+            existing.title,
+            localizedTitle
+          ) >= 0.58
+      );
+
+    if (duplicate) {
+      continue;
+    }
+
+    preparedArticles.push({
+      item,
+      title:
+        localizedTitle,
+      category:
+        item.decision.category
+    });
+  }
+
   const outputArticles =
-    articles
-      .map(item => {
+    preparedArticles
+      .map(({ item }) => {
         const category =
           item.decision.category;
 
@@ -2059,70 +2327,54 @@ function buildFeed(
 
         return {
           id: item.id,
-
           title:
             language === "tr"
               ? item.editorial
                   .titleTr
               : item.editorial
                   .titleEn,
-
           excerpt:
             language === "tr"
               ? item.editorial
                   .excerptTr
               : item.editorial
                   .excerptEn,
-
           content:
             language === "tr"
               ? item.editorial
                   .contentTr
               : item.editorial
                   .contentEn,
-
           category,
-
           source:
             item.sourceName,
-
           sourceDomain:
             item.sourceDomain,
-
           sourceTier:
             item.sourceTier,
-
           publishedAt:
             item.publishedAt,
-
           url:
             item.articleUrl,
-
           image:
             item.image,
-
           originalTitle:
             item.title,
-
           originalLanguage:
             item.originalLanguageHint,
-
           contentMode:
             item.contentMode,
-
           editorialScore:
             Number(
               item.decision
                 .editorialScore
             ),
-
           technicalValue:
             Number(
               item.decision
                 .technicalValue ||
               0
             ),
-
           brandFit:
             Number(
               item.decision
@@ -2131,40 +2383,57 @@ function buildFeed(
         };
       })
       .sort(
-        (first, second) =>
+        (a, b) =>
           new Date(
-            second.publishedAt
+            b.publishedAt
           ) -
           new Date(
-            first.publishedAt
+            a.publishedAt
           )
       );
 
+  const coverage =
+    Object.fromEntries(
+      CATEGORIES.map(
+        (category) => [
+          category,
+          {
+            count:
+              categoryCounts[
+                category
+              ],
+            targetMinimum:
+              CATEGORY_MINIMUMS[
+                category
+              ],
+            targetMet:
+              categoryCounts[
+                category
+              ] >=
+              CATEGORY_MINIMUMS[
+                category
+              ]
+          }
+        ]
+      )
+    );
+
   return {
     status: "success",
-
     editorialPolicy:
-      "NOVA Premium " +
-      "AI-Curated Editorial Feed",
-
+      "NOVA Premium AI-Curated Editorial Feed",
     aiModel:
       GEMINI_MODEL,
-
     language,
-
     generatedAt,
-
     retentionDays:
       RETENTION_DAYS,
-
     categories:
       CATEGORIES,
-
     categoryCounts,
-
+    coverage,
     total:
       outputArticles.length,
-
     articles:
       outputArticles
   };
@@ -2182,7 +2451,9 @@ function writeJson(
     );
 
   fs.mkdirSync(
-    path.dirname(outputPath),
+    path.dirname(
+      outputPath
+    ),
     {
       recursive: true
     }
@@ -2203,10 +2474,45 @@ function writeJson(
   );
 }
 
+function printCoverage(
+  completed
+) {
+  console.log(
+    "\nCategory coverage:"
+  );
+
+  for (
+    const category of CATEGORIES
+  ) {
+    const count =
+      completed.filter(
+        (item) =>
+          item.decision
+            .category ===
+          category
+      ).length;
+
+    const minimum =
+      CATEGORY_MINIMUMS[
+        category
+      ];
+
+    const status =
+      count >= minimum
+        ? "OK"
+        : "BELOW TARGET";
+
+    console.log(
+      `${category}: ${count} ` +
+      `(minimum ${minimum}) ` +
+      `[${status}]`
+    );
+  }
+}
+
 async function main() {
   console.log(
-    "Starting NOVA premium " +
-    "editorial workflow with " +
+    "Starting NOVA premium editorial workflow with " +
     GEMINI_MODEL
   );
 
@@ -2220,10 +2526,32 @@ async function main() {
 
   if (!candidates.length) {
     throw new Error(
-      "No candidates discovered " +
-      "from curated sources"
+      "No candidates discovered from curated sources."
     );
   }
+
+  const discoveredByGroup =
+    Object.fromEntries(
+      SOURCE_GROUPS.map(
+        (group) => [
+          group.name,
+          candidates.filter(
+            (candidate) =>
+              candidate.discoveryGroup ===
+              group.name
+          ).length
+        ]
+      )
+    );
+
+  console.log(
+    "Discovery group counts:",
+    JSON.stringify(
+      discoveredByGroup,
+      null,
+      2
+    )
+  );
 
   const classified =
     await classifyCandidates(
@@ -2231,16 +2559,39 @@ async function main() {
     );
 
   console.log(
-    "Gemini-approved unique " +
-    "candidates: " +
+    "Gemini-approved unique candidates: " +
     classified.length
   );
 
   if (!classified.length) {
     throw new Error(
-      "Gemini approved no candidates"
+      "Gemini approved no candidates."
     );
   }
+
+  const approvedByCategory =
+    Object.fromEntries(
+      CATEGORIES.map(
+        (category) => [
+          category,
+          classified.filter(
+            (item) =>
+              item.decision
+                .category ===
+              category
+          ).length
+        ]
+      )
+    );
+
+  console.log(
+    "Approved category counts:",
+    JSON.stringify(
+      approvedByCategory,
+      null,
+      2
+    )
+  );
 
   const extracted =
     await extractSelectedArticles(
@@ -2248,14 +2599,13 @@ async function main() {
     );
 
   console.log(
-    "Articles prepared for " +
-    "editorial writing: " +
+    "Articles prepared for editorial writing: " +
     extracted.length
   );
 
   if (!extracted.length) {
     throw new Error(
-      "No articles were prepared"
+      "No articles were prepared; existing feeds were preserved."
     );
   }
 
@@ -2271,48 +2621,50 @@ async function main() {
 
   if (!completed.length) {
     throw new Error(
-      "Gemini produced no complete " +
-      "bilingual articles"
+      "Gemini produced no publishable bilingual articles."
     );
   }
 
-  writeJson(
-    "data/news-tr.json",
+  const turkishFeed =
     buildFeed(
       completed,
       "tr"
-    )
+    );
+
+  const englishFeed =
+    buildFeed(
+      completed,
+      "en"
+    );
+
+  writeJson(
+    "data/news-tr.json",
+    turkishFeed
   );
 
   writeJson(
     "data/news-en.json",
-    buildFeed(
-      completed,
-      "en"
-    )
+    englishFeed
   );
 
-  for (
-    const category of CATEGORIES
-  ) {
-    const count =
-      completed.filter(
-        item =>
-          item.decision
-            .category ===
-          category
-      ).length;
+  printCoverage(completed);
 
-    console.log(
-      `${category}: ${count}`
-    );
-  }
+  console.log(
+    "\nNOVA news workflow completed successfully."
+  );
+
+  console.log(
+    `Turkish feed: ${turkishFeed.total} articles`
+  );
+
+  console.log(
+    `English feed: ${englishFeed.total} articles`
+  );
 }
 
-main().catch(error => {
+main().catch((error) => {
   console.error(
-    "NOVA premium editorial " +
-    "workflow failed:",
+    "NOVA premium editorial workflow failed:",
     error
   );
 
