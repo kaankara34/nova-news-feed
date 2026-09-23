@@ -6,71 +6,117 @@ const crypto = require("crypto");
 const Parser = require("rss-parser");
 const cheerio = require("cheerio");
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_MODEL =
-  process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
+/*
+ * NOVA News Feed v6
+ *
+ * 1. Curated and category-specific discovery
+ * 2. Deterministic relevance filtering
+ * 3. Gemini editorial review
+ * 4. Publisher verification and article extraction
+ * 5. Bilingual editorial writing
+ * 6. Final quality control and deduplication
+ * 7. Fifteen-day feed preservation
+ */
 
+const SCHEMA_VERSION = 6;
 const RETENTION_DAYS = 15;
-const DISCOVERY_LIMIT = 360;
-const GROUP_DISCOVERY_LIMIT = 36;
-const MIN_ARTICLE_TEXT = 700;
-const MAX_ARTICLE_TEXT = 9000;
-const REQUEST_DELAY_MS = 1100;
 
-if (!GEMINI_API_KEY) {
-  throw new Error(
-    "GEMINI_API_KEY is missing. Add it to GitHub Actions repository secrets."
-  );
-}
+const GEMINI_MODEL =
+  process.env.GEMINI_MODEL ||
+  "gemini-3.5-flash-lite";
 
-const CATEGORIES = [
-  "Art & Exhibitions",
-  "Exhibitions",
-  "Galleries & Museums",
-  "Architecture & Design",
-  "Construction",
-  "Urban Transformation",
-  "Kadıköy",
-  "Technical & Legal",
-  "Fashion & Luxury"
-];
+const GEMINI_API_KEY =
+  process.env.GEMINI_API_KEY || "";
 
-const CATEGORY_LIMITS = {
-  "Art & Exhibitions": 4,
-  Exhibitions: 4,
-  "Galleries & Museums": 4,
-  "Architecture & Design": 5,
-  Construction: 5,
-  "Urban Transformation": 4,
-  Kadıköy: 3,
-  "Technical & Legal": 5,
-  "Fashion & Luxury": 3
+const RSS_CONCURRENCY = 6;
+const EXTRACTION_CONCURRENCY = 3;
+const REQUEST_TIMEOUT_MS = 35_000;
+const GEMINI_DELAY_MS = 650;
+const MIN_FULL_TEXT = 650;
+const MAX_SOURCE_TEXT = 9_000;
+const MAX_CANDIDATES_PER_CATEGORY = 55;
+
+const OUTPUT_TR = path.resolve(
+  __dirname,
+  "..",
+  "data",
+  "news-tr.json"
+);
+
+const OUTPUT_EN = path.resolve(
+  __dirname,
+  "..",
+  "data",
+  "news-en.json"
+);
+
+const CATEGORY_CONFIG = {
+  "Art & Exhibitions": {
+    target: 4,
+    maximum: 5,
+    minScore: 84,
+    allowMetadata: true
+  },
+  Exhibitions: {
+    target: 4,
+    maximum: 5,
+    minScore: 84,
+    allowMetadata: true
+  },
+  "Galleries & Museums": {
+    target: 4,
+    maximum: 5,
+    minScore: 84,
+    allowMetadata: true
+  },
+  "Architecture & Design": {
+    target: 5,
+    maximum: 6,
+    minScore: 83,
+    allowMetadata: true
+  },
+  Construction: {
+    target: 5,
+    maximum: 6,
+    minScore: 80,
+    allowMetadata: false
+  },
+  "Urban Transformation": {
+    target: 3,
+    maximum: 4,
+    minScore: 78,
+    allowMetadata: false
+  },
+  Kadıköy: {
+    target: 3,
+    maximum: 4,
+    minScore: 78,
+    allowMetadata: false
+  },
+  "Technical & Legal": {
+    target: 4,
+    maximum: 5,
+    minScore: 80,
+    allowMetadata: false
+  },
+  "Fashion & Luxury": {
+    target: 3,
+    maximum: 3,
+    minScore: 84,
+    allowMetadata: true
+  }
 };
 
-const CATEGORY_MINIMUMS = {
-  "Art & Exhibitions": 2,
-  Exhibitions: 2,
-  "Galleries & Museums": 2,
-  "Architecture & Design": 3,
-  Construction: 3,
-  "Urban Transformation": 2,
-  Kadıköy: 2,
-  "Technical & Legal": 3,
-  "Fashion & Luxury": 1
-};
+const CATEGORIES =
+  Object.keys(CATEGORY_CONFIG);
 
-const LOCKED_DISCOVERY_CATEGORIES = {
-  "turkey-construction": "Construction",
-  "turkey-urban-transformation": "Urban Transformation",
-  "turkey-official-technical": "Technical & Legal",
-  "istanbul-kadikoy-official": "Kadıköy"
-};
-
-const SOURCE_GROUPS = [
+const ROUTES = [
   {
-    name: "international-art-journalism",
-    categoryHint: "Art & Exhibitions",
+    name: "international-art",
+    category: "Art & Exhibitions",
     language: "en",
+    query:
+      "art exhibition artist museum gallery biennale",
     domains: [
       "theartnewspaper.com",
       "artforum.com",
@@ -81,14 +127,32 @@ const SOURCE_GROUPS = [
       "apollo-magazine.com",
       "artnews.com",
       "hyperallergic.com"
-    ],
-    terms:
-      "art OR exhibition OR museum OR gallery OR biennale"
+    ]
+  },
+  {
+    name: "international-exhibitions",
+    category: "Exhibitions",
+    language: "en",
+    query:
+      "exhibition biennale art fair opening programme",
+    domains: [
+      "artbasel.com",
+      "labiennale.org",
+      "serpentinegalleries.org",
+      "fondationlouisvuitton.fr",
+      "palaisdetokyo.com",
+      "gagosian.com",
+      "hauserwirth.com",
+      "davidzwirner.com",
+      "whitecube.com"
+    ]
   },
   {
     name: "international-museums",
-    categoryHint: "Galleries & Museums",
+    category: "Galleries & Museums",
     language: "en",
+    query:
+      "museum gallery exhibition collection acquisition opening",
     domains: [
       "tate.org.uk",
       "moma.org",
@@ -101,32 +165,14 @@ const SOURCE_GROUPS = [
       "britishmuseum.org",
       "nationalgallery.org.uk",
       "rijksmuseum.nl"
-    ],
-    terms:
-      "exhibition OR opening OR collection OR museum"
+    ]
   },
   {
-    name: "international-galleries-fairs",
-    categoryHint: "Exhibitions",
-    language: "en",
-    domains: [
-      "artbasel.com",
-      "labiennale.org",
-      "serpentinegalleries.org",
-      "fondationlouisvuitton.fr",
-      "palaisdetokyo.com",
-      "gagosian.com",
-      "hauserwirth.com",
-      "davidzwirner.com",
-      "whitecube.com"
-    ],
-    terms:
-      "exhibition OR fair OR artist OR programme"
-  },
-  {
-    name: "turkey-art-institutions",
-    categoryHint: "Galleries & Museums",
+    name: "turkey-art",
+    category: "Galleries & Museums",
     language: "tr",
+    query:
+      "sergi sanat müze galeri bienal açılış koleksiyon",
     domains: [
       "istanbulmodern.org",
       "peramuseum.org",
@@ -134,14 +180,14 @@ const SOURCE_GROUPS = [
       "arter.org.tr",
       "saltonline.org",
       "iksv.org"
-    ],
-    terms:
-      "sergi OR sanat OR müze OR bienal"
+    ]
   },
   {
     name: "architecture-design",
-    categoryHint: "Architecture & Design",
+    category: "Architecture & Design",
     language: "en",
+    query:
+      "architecture building residential design material urbanism completed",
     domains: [
       "dezeen.com",
       "archdaily.com",
@@ -153,14 +199,14 @@ const SOURCE_GROUPS = [
       "designboom.com",
       "wallpaper.com",
       "architizer.com"
-    ],
-    terms:
-      "architecture OR residential OR design OR urbanism"
+    ]
   },
   {
-    name: "construction-engineering-global",
-    categoryHint: "Construction",
+    name: "global-construction",
+    category: "Construction",
     language: "en",
+    query:
+      "building construction structural engineering concrete foundation facade infrastructure",
     domains: [
       "enr.com",
       "newcivilengineer.com",
@@ -172,33 +218,33 @@ const SOURCE_GROUPS = [
       "rilem.net",
       "iabse.org",
       "buildingsmart.org"
-    ],
-    terms:
-      "construction OR structural engineering OR concrete OR building safety"
+    ]
   },
   {
     name: "turkey-construction",
-    categoryHint: "Construction",
+    category: "Construction",
     language: "tr",
+    query:
+      "Türkiye inşaat beton temel taşıyıcı sistem yapı malzemesi yapı teknolojisi mühendislik",
     domains: [
       "aa.com.tr",
       "trthaber.com",
-      "dunya.com",
-      "ekonomim.com",
-      "insaatderyasi.com",
       "yapi.com.tr",
+      "arkitera.com",
       "turkiyeimsad.org",
       "thbb.org",
-      "tmb.org.tr"
-    ],
-    queries: [
-      "Türkiye (inşaat OR beton OR yapı malzemeleri OR yapı teknolojisi OR mühendislik OR sürdürülebilir yapı)"
+      "tmb.org.tr",
+      "imo.org.tr",
+      "csb.gov.tr",
+      "yapiisleri.csb.gov.tr"
     ]
   },
   {
     name: "turkey-urban-transformation",
-    categoryHint: "Urban Transformation",
+    category: "Urban Transformation",
     language: "tr",
+    query:
+      "kentsel dönüşüm riskli yapı yapı stoku Yarısı Bizden rezerv yapı alanı İstanbul",
     domains: [
       "csb.gov.tr",
       "kdb.gov.tr",
@@ -207,55 +253,54 @@ const SOURCE_GROUPS = [
       "resmigazete.gov.tr",
       "toki.gov.tr",
       "aa.com.tr",
-      "trthaber.com"
-    ],
-    queries: [
-      "(kentsel dönüşüm OR riskli yapı OR yapı stoku OR Yarısı Bizden OR rezerv yapı alanı) (İstanbul OR Türkiye)"
+      "trthaber.com",
+      "imo.org.tr"
     ]
   },
   {
-    name: "turkey-official-technical",
-    categoryHint: "Technical & Legal",
+    name: "kadikoy-built-environment",
+    category: "Kadıköy",
     language: "tr",
+    query:
+      "Kadıköy kentsel dönüşüm inşaat imar deprem yapı stoku mimarlık Bağdat Caddesi",
     domains: [
+      "kadikoy.bel.tr",
+      "gazetekadikoy.com.tr",
+      "ibb.istanbul",
+      "ipa.istanbul",
+      "csb.gov.tr",
+      "aa.com.tr",
+      "trthaber.com",
+      "imo.org.tr",
+      "arkitera.com"
+    ]
+  },
+  {
+    name: "turkey-technical-legal",
+    category: "Technical & Legal",
+    language: "tr",
+    query:
+      "yapı yönetmelik değişiklik tebliğ standart deprem mühendisliği beton zemin yapı denetimi imar",
+    domains: [
+      "resmigazete.gov.tr",
       "csb.gov.tr",
       "kdb.gov.tr",
-      "resmigazete.gov.tr",
       "yapiisleri.csb.gov.tr",
       "afad.gov.tr",
       "imo.org.tr",
       "mimarlarodasi.org.tr",
       "tubitak.gov.tr",
-      "mevzuat.gov.tr",
-      "turkiye.gov.tr",
       "thbb.org",
-      "turkiyeimsad.org"
-    ],
-    queries: [
-      "(deprem yönetmeliği OR yapı güvenliği OR beton OR zemin OR temel OR yapı denetimi OR imar yönetmeliği OR yapı ruhsatı)"
-    ]
-  },
-  {
-    name: "istanbul-kadikoy-official",
-    categoryHint: "Kadıköy",
-    language: "tr",
-    domains: [
-      "kadikoy.bel.tr",
-      "ibb.istanbul",
-      "ipa.istanbul",
-      "istanbul.gov.tr",
-      "csb.gov.tr",
-      "aa.com.tr",
-      "trthaber.com"
-    ],
-    queries: [
-      "Kadıköy (kentsel dönüşüm OR inşaat OR imar OR yapı ruhsatı OR deprem OR yapı stoku OR mimarlık OR kent tasarımı OR Bağdat Caddesi)"
+      "turkiyeimsad.org",
+      "tse.org.tr"
     ]
   },
   {
     name: "fashion-luxury",
-    categoryHint: "Fashion & Luxury",
+    category: "Fashion & Luxury",
     language: "en",
+    query:
+      "fashion design craftsmanship heritage exhibition material innovation luxury architecture",
     domains: [
       "vogue.com",
       "voguebusiness.com",
@@ -266,89 +311,305 @@ const SOURCE_GROUPS = [
       "architecturaldigest.com",
       "monocle.com",
       "robbreport.com"
-    ],
-    terms:
-      "fashion design OR craftsmanship OR heritage OR exhibition OR luxury architecture"
+    ]
   }
 ];
 
-const TIER_ONE = new Set([
-  "theartnewspaper.com",
-  "artforum.com",
-  "artreview.com",
-  "frieze.com",
-  "theguardian.com",
-  "tate.org.uk",
-  "moma.org",
-  "metmuseum.org",
-  "guggenheim.org",
-  "louvre.fr",
-  "centrepompidou.fr",
-  "musee-orsay.fr",
-  "vam.ac.uk",
-  "britishmuseum.org",
-  "nationalgallery.org.uk",
-  "rijksmuseum.nl",
-  "artbasel.com",
-  "labiennale.org",
-  "dezeen.com",
-  "archdaily.com",
-  "domusweb.it",
-  "architecturalrecord.com",
-  "architectural-review.com",
-  "architecture.com",
-  "ctbuh.org",
-  "enr.com",
-  "newcivilengineer.com",
-  "ice.org.uk",
-  "asce.org",
-  "fib-international.org",
-  "iccsafe.org",
-  "iabse.org",
-  "csb.gov.tr",
-  "kdb.gov.tr",
-  "resmigazete.gov.tr",
-  "afad.gov.tr",
-  "imo.org.tr",
-  "kadikoy.bel.tr",
-  "ibb.istanbul",
-  "mevzuat.gov.tr",
-  "toki.gov.tr",
-  "aa.com.tr",
-  "trthaber.com",
-  "turkiyeimsad.org",
-  "thbb.org",
-  "tmb.org.tr",
-  "istanbulmodern.org",
-  "peramuseum.org",
-  "sakipsabancimuzesi.org",
-  "arter.org.tr",
-  "saltonline.org",
-  "iksv.org",
-  "vogue.com",
-  "voguebusiness.com",
-  "businessoffashion.com",
-  "wwd.com",
-  "ft.com"
-]);
+const ALLOWED_DOMAINS =
+  new Set(
+    ROUTES.flatMap(
+      (route) => route.domains
+    )
+  );
 
-const ALLOWED_DOMAINS = new Set(
-  SOURCE_GROUPS.flatMap((group) => group.domains)
-);
+const OFFICIAL_STATIC_DOMAINS =
+  new Set([
+    "resmigazete.gov.tr",
+    "csb.gov.tr",
+    "kdb.gov.tr",
+    "yapiisleri.csb.gov.tr",
+    "afad.gov.tr",
+    "toki.gov.tr",
+    "tse.org.tr"
+  ]);
+
+const COMMON_REJECT = [
+  "iş ilanı",
+  "iş başvurusu",
+  "ekip arkadaşı",
+  "personel alımı",
+  "kariyer",
+  "job vacancy",
+  "job opening",
+  "we are hiring",
+  "recruitment",
+  "tender",
+  "ihale ilanı",
+  "satılık",
+  "kiralık",
+  "advertorial",
+  "sponsored",
+  "magazin",
+  "dedikodu",
+  "red carpet",
+  "celebrity style",
+  "best dressed",
+  "konut satışları düştü",
+  "housing crash",
+  "property crash",
+  "piyasa çöküşü"
+];
+
+const KADIKOY_LOCATIONS = [
+  "kadıköy",
+  "kadikoy",
+  "bağdat caddesi",
+  "bagdat caddesi",
+  "caddebostan",
+  "feneryolu",
+  "fenerbahçe",
+  "fenerbahce",
+  "göztepe",
+  "goztepe",
+  "erenköy",
+  "erenkoy",
+  "suadiye",
+  "kozyatağı",
+  "kozyatagi",
+  "bostancı",
+  "bostanci",
+  "moda",
+  "kalamış",
+  "kalamis",
+  "acıbadem",
+  "acibadem",
+  "hasanpaşa",
+  "hasanpasa",
+  "koşuyolu",
+  "kosuyolu",
+  "merdivenköy",
+  "merdivenkoy"
+];
+
+const BUILT_ENVIRONMENT_TERMS = [
+  "inşaat",
+  "insaat",
+  "yapı",
+  "yapi",
+  "bina",
+  "beton",
+  "temel",
+  "zemin",
+  "taşıyıcı",
+  "tasiyici",
+  "strüktür",
+  "struktur",
+  "cephe",
+  "yalıtım",
+  "yalitim",
+  "mimari",
+  "mimarlık",
+  "mimarlik",
+  "mühendis",
+  "muhendis",
+  "deprem",
+  "imar",
+  "ruhsat",
+  "dönüşüm",
+  "donusum",
+  "restorasyon",
+  "güçlendirme",
+  "guclendirme",
+  "construction",
+  "building",
+  "structural",
+  "civil engineering",
+  "concrete",
+  "foundation",
+  "facade",
+  "infrastructure",
+  "retrofit",
+  "seismic",
+  "tower",
+  "bridge",
+  "tunnel",
+  "residential",
+  "architecture"
+];
+
+const URBAN_TRANSFORMATION_TERMS = [
+  "kentsel dönüşüm",
+  "kentsel donusum",
+  "riskli yapı",
+  "riskli yapi",
+  "yapı stoku",
+  "yapi stoku",
+  "yarısı bizden",
+  "yarisi bizden",
+  "rezerv yapı alanı",
+  "rezerv yapi alani",
+  "dönüşüm projesi",
+  "donusum projesi",
+  "6306",
+  "yenileme alanı",
+  "yenileme alani",
+  "deprem dönüşümü",
+  "deprem donusumu"
+];
+
+const TECHNICAL_TERMS = [
+  "yönetmeli",
+  "yonetmeli",
+  "tebliğ",
+  "teblig",
+  "standart",
+  "mevzuat değiş",
+  "yapı denetimi",
+  "yapi denetimi",
+  "deprem mühendisliği",
+  "deprem muhendisligi",
+  "beton",
+  "zemin",
+  "temel",
+  "taşıyıcı sistem",
+  "tasiyici sistem",
+  "güçlendirme",
+  "guclendirme",
+  "imar yönetmeliği",
+  "imar yonetmeligi",
+  "ruhsat",
+  "yangın güvenliği",
+  "yangin guvenligi",
+  "enerji performansı",
+  "enerji performansi",
+  "eurocode",
+  "building code",
+  "structural safety",
+  "seismic",
+  "standard",
+  "regulation"
+];
+
+const NEWS_ACTION_TERMS = [
+  "yayımlandı",
+  "yayimlandi",
+  "yayınlandı",
+  "yayinlandi",
+  "değişti",
+  "degisti",
+  "değiş",
+  "degis",
+  "güncellendi",
+  "guncellendi",
+  "yürürlüğe girdi",
+  "yururluge girdi",
+  "açıklandı",
+  "aciklandi",
+  "duyuruldu",
+  "başladı",
+  "basladi",
+  "onaylandı",
+  "onaylandi",
+  "rapor",
+  "araştırma",
+  "arastirma",
+  "inceleme",
+  "karar",
+  "genelge",
+  "tebliğ",
+  "teblig",
+  "new",
+  "updated",
+  "launched",
+  "announced",
+  "published",
+  "report",
+  "study",
+  "opens",
+  "completed",
+  "unveiled"
+];
+
+const ART_TERMS = [
+  "art",
+  "artist",
+  "exhibition",
+  "museum",
+  "gallery",
+  "biennale",
+  "sculpture",
+  "painting",
+  "installation",
+  "sanat",
+  "sanatçı",
+  "sanatci",
+  "sergi",
+  "müze",
+  "muze",
+  "galeri",
+  "bienal",
+  "heykel",
+  "resim",
+  "koleksiyon"
+];
+
+const FASHION_QUALITY_TERMS = [
+  "craftsmanship",
+  "heritage",
+  "design",
+  "exhibition",
+  "museum",
+  "archive",
+  "material",
+  "textile",
+  "architecture",
+  "zanaat",
+  "miras",
+  "tasarım",
+  "tasarim",
+  "sergi",
+  "arşiv",
+  "arsiv",
+  "tekstil",
+  "malzeme"
+];
+
+const FASHION_REJECT_TERMS = [
+  "wore",
+  "wears",
+  "look of the day",
+  "street style",
+  "best dressed",
+  "celebrity",
+  "singer",
+  "actor",
+  "actress",
+  "şarkıcı",
+  "sarkici",
+  "oyuncu",
+  "what to buy",
+  "shopping",
+  "trend to shop"
+];
 
 const parser = new Parser({
-  timeout: 25000,
+  timeout: 25_000,
   customFields: {
-    item: [["source", "sourceNode"]]
+    item: [
+      ["source", "sourceNode"]
+    ]
   },
   headers: {
     "User-Agent":
-      "NOVA-Editorial-Feed/4.0 (+https://novakonut.com)"
+      "NOVA-Editorial-Feed/6.0 (+https://novakonut.com)"
   }
 });
 
 const sleep = (ms) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+  new Promise(
+    (resolve) =>
+      setTimeout(resolve, ms)
+  );
 
 function cleanText(value = "") {
   return String(value)
@@ -361,7 +622,35 @@ function cleanText(value = "") {
     .trim();
 }
 
-function normalizeDomain(input = "") {
+function fold(value = "") {
+  return cleanText(value)
+    .toLocaleLowerCase("tr-TR")
+    .normalize("NFKD")
+    .replace(
+      /[\u0300-\u036f]/g,
+      ""
+    )
+    .replace(/ı/g, "i");
+}
+
+function includesAny(
+  text,
+  terms
+) {
+  const normalized =
+    fold(text);
+
+  return terms.some(
+    (term) =>
+      normalized.includes(
+        fold(term)
+      )
+  );
+}
+
+function normalizeDomain(
+  input = ""
+) {
   try {
     return new URL(input)
       .hostname
@@ -375,144 +664,151 @@ function normalizeDomain(input = "") {
   }
 }
 
-function domainAllowed(domain) {
-  return [...ALLOWED_DOMAINS].some(
-    (allowed) =>
-      domain === allowed ||
-      domain.endsWith(`.${allowed}`)
+function domainMatches(
+  domain,
+  expected
+) {
+  return (
+    domain === expected ||
+    domain.endsWith(
+      `.${expected}`
+    )
   );
 }
 
-function sourceTier(domain) {
-  return [...TIER_ONE].some(
+function isAllowedDomain(domain) {
+  return [
+    ...ALLOWED_DOMAINS
+  ].some(
+    (allowed) =>
+      domainMatches(
+        domain,
+        allowed
+      )
+  );
+}
+
+function isOfficialStaticDomain(
+  domain
+) {
+  return [
+    ...OFFICIAL_STATIC_DOMAINS
+  ].some(
     (item) =>
-      domain === item ||
-      domain.endsWith(`.${item}`)
-  )
-    ? 1
-    : 2;
+      domainMatches(
+        domain,
+        item
+      )
+  );
 }
 
 function hash(value) {
   return crypto
     .createHash("sha256")
-    .update(value)
+    .update(String(value))
     .digest("hex")
     .slice(0, 20);
 }
 
-function normalizeTitle(title = "") {
-  return cleanText(title)
-    .toLocaleLowerCase("tr-TR")
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9çğıöşü\s]/gi, " ")
+function normalizeTitle(
+  value = ""
+) {
+  return fold(value)
+    .replace(
+      /[^a-z0-9çğıöşü\s]/gi,
+      " "
+    )
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function titleSimilarity(a, b) {
-  const left = new Set(
-    normalizeTitle(a)
-      .split(" ")
-      .filter((word) => word.length > 2)
-  );
+function titleSimilarity(
+  first,
+  second
+) {
+  const left =
+    new Set(
+      normalizeTitle(first)
+        .split(" ")
+        .filter(
+          (word) =>
+            word.length > 2
+        )
+    );
 
-  const right = new Set(
-    normalizeTitle(b)
-      .split(" ")
-      .filter((word) => word.length > 2)
-  );
+  const right =
+    new Set(
+      normalizeTitle(second)
+        .split(" ")
+        .filter(
+          (word) =>
+            word.length > 2
+        )
+    );
 
-  if (!left.size || !right.size) {
+  if (
+    !left.size ||
+    !right.size
+  ) {
     return 0;
   }
 
-  const intersection = [...left].filter((word) =>
-    right.has(word)
-  ).length;
+  const intersection =
+    [...left].filter(
+      (word) =>
+        right.has(word)
+    ).length;
 
-  const union = new Set([
-    ...left,
-    ...right
-  ]).size;
+  const union =
+    new Set([
+      ...left,
+      ...right
+    ]).size;
 
   return intersection / union;
 }
 
-function isRecent(dateValue) {
-  const date = new Date(dateValue);
+function isRecent(value) {
+  const date =
+    new Date(value);
 
-  if (Number.isNaN(date.getTime())) {
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
     return false;
   }
 
-  const cutoff =
+  const earliest =
     Date.now() -
-    RETENTION_DAYS * 24 * 60 * 60 * 1000;
+    RETENTION_DAYS *
+      86_400_000;
+
+  const latest =
+    Date.now() +
+    3_600_000;
 
   return (
-    date.getTime() >= cutoff &&
-    date.getTime() <= Date.now() + 60 * 60 * 1000
+    date.getTime() >= earliest &&
+    date.getTime() <= latest
   );
 }
 
-function buildGoogleNewsUrl(
-  group,
-  domainChunk,
-  customQuery = ""
-) {
-  const sites = domainChunk
-    .map((domain) => `site:${domain}`)
-    .join(" OR ");
-
-  const query =
-    `(${customQuery || group.terms}) ` +
-    `(${sites}) when:${RETENTION_DAYS}d`;
-
-  const params = new URLSearchParams({
-    q: query,
-    hl: group.language === "tr" ? "tr" : "en-US",
-    gl: group.language === "tr" ? "TR" : "US",
-    ceid:
-      group.language === "tr"
-        ? "TR:tr"
-        : "US:en"
-  });
-
-  return (
-    "https://news.google.com/rss/search?" +
-    params.toString()
-  );
-}
-
-function chunk(array, size) {
-  const output = [];
-
-  for (
-    let index = 0;
-    index < array.length;
-    index += size
-  ) {
-    output.push(array.slice(index, index + size));
-  }
-
-  return output;
-}
-
-function extractSource(item) {
+function extractRssSource(item) {
   const node =
     item.sourceNode ||
     item.source;
 
-  const name = cleanText(
-    typeof node === "string"
-      ? node
-      : node?._ ||
-          node?.value ||
-          item.creator ||
-          ""
-  );
+  const name =
+    cleanText(
+      typeof node === "string"
+        ? node
+        : node?._ ||
+            node?.value ||
+            item.creator ||
+            ""
+    );
 
   const url =
     typeof node === "object"
@@ -524,217 +820,471 @@ function extractSource(item) {
   return {
     name,
     url,
-    domain: normalizeDomain(url)
+    domain:
+      normalizeDomain(url)
   };
 }
 
-async function discoverCandidates() {
-  const groupBuckets = [];
+function googleNewsUrl(
+  route,
+  domain
+) {
+  const params =
+    new URLSearchParams({
+      q:
+        `(${route.query}) ` +
+        `site:${domain} ` +
+        `when:${RETENTION_DAYS}d`,
+      hl:
+        route.language === "tr"
+          ? "tr"
+          : "en-US",
+      gl:
+        route.language === "tr"
+          ? "TR"
+          : "US",
+      ceid:
+        route.language === "tr"
+          ? "TR:tr"
+          : "US:en"
+    });
 
-  for (const group of SOURCE_GROUPS) {
-    const groupItems = [];
+  return (
+    "https://news.google.com/" +
+    "rss/search?" +
+    params.toString()
+  );
+}
 
-    for (const expectedDomain of group.domains) {
-      const queries =
-        group.queries || [group.terms];
+async function mapLimit(
+  items,
+  limit,
+  worker
+) {
+  const results =
+    new Array(items.length);
 
-      for (const query of queries) {
-        const url = buildGoogleNewsUrl(
-          group,
-          [expectedDomain],
-          query
-        );
+  let cursor = 0;
 
-        console.log(
-          `Discovering ${group.name}: ` +
-          `${expectedDomain} | ${query}`
-        );
+  async function run() {
+    while (true) {
+      const index =
+        cursor++;
 
-        try {
-          const feed =
-            await parser.parseURL(url);
+      if (
+        index >= items.length
+      ) {
+        return;
+      }
 
-          for (const item of feed.items || []) {
-            const source =
-              extractSource(item);
-
-            const resolvedDomain =
-              source.domain ||
-              expectedDomain;
-
-            if (
-              !domainAllowed(resolvedDomain)
-            ) {
-              continue;
-            }
-
-            const publishedAt =
-              item.isoDate ||
-              item.pubDate;
-
-            if (!isRecent(publishedAt)) {
-              continue;
-            }
-
-            const title =
-              cleanText(item.title);
-
-            if (!title) {
-              continue;
-            }
-
-            groupItems.push({
-              id: hash(
-                `${resolvedDomain}|` +
-                normalizeTitle(title)
-              ),
-              title,
-              description: cleanText(
-                item.contentSnippet ||
-                item.content ||
-                item.summary ||
-                ""
-              ),
-              publishedAt:
-                new Date(
-                  publishedAt
-                ).toISOString(),
-              googleNewsUrl: item.link,
-              sourceName:
-                source.name ||
-                resolvedDomain,
-              sourceUrl:
-                source.url ||
-                `https://${resolvedDomain}`,
-              sourceDomain:
-                resolvedDomain,
-              sourceTier:
-                sourceTier(
-                  resolvedDomain
-                ),
-              categoryHint:
-                group.categoryHint,
-              discoveryGroup:
-                group.name,
-              originalLanguageHint:
-                group.language
-            });
-          }
-        } catch (error) {
-          console.warn(
-            `Discovery failed for ` +
-            `${group.name}/` +
-            `${expectedDomain}: ` +
-            error.message
+      try {
+        results[index] =
+          await worker(
+            items[index],
+            index
           );
-        }
+      } catch (error) {
+        results[index] = {
+          __error: error
+        };
+      }
+    }
+  }
 
-        await sleep(180);
+  await Promise.all(
+    Array.from(
+      {
+        length:
+          Math.min(
+            limit,
+            items.length
+          )
+      },
+      run
+    )
+  );
+
+  return results;
+}
+
+function deterministicEligibility(
+  candidate
+) {
+  const text =
+    `${candidate.title} ` +
+    `${candidate.description}`;
+
+  if (
+    !candidate.title ||
+    !isRecent(
+      candidate.publishedAt
+    )
+  ) {
+    return false;
+  }
+
+  if (
+    includesAny(
+      text,
+      COMMON_REJECT
+    )
+  ) {
+    return false;
+  }
+
+  switch (
+    candidate.proposedCategory
+  ) {
+    case "Kadıköy":
+      return (
+        includesAny(
+          text,
+          KADIKOY_LOCATIONS
+        ) &&
+        includesAny(
+          text,
+          BUILT_ENVIRONMENT_TERMS
+        )
+      );
+
+    case "Urban Transformation":
+      return includesAny(
+        text,
+        URBAN_TRANSFORMATION_TERMS
+      );
+
+    case "Technical & Legal":
+      if (
+        !includesAny(
+          text,
+          TECHNICAL_TERMS
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        isOfficialStaticDomain(
+          candidate.sourceDomain
+        ) &&
+        !includesAny(
+          text,
+          NEWS_ACTION_TERMS
+        )
+      ) {
+        return false;
+      }
+
+      return true;
+
+    case "Construction":
+      return includesAny(
+        text,
+        BUILT_ENVIRONMENT_TERMS
+      );
+
+    case "Architecture & Design":
+      return (
+        includesAny(
+          text,
+          BUILT_ENVIRONMENT_TERMS
+        ) ||
+        includesAny(
+          text,
+          [
+            "design",
+            "tasarım",
+            "tasarim"
+          ]
+        )
+      );
+
+    case "Fashion & Luxury":
+      return (
+        includesAny(
+          text,
+          FASHION_QUALITY_TERMS
+        ) &&
+        !includesAny(
+          text,
+          FASHION_REJECT_TERMS
+        )
+      );
+
+    case "Art & Exhibitions":
+    case "Exhibitions":
+    case "Galleries & Museums":
+      return includesAny(
+        text,
+        ART_TERMS
+      );
+
+    default:
+      return false;
+  }
+}
+
+async function discoverOne({
+  route,
+  domain
+}) {
+  console.log(
+    `Discovering ` +
+    `${route.name}: ` +
+    domain
+  );
+
+  try {
+    const feed =
+      await parser.parseURL(
+        googleNewsUrl(
+          route,
+          domain
+        )
+      );
+
+    const output = [];
+
+    for (
+      const item of
+      feed.items || []
+    ) {
+      const publishedAt =
+        item.isoDate ||
+        item.pubDate;
+
+      const title =
+        cleanText(item.title);
+
+      if (
+        !title ||
+        !isRecent(publishedAt)
+      ) {
+        continue;
+      }
+
+      const source =
+        extractRssSource(item);
+
+      const sourceDomain =
+        source.domain &&
+        isAllowedDomain(
+          source.domain
+        )
+          ? source.domain
+          : domain;
+
+      if (
+        !domainMatches(
+          sourceDomain,
+          domain
+        )
+      ) {
+        continue;
+      }
+
+      const candidate = {
+        id: hash(
+          `${sourceDomain}|` +
+          normalizeTitle(title)
+        ),
+        title,
+        description:
+          cleanText(
+            item.contentSnippet ||
+            item.content ||
+            item.summary ||
+            ""
+          ),
+        publishedAt:
+          new Date(
+            publishedAt
+          ).toISOString(),
+        googleNewsUrl:
+          item.link,
+        sourceName:
+          source.name ||
+          sourceDomain,
+        sourceDomain,
+        proposedCategory:
+          route.category,
+        discoveryRoute:
+          route.name,
+        originalLanguage:
+          route.language
+      };
+
+      if (
+        deterministicEligibility(
+          candidate
+        )
+      ) {
+        output.push(candidate);
       }
     }
 
-    groupItems.sort((a, b) => {
-      if (
-        a.sourceTier !==
-        b.sourceTier
-      ) {
-        return (
-          a.sourceTier -
-          b.sourceTier
-        );
-      }
+    return output;
+  } catch (error) {
+    console.warn(
+      `Discovery failed for ` +
+      `${route.name}/` +
+      `${domain}: ` +
+      error.message
+    );
 
-      return (
-        new Date(b.publishedAt) -
-        new Date(a.publishedAt)
+    return [];
+  }
+}
+
+function assignPreferredCategory(
+  candidates
+) {
+  const priority = {
+    Kadıköy: 9,
+    "Urban Transformation": 8,
+    "Technical & Legal": 7,
+    Construction: 6,
+    "Architecture & Design": 5,
+    "Galleries & Museums": 4,
+    Exhibitions: 3,
+    "Art & Exhibitions": 2,
+    "Fashion & Luxury": 1
+  };
+
+  const byId =
+    new Map();
+
+  for (
+    const candidate of candidates
+  ) {
+    const existing =
+      byId.get(candidate.id);
+
+    if (
+      !existing ||
+      priority[
+        candidate.proposedCategory
+      ] >
+        priority[
+          existing.proposedCategory
+        ]
+    ) {
+      byId.set(
+        candidate.id,
+        candidate
       );
-    });
+    }
+  }
 
-    const uniqueGroupItems = [];
+  return [
+    ...byId.values()
+  ];
+}
 
-    for (const candidate of groupItems) {
+async function discoverCandidates() {
+  const tasks =
+    ROUTES.flatMap(
+      (route) =>
+        route.domains.map(
+          (domain) => ({
+            route,
+            domain
+          })
+        )
+    );
+
+  const results =
+    await mapLimit(
+      tasks,
+      RSS_CONCURRENCY,
+      discoverOne
+    );
+
+  const discovered =
+    assignPreferredCategory(
+      results.flatMap(
+        (result) =>
+          Array.isArray(result)
+            ? result
+            : []
+      )
+    );
+
+  const grouped =
+    Object.fromEntries(
+      CATEGORIES.map(
+        (category) => [
+          category,
+          []
+        ]
+      )
+    );
+
+  for (
+    const candidate of discovered
+  ) {
+    grouped[
+      candidate.proposedCategory
+    ].push(candidate);
+  }
+
+  const balanced = [];
+
+  for (
+    const category of CATEGORIES
+  ) {
+    grouped[category].sort(
+      (first, second) =>
+        new Date(
+          second.publishedAt
+        ) -
+        new Date(
+          first.publishedAt
+        )
+    );
+
+    const unique = [];
+
+    for (
+      const candidate of
+      grouped[category]
+    ) {
       const duplicate =
-        uniqueGroupItems.some(
-          (existing) =>
+        unique.some(
+          (item) =>
             titleSimilarity(
-              existing.title,
+              item.title,
               candidate.title
             ) >= 0.72
         );
 
-      if (!duplicate) {
-        uniqueGroupItems.push(
-          candidate
-        );
+      if (duplicate) {
+        continue;
       }
 
+      unique.push(candidate);
+
       if (
-        uniqueGroupItems.length >=
-        GROUP_DISCOVERY_LIMIT
+        unique.length >=
+        MAX_CANDIDATES_PER_CATEGORY
       ) {
         break;
       }
     }
 
     console.log(
-      `${group.name} reserved candidates: ` +
-      uniqueGroupItems.length
+      `${category} ` +
+      `deterministic candidates: ` +
+      unique.length
     );
 
-    groupBuckets.push(
-      uniqueGroupItems
-    );
+    balanced.push(...unique);
   }
 
-  const unique = [];
-
-  const maxBucketLength =
-    Math.max(
-      0,
-      ...groupBuckets.map(
-        (items) => items.length
-      )
-    );
-
-  for (
-    let index = 0;
-    index < maxBucketLength;
-    index += 1
-  ) {
-    for (const bucket of groupBuckets) {
-      const candidate =
-        bucket[index];
-
-      if (!candidate) {
-        continue;
-      }
-
-      const duplicate =
-        unique.some(
-          (existing) =>
-            titleSimilarity(
-              existing.title,
-              candidate.title
-            ) >= 0.84
-        );
-
-      if (!duplicate) {
-        unique.push(candidate);
-      }
-
-      if (
-        unique.length >=
-        DISCOVERY_LIMIT
-      ) {
-        return unique;
-      }
-    }
-  }
-
-  return unique;
+  return balanced;
 }
 
-const CLASSIFICATION_RESPONSE_SCHEMA = {
+const REVIEW_SCHEMA = {
   type: "OBJECT",
   properties: {
     decisions: {
@@ -747,10 +1297,6 @@ const CLASSIFICATION_RESPONSE_SCHEMA = {
           },
           accept: {
             type: "BOOLEAN"
-          },
-          category: {
-            type: "STRING",
-            enum: CATEGORIES
           },
           editorialScore: {
             type: "INTEGER"
@@ -771,7 +1317,6 @@ const CLASSIFICATION_RESPONSE_SCHEMA = {
         required: [
           "id",
           "accept",
-          "category",
           "editorialScore",
           "technicalValue",
           "brandFit",
@@ -781,10 +1326,12 @@ const CLASSIFICATION_RESPONSE_SCHEMA = {
       }
     }
   },
-  required: ["decisions"]
+  required: [
+    "decisions"
+  ]
 };
 
-const EDITORIAL_RESPONSE_SCHEMA = {
+const EDITORIAL_SCHEMA = {
   type: "OBJECT",
   properties: {
     articles: {
@@ -826,81 +1373,109 @@ const EDITORIAL_RESPONSE_SCHEMA = {
       }
     }
   },
-  required: ["articles"]
+  required: [
+    "articles"
+  ]
 };
 
-function parseGeminiJson(text) {
-  let cleaned = String(text || "")
-    .replace(/^\uFEFF/, "")
-    .replace(
-      /^```(?:json)?\s*/i,
-      ""
-    )
-    .replace(
-      /\s*```$/i,
-      ""
-    )
-    .trim();
+function parseJson(text) {
+  let value =
+    String(text || "")
+      .replace(
+        /^```(?:json)?\s*/i,
+        ""
+      )
+      .replace(
+        /\s*```$/i,
+        ""
+      )
+      .trim();
 
   try {
-    return JSON.parse(cleaned);
+    return JSON.parse(value);
   } catch {
-    // Tolerant repair continues below.
+    // Repair below.
   }
 
-  const first =
-    cleaned.indexOf("{");
+  const start =
+    value.indexOf("{");
 
-  const last =
-    cleaned.lastIndexOf("}");
+  const end =
+    value.lastIndexOf("}");
 
   if (
-    first >= 0 &&
-    last > first
+    start >= 0 &&
+    end > start
   ) {
-    cleaned = cleaned.slice(
-      first,
-      last + 1
-    );
+    value =
+      value.slice(
+        start,
+        end + 1
+      );
   }
 
-  cleaned = cleaned
+  value = value
     .replace(
-      /[\u201C\u201D]/g,
+      /[\u201c\u201d]/gi,
       '"'
-    )
-    .replace(
-      /[\u2018\u2019]/g,
-      "'"
     )
     .replace(
       /,\s*([}\]])/g,
       "$1"
     )
     .replace(
-      /([{,]\s*)([A-Za-z_][A-Za-z0-9_]*)(\s*:)/g,
+      /([,{]\s*)([A-Za-z_][A-Za-z0-9_]*)(\s*:)/g,
       '$1"$2"$3'
     )
     .replace(
-      /[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g,
+      /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,
       " "
     );
 
-  return JSON.parse(cleaned);
+  return JSON.parse(value);
+}
+
+async function fetchWithTimeout(
+  url,
+  options = {},
+  timeoutMs =
+    REQUEST_TIMEOUT_MS
+) {
+  const controller =
+    new AbortController();
+
+  const timer =
+    setTimeout(
+      () =>
+        controller.abort(),
+      timeoutMs
+    );
+
+  try {
+    return await fetch(
+      url,
+      {
+        ...options,
+        signal:
+          controller.signal
+      }
+    );
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 async function callGemini(
   prompt,
-  {
-    maxOutputTokens = 8192,
-    temperature = 0.1,
-    responseSchema = null
-  } = {}
+  schema,
+  maxOutputTokens = 8192
 ) {
   const endpoint =
     "https://generativelanguage.googleapis.com/" +
     "v1beta/models/" +
-    encodeURIComponent(GEMINI_MODEL) +
+    encodeURIComponent(
+      GEMINI_MODEL
+    ) +
     ":generateContent?key=" +
     encodeURIComponent(
       GEMINI_API_KEY
@@ -914,57 +1489,56 @@ async function callGemini(
     attempt += 1
   ) {
     try {
-      const effectivePrompt =
-        attempt > 1
-          ? `${prompt}
-
-Return only valid JSON. Use double-quoted keys and strings. Do not use Markdown code fences or trailing commas.`
-          : prompt;
-
-      const response = await fetch(
-        endpoint,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type":
-              "application/json"
-          },
-          body: JSON.stringify({
-            contents: [
-              {
-                role: "user",
-                parts: [
+      const response =
+        await fetchWithTimeout(
+          endpoint,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type":
+                "application/json"
+            },
+            body:
+              JSON.stringify({
+                contents: [
                   {
-                    text:
-                      effectivePrompt
+                    role: "user",
+                    parts: [
+                      {
+                        text: prompt
+                      }
+                    ]
                   }
-                ]
-              }
-            ],
-            generationConfig: {
-              temperature,
-              topP: 0.8,
-              maxOutputTokens,
-              responseMimeType:
-                "application/json",
-              ...(responseSchema
-                ? {
-                    responseSchema
-                  }
-                : {})
-            }
-          })
-        }
-      );
+                ],
+                generationConfig: {
+                  temperature: 0.05,
+                  topP: 0.8,
+                  maxOutputTokens,
+                  responseMimeType:
+                    "application/json",
+                  responseSchema:
+                    schema
+                }
+              })
+          },
+          90_000
+        );
 
       if (!response.ok) {
         const body =
           await response.text();
 
-        throw new Error(
-          `Gemini API ${response.status}: ` +
-          body.slice(0, 1000)
-        );
+        const error =
+          new Error(
+            `Gemini API ` +
+            `${response.status}: ` +
+            body.slice(0, 900)
+          );
+
+        error.status =
+          response.status;
+
+        throw error;
       }
 
       const body =
@@ -981,17 +1555,32 @@ Return only valid JSON. Use double-quoted keys and strings. Do not use Markdown 
 
       if (!responseText) {
         throw new Error(
-          "Gemini returned an empty response."
+          "Gemini returned an empty response"
         );
       }
 
-      return parseGeminiJson(
+      return parseJson(
         responseText
       );
     } catch (error) {
       lastError = error;
 
-      if (attempt === 4) {
+      const retryable =
+        !error.status ||
+        [
+          429,
+          500,
+          502,
+          503,
+          504
+        ].includes(
+          error.status
+        );
+
+      if (
+        attempt === 4 ||
+        !retryable
+      ) {
         break;
       }
 
@@ -1000,10 +1589,10 @@ Return only valid JSON. Use double-quoted keys and strings. Do not use Markdown 
         2 ** (attempt - 1);
 
       console.warn(
-        `Gemini attempt ${attempt} ` +
-        `failed; retrying in ` +
-        `${delay} ms: ` +
-        error.message
+        `Gemini attempt ` +
+        `${attempt} failed; ` +
+        `retrying in ` +
+        `${delay} ms`
       );
 
       await sleep(delay);
@@ -1013,13 +1602,25 @@ Return only valid JSON. Use double-quoted keys and strings. Do not use Markdown 
   throw lastError;
 }
 
-async function classifyCandidates(
+async function reviewCategory(
+  category,
   candidates
 ) {
-  const decisions = [];
+  const accepted = [];
+  const batches = [];
 
-  const batches =
-    chunk(candidates, 20);
+  for (
+    let index = 0;
+    index < candidates.length;
+    index += 14
+  ) {
+    batches.push(
+      candidates.slice(
+        index,
+        index + 14
+      )
+    );
+  }
 
   for (
     let index = 0;
@@ -1027,329 +1628,507 @@ async function classifyCandidates(
     index += 1
   ) {
     console.log(
-      `Editorial classification ` +
+      `AI review ${category}: ` +
       `${index + 1}/` +
       batches.length
     );
 
-    const compact =
+    const items =
       batches[index].map(
         (item) => ({
           id: item.id,
           title: item.title,
-          description:
+          summary:
             item.description,
           source:
             item.sourceName,
           domain:
             item.sourceDomain,
-          sourceTier:
-            item.sourceTier,
           publishedAt:
-            item.publishedAt,
-          categoryHint:
-            item.categoryHint,
-          discoveryGroup:
-            item.discoveryGroup
+            item.publishedAt
         })
       );
 
     const prompt = `
-You are the senior editor of NOVA, a premium Istanbul residential developer.
+You are the senior news editor for NOVA, a premium Istanbul residential developer.
 
-Assess every supplied news candidate. The source list has already been curated.
+Review candidates for exactly this category:
 
-EDITORIAL IDENTITY
+${category}
 
-- International, cultured, technically serious, restrained and premium.
-- Prefer major museums, established galleries, respected art publications, architecture institutions, engineering bodies and primary public authorities.
-- Technical and legal items must have genuine practical or professional value.
-- Construction items should concern engineering, materials, safety, standards, methods, sustainability, building technology or major civil infrastructure.
-- Fashion items must concern design, craftsmanship, heritage, exhibitions, architecture or serious industry developments.
-- Turkish official, municipal, engineering and standards sources should be judged by authority and practical value rather than journalistic polish.
-
-CATEGORY DEFINITIONS
-
-Construction:
-Building construction, structural or civil engineering, concrete, foundations, façades, materials, building systems, construction methods, major infrastructure, sustainability or construction technology.
-
-Urban Transformation:
-Urban renewal, risky-building renewal, building-stock resilience, earthquake preparation, regeneration policy, transformation legislation, financial support programmes or official transformation projects in Turkey.
-
-Kadıköy:
-The subject must have a direct physical, administrative, architectural or technical connection to Kadıköy, Bağdat Caddesi or a named Kadıköy neighbourhood. Kadıköy construction, planning, urban transformation, building stock, earthquake resilience and municipal technical decisions are preferred.
-
-Technical & Legal:
-Building regulations, zoning, permits, building inspections, earthquake engineering, structural safety, concrete or material standards, soil and foundation engineering or official technical publications with direct relevance to Turkish construction.
-
-Architecture & Design:
-Completed architecture, serious design analysis, institutional architectural programmes, exhibitions, materials and recognised design work.
-
-Art & Exhibitions:
-Significant artists, art-world developments, criticism, cultural programmes and major exhibitions.
-
-Exhibitions:
-Specific current or upcoming exhibition programmes, biennials, art fairs and institutional presentations.
-
-Galleries & Museums:
-Museum and gallery programmes, acquisitions, openings, collection developments and significant institutional announcements.
-
-Fashion & Luxury:
-Design, heritage, craftsmanship, fashion exhibitions, material culture and serious luxury-industry developments. Reject celebrity gossip and shopping content.
-
-MANDATORY REJECTIONS
+NOVA publishes restrained, authoritative, technically serious and culturally sophisticated reporting.
 
 Reject:
-- jobs and recruitment;
+
+- recruitment and job listings;
 - tenders and procurement notices;
-- advertisements and advertorials;
-- generic company press releases;
+- advertorials and sponsored content;
+- generic company promotion;
 - competitor residential project promotion;
-- praise of unrelated construction companies;
-- crime or disaster sensationalism;
-- political polemics;
-- celebrity gossip;
 - clickbait;
-- generic regional stories without engineering, design or institutional value;
-- housing-sales decline;
-- housing crash predictions;
-- negative property-market commentary;
-- biomedical, medical, maritime or unrelated energy research;
-- vague stories whose supplied title and description cannot support reliable reporting;
-- duplicate headlines describing the same event.
+- celebrity gossip;
+- generic housing-market negativity;
+- unrelated regional news;
+- anything only loosely connected to the assigned category.
 
-Do not reject an authoritative ministry, municipality, professional chamber, standards body or engineering institution solely because its wording is formal.
+CATEGORY REQUIREMENTS
 
-Allowed categories:
-${JSON.stringify(CATEGORIES)}
+Kadıköy:
+Direct built-environment relevance to Kadıköy, Bağdat Caddesi or a named Kadıköy neighbourhood is mandatory. Art events alone do not qualify. Accept local construction, urban transformation, planning, building stock, earthquake resilience, infrastructure, architecture and municipal technical decisions.
 
-Return one JSON object only:
+Urban Transformation:
+Must directly concern risky buildings, building-stock renewal, transformation legislation, official support programmes, earthquake-oriented renewal or a substantial urban-regeneration decision in Turkey.
+
+Technical & Legal:
+Must be a genuinely recent regulation, amendment, standard, technical report, engineering study or professional development relevant to Turkish building practice. Static regulation index pages, generic legal pages, cooperative guidance, unrelated local zoning notices and e-government service pages are not news.
+
+Construction:
+Must primarily concern buildings, structural or civil engineering, concrete, foundations, façades, materials, construction methods, building technology or major infrastructure. Reject underwater habitats, semiconductor-company appointments, generic data-centre energy finance and unrelated environmental or medical research.
+
+Fashion & Luxury:
+Accept serious design, craftsmanship, heritage, exhibitions, archives, material innovation and substantive industry analysis. Reject celebrity outfits, shopping recommendations and red-carpet content.
+
+Art, exhibitions and museums:
+Require cultural significance, a respected institution, a substantive exhibition programme or serious criticism.
+
+Do not accept an item merely to fill a quota.
+
+Scores must be calibrated. Do not automatically assign scores above 85.
+
+Return every supplied id exactly once.
+
+eventKey must identify the underlying real-world event so duplicate coverage can be removed.
+
+Return JSON only:
 
 {
   "decisions": [
     {
       "id": "candidate-id",
       "accept": true,
-      "category": "exact allowed category",
       "editorialScore": 0,
       "technicalValue": 0,
       "brandFit": 0,
-      "eventKey": "short normalized event identity",
+      "eventKey": "normalized event identity",
       "reason": "short factual reason"
     }
   ]
 }
 
-SCORING
-
-- Scores must be integers between 0 and 100.
-- International art, architecture, fashion and lifestyle items require editorialScore >= 84 and brandFit >= 82.
-- Authoritative Turkish Construction, Urban Transformation, Kadıköy and Technical & Legal items may be accepted from editorialScore 76 and brandFit 78 when they provide direct professional, regulatory or local value.
-- Do not inflate every score.
-- A metadata-poor or vague item must receive a lower score.
-- Include every supplied id exactly once.
-- Never invent facts.
-
 Candidates:
-${JSON.stringify(compact)}
+
+${JSON.stringify(items)}
 `;
 
     const result =
       await callGemini(
         prompt,
-        {
-          maxOutputTokens: 8192,
-          temperature: 0.05,
-          responseSchema:
-            CLASSIFICATION_RESPONSE_SCHEMA
-        }
+        REVIEW_SCHEMA
       );
 
-    if (
-      Array.isArray(
-        result.decisions
-      )
-    ) {
-      decisions.push(
-        ...result.decisions
+    const decisionMap =
+      new Map(
+        (
+          result.decisions || []
+        ).map(
+          (item) => [
+            item.id,
+            item
+          ]
+        )
       );
+
+    for (
+      const candidate of
+      batches[index]
+    ) {
+      const decision =
+        decisionMap.get(
+          candidate.id
+        );
+
+      if (
+        !decision?.accept
+      ) {
+        continue;
+      }
+
+      if (
+        Number(
+          decision.editorialScore
+        ) <
+        CATEGORY_CONFIG[
+          category
+        ].minScore
+      ) {
+        continue;
+      }
+
+      if (
+        Number(
+          decision.brandFit
+        ) < 80
+      ) {
+        continue;
+      }
+
+      accepted.push({
+        ...candidate,
+        decision
+      });
     }
 
     await sleep(
-      REQUEST_DELAY_MS
+      GEMINI_DELAY_MS
     );
   }
 
-  const decisionMap =
-    new Map(
-      decisions.map(
-        (item) => [
-          item.id,
-          item
-        ]
+  accepted.sort(
+    (first, second) =>
+      Number(
+        second.decision
+          .editorialScore
+      ) -
+      Number(
+        first.decision
+          .editorialScore
       )
-    );
+  );
 
-  const accepted =
-    candidates
-      .map((candidate) => {
-        const rawDecision =
-          decisionMap.get(
-            candidate.id
-          );
-
-        const lockedCategory =
-          LOCKED_DISCOVERY_CATEGORIES[
-            candidate.discoveryGroup
-          ];
-
-        return {
-          ...candidate,
-          decision: rawDecision
-            ? {
-                ...rawDecision,
-                category:
-                  lockedCategory ||
-                  rawDecision.category
-              }
-            : null
-        };
-      })
-      .filter((item) => {
-        if (
-          item.decision?.accept !==
-          true
-        ) {
-          return false;
-        }
-
-        if (
-          !CATEGORIES.includes(
-            item.decision.category
-          )
-        ) {
-          return false;
-        }
-
-        const protectedCategory =
-          [
-            "Construction",
-            "Urban Transformation",
-            "Kadıköy",
-            "Technical & Legal"
-          ].includes(
-            item.decision.category
-          );
-
-        const minimumEditorial =
-          protectedCategory
-            ? 76
-            : 84;
-
-        const minimumBrandFit =
-          protectedCategory
-            ? 78
-            : 82;
-
-        return (
-          Number(
-            item.decision
-              .editorialScore
-          ) >= minimumEditorial &&
-          Number(
-            item.decision.brandFit
-          ) >= minimumBrandFit
-        );
-      })
-      .sort((a, b) => {
-        const scoreDifference =
-          Number(
-            b.decision
-              .editorialScore
-          ) -
-          Number(
-            a.decision
-              .editorialScore
-          );
-
-        if (scoreDifference) {
-          return scoreDifference;
-        }
-
-        return (
-          a.sourceTier -
-          b.sourceTier
-        );
-      });
-
-  const seenEvents =
-    new Set();
-
-  const sourceCategoryCounts =
+  const unique = [];
+  const sourceCounts =
     new Map();
 
-  const deduplicated = [];
-
-  for (const item of accepted) {
+  for (
+    const item of accepted
+  ) {
     const eventKey =
       normalizeTitle(
         item.decision.eventKey ||
         item.title
       );
 
-    const category =
-      item.decision.category;
-
-    const sourceKey =
-      `${category}|` +
-      item.sourceDomain;
-
-    const tooSimilar =
-      deduplicated.some(
+    const duplicate =
+      unique.some(
         (existing) =>
-          existing.decision
-            .category === category &&
-          titleSimilarity(
+          normalizeTitle(
             existing.decision
               .eventKey ||
-              existing.title,
-            item.decision.eventKey ||
-              item.title
-          ) >= 0.58
+            existing.title
+          ) === eventKey ||
+          titleSimilarity(
+            existing.title,
+            item.title
+          ) >= 0.62
       );
 
-    if (
-      seenEvents.has(eventKey) ||
-      tooSimilar
-    ) {
+    if (duplicate) {
       continue;
     }
 
     if (
       (
-        sourceCategoryCounts.get(
-          sourceKey
+        sourceCounts.get(
+          item.sourceDomain
         ) || 0
       ) >= 2
     ) {
       continue;
     }
 
-    seenEvents.add(eventKey);
-
-    sourceCategoryCounts.set(
-      sourceKey,
+    sourceCounts.set(
+      item.sourceDomain,
       (
-        sourceCategoryCounts.get(
-          sourceKey
+        sourceCounts.get(
+          item.sourceDomain
         ) || 0
       ) + 1
     );
 
-    deduplicated.push(item);
+    unique.push(item);
+
+    if (
+      unique.length >=
+      CATEGORY_CONFIG[
+        category
+      ].maximum * 3
+    ) {
+      break;
+    }
   }
 
-  return deduplicated;
+  return unique;
+}
+
+async function reviewCandidates(
+  candidates
+) {
+  const output = [];
+
+  for (
+    const category of CATEGORIES
+  ) {
+    const categoryCandidates =
+      candidates.filter(
+        (item) =>
+          item.proposedCategory ===
+          category
+      );
+
+    if (
+      !categoryCandidates.length
+    ) {
+      continue;
+    }
+
+    output.push(
+      ...await reviewCategory(
+        category,
+        categoryCandidates
+      )
+    );
+  }
+
+  return output;
+}
+
+const decodedGoogleUrls =
+  new Map();
+
+function googleArticleId(
+  urlValue
+) {
+  try {
+    const url =
+      new URL(urlValue);
+
+    const parts =
+      url.pathname
+        .split("/")
+        .filter(Boolean);
+
+    if (
+      url.hostname ===
+        "news.google.com" &&
+      parts.length >= 2 &&
+      [
+        "articles",
+        "read"
+      ].includes(
+        parts.at(-2)
+      )
+    ) {
+      return parts.at(-1);
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+function parseBatchResponse(text) {
+  const pieces =
+    String(text)
+      .replace(
+        /^\)\]\}'\s*/,
+        ""
+      )
+      .split(
+        /\n(?:\n)?/
+      )
+      .map(
+        (item) =>
+          item.trim()
+      )
+      .filter(Boolean);
+
+  for (
+    const piece of pieces
+  ) {
+    if (
+      !piece.startsWith("[")
+    ) {
+      continue;
+    }
+
+    try {
+      const parsed =
+        JSON.parse(piece);
+
+      for (
+        const row of
+        Array.isArray(parsed)
+          ? parsed
+          : []
+      ) {
+        if (
+          Array.isArray(row) &&
+          row[1] === "Fbv4je"
+        ) {
+          const inner =
+            JSON.parse(row[2]);
+
+          if (
+            typeof inner?.[1] ===
+            "string"
+          ) {
+            return inner[1];
+          }
+        }
+      }
+    } catch {
+      // Ignore protocol rows.
+    }
+  }
+
+  return "";
+}
+
+async function decodeGoogleNewsUrl(
+  sourceUrl
+) {
+  if (
+    decodedGoogleUrls.has(
+      sourceUrl
+    )
+  ) {
+    return decodedGoogleUrls.get(
+      sourceUrl
+    );
+  }
+
+  const articleId =
+    googleArticleId(
+      sourceUrl
+    );
+
+  if (!articleId) {
+    return sourceUrl;
+  }
+
+  try {
+    const parameterResponse =
+      await fetchWithTimeout(
+        "https://news.google.com/" +
+        `rss/articles/${articleId}`,
+        {
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/129 Safari/537.36",
+            Accept:
+              "text/html,application/xhtml+xml",
+            "Accept-Language":
+              "en-US,en;q=0.9"
+          }
+        }
+      );
+
+    if (
+      !parameterResponse.ok
+    ) {
+      throw new Error(
+        `parameter status ` +
+        parameterResponse.status
+      );
+    }
+
+    const $ =
+      cheerio.load(
+        await parameterResponse.text()
+      );
+
+    const element = $(
+      "c-wiz > div[jscontroller][data-n-a-sg][data-n-a-ts]"
+    ).first();
+
+    const signature =
+      element.attr(
+        "data-n-a-sg"
+      );
+
+    const timestamp =
+      element.attr(
+        "data-n-a-ts"
+      );
+
+    if (
+      !signature ||
+      !timestamp
+    ) {
+      throw new Error(
+        "decoder parameters missing"
+      );
+    }
+
+    const request = [
+      "Fbv4je",
+      `["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${articleId}",${timestamp},"${signature}"]`
+    ];
+
+    const response =
+      await fetchWithTimeout(
+        "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type":
+              "application/x-www-form-urlencoded;charset=UTF-8",
+            "User-Agent":
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/129 Safari/537.36",
+            Origin:
+              "https://news.google.com",
+            Referer:
+              "https://news.google.com/"
+          },
+          body:
+            `f.req=${
+              encodeURIComponent(
+                JSON.stringify([
+                  [request]
+                ])
+              )
+            }`
+        }
+      );
+
+    if (!response.ok) {
+      throw new Error(
+        `decoder status ` +
+        response.status
+      );
+    }
+
+    const decoded =
+      parseBatchResponse(
+        await response.text()
+      );
+
+    if (!decoded) {
+      throw new Error(
+        "decoded URL missing"
+      );
+    }
+
+    decodedGoogleUrls.set(
+      sourceUrl,
+      decoded
+    );
+
+    return decoded;
+  } catch (error) {
+    console.warn(
+      `Google News decode failed: ` +
+      error.message
+    );
+
+    decodedGoogleUrls.set(
+      sourceUrl,
+      ""
+    );
+
+    return "";
+  }
 }
 
 function absoluteUrl(
@@ -1366,555 +2145,210 @@ function absoluteUrl(
   }
 }
 
-function isPublisherUrl(
+function publisherUrlValid(
   url,
-  expectedDomain
+  domain
 ) {
-  const domain =
-    normalizeDomain(url);
-
-  return Boolean(
-    domain &&
-      (
-        domain ===
-          expectedDomain ||
-        domain.endsWith(
-          `.${expectedDomain}`
-        )
-      )
+  return domainMatches(
+    normalizeDomain(url),
+    domain
   );
 }
 
-const decodedGoogleNewsUrls =
-  new Map();
-
-function getGoogleNewsArticleId(
-  sourceUrl
-) {
-  try {
-    const url =
-      new URL(sourceUrl);
-
-    const parts =
-      url.pathname
-        .split("/")
-        .filter(Boolean);
-
-    if (
-      url.hostname ===
-        "news.google.com" &&
-      parts.length >= 2 &&
-      ["articles", "read"].includes(
-        parts[
-          parts.length - 2
-        ]
-      )
-    ) {
-      return parts[
-        parts.length - 1
-      ];
-    }
-  } catch {
-    return "";
-  }
-
-  return "";
-}
-
-async function getGoogleNewsDecodingParams(
-  articleId
-) {
-  const response = await fetch(
-    "https://news.google.com/" +
-      `rss/articles/${articleId}`,
-    {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36",
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language":
-          "en-US,en;q=0.9"
-      }
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error(
-      "Google News parameter request returned " +
-      response.status
-    );
-  }
-
-  const html =
-    await response.text();
-
-  const $ =
-    cheerio.load(html);
-
-  const element = $(
-    "c-wiz > div[jscontroller][data-n-a-sg][data-n-a-ts]"
-  ).first();
-
-  const signature =
-    element.attr("data-n-a-sg");
-
-  const timestamp =
-    element.attr("data-n-a-ts");
-
-  if (
-    !signature ||
-    !timestamp
-  ) {
-    throw new Error(
-      "Google News decoding parameters were not found."
-    );
-  }
-
-  return {
-    signature,
-    timestamp
-  };
-}
-
-function parseBatchExecutePayload(
-  text
-) {
-  const lines = String(text)
-    .replace(
-      /^\)\]\}'\s*/,
-      ""
+function extractPublishedDate($) {
+  const candidates = [
+    $(
+      'meta[property="article:published_time"]'
+    ).attr("content"),
+    $(
+      'meta[name="date"]'
+    ).attr("content"),
+    $(
+      'meta[name="publish-date"]'
+    ).attr("content"),
+    $(
+      "time[datetime]"
     )
-    .split("\n")
-    .map(
-      (line) => line.trim()
-    )
-    .filter(
-      (line) =>
-        line.startsWith("[")
-    );
-
-  for (const line of lines) {
-    try {
-      const parsed =
-        JSON.parse(line);
-
-      const rows =
-        Array.isArray(parsed)
-          ? parsed
-          : [];
-
-      for (const row of rows) {
-        if (
-          Array.isArray(row) &&
-          (
-            row[0] ===
-              "wrb.fr" ||
-            row[0] ===
-              "w779db"
-          ) &&
-          row[1] ===
-            "Fbv4je"
-        ) {
-          const inner =
-            JSON.parse(row[2]);
-
-          if (
-            typeof inner?.[1] ===
-            "string"
-          ) {
-            return inner[1];
-          }
-        }
-      }
-    } catch {
-      // Ignore unrelated protocol rows.
-    }
-  }
+      .first()
+      .attr("datetime")
+  ].filter(Boolean);
 
   for (
-    const part of
-    String(text).split("\n\n")
+    const value of candidates
   ) {
-    try {
-      const parsed =
-        JSON.parse(
-          part.trim()
-        );
+    const date =
+      new Date(value);
 
-      for (
-        const row of
-        Array.isArray(parsed)
-          ? parsed
-          : []
-      ) {
-        if (
-          Array.isArray(row) &&
-          row[1] ===
-            "Fbv4je"
-        ) {
-          const inner =
-            JSON.parse(row[2]);
-
-          if (
-            typeof inner?.[1] ===
-            "string"
-          ) {
-            return inner[1];
-          }
-        }
-      }
-    } catch {
-      // Continue searching.
+    if (
+      !Number.isNaN(
+        date.getTime()
+      )
+    ) {
+      return date.toISOString();
     }
   }
 
   return "";
 }
 
-async function decodeGoogleNewsUrl(
-  sourceUrl
-) {
-  if (
-    decodedGoogleNewsUrls.has(
-      sourceUrl
-    )
-  ) {
-    return decodedGoogleNewsUrls.get(
-      sourceUrl
-    );
-  }
+function extractJsonLd($) {
+  let best = "";
 
-  const articleId =
-    getGoogleNewsArticleId(
-      sourceUrl
-    );
+  $(
+    "script[type='application/ld+json']"
+  ).each((_, node) => {
+    try {
+      const root =
+        JSON.parse(
+          $(node).html() ||
+          "null"
+        );
 
-  if (!articleId) {
-    return sourceUrl;
-  }
+      const queue =
+        Array.isArray(root)
+          ? [...root]
+          : [root];
 
-  try {
-    const {
-      signature,
-      timestamp
-    } =
-      await getGoogleNewsDecodingParams(
-        articleId
-      );
+      while (queue.length) {
+        const item =
+          queue.shift();
 
-    const request = [
-      "Fbv4je",
-      `["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${articleId}",${timestamp},"${signature}"]`
-    ];
-
-    const body =
-      "f.req=" +
-      encodeURIComponent(
-        JSON.stringify([
-          [request]
-        ])
-      );
-
-    const response =
-      await fetch(
-        "https://news.google.com/_/DotsSplashUi/data/batchexecute",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type":
-              "application/x-www-form-urlencoded;charset=UTF-8",
-            "User-Agent":
-              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36",
-            Accept: "*/*",
-            Origin:
-              "https://news.google.com",
-            Referer:
-              "https://news.google.com/"
-          },
-          body
+        if (
+          !item ||
+          typeof item !==
+            "object"
+        ) {
+          continue;
         }
-      );
 
-    if (!response.ok) {
-      throw new Error(
-        "Google News decoder returned " +
-        response.status
-      );
+        if (
+          typeof item.articleBody ===
+            "string" &&
+          item.articleBody.length >
+            best.length
+        ) {
+          best =
+            cleanText(
+              item.articleBody
+            );
+        }
+
+        if (
+          Array.isArray(
+            item["@graph"]
+          )
+        ) {
+          queue.push(
+            ...item["@graph"]
+          );
+        }
+      }
+    } catch {
+      // Ignore invalid JSON-LD.
     }
+  });
 
-    const decodedUrl =
-      parseBatchExecutePayload(
-        await response.text()
-      );
-
-    if (!decodedUrl) {
-      throw new Error(
-        "Decoded publisher URL was empty."
-      );
-    }
-
-    decodedGoogleNewsUrls.set(
-      sourceUrl,
-      decodedUrl
-    );
-
-    return decodedUrl;
-  } catch (error) {
-    console.warn(
-      "Google News URL decoding failed: " +
-      error.message
-    );
-
-    decodedGoogleNewsUrls.set(
-      sourceUrl,
-      ""
-    );
-
-    return "";
-  }
+  return best;
 }
 
-async function resolveAndExtract(
+async function extractArticle(
   candidate
 ) {
-  const controller =
-    new AbortController();
-
-  const timeout =
-    setTimeout(
-      () =>
-        controller.abort(),
-      45000
-    );
-
   try {
-    const decodedUrl =
+    const decoded =
       await decodeGoogleNewsUrl(
         candidate.googleNewsUrl
       );
 
     if (
-      !decodedUrl ||
-      !isPublisherUrl(
-        decodedUrl,
+      !decoded ||
+      !publisherUrlValid(
+        decoded,
         candidate.sourceDomain
       )
     ) {
-      console.warn(
-        "Publisher URL could not be verified for " +
-        candidate.sourceDomain
-      );
-
       return null;
     }
 
     const response =
-      await fetch(
-        decodedUrl,
+      await fetchWithTimeout(
+        decoded,
         {
           redirect: "follow",
-          signal:
-            controller.signal,
           headers: {
             "User-Agent":
-              "Mozilla/5.0 (compatible; NOVAEditorialBot/4.0; +https://novakonut.com)",
+              "Mozilla/5.0 (compatible; NOVAEditorialBot/6.0; +https://novakonut.com)",
             Accept:
-              "text/html,application/xhtml+xml"
+              "text/html,application/xhtml+xml",
+            "Accept-Language":
+              "tr-TR,tr;q=0.9,en;q=0.7"
           }
         }
       );
 
-    const html =
-      await response.text();
-
-    if (!response.ok) {
+    if (
+      !response.ok ||
+      !publisherUrlValid(
+        response.url,
+        candidate.sourceDomain
+      )
+    ) {
       console.warn(
-        `Publisher returned ${response.status}: ` +
+        `Publisher returned ` +
+        `${response.status}: ` +
         candidate.sourceDomain
       );
 
       return null;
     }
 
-    let articleUrl =
-      response.url;
-
-    let articleHtml =
-      html;
-
-    if (
-      !isPublisherUrl(
-        articleUrl,
-        candidate.sourceDomain
-      )
-    ) {
-      const $news =
-        cheerio.load(html);
-
-      const possibleUrls = [
-        $news(
-          'meta[property="og:url"]'
-        ).attr("content"),
-        $news(
-          'link[rel="canonical"]'
-        ).attr("href"),
-        ...$news("a[href]")
-          .map(
-            (_, node) =>
-              $news(node).attr(
-                "href"
-              )
-          )
-          .get()
-      ]
-        .filter(Boolean)
-        .map((value) =>
-          absoluteUrl(
-            value,
-            response.url
-          )
-        );
-
-      articleUrl =
-        possibleUrls.find(
-          (url) =>
-            isPublisherUrl(
-              url,
-              candidate.sourceDomain
-            )
-        ) || "";
-
-      if (!articleUrl) {
-        return null;
-      }
-
-      const publisherResponse =
-        await fetch(
-          articleUrl,
-          {
-            redirect: "follow",
-            signal:
-              controller.signal,
-            headers: {
-              "User-Agent":
-                "Mozilla/5.0 (compatible; NOVAEditorialBot/4.0; +https://novakonut.com)",
-              Accept:
-                "text/html,application/xhtml+xml"
-            }
-          }
-        );
-
-      if (
-        !publisherResponse.ok
-      ) {
-        console.warn(
-          `Publisher returned ${publisherResponse.status}: ` +
-          candidate.sourceDomain
-        );
-
-        return null;
-      }
-
-      articleUrl =
-        publisherResponse.url;
-
-      articleHtml =
-        await publisherResponse.text();
-    }
-
-    if (
-      !isPublisherUrl(
-        articleUrl,
-        candidate.sourceDomain
-      )
-    ) {
-      return null;
-    }
+    const html =
+      await response.text();
 
     const $ =
-      cheerio.load(articleHtml);
+      cheerio.load(html);
+
+    const publisherDate =
+      extractPublishedDate($);
+
+    if (
+      publisherDate &&
+      !isRecent(
+        publisherDate
+      )
+    ) {
+      console.warn(
+        `Rejected stale ` +
+        `publisher date: ` +
+        candidate.title
+      );
+
+      return null;
+    }
 
     const image =
       absoluteUrl(
         $(
           'meta[property="og:image"]'
         ).attr("content") ||
-          $(
-            'meta[name="twitter:image"]'
-          ).attr("content") ||
-          "",
-        articleUrl
+        $(
+          'meta[name="twitter:image"]'
+        ).attr("content") ||
+        "",
+        response.url
       );
 
-    let jsonLdText = "";
-
-    $(
-      "script[type='application/ld+json']"
-    ).each((_, node) => {
-      try {
-        const parsed =
-          JSON.parse(
-            $(node).html() ||
-            "null"
-          );
-
-        const records =
-          Array.isArray(parsed)
-            ? parsed
-            : [parsed];
-
-        const queue = [
-          ...records
-        ];
-
-        while (queue.length) {
-          const record =
-            queue.shift();
-
-          if (
-            !record ||
-            typeof record !==
-              "object"
-          ) {
-            continue;
-          }
-
-          if (
-            typeof record.articleBody ===
-              "string" &&
-            record.articleBody.length >
-              jsonLdText.length
-          ) {
-            jsonLdText =
-              cleanText(
-                record.articleBody
-              );
-          }
-
-          if (
-            Array.isArray(
-              record["@graph"]
-            )
-          ) {
-            queue.push(
-              ...record["@graph"]
-            );
-          }
-        }
-      } catch {
-        // Ignore invalid JSON-LD.
-      }
-    });
+    let sourceText =
+      extractJsonLd($);
 
     $(
       "script,style,noscript,nav,footer,header,aside,form,button,iframe,svg"
     ).remove();
 
     const selectors = [
-      "article",
-      "main article",
+      "article [itemprop='articleBody']",
       "[itemprop='articleBody']",
+      "article",
       ".article-body",
       ".article__body",
       ".story-body",
@@ -1922,13 +2356,10 @@ async function resolveAndExtract(
       "main"
     ];
 
-    let text =
-      jsonLdText;
-
     for (
       const selector of selectors
     ) {
-      const candidateText =
+      const value =
         cleanText(
           $(selector)
             .first()
@@ -1936,256 +2367,343 @@ async function resolveAndExtract(
         );
 
       if (
-        candidateText.length >
-        text.length
+        value.length >
+        sourceText.length
       ) {
-        text =
-          candidateText;
+        sourceText = value;
       }
     }
 
     if (
-      text.length <
-      MIN_ARTICLE_TEXT
+      sourceText.length <
+      MIN_FULL_TEXT
     ) {
-      console.warn(
-        `Insufficient article text (${text.length}) for ` +
-        candidate.sourceDomain
-      );
-
       return null;
     }
 
     return {
-      articleUrl,
-      image: image || null,
+      articleUrl:
+        response.url,
+      image:
+        image || null,
       sourceText:
-        text.slice(
+        sourceText.slice(
           0,
-          MAX_ARTICLE_TEXT
-        )
+          MAX_SOURCE_TEXT
+        ),
+      verifiedPublishedAt:
+        publisherDate ||
+        candidate.publishedAt,
+      contentMode:
+        "full-source"
     };
   } catch (error) {
     console.warn(
-      "Article extraction failed for " +
-      candidate.sourceDomain +
-      ": " +
+      `Extraction failed for ` +
+      `${candidate.sourceDomain}: ` +
       error.message
     );
 
     return null;
-  } finally {
-    clearTimeout(timeout);
   }
 }
 
-async function extractSelectedArticles(
-  classified
+function metadataFallback(
+  candidate
 ) {
-  const grouped =
-    Object.fromEntries(
-      CATEGORIES.map(
-        (category) => [
-          category,
-          []
-        ]
-      )
-    );
+  const config =
+    CATEGORY_CONFIG[
+      candidate.proposedCategory
+    ];
 
-  for (const item of classified) {
-    grouped[
-      item.decision.category
-    ].push(item);
+  if (
+    !config.allowMetadata
+  ) {
+    return null;
   }
 
-  const extracted = [];
+  const description =
+    cleanText(
+      candidate.description
+    );
+
+  if (
+    description.length < 120 ||
+    titleSimilarity(
+      candidate.title,
+      description
+    ) >= 0.8
+  ) {
+    return null;
+  }
+
+  return {
+    articleUrl:
+      candidate.googleNewsUrl,
+    image: null,
+    sourceText: [
+      `Original title: ${candidate.title}`,
+      `RSS summary: ${description}`,
+      `Publisher: ${candidate.sourceName}`,
+      `Published: ${candidate.publishedAt}`
+    ].join("\n"),
+    verifiedPublishedAt:
+      candidate.publishedAt,
+    contentMode:
+      "metadata-only"
+  };
+}
+
+async function extractReviewed(
+  reviewed
+) {
+  const chosen = [];
 
   for (
     const category of CATEGORIES
   ) {
-    const target =
-      CATEGORY_LIMITS[category];
+    const config =
+      CATEGORY_CONFIG[
+        category
+      ];
 
-    const attempts =
-      grouped[category].slice(
-        0,
-        target * 3
-      );
-
-    console.log(
-      `Extracting ${category}: ` +
-      `${attempts.length} candidates ` +
-      `for max ${target}`
-    );
-
-    for (
-      const candidate of attempts
-    ) {
-      const currentCount =
-        extracted.filter(
+    const categoryItems =
+      reviewed
+        .filter(
           (item) =>
-            item.decision
-              .category ===
+            item.proposedCategory ===
             category
-        ).length;
-
-      if (
-        currentCount >= target
-      ) {
-        break;
-      }
-
-      const content =
-        await resolveAndExtract(
-          candidate
+        )
+        .slice(
+          0,
+          config.maximum * 3
         );
 
-      const metadataSourceText = [
-        `Original title: ${candidate.title}`,
-        `RSS summary: ${
-          candidate.description ||
-          "No additional summary supplied."
-        }`,
-        `Publisher: ${candidate.sourceName}`,
-        `Published at: ${candidate.publishedAt}`
-      ].join("\n");
+    const extracted =
+      await mapLimit(
+        categoryItems,
+        EXTRACTION_CONCURRENCY,
+        async (candidate) => {
+          const full =
+            await extractArticle(
+              candidate
+            );
 
-      extracted.push({
-        ...candidate,
-        ...(content || {
-          articleUrl:
-            candidate.googleNewsUrl,
-          image: null,
-          sourceText:
-            metadataSourceText
-        }),
-        contentMode: content
-          ? "full-source"
-          : "metadata-only"
-      });
+          const content =
+            full ||
+            metadataFallback(
+              candidate
+            );
 
-      await sleep(200);
-    }
-  }
-
-  return extracted;
-}
-
-async function writeEditorialContent(
-  articles
-) {
-  const results = [];
-
-  const batches =
-    chunk(articles, 3);
-
-  for (
-    let index = 0;
-    index < batches.length;
-    index += 1
-  ) {
-    console.log(
-      "Bilingual editorial writing " +
-      `${index + 1}/` +
-      batches.length
-    );
-
-    const input =
-      batches[index].map(
-        (item) => ({
-          id: item.id,
-          originalTitle:
-            item.title,
-          source:
-            item.sourceName,
-          domain:
-            item.sourceDomain,
-          publishedAt:
-            item.publishedAt,
-          category:
-            item.decision.category,
-          contentMode:
-            item.contentMode,
-          sourceText:
-            item.sourceText
-        })
+          return content
+            ? {
+                ...candidate,
+                ...content
+              }
+            : null;
+        }
       );
 
-    const prompt = `
-Act as NOVA's bilingual senior editorial desk.
+    const valid =
+      extracted.filter(
+        (item) =>
+          item &&
+          !item.__error
+      );
 
-Using only the supplied source material, create an original Turkish and English editorial treatment for every item.
+    console.log(
+      `${category} ` +
+      `verified source articles: ` +
+      valid.length
+    );
+
+    chosen.push(
+      ...valid.slice(
+        0,
+        config.maximum
+      )
+    );
+  }
+
+  return chosen;
+}
+
+const FORBIDDEN_EDITORIAL_PHRASES = [
+  "supplied information",
+  "provided metadata",
+  "limited source text",
+  "source material",
+  "according to the records",
+  "this content",
+  "yayıncı verilerine göre",
+  "saglanan bilgiler dogrultusunda",
+  "sağlanan bilgiler doğrultusunda",
+  "sınırlı kaynak",
+  "sinirli kaynak",
+  "paylaşılan kayıtlara göre",
+  "paylasilan kayitlara gore",
+  "bu içerik",
+  "bu icerik",
+  "eldeki veriler"
+];
+
+function wordCount(value) {
+  return cleanText(value)
+    .split(/\s+/)
+    .filter(Boolean)
+    .length;
+}
+
+function editorialQuality(
+  item,
+  source
+) {
+  if (
+    !item?.titleTr ||
+    !item?.titleEn ||
+    !item?.excerptTr ||
+    !item?.excerptEn ||
+    !item?.contentTr ||
+    !item?.contentEn
+  ) {
+    return false;
+  }
+
+  const allText =
+    `${item.titleTr} ` +
+    `${item.titleEn} ` +
+    `${item.excerptTr} ` +
+    `${item.excerptEn} ` +
+    `${item.contentTr} ` +
+    `${item.contentEn}`;
+
+  if (
+    includesAny(
+      allText,
+      FORBIDDEN_EDITORIAL_PHRASES
+    )
+  ) {
+    return false;
+  }
+
+  const minimum =
+    source.contentMode ===
+      "full-source"
+      ? 110
+      : 45;
+
+  if (
+    wordCount(
+      item.contentTr
+    ) < minimum ||
+    wordCount(
+      item.contentEn
+    ) < minimum
+  ) {
+    return false;
+  }
+
+  if (
+    wordCount(
+      item.titleTr
+    ) < 4 ||
+    wordCount(
+      item.titleEn
+    ) < 4
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+async function writeEditorialBatch(
+  batch
+) {
+  const input =
+    batch.map(
+      (item) => ({
+        id: item.id,
+        category:
+          item.proposedCategory,
+        originalTitle:
+          item.title,
+        source:
+          item.sourceName,
+        publishedAt:
+          item.verifiedPublishedAt,
+        contentMode:
+          item.contentMode,
+        sourceText:
+          item.sourceText
+      })
+    );
+
+  const prompt = `
+You are NOVA's bilingual senior editorial desk.
+
+Write original Turkish and English news treatments using ONLY the supplied source material.
 
 ACCURACY
 
-- Do not add a person, institution, number, date, quotation, location, technical conclusion or legal interpretation that is absent from the source material.
-- Do not disguise uncertainty.
-- Return an editorial result for every supplied id.
-- Do not reject an item merely because contentMode is metadata-only.
+- Never invent a person, institution, number, date, location, quotation, technical conclusion or legal interpretation.
+- Never convert an announcement, target or proposal into a completed fact.
+- Attribute technical and legal claims to their source.
+- Do not add background knowledge that is absent from the source material.
 - Do not reproduce long source sentences.
-- Paraphrase faithfully.
-- Never write promotional praise for a construction company or property developer.
-- For laws, regulations and engineering, use precise and neutral language.
-- Clearly attribute regulations and technical claims to the issuing institution.
-- Do not turn a proposal, target or announcement into a completed fact.
-- Do not describe an old event as upcoming when the supplied date indicates otherwise.
+- Do not praise developers, contractors or commercial brands.
+- Do not mention NOVA.
 
-EDITORIAL TONE
+TONE
 
-- Refined, factual, restrained and concise.
-- Suitable for a premium architecture and residential-development brand.
-- Internationally literate without sounding pretentious.
+- Restrained, precise and factual.
+- Culturally sophisticated without sounding pretentious.
+- Native professional Turkish.
+- Native editorial English.
+- No advertising.
+- No hype.
 - No clickbait.
-- No advertising language.
 - No clichés.
+- No translationese.
 - No generic AI filler.
-- Turkish must read as native professional Turkish.
-- English must read as native editorial English.
-- Correct grammar, spelling, institution names and Turkish suffixes.
-- Use digits for measurements, money, dates and large quantities where appropriate.
-- Avoid literal translation structures.
 
 FORBIDDEN WORKFLOW LANGUAGE
 
-Never use phrases such as:
+Never write:
+
 - supplied information;
 - publisher data;
 - limited source text;
-- according to the records;
-- this content;
-- the source material;
 - provided metadata;
-- yayıncı verilerine göre;
-- sağlanan bilgiler doğrultusunda;
-- sınırlı kaynak metin;
-- paylaşılan kayıtlara göre;
-- bu içerik;
+- according to records;
+- this content;
+- source material;
+- sağlanan bilgiler;
+- yayıncı verileri;
+- sınırlı kaynak;
+- paylaşılan kayıtlar;
 - eldeki veriler;
-- detaylar için kaynağa başvurulabilir.
+- bu içerik.
 
 Write the verified facts directly.
 
-OUTPUT REQUIREMENTS
+OUTPUT LENGTH
 
-For every article produce:
+For full-source items:
 
-- titleTr and titleEn:
-  7-16 words, factual, specific and elegant.
+- title: 6-15 words;
+- excerpt: 25-50 words;
+- content: 140-230 words.
 
-- excerptTr and excerptEn:
-  30-60 words.
+For metadata-only items:
 
-- contentTr and contentEn for full-source:
-  180-300 words.
+- title: 6-15 words;
+- excerpt: 20-40 words;
+- content: 55-90 words.
 
-- contentTr and contentEn for metadata-only:
-  60-110 words.
+Use digits for measurements, dates, money and large quantities where appropriate.
 
-Metadata-only content must remain strictly within the supplied title and RSS summary. It must still read like a concise editorial news brief, not like a system note.
-
-Do not mention NOVA.
-
-Retain the supplied category exactly.
+Return every supplied id exactly once.
 
 Return JSON only:
 
@@ -2203,102 +2721,401 @@ Return JSON only:
   ]
 }
 
-Source material:
+Sources:
+
 ${JSON.stringify(input)}
 `;
 
-    const response =
-      await callGemini(
-        prompt,
-        {
-          maxOutputTokens: 8192,
-          temperature: 0.1,
-          responseSchema:
-            EDITORIAL_RESPONSE_SCHEMA
-        }
+  return callGemini(
+    prompt,
+    EDITORIAL_SCHEMA,
+    8192
+  );
+}
+
+async function writeEditorial(
+  articles
+) {
+  const output = [];
+
+  for (
+    let index = 0;
+    index < articles.length;
+    index += 2
+  ) {
+    const batch =
+      articles.slice(
+        index,
+        index + 2
       );
 
-    if (
-      Array.isArray(
-        response.articles
+    console.log(
+      `Bilingual writing ` +
+      `${Math.floor(index / 2) + 1}/` +
+      Math.ceil(
+        articles.length / 2
       )
-    ) {
-      results.push(
-        ...response.articles
+    );
+
+    const response =
+      await writeEditorialBatch(
+        batch
       );
+
+    const byId =
+      new Map(
+        (
+          response.articles || []
+        ).map(
+          (item) => [
+            item.id,
+            item
+          ]
+        )
+      );
+
+    for (
+      const source of batch
+    ) {
+      const editorial =
+        byId.get(source.id);
+
+      if (
+        editorialQuality(
+          editorial,
+          source
+        )
+      ) {
+        output.push({
+          ...source,
+          editorial
+        });
+      } else {
+        console.warn(
+          `Editorial quality rejection: ` +
+          source.title
+        );
+      }
     }
 
     await sleep(
-      REQUEST_DELAY_MS
+      GEMINI_DELAY_MS
     );
   }
 
-  const byId =
-    new Map(
-      results.map(
-        (item) => [
-          item.id,
-          item
-        ]
-      )
-    );
-
-  return articles
-    .map((article) => ({
-      ...article,
-      editorial:
-        byId.get(article.id)
-    }))
-    .filter((article) => {
-      const item =
-        article.editorial;
-
-      return Boolean(
-        item &&
-          item.titleTr &&
-          item.titleEn &&
-          item.excerptTr &&
-          item.excerptEn &&
-          item.contentTr &&
-          item.contentEn
-      );
-    });
+  return output;
 }
 
-function buildFeed(
-  articles,
-  language
-) {
-  const generatedAt =
-    new Date().toISOString();
+function selectFinal(articles) {
+  const selected = [];
+  const globalEvents =
+    new Set();
 
-  const categoryCounts =
-    Object.fromEntries(
-      CATEGORIES.map(
-        (category) => [
-          category,
-          0
-        ]
+  for (
+    const category of CATEGORIES
+  ) {
+    const config =
+      CATEGORY_CONFIG[
+        category
+      ];
+
+    const sourceCounts =
+      new Map();
+
+    const categorySelected = [];
+
+    const candidates =
+      articles
+        .filter(
+          (item) =>
+            item.proposedCategory ===
+            category
+        )
+        .sort(
+          (first, second) =>
+            Number(
+              second.decision
+                .editorialScore
+            ) -
+            Number(
+              first.decision
+                .editorialScore
+            )
+        );
+
+    for (
+      const item of candidates
+    ) {
+      const eventKey =
+        normalizeTitle(
+          item.decision.eventKey ||
+          item.title
+        );
+
+      const duplicate =
+        globalEvents.has(eventKey) ||
+        categorySelected.some(
+          (existing) =>
+            titleSimilarity(
+              existing.editorial
+                .titleTr,
+              item.editorial
+                .titleTr
+            ) >= 0.58 ||
+            titleSimilarity(
+              existing.editorial
+                .titleEn,
+              item.editorial
+                .titleEn
+            ) >= 0.58
+        );
+
+      if (duplicate) {
+        continue;
+      }
+
+      if (
+        (
+          sourceCounts.get(
+            item.sourceDomain
+          ) || 0
+        ) >= 2
+      ) {
+        continue;
+      }
+
+      sourceCounts.set(
+        item.sourceDomain,
+        (
+          sourceCounts.get(
+            item.sourceDomain
+          ) || 0
+        ) + 1
+      );
+
+      globalEvents.add(eventKey);
+
+      categorySelected.push(item);
+
+      if (
+        categorySelected.length >=
+        config.maximum
+      ) {
+        break;
+      }
+    }
+
+    selected.push(
+      ...categorySelected
+    );
+  }
+
+  return selected;
+}
+
+function readExistingPair() {
+  try {
+    const tr =
+      JSON.parse(
+        fs.readFileSync(
+          OUTPUT_TR,
+          "utf8"
+        )
+      );
+
+    const en =
+      JSON.parse(
+        fs.readFileSync(
+          OUTPUT_EN,
+          "utf8"
+        )
+      );
+
+    /*
+     * Old broken feeds are deliberately
+     * not imported into schema v6.
+     */
+    if (
+      tr.schemaVersion !==
+        SCHEMA_VERSION ||
+      en.schemaVersion !==
+        SCHEMA_VERSION
+    ) {
+      return [];
+    }
+
+    const enById =
+      new Map(
+        (
+          en.articles || []
+        ).map(
+          (item) => [
+            item.id,
+            item
+          ]
+        )
+      );
+
+    return (
+      tr.articles || []
+    )
+      .map(
+        (trItem) => ({
+          tr: trItem,
+          en:
+            enById.get(
+              trItem.id
+            )
+        })
       )
+      .filter(
+        (pair) =>
+          pair.en &&
+          isRecent(
+            pair.tr.publishedAt
+          )
+      );
+  } catch {
+    return [];
+  }
+}
+
+function articlePair(item) {
+  const common = {
+    id: item.id,
+    category:
+      item.proposedCategory,
+    source:
+      item.sourceName,
+    sourceDomain:
+      item.sourceDomain,
+    publishedAt:
+      item.verifiedPublishedAt,
+    url:
+      item.articleUrl,
+    image:
+      item.image,
+    originalTitle:
+      item.title,
+    originalLanguage:
+      item.originalLanguage,
+    contentMode:
+      item.contentMode,
+    editorialScore:
+      Number(
+        item.decision
+          .editorialScore
+      ),
+    technicalValue:
+      Number(
+        item.decision
+          .technicalValue ||
+        0
+      ),
+    brandFit:
+      Number(
+        item.decision
+          .brandFit
+      )
+  };
+
+  return {
+    tr: {
+      ...common,
+      title:
+        item.editorial
+          .titleTr,
+      excerpt:
+        item.editorial
+          .excerptTr,
+      content:
+        item.editorial
+          .contentTr
+    },
+    en: {
+      ...common,
+      title:
+        item.editorial
+          .titleEn,
+      excerpt:
+        item.editorial
+          .excerptEn,
+      content:
+        item.editorial
+          .contentEn
+    }
+  };
+}
+
+function mergePairs(
+  newPairs,
+  oldPairs
+) {
+  const combined = [
+    ...newPairs,
+    ...oldPairs
+  ]
+    .filter(
+      (pair) =>
+        pair.tr &&
+        pair.en &&
+        isRecent(
+          pair.tr.publishedAt
+        )
+    )
+    .sort(
+      (first, second) =>
+        new Date(
+          second.tr.publishedAt
+        ) -
+        new Date(
+          first.tr.publishedAt
+        )
     );
 
-  const preparedArticles = [];
+  const output = [];
+  const ids =
+    new Set();
 
-  for (const item of articles) {
-    const localizedTitle =
-      language === "tr"
-        ? item.editorial.titleTr
-        : item.editorial.titleEn;
+  const categoryCounts =
+    new Map();
+
+  for (
+    const pair of combined
+  ) {
+    const category =
+      pair.tr.category;
+
+    if (
+      !CATEGORY_CONFIG[
+        category
+      ] ||
+      ids.has(pair.tr.id)
+    ) {
+      continue;
+    }
+
+    if (
+      (
+        categoryCounts.get(
+          category
+        ) || 0
+      ) >=
+      CATEGORY_CONFIG[
+        category
+      ].maximum
+    ) {
+      continue;
+    }
 
     const duplicate =
-      preparedArticles.some(
+      output.some(
         (existing) =>
-          existing.category ===
-            item.decision
-              .category &&
+          existing.tr.category ===
+            category &&
           titleSimilarity(
-            existing.title,
-            localizedTitle
+            existing.tr.title,
+            pair.tr.title
           ) >= 0.58
       );
 
@@ -2306,91 +3123,61 @@ function buildFeed(
       continue;
     }
 
-    preparedArticles.push({
-      item,
-      title:
-        localizedTitle,
-      category:
-        item.decision.category
-    });
+    ids.add(pair.tr.id);
+
+    categoryCounts.set(
+      category,
+      (
+        categoryCounts.get(
+          category
+        ) || 0
+      ) + 1
+    );
+
+    output.push(pair);
   }
 
-  const outputArticles =
-    preparedArticles
-      .map(({ item }) => {
-        const category =
-          item.decision.category;
+  return output;
+}
 
-        categoryCounts[
-          category
-        ] += 1;
+function buildFeed(
+  pairs,
+  language
+) {
+  const key =
+    language === "tr"
+      ? "tr"
+      : "en";
 
-        return {
-          id: item.id,
-          title:
-            language === "tr"
-              ? item.editorial
-                  .titleTr
-              : item.editorial
-                  .titleEn,
-          excerpt:
-            language === "tr"
-              ? item.editorial
-                  .excerptTr
-              : item.editorial
-                  .excerptEn,
-          content:
-            language === "tr"
-              ? item.editorial
-                  .contentTr
-              : item.editorial
-                  .contentEn,
-          category,
-          source:
-            item.sourceName,
-          sourceDomain:
-            item.sourceDomain,
-          sourceTier:
-            item.sourceTier,
-          publishedAt:
-            item.publishedAt,
-          url:
-            item.articleUrl,
-          image:
-            item.image,
-          originalTitle:
-            item.title,
-          originalLanguage:
-            item.originalLanguageHint,
-          contentMode:
-            item.contentMode,
-          editorialScore:
-            Number(
-              item.decision
-                .editorialScore
-            ),
-          technicalValue:
-            Number(
-              item.decision
-                .technicalValue ||
-              0
-            ),
-          brandFit:
-            Number(
-              item.decision
-                .brandFit
-            )
-        };
-      })
+  const articles =
+    pairs
+      .map(
+        (pair) =>
+          pair[key]
+      )
       .sort(
-        (a, b) =>
+        (first, second) =>
           new Date(
-            b.publishedAt
+            second.publishedAt
           ) -
           new Date(
-            a.publishedAt
+            first.publishedAt
           )
       );
+
+  const categoryCounts =
+    Object.fromEntries(
+      CATEGORIES.map(
+        (category) => [
+          category,
+          articles.filter(
+            (item) =>
+              item.category ===
+              category
+          ).length
+        ]
+      )
+    );
 
   const coverage =
     Object.fromEntries(
@@ -2402,17 +3189,17 @@ function buildFeed(
               categoryCounts[
                 category
               ],
-            targetMinimum:
-              CATEGORY_MINIMUMS[
+            target:
+              CATEGORY_CONFIG[
                 category
-              ],
+              ].target,
             targetMet:
               categoryCounts[
                 category
               ] >=
-              CATEGORY_MINIMUMS[
+              CATEGORY_CONFIG[
                 category
-              ]
+              ].target
           }
         ]
       )
@@ -2420,12 +3207,15 @@ function buildFeed(
 
   return {
     status: "success",
+    schemaVersion:
+      SCHEMA_VERSION,
     editorialPolicy:
-      "NOVA Premium AI-Curated Editorial Feed",
+      "NOVA Verified Premium Editorial Feed",
     aiModel:
       GEMINI_MODEL,
     language,
-    generatedAt,
+    generatedAt:
+      new Date().toISOString(),
     retentionDays:
       RETENTION_DAYS,
     categories:
@@ -2433,34 +3223,24 @@ function buildFeed(
     categoryCounts,
     coverage,
     total:
-      outputArticles.length,
-    articles:
-      outputArticles
+      articles.length,
+    articles
   };
 }
 
 function writeJson(
-  relativePath,
+  file,
   data
 ) {
-  const outputPath =
-    path.resolve(
-      __dirname,
-      "..",
-      relativePath
-    );
-
   fs.mkdirSync(
-    path.dirname(
-      outputPath
-    ),
+    path.dirname(file),
     {
       recursive: true
     }
   );
 
   fs.writeFileSync(
-    outputPath,
+    file,
     `${JSON.stringify(
       data,
       null,
@@ -2470,203 +3250,164 @@ function writeJson(
   );
 
   console.log(
-    `Wrote ${outputPath}`
+    `Wrote ${file}`
   );
-}
-
-function printCoverage(
-  completed
-) {
-  console.log(
-    "\nCategory coverage:"
-  );
-
-  for (
-    const category of CATEGORIES
-  ) {
-    const count =
-      completed.filter(
-        (item) =>
-          item.decision
-            .category ===
-          category
-      ).length;
-
-    const minimum =
-      CATEGORY_MINIMUMS[
-        category
-      ];
-
-    const status =
-      count >= minimum
-        ? "OK"
-        : "BELOW TARGET";
-
-    console.log(
-      `${category}: ${count} ` +
-      `(minimum ${minimum}) ` +
-      `[${status}]`
-    );
-  }
 }
 
 async function main() {
+  if (!GEMINI_API_KEY) {
+    throw new Error(
+      "GEMINI_API_KEY is missing from GitHub Actions secrets"
+    );
+  }
+
   console.log(
-    "Starting NOVA premium editorial workflow with " +
+    `Starting NOVA v` +
+    `${SCHEMA_VERSION} with ` +
     GEMINI_MODEL
   );
 
-  const candidates =
+  const discovered =
     await discoverCandidates();
 
   console.log(
-    "Curated-source candidates: " +
-    candidates.length
+    `Deterministically eligible candidates: ` +
+    discovered.length
   );
 
-  if (!candidates.length) {
+  if (!discovered.length) {
     throw new Error(
-      "No candidates discovered from curated sources."
+      "No eligible candidates were discovered; existing feeds were preserved"
     );
   }
 
-  const discoveredByGroup =
-    Object.fromEntries(
-      SOURCE_GROUPS.map(
-        (group) => [
-          group.name,
-          candidates.filter(
-            (candidate) =>
-              candidate.discoveryGroup ===
-              group.name
-          ).length
-        ]
-      )
+  const reviewed =
+    await reviewCandidates(
+      discovered
     );
 
   console.log(
-    "Discovery group counts:",
-    JSON.stringify(
-      discoveredByGroup,
-      null,
-      2
-    )
+    `Gemini-approved candidates: ` +
+    reviewed.length
   );
 
-  const classified =
-    await classifyCandidates(
-      candidates
-    );
-
-  console.log(
-    "Gemini-approved unique candidates: " +
-    classified.length
-  );
-
-  if (!classified.length) {
+  if (!reviewed.length) {
     throw new Error(
-      "Gemini approved no candidates."
+      "Gemini approved no candidates; existing feeds were preserved"
     );
   }
-
-  const approvedByCategory =
-    Object.fromEntries(
-      CATEGORIES.map(
-        (category) => [
-          category,
-          classified.filter(
-            (item) =>
-              item.decision
-                .category ===
-              category
-          ).length
-        ]
-      )
-    );
-
-  console.log(
-    "Approved category counts:",
-    JSON.stringify(
-      approvedByCategory,
-      null,
-      2
-    )
-  );
 
   const extracted =
-    await extractSelectedArticles(
-      classified
+    await extractReviewed(
+      reviewed
     );
 
   console.log(
-    "Articles prepared for editorial writing: " +
+    `Verified source articles: ` +
     extracted.length
   );
 
   if (!extracted.length) {
     throw new Error(
-      "No articles were prepared; existing feeds were preserved."
+      "No source text could be verified; existing feeds were preserved"
     );
   }
 
-  const completed =
-    await writeEditorialContent(
+  const written =
+    await writeEditorial(
       extracted
     );
 
+  const selected =
+    selectFinal(written);
+
   console.log(
-    "Completed bilingual articles: " +
-    completed.length
+    `New publishable bilingual articles: ` +
+    selected.length
   );
 
-  if (!completed.length) {
+  if (!selected.length) {
     throw new Error(
-      "Gemini produced no publishable bilingual articles."
+      "No articles passed final editorial quality control; existing feeds were preserved"
     );
   }
 
-  const turkishFeed =
+  const merged =
+    mergePairs(
+      selected.map(
+        articlePair
+      ),
+      readExistingPair()
+    );
+
+  const trFeed =
     buildFeed(
-      completed,
+      merged,
       "tr"
     );
 
-  const englishFeed =
+  const enFeed =
     buildFeed(
-      completed,
+      merged,
       "en"
     );
 
   writeJson(
-    "data/news-tr.json",
-    turkishFeed
+    OUTPUT_TR,
+    trFeed
   );
 
   writeJson(
-    "data/news-en.json",
-    englishFeed
-  );
-
-  printCoverage(completed);
-
-  console.log(
-    "\nNOVA news workflow completed successfully."
+    OUTPUT_EN,
+    enFeed
   );
 
   console.log(
-    `Turkish feed: ${turkishFeed.total} articles`
+    "Final category coverage:"
   );
 
-  console.log(
-    `English feed: ${englishFeed.total} articles`
+  for (
+    const category of CATEGORIES
+  ) {
+    const item =
+      trFeed.coverage[
+        category
+      ];
+
+    console.log(
+      `${category}: ` +
+      `${item.count}/` +
+      `${item.target} ` +
+      (
+        item.targetMet
+          ? "OK"
+          : "NO FORCED FILL"
+      )
+    );
+  }
+}
+
+if (
+  require.main === module
+) {
+  main().catch(
+    (error) => {
+      console.error(
+        "NOVA news workflow failed:",
+        error
+      );
+
+      process.exitCode = 1;
+    }
   );
 }
 
-main().catch((error) => {
-  console.error(
-    "NOVA premium editorial workflow failed:",
-    error
-  );
-
-  process.exitCode = 1;
-});
+module.exports = {
+  cleanText,
+  fold,
+  deterministicEligibility,
+  titleSimilarity,
+  isRecent,
+  buildFeed,
+  mergePairs
+};
