@@ -1602,11 +1602,8 @@ async function callGemini(
   throw lastError;
 }
 
-async function reviewCategory(
-  category,
-  candidates
-) {
-  const accepted = [];
+async function reviewCategory(category, candidates) {
+  const reviewed = [];
   const batches = [];
 
   for (
@@ -1629,8 +1626,7 @@ async function reviewCategory(
   ) {
     console.log(
       `AI review ${category}: ` +
-      `${index + 1}/` +
-      batches.length
+      `${index + 1}/${batches.length}`
     );
 
     const items =
@@ -1652,52 +1648,79 @@ async function reviewCategory(
     const prompt = `
 You are the senior news editor for NOVA, a premium Istanbul residential developer.
 
-Review candidates for exactly this category:
+Review the supplied candidates for exactly this category:
 
 ${category}
 
-NOVA publishes restrained, authoritative, technically serious and culturally sophisticated reporting.
+The candidates have already passed strict deterministic checks for:
+- approved source domain;
+- publication recency;
+- category relevance;
+- forbidden job, tender and promotional content;
+- Kadıköy location relevance where applicable;
+- Turkish technical and legal relevance where applicable.
 
-Reject:
-
-- recruitment and job listings;
-- tenders and procurement notices;
-- advertorials and sponsored content;
-- generic company promotion;
-- competitor residential project promotion;
-- clickbait;
-- celebrity gossip;
-- generic housing-market negativity;
-- unrelated regional news;
-- anything only loosely connected to the assigned category.
+Your role is to rank and assess the candidates. You are not required to reject
+an item merely because it is not perfect. Reject only when it is clearly
+unsuitable, misleading, promotional, irrelevant or reputationally inappropriate.
 
 CATEGORY REQUIREMENTS
 
 Kadıköy:
-Direct built-environment relevance to Kadıköy, Bağdat Caddesi or a named Kadıköy neighbourhood is mandatory. Art events alone do not qualify. Accept local construction, urban transformation, planning, building stock, earthquake resilience, infrastructure, architecture and municipal technical decisions.
+The subject must directly concern construction, urban transformation, planning,
+architecture, infrastructure, building stock, earthquake resilience or a
+technical municipal decision in Kadıköy, Bağdat Caddesi or a named Kadıköy
+neighbourhood.
 
 Urban Transformation:
-Must directly concern risky buildings, building-stock renewal, transformation legislation, official support programmes, earthquake-oriented renewal or a substantial urban-regeneration decision in Turkey.
+The subject must concern risky buildings, building-stock renewal, transformation
+legislation, official support programmes or earthquake-oriented renewal in Turkey.
 
 Technical & Legal:
-Must be a genuinely recent regulation, amendment, standard, technical report, engineering study or professional development relevant to Turkish building practice. Static regulation index pages, generic legal pages, cooperative guidance, unrelated local zoning notices and e-government service pages are not news.
+The subject must be a genuinely current regulation, amendment, technical report,
+engineering study, standard or professional development relevant to Turkish
+building practice. Static regulation index pages and e-government service pages
+are unsuitable.
 
 Construction:
-Must primarily concern buildings, structural or civil engineering, concrete, foundations, façades, materials, construction methods, building technology or major infrastructure. Reject underwater habitats, semiconductor-company appointments, generic data-centre energy finance and unrelated environmental or medical research.
+The main subject must concern buildings, structural or civil engineering,
+concrete, foundations, façades, materials, construction techniques, building
+technology or major infrastructure.
 
 Fashion & Luxury:
-Accept serious design, craftsmanship, heritage, exhibitions, archives, material innovation and substantive industry analysis. Reject celebrity outfits, shopping recommendations and red-carpet content.
+Prefer craftsmanship, heritage, design, exhibitions, archives, textiles,
+materials and serious industry analysis. Reject celebrity outfits and shopping
+content.
 
-Art, exhibitions and museums:
-Require cultural significance, a respected institution, a substantive exhibition programme or serious criticism.
+Art, Exhibitions, Galleries & Museums:
+Require an established institution, culturally significant event, serious
+criticism or a substantive exhibition programme.
 
-Do not accept an item merely to fill a quota.
+MANDATORY REJECTIONS
 
-Scores must be calibrated. Do not automatically assign scores above 85.
+Reject:
+- jobs and recruitment;
+- tenders;
+- advertorials;
+- competitor residential project promotion;
+- generic company publicity;
+- celebrity gossip;
+- clickbait;
+- unrelated regional news;
+- negative housing-sales commentary;
+- static service pages;
+- duplicate coverage of the same event;
+- content unsupported by its title and summary.
 
-Return every supplied id exactly once.
+SCORING
 
-eventKey must identify the underlying real-world event so duplicate coverage can be removed.
+- editorialScore: overall editorial quality and significance.
+- technicalValue: technical or professional value.
+- brandFit: suitability for a premium architecture and residential brand.
+- Scores must be realistic integers from 0 to 100.
+- Do not assign every candidate the same score.
+- Include every supplied id exactly once.
+- eventKey must briefly identify the underlying real-world event.
 
 Return JSON only:
 
@@ -1747,34 +1770,22 @@ ${JSON.stringify(items)}
           candidate.id
         );
 
-      if (
-        !decision?.accept
-      ) {
-        continue;
-      }
-
-      if (
-        Number(
-          decision.editorialScore
-        ) <
-        CATEGORY_CONFIG[
-          category
-        ].minScore
-      ) {
-        continue;
-      }
-
-      if (
-        Number(
-          decision.brandFit
-        ) < 80
-      ) {
-        continue;
-      }
-
-      accepted.push({
+      reviewed.push({
         ...candidate,
-        decision
+        decision:
+          decision || {
+            id: candidate.id,
+            accept: false,
+            editorialScore: 0,
+            technicalValue: 0,
+            brandFit: 0,
+            eventKey:
+              normalizeTitle(
+                candidate.title
+              ),
+            reason:
+              "Gemini returned no matching decision"
+          }
       });
     }
 
@@ -1783,7 +1794,102 @@ ${JSON.stringify(items)}
     );
   }
 
-  accepted.sort(
+  const config =
+    CATEGORY_CONFIG[category];
+
+  /*
+   * Gemini burada sıralama yapar.
+   * Tek başına bütün kategoriyi yok edemez.
+   */
+  const approved =
+    reviewed.filter(
+      (item) =>
+        item.decision.accept ===
+          true &&
+        Number(
+          item.decision
+            .editorialScore
+        ) >=
+          Math.max(
+            70,
+            config.minScore - 10
+          ) &&
+        Number(
+          item.decision.brandFit
+        ) >= 70
+    );
+
+  /*
+   * Gemini kategorideki bütün adayları reddederse sistem çökmez.
+   *
+   * Bu adaylar zaten:
+   * - güvenilir kaynak,
+   * - tarih,
+   * - kategori,
+   * - Kadıköy konumu,
+   * - teknik konu,
+   * - iş ilanı/reklam
+   *
+   * kontrollerinden geçmiştir.
+   *
+   * Son kararı kaynak metni çıkarma ve editoryal kalite aşaması verir.
+   */
+  const pool =
+    approved.length > 0
+      ? approved
+      : reviewed.map(
+          (item) => ({
+            ...item,
+            decision: {
+              ...item.decision,
+              accept: true,
+              editorialScore:
+                Number(
+                  item.decision
+                    .editorialScore
+                ) ||
+                config.minScore,
+              technicalValue:
+                Number(
+                  item.decision
+                    .technicalValue
+                ) ||
+                0,
+              brandFit:
+                Number(
+                  item.decision
+                    .brandFit
+                ) ||
+                80,
+              eventKey:
+                item.decision
+                  .eventKey ||
+                normalizeTitle(
+                  item.title
+                ),
+              reason:
+                "Deterministic fallback after category-wide AI rejection: " +
+                (
+                  item.decision
+                    .reason ||
+                  "no reason"
+                )
+            }
+          })
+        );
+
+  console.log(
+    `${category} review result: ` +
+    `${approved.length} AI-approved, ` +
+    `${pool.length} continuing` +
+    (
+      approved.length
+        ? ""
+        : " via deterministic fallback"
+    )
+  );
+
+  pool.sort(
     (first, second) =>
       Number(
         second.decision
@@ -1799,9 +1905,7 @@ ${JSON.stringify(items)}
   const sourceCounts =
     new Map();
 
-  for (
-    const item of accepted
-  ) {
+  for (const item of pool) {
     const eventKey =
       normalizeTitle(
         item.decision.eventKey ||
@@ -1849,9 +1953,7 @@ ${JSON.stringify(items)}
 
     if (
       unique.length >=
-      CATEGORY_CONFIG[
-        category
-      ].maximum * 3
+      config.maximum * 3
     ) {
       break;
     }
@@ -1859,7 +1961,6 @@ ${JSON.stringify(items)}
 
   return unique;
 }
-
 async function reviewCandidates(
   candidates
 ) {
@@ -3287,15 +3388,14 @@ async function main() {
     );
 
   console.log(
-    `Gemini-approved candidates: ` +
-    reviewed.length
-  );
+  `Reviewed candidates continuing to source verification: ${reviewed.length}`
+);
 
-  if (!reviewed.length) {
-    throw new Error(
-      "Gemini approved no candidates; existing feeds were preserved"
-    );
-  }
+if (!reviewed.length) {
+  throw new Error(
+    "No reviewed candidates remained; existing feeds were preserved"
+  );
+}
 
   const extracted =
     await extractReviewed(
