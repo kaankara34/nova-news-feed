@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-09-27T03:40:38.140Z",
+  "generatedAt": "2026-09-28T03:45:24.791Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -26,7 +26,7 @@
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
-    "Fashion & Luxury": 2
+    "Fashion & Luxury": 3
   },
   "coverage": {
     "Art & Exhibitions": {
@@ -70,13 +70,49 @@
       "targetMet": false
     },
     "Fashion & Luxury": {
-      "count": 2,
+      "count": 3,
       "target": 3,
-      "targetMet": false
+      "targetMet": true
     }
   },
-  "total": 22,
+  "total": 23,
   "articles": [
+    {
+      "id": "03d0db222ce904f9bb89",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-09-27T21:15:10.000Z",
+      "url": "https://www.designboom.com/architecture/planted-roof-concrete-casa-cieno-tac-taller-alberto-calleja-oaxacan-coast/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/09/oaxaca-casa-cieno-tac-taller-alberto-calleja-courtyards-planted-roof-pool-designboom-1200.jpg",
+      "originalTitle": "planted roof connects concrete casa cieno by TAC to oaxacan coast - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 82,
+      "technicalValue": 80,
+      "brandFit": 85,
+      "title": "TAC Taller Alberto Calleja Completes Diagonally Oriented Concrete House in Puerto Escondido",
+      "excerpt": "Located on the Oaxacan coast in Mexico, Casa Cieno turns inward rather than facing the sea, organizing its program around a central pool and vegetated courtyards.",
+      "content": "Constructed in Puerto Escondido, Mexico, Casa Cieno was designed by TAC Taller Alberto Calleja on a 1,500 square meter plot. The main volume of the residence is positioned diagonally in relation to the property boundaries, creating green buffer zones between the building and neighboring properties. Serving as the primary visual and spatial anchor, a central pool anchors a layout organized around enclosed courtyards and framed views. The design team separated the social and private areas through the water element, with pathways crossing the pool to connect to two bedrooms. A circular opening in the roof slab frames the sky above the pool, introducing natural light into the interior. The material palette combines exposed concrete and wood, selected in response to the climatic conditions of the Oaxacan coast and intended to age with the site. A green roof extends the living space above, restoring part of the displaced vegetation while contributing to the residence's natural climate control."
+    },
+    {
+      "id": "1dd49df222e06d53c1fc",
+      "category": "Architecture & Design",
+      "source": "ArchDaily",
+      "sourceDomain": "archdaily.com",
+      "publishedAt": "2026-09-26T07:30:00.000Z",
+      "url": "https://www.archdaily.com/1185529/between-burning-forests-and-utopian-cities-designing-the-climate-transition",
+      "image": "https://images.adsttc.com/media/images/6ab1/aefa/472c/aa01/8aa1/4ea6/large_jpg/dont-skip-to-the-end-tools-to-design-a-climate-transition_3.jpg?1790029570",
+      "originalTitle": "Between Burning Forests and Utopian Cities: Designing the Climate Transition - ArchDaily",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 82,
+      "brandFit": 80,
+      "title": "Designing the Climate Transition: Between Catastrophe Scenarios and Technological Utopias",
+      "excerpt": "While climate change discussions frequently focus on apocalyptic scenarios or technological salvation, the crucial, gradual work of multi-decade repair, adaptation, and maintenance remains largely underappreciated in design narratives.",
+      "content": "While cinematic and literary narratives frequently explore climate failure, technological transformations and smart cities offer optimized resource management and new urban futures. Projects such as The Line at NEOM propose entirely new urban conditions independent of existing physical constraints, offering a clean slate for future living. However, the climate transition will rely less on a single breakthrough and more on decades of parallel work streams involving adaptation, maintenance, repair, and resilience. Ordinary interventions—such as retrofitting buildings, gradually shifting energy systems, and restoring landscapes—constitute the cumulative foundation of systemic change. The primary challenge for designers and storytellers lies in visualizing and bringing this slow, distributed middle ground of transformation into the collective imaginary, moving beyond the binary of catastrophe and technological salvation."
+    },
     {
       "id": "9c349692b169c9d3c138",
       "category": "Exhibitions",
@@ -114,22 +150,58 @@
       "content": "The Brown Collection has launched the exhibition titled Fail We May, Sail We Must, on view through August 7, 2027. Curated by Glenn Brown and collection cofounder Edgar Laguinia, the presentation features historic and contemporary paintings, sculptures, drawings, prints, and ceramics by more than twenty artists. The selection highlights how art spanning six centuries can challenge the mind and forge new connections between works not typically seen together, including pieces by Brown himself. In parallel developments, the Fall 2026 issue of Gagosian Quarterly is now available alongside a new catalogue dedicated to Brice Marden. Additionally, artist Adriana Varejão is preparing a series of new paintings and sculptures to represent Brazil at the 61st Biennale di Venezia. Curated by Diane Lima, her exhibition titled Comigo ninguém pode places her in dialogue with Rosana Paulino to reflect on colonial history and the rewriting of the past within the Brazilian Pavilion's Modernist structure."
     },
     {
-      "id": "34acfffd3c9cb0b28b7e",
+      "id": "c76225f38cf97df62296",
       "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
+      "source": "theartnewspaper.com",
       "sourceDomain": "theartnewspaper.com",
       "publishedAt": "2026-09-25T20:24:28.295Z",
       "url": "https://www.theartnewspaper.com/2026/09/25/fondation-beyeler-basel-switzerland-peter-zumthor-expansion",
       "image": "https://cdn.sanity.io/images/cxgd3urn/production/3aa5b25036af8d509e23581c5cb71c79856f9d7c-1024x768.jpg?rect=0,77,1024,614&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Switzerland’s Fondation Beyeler opens £109.7m expansion - The Art Newspaper",
+      "originalTitle": "Switzerland’s Fondation Beyeler opens £109.7m expansion - theartnewspaper.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Basel's Fondation Beyeler Opens £109.7m Expansion Designed by Peter Zumthor",
-      "excerpt": "Switzerland's Fondation Beyeler in Basel is launching a £109.7m expansion featuring three new structures by architect Peter Zumthor and doubled parkland, implementing a controlled opening period for visitors.",
-      "content": "The Fondation Beyeler in Basel, Switzerland, is opening a major expansion project costing approximately SFr 120m, introducing three new structures designed by Swiss architect Peter Zumthor alongside an expanded park area. Funded largely by Swiss entrepreneur Hansjörg Wyss, the primary new gallery building increases the museum's exhibition space by 1,500 sq. m. The expansion also features the freestanding Ammann Pavilion for recitals and performances, and the Erlen Torhaus, which adds office space to an 18th-century villa on the property. Furthermore, the surrounding parkland has doubled to nearly 20,000 sq. m, incorporating new sculptural installations. An exhibition titled Constellations, running until 5 September 2027, connects works across the museum's original Renzo Piano spaces and the new galleries. Eschewing a traditional large celebration, the institution has scheduled a controlled inauguration period from 26 September to 14 January 2027, reducing visitor numbers and opening days to carefully observe and optimize operations based on visitor patterns."
+      "editorialScore": 85,
+      "technicalValue": 65,
+      "brandFit": 90,
+      "title": "Fondation Beyeler in Basel Opens Its £109.7m Expansion",
+      "excerpt": "The Fondation Beyeler in Basel has expanded its exhibition space with three new structures designed by architect Peter Zumthor and extended parklands.",
+      "content": "The Fondation Beyeler in Basel, Switzerland, is opening its extensive expansion project built at a cost of around SFr 120m. Known for its Modern art collection, the museum has added three new structures designed by Swiss architect Peter Zumthor, alongside extended parklands. The principal Wyss building, named after Swiss entrepreneur Hansjörg Wyss who covered most of the cost, increases exhibition space by 1,500 sq. m. Additional structures include the freestanding Ammann Pavilion for recitals and performances, and the Erlen Torhaus office addition. The surrounding parkland has doubled to nearly 20,000 sq. m, featuring newly installed works by artists such as Rachel Whiteread, Pierre Huyghe, and Louise Bourgeois. To optimise visitor processes, the museum has planned a measured inauguration period from 26 September through 14 January, during which visitor numbers to paying exhibitions will be restricted."
+    },
+    {
+      "id": "91f7ce054fd2e8ad93b8",
+      "category": "Art & Exhibitions",
+      "source": "theartnewspaper.com",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-09-25T15:24:27.127Z",
+      "url": "https://www.theartnewspaper.com/2026/09/25/turner-prize-2026-open-north-yorkshire-middlesbrough-institute-of-modern-art",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/a5e996ea1ea8a40c717d3fcf34948c3ececf17a4-1775x981.jpg?rect=71,0,1635,981&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "Turner Prize 2026 opens in North Yorkshire at the Middlesbrough Institute of Modern Art - theartnewspaper.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 50,
+      "brandFit": 85,
+      "title": "Turner Prize 2026 Exhibition Opens at Middlesbrough Institute",
+      "excerpt": "The 2026 Turner Prize exhibition has opened to the public at the Middlesbrough Institute of Modern Art in northern England.",
+      "content": "The latest Turner Prize exhibition has opened to the public at the Middlesbrough Institute of Modern Art in northeast England. Shortlisted artists Tanoa Sasraku, Marguerite Humeau, Simeon Barclay, and Kira Freije are featured following their solo exhibitions from the past year. The selected artists engage with subjects such as ecological thought, human precarity, oil geopolitics, and the experience of deindustrialisation. Sasraku explores extractivism through immersive settings, while Humeau creates sculptural compositions from materials including beeswax and ancient wood. Barclay presents an architectural intervention exploring masculine identity and class, and Freije exhibits fragile figurative sculptures made from steel and aluminium. According to Tate Britain director Alex Farquharson, the works represent a cross-section of visual arts in Britain today. The winner will be announced on 10 December during a ceremony at the institute, receiving £25,000, while runners-up will be awarded £10,000 each."
+    },
+    {
+      "id": "5bbd795ebb63958a159e",
+      "category": "Art & Exhibitions",
+      "source": "theguardian.com",
+      "sourceDomain": "theguardian.com",
+      "publishedAt": "2026-09-25T11:00:48.000Z",
+      "url": "https://www.theguardian.com/artanddesign/2026/sep/25/turner-prize-the-week-in-art",
+      "image": "https://i.guim.co.uk/img/media/6df8e4cfe9dcd2ae7ec0099db2d7eda60e9eb9e8/0_1503_4073_3257/master/4073.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0bb1f6025180c3242c30ac24f391160c",
+      "originalTitle": "K-art, William Kentridge and a Turner prize worth getting excited for – the week in art - theguardian.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 45,
+      "brandFit": 90,
+      "title": "Key Art Exhibitions and Events Across London and Middlesbrough This Week",
+      "excerpt": "This week's cultural highlights feature the Turner prize exhibition in Middlesbrough alongside sweeping surveys of Korean art and new animation in London.",
+      "content": "The MIMA gallery in Middlesbrough hosts the Turner prize exhibition featuring works by Kira Freije, Simeon Barclay, Tanoa Sasraku, and Marguerite Humeau from 26 September until 29 March. The British Museum presents a survey of 2,000 years of Korean art, belief, and philosophy from 1 October until 31 January. In London, the Paul Stolper Gallery exhibits paintings and a film by Turner prize winner Mark Wallinger through 24 October, exploring abstraction and nature. At the Goodman Gallery, a new animated film by William Kentridge runs until 7 November. Meanwhile, the National Gallery features Rembrandt's pensive portrayal of an elderly man as Saint Paul, drawing viewers into a direct confrontation with the human condition. Elsewhere, the Greek prime minister stated that an agreement regarding the return of the Parthenon marbles could still be reached, according to recent reports."
     },
     {
       "id": "38a2c58e1287a8cf5d79",
@@ -168,24 +240,6 @@
       "content": "The life and collecting journey of Swiss pioneer Gertrud Dübi-Müller are the focus of an exhibition at the Kunstmuseum Basel. Inheriting wealth from her family's engineering business after being orphaned at a young age, Müller acquired Vincent van Gogh's Portrait of Charles-Elzéard Trabuc in 1908 when she was only 19 years old. This purchase predated widespread international recognition for the artist and sparked considerable enthusiasm among her avant-garde circle, including artists Cuno Amiet and Giovanni Giacometti. Alongside her early art acquisitions, Müller led an adventurous life, becoming the first woman in Solothurn to own a car. She later married lawyer Otto Dübi in 1921 and maintained her dedication to modern art throughout her life. Upon her death in 1980, Dübi-Müller bequeathed 190 works to the Kunstmuseum Solothurn, including pieces by Paul Cezanne, Henri Matisse, and Pablo Picasso alongside works by her Swiss artist friends. The exhibition runs until 7 February 2027, highlighting her remarkable early acquisition and her enduring engagement with modern art."
     },
     {
-      "id": "d40381725b4effe9987a",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-09-25T10:28:16.571Z",
-      "url": "https://www.theartnewspaper.com/2026/09/25/ai-weiwei-unveils-500-cast-iron-combat-helmets-in-sydney",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/3c6536bb8263c9a4f4883e049d1f7de247ef5e5a-2048x1366.jpg?rect=0,69,2048,1229&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "‘It is not a political joke’: Ai Weiwei unveils 500 cast-iron combat helmets in Sydney - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 50,
-      "brandFit": 92,
-      "title": "Ai Weiwei Unveils 500 Cast-Iron Combat Helmets Installation in Sydney",
-      "excerpt": "Chinese contemporary artist Ai Weiwei has unveiled \"Mushrooms\" in Sydney, a public artwork comprising 500 cast-iron combat helmets that reflects on nations' inadequate responses to global crises.",
-      "content": "Chinese contemporary artist Ai Weiwei has unveiled his latest work, titled \"Mushrooms,\" outside the Museum of Contemporary Art Australia in Sydney. On view for seven months, the artwork comprises 500 cast-iron combat helmets arranged in ten uniform rows. According to the artist, the title references growth in darkness, nuclear mushroom clouds, and connotations of endless delays in Chinese. The concept originated when Germany offered 5,000 helmets to aid Ukraine in early 2022, a response widely criticized as feeble. Clarifying that the piece is not a political joke, the artist stated that the work demonstrates the shallow understanding modern national leadership holds regarding the human condition and future uncertainties. Pointing to both armed conflicts and the rapid advancement of artificial intelligence as challenges to traditional human value systems, the artist emphasized that speaking out on human rights and freedom of expression remains a vital form of human resistance."
-    },
-    {
       "id": "92bdabbd51a736d33b98",
       "category": "Exhibitions",
       "source": "artbasel.com",
@@ -196,30 +250,12 @@
       "originalTitle": "Why Toronto is fast becoming unmissable for art - artbasel.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 80,
       "technicalValue": 60,
-      "brandFit": 88,
-      "title": "Toronto's Expanding Art Scene and New Infrastructure Initiatives",
-      "excerpt": "Kenneth Montague, founder of The Wedge Collection, notes that Toronto's hybrid identity rooted in a majority immigrant population forms the foundation of the city's contemporary art scene.",
-      "content": "With 51 percent of its population born abroad, Toronto's cultural hybridity underpins its growing arts ecosystem. This diversity was highlighted at the Venice Biennale, which featured artists such as Alexa Kumiko Hatanaka, Rajni Perera, Abbas Akhavan, and Manuel Mathieu. Currently in its fourth edition, the Toronto Biennial, curated by Allison Glenn under the title Things Fall Apart, examines shared geographies along the Great Lakes across venues ranging from a Sikh Gurdwara to the St George Subway Station and the Aga Khan Museum. Along the waterfront in the revitalized Port Lands district, the Lassonde Art Trail has opened with 17 new commissions supported by a CAD 25 million seed grant from philanthropist Pierre Lassonde. The trail features a major public sculpture by Kent Monkman. Meanwhile, artists like Rajni Perera and Nirbhai Singh Sidhu are establishing independent studio and exhibition spaces, while established institutions such as the Art Gallery of Ontario and MOCA continue to expand their facilities and programming for the city's visual arts community."
-    },
-    {
-      "id": "a426c0f8582c01b71d9d",
-      "category": "Art & Exhibitions",
-      "source": "The Guardian",
-      "sourceDomain": "theguardian.com",
-      "publishedAt": "2026-09-25T00:00:33.000Z",
-      "url": "https://www.theguardian.com/artanddesign/2026/sep/25/ai-weiwei-unveils-mushrooms-new-public-artwork-tallawoladah-lawn-sydney-mca",
-      "image": "https://i.guim.co.uk/img/media/3c6536bb8263c9a4f4883e049d1f7de247ef5e5a/144_0_1707_1366/master/1707.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=df86e758904acb12676d07860dfedbaf",
-      "originalTitle": "Ai Weiwei unveils his epic new Australian work: ‘90% of art is just garbage. Real art questions the existing order’ - The Guardian",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
       "brandFit": 85,
-      "title": "Ai Weiwei Unveils New Monumental Sculpture Installation on Sydney Harbour",
-      "excerpt": "Artist Ai Weiwei has unveiled Mushrooms, a 40-metre-long installation focused on the themes of war and combat helmets outside Sydney's Museum of Contemporary Art.",
-      "content": "Living on his farm in Portugal, artist Ai Weiwei has unveiled his latest large-scale installation titled Mushrooms, displayed on the Tallawoladah Lawn outside Sydney's Museum of Contemporary Art. The work measures 40 metres in length and features 500 identical cast-iron sculptures of combat helmets arranged on an elevated platform. The title draws a visual connection between mushroom caps and the shape of military helmets, while also invoking associations with decay, death, and the fragility of life exposed by armed conflict. Ai stated that the origins of the commission trace back to his 2015 documentary Human Flow, which led him to study contemporary warfare and the mechanics of munitions. Reflecting on the early stages of the Russia-Ukraine conflict, he recalled Germany offering 5,000 helmets to Ukraine. Having visited Ukrainian soldiers on the frontline four times last year, the artist sought to highlight the realities of war against a backdrop overlooking the Sydney Opera House. Critiquing the contemporary art world, Ai asserted that the majority of museum works are decorative rather than connected to human struggle, maintaining that real art must question the existing order."
+      "title": "Toronto Arts Scene Expands Amid Diversity and Infrastructure Growth",
+      "excerpt": "Toronto is gaining prominence in the art world through its immigrant population and hybrid cultural fabric. Biennials, new art trails, and independent spaces strengthen the city's infrastructure, while commercial and studio space needs shape ongoing developments.",
+      "content": "Kenneth Montague, founder of The Wedge Collection, notes that Toronto's hybrid identity and multicultural fabric form the foundation of Canadian art. With 51 percent of its population born abroad, the city hosts a dynamic scene featuring artists showcased at international platforms like the Venice Biennale. Running its fourth edition this current month, the Toronto Biennial centers on the shared geographies of the Great Lakes and Indigenous artists to foster global dialogue. Along the waterfront, the Lassonde Art Trail—backed by 25 million dollars in seed funding from Pierre Lassonde—features 17 new commissions winding through Biidaasige Park. While curators and directors highlight the civic impact of these urban revitalization projects, artists point out that commercial infrastructure remains critical for the ecosystem. Artist-run spaces and newly established downtown studio initiatives maintain a grassroots momentum, while institutions like the Art Gallery of Ontario and MOCA expand their programming and gallery footprints. Local participants observe that while Toronto's collector base holds significant potential, the demand for affordable studio spaces and institutional growth continues as the local arts community navigates rapid urban development."
     },
     {
       "id": "a7588875cf8ec4f2e2b4",
@@ -232,12 +268,12 @@
       "originalTitle": "Major Retrospective of Sri Lankan Architect Geoffrey Bawa Opens at the Vitra Design Museum - Architectural Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 82,
-      "brandFit": 92,
-      "title": "Sri Lankan Architect Geoffrey Bawa Celebrated in Major Retrospective",
-      "excerpt": "The Vitra Design Museum hosts the first major Geoffrey Bawa retrospective in over 20 years, examining the architect's five-decade career through drawings, models, and archival documents.",
-      "content": "Recognized as one of the most influential architects in 20th-century Asia, Sri Lankan-born Geoffrey Bawa's illustrious five-decade career is the subject of a major retrospective at the Vitra Design Museum in Weil am Rhein, Germany. Running from September 26 through February 28, 2027, the exhibition titled Geoffrey Bawa: Architecture for the Senses features more than 250 drawings, models, photographs, furniture pieces, and archival documents. Organized by the Vitra Design Museum, M+, and the Wüstenrot Foundation in collaboration with the Geoffrey Bawa Trust, the showcase spans diverse projects such as the Bentota Beach Hotel, the Kandalama Hotel, and his country estate Lunuganga. Newly commissioned photographs by Iwan Baan highlight the buildings' close relationships with their surrounding landscapes. The retrospective emphasizes Bawa's integration of terrain, rocks, and vegetation into spatial sequences, as well as his collaborations with Sri Lankan artists and craftspeople including Laki Senanayake, Ena de Silva, and Barbara Sansoni. Featuring scenography by Lebanese architect Lina Ghotmeh, the exhibition will travel to M+ in Hong Kong in June 2027 following its German presentation."
+      "editorialScore": 90,
+      "technicalValue": 80,
+      "brandFit": 95,
+      "title": "Vitra Design Museum Opens Major Retrospective of Sri Lankan Architect Geoffrey Bawa",
+      "excerpt": "The Vitra Design Museum in Germany is hosting a major retrospective examining the five-decade career of Sri Lankan architect Geoffrey Bawa through more than 250 works.",
+      "content": "The Vitra Design Museum in Weil am Rhein, Germany, is hosting a major retrospective dedicated to Sri Lankan architect Geoffrey Bawa. Titled 'Geoffrey Bawa: Architecture for the Senses', the exhibition runs from September 26 through February 28, 2027, and examines the architect's five-decade career through more than 250 drawings, models, photographs, furniture pieces, and archival documents. Marking the first major retrospective of Bawa in over 20 years, the exhibition is organized by the Vitra Design Museum, M+, and the Wüstenrot Foundation in collaboration with the Geoffrey Bawa Trust. The display features materials from projects such as the Bentota Beach Hotel, Kandalama Hotel, and his country estate Lunuganga, alongside newly commissioned photographs by Iwan Baan. The exhibition explores Bawa's integration of landscape and architecture, as well as his collaborations with Sri Lankan artists and craftspeople. Lebanese architect Lina Ghotmeh designed the scenography to create an immersive environment. Following its run in Germany, the exhibition will travel to M+ in Hong Kong in June 2027."
     },
     {
       "id": "d334a55e7e19d99a98d4",
@@ -286,30 +322,12 @@
       "originalTitle": "Fondation Beyeler Expands with Three New Buildings by Peter Zumthor - ArchDaily",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
+      "editorialScore": 92,
       "technicalValue": 88,
-      "brandFit": 96,
+      "brandFit": 95,
       "title": "Fondation Beyeler Expands with Three New Buildings by Peter Zumthor",
-      "excerpt": "Switzerland's Fondation Beyeler is expanding its museum ensemble with three new structures by architect Peter Zumthor, an enlarged park, and restored historic buildings ahead of its full opening.",
-      "content": "The Fondation Beyeler in Riehen, Switzerland, is expanding its museum ensemble with three new buildings designed by Swiss architect Peter Zumthor, an enlarged park, and restored historic structures. Extending the existing museum designed by Renzo Piano, the expansion adds exhibition, education, cultural, and public spaces while opening a previously private section of the surrounding landscape to visitors. The expanded ensemble will begin welcoming visitors on September 26, 2026, during a preview phase before its full opening on January 15, 2027. Zumthor's additions comprise the Wyss Museum, the Ammann Pavilion, and the Erlen Torhaus. The three-storey Wyss Museum adds approximately 1,500 square meters of exhibition space and is constructed largely using locally quarried Jura limestone. Positioned between the structures, the Ammann Pavilion acts as a public gathering space, while the timber-frame Erlen Torhaus forms a transition between the urban fabric and the adjacent nature reserve. Landscape forms an integral part of the expansion, with the addition of nearly 10,000 square meters of formerly private parkland nearly doubling the size of Beyeler Park. The expanded park incorporates existing and new works by prominent artists. Several historic buildings, including the Orangerie and Ammann Atelier, have also been restored and adapted for art education, botany, and cultural projects."
-    },
-    {
-      "id": "6ed5ef7b59b8e4f5fde0",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-09-24T01:30:00.000Z",
-      "url": "https://www.archdaily.com/1183933/bigger-isnt-just-an-aesthetic-choice-what-facade-systems-conceal-behind-their-materials",
-      "image": "https://images.adsttc.com/media/images/6aa1/e9fe/237b/e901/8be9/62b8/large_jpg/bigger-isnt-just-an-aesthetic-choice-how-facade-systems-combine-simplicity-with-high-performance_13.jpg?1788996118",
-      "originalTitle": "Bigger Isn't Just an Aesthetic Choice: What Façade Systems Conceal Behind Their Materials - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 90,
-      "brandFit": 92,
-      "title": "Aesthetics and Material Performance in Large-Format Façade Systems",
-      "excerpt": "As minimal joints and seamless surfaces define contemporary architecture, large-format panels introduce new technical approaches regarding durability, recyclability, and structural performance.",
-      "content": "While contemporary architecture favors clean lines and minimal joints, increasing panel dimensions influences durability, recyclability, and external performance. To counter the risk of surface waviness in thin sheets, the building industry has traditionally relied on aluminum composite materials with plastic cores, which introduce recycling challenges. Alternatively, monomaterial systems utilize structural stiffeners integrated directly into a single aluminum sheet, providing mechanical stiffness without a composite core. This design eliminates the risk of delamination and supports full material recyclability. Engineered to withstand high wind loads and impact requirements, such panel systems streamline construction through sequential installation methods. Weather-tight fasteners and interlocking drainage systems ensure long-term performance, demonstrating how monomaterial façades balance architectural expression with environmental considerations."
+      "excerpt": "The Fondation Beyeler in Riehen, Switzerland, is expanding its museum ensemble with three new buildings by Swiss architect Peter Zumthor, an enlarged park, and restored historic structures.",
+      "content": "The Fondation Beyeler in Riehen, Switzerland, is expanding its museum ensemble with three new buildings designed by Peter Zumthor, an enlarged park, and adaptive reuse of historic structures. Extending the existing museum by Renzo Piano, the project introduces exhibition, educational, and public spaces while opening private landscape areas to visitors. The expanded ensemble opens on September 26, 2026, during a preview phase before a full opening on January 15, 2027. Zumthor's additions comprise the Wyss Museum, the Ammann Pavilion, and the Erlen Torhaus. The three-storey Wyss Museum adds approximately 1,500 square meters of exhibition space, featuring a Y-shaped plan arranged around existing trees and constructed using locally quarried Jura limestone. The single-storey glass and oak Ammann Pavilion functions as a public lounge and event space. The timber-frame Erlen Torhaus contains artwork handling facilities and workspaces. Landscape integration adds nearly 10,000 square meters of formerly private parkland, nearly doubling Beyeler Park's size. Restored historic structures include the Orangerie, Ammann Atelier, the Salon listening lounge, and the Folly experimental space. An inaugural exhibition titled 'Constellations' will bring together over 200 works from the collection and private loans across the venues from September 26, 2026, through September 5, 2027."
     },
     {
       "id": "0fffef7010a3ba71c40b",
@@ -322,30 +340,12 @@
       "originalTitle": "About the Constantinople to Istanbul: One City, Two Empires exhibition - Victoria and Albert Museum",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 65,
+      "editorialScore": 85,
+      "technicalValue": 60,
       "brandFit": 90,
-      "title": "V&A Museum Announces Constantinople to Istanbul: One City, Two Empires Exhibition",
-      "excerpt": "The Victoria and Albert Museum will open Constantinople to Istanbul: One City, Two Empires on 7 November 2026, exploring 16 centuries of artistic production between AD 330 and 1922.",
-      "content": "The Victoria and Albert Museum in South Kensington has announced a new exhibition titled Constantinople to Istanbul: One City, Two Empires, opening on 7 November 2026. The exhibition explores 1,600 years of artistic production from AD 330 to 1922, tracing the enduring creative legacy of an imperial capital that shaped the Mediterranean world and beyond. Spanning the Byzantine and Ottoman empires, the showcase features more than 200 objects across four main sections. These include rarely seen decorative arts, textiles, ceramic tiles, mosaics, precious metalwork, manuscripts, and paintings. The sections trace the city from its refounding under Constantine the Great to its role as a religious and administrative center. Grand Beginnings highlights the infrastructure and Hippodrome of the early capital, while Heaven and Earth examines Byzantine sacred imagery and classical art. Power and Reach investigates Ottoman court authority through visual spectacle and luxury materials. Finally, Life in the City explores religious coexistence, urban leisure, and 19th-century shifts in fashion and design. The exhibition concludes by examining the influence of Byzantine and Ottoman art on 19th-century European creators."
-    },
-    {
-      "id": "1f421d7bf94b206ef433",
-      "category": "Architecture & Design",
-      "source": "Designboom",
-      "sourceDomain": "designboom.com",
-      "publishedAt": "2026-09-23T09:00:16.000Z",
-      "url": "https://www.designboom.com/architecture/peter-zumthor-fondation-beyeler-gradual-opening-basel-switzerland-wyss-museum/",
-      "image": "https://www.designboom.com/twitterimages/uploads/2026/09/peter-zumthor-fondation-beyeler-gradual-opening-designboom-1200.jpg",
-      "originalTitle": "peter zumthor's expanded fondation beyeler opens to the public - Designboom",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 94,
-      "title": "Peter Zumthor's Expanded Fondation Beyeler Opens to the Public",
-      "excerpt": "Peter Zumthor's expansion of the Fondation Beyeler in Riehen begins its opening to the public, gradually revealing new buildings and parkland from September 2026.",
-      "content": "Peter Zumthor's expansion of the Fondation Beyeler in Riehen near Basel is opening to the public, with the new ensemble gradually revealed from September 26, 2026, ahead of its full opening in January 2027. Selected unanimously by an international jury, Zumthor divided the new functions between three distinct buildings—the Wyss Museum, the Ammann Pavilion, and the Erlen Torhaus—to avoid a single bulky structure. The Wyss Museum adds approximately 1,500 square meters of exhibition space across three floors, featuring an irregular Y-shaped plan and a hand-built Jura limestone rammed-concrete facade. The single-story glass and oak Ammann Pavilion functions as a public lounge during the day and hosts cultural events in the evening. Furthermore, the architectural expansion is accompanied by the opening of nearly 10,000 square meters of formerly private 19th-century parkland to visitors, integrating meadows, native orchids, and water features into the museum grounds."
+      "title": "Constantinople to Istanbul: One City, Two Empires Exhibition Opens at the V&A",
+      "excerpt": "The Victoria and Albert Museum explores 1,600 years of artistic production across two empires in a major upcoming exhibition.",
+      "content": "The Victoria and Albert Museum invites visitors to explore 1,600 years of artistic production with the exhibition 'Constantinople to Istanbul: One City, Two Empires', opening on 7 November 2026. Spanning from AD 330 to 1922, the exhibition brings together over 200 objects to examine the distinct yet connected traditions of the Byzantine and Ottoman empires. Hosted at V&A South Kensington, the showcase highlights the creative legacy of an imperial capital that shaped the Mediterranean world and beyond. The exhibition features four main sections: Grand Beginnings, Heaven and Earth, Power and Reach, and Life in the City. Across these sections, visitors can view rarely seen decorative arts, including fine silks, historic garments, ceramic tiles, mosaics, precious metalwork, jewellery, sculptures, architectural furnishings, manuscripts, and paintings. The curation traces changes in patronage, imperial spectacle, religious coexistence, and urban life, concluding with the influence of Byzantine and Ottoman art on 19th-century Europe."
     },
     {
       "id": "50baa726c3c1301796f3",
@@ -359,11 +359,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 75,
-      "brandFit": 90,
-      "title": "Standout Collectible Designs Unveiled at Paris Design Week",
-      "excerpt": "The 16th edition of Paris Design Week showcased contemporary collections rooted in traditional techniques and natural forms.",
-      "content": "Paris Design Week concluded its 16th edition with showrooms across Saint-Germain-des-Prés and beyond displaying contemporary decor from 500 exhibitors. Draga & Aurel showcased their Crisalide side tables at Galerie BSL, combining fused colored glass and brass bases. Pinto collaborated with fabric firm Nobilis to present the Foundation collection, featuring warm tones and jacquard motifs. Yves Salomon Éditions unveiled Tactile Monuments, its first complete interior collection centered on merino shearling and natural volumes.\n\nSwedish design house Veermakers opened its inaugural Paris showroom in Le Marais to highlight Scandinavian craftsmanship. Nordic Knots presented wool rugs inspired by Swedish Grace, while lifestyle brand L'Objet partnered with jeweler Jessica McCormack on a marine-themed home collection. Modern Metier debuted Tropic of Capricorn, created with French designer Rudy Guénaire. Garnier & Linker introduced Aurora, its first outdoor lighting collection in cast aluminum. Franck Genser presented sculptural furniture including his Piscine VI coffee table, and cousins Cédric and Nicolas Hervet exhibited their woodworking collection spanning living and dining spaces."
+      "technicalValue": 80,
+      "brandFit": 95,
+      "title": "Standout Collections and Designs Unveiled at Paris Design Week 2026",
+      "excerpt": "The 16th edition of Paris Design Week gathered 500 exhibitors across showrooms in Saint-Germain-des-Prés and beyond. Designers and studios showcased contemporary collections rooted in craftsmanship, traditional techniques, and natural forms.",
+      "content": "Paris Design Week took place with the participation of 500 exhibitors across showrooms in Saint-Germain-des-Prés and surrounding districts. The event featured contemporary creations rooted in traditional techniques, natural forms, and curated craftsmanship. Modern Metier presented Tropic of Capricorn, its second collection created with French designer Rudy Guénaire. Draga & Aurel showcased their Crisalide side tables at Galerie BSL, combining colored glass layers with sand-cast brass bases. Pinto partnered with Nobilis to introduce the Foundation collection, while Yves Salomon Éditions unveiled Tactile Monuments, its first complete interior collection led by artistic director Tamara Taichman. Swedish design house Veermakers opened its inaugural Paris showroom in Le Marais. Nordic Knots presented wool rugs inspired by the Swedish Grace movement, and L'Objet collaborated with jeweler Jessica McCormack on a marine-themed home collection. Garnier & Linker introduced Aurora, its first outdoor lighting series in cast aluminum and alabaster. Franck Genser exhibited new iterations of his Decorative Arts-inspired designs, and Hervet Manufacturier presented its first full range of living and dining furniture."
     },
     {
       "id": "f071305f655f5f868bbc",
@@ -430,12 +430,12 @@
       "originalTitle": "Art Basel Paris 2026 Press Dossier: a deep-dive into this year's highlights - artbasel.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 75,
-      "brandFit": 92,
-      "title": "Art Basel Paris 2026 Prepares With 211 Galleries and Expanded Spaces",
-      "excerpt": "Art Basel Paris is preparing to open with 211 galleries from 41 countries and regions. The fair features the relocation of Premise to the Salon Seine and an expanded public program around the Grand Palais.",
-      "content": "Art Basel Paris is bringing together leading representatives of modern and contemporary art with 211 galleries participating from 41 countries and regions. The event features 183 galleries in the Galeries sector, 16 in Emergence, and 12 in Premise. This year, the fair welcomes 32 first-time participants while moving the Premise sector to a larger space at Salon Seine. The Conversations program is also relocating to the Grand Palais Auditorium near the new Square Jean Perrin entrance. Sixty-four galleries operating in France take part in the roster, with galleries such as Petrine and The Pill graduating from Emergence into the main Galeries sector. Numerous Paris-based and international galleries present projects uniting disciplines such as painting, installation, performance, literature, and moving images. The preview, Avant-Première, returns on October 20. The presentations feature works by Paris-based figures such as Pol Taburet, Julien Creuzet, Annie Ernaux, Tarek Lakhrissi, and Neïla Czermak Ichti, alongside a broad international roster of artists and galleries."
+      "editorialScore": 90,
+      "technicalValue": 70,
+      "brandFit": 90,
+      "title": "Art Basel Paris 2026 Opens With 211 Galleries and Expanded Programme",
+      "excerpt": "Hosting 211 galleries from 41 countries, Art Basel Paris 2026 begins on October 20 with an expanded public programme around the Grand Palais.",
+      "content": "Art Basel Paris brings together art professionals from 41 countries and regions with the participation of 211 galleries. The event features 183 galleries in the Galeries sector, alongside 16 in Emergence and 12 in Premise. This year, 32 participants join the fair for the first time, while more than 170 galleries return. The Premise sector moves to a larger space in Salon Seine, and the Conversations series relocates to the Grand Palais Auditorium. Sixty-four galleries operating in France play a central role, with galleries such as Petrine from Paris and Düsseldorf, and The Pill from Istanbul and Paris, graduating from Emergence to the Galeries sector. Established French galleries including Templon, Chantal Crousel, Perrotin, and Almine Rech are joined by international participants such as Gagosian, Hauser & Wirth, and David Zwirner. The preview, Avant-Première, returns on October 20. Highlighting the Parisian scene, presentations featuring works by figures such as Pol Taburet, Julien Creuzet, and Annie Ernaux combine disciplines including painting, installation, performance, literature, and moving image."
     },
     {
       "id": "c4f117afbd5b94e5d0e9",
@@ -472,6 +472,24 @@
       "title": "Maison Michel Celebrates 90th Anniversary With Paris Exhibition",
       "excerpt": "Parisian hatmaker Maison Michel marks its 90th anniversary with a dedicated exhibition opening at La Galerie du 19M.",
       "content": "Parisian hatmaker Maison Michel is marking its 90th anniversary with an exhibition celebrating the journey from raw material to finished product. Part of Chanel's specialized workshop network since 1997, the house presents the display at La Galerie du 19M, Chanel's craftsmanship hub in northern Paris. Running from Sept. 23 until Dec. 13, the exhibition highlights ancient tools, techniques, and the work behind the designs.\n\nTitled \"Metamorphoses — The Hats of Maison Michel,\" the showcase begins with tree trunks carved into raw hat shapes alongside 4,000 wooden hat blocks from the archives. Curated by artistic director Priscilla Royer and Palais Galliera fashion museum director Emilie Hammen, the exhibition features specially commissioned artworks and runway designs. Maison Michel remains one of the few remaining producers mastering sewn straw, utilizing ancient sewing machines. The display explores headgear's evolution from social signifier to a form of personal expression, featuring items crafted from canvas, organza, leather, and tweed."
+    },
+    {
+      "id": "a937a20faf056f3fff9e",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-09-14T14:00:00.000Z",
+      "url": "https://wwd.com/fashion-news/designer-luxury/jacquemus-boutiqe-miami-design-district-1239207456/",
+      "image": "https://wwd.com/wp-content/uploads/2026/09/jacquemus-store-miami-design-district-ctsy-006.jpg?crop=0px%2C678px%2C1366px%2C765px&resize=1000%2C563",
+      "originalTitle": "EXCLUSIVE: Jacquemus Filled His New Miami Design District Flagship With Art — and Fine Design - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 86,
+      "technicalValue": 82,
+      "brandFit": 94,
+      "title": "Jacquemus Opens New Flagship Boutique in Miami Design District",
+      "excerpt": "Paris-based fashion house Jacquemus is opening a two-story flagship boutique in the Miami Design District. Conceived by the founder, the 2,900-square-foot space incorporates blue-chip artworks, antiques, and bespoke design pieces.",
+      "content": "Paris-based fashion house Jacquemus is launching a 2,900-square-foot flagship boutique in Miami's Design District, spanning two floors. Conceived by founder Simon Porte Jacquemus in collaboration with architectural firm Oma, the interior echoes elements from earlier boutiques in Paris and Courchevel. The space integrates artworks by Germaine Richier, Aristide Maillol, Joan Miró, and Pablo Picasso, alongside furnishings by Frank Lloyd Wright and Jean Royère. Chief executive officer Sarah Benady described Miami as a natural convergence point for fashion, art, and design between the United States and Latin America. The boutique includes a dedicated shoe salon, a private VIC sunroom, and infrastructure prepared for an upcoming beauty line through a partnership with L'Oréal. Additionally, the location will offer an exclusive powder and mint blue edition of the Nike Moon Shoe. This opening follows recent retail expansions in New York and Los Angeles as part of the brand's targeted international retail strategy."
     }
   ]
 }
