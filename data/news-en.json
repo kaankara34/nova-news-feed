@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-09-29T03:41:28.338Z",
+  "generatedAt": "2026-09-30T03:42:41.708Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -20,13 +20,13 @@
   "categoryCounts": {
     "Art & Exhibitions": 5,
     "Exhibitions": 5,
-    "Galleries & Museums": 4,
+    "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
-    "Fashion & Luxury": 3
+    "Fashion & Luxury": 2
   },
   "coverage": {
     "Art & Exhibitions": {
@@ -40,7 +40,7 @@
       "targetMet": true
     },
     "Galleries & Museums": {
-      "count": 4,
+      "count": 5,
       "target": 4,
       "targetMet": true
     },
@@ -70,13 +70,67 @@
       "targetMet": false
     },
     "Fashion & Luxury": {
-      "count": 3,
+      "count": 2,
       "target": 3,
-      "targetMet": true
+      "targetMet": false
     }
   },
   "total": 24,
   "articles": [
+    {
+      "id": "c3a509c6af2ecbcd8d07",
+      "category": "Exhibitions",
+      "source": "Art Basel",
+      "sourceDomain": "artbasel.com",
+      "publishedAt": "2026-09-29T18:19:01.000Z",
+      "url": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026",
+      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36-1.png",
+      "originalTitle": "Art Basel announces exhibitors and showfloor for its 2026 Miami Beach Edition - Art Basel",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 40,
+      "brandFit": 90,
+      "title": "Art Basel Announces Exhibitor Lineup for 2026 Miami Beach Edition",
+      "excerpt": "Art Basel Miami Beach will bring together 272 exhibitors from over 40 countries and territories across a reconfigured showfloor.",
+      "content": "Art Basel Miami Beach has announced that its 2026 edition will bring together 272 exhibitors from more than 40 countries and territories across its sectors and the Zero 10 program. Taking place at the Miami Beach Convention Center from December 4 to 6, 2026, with VIP preview days on December 2 and 3, the fair introduces a substantially reconfigured layout based on feedback from exhibitors and the Selection Committee. The new design occupies approximately 12 percent less floor space, while the main Galleries sector features roughly 10 percent fewer exhibitors, distributing blue-chip galleries more broadly across the floor. More than 30 galleries will participate for the first time, with Latin America and the Caribbean strongly represented, and Brazil forming the third-largest national contingent. With UBS serving as Global Lead Partner, the event will also feature outdoor works by James Turrell and public art presentations in Collins Park."
+    },
+    {
+      "id": "eec079cd90a7aaf87b14",
+      "category": "Galleries & Museums",
+      "source": "Victoria and Albert Museum",
+      "sourceDomain": "vam.ac.uk",
+      "publishedAt": "2026-09-29T16:36:30.000Z",
+      "url": "https://www.vam.ac.uk/event/jp90ndEvGD/talk-art-brilliant-livestream",
+      "image": "https://assets-cdn.vam.ac.uk/2026/09/29/09/23/28/a4f0d61d-865a-4229-a3eb-475cd740bd09/talk-art-brilliant-unexpected-art-from-everywhere-livestream_640.jpg",
+      "originalTitle": "Talk Art: Brilliant: Unexpected Art from Everywhere (Livestream) - Victoria and Albert Museum",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 82,
+      "technicalValue": 50,
+      "brandFit": 85,
+      "title": "Victoria and Albert Museum to Host Talk Art Podcast Event",
+      "excerpt": "The Victoria and Albert Museum will host a live recording of the Talk Art podcast to celebrate the publication of the book Brilliant: Unexpected Art from Everywhere. The online event tickets cost 8.00 pounds.",
+      "content": "Hosted by actor Russell Tovey and gallerist Robert Diament, the Talk Art podcast is holding a special live recording event to celebrate the publication of the book Brilliant: Unexpected Art from Everywhere. Hosted by the Victoria and Albert Museum, the event will feature interviews with contemporary photographers whose work appears in the book, including Keerthana Kunnath, Tami Aftab, and Mous Lamrabat. Curated by WePresent and published by Monacelli, the book brings together visual works that have never been published in print before. Addressing themes such as cultural memory, immigration, the female gaze, and the internet, the collection spans diverse subjects from explorations in Senegal and Qatar to the production processes of award-winning short films. The online event will take place on Zoom on 2 November 2026. Tickets are priced at 8.00 pounds, and general booking opened on 5 October. Ticket holders will receive a link to view the morning event live, and a recording will remain available for viewing for one month following the talk."
+    },
+    {
+      "id": "2fa6d3ebd6d6d15abc6e",
+      "category": "Galleries & Museums",
+      "source": "Victoria and Albert Museum",
+      "sourceDomain": "vam.ac.uk",
+      "publishedAt": "2026-09-29T09:33:26.000Z",
+      "url": "https://www.vam.ac.uk/blog/caring-for-our-collections/a-way-of-looking-our-first-encounter-with-the-cochin-ceiling",
+      "image": "https://www.vam.ac.uk/blog/wp-content/uploads/1-158.jpg",
+      "originalTitle": "A way of looking: our first encounter with the Cochin Ceiling - Victoria and Albert Museum",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 65,
+      "brandFit": 88,
+      "title": "Researchers Visit Victoria and Albert Museum to Study Cochin Ceiling",
+      "excerpt": "Ananth Ramaswamy and Devi Seetharam examined the historic Cochin ceiling in person as part of the Victoria and Albert Museum South Asia Gallery commission. The researchers explored the museum collection to contribute to the gallery refurbishment scheduled to open in 2028.",
+      "content": "Ananth Ramaswamy and Devi Seetharam examined the historic Cochin ceiling in person for the first time as part of the Victoria and Albert Museum South Asia Gallery commission. The 19th-century carved polychromed teak coffered ceiling panels from Kerala were observed during museum conservation work. The researchers had the opportunity to directly compare wood samples and finishes against the historic artifact alongside the conservation team. During the visit, the polychromy and intricate carvings of the ceiling were closely observed, and hundreds of objects were examined across the museum galleries and archives. Tracing the motifs of the lotus through art and architecture, the researchers studied various ceramic and metal objects from the museum collection. The contemporary commission will form part of the transformed South Asia Gallery, scheduled to open in 2028. The refurbishment project is supported by The National Lottery Heritage Fund, Dunard Fund, Mandakini Puri, and additional donors."
+    },
     {
       "id": "fbcca37a2e6989015aa5",
       "category": "Art & Exhibitions",
@@ -114,6 +168,24 @@
       "content": "Held in September, Helsinki Design Week brought together innovative design approaches aimed at enhancing urban habitats and everyday life. A strategic planning document commissioned by the City of Helsinki's Economic Development Division outlined nine key actions for growing the creative sectors alongside urban development. During the event, architect Pekka Airaxin launched Kainuu, a new company delivering turnkey summer houses constructed from cross-laminated timber sourced from managed forests within an 80 km radius. Kainuu has already delivered 10 houses, with 20 more in the pipeline. Additionally, Finnish architect and theorist Juhanni Pallasmaa donated his entire 10,000-strong book collection to Helsinki's Architecture & Design Museum in honor of his 90th birthday, with 10 percent of the collection currently on display at a temporary space. Hotel refurbishments and material-led experimental projects further highlighted the city's ongoing design engagement."
     },
     {
+      "id": "64d3020b0be76bad7bce",
+      "category": "Art & Exhibitions",
+      "source": "Hyperallergic",
+      "sourceDomain": "hyperallergic.com",
+      "publishedAt": "2026-09-28T14:42:16.000Z",
+      "url": "https://hyperallergic.com/ruby-city-presents-generative-disruption-feminist-art-from-the-collection/",
+      "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/09/YANAGI__Yuka__2007.1.jpg",
+      "originalTitle": "Ruby City Presents \"Generative Disruption: Feminist Art from the Collection\" - Hyperallergic",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 55,
+      "brandFit": 85,
+      "title": "Ruby City Presents Feminist Art Exhibition from Its Collection",
+      "excerpt": "Ruby City in San Antonio is opening a new exhibition exploring the contributions of women artists and the expanding possibilities of feminist artistic practices. The show runs through August 2027.",
+      "content": "San Antonio-based contemporary art center Ruby City opened Generative Disruption: Feminist Art from the Collection, recognizing the contributions of women artists and the evolution of feminist artistic practices. Beginning notably in the 1960s and 1970s, feminist artists challenged foundational assumptions regarding representation, valid subjects, and materials, permanently expanding the possibilities of contemporary art. The exhibition reflects an institutional collection built on the belief that diverse perspectives enrich the understanding of art and the world. Throughout the run of the exhibition, Ruby City will host related public programs spanning film, music, conversations, and workshops addressing identity, belonging, ritual, and power. Featured artists in the presentation include Laura Aguilar, Sama Alshaibi, Nao Bustamante, Alex de León, Annette Lawrence, Tala Madani, Tracey Moffatt, and Carrie Mae Weems. Grounded in founder Linda Pace's vision to make contemporary art freely accessible to everyone, the admission-free institution will keep the exhibition on view through August 29, 2027."
+    },
+    {
       "id": "299d4394b93745ce05d3",
       "category": "Art & Exhibitions",
       "source": "The Art Newspaper",
@@ -132,6 +204,24 @@
       "content": "London's Victoria and Albert Museum (V&A) is presenting the second edition of the Craft x Tech exhibition, highlighting collaborations between international designers and craft masters from Japan. Initiated by creative director Hideki Yoshimoto and curator Maria Cristina Didero, the project focuses on the Tokai region following its initial 2024 iteration in Tohoku. Didero states that the initiative prioritizes active communication and interaction between contemporary designers and traditional Japanese techniques over mere preservation.\n\nThe exhibition features works resulting from creators stepping out of their conventional disciplines. Canadian designer Philippe Malouin collaborated with an enamel master to incorporate decoration into his practice, while South African designer Atang Tshikare used the Japanese iga kumihimo silk braiding technique to create an anthropomorphic lamp. The experimental works are available as limited editions and remain on display at the V&A until 30 September."
     },
     {
+      "id": "9cc46848c0f2cc4cb17d",
+      "category": "Architecture & Design",
+      "source": "wallpaper.com",
+      "sourceDomain": "wallpaper.com",
+      "publishedAt": "2026-09-28T11:13:34.000Z",
+      "url": "https://www.wallpaper.com/fashion-beauty/fragrance/formafantasma-creative-directors-santa-maria-novella",
+      "image": "https://cdn.mos.cms.futurecdn.net/28U3KK44YMk8zat8Ak3TBR-2560-80.jpg",
+      "originalTitle": "Italian design pioneers Formafantasma are the new creative directors of a 13th-century pharmacy brand - wallpaper.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 76,
+      "technicalValue": 55,
+      "brandFit": 92,
+      "title": "Formafantasma Appointed as New Creative Directors of Santa Maria Novella",
+      "excerpt": "Santa Maria Novella, recognized as the world's oldest continuously operating pharmacy, has appointed design duo Simone Farresin and Andrea Trimarchi as its new creative directors.",
+      "content": "Founded as a convent apothecary by Dominican friars in 1221 and pioneering innovations in health and beauty for over 800 years, Santa Maria Novella has enlisted Simone Farresin and Andrea Trimarchi of Formafantasma as its new creative directors. According to a statement by the brand, the choice rests on the duo's multidisciplinary approach across product, space, research, and exhibition, as well as their focus on materials and sustainability. Over the centuries, the brand has expanded its offerings while retaining traditional methods, old-world packaging, and Neo-Gothic stores, ranging from its historical rose water disinfectant to Acqua della Regina created for Catherine de' Medici. Former Wallpaper designers of the year Formafantasma state that modernizing the brand involves building from what already exists rather than disavowing its history. In their new roles, Farresin and Trimarchi will work across products, packaging, communication, retail spaces, and events, utilizing the product as the primary point of departure. The pair notes that the collaboration raises questions regarding how an institution can advance without treating its past as static."
+    },
+    {
       "id": "746277419aabd8db216a",
       "category": "Construction",
       "source": "New Civil Engineer",
@@ -142,12 +232,12 @@
       "originalTitle": "TfL reveals civil engineering behind £15.3M step-free upgrades at Surrey Quays and Northolt - New Civil Engineer",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 75,
-      "technicalValue": 80,
-      "brandFit": 70,
-      "title": "Surrey Quays and Northolt Stations Achieve Step-Free Access in London",
-      "excerpt": "Transport for London has announced step-free access improvements at Surrey Quays and Northolt stations, detailing engineering works and funding.",
-      "content": "Two London railway stations, Surrey Quays and Northolt, have achieved step-free access to accommodate wheelchair users and passengers with pushchairs or luggage. According to Transport for London, the improvements at Surrey Quays were funded through an 80.8 million pound package. Lead designer AtkinsRéalis and contractor Morgan Sindall Infrastructure focused on reducing carbon impact by utilizing low-carbon CEM 3 concrete and electric arc furnace steel. The compound area used a direct power connection without generators alongside electric forklifts. Construction began in January 2023 and concluded in September 2026. Meanwhile, Northolt station on the West Ruislip branch received a new footbridge and lift to provide step-free access between the street and trains. The Northolt project cost an estimated 15.3 million pounds, with works starting in February 2025 and finishing by September 2026. Northolt marks the 95th station on the Tube network to offer step-free access."
+      "editorialScore": 40,
+      "technicalValue": 65,
+      "brandFit": 30,
+      "title": "London Stations Surrey Quays and Northolt Gain Step-Free Access",
+      "excerpt": "Transport for London has announced step-free access improvements at Surrey Quays and Northolt stations. The Northolt project cost an estimated 15.3 million pounds, enhancing transport connectivity for passengers across the network.",
+      "content": "Surrey Quays and Northolt railway stations in London have received step-free access improvements to enable journeys for wheelchair users and people with pushchairs or luggage. According to Transport for London, the Surrey Quays improvements were funded through an 80.8 million pound funding package from the Housing Infrastructure Fund. Work on the station began in January 2023 and finished in September 2026. Lead designer AtkinsRéalis and contractor Morgan Sindall Infrastructure collaborated to minimize carbon impact through low-carbon materials and specialized lifting equipment. At Northolt station on the Central line, a new footbridge and lift were installed to provide step-free access between the street and trains, making it the 95th station on the Tube network to feature step-free access. Funded by Transport for London at an estimated cost of 15.3 million pounds, construction at Northolt started in February 2025 and concluded in September 2026."
     },
     {
       "id": "d72b77ae7ac10979a791",
@@ -168,6 +258,24 @@
       "content": "The Allentown Art Museum announced plans to relocate to a new facility designed by Studios Architecture in downtown Allentown, Pennsylvania. The 55,000-square-foot, $55 million museum is planned at the intersection of 10th and Hamilton Streets, with construction expected to begin in the summer of 2027 and completion anticipated by 2029. This relocation comes less than 15 years after the completion of the expansion designed by Venturi Scott Brown and Associates. Finished in 2012, the extension faced budget constraints during the economic downturn. Feasibility studies later determined that due to deferred maintenance and unresolved issues stemming from past budget cuts, constructing a purpose-built facility was the optimal path. Museum CEO Max Weintraub stated that the institution is in talks with commercial and public organizations regarding the purchase of the current facilities, noting that demolition has not been discussed, though the debossed facade signage will require modification."
     },
     {
+      "id": "03d0db222ce904f9bb89",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-09-27T21:15:10.000Z",
+      "url": "https://www.designboom.com/architecture/planted-roof-concrete-casa-cieno-tac-taller-alberto-calleja-oaxacan-coast/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/09/oaxaca-casa-cieno-tac-taller-alberto-calleja-courtyards-planted-roof-pool-designboom-1200.jpg",
+      "originalTitle": "planted roof connects concrete casa cieno by TAC to oaxacan coast - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 75,
+      "technicalValue": 70,
+      "brandFit": 85,
+      "title": "Casa Cieno Designed by TAC Taller Alberto Calleja Completed on Oaxacan Coast",
+      "excerpt": "Located in Puerto Escondido, Mexico, Casa Cieno features an inward-turning architectural layout organized around a central pool and vegetated courtyards.",
+      "content": "Situated in Puerto Escondido on the Oaxacan coast of Mexico, Casa Cieno was designed by TAC Taller Alberto Calleja on a 1,500 square meter plot. Rather than facing directly toward the sea, the residence turns inward, using vegetation and controlled openings to establish a relationship with its surroundings. The main volume is rotated diagonally to the property boundaries, creating green patios that serve as a buffer between the residence and neighboring properties. The design team organized the layout around a central water element, separating social and private areas. Paths crossing the pool lead to the two bedrooms, while the courtyard connects the spaces. A circular opening in the roof slab frames the sky above the pool. The material palette combines exposed concrete and wood in response to climatic conditions, designed to age with the site. Above, a green roof extends the living space, restores part of the occupied vegetation, and contributes to natural climate control."
+    },
+    {
       "id": "042bf4e41b08af850c42",
       "category": "Architecture & Design",
       "source": "designboom.com",
@@ -184,24 +292,6 @@
       "title": "Casa Cieno on the Oaxacan Coast Features an Inward-Facing Design by TAC",
       "excerpt": "Designed by TAC Taller Alberto Calleja in Puerto Escondido, Mexico, Casa Cieno integrates interior courtyards, a central pool, and a green roof to establish a relationship with its coastal surroundings.",
       "content": "Located in Puerto Escondido along the coast of Oaxaca, Mexico, Casa Cieno was designed by the team at TAC Taller Alberto Calleja. Situated on a 1,500-square-meter plot in the El Vigía sector, the residence turns inward rather than facing the sea directly, utilizing vegetation and controlled openings to connect with its site. The main volume is rotated diagonally relative to the property boundaries, forming green patios that serve as a buffer. Organized around a central pool, the layout separates social and private zones while maintaining spatial continuity through courtyards. A circular roof opening frames the sky above the pool, introducing natural light to the interior. The material palette combines exposed concrete and wood chosen to respond to coastal climatic conditions and weather over time. Above, a green roof extends the living space while restoring site vegetation and offering views toward the sea and mountains."
-    },
-    {
-      "id": "03d0db222ce904f9bb89",
-      "category": "Architecture & Design",
-      "source": "Designboom",
-      "sourceDomain": "designboom.com",
-      "publishedAt": "2026-09-27T21:15:10.000Z",
-      "url": "https://www.designboom.com/architecture/planted-roof-concrete-casa-cieno-tac-taller-alberto-calleja-oaxacan-coast/",
-      "image": "https://www.designboom.com/twitterimages/uploads/2026/09/oaxaca-casa-cieno-tac-taller-alberto-calleja-courtyards-planted-roof-pool-designboom-1200.jpg",
-      "originalTitle": "planted roof connects concrete casa cieno by TAC to oaxacan coast - Designboom",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 82,
-      "technicalValue": 80,
-      "brandFit": 85,
-      "title": "TAC Taller Alberto Calleja Completes Diagonally Oriented Concrete House in Puerto Escondido",
-      "excerpt": "Located on the Oaxacan coast in Mexico, Casa Cieno turns inward rather than facing the sea, organizing its program around a central pool and vegetated courtyards.",
-      "content": "Constructed in Puerto Escondido, Mexico, Casa Cieno was designed by TAC Taller Alberto Calleja on a 1,500 square meter plot. The main volume of the residence is positioned diagonally in relation to the property boundaries, creating green buffer zones between the building and neighboring properties. Serving as the primary visual and spatial anchor, a central pool anchors a layout organized around enclosed courtyards and framed views. The design team separated the social and private areas through the water element, with pathways crossing the pool to connect to two bedrooms. A circular opening in the roof slab frames the sky above the pool, introducing natural light into the interior. The material palette combines exposed concrete and wood, selected in response to the climatic conditions of the Oaxacan coast and intended to age with the site. A green roof extends the living space above, restoring part of the displaced vegetation while contributing to the residence's natural climate control."
     },
     {
       "id": "1dd49df222e06d53c1fc",
@@ -268,48 +358,30 @@
       "originalTitle": "Switzerland’s Fondation Beyeler opens £109.7m expansion - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 95,
-      "technicalValue": 90,
+      "editorialScore": 90,
+      "technicalValue": 85,
       "brandFit": 95,
       "title": "Basel's Fondation Beyeler Opens £109.7m Expansion Designed by Peter Zumthor",
-      "excerpt": "Basel's Fondation Beyeler has expanded with three new structures designed by Peter Zumthor and doubled its parkland. The museum is implementing a limited-capacity inauguration period through 14 January 2027 to optimize visitor processes.",
-      "content": "The Fondation Beyeler in Basel, Switzerland, is opening its new expansion this weekend. Costing around SFr 120m (£109.7m), the project adds three new structures designed by Swiss architect Peter Zumthor and regenerates the museum grounds. The principal Wyss building, named after donor Hansjörg Wyss, increases exhibition space by 1,500 sq. m alongside the 1997 Renzo Piano building. The freestanding Ammann Pavilion serves as a venue for recitals and performances, while the Erlen Torhaus adds office space to an 18th-century villa on the property.\n\nThe surrounding parkland has doubled to nearly 20,000 sq. m, featuring new installations by artists such as Louise Bourgeois and Rachel Whiteread. An inaugural exhibition titled Constellations runs until 5 September 2027, displaying 150 works across both the original and new spaces. Zumthor constructed the Wyss building's exterior walls using rammed concrete with crushed limestone from the Jura Mountains. Rather than hosting a large celebration, the museum is running a restricted visitor period from 26 September to 14 January 2027 to optimize operations, according to director Sam Keller."
+      "excerpt": "Switzerland's Fondation Beyeler has expanded its Basel home with three new structures designed by Peter Zumthor and doubled its surrounding parkland. The museum is implementing a limited visitor period to optimize its operations.",
+      "content": "The Fondation Beyeler in Basel, Switzerland, is opening its new expansion buildings following an investment of around SFr 120m (approximately £109.7m). Known for its Modern art collection, the institution has added three structures designed by Swiss architect Peter Zumthor and expanded its grounds. The principal Wyss building, funded largely by entrepreneur Hansjörg Wyss, adds 1,500 sq. m of exhibition space to the existing 3,800 sq. m provided by Renzo Piano's 1997 building. The freestanding Ammann Pavilion offers a venue for recitals and performances, while the Erlen Torhaus extends the 18th-century villa with office spaces. The surrounding parkland has doubled to nearly 20,000 sq. m, featuring new works by artists such as Rachel Whiteread and Louise Bourgeois. To optimise operations, director Sam Keller announced a stealthy inauguration period from 26 September to 14 January 2027, during which paying exhibition visitor numbers will be limited and opening days reduced from seven to five per week."
     },
     {
-      "id": "a574a9bb71c624ce1add",
+      "id": "da70b5a8c2603bb418e7",
       "category": "Art & Exhibitions",
-      "source": "hyperallergic.com",
-      "sourceDomain": "hyperallergic.com",
-      "publishedAt": "2026-09-25T15:32:54.000Z",
-      "url": "https://hyperallergic.com/lisa-bradley-moves-beyond-luminosity-at-the-delaware-art-museum/",
-      "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/09/Lisa-Bradley-Hyperallergic-ad-1.jpg",
-      "originalTitle": "Lisa Bradley Moves Beyond Luminosity at the Delaware Art Museum - hyperallergic.com",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-09-25T20:22:13.000Z",
+      "url": "https://www.artnews.com/art-news/news/ai-weiwei-500-cast-iron-combat-helmets-mca-commission-1234799483/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/09/mca-sydney-1.png?w=1024",
+      "originalTitle": "Ai Weiwei Debuts 500 Cast-Iron Combat Helmets for MCA Commission - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 76,
-      "technicalValue": 50,
-      "brandFit": 80,
-      "title": "Lisa Bradley's Abstract Paintings Open at the Delaware Art Museum",
-      "excerpt": "The Delaware Art Museum presents Beyond Luminosity, an exhibition bringing together the artist's most recent body of work for public view.",
-      "content": "The Delaware Art Museum presents Lisa Bradley: Beyond Luminosity, opening on September 19. Organized by DelArt Head Curator Margaret Winslow and Art Bridges Fellow Hilda Delgado, the exhibition offers audiences an engagement with Bradley's recent body of work, presented publicly for the first time. The presentation features 10 large-scale oil on canvas paintings and eight works on paper. Art historian Carter Ratcliff describes Bradley's abstractions as depicting a pause between vast energetic pulses. Informed by a strong interest in spiritual experiences, the artist achieves an expression of simultaneous movement and stillness within her luminous compositions. This exhibition builds upon the museum's longstanding connection to the artist, which includes the 2009 acquisition of her painting Akasa II. A complementary 120-page monograph featuring insights from curators, critics, and art historians accompanies the exhibition."
-    },
-    {
-      "id": "91f7ce054fd2e8ad93b8",
-      "category": "Art & Exhibitions",
-      "source": "theartnewspaper.com",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-09-25T15:24:27.127Z",
-      "url": "https://www.theartnewspaper.com/2026/09/25/turner-prize-2026-open-north-yorkshire-middlesbrough-institute-of-modern-art",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/a5e996ea1ea8a40c717d3fcf34948c3ececf17a4-1775x981.jpg?rect=71,0,1635,981&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Turner Prize 2026 opens in North Yorkshire at the Middlesbrough Institute of Modern Art - theartnewspaper.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
-      "brandFit": 85,
-      "title": "Turner Prize 2026 Exhibition Opens at Middlesbrough Institute",
-      "excerpt": "The 2026 Turner Prize exhibition has opened to the public at the Middlesbrough Institute of Modern Art in northern England.",
-      "content": "The latest Turner Prize exhibition has opened to the public at the Middlesbrough Institute of Modern Art in northeast England. Shortlisted artists Tanoa Sasraku, Marguerite Humeau, Simeon Barclay, and Kira Freije are featured following their solo exhibitions from the past year. The selected artists engage with subjects such as ecological thought, human precarity, oil geopolitics, and the experience of deindustrialisation. Sasraku explores extractivism through immersive settings, while Humeau creates sculptural compositions from materials including beeswax and ancient wood. Barclay presents an architectural intervention exploring masculine identity and class, and Freije exhibits fragile figurative sculptures made from steel and aluminium. According to Tate Britain director Alex Farquharson, the works represent a cross-section of visual arts in Britain today. The winner will be announced on 10 December during a ceremony at the institute, receiving £25,000, while runners-up will be awarded £10,000 each."
+      "editorialScore": 80,
+      "technicalValue": 60,
+      "brandFit": 75,
+      "title": "Ai Weiwei Unveils 500 Cast-Iron Combat Helmets Installation in Sydney",
+      "excerpt": "Artist Ai Weiwei has unveiled Mushrooms, a new installation comprising 500 cast-iron combat helmets arranged on the Tallawoladah Lawn for the Museum of Contemporary Art Australia in Sydney.",
+      "content": "Artist Ai Weiwei unveiled his commission for the Museum of Contemporary Art Australia in Sydney, featuring 500 cast-iron combat helmets arranged in ten orderly lines on Tallawoladah Lawn. Titled Mushrooms, the 131-foot-long installation incorporates inner padding and recalls 20th-century combat helmets on an elevated platform split by a pedestrian walkway. According to the artist, the title and curved lip allude to growth in darkness, nuclear mushroom clouds, and connotations of endless delays in Chinese. The work prompts reflection on war and peace during an era where both conditions continually swap roles. The inspiration stems from a 2002 controversy when Germany offered thousands of helmets instead of weapons following Russia's invasion of Ukraine. The artist stated the work aims to demonstrate the shallow understanding national leadership can hold regarding the human condition rather than functioning as a political joke. Realized as the latest Neil Balnaves Tallawoladah Lawn Commission, the installation remains on view for seven months."
     },
     {
       "id": "92bdabbd51a736d33b98",
@@ -348,24 +420,6 @@
       "content": "Fundació Catalunya La Pedrera–Casa Milà in Barcelona is hosting an exhibition titled The Secret Life of Plants. Scheduled from October 2, 2026, to January 24, 2027, the presentation gathers approximately forty works by Anselm Kiefer from the collection of Hans Grothe, alongside pieces from other private collections. The selection offers insight into the symbolic richness and material complexity of the artist's practice. At the core of the presentation is Opus Magnum, a series of vitrines on display for the first time in Spain. Conceived as archives of memory, these works assemble books, plants, stones, and fabrics in a dialogue between history, myth, science, and spirituality. In parallel, the Fall 2026 issue of Gagosian Quarterly has been released, featuring various contributions and previews of upcoming projects. Meanwhile, Adriana Varejão prepared new works destined to represent Brazil at the 61st Biennale di Venezia. Curated by Diane Lima, the Brazilian Pavilion places Varejão in conversation with Rosana Paulino to reflect on colonial wounds and the rewriting of history in Brazil."
     },
     {
-      "id": "51bcab6db04ebc951fa0",
-      "category": "Architecture & Design",
-      "source": "architecturalrecord.com",
-      "sourceDomain": "architecturalrecord.com",
-      "publishedAt": "2026-09-24T16:57:58.000Z",
-      "url": "https://www.architecturalrecord.com/articles/18420-major-retrospective-of-sri-lankan-architect-geoffrey-bawa-opens-at-the-vitra-design-museum",
-      "image": "https://www.architecturalrecord.com/ext/resources/news/2026/*September/Bawa-Exhibition-Vitra/Bawa_Exhibition.jpeg?height=635&t=1790389161&width=1200",
-      "originalTitle": "Major Retrospective of Sri Lankan Architect Geoffrey Bawa Opens at the Vitra Design Museum - architecturalrecord.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 70,
-      "brandFit": 90,
-      "title": "Major Geoffrey Bawa Retrospective Opens at the Vitra Design Museum",
-      "excerpt": "Examining the five-decade career of influential 20th-century architect Geoffrey Bawa, a major retrospective has opened at the Vitra Design Museum in Germany. Featuring over 250 drawings, models, and archival documents, the exhibition runs through February 28, 2027.",
-      "content": "Highlighting the career of Geoffrey Bawa, recognized as one of the most influential architects of the 20th century, a comprehensive retrospective exhibition has opened at the Vitra Design Museum in Weil am Rhein, Germany. Marking the first major exhibition dedicated to Bawa in over twenty years, the showcase presents more than 250 drawings, models, photographs, furniture pieces, and archival documents spanning five decades of his professional practice. Organized by the Vitra Design Museum, M+, and the Wüstenrot Foundation in collaboration with the Geoffrey Bawa Trust, the retrospective encompasses diverse projects ranging from the Bentota Beach Hotel to the Kandalama Hotel. Newly commissioned photographs by Iwan Baan emphasize the lived-in character of the buildings and their integration with surrounding landscapes. The exhibition closely examines the architect's spatial relationship with terrain and highlights his collaborations with local craftspeople and artists. Lebanese architect Lina Ghotmeh designed the scenography to evoke the sensory qualities inherent in Bawa's built works. Following its presentation in Germany, the exhibition is scheduled to travel to M+ in Hong Kong in June 2027. The retrospective remains on view at the Vitra Design Museum through February 28, 2027."
-    },
-    {
       "id": "0fffef7010a3ba71c40b",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -395,11 +449,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 85,
+      "technicalValue": 80,
       "brandFit": 95,
-      "title": "Standout Collections and Contemporary Designs Unveiled at Paris Design Week",
-      "excerpt": "The 16th edition of Paris Design Week showcased collections blending traditional craftsmanship, natural forms, and contemporary design.",
-      "content": "The 16th edition of Paris Design Week featured participation from 500 exhibitors across showrooms in Saint-Germain-des-Prés and other locations, highlighting creations rooted in traditional techniques and natural forms. Draga & Aurel showcased their Crisalide side tables at Galerie BSL, combining colored glass, blown-glass legs, and brass bases. Design firm Pinto and Nobilis revived their collaboration with the Foundation fabric and wall-covering collection. Yves Salomon Éditions unveiled Tactile Monuments, its first complete interior collection centered on merino shearling and natural volumes. Swedish design house Veermakers opened its first Paris showroom in Le Marais to highlight Scandinavian cabinetmaking traditions. Nordic Knots presented hand-knotted wool rugs inspired by Swedish Grace. Modern Metier partnered with Rudy Guénaire to present Tropic of Capricorn, while Garnier & Linker introduced Aurora, an outdoor lighting collection in cast aluminum and alabaster. Franck Genser exhibited his Piscine VI collection, and Hervet Manufacturier presented its full range of living and working furniture drawing on six generations of woodworking expertise."
+      "title": "Standout Collections and Designs Highlighted at Paris Design Week",
+      "excerpt": "The 16th edition of Paris Design Week featured contemporary design and decor products rooted in ancient techniques and natural forms, with the participation of 500 exhibitors.",
+      "content": "Paris Design Week gathered contemporary design and decor examples across showrooms and galleries in locations such as Saint-Germain-des-Prés. The 16th edition of the event featured the participation of 500 exhibitors. Draga & Aurel showcased their Crisalide side tables, combining colored glass layers, blown-glass legs, and sand-cast brass bases. Pinto teamed up with Nobilis to present the Foundation collection featuring warm tones and distinct motifs. Yves Salomon Éditions unveiled Tactile Monuments, its first complete interior collection inspired by natural volumes and stones, pioneered by Tamara Taichman and Marcellin Boyer. Swedish design house Veermakers opened its first Paris showroom in Le Marais to advance its international expansion. Nordic Knots presented hand-knotted wool rugs inspired by the Swedish Grace movement. L'Objet partnered with Jessica McCormack on a home collection translating fine-jewelry craftsmanship into objects. Modern Metier presented the Tropic of Capricorn collection created with Rudy Guénaire, drawing inspiration from tropical landscapes. Garnier & Linker unveiled the Aurora outdoor lighting collection, while Franck Genser presented his Piscine VI coffee table. Hervet Manufacturier exhibited its furniture range designed for living, dining, and working spaces."
     },
     {
       "id": "f071305f655f5f868bbc",
@@ -438,42 +492,6 @@
       "content": "Tate Collective, a free membership scheme for 16 to 25-year-olds, has reached a milestone of 200,000 members. To mark the occasion, an open call has been launched inviting members to create a new artwork for display at Tate Modern alongside figures such as Andy Warhol, Salvador Dalí, and Marina Abramović. The winning commission will be selected by a jury chaired by Rosalie Doubal and will go on display in March 2027, with submissions closing on 19 October. Concurrently, Tate Modern Lates is celebrating its 10th anniversary, having drawn 870,000 attendees over the past decade to after-hours events featuring live music, performances, and workshops. Karin Hindsbo, Interim Director of Tate, stated that the members represent a generation choosing to engage with art and ideas. The anniversary celebrations will culminate on 30 October with a special Late event programmed by Shygirl. Tate Collective membership offers various discounts and access to creative opportunities with support from patrons and foundations."
     },
     {
-      "id": "259bc439ae5094ef82f1",
-      "category": "Exhibitions",
-      "source": "labiennale.org",
-      "sourceDomain": "labiennale.org",
-      "publishedAt": "2026-09-21T13:21:48.000Z",
-      "url": "https://www.labiennale.org/en/news/biennale-college-architettura-20262027-12-selected-projects",
-      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/architettura/2027/750x500/biennale-college-architettura-27-.jpg?itok=7POQTq9_",
-      "originalTitle": "Biennale College Architettura 2026/2027: the 12 selected projects - labiennale.org",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 80,
-      "brandFit": 95,
-      "title": "Twelve Projects Selected for Biennale College Architettura 2026-2027",
-      "excerpt": "Twelve projects have been selected for the third edition of Biennale College Architettura. The projects by practitioners under 30 will be developed during a workshop from 22 to 30 September 2026.",
-      "content": "Twelve projects have been selected for the 3rd edition of Biennale College Architettura 2026–2027. The emerging practitioners under 30 originate from China, Croatia, Italy, Mexico, Syria, Spain, Turkey, Tunisia, the USA, and Hungary. The initiative complements the 20th International Architecture Exhibition, titled Do Architecture and curated by Wang Shu and Lu Wenyu, serving as a research, experimentation, and production laboratory. The open call attracted over 80 emerging practitioners from 36 countries. The 12 selected projects are presented by Ahlem Balghouthi, Fabio Bari, Stav Bouzaglo, Antonino Caridi, Yiying Chen, Alejandro Ferrer Esplugues, Jin Gao, Nisa Gökgöz, Matej Orkić, Julia Polefko, Ahmad Salah, and Guillermo Sanchez Cardenas. The workshop will take place from 22 to 30 September 2026, coordinated by Wang Shu and Lu Wenyu alongside tutors. Following the workshop, up to four projects will be selected to receive a 25,000 euro grant for the realization of the final work, which will be presented out of competition during Biennale Architettura 2027."
-    },
-    {
-      "id": "c4f117afbd5b94e5d0e9",
-      "category": "Galleries & Museums",
-      "source": "tate.org.uk",
-      "sourceDomain": "tate.org.uk",
-      "publishedAt": "2026-09-18T17:32:43.000Z",
-      "url": "https://www.tate.org.uk/press/press-releases/artist-rooms-robert-rauschenberg-at-tate-modern-21-september-2026---december-2027",
-      "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/87_144_2023_RA.width-600.jpg",
-      "originalTitle": "ARTIST ROOMS: Robert Rauschenberg at Tate Modern, 21 September 2026 - December 2027 – Press Release - tate.org.uk",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 70,
-      "brandFit": 90,
-      "title": "Tate Modern Opens Large-Scale Robert Rauschenberg Display",
-      "excerpt": "Tate Modern is launching a large-scale free display of over 20 works by Robert Rauschenberg spanning three decades to mark the centenary of his birth.",
-      "content": "Tate Modern is launching a large-scale free display of works by Robert Rauschenberg, running from 21 September 2026 to December 2027. Marking the centenary of the artist's birth, the presentation brings together over 20 works spanning three decades, including paintings, prints, and kinetic installations. At the heart of the presentation are Glut sculptures, including three newly gifted by the Robert Rauschenberg Foundation to the Tate Americas Foundation. Curated by Gregor Muir, Andrew de Brún, and Julia Blaut, the display foregrounds Rauschenberg's engagement with dance and performance, featuring metal sculptures, performance sets, and costume designs. The exhibition is organized as part of the ARTIST ROOMS touring programme, jointly managed by Tate and the National Galleries of Scotland."
-    },
-    {
       "id": "ba233137a814c554b08c",
       "category": "Fashion & Luxury",
       "source": "WWD",
@@ -484,30 +502,12 @@
       "originalTitle": "Maison Michel Celebrates 90 Years of Hatmaking With New Exhibition at Chanel’s Le19M - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 86,
-      "technicalValue": 82,
-      "brandFit": 92,
-      "title": "Parisian Hatmaker Maison Michel Celebrates 90th Anniversary With Le19M Exhibition",
-      "excerpt": "Parisian hatmaker Maison Michel is marking its 90th anniversary with an exhibition at La Galerie du 19M, highlighting traditional craftsmanship techniques and historical archives.",
-      "content": "Renowned Parisian hatmaker Maison Michel is celebrating its 90th anniversary with an exhibition that highlights its extensive craftsmanship heritage. Opening on Sept. 23 at La Galerie du 19M, the craft hub in northern Paris, the exhibition titled “Metamorphoses — The Hats of Maison Michel” runs until Dec. 13. Part of Chanel’s network of specialized workshops since 1997, the house focuses as much on ancient tools and techniques as it does on final designs. Curated by artistic director Priscilla Royer and Palais Galliera museum director Emilie Hammen, the display begins with tree trunks carved into raw hat shapes and a selection of the 4,000 wooden hat blocks held in its archives. Visitors can view specially commissioned artworks, alongside sections dedicated to modistes working with canvas, organza, leather, and tweed. The exhibition also features a replica of an early 20th-century milliner's shop where weekly filmmaking workshops will be hosted. The curators note that headgear has evolved from a social signifier governed by strict past conventions into a modern form of personal self-expression."
-    },
-    {
-      "id": "a937a20faf056f3fff9e",
-      "category": "Fashion & Luxury",
-      "source": "WWD",
-      "sourceDomain": "wwd.com",
-      "publishedAt": "2026-09-14T14:00:00.000Z",
-      "url": "https://wwd.com/fashion-news/designer-luxury/jacquemus-boutiqe-miami-design-district-1239207456/",
-      "image": "https://wwd.com/wp-content/uploads/2026/09/jacquemus-store-miami-design-district-ctsy-006.jpg?crop=0px%2C678px%2C1366px%2C765px&resize=1000%2C563",
-      "originalTitle": "EXCLUSIVE: Jacquemus Filled His New Miami Design District Flagship With Art — and Fine Design - WWD",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 86,
-      "technicalValue": 82,
-      "brandFit": 94,
-      "title": "Jacquemus Opens New Flagship Boutique in Miami Design District",
-      "excerpt": "Paris-based fashion house Jacquemus is opening a two-story flagship boutique in the Miami Design District. Conceived by the founder, the 2,900-square-foot space incorporates blue-chip artworks, antiques, and bespoke design pieces.",
-      "content": "Paris-based fashion house Jacquemus is launching a 2,900-square-foot flagship boutique in Miami's Design District, spanning two floors. Conceived by founder Simon Porte Jacquemus in collaboration with architectural firm Oma, the interior echoes elements from earlier boutiques in Paris and Courchevel. The space integrates artworks by Germaine Richier, Aristide Maillol, Joan Miró, and Pablo Picasso, alongside furnishings by Frank Lloyd Wright and Jean Royère. Chief executive officer Sarah Benady described Miami as a natural convergence point for fashion, art, and design between the United States and Latin America. The boutique includes a dedicated shoe salon, a private VIC sunroom, and infrastructure prepared for an upcoming beauty line through a partnership with L'Oréal. Additionally, the location will offer an exclusive powder and mint blue edition of the Nike Moon Shoe. This opening follows recent retail expansions in New York and Los Angeles as part of the brand's targeted international retail strategy."
+      "editorialScore": 85,
+      "technicalValue": 78,
+      "brandFit": 90,
+      "title": "Renowned Parisian Hatmaker Maison Michel Celebrates 90th Anniversary With New Exhibition",
+      "excerpt": "Parisian hatmaker Maison Michel is marking its 90th anniversary with an exhibition at La Galerie du 19M, highlighting traditional craftsmanship, historic tools, and the intricate journey from raw materials to finished headwear.",
+      "content": "Renowned Parisian hatmaker Maison Michel is marking its 90th anniversary with a comprehensive exhibition celebrating the intricacies of millinery craftsmanship. Opening on Sept. 23 at La Galerie du 19M, Chanel's craftsmanship hub in northern Paris, the exhibition runs through Dec. 13. Titled \"Metamorphoses — The Hats of Maison Michel,\" the display focuses as much on ancient tools and techniques as it does on final designs, offering visitors a detailed look inside the historic workshop. Curated by artistic director Priscilla Royer alongside Palais Galliera fashion museum director Emilie Hammen, the exhibition begins with tree trunks carved into raw hat shapes alongside thousands of wooden hat blocks from the house archives. The showcase highlights traditional methods such as sewn straw using 19th-century machines, alongside specialized works in canvas, organza, leather, and tweed. Throughout the space, specially commissioned artworks, large-scale photographs by Bastiaan Woudt, and a replica of an early 20th-century milliner's shop contextualize the evolution of headwear. Organizers noted that hats have transitioned from restrictive social signifiers into a form of personal expression, while the workshop itself continues to embrace a modern revival in dramatic statement pieces."
     }
   ]
 }
