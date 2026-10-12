@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-10-11T10:11:21.645Z",
+  "generatedAt": "2026-10-12T11:07:12.894Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -26,7 +26,7 @@
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
-    "Fashion & Luxury": 2
+    "Fashion & Luxury": 3
   },
   "coverage": {
     "Art & Exhibitions": {
@@ -70,13 +70,31 @@
       "targetMet": false
     },
     "Fashion & Luxury": {
-      "count": 2,
+      "count": 3,
       "target": 3,
-      "targetMet": false
+      "targetMet": true
     }
   },
-  "total": 25,
+  "total": 26,
   "articles": [
+    {
+      "id": "f9dc3138321b0b73f544",
+      "category": "Galleries & Museums",
+      "source": "tate.org.uk",
+      "sourceDomain": "tate.org.uk",
+      "publishedAt": "2026-10-11T17:49:24.000Z",
+      "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/the-90s",
+      "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Juergen_Teller_Young_Pink_Kate_London_1998_c_J.width-600.jpg",
+      "originalTitle": "The 90s: Art and Fashion - tate.org.uk",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 82,
+      "technicalValue": 65,
+      "brandFit": 80,
+      "title": "Tate Britain 1990'ların Sanat ve Moda Dönemini Sergiliyor",
+      "excerpt": "Tate Britain, küratör Edward Enninful iş birliğiyle hazırlanan The 90s: Art and Fashion sergisini ziyaretçilerle buluşturuyor. Sergi, 8 Ekim 2026 ile 14 Şubat 2027 tarihleri arasında açık kalacak.",
+      "content": "Tate Britain, 1990'lı yılların yaratıcı enerjisini ve kültürel dönüşümlerini konu alan The 90s: Art and Fashion sergisini açtı. Küratör Edward Enninful OBE'nin deneyimlerinden yola çıkan sergi, fotoğraf, moda, sanat ve tasarımı bir araya getiriyor. Ziyaretçiler, Steve McQueen, Sarah Lucas, Yinka Shonibare, Corinne Day, Juergen Teller, Vivienne Westwood, Alexander McQueen ve John Galliano gibi isimlerin ikonik çalışmalarını görebilecek. Sergi, 8 Ekim 2026 ile 14 Şubat 2027 tarihleri arasında gezilebilecek. Koleksiyonda Mark Leckey'nin İngiliz dans müziği kültürünü inceleyen Fiorucci Made Me Hardcore adlı video çalışması, Vivienne Westwood'un Anglomania koleksiyonundan parçalar ve Yinka Shonibare'nin sömürge ticaret yollarına referans veren The Swing adlı eseri yer alıyor. Ayrıca Steve McQueen'in Bear isimli sessiz filmi ve Jim Lambie'nin renkli vinil bantlardan oluşan Zobop yerleştirilmesi de sergilenenler arasında bulunuyor. Ziyaretçiler ek ücret karşılığında sesli rehber temin edebiliyor."
+    },
     {
       "id": "cdaaf038261d655f5da7",
       "category": "Architecture & Design",
@@ -94,24 +112,6 @@
       "title": "İngiltere'deki Eski Bir Çiftlik Yapısı Modern Bir Konuta Dönüştürüldü",
       "excerpt": "Studio Weave kurucusu Je Ahn, Isle of Wight'taki 158 metrekarelik mütevazı bir çiftlik binasını kişisel bir sığınak olarak yeniden tasarladı. Derin yeniden kullanım anlayışıyla hayata geçirilen proje, özgün yapı malzemelerini koruyarak tarımsal bağlama saygı duruşunda bulunuyor.",
       "content": "Studio Weave kurucusu Je Ahn, İngiltere'nin Isle of Wight bölgesindeki Cowes kasabası yakınlarında yer alan 158 metrekarelik çalışan bir çiftlikteki mevcut yapıyı satın alarak kişisel bir sığınağa dönüştürdü. Güney Ahırı adı verilen proje, sınırlı bir bütçeyle ve tasarımcının kendi kendisinin müşterisi olması avantajıyla esnek ve rahat bir yaklaşımla hayata geçirildi. Yapının elli yılı aşkın orijinal dokusuna büyük bir saygıyla yaklaşan ekip, 21. yüzyıl yaşam koşullarına uyum sağlaması için onarılan özgün malzemelerin birçoğunu açıkta bıraktı. Evin merkezinde geniş pencerelere sahip açık planlı bir mutfak ve yaşam alanı yer alırken, bu alanı üç yatak odasına bağlayan küçük bir koridor bulunuyor. Detay işçiliği imalatçı Imphouse ekibiyle birlikte yürütülürken, peyzaj düzenlemesi Tom Massey Studio iş birliğiyle gerçekleştirildi. Tasarımın temelini oluşturan derin yeniden kullanım konsepti, hem pratik hem de yapısal anlatı değerleri taşıyan yerinde bulunmuş malzemelerin yeniden değerlendirilmesini kapsıyor. Bu yaklaşım, tarihi dokunun korunmasını ve tarımsal bağlamın kutlanmasını sağlarken yeni sakinleri için işlevsel bir fon oluşturuyor."
-    },
-    {
-      "id": "f9dc3138321b0b73f544",
-      "category": "Galleries & Museums",
-      "source": "tate.org.uk",
-      "sourceDomain": "tate.org.uk",
-      "publishedAt": "2026-10-11T02:13:10.000Z",
-      "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/the-90s",
-      "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Juergen_Teller_Young_Pink_Kate_London_1998_c_J.width-600.jpg",
-      "originalTitle": "The 90s: Art and Fashion - tate.org.uk",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
-      "brandFit": 90,
-      "title": "Tate Britain, 1990'ların Sanat ve Moda Kültürünü İnceliyor",
-      "excerpt": "Tate Britain, Edward Enninful'un küratörlüğünde 1990'ların yaratıcı ve asi ruhunu fotoğraf, moda ve sanat aracılığıyla inceleyen yeni bir sergi düzenliyor.",
-      "content": "Tate Britain, 8 Ekim 2026 - 14 Şubat 2027 tarihleri arasında The 90s: Art and Fashion başlıklı sergiye ev sahipliği yapıyor. Küratör Edward Enninful'un deneyimlerine dayanan sergi; fotoğraf, moda, sanat ve tasarımı bir araya getirerek İngiliz kültürünü dönüştüren bir neslin çalışmalarını ele alıyor. Sergi kapsamında Steve McQueen, Sarah Lucas, Yinka Shonibare, Corinne Day, Juergen Teller, Vivienne Westwood, Alexander McQueen ve John Galliano gibi isimlerin eserleri yer alıyor. Ziyaretçiler, Mark Leckey'nin dans müziği kültürünü inceleyen Fiorucci Made Me Hardcore adlı video çalışmasını, Vivienne Westwood'un Anglomania koleksiyonundan tartan kıyafetleri ve Yinka Shonibare'nin Hollanda balmumu kumaşıyla yeniden yorumladığı The Swing adlı eserini görebilirler. Ayrıca Steve McQueen'in Bear adlı sessiz filmi, Abigail Lane'in Bottom Wallpaper yerleştirmesi ve Jim Lambie'nin Zobop zemin tasarımı da sergilenen işler arasında bulunuyor."
     },
     {
       "id": "c2ab332f3e23ff500c27",
@@ -150,6 +150,24 @@
       "content": "Creative Time, sanatçı Guadalupe Maravilla'yı New York'un Morningside Heights mahallesindeki St. John the Divine Katedrali'nin Synod Hall salonunda büyük bir enstalasyon hazırlamak üzere görevlendirdi. Clemente Soto Vélez Kültür ve Eğitim Merkezi işbirliğiyle sunulan Consejos de las Estrellas adlı eser, 17 Aralık 2026 ile 7 Şubat 2027 tarihleri arasında ziyaret edilebilecek. Sergi, toplanma, düşünme ve dinlenme alanı olarak tasarlanmış bir sığınak alanı biçimini alacak. Proje, yaklaşık 100 heykel ve tekstil eserini, sanatçının seyahat eden okul otobüsü ve sanat eserine dönüştürülmüş aracı Mariposa Relámpago ile bir araya getirecek. Sergi süresince Maravilla, sanat ve şifa arasındaki kesişimleri inceleyen haftalık ses banyoları ile projeyi aktive edecek. Sanatçı, projenin bayram döneminde yokluk hissini derinleştiren yas, hastalık veya göçmenlik statüsü gibi durumlar için bir sığınak işlevi göreceğini belirtti. St. John the Divine Katedrali ayrıca yerel toplum kuruluşlarıyla ortaklıklar yoluyla gıda, giyim ve oyuncakların toplanıp yeniden dağıtılacağı bir karşılıklı yardımlaşma alanı olarak hizmet verecek. Katedralin programlamadan sorumlu yönetici direktörü Laura Bosley, projenin topluluk taahhüdünü güçlendirdiğini ifade etti."
     },
     {
+      "id": "9330b2c3c3c03f0d0bbc",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-10-09T16:00:00.000Z",
+      "url": "https://wwd.com/sourcing-journal/industry-news/where-60-years-of-master-craftsmanship-meets-modern-luxury-1239333081/",
+      "image": "https://wwd.com/wp-content/uploads/2026/10/alteration.jpg?w=1000&h=563&crop=1",
+      "originalTitle": "Where 60 Years of Master Craftsmanship Meets Modern Luxury Tech - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 88,
+      "technicalValue": 82,
+      "brandFit": 92,
+      "title": "Adrian Jules Özel Dikim Giyim Sektöründe Teknolojiyi Gelenekle Buluşturuyor",
+      "excerpt": "1964 yılında kurulan Adrian Jules Custom Clothier, özel dikim lüks giyim pazarındaki operasyonel süreçleri yönetmek için kurumsal kaynak planlama sistemini hayata geçirdi.",
+      "content": "1964 yılında Rochester, New York'ta kurulan Adrian Jules Custom Clothier, altmış yılı aşkın el işçiliği geleneğini kurumsal teknolojiyle birleştiriyor. Şirket, özel dikim giyim sürecini takip etmek amacıyla kendi Kurumsal Kaynak Planlama sistemini geliştirdi. Bu platform sayesinde özel etiketli terziler ve perakendeciler sipariş girişinden atölye kesimine, üretime ve muhasebeye kadar olan süreçleri tek bir merkezden izleyebiliyor. Platinum bölümünün başkanı Alex Roberti, şirketin aile işletmesi kökenini korurken üstün hizmet sunmayı sürdürdüğünü ifade etti. Operasyon başkanı Arnie Roberti ise teknolojinin desen tanıtımını hızlandırmada ve envanter yönetiminde önemli bir rol oynadığını belirtti. Şirket ayrıca, erkek giyim kalıplarının dışına çıkarak kadınlara özel vücut hatlarına uygun desen tasarımları geliştirdi ve bu sayede perakende müşterilerinin kadın lüks giyim pazarındaki payını artırmasını sağladı."
+    },
+    {
       "id": "537a265e06c9ede7a157",
       "category": "Art & Exhibitions",
       "source": "The Art Newspaper",
@@ -168,6 +186,24 @@
       "content": "İngiliz sanatçı Michael Landy, Londra'daki Sir John Soane Müzesi'nde Future Ruins başlıklı yeni sergisini izleyiciyle buluşturuyor. Genç İngiliz Sanatçılar kuşağından olan Landy, tüketim kültürü eleştirileri ve 2001 yılında tüm mal varlığını yok ettiği Break Down adlı performansıyla tanınıyor. Sergi, müzenin koleksiyonunda yer alan ve Joseph Michael Gandy'nin Bank of England'ı harabe olarak tasvir eden 18. yüzyıl sulu boyasından ilham alıyor. Seçkide Bank of England, Sir John Soane Müzesi, New York Menkul Kıymetler Borsası, Mar-a-Lago Kulübü, Chatsworth House, Mussolini'nin Palazzo della Civiltà Italiana binası ile sanatçının aile evi ve öğrencilik yıllarındaki sanat malzemesi dükkanı yer alıyor. Eserler, romantik harabeler ile açgözlülük ve kibir eleştirisi arasında değişen temalar barındırıyor. Sergi ayrıca sanatçının geçen yıl yaptığı 62 Yaşında Otoportre adlı detaylı kurşun kalem portresini de kapsıyor. Landy, çürüme ve yıkım temalarının kariyeri boyunca temel oluşturduğunu belirtirken, sergide atık kutularından oluşan Broken Column adlı yeni bir heykelsi yerleştirme de bulunuyor."
     },
     {
+      "id": "0a1dbfb36a8afcc8c5ae",
+      "category": "Art & Exhibitions",
+      "source": "The Art Newspaper",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-10-09T11:01:38.283Z",
+      "url": "https://www.theartnewspaper.com/2026/10/09/restoration-of-earthquake-hit-palace-in-mantua-nears-completion",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/9ede466daa37964eb34549c2943d62e1edeb0c96-1628x1082.jpg?rect=0,53,1628,977&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "Restoration of earthquake-hit palace in Mantua nears completion - The Art Newspaper",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 75,
+      "brandFit": 90,
+      "title": "Mantua’daki Palazzo Ducale’nin 14 yıllık deprem restorasyonu tamamlanmak üzere",
+      "excerpt": "İtalya'nın Mantua kentindeki 35.000 metrekarelik tarihi Palazzo Ducale kompleksinde 2012 depremlerinin ardından başlatılan 14 yıllık restorasyon çalışmaları sona yaklaşıyor. Müdür Stefano L'Occaso, çalışmaların yüzde 99 oranında tamamlandığını belirtti.",
+      "content": "İtalya'nın kuzeyindeki Emilia-Romagna bölgesinde 2012 yılında meydana gelen depremler, Mantua'daki tarihi Palazzo Ducale kompleksinde büyük hasara yol açmıştı. 13. yüzyıldan kalma ve Gonzaga hanedanı tarafından genişletilen 35.000 metrekarelik tesiste 14 yıldır yürütülen restorasyon projeleri sona yaklaşıyor. Kompleksin müdürü Stefano L'Occaso, çalışmaların yüzde 99 oranında bittiğini ifade etti. Depremlerde ağır hasar gören ve Andrea Mantegna'nın freskleriyle tanınan Camera Picta odası ile Basilica Palatina di Santa Barbara'nın çan kulesi daha önce onarılmıştı. Son dönemde güneybatı kulesi, Appartamento Grande di Castello süiti ve Giardino dei Semplici bahçesini çevreleyen portiko da yenilerek ziyarete açıldı. Kompleksin onarımı için yaklaşık 15 milyon euro harcandı. Francesco II Gonzaga ve eşi Isabella d’Este’ye ait Sala delle Sigle odası da yıl sonuna kadar yeniden açılacak. Ayrıca Lotteye göre Louvre ve Kunsthistorisches Museum'dan ödünç alınan eserlerin yer alacağı özel bir sergi de ekim ayında ziyarete açılacak."
+    },
+    {
       "id": "d76f4869ed0d37e87ccc",
       "category": "Art & Exhibitions",
       "source": "The Art Newspaper",
@@ -178,12 +214,12 @@
       "originalTitle": "A Louis Vuitton foundation exhibition, with ten Van Gogh paintings, reveals the extraordinary vision of an early collector - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 70,
-      "brandFit": 90,
-      "title": "Gustave Fayet’nin Van Gogh Koleksiyonu Paris'teki Fondation Louis Vuitton’da Sergileniyor",
-      "excerpt": "Modern sanatın öncülerinden Gustave Fayet’nin topladığı 10 Van Gogh tablosu, Paris’teki Fondation Louis Vuitton’da sanatseverlerle buluşuyor. 8 Mart 2027 tarihine kadar açık kalacak sergide 600'den fazla eser yer alıyor.",
-      "content": "Fransız koleksiyoner Gustave Fayet’nin 1901 ile 1909 yılları arasında edindiği 16 Van Gogh tablosundan 10'u, Paris’teki Fondation Louis Vuitton’da sergilenmeye başlandı. LVMH grubunun başkanı Bernard Arnault, Fayet'yi Modern sanat tarihinin en iyi saklanan sırlarından biri olarak nitelendirdi. 8 Mart 2027 tarihine kadar ziyaret edilebilecek Gustave Fayet: Collector - Artist Designer başlıklı sergi, Frank Gehry tasarımı binanın dört katına yayılıyor ve 600'den fazla eser içeriyor. Fayet yalnızca bir koleksiyoner değil; aynı zamanda şarap üreticisi, ressam, seramikçi, müze küratörü ve tasarımcıydı. Sanatçı, Van Gogh'un yanı sıra Paul Gauguin ve Odilon Redon'un eserlerini de topladı. Sergi kapsamında yer alan önemli eserler arasında, 1901'de satın alınan Public Garden in Arles ve sanatçının kulağını kesmesinden iki hafta sonra yaptığı Self-portrait with Bandaged Ear and Pipe gibi önemli parçalar bulunuyor. Fayet, 1905 yılında Béziers'den Paris'e taşındığında Van Gogh tablolarını salonunda bir araya getirmişti. 1925 yılında vefatından beş ay önce yayımlanan bir yazıda, Igny'deki evinde konuklarını ağırladığı ve koleksiyonunu sergilediği belirtiliyordu."
+      "editorialScore": 90,
+      "technicalValue": 60,
+      "brandFit": 95,
+      "title": "Paris’teki Fondation Louis Vuitton, Gustave Fayet'nin Van Gogh koleksiyonunu sergiliyor",
+      "excerpt": "Paris’teki Fondation Louis Vuitton, koleksiyoner Gustave Fayet'nin 1901-1909 yılları arasında edindiği Van Gogh tablolarını içeren geniş kapsamlı bir sergiye ev sahipliği yapıyor. Sergi 8 Mart 2027 tarihine kadar ziyaret edilebilecek.",
+      "content": "Paris’teki Fondation Louis Vuitton, Modern sanatın öncülerinden Gustave Fayet'nin hikayesini ele alan geniş çaplı bir sergi açtı. 9 Ekim itibarıyla ziyarete açılan sergide, Fayet'nin 1901-1909 yılları arasında satın aldığı 16 Van Gogh tablosundan onu yer alıyor. LVMH grubu lideri Bernard Arnault, Fayet'yi Modern sanat tarihinin en iyi saklanan sırlarından biri olarak tanımlıyor. Frank Gehry tasarımı binanın dört katına yayדılan sergide, Fayet ve diğer sanatçıların eserlerinden oluşan 600'den fazla eser yer alıyor. Fayet'nin topladığı eserler arasında, 1901 yılında 2.000 franka satın aldığı Arles'daki Halka Açık Bahçe de bulunuyor. Sergi aynı zamanda Van Gogh’un kulağını kesmesinden iki hafta sonra yaptığı Bandajlı Kulaklı ve Pipolu Otoportre adlı önemli esere de yer veriyor. 1924 yılında vefatından aylar önce 200.000 frank değer biçilen Arles'daki Halka Açık Bahçe ve diğer eserler, sanatçının Provence ve Auvers dönemlerine odaklanıyor. Fayet, 1909 yılına kadar Van Gogh'un eserlerini toplayan en büyük dört özel koleksiyonerden biri haline gelmişti. Gustave Fayet: Collector - Artist Designer başlıklı sergi, 8 Mart 2027 tarihine kadar gezilebilecek."
     },
     {
       "id": "c168d71928490231701f",
@@ -204,6 +240,24 @@
       "content": "19. yüzyılın ortalarında bir hareket olarak başlayan spiritüalizm, sanatçıların ruhani alemlerle iletişim kurma arayışına zemin hazırladı. Jennifer Higgie'nin kitabında belirttiği üzere, fiziksel dünyada kısıtlanan yetenekleri için kadınlar manevi aleme sığındı. Georgiana Houghton, 1860 ve 1870'lerde trans halinde spiritüel rehberlikle tamamen soyut suluboya ve kurşun kalem çizimleri üretti. 1871 yılında New British Gallery'de 155 eserlik kişisel sergi açan Houghton, maddi başarı yakalayamasa da ölümünün ardından yeniden keşfedildi. İngiliz medyum Anna Mary Howitt ise spiritüalist ailesinin etkisiyle otomatik çizimler yaptı ve eserlerini kamuoyuyla paylaştı. London’s College of Psychic Studies kurucuları arasında yer alan Howitt'in çizimleri günümüzde arşivlerde korunuyor. Öte yandan Hilma af Klint ve Anna Cassel'in oluşturduğu The Five grubu, seanslar aracılığıyla ruhani mesajlar aldı. Araştırmacılar, Cassel'in af Klint ile birlikte \"Paintings for the Temple\" döngüsüne önemli katkılarda bulunduğunu ortaya koydu. Stockholm'de eğitim gören Hilma af Klint ise yaptığı mistik resimlerin henüz erken bir dönemde anlaşılmayacağını öngörerek eserlerinin ölümünden 20 yıl sonra sergilenmesini istedi. Bu kadın sanatçıların eserleri, son yıllarda düzenlenen uluslararası sergilerle sanat tarihinde yeniden değerlendiriliyor."
     },
     {
+      "id": "4e479162fc0cc79152d6",
+      "category": "Exhibitions",
+      "source": "La Biennale di Venezia",
+      "sourceDomain": "labiennale.org",
+      "publishedAt": "2026-10-09T07:43:04.000Z",
+      "url": "https://www.labiennale.org/en/agenda/moldova-pavilion-hybridreams-%E2%80%93-imagining-otherwise-times-crisis",
+      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/moldova1.jpg?itok=6ksx7_Za",
+      "originalTitle": "Biennale Arte 2026 | Moldova Pavilion: HYBRIDREAMS – Imagining otherwise in times of crisis - La Biennale di Venezia",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 50,
+      "brandFit": 90,
+      "title": "Moldova Pavyonu Venedik Bienali'nde kriz dönemlerinde sanatı masaya yatırıyor",
+      "excerpt": "Venedik Bienali'ndeki Moldova Pavyonu, savaşların ve güncel krizlerin geleceği hayal etme biçimlerini nasıl değiştirdiğini ele alacak bir yuvarlak masa toplantısına ev sahipliği yapıyor.",
+      "content": "Moldova Cumhuriyeti'nin Uluslararası Venedik Sanat Sergisi'ne resmi katılımını simgeleyen proje kapsamında, savaşların ve güncel krizlerin geleceği hayal etme biçimlerini nasıl dönüştürdüğünü inceleyen bir yuvarlak masa toplantısı düzenleniyor. Avrupa Kültür Vakfı ve Avrupa Dış İlişkiler Konseyi iş birliğiyle gerçekleştirilen etkinlik, Moldova Pavyonu'na ev sahipliği yapan Venedik'teki Chiesa dei Santi Geremia e Lucia kilisesinde yapılıyor. Program, kilisenin kültürel mirasından sorumlu rahip ve mimar Don Gianmatteo Caputo rehberliğinde gerçekleştirilen bir turla başlıyor. Tartışma oturumu, Moldova'nın jeopolitik gerçekliklerinden yola çıkarak Avrupa'nın geleceğini, siyasi düşünceyi ve sanatsal hayal gücünün savaşın sonuçlarına verdiği tepkileri ele alıyor. Yuvarlak masa toplantısına eski Dışişleri ve Avrupa Entegrasyon Bakanı Nicu Popescu, Avrupa Kültür Vakfı Direktörü André Wilkens ve sanat tarihçisi Silvia Eiblmayr katılıyor. Oturumun moderatörlüğünü küratör Adelina Luft üstleniyor."
+    },
+    {
       "id": "b3be49b0866fa406bea6",
       "category": "Architecture & Design",
       "source": "Wallpaper*",
@@ -214,30 +268,12 @@
       "originalTitle": "The design story behind the breathtaking Shenzhen Natural History Museum - Wallpaper*",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 92,
-      "title": "Shenzhen Doğa Tarihi Müzesi Bölgenin Ekosistemini Mimariyle Buluşturuyor",
-      "excerpt": "Güneydoğu Çin'deki Shenzhen Doğa Tarihi Müzesi, 100.000 metrekarelik sergi alanları ve yürünebilir çatı parkıyla bölgenin biyolojik çeşitliliğini yansıtacak şekilde tasarlandı.",
-      "content": "Güneydoğu Çin'in Pingshan Bölgesi'nde yer alan Shenzhen Doğa Tarihi Müzesi, yerel ekosistemi yansıtan dalgalı formu ve peyzajıyla dikkat çekiyor. 3XN, B+H Architects ve Zhubo Design konsorsiyumu tarafından tasarlanan yapı, 100.000 metrekarelik sergi ve ziyaretçi alanına sahip. 3XN kurucusu Kim Herforth Nielsen, tasarımın yerel jeoloji ve su kaynaklarından ilham alarak şekillendirildiğini belirtti. Yanzi Nehri ve Pingshan Nehri'nin erozyon kuvvetlerinden esinlenen proje, binanın çatısının halka açık bir park olarak kullanılabilmesine olanak tanıyor. Granit ve lamella kaplı kavisli cephesiyle bir uçurumu andıran yapı, bölgenin subtropikal iklimine ve zengin bitki örtüsüne uyum sağlıyor. Parametrik mimari programlar ve gelişmiş dijital modeller kullanılarak hayata geçirilen müze, Shenzhen'in teknoloji odaklı kimliğinden kültür ve doğa odaklı bir kentsel dönüşüme geçişini simgeliyor. B+H Architects kıdemli tasarım yöneticisi David Stavros, binanın kentin doğayla olan ilişkisini her ölçekte görünür kıldığını ifade etti."
-    },
-    {
-      "id": "534bab64971d3c00f0ee",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-08T22:39:49.237Z",
-      "url": "https://www.theartnewspaper.com/2026/10/08/counterpublic-triennial-st-louis-coyote-time-review",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/607e3a3082566ecba60c17704339dcbaa270527f-1920x1280.jpg?rect=0,64,1920,1152&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "St Louis's Counterpublic triennial explores connections between art and civic infrastructure - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "St. Louis'deki Counterpublic Trienali Sivil Altyapı ve Sanatı İnceliyor",
-      "excerpt": "Missouri eyaletinin en büyük şehri St. Louis'de düzenlenen Counterpublic kamusal sanat trienali, elliden fazla projeyle sivil altyapı, çevresel zorluklar ve toplumsal meseleler arasındaki bağları inceliyor.",
-      "content": "Missouri eyaletinin St. Louis şehrinde gerçekleştirilen Counterpublic kamusal sanat trienalinin üçüncü edisyonu Coyote Time başlığı altında elliden fazla projeyi bir araya getiriyor. Wanda Nanibush, Raphael Fonseca, Stefanie Hessler, Jordan Carter ve Nora N. Khan'dan oluşan küratör ekibi tarafından düzenlenen etkinlik, kamusal sanatın sivil altyapı eksiklikleri ve kamusal program fonlarının kesilmesi karşısındaki rolünü sorguluyor. Bölgedeki projeler arasında Mississippi Nehri'nin seslerini taşıyan yerleştirmeler, kasırga sirenleri ve tarihi mahallelerdeki okullar yer alıyor. Sanatçılar, yerel toplulukların ve kurumların ihtiyaçlarına yanıt veren çalışmalar üretiyor. Uluslararası Enstitü gibi göçmenleri destekleyen kurumlarda ortak yemek projeleri ve arşiv çalışmaları yürütülürken, endüstriyel yapılarda ve nehir kıyılarında da çeşitli yerleştirmeler sergileniyor. Çevresel etkiler, belediye ihmalleri ve sınıf eşitsizliği gibi konuları ele alan sergiler 12 Aralık tarihine kadar ziyaret edilebilecek."
+      "technicalValue": 86,
+      "brandFit": 95,
+      "title": "Çin'in Yeni Shenzhen Doğa Tarihi Müzesi Bölgenin Biyolojik Çeşitliliğini Yansıtıyor",
+      "excerpt": "Ppearl Nehri Deltası'nda yer alan Shenzhen Doğa Tarihi Müzesi, yerel ekolojiden ilham alan dalgalı formu ve halka açık çatı parkıyla dikkat çekiyor.",
+      "content": "Güneydoğu Çin'in Pingshan Bölgesi'nde kurulan Shenzhen Doğa Tarihi Müzesi, bölgenin zengin biyolojik çeşitliliğini yansıtmak amacıyla tasarlandı. 3XN, B+H Architects ve Zhubo Design konsorsiyumu tarafından hayata geçirilen yapı, 100 bin metrekarelik sergi ve ziyaretçi alanına sahip. Tasarım ekibinden Kim Herforth Nielsen, binanın yerel jeoloji ve su ile şekillenmiş, her zaman var olan bir peyzaj parçasını temsil etmesini amaçladıklarını belirtti. Müzenin granit ve lamel kiremit kaplı kıvrımlı cephesi, alttaki sudan yükselen bir kayalığı andırıyor. Yapının tamamı erişilebilir olan çatısı ise ziyaretçilerin gezebileceği halka açık bir park alanı sunuyor. Pingshan Nehri ve Yanzi Tepesi'nin ekolojik sistemleriyle uyumlu olan proje, gelişmiş dijital modeller ve parametrik programlar kullanılarak topografyaya uyarlandı. B+H Architects'ten David Stavros, müzenin kentin doğayla olan ilişkisini görünür kıldığını ifade etti."
     },
     {
       "id": "91ff3deb62e99ea2226c",
@@ -274,6 +310,24 @@
       "title": "Hindistan'ın Tarihi Su Sistemleri Modern Dönemde Yeniden Kullanılabilir mi?",
       "excerpt": "Hindistan'daki geleneksel su yapıları ve yer altı sarnıçları, kentlerin su stresine karşı yeniden işlevlendirme potansiyeli taşıyor. Araştırmalar ve restorasyon çalışmaları, bu miras yapıların çağdaş su yönetimine katkı sağlayabileceğini gösterirken mülkiyet ve bakım zorluklarına işaret ediyor.",
       "content": "Hindistan'ın geleneksel su mimarisi, artan kentsel su stresi ve mevsimsel yağış baskısı altında yeniden değerlendiriliyor. Ahmedabad kentindeki tarihi pollerde çatı ve avlulardan gelen yağmur suyunu kireç kaplı yer altı odalarında depolayan binlerce sarnıcın bulunduğu tahmin ediliyor. Built Heritage dergisinde yayımlanan 2026 tarihli bir araştırma, bu sarnıçların evsel ve toplumsal su depolamada dağıtık bir sistem oluşturduğunu belirtiyor. Merkezi borulu altyapının yaygınlaşmasıyla zamanla işlevini yitiren bu yapılar, kentin yoğun dokusunda alternatif bir su toplama yöntemi sunuyor. Araştırmaya katılan sakinlerin yüzde doksanı sarnıç suyunu kentsel sisteme yeniden entegre etmeye istekli olduğunu belirtirken, su kalitesi, mülkiyet ve bakım gibi idari engeller de vurgulanıyor. Öte yandan Hyderabad'daki Bansilalpet adımlı kuyusu örneğinde, tonlarca molozun temizlenmesinin ardından yaklaşık 2,2 milyon litre su taşıma kapasitesine sahip bir tatlı su kaynağı ortaya çıkarıldı. Uzmanlar, bu tarihi yapıların yeniden işlev kazanmasının yalnızca duvarların onarılmasıyla değil, temizlik, test ve toplumsal sorumluluk içeren düzenli bakım rutinleriyle mümkün olabileceğini savunuyor."
+    },
+    {
+      "id": "a585fdabb27871895484",
+      "category": "Architecture & Design",
+      "source": "Architectural Record",
+      "sourceDomain": "architecturalrecord.com",
+      "publishedAt": "2026-10-08T07:00:00.000Z",
+      "url": "https://www.architecturalrecord.com/articles/18432-in-the-sonoran-desert-a-market-hallinspired-library-by-richard-kennedy-architects-is-designed-for-flexibility",
+      "image": "https://www.architecturalrecord.com/ext/resources/Issues/2026/10-October/2610-Next-Gen-Libraries-Gateway-Public-Library-F.jpg?height=635&t=1791483109&width=1200",
+      "originalTitle": "In the Sonoran Desert, a Market Hall–Inspired Library by Richärd Kennedy Architects is Designed for Flexibility - Architectural Record",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 75,
+      "brandFit": 80,
+      "title": "Sonoran Çölü’nde Pazar Yerlerinden İlhan Alan Esnek Kütüphane Tasarımı",
+      "excerpt": "Richärd Kennedy Architects tarafından tasarlanan Arizona’daki Gateway Halk Kütüphanesi, geleneksel pazar hallerinden esinlenen esnek yapısıyla dikkat çekiyor. 2025 yılı Aralık ayında tamamlanan yaklaşık 28.300 metrekarelik bu civic yapı, bölgenin kamusal alan ihtiyacına yanıt veriyor.",
+      "content": "Arizona eyaletinin Mesa şehrinde inşa edilen Gateway Halk Kütüphanesi, bölgenin artan nüfusuna ve kısıtlı kamusal alanlarına çözüm sunmak amacıyla 2025 yılı Aralık ayında tamamlandı. Richärd Kennedy Architects tarafından tasarlanan yaklaşık 28.270 metrekarelik yapı, geleneksel pazar hallerinin çatı konstrüksiyonu ve satıcı stantlarından ilham alarak kurgulandı. Yapının mimari ekibi, geleneksel içe dönük kütüphane anlayışının aksine, çevresindeki parkla bütünleşen akışkan bir geçiş alanı oluşturmayı hedefledi.\n\nMerkezi galeri alanını örten eğimli çatı profili ve hava şartlarına dayanıklı çelik ile fiber çimento gibi endüstriyel malzemeler binanın ana kütlesini şekillendiriyor. Ses yalıtımı sağlayan dalgalı ahşap tavan düzlemleri ve ince çelik kolonlar salonun ferah atmosferini destekliyor. Çöl ikliminin getirdiği aşırı ısı kazancını önlemek amacıyla çatı saçakları geniş tutulurken, iklimlendirme altyapısı doğrudan zemin döşemesine entegre edildi.\n\nİdari birimler, atölyeler ve çocuk odası gibi farklı programlara ev sahipliği yapan yapım adaları, kolayca yeniden organize edilebilecek esnek bir alt yapıya sahip. Projenin mühendislik hizmetleri Kimley-Horn tarafından yürütülürken, peyzaj düzenlemesi Dig Studio, genel yükleniciliği ise Willmeng Construction üstlendi."
     },
     {
       "id": "7cfe26ab40a34f3c45aa",
@@ -364,24 +418,6 @@
       "title": "Cosima von Bonin, Petit Palais'de Dollys ve Beaux Sergisini Açıyor",
       "excerpt": "Alman sanatçı Cosima von Bonin, Art Basel Paris kamusal programı kapsamında Petit Palais'de Dollys & Beaux sergisini sunuyor. Sergi, sanatçının kumaş heykellerini ve yumuşak oyuncak figürlerini bir araya getiriyor.",
       "content": "Kenya doğumlu Alman sanatçı Cosima von Bonin, Art Basel Paris kamusal programı kapsamında Petit Palais'de Dollys & Beaux sergisini açıyor. Sergi, sanatçının köpük, kadife ve mohair gibi malzemelerle ürettiği kumaş heykellerini ve büyük boy yumuşak oyuncak figürlerini ziyaretçilerle buluşturuyor. Daha önce Loewe'nin 2026 sonbahar/kış defilesinde yer alan bu figürler, çağdaş sanat ile moda dünyası arasında bir diyalog kuruyor. Sergi kapsamında yer alan eserler arasında, boynunda peluş varil taşıyan kadife St. Bernard köpek heykelleri, deniz tarafları, yengeç, ahtapot ve katil balina gibi figürler bulunuyor. Sanatçının kırk yılı aşkın kariyerine yayılan bu yerleştirmeler, izleyicinin eserleri tek bir okumaya bağlı kalmadan değerlendirmesini amaçlıyor. Miu Miu'nun resmi ortakları arasında yer aldığı etkinlik, 23-25 Ekim 2026 tarihlerinde Petit Palais'de görülebilecek. Art Basel Paris ise 23-25 Ekim 2026 tarihleri arasında Grand Palais'de gerçekleştirilecek."
-    },
-    {
-      "id": "9d8e9ec35717e5901616",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-10-06T06:00:00.000Z",
-      "url": "https://www.archdaily.com/1186008/wasl-tower-uns",
-      "image": "https://images.adsttc.com/media/images/6abb/ee19/4c0c/5301/88f7/4308/large_jpg/wasl-tower-uns_15.jpg?1790701112",
-      "originalTitle": "Wasl Tower / UNS - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Dubai'de Tasarlanan 302 Metrelik Wasl Tower Tamamlandı",
-      "excerpt": "Dubai şehir merkezinde inşa edilen 302 metre yüksekliğindeki karışık kullanımlı Wasl Tower, otel, konut, ofis ve kamusal alanları tek bir dikey toplulukta buluşturuyor.",
-      "content": "Dubai şehir merkezinde, Sheikh Zayed Road yakınında ve Burj Khalifa civarında yükselen Wasl Tower, 302 metre yüksekliğe sahip karma kullanımlı bir gökdelen olarak tasarlandı. UNS tarafından lead mühendislik danışmanı Werner Sobek ile iş birliği içinde Wasl Group için hayata geçirilen yapı, otel, konut, ofis ve kamusal amenity alanlarını tek bir dikey topluluk çatısı altında bir araya getiriyor. Dubai'nin şehir merkez siluetine belirgin bir katkı sunan 167733 metrekarelik bu projede, tasarım ekibi ve çok sayıda mühendislik ile danışmanlık firması ortak bir çalışma yürüttü. Mimari yapının içinde yer alan otel iç mekanları GA Design tarafından şekillendirilirken, yiyecek ve içecek alanlarının iç tasarımı LWD tarafından üstlenildi. Projenin cephe aydınlatma tasarımı Arup tarafından gerçekleştirildi, peyzaj mimarlığı ise Green4Cities Architects ve Terra Firma Landscape ortaklığıyla yürütüldü. Yerel MEP mühendisliği SEED tarafından sağlanan yapının maliyet danışmanlığı Kulkarni Quantity Surveyors tarafından yürütüldü. Dubai'deki bu yüksek yapı, bölgenin mimari dokusuna yeni bir dikey yaşam merkezi ekliyor."
     },
     {
       "id": "16fef8491d4bab7e587f",
@@ -485,29 +521,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 90,
-      "technicalValue": 88,
+      "technicalValue": 85,
       "brandFit": 95,
-      "title": "Patek Philippe, Milan'da Yedinci Watch Art Grand Exhibition Sergi Düzenliyor",
-      "excerpt": "Patek Philippe, Milan'daki CityOval Milano'da yedinci Watch Art Grand Exhibition sergisini açtı. Etkinlikte İtalyan pazarından ilham alan sınırlı sayıda üretilen modeller de tanıtıldı.",
-      "content": "İsviçreli saat üreticisi Patek Philippe, bugüne kadarki en büyük sergisi olan yedinci Watch Art Grand Exhibition'ı Milan'da başlattı. Daha önce Palazzo delle Scintille olarak bilinen ve yenilenen Art Nouveau mekânı CityOval Milano'da 31 bin 215 metrekarelik alana yayulan sergi, markanın tarihini ve yeni inovasyonlarını bir araya getiriyor. Etkinlik alanında 500'den fazla saat ve duvar saati sergilenirken, koleksiyonda 1868 yılında Macar Kontesi Koscowicz için üretilen marka tarihinin ilk tam teşekküllü kol saati de yer alıyor. Başkan Thierry Stern'in katılımıyla düzenlenen ön izlemede, markanın İtalyan pazarına verdiği önem vurgulandı. Sergi, İtalya peyzajı ve kültüründen esinlenen özel tasarımların yanı sıra, İtalyan bayrağını temsil eden renklerdeki Calatrava modelleri dahil yedi yeni referansı da izleyicilerle buluşturuyor. Ayrıca etkinlik kapsamında Gondolo Ladies First mücevher saat koleksiyonu da tanıtıldı. Sergisi 18 Ekim tarihine kadar ziyaret edilebilecek."
-    },
-    {
-      "id": "5eb8317810c0e53b40b7",
-      "category": "Exhibitions",
-      "source": "artbasel.com",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-09-29T18:19:01.000Z",
-      "url": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36-1.png",
-      "originalTitle": "Art Basel announces exhibitors and showfloor for its 2026 Miami Beach Edition - artbasel.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 50,
-      "brandFit": 90,
-      "title": "Art Basel Miami Beach 2026 Fuarının Katılımcı Listesi Açıklandı",
-      "excerpt": "Art Basel Miami Beach, 2026 yılındaki edisyonu için 40'tan fazla ülkeden 272 katılımcıyı bir araya getireceğini ve fuar alanının yeniden düzenlendiğini duyurdu.",
-      "content": "Art Basel Miami Beach, 4 Aralık - 6 Aralık 2026 tarihleri arasında Miami Beach Kongre Merkezi'nde gerçekleştirilecek fuarın katılımcı listesini ve program detaylarını açıkladı. VIP önizleme günleri 2 ve 3 Aralık'ta yapılacak etkinlik, 40'tan fazla ülkeden 272 katılımcıyı bir araya getirecek. Fuar alanı, katılımcıların ve Seçim Komitesi'nin geri bildirimleri doğrultusunda yeniden yapılandırıldı. Bu düzenlemeyle birlikte fuar alanı yaklaşık yüzde 12 daha az yer kaplarken, ana sektör olan Galleries yüzde 10 daha az katılımcıya ev sahipliği yapacak ve dört konukseverlik plazasının etrafında şekillenecek. Etkinlik bünyesinde Galleries, Kabinett, Nova, Positions ve Survey olmak üzere dört ana sektör yer alırken, dijital döneme odaklanan Zero 10 girişimi de programdaki yerini koruyor. Latin Amerika, ABD ve Karayipler'den çok sayıda galeri fuara katılım sağlarken, Brezilya ülkenin üçüncü büyük ulusal temsilciliğini oluşturuyor. Ayrıca James Turrell'in yeni işleri açık alanda sergilenecek ve Public Art Fund işbirliğiyle Collins Park'ta kamusal bir sergi düzenlenecek."
+      "title": "Patek Philippe, Milanoda Yedinci Watch Art Grand Exhibition Sergisini Düzenliyor",
+      "excerpt": "Patek Philippe, Milano'daki CityOval Milano'da yedinci Watch Art Grand Exhibition sergisini açarak tarihi saatler ve sınırlı sayıda üretilen yeni modelleri tanıttı.",
+      "content": "İsviçreli saat üreticisi Patek Philippe, tarihindeki en büyük Watch Art Grand Exhibition sergisinin yedincisini Milano'daki CityOval Milano'da açtı. Daha önceleri Palazzo delle Scintille olarak bilinen mekanda düzenlenen sergi 31.215 metrekarelik bir alana yayılıyor. Etkinlik kapsamında 500'den fazla saat ve saat koleksiyonu sergilenirken, marka İtalyan pazarına özel yeni saatler de tanıttı. Patek Philippe başkanı Thierry Stern, İtalya'nın zanaatkarlığa değer veren köklü bir pazar olduğunu belirtti. Sergi, 18 Ekim tarihine kadar ziyaretçilere açık kalacak ve etkinlikte ayrıca İtalyan bayrağını temsil eden renkli kadranlara sahip yeni Calatrava modelleri ile Gondolo Ladies First koleksiyonu da tanıtıldı. Açılış, Milano'da düzenlenen ve Borsa binasının bulunduğu Palazzo Mezzanotte'de gerçekleştirilen Milano Saat Haftası ile aynı döneme denk geldi."
     },
     {
       "id": "746277419aabd8db216a",
@@ -520,12 +538,12 @@
       "originalTitle": "TfL reveals civil engineering behind £15.3M step-free upgrades at Surrey Quays and Northolt - New Civil Engineer",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 85,
-      "brandFit": 75,
-      "title": "Londra'daki Surrey Quays ve Northolt İstasyonlarında Engelsiz Erişim Tamamlandı",
-      "excerpt": "Transport for London, Surrey Quays ve Northolt istasyonlarında tamamlanan engelsiz erişim projelerinin detaylarını ve 15,3 milyon sterlinlik Northolt yatırımının maliyet ile mühendislik süreçlerini açıkladı.",
-      "content": "Londra'daki Surrey Quays ve Northolt istasyonları, tekerlekli sandalye kullanıcıları ile bebek arabası veya bagaj taşıyan yolcuların erişimini sağlamak amacıyla tamamlanan projelerle engelsiz hale getirildi. Transport for London verilerine göre, Surrey Quays istasyonundaki iyileştirmeler Konut, Toplumlar ve Yerel Yönetim Bakanlığı'nın fon paketinden ve British Land katkısıyla finanse edildi. Projede baş tasarımcı AtkinsRéalis ve müteahhit Morgan Sindall Infrastructure, düşük karbonlu beton ve yenilenebilir enerji kullanan elektrik ark ocağı çeliği gibi malzemeler tercih ederek karbon etkisini azalttı. Şantiyede jeneratör yerine doğrudan elektrik bağlantısı kullanılırken, demiryolu koridorunda dar yarıçaplı kule vinçler görev yaptı. Northolt istasyonundaki çalışmalar ise yaklaşık 15,3 milyon sterline mal oldu ve Central hattında engelsiz erişim sunan 95. istasyon oldu. Northolt'taki yürüyüş yolu ve asansör kulesi beton kazıklar üzerine çelik yapılar olarak inşa edildi. Her iki istasyonda gerçekleştirilen çalışmalar, yolcu kapasitesini artırmayı ve yerel ulaşım ağındaki erişilebilirliği genişletmeyi hedefliyor."
+      "editorialScore": 75,
+      "technicalValue": 80,
+      "brandFit": 70,
+      "title": "Londra'daki Surrey Quays ve Northolt İstasyonlarında Engelsiz Ulaşım Tamamlandı",
+      "excerpt": "Transport for London, Surrey Quays ve Northolt istasyonlarında tamamlanan engelsiz erişim projelerinin detaylarını paylaştı; çalışmalar toplam 15,3 milyon sterlinlik bütçeyle hayata geçirildi.",
+      "content": "Londra'daki Surrey Quays ve Northolt tren istasyonları, tekerlekli sandalye kullanıcıları ile bebek arabası veya bagaj taşıyan yolcuların erişimini kolaylaştırmak amacıyla yenilendi. Transport for London (TfL) tarafından aktarılan bilgilere göre, Surrey Quays istasyonundaki çalışmalar Konut Altyapı Fonu programından sağlanan finansman ve British Land katkısıyla gerçekleştirildi. Projede ana yüklenici olarak görev yapan Morgan Sindall Infrastructure ve lider tasarımcı AtkinsRéalis, düşük karbonlu çimento ve yenilenebilir enerji kullanan elektrik ark ocaklı çelik gibi malzemeler tercih ederek karbon etkisini azalttı. Concourse binasında ayrıca yeşil çatı ve güneş panelleri yer aldı. Northolt istasyonundaki çalışmalar ise TfL tarafından finanse edildi ve yaklaşık 15,3 milyon sterline mal oldu. İstasyona yeni bir yaya köprüsü ve asansör eklenerek cadde ile trenler arasında engelsiz erişim sağlandı. TfL Baş Sermaye Sorumlusu Stuart Harvey, tamamlanan projelerin binlerce yolcunun ulaşımını iyileştireceğini belirtti."
     }
   ]
 }

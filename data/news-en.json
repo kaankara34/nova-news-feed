@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-10-11T10:11:21.645Z",
+  "generatedAt": "2026-10-12T11:07:12.894Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -26,7 +26,7 @@
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
-    "Fashion & Luxury": 2
+    "Fashion & Luxury": 3
   },
   "coverage": {
     "Art & Exhibitions": {
@@ -70,13 +70,31 @@
       "targetMet": false
     },
     "Fashion & Luxury": {
-      "count": 2,
+      "count": 3,
       "target": 3,
-      "targetMet": false
+      "targetMet": true
     }
   },
-  "total": 25,
+  "total": 26,
   "articles": [
+    {
+      "id": "f9dc3138321b0b73f544",
+      "category": "Galleries & Museums",
+      "source": "tate.org.uk",
+      "sourceDomain": "tate.org.uk",
+      "publishedAt": "2026-10-11T17:49:24.000Z",
+      "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/the-90s",
+      "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Juergen_Teller_Young_Pink_Kate_London_1998_c_J.width-600.jpg",
+      "originalTitle": "The 90s: Art and Fashion - tate.org.uk",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 82,
+      "technicalValue": 65,
+      "brandFit": 80,
+      "title": "Tate Britain Exhibition Explores Art and Fashion of the 1990s",
+      "excerpt": "Tate Britain presents The 90s: Art and Fashion exhibition, curated with Edward Enninful. The showcase runs from October 8, 2026, to February 14, 2027.",
+      "content": "Tate Britain has launched The 90s: Art and Fashion exhibition, exploring the creative energy and cultural shifts of the 1990s. Drawing on the experience of curator Edward Enninful OBE, the showcase brings together photography, fashion, art, and design from a generation that transformed British culture. Visitors can encounter works by artists and photographers such as Steve McQueen, Sarah Lucas, Yinka Shonibare, Corinne Day, and Juergen Teller, alongside fashion designs by Vivienne Westwood, Alexander McQueen, and John Galliano. The exhibition runs from October 8, 2026, to February 14, 2027. Highlights include Mark Leckey's video work tracing British dance music culture, a tartan outfit from Vivienne Westwood's 1993 Anglomania collection, and Yinka Shonibare's sculpture referencing colonial trade routes. The display also features Steve McQueen's silent film Bear and Jim Lambie's site-specific floor installation Zobop. Visitors can purchase an optional audio guide for an additional fee."
+    },
     {
       "id": "cdaaf038261d655f5da7",
       "category": "Architecture & Design",
@@ -94,24 +112,6 @@
       "title": "Historic Farm Building on the Isle of Wight Transformed Into Modern Retreat",
       "excerpt": "Studio Weave founder Je Ahn has transformed a modest 158 sq m barn on the Isle of Wight into a pared-down personal retreat. Guided by deep reuse, the project preserves original materials while adapting the agricultural structure for modern habitation.",
       "content": "Studio Weave practice founder Je Ahn acquired an existing 158 sq m barn within a working farm near Cowes on the UK's Isle of Wight, transforming it into a pared-down personal retreat. Operating with a limited budget and the unique advantage of being his own client, Ahn approached the redesign with an emphasis on flexibility and comfort. The Studio Weave team preserved much of the 50-plus-year-old original fabric, leaving original materials exposed and repairing them to meet 21st-century habitation standards. The heart of the home features a large open-plan kitchen and living area with expansive windows, leading through a small corridor to three bedrooms. Meticulous detailing and craftwork were completed in collaboration with Mike at Imphouse and his team, while the landscape was produced alongside Tom Massey Studio. Grounded in the concept of deep reuse, the design repurposes materials found on site for both their narrative and practical value. The minimal interventions ensure the agricultural building retains its historical integrity while functioning as a contemporary residential space."
-    },
-    {
-      "id": "f9dc3138321b0b73f544",
-      "category": "Galleries & Museums",
-      "source": "tate.org.uk",
-      "sourceDomain": "tate.org.uk",
-      "publishedAt": "2026-10-11T02:13:10.000Z",
-      "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/the-90s",
-      "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Juergen_Teller_Young_Pink_Kate_London_1998_c_J.width-600.jpg",
-      "originalTitle": "The 90s: Art and Fashion - tate.org.uk",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
-      "brandFit": 90,
-      "title": "Tate Britain Explores Art and Culture of the 1990s",
-      "excerpt": "Tate Britain is hosting a new exhibition curated by Edward Enninful that explores the creative and rebellious spirit of the 1990s through photography, fashion, and art.",
-      "content": "Tate Britain is hosting the exhibition titled The 90s: Art and Fashion from October 8, 2026, to February 14, 2027. Curated by Edward Enninful, the exhibition brings together photography, fashion, art, and design to examine the generation that transformed British culture. The showcase features works by artists and photographers including Steve McQueen, Sarah Lucas, Yinka Shonibare, Corinne Day, Juergen Teller, Vivienne Westwood, Alexander McQueen, and John Galliano. Highlights include Mark Leckey's video compilation Fiorucci Made Me Hardcore tracing dance music culture, a tartan outfit from Vivienne Westwood's Anglomania collection, and Yinka Shonibare's The Swing reimagined in Dutch wax fabric. Visitors can also view Steve McQueen's silent film Bear, Abigail Lane's Bottom Wallpaper installation, and Jim Lambie's ongoing floor design series Zobop."
     },
     {
       "id": "c2ab332f3e23ff500c27",
@@ -150,6 +150,24 @@
       "content": "Creative Time has commissioned artist Guadalupe Maravilla to create a major installation in the Synod Hall of the Cathedral of St. John the Divine in New York's Morningside Heights neighborhood. Presented in collaboration with the Clemente Soto Vélez Cultural and Educational Center, Maravilla's Consejos de las Estrellas will be on view from December 17, 2026, to February 7, 2027. The installation is conceived as a sanctuary space for gathering, reflection and respite during the holiday season. The project will bring together nearly 100 sculptures and textile works, alongside Maravilla's traveling school bus-cum-artwork Mariposa Relámpago. Throughout the exhibition, Maravilla will activate the commission through weekly sound baths, exploring the intersections between art and healing. Maravilla stated that the installation will serve as a place to find warmth and belonging when circumstances such as grief, illness or immigration status deepen feelings of absence. St. John the Divine will additionally serve as a site for mutual aid, gathering and redistributing food, clothing and toys in partnership with local community organizations. Laura Bosley, the cathedral's executive director for programming, noted that the project affirms the institution's commitment to community."
     },
     {
+      "id": "9330b2c3c3c03f0d0bbc",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-10-09T16:00:00.000Z",
+      "url": "https://wwd.com/sourcing-journal/industry-news/where-60-years-of-master-craftsmanship-meets-modern-luxury-1239333081/",
+      "image": "https://wwd.com/wp-content/uploads/2026/10/alteration.jpg?w=1000&h=563&crop=1",
+      "originalTitle": "Where 60 Years of Master Craftsmanship Meets Modern Luxury Tech - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 88,
+      "technicalValue": 82,
+      "brandFit": 92,
+      "title": "Adrian Jules Combines HandTailored Craftsmanship With Modern Enterprise Technology",
+      "excerpt": "Established in 1964, Adrian Jules Custom Clothier has developed an enterprise resource planning system to streamline operations in luxury custom clothing.",
+      "content": "Founded in Rochester, New York, in 1964, Adrian Jules Custom Clothier integrates over 60 years of hand-tailored craftsmanship with enterprise technology. The company developed an internal Enterprise Resource Planning system to track garments from initial order entry through workshop cutting, construction, and accounting. The platform serves as a central hub for private-label tailors and retailers, offering real-time visibility into fabric availability, pricing, and high-resolution visuals from global vendors. Platinum division CEO Alex Roberti emphasized the company's commitment to family-run values and high quality, while operations president Arnie Roberti noted that technology has streamlined pattern introduction and inventory tracking. Additionally, Adrian Jules has expanded its offerings by creating pattern designs specifically adapted to women's body shapes, helping retail partners capture a broader luxury market."
+    },
+    {
       "id": "537a265e06c9ede7a157",
       "category": "Art & Exhibitions",
       "source": "The Art Newspaper",
@@ -168,6 +186,24 @@
       "content": "British artist Michael Landy is presenting his new exhibition titled Future Ruins at Sir John Soane's Museum in London. Emerging from the Young British Artist generation, Landy became known for his critiques of consumer culture and his 2001 performance Break Down, in which he destroyed all his possessions. The exhibition draws inspiration from an 18th-century watercolour in the museum's collection by Joseph Michael Gandy, which reimagines the Bank of England as a ruin. The series features detailed drawings and watercolours of notable and lesser-known buildings, including the Bank of England, the Soane's Museum, the New York Stock Exchange, Mar-a-Lago, Chatsworth House, Mussolini's Palazzo della Civiltà Italiana, the Landy family home, and an art supply shop. The works range from nostalgic reflections to critiques of hubris. The exhibition also includes a large pencil portrait titled Self Portrait at the Age of 62. Landy notes that themes of decay and destruction have underpinned his practice throughout his career, and the show features one new sculptural work, Broken Column, consisting of overflowing real bins."
     },
     {
+      "id": "0a1dbfb36a8afcc8c5ae",
+      "category": "Art & Exhibitions",
+      "source": "The Art Newspaper",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-10-09T11:01:38.283Z",
+      "url": "https://www.theartnewspaper.com/2026/10/09/restoration-of-earthquake-hit-palace-in-mantua-nears-completion",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/9ede466daa37964eb34549c2943d62e1edeb0c96-1628x1082.jpg?rect=0,53,1628,977&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "Restoration of earthquake-hit palace in Mantua nears completion - The Art Newspaper",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 75,
+      "brandFit": 90,
+      "title": "Fourteen-year earthquake restoration of Mantua's Palazzo Ducale nears completion",
+      "excerpt": "Restoration work at the 35,000-square-meter Palazzo Ducale complex in Mantua, Italy, following the 2012 earthquakes is nearing completion. Director Stefano L'Occaso stated that about 99% of the work is finished.",
+      "content": "Earthquakes that struck northern Italy's Emilia-Romagna region in 2012 caused significant damage to the historic Palazzo Ducale complex in Mantua. Restoration projects spanning 14 years at the 35,000-square-meter facility, dating from the 13th century and expanded by the Gonzaga dynasty, are now nearing completion. Palazzo Ducale director Stefano L'Occaso stated that about 99% of the work is finished. The Camera Picta room, featuring frescoes by Andrea Mantegna, and the bell tower of the Basilica Palatina di Santa Barbara, both damaged in the earthquakes, were previously repaired. Recently, the southwest tower, the Appartamento Grande di Castello suite, and a stabilized portico bordering the Giardino dei Semplici garden have been restored and opened to the public. Approximately 15 million euros has been spent on earthquake-related repairs. The Sala delle Sigle room, associated with Francesco II Gonzaga and Isabella d’Este, is scheduled to reopen by the end of the year. Additionally, a special exhibition featuring loans from the Louvre and the Kunsthistorisches Museum opens this month."
+    },
+    {
       "id": "d76f4869ed0d37e87ccc",
       "category": "Art & Exhibitions",
       "source": "The Art Newspaper",
@@ -178,12 +214,12 @@
       "originalTitle": "A Louis Vuitton foundation exhibition, with ten Van Gogh paintings, reveals the extraordinary vision of an early collector - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 70,
-      "brandFit": 90,
-      "title": "Gustave Fayet's Van Gogh Collection Goes on Display at Fondation Louis Vuitton in Paris",
-      "excerpt": "Ten Van Gogh paintings collected by Modern art pioneer Gustave Fayet are on view at the Fondation Louis Vuitton in Paris. The exhibition runs through March 8, 2027, featuring over 600 works.",
-      "content": "Ten of the 16 Van Gogh paintings acquired by French collector Gustave Fayet between 1901 and 1909 have gone on display at the Fondation Louis Vuitton in Paris. Bernard Arnault, head of the LVMH luxury group, described Fayet as one of the best-kept secrets in Modern art history. Titled Gustave Fayet: Collector - Artist Designer and running until March 8, 2027, the exhibition spans four floors of the Frank Gehry-designed building and includes over 600 works. Fayet was not only a collector but also a professional winemaker, painter, ceramicist, museum curator, and designer who collected works by Paul Gauguin and Odilon Redon alongside Van Gogh. Key pieces in the exhibition include Public Garden in Arles, purchased in 1901 for 2,000 francs, and Self-portrait with Bandaged Ear and Pipe, painted shortly after Van Gogh mutilated his ear. After moving to Paris from Béziers in 1905, Fayet assembled his Van Goghs in a dedicated salon. During his lifetime, a substantive account of his collection was published in the journal L'Amour de l'Art in April 1925, months before his death."
+      "editorialScore": 90,
+      "technicalValue": 60,
+      "brandFit": 95,
+      "title": "Fondation Louis Vuitton in Paris exhibits Gustave Fayet's Van Gogh collection",
+      "excerpt": "The Fondation Louis Vuitton in Paris is hosting a major exhibition featuring Van Gogh paintings acquired by collector Gustave Fayet between 1901 and 1909. The exhibition remains open until March 8, 2027.",
+      "content": "The Fondation Louis Vuitton in Paris has opened a comprehensive exhibition exploring the story of Modern art pioneer Gustave Fayet. Opening on October 9, the exhibition features ten of the 16 Van Gogh paintings acquired by Fayet between 1901 and 1909. Bernard Arnault, head of the LVMH group, describes Fayet as one of the best kept secrets in the history of Modern art. Spanning four floors of the Frank Gehry-designed building, the exhibition includes more than 600 works by Fayet and other artists. Among Fayet's acquisitions is Public Garden in Arles, which he purchased for 2,000 francs in 1901. The exhibition also highlights Self-portrait with Bandaged Ear and Pipe, painted two weeks after Van Gogh mutilated his ear. Valued at 200,000 francs shortly before Fayet's death in 1924, Public Garden in Arles and other displayed works focus on the artist's Provence and Auvers periods. By 1909, Fayet had become one of the four largest private collectors of Van Gogh's work. Titled Gustave Fayet: Collector - Artist Designer, the exhibition runs until March 8, 2027."
     },
     {
       "id": "c168d71928490231701f",
@@ -204,6 +240,24 @@
       "content": "Emerging in the mid-19th century, the Spiritualist movement provided a conduit for artists seeking to communicate with otherworldly dimensions. As Jennifer Higgie notes, women found solace in the spiritual realm because the physical world restricted their talents. Georgiana Houghton created entirely abstract watercolors and pencil drawings in the 1860s and 1870s while in trances, attributing her work to dead artists and spirits. Although her 1871 solo exhibition of 155 artworks at the New British Gallery was a financial failure, her practice has gained renewed institutional attention in recent decades. Similarly, British medium Anna Mary Howitt produced automatic drawings and spirit illustrations in the 1850s, becoming a founding member of London’s College of Psychic Studies. Anna Cassel collaborated closely with Hilma af Klint as part of The Five, a Spiritualist group of women. Recent scholarship on Cassel's notebooks indicates substantial contributions to af Klint’s fourteen-series cycle, \"Paintings for the Temple.\" Trained at the Royal Academy of the Arts in Stockholm, af Klint created extensive spiritual works that she marked for exhibition only decades after her death. These women used art to record their otherworldly experiences, predating recognized pioneers of abstraction."
     },
     {
+      "id": "4e479162fc0cc79152d6",
+      "category": "Exhibitions",
+      "source": "La Biennale di Venezia",
+      "sourceDomain": "labiennale.org",
+      "publishedAt": "2026-10-09T07:43:04.000Z",
+      "url": "https://www.labiennale.org/en/agenda/moldova-pavilion-hybridreams-%E2%80%93-imagining-otherwise-times-crisis",
+      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/moldova1.jpg?itok=6ksx7_Za",
+      "originalTitle": "Biennale Arte 2026 | Moldova Pavilion: HYBRIDREAMS – Imagining otherwise in times of crisis - La Biennale di Venezia",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 50,
+      "brandFit": 90,
+      "title": "Moldova Pavilion at Venice Biennale to host roundtable on art during crises",
+      "excerpt": "The Moldova Pavilion at the Venice Biennale hosts a roundtable discussion examining how wars and current crises alter ways of imagining the future.",
+      "content": "Marking the Republic of Moldova's official participation in the International Art Exhibition of La Biennale di Venezia, a roundtable discussion explores how war and contemporary crises are reshaping future imagination. Organized in collaboration with the European Cultural Foundation and the European Council on Foreign Relations, the event takes place at the Chiesa dei Santi Geremia e Lucia in Venice, home to the Moldova Pavilion. The programme opens with a guided tour of the church led by priest and architect Don Gianmatteo Caputo. The discussion expands from Moldova's geopolitical realities to address the future of Europe, political thought, and artistic responses to conflict. Participants include former Moldovan Foreign Minister Nicu Popescu, European Cultural Foundation Director André Wilkens, and art historian Silvia Eiblmayr. The session is moderated by curator Adelina Luft."
+    },
+    {
       "id": "b3be49b0866fa406bea6",
       "category": "Architecture & Design",
       "source": "Wallpaper*",
@@ -214,30 +268,12 @@
       "originalTitle": "The design story behind the breathtaking Shenzhen Natural History Museum - Wallpaper*",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 92,
-      "title": "Shenzhen Natural History Museum Blends Regional Ecosystem With Architecture",
-      "excerpt": "Located in Southeast China, the Shenzhen Natural History Museum features 100,000 square metres of exhibition space and a walkable roof park designed to reflect the region's biodiversity.",
-      "content": "Situated in China's Pingshan District, the Shenzhen Natural History Museum features a flowing form and landscape inspired by the local ecosystem. Designed by a consortium comprising 3XN, B+H Architects, and Zhubo Design, the facility encompasses 100,000 square metres of exhibition and visitor spaces. According to Kim Herforth Nielsen, founder and creative director at 3XN, the design was conceived to mirror local geology, water, and time rather than appearing as a conventional building. Shaped by the natural forces defining Yanzi Hill and the Pingshan River, the museum incorporates a public roof park accessible to visitors. The curved facade, clad in granite and shingle-like elements, evokes a cliff emerging from the water. Developed using parametric architectural programmes and digital models, the project reflects Shenzhen's transition toward culture and nature. David Stavros of B+H Architects noted that the flowing form and public spaces make the city's connection with nature visible at every scale."
-    },
-    {
-      "id": "534bab64971d3c00f0ee",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-08T22:39:49.237Z",
-      "url": "https://www.theartnewspaper.com/2026/10/08/counterpublic-triennial-st-louis-coyote-time-review",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/607e3a3082566ecba60c17704339dcbaa270527f-1920x1280.jpg?rect=0,64,1920,1152&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "St Louis's Counterpublic triennial explores connections between art and civic infrastructure - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "St. Louis Counterpublic Triennial Explores Art and Civic Infrastructure",
-      "excerpt": "The Counterpublic public art triennial in St. Louis, Missouri, presents over fifty projects exploring connections between civic infrastructure, environmental challenges, and social issues.",
-      "content": "The third edition of the Counterpublic public art triennial in St. Louis, Missouri, features more than fifty projects under the title Coyote Time. Organized by curators Wanda Nanibush, Raphael Fonseca, Stefanie Hessler, Jordan Carter, and Nora N. Khan, the event addresses the responsibilities of artists and public art amid failing civic infrastructure and funding cuts for public programs. The commissions occupy permanent and temporary sites across the river city, incorporating municipal tornado sirens that reference storm damage, school campus installations, and riverfront brick wall sculptures created with local students. Artists have collaborated with local organizations to address community needs through projects ranging from collaborative food initiatives and architectural maquettes to rainwater installations in industrial loading docks. The triennial examines issues including environmental impact, municipal neglect, and class disparity through December 12."
+      "technicalValue": 86,
+      "brandFit": 95,
+      "title": "China's New Shenzhen Natural History Museum Reflects Regional Biodiversity",
+      "excerpt": "Situated in the Pearl River Delta, the Shenzhen Natural History Museum features an undulate form inspired by local ecology and a public rooftop park.",
+      "content": "Established in China's Pingshan District, the Shenzhen Natural History Museum was designed to reflect the region's rich biodiversity. Created by a consortium of 3XN, B+H Architects, and Zhubo Design, the structure encompasses 100000 square metres of exhibition and visitor spaces. Kim Herforth Nielsen from the design team stated that the ambition was to create a piece of landscape shaped by local geology and water. The museum's curvy facade, clad in granite and lamella shingle elements, resembles a cliff emerging from the water. Meanwhile, the entire roof functions as a public park for visitors. Aligned with the ecological systems of Yanzi Hill and the Pingshan River, the project utilized advanced digital models and parametric programmes to coordinate with the topography. David Stavros from B+H Architects noted that the museum makes the city's relationship with nature visible."
     },
     {
       "id": "91ff3deb62e99ea2226c",
@@ -274,6 +310,24 @@
       "title": "Can Historic Indian Water Systems Function Again as Modern Urban Infrastructure?",
       "excerpt": "Traditional Indian water structures and underground cisterns are being examined for their potential to help modern cities manage water stress. While restorations and research highlight storage capacities, governance and maintenance challenges remain significant.",
       "content": "Traditional Indian water architecture is being re-examined as cities face seasonal rainfall and municipal water stress. In Ahmedabad, historical domestic and communal water storage relied on distributed underground cisterns known as Tankas, which collected rainwater from roofs and courtyards into lime-lined chambers. A 2026 study in Built Heritage estimates that roughly 10,000 such structures may still exist beneath domestic courtyards across the city. Although the expansion of centralized municipal supply systems eventually rendered household rainwater structures dormant, their underlying engineering demonstrates how buildings can function as catchment and storage networks. Survey data from the 2026 research indicates that 90 percent of questioned residents are willing to reintegrate Tanka water into the urban system, though barriers concerning governance, ownership, water quality, and maintenance persist. In another case, the restoration of the Bansilalpet stepwell in Hyderabad involved removing 2,000 tonnes of debris to uncover a freshwater source with an estimated water-carrying capacity of 2.2 million liters. Researchers emphasize that reviving these historic structures requires more than masonry repairs; it demands established routines of cleaning, water testing, community involvement, and sustained municipal coordination."
+    },
+    {
+      "id": "a585fdabb27871895484",
+      "category": "Architecture & Design",
+      "source": "Architectural Record",
+      "sourceDomain": "architecturalrecord.com",
+      "publishedAt": "2026-10-08T07:00:00.000Z",
+      "url": "https://www.architecturalrecord.com/articles/18432-in-the-sonoran-desert-a-market-hallinspired-library-by-richard-kennedy-architects-is-designed-for-flexibility",
+      "image": "https://www.architecturalrecord.com/ext/resources/Issues/2026/10-October/2610-Next-Gen-Libraries-Gateway-Public-Library-F.jpg?height=635&t=1791483109&width=1200",
+      "originalTitle": "In the Sonoran Desert, a Market Hall–Inspired Library by Richärd Kennedy Architects is Designed for Flexibility - Architectural Record",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 75,
+      "brandFit": 80,
+      "title": "A Market Hall-Inspired Library Designed for Flexibility in the Sonoran Desert",
+      "excerpt": "Designed by Richärd Kennedy Architects, the Gateway Public Library in Mesa, Arizona, offers a flexible civic hub inspired by traditional market halls. Completed in December 2025, the approximately 28,300-square-foot building addresses local public space needs within a park setting.",
+      "content": "Completed in December 2025 in Mesa, Arizona, the Gateway Public Library was designed by Richärd Kennedy Architects to address a shortfall in civic infrastructure and public open space. Spanning approximately 28,270 square feet, the building draws formal cues from traditional market halls, utilizing an overarching structure to connect seamlessly with the surrounding public park rather than acting as a self-contained facility.\n\nThe structure features a glazed central gallery with an angular, south-sloping roof supported by slender steel columns and undulant timber planes that dampen noise. Industrial materials such as weathering steel and fiber-cement cladding define the smaller programmatic volumes housed underneath the sprawling canopy. To manage the desert climate, deep roof overhangs provide shade throughout the day, while a variable refrigerant-flow HVAC system is embedded within the floor slab.\n\nInterior finishes include polished concrete flooring and sound-absorbing panels. The smaller volumes, assigned to functions like administration, makerspaces, and children's areas, are built for easy reorganization using floor boxes with data and power placed at regular intervals. Engineering services for the project were provided by Kimley-Horn, with landscape design by Dig Studio and construction by Willmeng Construction."
     },
     {
       "id": "7cfe26ab40a34f3c45aa",
@@ -364,24 +418,6 @@
       "title": "Cosima von Bonin Unveils Dollys & Beaux Exhibition at Petit Palais",
       "excerpt": "German artist Cosima von Bonin presents the Dollys & Beaux exhibition at the Petit Palais for Art Basel Paris's public program, bringing together her fabric sculptures and soft toy figures.",
       "content": "Kenyan-born German artist Cosima von Bonin is presenting the Dollys & Beaux exhibition at the Petit Palais as part of Art Basel Paris's public program. The exhibition features large-scale soft-stuffed leather, velvet, and mohair sculptures created by the artist. These figures, which previously appeared in Loewe's Fall/Winter 2026 collection show, establish a dialogue between contemporary art and fashion. The presented works include velvet St. Bernard dog sculptures with plush barrels around their necks, sea scallops, a hermit crab, an octopus, and a killer whale. Spanning a career of over 40 years, von Bonin's installations encourage open-ended interpretations from viewers rather than imposing a single narrative. Miu Miu serves as the official partner for the public program. Dollys & Beaux is on view at the Petit Palais from October 23 to 25, 2026, while Art Basel Paris takes place at the Grand Palais from October 23 to 25, 2026."
-    },
-    {
-      "id": "9d8e9ec35717e5901616",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-10-06T06:00:00.000Z",
-      "url": "https://www.archdaily.com/1186008/wasl-tower-uns",
-      "image": "https://images.adsttc.com/media/images/6abb/ee19/4c0c/5301/88f7/4308/large_jpg/wasl-tower-uns_15.jpg?1790701112",
-      "originalTitle": "Wasl Tower / UNS - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "The 302-Metre Wasl Tower Completed in Dubai",
-      "excerpt": "Built in downtown Dubai, the 302-metre mixed-use Wasl Tower brings together hotel, residential, office, and public spaces within a single vertical community.",
-      "content": "Rising in downtown Dubai near Sheikh Zayed Road and the Burj Khalifa, Wasl Tower stands as a 302-metre mixed-use high-rise designed by UNS in collaboration with lead engineering consultant Werner Sobek for Wasl Group. Spanning an area of 167733 square metres, the tower integrates hotel, residential, office, and public amenity spaces into a single vertical community, contributing a distinctive presence to Dubai's city centre. The project involved contributions from numerous design, engineering, and specialist consultants. Hotel interiors were designed by GA Design, while food and beverage interior spaces were handled by LWD. Facade lighting design was executed by Arup, with landscape architecture led by Green4Cities Architects and Terra Firma Landscape. Local MEP engineering was provided by SEED, and quantity surveying services were managed by Kulkarni Quantity Surveyors. The high-rise structure adds a new multi-functional architectural landmark to the urban landscape of the United Arab Emirates."
     },
     {
       "id": "16fef8491d4bab7e587f",
@@ -485,29 +521,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 90,
-      "technicalValue": 88,
+      "technicalValue": 85,
       "brandFit": 95,
       "title": "Patek Philippe Unveils Seventh Watch Art Grand Exhibition in Milan",
-      "excerpt": "Patek Philippe launched its seventh Watch Art Grand Exhibition at CityOval Milano, showcasing historical timepieces alongside new limited-edition models inspired by the Italian market.",
-      "content": "Swiss watchmaker Patek Philippe launched its seventh Watch Art Grand Exhibition, the largest to date, in Milan. Spread across 31,215 square feet at CityOval Milano, a recently renovated Art Nouveau venue formerly known as Palazzo delle Scintille, the exhibition brings together the brand's history and contemporary innovations. The display features over 500 watches and clocks, including the 1868 wristwatch created for Countess Koscowicz of Hungary. During a preview walk-through led by president Thierry Stern, the importance of the Italian market was highlighted. The exhibition features seven new limited-edition references, including Calatrava iterations reflecting the Italian flag and pieces inspired by Italian landscapes. Additionally, the event marked the introduction of the Gondolo Ladies First jewelry watch collection. The exhibition runs through October 18."
-    },
-    {
-      "id": "5eb8317810c0e53b40b7",
-      "category": "Exhibitions",
-      "source": "artbasel.com",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-09-29T18:19:01.000Z",
-      "url": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36-1.png",
-      "originalTitle": "Art Basel announces exhibitors and showfloor for its 2026 Miami Beach Edition - artbasel.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 50,
-      "brandFit": 90,
-      "title": "Art Basel Announces Exhibitor Lineup for Miami Beach 2026 Edition",
-      "excerpt": "Art Basel Miami Beach has announced that its 2026 edition will feature 272 exhibitors from over 40 countries alongside a reconfigured showfloor.",
-      "content": "Art Basel Miami Beach has announced the exhibitor lineup and program highlights for its 2026 edition, taking place from December 4 to 6 at the Miami Beach Convention Center, with VIP preview days on December 2 and 3. The fair will bring together 272 exhibitors from more than 40 countries and territories. Responding to feedback from exhibitors and the Selection Committee, the 2026 show features a substantially reconfigured floor plan that occupies approximately 12 percent less space, while the main Galleries sector hosts roughly 10 percent fewer exhibitors distributed across four hospitality plazas. The fair comprises four sectors—Galleries, Kabinett, Nova, Positions, and Survey—alongside the digital art initiative Zero 10. More than two-thirds of the participating galleries operate spaces in the Americas, with Brazil forming the third-largest national contingent. Additional programs include an outdoor presentation by James Turrell and a participatory exhibition by Public Art Fund in Collins Park, alongside the return of the Art Basel Awards in partnership with BOSS."
+      "excerpt": "Patek Philippe launched its seventh Watch Art Grand Exhibition at CityOval Milano, showcasing historic timepieces alongside new limited-edition models.",
+      "content": "Swiss watchmaker Patek Philippe opened the seventh and largest edition of its Watch Art Grand Exhibition at CityOval Milano, formerly known as Palazzo delle Scintille. Spanning 31,215 square feet, the exhibition features over 500 watches and clocks from the brand's history and museum collections. Patek Philippe president Thierry Stern noted the longstanding importance of the Italian market during a preview walk-through. The exhibition runs through October 18 and includes 25 pieces inspired by Italian landscape and culture, alongside seven new limited-edition references featuring the inscription Patek Philippe Milano 2026 on the sapphire crystal caseback. Among the new introductions are three Calatrava iterations with red, white, and green lacquered dials, as well as the debut of the Gondolo Ladies First jewelry collection. The exhibition coincides with Milano Watch Week at Palazzo Mezzanotte."
     },
     {
       "id": "746277419aabd8db216a",
@@ -520,12 +538,12 @@
       "originalTitle": "TfL reveals civil engineering behind £15.3M step-free upgrades at Surrey Quays and Northolt - New Civil Engineer",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 85,
-      "brandFit": 75,
+      "editorialScore": 75,
+      "technicalValue": 80,
+      "brandFit": 70,
       "title": "Step-Free Access Completed at Surrey Quays and Northolt Stations in London",
-      "excerpt": "Transport for London detailed the engineering works and completion of step-free access projects at Surrey Quays and Northolt stations, including the £15.3M investment for Northolt.",
-      "content": "London railway stations Surrey Quays and Northolt now feature step-free access for wheelchair users, families with pushchairs, and travelers with luggage. According to Transport for London, the Surrey Quays improvements formed part of a wider funding package that included contributions from the Ministry of Housing, Communities and Local Government and British Land. Lead designer AtkinsRéalis and contractor Morgan Sindall Infrastructure minimized carbon impact by using low-carbon materials such as CEM 3 concrete and electric arc furnace steel. Construction utilized a specialized tower crane and a direct site power connection instead of generators. At Northolt, step-free access was achieved through an estimated £15.3M project involving a new footbridge and lift, making it the 95th station on the Tube network to offer step-free access. The walkway and lift shaft at Northolt consist of steel structures built on concrete piles. Both station projects aim to improve capacity and accessibility across the London transport network."
+      "excerpt": "Transport for London details completed step-free access projects at Surrey Quays and Northolt stations, delivered through a total investment of £15.3M.",
+      "content": "Surrey Quays and Northolt railway stations in London have been upgraded to provide step-free access for wheelchair users, parents with pushchairs, and travellers with luggage. According to Transport for London (TfL), the improvements at Surrey Quays were supported by funding from the Housing Infrastructure Fund programme alongside a contribution from British Land. Lead designer AtkinsRéalis and contractor Morgan Sindall Infrastructure minimized the carbon footprint by utilizing low-carbon cement and electric arc furnace steel. The concourse building also features a green roof and solar panels. The upgrade works at Northolt station were funded by TfL at an estimated cost of £15.3M, introducing a new footbridge and lift to establish step-free connections between the street and trains. Stuart Harvey, TfL chief capital officer, stated that the completed projects will significantly improve journeys for thousands of customers across the network."
     }
   ]
 }
