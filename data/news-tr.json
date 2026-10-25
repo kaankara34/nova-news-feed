@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-10-24T03:38:30.543Z",
+  "generatedAt": "2026-10-25T03:41:30.988Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 5,
+    "Exhibitions": 4,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,7 +35,7 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 5,
+      "count": 4,
       "target": 4,
       "targetMet": true
     },
@@ -75,25 +75,43 @@
       "targetMet": true
     }
   },
-  "total": 25,
+  "total": 24,
   "articles": [
     {
       "id": "b5961ee94d183f387c03",
       "category": "Galleries & Museums",
       "source": "tate.org.uk",
       "sourceDomain": "tate.org.uk",
-      "publishedAt": "2026-10-23T12:01:55.000Z",
+      "publishedAt": "2026-10-24T17:33:51.000Z",
       "url": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic/exhibition-guide",
       "image": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic/exhibition-guide",
       "originalTitle": "Light and Magic: The Birth of Art Photography Exhibition Guide - tate.org.uk",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 50,
-      "brandFit": 85,
-      "title": "Tate Modern'de Piktoryalizm Akımını İnceleyen Büyük Fotoğraf Sergisi Kapılarını Açtı",
-      "excerpt": "Tate Modern, ilk uluslararası sanat fotoğrafçılığı hareketi olan piktoryalizmi konu alan ve 200'den fazla nadir vintage baskıyı bir araya getiren yeni bir sergi düzenliyor.",
-      "content": "Tate Modern, fotoğrafın bir sanat formu olarak kabul edilmesini sağlayan piktoryalizm akımına odaklanan yeni bir sergiye ev sahipliği yapıyor. 14 Ekim 2026 tarihinde ziyarete açılan sergi, 21 Şubat 2027 tarihine kadar gezilebilecek. Light and Magic: The Birth of Art Photography başlığını taşıyan etkinlik, dünyanın dört bir yanından derlenen 200'den fazla nadir vintage fotoğraf baskısını bir araya getiriyor. Sergi, 1880'lerde başlayan ve fotoğrafçıların resim sanatının kompozisyon ve estetiğinden esinlenerek karanlık odalarda gerçekleştirdikleri deneyimleri gözler önüne seriyor. Ziyaretçiler; Alvin Langdon Coburn, Lionel Wendt, Soichi Sunami ve Lee Sow Lim gibi isimlerin eserlerinin yanı sıra platin, bromoil ve karbro gibi farklı analog baskı tekniklerini inceleme fırsatı buluyor. Sergi alanında kurulan aktif karanlık odada, belirli günlerde vintage ve çevre dostu tekniklerle baskı yapma imkanı sunuluyor. Ayrıca akıllı telefonlar üzerinden dinlenebilecek sesli rehber seçeneği de ziyaretçilere sunuluyor."
+      "editorialScore": 85,
+      "technicalValue": 70,
+      "brandFit": 90,
+      "title": "Tate Modern, Piktoryalizm Akımını İnceleyen Yeni Fotoğraf Sergisine Ev Sahipliği Yapıyor",
+      "excerpt": "Tate Modern, fotoğrafçılığın bir sanat formu olarak doğuşunu inceleyen ve 200'den fazla nadir vintage baskıyı bir araya getiren kapsamlı bir piktoryalizm sergisi sunuyor.",
+      "content": "Tate Modern, 14 Ekim 2026 ile 21 Şubat 2027 tarihleri arasında ziyarete açık olacak Light and Magic: The Birth of Art Photography adlı sergiyle ilk uluslararası sanat fotoğrafçılığı akımı olan piktoryalizmi ele alıyor. Sergi, dünyanın dört bir yanından derlenen 200'den fazla nadir vintage fotoğraf baskısını ve karanlık oda teknikleriyle yapılan deneysel çalışmaları bir araya getiriyor. 1880'lerde başlayan piktoryalizm, fotoğrafçılığın yalnızca görüntü kaydetmekten öte resim veya çizim kadar ifade gücüne sahip özgün bir sanat formu olduğunu savunuyordu. Fotoğrafçılar karanlık odalarda kimyasallarla deneyler yaparak negatifleri manipüle etmiş, çeşitli kâğıt türleri kullanarak benzersiz etkiler yaratmışlardır. Sergi kapsamında, ziyaretçilerin vintage ve çevre dostu tekniklerle kendi baskılarını yapmayı öğrenebilecekleri aktif bir karanlık oda da yer alıyor. Etkinlik, Alvin Langdon Coburn, Cavendish Morton, Soichi Sunami ve Roberto Marconato gibi isimlerin eserlerinin yanı sıra Brezilya'daki Foto Cine Clube Bandeirante üyelerinin çalışmalarına da yer vererek akımın 1920'lerin ötesindeki küresel etkisini gözler önüne seriyor."
+    },
+    {
+      "id": "9bb08f65680aa8dcaa58",
+      "category": "Art & Exhibitions",
+      "source": "The Art Newspaper",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-10-23T11:33:20.887Z",
+      "url": "https://www.theartnewspaper.com/2026/10/23/what-to-expect-from-centre-pompidous-vast-new-conservation-focused-site-in-the-parisian-suburbs",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/9947e7e0b25ee05620fc25034f023bfb6a9359f7-11607x7963.jpg?rect=0,500,11607,6964&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "What to expect from Centre Pompidou’s vast new conservation-focused site in the Parisian suburbs - The Art Newspaper",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 85,
+      "brandFit": 90,
+      "title": "Centre Pompidou’nun Paris Banliyösündeki Yeni Koruma Odaklı Merkezi Kapılarını Açıyor",
+      "excerpt": "Centre Pompidou Francilien – fabrique de l'art, Massy'de 30 bin metrekarelik alanda açılıyor. Mart ayındaki resmi açılış öncesi ön izleme hafta sonları düzenleniyor.",
+      "content": "Centre Pompidou, Paris'in güney banliyölerinden Massy'de koruma, restorasyon ve depolama faaliyetlerine odaklanan yeni büyük tesisini tanıttı. Mart ayındaki açılış öncesinde bu ay ön izleme hafta sonları düzenleyen Centre Pompidou Francilien – fabrique de l'art, 30 bin metrekarelik üç katlı dikdörtgen bir yapıda yer alıyor. Tesisin 13 bin metrekarelik bölümü depolamaya, 4 bin metrekaresi ise koruma ve restorasyon atölyelerine ayrılırken, bu alanlar halkın erişimine kapalı tutulacak. Ziyaretçiler için ayrılan 3 bin metrekarelik alanın ise 2 bin 200 metrekarelik kısmını sergi salonları oluşturuyor. Ana binanın 2030 yılına kadar sürecek renovasyon çalışmaları nedeniyle koleksiyondaki eserlerin tek bir tesiste toplanması amacıyla kurulan merkeze, önümüzdeki iki yıl içinde 8 farklı kiralık alandaki 150 bin modern ve çağdaş eser 645 kamyonla taşınacak. Mimarlığını Philippe Chiambaretta'nın üstlendiği proje 105 milyon euroya mal olurken, fonun bir kısmı yerel otoriterler tarafından karşılandı. Mart ayında gerçekleştirilecek ilk sergi, koleksiyonun tarihine ve koruma meselelerine odaklanacak."
     },
     {
       "id": "24438258bed830e4e42f",
@@ -108,10 +126,10 @@
       "contentMode": "full-source",
       "editorialScore": 88,
       "technicalValue": 85,
-      "brandFit": 92,
-      "title": "Ermenistan'ın Başkenti Erivan İçin Tasarlanan Gökdelenler",
-      "excerpt": "Foster + Partners stüdyosu, Erivan Dünya Ticaret Merkezi projesi kapsamında birbirine bahçe köprüleriyle bağlanan iki gökdelen tasarladı.",
-      "content": "İngiliz mimarlık stüdyosu Foster + Partners, Ermenistan'ın başkenti Erivan'da inşa edilecek Erivan Dünya Ticaret Merkezi için yeni bir tasarım hazırladı. Projenin merkezinde, aralarında üç köprü unsuru bulunan bir çift gökdelen yer alıyor. Bu kulelerden birinin ofisler, diğerinin ise daireler ve bir otel barındırması planlanıyor. Yapıların cam cephelerle kaplanacağı ve çelik destekli beton taşıyıcı sisteme sahip olacağı belirtildi. Kuleleri birbirine bağlayan kapalı köprüler, peyzajlı teraslar dahil olmak üzere her iki bina sakinlerine de çeşitli olanaklar sağlayacak. Tasarıma göre kuleler, Erivan'ın tarihi ve kültürel dokusuyla diyalog kuracak şekilde konumlandırıldı. Zemin seviyesinde yer alacak alçak binalar ise alışveriş, konaklama ve eğlence alanlarına ev sahipliği yapacak. Proje, Alexander Tamanian'ın 1924 tarihli masterplan kararlarına ve bölgenin mimari mirasına referans vermeyi amaçlıyor."
+      "brandFit": 90,
+      "title": "Foster + Partners, Ermenistan'daki Erivan Dünya Ticaret Merkezi İçin İkiz Gökdelen Tasarladı",
+      "excerpt": "İngiliz stüdyo Foster + Partners, Ermenistan'ın başkenti Erivan'da inşa edilecek Dünya Ticaret Merkezi için bahçe köprüleriyle birbirine bağlanan iki gökdelen tasarladı. Proje, ofisler, konutlar ve bir otelin yanı sıra kamusal alanlar sunuyor.",
+      "content": "İngiliz mimarlık stüdyosu Foster + Partners, Ermenistan'ın başkenti Erivan'da inşa edilecek olan Dünya Ticaret Merkezi projesinin merkezinde yer alacak ikiz gökdelenlerin tasarımını tamamladı. Üç köprü unsuruyla birbirine bağlanan bu kulelerden birinin ofis, diğerinin ise konut ve otel olarak hizmet vermesi planlanıyor. Cam cephelerle kaplanan kuleler, çelik destekli beton yapı iskeletine sahip bulunuyor. Yapılar; Ermenistan Ulusal Meclisi, Opera ve Bale Tiyatrosu, Soykırım Anıtı ve Ağrı Dağı manzaralarına yönelecek şekilde açylandırıldı.\n\nGökdelenlerin tabanında ise eğlence, ağırlama ve alışveriş alanlarını barındıran alçak yapılar yer alıyor. Tasarımın, Alexander Tamanian'ın 1924 tarihli bahçe şehir masterplanıyla uyumlu olduğu belirtiliyor. Proje kıdemli ortağı Niall Dempsey, yeni gelişimin ülkenin tarihi ve kültürüyle yakın diyalog içinde olduğunu ifade ederken, ortak Juan Frigerio ise kentsel dokuyu kamusal alanlarla buluşturduklarını vurguladı. Kulelerin yer seviyesinden yükseltilmesiyle alanın yüzde 50'sinin serbest bırakılması hedefleniyor."
     },
     {
       "id": "28b13e4e16cc6260f35d",
@@ -142,12 +160,12 @@
       "originalTitle": "Studio Museum Announces New Artists-in-Residence - Hyperallergic",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 80,
       "technicalValue": 60,
-      "brandFit": 88,
-      "title": "Studio Museum Yeni Dönem Sanatçılarını Açıkladı ve Fransa'da Prix Duchamp Sahiplerini Buldu",
-      "excerpt": "Harlem'deki Studio Museum yeni dönem sanatçılarını duyururken, Fransa'nın prestijli ödülü Prix Duchamp sanat ikilisi Brognon Rollin'e verildi. Kültür dünyasındaki diğer gelişmeler arasında kurumsal atamalar ve yeni müze bağışları yer alıyor.",
-      "content": "Harlem'deki Studio Museum, 2026-2027 dönemi için bir yıllık misafir sanatçı programına seçilen isimleri açıkladı. Multidisipliner sanatçı Turiya Adkins, sanatçı ve küratör Timothy Yanick Hunter ile fotoğrafçı ve film yapımcısı Clifford Prince King, kasım ayından ekim 2027'ye kadar West 125. Sokak'taki yeni binada bireysel stüdyo alanlarına sahip olacak. Program, profesyonel gelişim eğitimi ve malzeme desteğinin ardından bir grup sergisiyle sona erecek. Fransa'nın en büyük çağdaş sanat ödülü olan Prix Duchamp ise bu yıl David Brognon ve Stéphanie Rollin'den oluşan Brognon Rollin ikilisine verildi. Kazananlar 35.000 euro tutarında para ödülünün sahibi olurken, eserleri Paris Modern Sanat Müzesi'nde sergileniyor. Müze direktörü Fabrice Hergott, ikilinin kavramsal pratiklerinin insan kırılganlığına dair sessiz ama inatçı bir ifade sunduğunu belirtti. Bu arada New York Halk Kütüphanesi, sanatçı Seton Smith'in bağışladığı Kiki Smith'e ait 250 baskıyı koleksiyonuna kattı. Cleveland Sanat Müzesi ise Teresita Fernández'in mekana özgü duvar duvarlarını edindiğini duyurdu. New York Eyaleti Sanat Konseyi ve New York Sanat Vakfı ise 59 kar amacı gütmeyen sanat kuruluşuna finansal destek sağladı."
+      "brandFit": 80,
+      "title": "Studio Müzesi 2026-27 Yılı Sanatçı Programı Katılımcılarını Açıkladı",
+      "excerpt": "Studio Müzesi, 2026-27 dönemi misafir sanatçı programı için Turiya Adkins, Timothy Yanick Hunter ve Clifford Prince King'i seçti. Sanatçılar, West 125. Sokaktaki yeni binada bireysel stüdyo imkanına kavuşacak.",
+      "content": "Harlem'deki Studio Müzesi, 2026-27 dönemi için bir yıllık misafir sanatçı programına seçilen isimleri duyurdu. Çok disiplinli sanatçı Turiya Adkins, sanatçı ve küratör Timothy Yanick Hunter ile fotoğrafçı ve film yapımcısı Clifford Prince King, bu kasım ayından ekim 2027'ye kadar kurumun West 125. Sokak'taki yeni binasında yer alan bireysel stüdyolarda çalışacak. Program, stüdyo tahsisinin yanı sıra profesyonel gelişim eğitimi ve malzeme desteği de sunuyor. Süreç, müzenin galerilerinden birinde düzenlenecek ortak bir sergiyle tamamlanacak. Öte yandan Fransa'nın çağdaş sanat ödülü Prix Duchamp, bu yıl David Brognon ve Stéphanie Rollin'den oluşan Brognon Rollin ikilisine verildi. Kazananlar 35.000 euro para ödülü alırken, diğer üç adayın eserleriyle birlikte Musée d’Art Moderne de Paris'te sergiye katılıyor. Müzenin direktörü Fabrice Hergott, ikilinin pratiklerini insan savunmasızlığı üzerine sessiz ve inatçı bir ifade olarak değerlendirdi. Ayrıca New York Devlet Sanat Konseyi ve New York Sanat Vakfı, 59 kar amacı gütmeyen sanat kurumuna toplam 1.760.000 dolar hibe desteği sağladı. Kiki Smith'in kız kardeşi tarafından New York Halk Kütüphanesi'ne bağışlanan 250 baskı ise kurum bünyesinde yerini aldı."
     },
     {
       "id": "6943e0f79d411115620a",
@@ -186,24 +204,6 @@
       "content": "Art Basel Paris, Fransa'daki öğrenci protestolarının yol açtığı güvenlik endişeleri nedeniyle fuarı erken kapatma kararı aldı. Çarşamba günü VIP kart sahibi koleksiyoncular ve sanat dünyası profesyonelleri için açılan etkinliğin pazar günü sona ermesi planlanıyordu. Ancak organizatörler iki halka açık günü iptal ederek fuarın cuma akşamı kapanacağını bildirdi. Fuar yöneticileri Vincenzo de Bellis, Karim Crippa ve Carly Murphy tarafından kaleme alınan mektupta, kararın hafif alınmadığı ve fuara katılan herkesin güvenliğinin en büyük öncelik olduğu vurgulandı. Çarşamba ve perşembe günleri Grand Palais'de gerçekleştirilen etkinliği hedef alan sosyal medya çağrıları yapılırken, Paris'teki protestocular Louvre müzesine erişimi kısıtlamıştı. École du Louvre öğrencilerinin öncülük ettiği eylemler Fransa genelindeki lise protestolarıyla dayanışma amacıyla düzenlendi. Kentteki çalkantılar sebebiyle bazı galeriler kapılarını kapatırken, fuar çevresindeki etkinlikler de küçültüldü. Grand Palais etrafına sivil savunma bariyerleri yerleştirilirken, cuma günü fuarı ziyaret edecek kişilerin yanlarında devlet tarafından verilmiş kimlik bulundurması zorunlu kılındı. Organizatörler bilet iadeleri konusunda henüz resmi bir açıklama yapmadı."
     },
     {
-      "id": "ae7f94e9eab2c2eff7ba",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-22T11:14:17.317Z",
-      "url": "https://www.theartnewspaper.com/2026/10/22/anselm-kiefer-painting-too-large-to-exhibit-gets-its-own-david-chipperfield-pavilion",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/6ba62190f7587510c2ec8938e8bf378fc6df6d8d-1860x1174.png?rect=0,58,1860,1116&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Anselm Kiefer painting too large to exhibit gets its own David Chipperfield pavilion - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 92,
-      "technicalValue": 88,
-      "brandFit": 95,
-      "title": "Alman Sanatçı Anselm Kiefer'in Devasa Eseri İçin Özel Pavyon Açıldı",
-      "excerpt": "Alman sanayici Reinhold Würth tarafından 2008 yılında satın alınan devasa Anselm Kiefer tablosu, Almanya'da inşa edilen özel bir pavyonda kamuoyuna sunuldu. Mimar David Chipperfield tarafından tasarlanan 140 metrekarelik beton bina, sanatçının direktifleriyle şekillendirildi.",
-      "content": "Yirmi yıla yakın bir süredir depoda tutulan dev Anselm Kiefer tablosu, Almanya'da açılan özel bir galeri sayesinde nihayet ziyaretçilerle buluştu. Endüstriyel koleksiyoner Reinhold Würth, sanatçının stüdyosundan 2008 yılında doğrudan satın aldığı 11.2 metre yükseklik ve 7.1 metre genişliğe sahip Schwarze Flocken adlı eseri koleksiyon mekânlarına sığdıramamıştı. Bu durum üzerine Würth Grubu, 2025 yılında İngiliz mimar David Chipperfield'ı yalnız bu tablo için bir pavyon tasarlaması amacıyla görevlendirdi. Künzelsau'daki Museum Würth 2 bahçesinde yer alan yapı 13 Ekim tarihinde kapılarını açtı. Romanyalı şair Paul Celan'ın bir şiirinden esinlenen eser; tuval üzerinde yağlıboya, emülsiyon, gomalak, toprak ve dallar kullanılarak üretildi. Sanatçının önerdiği pavyon; odanın oranlarını, kapı konumunu ve duvar renklerini kapsayan detaylarla tasarlandı. David Chipperfield Architects Berlin ekibinden Bernhard Danigel, amaçlarının tek bir esere odaklanan sakin bir mekân yaratmak olduğunu belirtti. Pavyonun açılışı, yaklaşık 20 kilometre mesafedeki Kunsthalle Würth'ün üç yıllık yenileme ve genişletme çalışmalarının tamamlanmasıyla aynı döneme denk geldi."
-    },
-    {
       "id": "f8d7fd2a576c6662483b",
       "category": "Architecture & Design",
       "source": "Wallpaper*",
@@ -220,6 +220,24 @@
       "title": "Design Miami Paris 2026 Fuarı Dördüncü Edisiyonuyla Kapılarını Açtı",
       "excerpt": "L'Hôtel de Maisons'da düzenlenen Design Miami Paris 2026, dünyanın dört bir yanından gelen dekoratif sanatkarların eserlerini ve tarihi tasarımları koleksiyonerlerle buluşturuyor.",
       "content": "Paris'te düzenlenen Design Miami Paris 2026 fuarı, dördüncü edisyonu için L'Hôtel de Maisons'da toplanan galeri ve koleksiyonerleri ağırlıyor. Etkinlik, farklı galerilerin sunduğu tarihi ve çağdaş tasarımı bir araya getiren zengin bir seçki sunuyor. Açık havada sergilenen eserler arasında Maison Parisienne Gallery aracılığıyla sunulan ve moabi ağacından üretilen Pierre Renart imzalı bank dikkat çekerken, Galerie Patrick Seguin ise Jean Prouvé'nin 1944 tarihli sökülebilir evini bahçede sergiliyor. Salon 94 Design, Alberto ve Diego Giacometti heykellerini Rick Owens'ın mobilyalarıyla bir araya getirdiği standıyla en iyi galeri sunumu ödülünü aldı. İtalyan galeriler arasında yer alan Nilufar, Carlo Bugatti ve Gabriella Crespi'nin yanı sıra Christian Pellizzari'nin Murano camından lambalarına yer veriyor. Skandinav tasarımlarında ise Mathias Bengtsson'un paslanmaz çelikten üretilen Membrane sandalyesi çağdaş eser ödülüne layık görüldü. Sergide ayrıca Frank Lloyd Wright'ın Ward W Willits evi için tasarladığı ve en iyi tarihi tasarım ödülünü kazanan koltuğu da yer alıyor. Etkinlik, uluslararası tasarım tarihinden nadir parçaları ve çağdaş üretimi izleyicilerle buluşturuyor."
+    },
+    {
+      "id": "8899c6d9025a3748ab2b",
+      "category": "Galleries & Museums",
+      "source": "Victoria and Albert Museum",
+      "sourceDomain": "vam.ac.uk",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "url": "https://www.vam.ac.uk/event/mM0QkE2KLd/collecting-to-shape-and-reflect-the-nation-oct-2026",
+      "image": "https://assets-cdn.vam.ac.uk/2026/08/26/13/00/47/d38135e1-5f4a-4e3d-8c64-cf1b027b0c11/collecting-to-shape-and-reflect-the-nation-changing-museum-strategies-from-the-nineteenth-to-the-twentieth-century-conference-in-person_640.jpg",
+      "originalTitle": "Collecting to Shape and Reflect the Nation Conference (In-person) - Victoria and Albert Museum",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 60,
+      "brandFit": 90,
+      "title": "Victoria ve Albert Müzesi Ulusal Kimlik ve Müzecilik Konferansına Ev Sahipligi Yapacak",
+      "excerpt": "Victoria ve Albert Müzesi ile Alman Ulusal Müzesi, 22-24 Ekim 2026 tarihlerinde ulusal koleksiyonların ve kimliklerin oluşumunu ele alacak ortak bir konferans düzenliyor.",
+      "content": "Victoria ve Albert Müzesi ile Alman Ulusal Müzesi iş birliğiyle gerçekleştirilecek olan \"Milleti Şekillendirmek ve Yansıtmak İçin Koleksiyon Yapmak\" başlıklı konferans dizisi, 22-24 Ekim 2026 tarihlerinde Londra'daki V&A South Kensington'da düzenlenecek. Etkinlik, on dokuzuncu ve yirminci yüzyıllardan günümüze ulusal müze koleksiyonlarının kimlikleri nasıl şekillendirdiğini ve yansıttığını çok yönlü bir yaklaşımla ele alacak. Program kapsamında uluslararası akademisyenler ve müze profesyonelleri, imparatorluk mirası, postkolonyal koleksiyonlar, iade tartışmaları ve sanat koleksiyonlarının ulusal kimliklerin inşasındaki rolü gibi konuları inceleyen beş ayrı oturumda bir araya gelecek. Konferansa katılım biletleri 35 ila 45 sterlin arasında değişirken, bilet satışları 21 Ekim 2026 Çarşamba günü saat 14.00'te sona erecek. Ayrıca aynı tarihlerde çevrim içi katılım imkânı sunan bir diğer oturum serisi de 25 sterlin karşılığında takip edilebilecek."
     },
     {
       "id": "5b95cfeead07210cc803",
@@ -269,11 +287,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 70,
+      "technicalValue": 80,
       "brandFit": 90,
-      "title": "PAD Londra Fuarı Lüks Markaları ve Koleksiyoncuları Bir Araya Getirdi",
-      "excerpt": "Berkeley Square'de düzenlenen PAD Londra sanat ve tasarım fuarı, lüks markaların uluslararası koleksiyonerlerle buluştuğu önemli bir platform olmaya devam ediyor.",
-      "content": "Londra'nın Berkeley Square bölgesinde her ekim ayında gerçekleştirilen PAD Londra sanat ve tasarım fuarı, bu yıl aralarında Yves Salomon ve Buccellati gibi lüks markaların da bulunduğu yeni katılımcıları ağırladı. Fuar organizatörleri, etkinliğin özellikle 30 ile 45 yaş arasındaki daha genç koleksiyonerlerin yanı sıra Orta Doğu, Singapur, Hong Kong ve Latin Amerika'dan gelen alıcıların ilgisini çektiğini belirtti. İtalyan mücevher markası Buccellati, etkinlik boyunca Macri koleksiyonlarındaki yeni tasarımlarını sergilerken standında binlerce ziyaretçi ağırladı. Hazır giyim alanındaki tanınmış adını mobilya ve galeri sektörüne taşıyan Yves Salomon Éditions ise tarihi ve çağdaş tasarımlardan oluşan seçkisini sergiledi. UBS'in küresel koleksiyon raporuna göre, uluslararası müzayede evlerinin ilk yarı satışlarındaki artışlar sanat ve tasarım pazarındaki toparlanmayı destekler nitelikte seyrediyor."
+      "title": "PAD London Fuarı Lüks Markaları ve Koleksiyonerleri Berkeley Square'de Buluşturdu",
+      "excerpt": "Berkeley Square'de düzenlenen PAD London fuarı, lüks markalar ile uluslararası koleksiyonerleri bir araya getirdi. Yves Salomon ve Buccellati gibi yeni katılımcılar tasarım ve zanaatkârlık odaklı eserlerini sergiledi.",
+      "content": "Ekim ayında Berkeley Square'de gerçekleştirilen yıllık sanat ve koleksiyon tasarımı fuarı PAD London, uluslararası galerileri, tasarımcıları ve lüks markaları bir araya getirdi. Fuar organizatörleri, bu yıla 12 yeni katılımcının dahil olduğunu ve bunlar arasında Fransız moda evi Yves Salomon ile mücevher firması Buccellati'nin de bulunduğunu belirtti. Etkinlik, farklı yaş gruplarından koleksiyonerlerin yanı sıra Orta Doğu, Singapur, Hong Kong ve Latin Amerika'dan gelen alıcıların ilgisini çekti. Buccellati, Macri Capri ve Macri Positano Eternelle koleksiyonlarının yanı sıra gümüş ürünlerini sergilerken, standında 2.700 konuk ağırladı. Şirket yöneticileri, fuarın uluslararası koleksiyon dünyasıyla bağları güçlendirmek adına önemli bir platform sunduğunu ifade etti. Diğer taraftan, mobilya ve hazır giyim alanında faaliyet gösteren Yves Salomon Éditions, Carlo Bugatti, Joseph Hoffmann ve André Sornay gibi tarihi figürlerin tasarımlarını sergiledi. Organizatörler, Carlo Bugatti'ye ait eserlerin çoğunun ortalama 30.000 euro civarında alıcı bulduğunu aktardı. Küresel sanat piyasasındaki toparlanma eğilimi sürerken, UBS ve Art Basel raporları ilk yarıdaki satış artışlarına dikkat çekti. Christie's ve Sotheby's müzayede evleri milyarlarca dolarlık cirolar açıkladı. PAD organizatörleri, lüks markaların koleksiyon tasarımı alanındaki potansiyelini doğrulayan bu katılımın ardından benzer isimlerin gelecekteki fuarlarda da yer alacağını kaydetti."
     },
     {
       "id": "b449d7556644c290ce79",
@@ -322,12 +340,12 @@
       "originalTitle": "Biennale Arte 2026 | Beverly Buchanan - La Biennale di Venezia",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
+      "editorialScore": 80,
+      "technicalValue": 65,
       "brandFit": 90,
-      "title": "Venedik Bienali 2026'da Beverly Buchanan Eserleri Yer Alıyor",
-      "excerpt": "Venedik Bienali 2026 kapsamındaki sergi, Siyah Güney mimari geleneklerini ve arazi mülkiyetini inceleyen Beverly Buchanan'ın çizim, resim, heykel ve yerleştirmelerini bir araya getiriyor.",
-      "content": "Amerika Birleşik Devletleri'nde 1940 yılında doğan ve 2015 yılında hayata veda eden Beverly Buchanan, Columbia Üniversitesi'nde parazitoloji ve halk sağlığı alanlarında yüksek lisans eğitimi aldıktan sonra sanat çalışmalarına yöneldi. Güney Amerika'ya dönmeden önce New York'ta resim ve heykel sergileyen sanatçı; Macon, Atlanta, Athens ve Ann Arbor'da yaşadı. Venedik Bienali'ndeki sunum, sanatçının çizimlerini, resimlerini, heykellerini, arazi çalışmalarını ve saha notlarını bir araya getiriyor. Buchanan'ın kulübe heykelleri, Mary Lou Furcron ve Nellie Mae Rowe gibi kendi kendini yetiştirmiş bahçıvan ve sanatçıların yaratıcı çalışmalarını anarak Siyah kültürel korumasını belgelemektedir. Sanatçı, geri dönüştürülmüş kereste, metal, tıbbi spatula, şişe kapağı ve istiridye kabukları içeren tabby betonu gibi çeşitli malzemeler kullanarak kıyı bölgelerindeki malzeme ekonomisine ve hayatta kalma bilincine dikkat çekti."
+      "title": "Venedik Bienali 2026, Beverly Buchanan'ın Mimari Mirasına Odaklanıyor",
+      "excerpt": "Venedik Bienali 2026, Güneydeki Siyah mimari gelenekleri ve arazi mülkiyetini inceleyen Beverly Buchanan'ın çizim, resim, heykel ve toprak işlerini bir araya getiren kapsamlı bir sunumuna ev sahipliği yapıyor.",
+      "content": "Venedik Bienali 2026, koruma, arazi mülkiyeti ve mimari yerel yapılar etrafında şekillenen Beverly Buchanan'ın sanat pratiklerini merkezi bir pavilyonda izleyiciyle buluşturuyor. Orangeburg doğumlu sanatçı, Columbia Üniversitesi'nde parazitoloji ve halk sağlığı alanlarında yüksek lisans yaptıktan sonra New York'ta resim ve heykel sergileri açmış, 1977'de Güney'e dönmüştü. Sergide yer alan çalışmalar, sanatçının çizim, resim, heykel ve arazi işlerini kapsarken, yazılı notları ve saha araştırmalarındaki kendi sesine de ağırlık veriyor. Buchanan'ın efsaneler adını verdiği kısa metinleri, topluluk içindeki kişilerin tanıklıklarını toplama çabasını yansıtıyor. Sanatçı, eserlerinde ahşap, metal, tıbbi spatula ve şişe kapaklarının yanı sıra çimento blok ve beton karışımları gibi çok çeşitli malzemeler kullandı. Kulübe heykelleri, Mary Lou Furcron ve Nellie Mae Rowe gibi isimlerin yaratıcı dehasını onararak Siyah kültürel korumanın bir yöntemi olarak öne çıkıyor. Eserlerinde kullandığı deniz kabukları, kum ve külden oluşan tabya malzemesi, kıyı bölgesindeki ırksal maddi ekonomiye ve hayatta kalma tarihine atıfta bulunuyor."
     },
     {
       "id": "052db7858aa65b340cf9",
@@ -413,11 +431,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 90,
-      "brandFit": 90,
-      "title": "David Chipperfield Architects Almanya'da Tek Eserlik Beton Galeri İnşa Etti",
-      "excerpt": "David Chipperfield Architects, Almanya'daki Carmen Würth Forum müzesi arazisinde Anselm Kiefer'in dev ölçekli tablosuna ev sahipliği yapmak üzere monolitik betondan yeni bir galeri tasarladı.",
-      "content": "Berlin merkezli David Chipperfield Architects, Künzelsau'daki Carmen Würth Forum müzesinin heykeltraşlık bahçesinde Anselm Kiefer Pavilyonu'nu tamamladı. Yapının formu, sanatçının Holokost kurtulanı Paul Celan'ın bir şiirinden adını alan ve daha önce müzede sergilenemeyecek kadar büyük olan Schwarze Flocken adlı 11'e 7.1 metrelik devasa eseri için özel olarak belirlendi. Yakınlardaki müze binasının yüzey dokusuna uyum sağlayan galeri, tuğla ve çekiçlenmiş betondan inşa edildi. Tasarım, binanın iç hacmini doğrudan takip eden kubot bir biçime sahipken, girişin üzerinde uzanan bir gölgelik barındırıyor. İç mekanda duvarlar kil sıva ile kaplanırken, ahşap çatı konstrüksiyonu açıkta bırakıldı. Çatı pencereleri sayesinde değişen doğal ışık koşullarının mekana yansıtılması amaçlandı. Üç katmanlı duvar konstrüksiyonu, aktif iklimlendirme sistemlerine ihtiyaç duyulmaksızın değişen iklim koşullarına uyum sağlayacak şekilde tasarlandı."
+      "technicalValue": 85,
+      "brandFit": 92,
+      "title": "David Chipperfield Architects, Almanya'daki Heykel Bahçesine Beton Galeri Ekledi",
+      "excerpt": "Berlin merkezli David Chipperfield Architects, Almanya'daki Carmen Würth Forum heykel bahçesine Anselm Kiefer'in büyük ölçekli bir eserine ev sahipliği yapmak üzere monolitik beton bir galeri ekledi.",
+      "content": "David Chipperfield Architects'in Berlin ofisi, Almanya'nın Künzelsau kentindeki Carmen Würth Forum müzesinin heykel bahçesine tek bir eseri barındıran Anselm Kiefer Pavyonu'nu ekledi. Künzelsau'daki çimenli bir tepe üzerine inşa edilen yapı, Alman ressam Anselm Kiefer'in daha önce sergilenemeyecek kadar büyük olan Schwarze Flocken adlı 11'e 7.1 metrelik eserine özel olarak tasarlandı.\n\nKüboid formlu pavyon, girişin üzerinde uzanan bir saçak ile tuğla ve çekiçle işlenmiş beton malzemelerden üretildi. Mimarlık ofisi, yapının sanatçı tarafından belirlenen iç hacmi doğrudan yansıttığını ve odaklanmış, sakin bir atmosfer amaçladığını belirtti. İç mekanda duvarlar kil sıva ile kaplanırken, ahşap çatı konstrüksiyonu açıkta bırakıldı. Bina, aktif iklimlendirme sistemleri kullanmaksızın değişen iklim koşullarına uyum sağlamak üzere beton, tuğla ve kil sıvalı üç katmanlı bir duvar konstrüksiyonuyla inşa edildi."
     },
     {
       "id": "300568b417bc0ce1423d",
@@ -456,24 +474,6 @@
       "content": "Son yıllarda müzeler, dışlama, sömürü ve hatta hırsızlığa dayanan tarihlerini ve miraslarını hesaba katma konusunda artan bir baskıyla karşı karşıya kaldı. Bu kurumsal öz yansıtma ve dönüşüm, müzecilik çalışmalarında ırkçılık karşıtlığı ve sömürgeden arındırma odaklı yaklaşımlarla eş zamanlı olarak ortaya çıktı. Koleksiyonlarını, sergilerini ve personellerini çeşitlendirmek ve daha kapsayıcı hale getirmek isteyen müze sayısı her geçen gün artsa da, bu anlamlı çalışmanın ardındaki gerçek süreçler hakkında çok az şey yayımlandı. Dartmouth bünyesindeki The Hood Museum of Art tarafından University of Washington Press iş birliğiyle yayımlanan bu cilt, söz konusu diyalogdan doğdu. Kitap; koleksiyonların, sergilerin ve personelin çeşitlendirilmesinde yeni akademik çalışmaları ve müze pratiklerini öne çıkarıyor. Aynı zamanda müzelerin kurumsal öncelikleri nasıl geliştirdiğine dair yeni çerçeveleri tartışarak müze küratörlüğünde ve sanat tarihi eğitiminde sömürgeci yapıların kesintiye uğratılmasını ele alıyor. Eser, Rijksmuseum araştırma kütüphanesinden de erişilebilecek kaynaklar arasında yer alıyor."
     },
     {
-      "id": "083606fb243eb8673705",
-      "category": "Galleries & Museums",
-      "source": "Victoria and Albert Museum",
-      "sourceDomain": "vam.ac.uk",
-      "publishedAt": "2026-10-19T13:04:26.000Z",
-      "url": "https://www.vam.ac.uk/blog/museum-life/anatomy-and-astronomy-in-the-national-art-library",
-      "image": "https://www.vam.ac.uk/blog/wp-content/uploads/Screenshot-2026-10-19-at-13.59.35.png",
-      "originalTitle": "Anatomy and Astronomy in the National Art Library - Victoria and Albert Museum",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 70,
-      "brandFit": 85,
-      "title": "Ulusal Sanat Kütüphanesi Erken Dönem Tıp ve Astronomi Eserlerini Sergiliyor",
-      "excerpt": "Victoria and Albert Müzesi bünyesindeki Ulusal Sanat Kütüphanesi, insan anatomisi ve astronomi üzerine yazılmış erken dönem nadir ders kitaplarını barındırıyor.",
-      "content": "Victoria and Albert Müzesi bünyesinde faaliyet gösteren Ulusal Sanat Kütüphanesi, sanat ve tasarım koleksiyonunun yanı sıra anatomi ve astronomi tarihindeki nadir erken dönem eserlere ev sahipliği yapıyor. Bu eserler arasında Andreas Vesalius tarafından kaleme alınan ve ilk gerçek anatomik ders kitabı olarak kabul edilen De humani corporis fabrica libri septem yer alıyor. Padova Üniversitesi'nde tıp profesörlüğü yapan yazar, İnan Renaissance döneminde Alman sanatçı Jan Steven van Calcar ile iş birliği yaparak insan vücudunun iç yapısını gösteren 250'den fazla ahşap baskı illüstrasyon hazırlattı. Kütüphanede ayrıca Margaret Bryan tarafından yazılan A compendious system of astronomy adlı ikinci baskı eser bulunuyor. Kız okulu kurucusu olan yazarın 1799 tarihli bu kitabı, gezegenlerin uzaklıkları ve hareketleri hakkındaki ders notlarını içeriyor. Eser, keşfinden sonraki yetmiş yıl boyunca Uranüs için kullanılan Georgium Sidus adlandırmasını barındırmasıyla dikkat çekiyor. Bu nadir eserler, Henry Clements koleksiyonunun bir parçası olarak kütüphanenin özel koleksiyonlar bölümünde kayıt yaptırıldıktan sonra incelenebiliyor."
-    },
-    {
       "id": "d3325d0133864a05d732",
       "category": "Exhibitions",
       "source": "Art Basel",
@@ -508,24 +508,6 @@
       "title": "Venedik Bienali 61. Uluslararası Sanat Sergisi Kapanış Programını Açıkladı",
       "excerpt": "Venedik Bienali'nin 61. Uluslararası Sanat Sergisi'nin son günlerinde Arsenale'de performanslar, konferanslar ve oturumlar düzenlenecek.",
       "content": "Venedik Bienali'nin 61. Uluslararası Sanat Sergisi'nin son on günü kapsamında Arsenale mekanlarında performanslar, konferanslar, tartışmalar ve yuvarlak masa toplantılarından oluşan bir kamusal program düzenlenecek. Koyo Kouoh'un küratörlüğünü üstlendiği In Minor Keys başlıklı serginin kapanışına doğru gerçekleştirilecek etkinlikler, sanatçı ve kolektif odaklı kuruluşların katılımıyla bir Asambleye de ev sahipliği yapacak. On farklı sanatçı öncülüğündeki organizasyonun bir araya geleceği programda, fikir ve yaratıcı pratiklerin paylaşıldığı oturumlar gerçekleştirilecek. Etkinlik serisinde Laurie Anderson, Ziad Antar, rana elnemr, Natalia Lassalle-Morillo, Sofiá Gallisá Muriente, Clarissa Herbst, Tammy Nguyen, Hagar Ophir, Yo-E Ryou, Dominique Rust, Lerato Shadi ve Nathalie Vairac gibi isimlerin performansları yer alacak. Program kapsamında ayrıca Felwine Sarr bir konferans verirken, farklı coğrafyalardan kurum temsilcileri dayanışma, yayıncılık ve topluluk oluşturma gibi konuları ele alacak çeşitli panellerde konuşmacı olarak yer alacak. Etkinlikler 13-22 Kasım tarihleri arasında izleyiciyle buluşacak."
-    },
-    {
-      "id": "c2ab332f3e23ff500c27",
-      "category": "Exhibitions",
-      "source": "Art Basel",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-10-10T00:34:33.000Z",
-      "url": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36-1.png",
-      "originalTitle": "Art Basel announces 272 exhibitors and a reconfigured showfloor for its 2026 Miami Beach edition - Art Basel",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 90,
-      "title": "Art Basel Miami Beach 2026 272 Katılımcı ve Yenilenen Alanıyla Duyuruldu",
-      "excerpt": "Art Basel Miami Beach, 2026 edisyonunda 40'tan fazla ülkeden 272 katılımcıyı ağırlamaya hazırlanıyor. Fuar, yeniden tasarlanan fuar alanı ve odaklandırılmış galeri yerleşimiyle Aralık ayında kapılarını açacak.",
-      "content": "Art Basel Miami Beach, Amerika kıtasındaki en önemli ticari sanat piyasası etkinliği olarak 2026 yılında 40'tan fazla ülkeden 272 katılımcıyı bir araya getirecek. Miami Beach Kongre Merkezi'nde 4-6 Aralık tarihlerinde düzenlenecek olan fuar, 2-3 Aralık tarihlerindeki VIP ön gösterim günleriyle başlayacak. Seçim Komitesi ve katılımcılardan gelen geri bildirimler doğrultusunda yeniden tasarlanan fuar alanı, yaklaşık yüzde 12 daha az zemin alanı kaplayacak ve ana sektör olan Galleries yüzde 10 daha az katılımcıya yer verecek. Yeni düzenleme, beş yerine dört konaklama plazasının etrafında şekillenirken, mavi çipli galerileri tüm fuara dağıtarak daha net görüş hatları ve kolay bir gezim imkanı sunmayı amaçlıyor. Fuar; Galleries, Kabinett, Nova, Positions ve Survey olmak üzere dört ana sektörü kapsarken, otuzdan fazla galeri bu yıl ilk kez katılım gösterecek. Dijital dönem sanatına odaklanan Zero 10 girişimi ise şimdiye kadarki en büyük sunumuyla geri dönecek. Etkinlik kapsamında ayrıca dış mekan sergileri ve ödül törenleri de yer alacak."
     }
   ]
 }

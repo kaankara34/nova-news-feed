@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-10-24T03:38:30.543Z",
+  "generatedAt": "2026-10-25T03:41:30.988Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 5,
+    "Exhibitions": 4,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,7 +35,7 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 5,
+      "count": 4,
       "target": 4,
       "targetMet": true
     },
@@ -75,25 +75,43 @@
       "targetMet": true
     }
   },
-  "total": 25,
+  "total": 24,
   "articles": [
     {
       "id": "b5961ee94d183f387c03",
       "category": "Galleries & Museums",
       "source": "tate.org.uk",
       "sourceDomain": "tate.org.uk",
-      "publishedAt": "2026-10-23T12:01:55.000Z",
+      "publishedAt": "2026-10-24T17:33:51.000Z",
       "url": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic/exhibition-guide",
       "image": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic/exhibition-guide",
       "originalTitle": "Light and Magic: The Birth of Art Photography Exhibition Guide - tate.org.uk",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 50,
-      "brandFit": 85,
-      "title": "Major Exhibition Exploring Pictorialism Opens at Tate Modern",
-      "excerpt": "Tate Modern is hosting a new exhibition featuring over 200 rare vintage prints that explores pictorialism, the first international art photography movement.",
-      "content": "Tate Modern is hosting a new exhibition focusing on pictorialism, the movement that established photography as a genuine art form. Opening to visitors on 14 October 2026, the exhibition runs until 21 February 2027. Titled Light and Magic: The Birth of Art Photography, the event brings together over 200 rare vintage photographic prints gathered from around the world. The exhibition highlights the darkroom experiments and pictorialist practices that began in the 1880s, where photographers engaged with painting compositions, moods, and aesthetics. Visitors can examine works by figures such as Alvin Langdon Coburn, Lionel Wendt, Soichi Sunami, and Lee Sow Lim, alongside exploring analogue printing processes including platinum, bromoil, and carbro prints. A working darkroom within the exhibition space offers visitors the chance to learn printmaking using vintage and environmentally friendly techniques on certain days. An audio guide is also available for purchase on smartphones to accompany the visit."
+      "editorialScore": 85,
+      "technicalValue": 70,
+      "brandFit": 90,
+      "title": "Tate Modern Hosts New Exhibition Exploring the Pictorialism Art Movement",
+      "excerpt": "Tate Modern presents a comprehensive exhibition on pictorialism, bringing together over 200 rare vintage prints to explore the birth of photography as an art form.",
+      "content": "Tate Modern is running an exhibition titled Light and Magic: The Birth of Art Photography from October 14, 2026, to February 21, 2027, exploring pictorialism as the first international art photography movement. The exhibition features over 200 rare vintage photographic prints from around the world alongside unusual darkroom experiments. Beginning in the 1880s, pictorialist photographers sought to establish photography as a genuine art form comparable to painting and drawing through imaginative studio and darkroom work. Photographers manipulated negatives, experimented with complex developing and printing processes, and utilized diverse paper types to achieve unique aesthetic effects. A working darkroom is included within the exhibition, allowing visitors to learn vintage and environmentally friendly printing techniques on designated days. Featuring works by figures such as Alvin Langdon Coburn, Cavendish Morton, Soichi Sunami, and Roberto Marconato, alongside creations from the São Paulo-based Foto Cine Clube Bandeirante, the exhibition highlights how photographers continued to expand the legacy of pictorialism globally for decades beyond the 1920s."
+    },
+    {
+      "id": "9bb08f65680aa8dcaa58",
+      "category": "Art & Exhibitions",
+      "source": "The Art Newspaper",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-10-23T11:33:20.887Z",
+      "url": "https://www.theartnewspaper.com/2026/10/23/what-to-expect-from-centre-pompidous-vast-new-conservation-focused-site-in-the-parisian-suburbs",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/9947e7e0b25ee05620fc25034f023bfb6a9359f7-11607x7963.jpg?rect=0,500,11607,6964&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "What to expect from Centre Pompidou’s vast new conservation-focused site in the Parisian suburbs - The Art Newspaper",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 85,
+      "brandFit": 90,
+      "title": "Centre Pompidou Unveils Vast New Conservation-Focused Site in Parisian Suburbs",
+      "excerpt": "Centre Pompidou Francilien – fabrique de l'art opens in Massy across 30,000 sq m, featuring storage, restoration ateliers, and exhibition spaces ahead of March inauguration.",
+      "content": "The Centre Pompidou has unveiled a new, large site in the southern suburb of Massy focused on conservation, restoration, and storage. Centre Pompidou Francilien – fabrique de l'art spans 30,000 sq m across a three-storey rectangular building, hosting preview weekends ahead of its March inauguration. Most of the facility is dedicated to storage at 13,000 sq m and conservation ateliers at 4,000 sq m, both inaccessible to the public. Approximately 3,000 sq m is open to visitors, including 2,200 sq m of exhibition space. Prompted by the closure of the main Centre Pompidou site for renovations until 2030, the facility will house the institution's collection of roughly 150,000 modern and contemporary works. Over the next two years, 645 trucks will transport these items from eight rented spaces to the new site. Designed by architect Philippe Chiambaretta, the €105 million project received funding from local authorities alongside state and institutional backing. Its inaugural March exhibition, titled 150,000!, will trace the collection's history and conservation issues."
     },
     {
       "id": "24438258bed830e4e42f",
@@ -108,10 +126,10 @@
       "contentMode": "full-source",
       "editorialScore": 88,
       "technicalValue": 85,
-      "brandFit": 92,
-      "title": "Skyscrapers Connected by Garden Bridges Designed for Yerevan",
-      "excerpt": "Foster + Partners has designed a pair of skyscrapers connected by garden bridges for the World Trade Center Yerevan development.",
-      "content": "British studio Foster + Partners has designed a pair of skyscrapers for the World Trade Center Yerevan development in the capital of Armenia. The development features two towers connected by three enclosed bridge elements, with one housing offices and the other containing apartments and a hotel. Wrapped in glazed facades, the skyscrapers feature a concrete structural frame with steel bracing. The connecting bridges will offer landscaped terraces and shared amenities for occupants. At the base of the towers, low-lying buildings will accommodate entertainment, hospitality, and shopping spaces around a public square. According to the studio, the design aims to establish a dialogue with the country's history and culture, referencing an urban masterplan originally drafted in 1924 by architect Alexander Tamanian."
+      "brandFit": 90,
+      "title": "Foster + Partners Designs Twin Skyscrapers for World Trade Center Yerevan in Armenia",
+      "excerpt": "British studio Foster + Partners has designed a pair of skyscrapers connected by garden bridges for the World Trade Center Yerevan in Armenia. The development features offices, residences, and a hotel alongside public spaces.",
+      "content": "British architecture studio Foster + Partners has designed a pair of skyscrapers forming the centerpiece of the World Trade Center Yerevan in Armenia. Connected by three bridge elements, one tower is planned to house offices while the other will contain apartments and a hotel. Wrapped in glazed facades, the skyscrapers feature a concrete structural frame with steel bracing and are angled to frame views of notable local landmarks.\n\nThe base of the towers includes low-lying buildings housing entertainment, hospitality, and shopping spaces arranged around a public square. The scheme references an area masterplanned in 1924 by Alexander Tamanian with ambitions of creating a garden city. Senior partner Niall Dempsey stated that the development is in close dialogue with the country's history and culture. Partner Juan Frigerio noted that the scheme celebrates outdoor city life by connecting the urban fabric with public spaces, elevating the towers to free up 50 percent of the site."
     },
     {
       "id": "28b13e4e16cc6260f35d",
@@ -142,12 +160,12 @@
       "originalTitle": "Studio Museum Announces New Artists-in-Residence - Hyperallergic",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 80,
       "technicalValue": 60,
-      "brandFit": 88,
-      "title": "Studio Museum Announces New Artists-in-Residence and Prix Duchamp Winner",
-      "excerpt": "The Studio Museum in Harlem announced its upcoming residents, while France's Prix Duchamp was awarded to artist duo Brognon Rollin. Other developments across the arts sector include institutional appointments and major museum acquisitions.",
-      "content": "The Studio Museum in Harlem has announced its yearlong artists-in-residence for 2026-2027. Multidisciplinary artist Turiya Adkins, artist and curator Timothy Yanick Hunter, and photographer and filmmaker Clifford Prince King will occupy individual studio spaces in the institution's new West 125th Street building starting in November through October 2027. The residency includes professional development, material support, and a culminating group exhibition. Meanwhile, the Prix Duchamp, France's largest contemporary art award, was granted to the artist duo Brognon Rollin, formed by David Brognon and Stéphanie Rollin. The winners receive a €35,000 prize, and their work is featured in an exhibition at the Musée d’Art Moderne de Paris. Museum director Fabrice Hergott praised the practice as a tenacious statement on human vulnerability. In institutional acquisitions, the New York Public Library received a trove of 250 prints by Kiki Smith gifted by her sister Seton Smith, forming the most comprehensive collection of the artist's prints in the United States. Additionally, the Cleveland Museum of Art acquired Teresita Fernández's site-specific ceramic wall murals, while various nonprofit art organizations secured reserve fund grants ranging from $15,000 to $50,000."
+      "brandFit": 80,
+      "title": "Studio Museum Announces 2026-27 Artists-in-Residence",
+      "excerpt": "The Studio Museum has selected Turiya Adkins, Timothy Yanick Hunter, and Clifford Prince King as its artists-in-residence for the 2026-27 term. The artists will receive individual studios in the new building.",
+      "content": "The Studio Museum in Harlem has announced the participants for its yearlong artists-in-residence program for the 2026-27 term. Multidisciplinary artist Turiya Adkins, artist and curator Timothy Yanick Hunter, and photographer and filmmaker Clifford Prince King will utilize individual studio spaces in the institution's new building on West 125th Street from this November through October 2027. The residency includes professional development training, material support, and culminates in a group exhibition within the museum's galleries. In other art news, the Prix Duchamp, France's contemporary art award, was awarded this year to the artist duo Brognon Rollin, comprising David Brognon and Stéphanie Rollin. The winners receive a 35,000 euro prize and participate in an exhibition featuring all four nominees at the Musée d’Art Moderne de Paris. Museum director Fabrice Hergott praised the duo's practice as a quiet and tenacious statement on human vulnerability. Additionally, the New York State Council on the Arts and the New York Foundation for the Arts distributed grants ranging from 15,000 to 50,000 dollars, totaling 1.760.000 dollars across 59 nonprofit art organizations. Separately, the New York Public Library received a donation of 250 prints by Kiki Smith from her sister Seton Smith."
     },
     {
       "id": "6943e0f79d411115620a",
@@ -186,24 +204,6 @@
       "content": "Art Basel Paris will close its fair early due to safety concerns arising from student protests in France. Having opened on Wednesday for VIP cardholders, the event was originally scheduled to close on Sunday but has cancelled two of its public days, concluding on Friday evening. Fair leadership, including Vincenzo de Bellis, Karim Crippa, and Carly Murphy, noted in a letter that the decision was not taken lightly and that participant safety remained the utmost priority. Social media accounts had mobilized to target the fair directly at the Grand Palais, while demonstrators previously picketed the Louvre in solidarity with wider high school student protests across the country. In response to the unrest, organizers erected anti-ram barriers around the venue and increased security measures, requiring government identification from all visitors attending on Friday. Several galleries in Paris closed their doors or scaled back surrounding events as a precaution. Organizers have not issued any statements regarding potential refunds for public tickets or exhibitor booth costs."
     },
     {
-      "id": "ae7f94e9eab2c2eff7ba",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-22T11:14:17.317Z",
-      "url": "https://www.theartnewspaper.com/2026/10/22/anselm-kiefer-painting-too-large-to-exhibit-gets-its-own-david-chipperfield-pavilion",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/6ba62190f7587510c2ec8938e8bf378fc6df6d8d-1860x1174.png?rect=0,58,1860,1116&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Anselm Kiefer painting too large to exhibit gets its own David Chipperfield pavilion - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 92,
-      "technicalValue": 88,
-      "brandFit": 95,
-      "title": "German Artist Anselm Kiefer's Massive Painting Receives Dedicated Pavilion",
-      "excerpt": "Purchased by German industrialist Reinhold Würth in 2008, a massive Anselm Kiefer painting is now publicly accessible in a purpose-built German pavilion. Designed by architect David Chipperfield, the 140 sq. m concrete building was shaped according to the artist's specifications.",
-      "content": "Stored for nearly two decades, a giant Anselm Kiefer painting is finally on public view following the opening of a dedicated gallery in Germany. Industrialist Reinhold Würth purchased the 11.2m high and 7.1m wide painting directly from the artist's studio in 2008, but it proved too large for existing exhibition spaces. Consequently, the Würth Group commissioned British architect David Chipperfield in 2025 to design a standalone pavilion exclusively for the artwork. Situated in the sculpture garden at Museum Würth 2 in Künzelsau, the building opened on 13 October. Titled after a poem by Paul Celan, the artwork incorporates oil, emulsion, shellac, earth, and branches on canvas. Kiefer specified the room's proportions, doorway placement, and wall colors for the freestanding structure. Bernhard Danigel of David Chipperfield Architects Berlin noted that the architectural response focused entirely on creating a quiet space dedicated to a single work. The opening coincides with the completion of a three-year renovation at the nearby Kunsthalle Würth."
-    },
-    {
       "id": "f8d7fd2a576c6662483b",
       "category": "Architecture & Design",
       "source": "Wallpaper*",
@@ -220,6 +220,24 @@
       "title": "Design Miami Paris 2026 Opens Doors for Its Fourth Edition",
       "excerpt": "Design Miami Paris 2026 at L'Hôtel de Maisons brings together international collectors to showcase 140 years of global design and decorative arts.",
       "content": "The fourth edition of Design Miami Paris 2026 has opened at L'Hôtel de Maisons, drawing galleries and collectors to view international design and decorative arts. The fair features outdoor displays such as Pierre Renart's moabi wood bench, which won the Best Design at Large Presentation award, and Jean Prouvé's 1944 demountable house presented by Galerie Patrick Seguin. Salon 94 Design received the Best Gallery Presentation award for juxtaposing Alberto and Diego Giacometti sculptures with furniture by Rick Owens. Italian exhibitors like Nilufar displayed vintage works alongside contemporary collectible design and Christian Pellizzari's Murano glass lighting. Scandinavian representation included Mathias Bengtsson's polished stainless steel Membrane chair, which captured the award for Best Contemporary Work. Historical highlights featured a unique living room chair designed by Frank Lloyd Wright for the Ward W Willits house, securing the award for Best Work of Historical Design. The exhibition highlights a diverse range of historical masterpieces, contemporary studio works, and collectible artists' jewelry from galleries around the world."
+    },
+    {
+      "id": "8899c6d9025a3748ab2b",
+      "category": "Galleries & Museums",
+      "source": "Victoria and Albert Museum",
+      "sourceDomain": "vam.ac.uk",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "url": "https://www.vam.ac.uk/event/mM0QkE2KLd/collecting-to-shape-and-reflect-the-nation-oct-2026",
+      "image": "https://assets-cdn.vam.ac.uk/2026/08/26/13/00/47/d38135e1-5f4a-4e3d-8c64-cf1b027b0c11/collecting-to-shape-and-reflect-the-nation-changing-museum-strategies-from-the-nineteenth-to-the-twentieth-century-conference-in-person_640.jpg",
+      "originalTitle": "Collecting to Shape and Reflect the Nation Conference (In-person) - Victoria and Albert Museum",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 60,
+      "brandFit": 90,
+      "title": "Victoria and Albert Museum to Host Conference on National Identity and Museums",
+      "excerpt": "The Victoria and Albert Museum and the Germanisches Nationalmuseum are organizing a joint conference from October 22 to 24, 2026, examining national collections and identities.",
+      "content": "Organized jointly by the Victoria and Albert Museum and the Germanisches Nationalmuseum, the conference titled 'Collecting to Shape and Reflect the Nation' will take place from October 22 to 24, 2026, at V&A South Kensington in London. The multi-faceted event explores how national museum collections have assembled and shaped national identities from the nineteenth to the twentieth century. International scholars and museum professionals will participate in five panels addressing imperial legacies, postcolonial collections, restitution debates, and the construction of national identities through art collections. Tickets for the in-person event range from £35 to £45, with sales closing at 14.00 BST on Wednesday, October 21, 2026. An online version of the conference is also available for £25, offering remote access to the same academic sessions."
     },
     {
       "id": "5b95cfeead07210cc803",
@@ -269,11 +287,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 70,
+      "technicalValue": 80,
       "brandFit": 90,
-      "title": "PAD London Fair Brings Together Luxury Brands and Collectors",
-      "excerpt": "Held in Berkeley Square, the PAD London art and design fair continues to serve as a key platform for luxury brands to connect with international collectors.",
-      "content": "Held every October in London's Berkeley Square, the PAD London art and design fair welcomed new participants this year, including luxury brands such as Yves Salomon and Buccellati. Fair organizers stated that the event attracted younger collectors aged 30 to 45, as well as buyers from the Middle East, Singapore, Hong Kong, and Latin America. Italian jewelry brand Buccellati showcased new designs from its Macri collections and welcomed thousands of visitors to its booth during the event. Yves Salomon Éditions, bringing its renowned ready-to-wear name into the furniture and gallery sector, presented a curated selection of historic and contemporary designs. According to UBS's global collecting report, increases in first-half sales at international auction houses continue to support the recovery in the art and design market."
+      "title": "PAD London Art and Design Fair Draws Luxury Players and Collectors to Berkeley Square",
+      "excerpt": "Held in Berkeley Square, the PAD London fair brought together luxury brands and international collectors. New exhibitors like Yves Salomon and Buccellati showcased their design and craftsmanship focused creations.",
+      "content": "Held in Berkeley Square each October, the annual art and collectible design fair PAD London brought together international galleries, designers, and luxury brands. Organizers stated that this edition featured 12 new exhibitors, including French fashion house Yves Salomon and jewelry firm Buccellati. The event drew collectors across demographics alongside buyers from the Middle East, Singapore, Hong Kong, and Latin America. Buccellati presented pieces from its Macri Capri and Macri Positano Eternelle collections alongside silver items, recording 2,700 guests at its booth. Executives noted the fair provided an important platform to strengthen ties with the international collecting community. Meanwhile, Yves Salomon Éditions showcased historic furniture designs by figures such as Carlo Bugatti, Joseph Hoffmann, and André Sornay. Organizers reported that works by Carlo Bugatti sold for an average of 30,000 euros. As the recovery in the global art market continued, reports from UBS and Art Basel highlighted sales growth in the first half of the year, with auction houses Christie's and Sotheby's posting multi-billion-dollar turnovers. PAD organizers confirmed that the success of luxury brands in the collectible design space points to continued participation in future editions."
     },
     {
       "id": "b449d7556644c290ce79",
@@ -322,12 +340,12 @@
       "originalTitle": "Biennale Arte 2026 | Beverly Buchanan - La Biennale di Venezia",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
+      "editorialScore": 80,
+      "technicalValue": 65,
       "brandFit": 90,
-      "title": "Beverly Buchanan Featured in Biennale Arte 2026",
-      "excerpt": "The Biennale Arte 2026 presentation of Beverly Buchanan's work encompasses drawings, paintings, sculptures, and earthworks that engage with Black Southern building traditions and land ownership.",
-      "content": "Born in Fuquay, United States, in 1940, Beverly Buchanan earned master's degrees in parasitology and public health from Columbia University before focusing on art. After exhibiting in New York City, she relocated to the American South, living in Georgia before moving to Ann Arbor, Michigan, where she died in 2015. Her presentation in the Biennale Arte 2026 spans drawing, painting, sculpture, earthworks, and archival field notes and writings. Buchanan's shack sculptures honor Black cultural preservation, commemorating self-taught builders and artists such as Mary Lou Furcron and Nellie Mae Rowe. Utilizing reclaimed timber, metal, medical spatulas, and cement mixes including tabby—a concrete incorporating oyster shells, sand, and ash—Buchanan's material practice reflects histories of custodianship, land ownership, and coastal survival in the American South."
+      "title": "Biennale Arte 2026 Spotlights the Architectural Legacies of Beverly Buchanan",
+      "excerpt": "Biennale Arte 2026 features a presentation dedicated to Beverly Buchanan, encompassing drawings, paintings, sculptures, and earthworks that engage with Southern Black building traditions and histories of land ownership.",
+      "content": "Biennale Arte 2026 features a presentation dedicated to Beverly Buchanan, exploring her engagement with custodianship, land ownership, and architectural vernaculars through the prism of Black Southern building traditions. Born in Fuquay and raised in Orangeburg, Buchanan earned master's degrees from Columbia University before exhibiting in New York and relocating to the American South. Her presentation encompasses drawing, painting, sculpture, and earthworks, placing emphasis on her writing, research notes, and field work. Buchanan utilized a wide array of materials, ranging from thrifted timbers and medical spatulas to concrete and tabby, a traditional building mixture incorporating oyster shells, sand, and ash. Her shack sculptures commemorate the creative ingenuity of self-taught architects and artists such as Mary Lou Furcron and Nellie Mae Rowe, enacting Black cultural preservation as method. The integration of tabby concrete invokes coastal Georgia's racialized material economy while establishing a historical consciousness of survival."
     },
     {
       "id": "052db7858aa65b340cf9",
@@ -413,11 +431,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 90,
-      "brandFit": 90,
-      "title": "David Chipperfield Architects Builds Concrete Gallery for Singular Artwork in Germany",
-      "excerpt": "David Chipperfield Architects has completed a monolithic concrete gallery on the grounds of Germany's Carmen Würth Forum to house a single large-scale painting by Anselm Kiefer.",
-      "content": "The Berlin office of David Chipperfield Architects has added a monolithic concrete gallery to the grounds of the Carmen Würth Forum museum in Künzelsau, Germany. The structure was built specifically to house Schwarze Flocken, an 11-by-7.1-meter artwork by German painter Anselm Kiefer that was previously too large to exhibit within the main museum. Named after a poem by Holocaust survivor Paul Celan, the Anselm Kiefer Pavilion features a cuboid shape constructed from brick and bush-hammered concrete, referencing the neighboring museum building completed in 2020. The form traces the interior volume specified by the artist. Inside, the walls are lined with clay plaster and the timber roof structure is left exposed. Rooflights let in natural light to create a tranquil atmosphere that shifts throughout the seasons. The three-layer wall construction, comprising concrete, brickwork, and internal clay plaster, adapts to varying climatic conditions without requiring active climate control parameters."
+      "technicalValue": 85,
+      "brandFit": 92,
+      "title": "David Chipperfield Architects Adds Concrete Gallery to German Sculpture Garden",
+      "excerpt": "Berlin-based David Chipperfield Architects has added a monolithic concrete gallery to the sculpture garden of the Carmen Würth Forum in Germany to house a large-scale artwork by Anselm Kiefer.",
+      "content": "The Berlin office of David Chipperfield Architects has completed the Anselm Kiefer Pavilion within the sculpture garden of the Carmen Würth Forum in Künzelsau, Germany. Situated on a grassy mound, the structure was specifically tailored to house Schwarze Flocken, an 11-by-7.1-meter artwork by German painter Anselm Kiefer that was previously too large to exhibit.\n\nFeaturing a cuboid shape with a protruding canopy over the entrance, the pavilion was constructed from brick and bush-hammered concrete, referencing nearby museum structures. The interior features clay plaster walls and an exposed timber roof structure with rooflights designed to let in natural light. According to the architects, the three-layer wall construction of concrete, brickwork, and clay plaster is designed to adapt to varying climatic conditions and maintain frost-free conditions without active climate control."
     },
     {
       "id": "300568b417bc0ce1423d",
@@ -456,24 +474,6 @@
       "content": "In recent years, museums have faced increasing pressure to reckon with their histories and legacies, many of which depended on exclusion, exploitation, and theft. This institutional self-reflection has emerged alongside a focus on incorporating antiracism and decolonization throughout museum work. Although more museums seek to diversify and make their collections, exhibitions, and staffs inclusive, very little has been published about the actual processes involved in this work. Published by Dartmouth's The Hood Museum of Art in association with the University of Washington Press, a new volume emerged from this ongoing dialogue. The publication highlights new scholarship and museum practices in diversifying collections, exhibitions, and staffs. It discusses new frameworks for how museums develop institutional priorities and aims to interrupt colonial structures in museum curation and teaching art history. Contributions cover topics ranging from collaborative methodologies and Native art acquisitions to Black feminist domesticity and Asian Americana. The volume is available for research use within the Rijksmuseum Research Library."
     },
     {
-      "id": "083606fb243eb8673705",
-      "category": "Galleries & Museums",
-      "source": "Victoria and Albert Museum",
-      "sourceDomain": "vam.ac.uk",
-      "publishedAt": "2026-10-19T13:04:26.000Z",
-      "url": "https://www.vam.ac.uk/blog/museum-life/anatomy-and-astronomy-in-the-national-art-library",
-      "image": "https://www.vam.ac.uk/blog/wp-content/uploads/Screenshot-2026-10-19-at-13.59.35.png",
-      "originalTitle": "Anatomy and Astronomy in the National Art Library - Victoria and Albert Museum",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 70,
-      "brandFit": 85,
-      "title": "National Art Library Highlights Early Medical and Astronomical Textbooks",
-      "excerpt": "The National Art Library at the Victoria and Albert Museum houses rare early textbooks focusing on human anatomy and astronomy.",
-      "content": "The National Art Library within the Victoria and Albert Museum maintains rare early volumes on human anatomy and astronomy among its collections. Notable items include Andreas Vesalius's volume commonly known as De humani corporis fabrica libri septem, widely regarded as the first accurate anatomical textbook. Working during the Italian Renaissance, the Padua professor collaborated with German artist Jan Steven van Calcar to produce over 250 woodcut illustrations detailing internal human structures. Another scientific volume held in the library is the 1799 second edition of A compendious system of astronomy by Margaret Bryan, a school founder who compiled her lectures on planetary distances and motions for students. The publication refers to Uranus by the historical designation Georgium Sidus, a name utilized for decades following the planet's discovery. These volumes form part of the institution's Clements Collection and are accessible for viewing by appointment within the special collections reading rooms after standard registration."
-    },
-    {
       "id": "d3325d0133864a05d732",
       "category": "Exhibitions",
       "source": "Art Basel",
@@ -508,24 +508,6 @@
       "title": "Venice Biennale Announces Public Programme for Final Days of Art Exhibition",
       "excerpt": "The final days of the 61st International Art Exhibition in Venice will feature public performances, lectures, and discussions at the Arsenale.",
       "content": "The final ten days of the 61st International Art Exhibition in Venice will feature a public programme of performances, lectures, debates, and roundtables at the Arsenale spaces. Titled In Minor Keys and curated by Koyo Kouoh, the concluding phase of the exhibition will host an Assembly bringing together ten artist-led organisations and collectives to share creative practices, research, and ideas related to community and pedagogy. The schedule includes a series of performances, some created specifically for the occasion, by artists such as Laurie Anderson, Ziad Antar, rana elnemr, Natalia Lassalle-Morillo and Sofiá Gallisá Muriente, Clarissa Herbst, Tammy Nguyen, Hagar Ophir, Yo-E Ryou, Dominique Rust, Lerato Shadi, and Nathalie Vairac. Alongside the performances, speakers including Felwine Sarr will deliver lectures, while panel discussions will feature representatives from international cultural organisations discussing collaborative practices, resilience, and archival projects. The events will take place from Friday 13th to Sunday 22nd November."
-    },
-    {
-      "id": "c2ab332f3e23ff500c27",
-      "category": "Exhibitions",
-      "source": "Art Basel",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-10-10T00:34:33.000Z",
-      "url": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36-1.png",
-      "originalTitle": "Art Basel announces 272 exhibitors and a reconfigured showfloor for its 2026 Miami Beach edition - Art Basel",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 90,
-      "title": "Art Basel Miami Beach Announces 272 Exhibitors and Reconfigured Layout for 2026",
-      "excerpt": "Art Basel Miami Beach will bring together 272 exhibitors from over 40 countries for its 2026 edition, featuring a substantially reconfigured showfloor and a more focused gallery lineup.",
-      "content": "Art Basel Miami Beach will bring together 272 exhibitors from more than 40 countries and territories for its upcoming edition, reaffirming its position as a major commercial moment in the U.S. art market. Taking place at the Miami Beach Convention Center from December 4 to 6, with VIP preview days on December 2 and 3, the fair introduces a substantially reconfigured layout based on feedback from exhibitors and the Selection Committee. The redesigned floor plan occupies approximately 12 percent less floor space, while the main Galleries sector features about 10 percent fewer exhibitors to create a more concentrated setting. The new layout organizes the space around four hospitality plazas instead of five, distributing blue-chip galleries throughout the showfloor to improve navigation and sightlines. The event spans multiple sectors including Galleries, Kabinett, Nova, Positions, and Survey, welcoming more than thirty first-time participating galleries mostly through its project-based sectors. Zero 10 returns with an expanded presentation dedicated to digital art. Public outdoor projects, partner awards, and institutional collaborations will accompany the main exhibition throughout the week."
     }
   ]
 }
