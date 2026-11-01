@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-10-31T03:27:58.546Z",
+  "generatedAt": "2026-11-01T03:31:09.565Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 4,
+    "Exhibitions": 3,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,9 +35,9 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 4,
+      "count": 3,
       "target": 4,
-      "targetMet": true
+      "targetMet": false
     },
     "Galleries & Museums": {
       "count": 5,
@@ -75,7 +75,7 @@
       "targetMet": true
     }
   },
-  "total": 24,
+  "total": 23,
   "articles": [
     {
       "id": "f4f636d26becfca55978",
@@ -124,12 +124,12 @@
       "originalTitle": "herzog & de meuron to convert former birkenstock warehouse into the eames institute museum - Designboom",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
+      "editorialScore": 85,
       "technicalValue": 80,
       "brandFit": 90,
-      "title": "Former Birkenstock Campus to Become Eames Institute Museum",
-      "excerpt": "Herzog & de Meuron will convert the former Birkenstock campus in Novato, California, into the Eames Institute Museum, targeting a 2030 opening year.",
-      "content": "The former Birkenstock campus in Novato, California, is set to be transformed into the Eames Institute Museum by architecture practice Herzog & de Meuron, working with executive architect EHDD and landscape designer Field Operations. Spanning approximately 88 acres, the masterplan reworks the industrial site while preserving its distinctive hyperbolic paraboloid shell roof, originally engineered with Raj Desai for publisher McGraw-Hill. The design organizes the interior around a central hall, featuring a steel-clad reflective bridge and integrated building services within the ceiling. Exhibition spaces, a theater, and workshops for wood and ceramics will allow visitors to observe creative processes firsthand. At the northern and southern edges, recessed glass façades connect the building to ten gardens designed by Field Operations, incorporating native species from woodland and coastal prairie habitats. Following the Institute's property acquisition in 2025 and the submission of the masterplan to the City of Novato, major construction is intended to begin in 2028 with a target opening in 2030."
+      "title": "Herzog & de Meuron to Convert Former Birkenstock Campus into Museum",
+      "excerpt": "Herzog & de Meuron is transforming a former Birkenstock campus in Novato, California, into the Eames Institute Museum, with construction intended to begin in 2028.",
+      "content": "A former Birkenstock campus in Novato, California, is being reworked into the future museum of the Eames Institute of Infinite Curiosity. Designed by Herzog & de Meuron, the project involves San Francisco practice EHDD as executive architect and Field Operations as landscape designer. Spanning approximately 88 acres, the cultural destination will feature exhibition spaces, workshops, a theater, and gardens. The existing campus, originally designed for publisher McGraw-Hill by Jan Lubicz-Nycz, features a recognizable roof assembled from repeated hyperbolic paraboloid shells. Herzog & de Meuron will organize the interior around a central hall while keeping the roof geometry visible. Following the masterplan submission to the City of Novato, major construction is intended to begin in 2028, with 2030 targeted for the museum opening."
     },
     {
       "id": "f56df63b0c7202cf1ba5",
@@ -142,12 +142,12 @@
       "originalTitle": "MoMA, Centre Pompidou, and M+ Will Treat Their Holdings as One Collection in Unprecedented Alliance - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 45,
-      "brandFit": 90,
-      "title": "MoMA, Centre Pompidou, and M+ Form Historic Cultural Alliance",
-      "excerpt": "The Museum of Modern Art in New York, the Centre Pompidou, and M+ in Hong Kong have announced an unprecedented global cultural partnership pooling their holdings.",
-      "content": "The Museum of Modern Art in New York, the Centre Pompidou in Paris, and Hong Kong-based M+ have announced a wide-ranging cultural alliance to treat their holdings as a shared collection. Curated by staff across three continents, the combined holdings will number in the hundreds of thousands of objects alongside extensive archives. Based on current figures, the institutions draw 10 million annual in-person visitors and 125 million online visitors. Beginning in late 2027, major works from M+ will be installed on long-term loan in MoMA galleries, followed by the opening of a long-term Centre Pompidou gallery at MoMA in 2028. Over the next five years, the partner institutions will co-organize an exhibition exploring the concept of the contemporary. A joint steering committee comprising museum directors, department heads, and curators will hold monthly meetings to coordinate priorities including research, conservation, and professional development."
+      "editorialScore": 88,
+      "technicalValue": 70,
+      "brandFit": 85,
+      "title": "MoMA, Centre Pompidou, and M+ Form Alliance to Treat Holdings as One Collection",
+      "excerpt": "MoMA, the Centre Pompidou, and M+ announced a cultural alliance to treat their respective holdings as a shared collection curated across three continents.",
+      "content": "Hong Kong's M+, the Museum of Modern Art in New York, and the Centre Pompidou in Paris have announced a cultural alliance to treat their holdings as a shared collection, curated by staff across three continents. The combined holdings of MoMA and the Pompidou total hundreds of thousands of objects, while M+ holds approximately 8,000 objects. Beginning in late 2027, works from M+ will be installed on long-term loan in MoMA galleries, followed by the opening of a long-term Centre Pompidou gallery at MoMA in 2028. Over the next five years, the partner institutions will co-organize an exhibition exploring the concept of the contemporary. A joint steering committee will meet monthly and hold annual in-person meetings. The Centre Pompidou is currently closed for a building restoration and is scheduled to reopen in 2030. Museum directors noted that the alliance goes beyond past exhibition loans by committing to long-term collaborative programs and sustainable shipping practices."
     },
     {
       "id": "c6d54cdfae385823b2a4",
@@ -178,30 +178,30 @@
       "originalTitle": "New York’s Socrates Sculpture Park rebuilds for resilience and expands - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 75,
-      "brandFit": 90,
-      "title": "New York's Socrates Sculpture Park Expands Amid Resilience Projects",
-      "excerpt": "New York's Socrates Sculpture Park on the Astoria waterfront is expanding its southern edge with monumental sculptures while seawall reconstruction addresses rising sea levels.",
-      "content": "New York's Socrates Sculpture Park is undergoing resilience work following flooding during Superstorm Sandy in 2012. Funded by the Federal Emergency Management Agency, reconstruction of the park's seawall requires much of the five-acre campus to remain closed until next spring. Marking its 40th anniversary, the park is transforming a dormant storage area on its southern edge into a one-acre expansion named The Point, opening on 31 October with a long-term installation of three monumental sculptures by founding artist Mark di Suvero. Established in 1986 by artists and community members, the park has also recently relaunched its workforce development program. Executive director Shaun Leonardo emphasized that the institution's landscaping and soil rehabilitation efforts are designed to prioritize flood mitigation and climate resilience."
+      "editorialScore": 90,
+      "technicalValue": 88,
+      "brandFit": 95,
+      "title": "Socrates Sculpture Park Expands and Rebuilds for Climate Resilience",
+      "excerpt": "New York's Socrates Sculpture Park is expanding with a 1-acre addition featuring works by Mark di Suvero, while parts of its campus undergo seawall reconstruction.",
+      "content": "The New York City Department of Parks & Recreation has begun seawall reconstruction at Socrates Sculpture Park on the Queens waterfront, an area that was submerged during Superstorm Sandy in 2012. Funded by the Federal Emergency Management Agency, the work requires much of the five-acre campus to remain closed until next spring. Marking its 40th anniversary, the park is transforming a dormant storage area on its southern edge into a one-acre expansion called The Point, which will open on 31 October with a long-term installation of three monumental sculptures by founding artist Mark di Suvero. Executive director Shaun Leonardo stated that the project connects the park's future to its founding story. The sculptures, created between 1995 and 2017, involve dynamic elements such as swings and a spinning titanium piece. Furthermore, a workforce development program for residents of nearby public housing has been relaunched with support from the Ford Foundation and Urban Upbound. The park's leadership emphasizes that its landscaping strategies focus on climate resilience, soil rehabilitation, and flood mitigation."
     },
     {
-      "id": "a95ff89fb13519a4e2f5",
+      "id": "15c4158ac54ebc1026b1",
       "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-29T13:00:02.315Z",
-      "url": "https://www.theartnewspaper.com/2026/10/29/london-national-gallery-to-host-largest-ever-exhibition-devoted-to-renaissance-master-piero-della-francesca",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/392a903e3cbb6ac645c1e85eba0048a232723a92-2357x2376.jpg?rect=0,481,2357,1414&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Largest ever Piero della Francesca exhibition to open at London’s National Gallery - The Art Newspaper",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-10-29T15:13:46.000Z",
+      "url": "https://www.artnews.com/art-news/market/nahmads-wassily-kandinsky-christies-consignor-1234804168/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/10/Wassily-Kandinsky-Betonte-Ecken-1000.jpg?w=1000",
+      "originalTitle": "Art Dealer Family the Nahmads Are the Consignors Behind $80 M. Kandinsky Set to Break a Record at Christie’s - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 40,
+      "technicalValue": 60,
       "brandFit": 90,
-      "title": "Largest Ever Piero della Francesca Exhibition to Open at London's National Gallery",
-      "excerpt": "The National Gallery in London is preparing to host the largest exhibition of Italian Renaissance master Piero della Francesca in autumn 2027.",
-      "content": "The National Gallery in London will open the largest exhibition of works by Italian Renaissance painter Piero della Francesca from 2 October 2027 to 30 January 2028. The exhibition will be structured around seven interlocking building blocks: colour, design, space, perspective, narrative, and light. The presentation will include approximately 25 pictures and manuscripts borrowed from institutions in Florence, Perugia, and Massachusetts, alongside three gallery centerpieces. A digital version of a fresco from Arezzo will also be featured. The exhibition is co-curated by Laura Llewellyn and Machtelt Brüggen Israëls, with sponsorship from Intesa Sanpaolo and John J. Studzinski. The artist's theoretical background in perspective and mathematics informs the historical context of the works. Previously, the State Hermitage Museum in St Petersburg staged an exhibition with 11 works in 2018."
+      "title": "Nahmad Family Revealed as Consignors of Record-Bound Kandinsky Painting at Christie's",
+      "excerpt": "The prominent art dealer Nahmad family has been identified as the consignors behind Wassily Kandinsky's Betonte Ecken, which is expected to fetch up to $80 million at Christie's.",
+      "content": "Ahead of the major fall auctions, the consignor of Wassily Kandinsky's 1922–1923 painting Betonte Ecken has been identified as the prominent art dealer and collector family, the Nahmads. Carrying an estimate of $60 million to $80 million at Christie's New York, the colorful abstraction is the highest-priced lot in the upcoming sales. The auction house indicated that the work carries a third-party guarantee ensuring it will surpass the artist's previous auction record of $44.8 million set in 2023. Painted in Weimar while Kandinsky taught at the Bauhaus, the artwork has a documented provenance that includes the Jacob Hecht Auction House in Berlin, early US abstract art supporter Hilla Rebay, the Solomon R. Guggenheim Museum, and various private collections before reaching the present owners. Exhibition catalogs from the past 25 years have previously listed the Nahmad Collection as the owner of the painting. Christie's declined to comment on the matter, and the Nahmad family did not respond by press time."
     },
     {
       "id": "528bc8570ed60c022398",
@@ -251,11 +251,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 86,
-      "technicalValue": 85,
-      "brandFit": 94,
-      "title": "Kengo Kuma's Water Culture House in Copenhagen Opens in December",
-      "excerpt": "Designed by Kengo Kuma & Associates, the KAI Water Culture House on Copenhagen's Paper Island will open on December 5, 2026, featuring five brick towers and ten swimming pools along the harborfront.",
-      "content": "Designed by Kengo Kuma & Associates, the KAI Water Culture House is set to open on Papirøen in Copenhagen on December 5, 2026. Spanning 5,800 square meters along the harborfront, the spa features five irregular brick towers rising above a continuous glass band at ground level. Approximately 300,000 handmade bricks cover the angular surfaces, reflecting surrounding harbor architecture. The building houses ten swimming pools across multiple levels, including a 25-meter fitness pool, a teaching pool, and three children's pools on the ground floor. A notable feature is the Valley Pool, an open-air basin positioned on the first floor between the brick volumes, accompanied by a heated outdoor onsen overlooking the harbor. Both outdoor pools are designed for year-round operation via a ground-source heat pump system connected to ten boreholes extending 250 meters underground. Public bathing facilities and a timber boardwalk overlooking the Royal Danish Playhouse are scheduled to open in early 2027 following the December inauguration."
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Kengo Kuma's KAI Water Culture House Prepares to Open in Copenhagen",
+      "excerpt": "Designed by Kengo Kuma & Associates, the KAI Water Culture House on Copenhagen's Paper Island opens in December with five brick towers and ten pools.",
+      "content": "Kengo Kuma & Associates' KAI Water Culture House is scheduled to open on December 5, 2026, on Copenhagen's Papirøen. Spanning 5,800 square meters along the harborfront, the spa introduces ten swimming pools. The building is recognizable by five irregular brick towers rising above a glass base. Approximately 300,000 handmade bricks cover the angular surfaces in a stepped pattern that catches daylight. Across the facades, 403 windows bring light into the bathing areas and frame harbor views. The tallest volume, the Culture Tower, houses spaces for cultural activities and community gatherings. The Valley Pool, an open-air swimming basin, is positioned on the first floor between the five brick volumes under the sky. A heated outdoor onsen on the same level overlooks the harbor, drawing on Japanese bathing traditions. At ground level, the facility contains a 25-meter fitness pool, a teaching pool, and three smaller pools for children, while upper levels feature warmer bathing areas, a cold plunge pool, saunas, and a steam bath. The year-round pools are supported by a ground-source heat pump system connected to ten boreholes extending 250 meters below ground."
     },
     {
       "id": "97b33632235ece868e6b",
@@ -304,12 +304,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
+      "editorialScore": 90,
+      "technicalValue": 85,
       "brandFit": 95,
-      "title": "Renowned Architect Michele Bönan Reflects on Five Decades of Luxury Hospitality Design",
-      "excerpt": "With nearly 50 years in architecture, Florence-based designer Michele Bönan discusses how the definition of luxury has shifted toward wellness, privacy, and tailored craftsmanship.",
-      "content": "Florence-based architect Michele Bönan has spent nearly 50 years designing luxury hotels and residences, blending Italian craftsmanship, contemporary art, and bespoke furnishings. Having collaborated with renowned names such as Rocco Forte Hotels, the Lungarno Collection, Casa Cipriani, and J.K. Place, Bönan notes that the definition of luxury has evolved. Guests now increasingly seek wellness, privacy, discretion, and a profound sense of belonging rather than impersonal grandeur. Tracing his career from early residential work in Forte dei Marmi to pioneering boutique hotel concepts across Florence, Capri, Rome, and Paris, Bönan emphasizes that every property should feel like a sophisticated private residence. His recent residential project, Casa J.K. Place Roma, situated within an 18th-century Roman palazzo, features bespoke details, marble flooring, and historic fireplaces. Furthermore, he is currently working on the historic Palazzo dei Principi Caravita di Sirignano in Naples, slated to open in 2027. Operating the Michele Bonan Interiors collection alongside his son Sky Bönan, the designer approaches each architectural endeavor like a film script, maintaining a narrative-driven vision rooted in classic, timeless aesthetics."
+      "title": "Architect Michele Bönan Reflects on Five Decades of Hotel Design",
+      "excerpt": "Architect Michele Bönan, with a career spanning nearly 50 years, reflects on the evolution of luxury hospitality, noting that guests increasingly seek wellness, privacy, and a sense of belonging.",
+      "content": "Florence-based architect Michele Bönan, known for transforming historic spaces into cozy retreats, reflects on a career spanning nearly 50 years in hospitality design. Bönan observes that the definition of luxury has evolved, with guests increasingly prioritizing wellness, privacy, and a sense of belonging over impersonal grandeur. His signature aesthetic, blending Italian craftsmanship, contemporary art, antiques, and bespoke furnishings, has shaped properties for brands such as Rocco Forte Hotels and J.K. Place. Among recent projects, Bönan designed the Casa J.K. Place Roma residences within an 18th-century Roman palazzo, featuring custom details and materials. In 2021, he launched the Michele Bonan Interiors collection alongside his son, Sky Bönan. Currently, Bönan is working on restoring the historic Palazzo dei Principi Caravita di Sirignano in Naples, a regal residence with foundations laid in 1535, which is scheduled to open in 2027."
     },
     {
       "id": "31f334ff38863b5cccae",
@@ -328,6 +328,24 @@
       "title": "Perot Museum Reveals Design for Campus Expansion Project in Dallas",
       "excerpt": "The Perot Museum of Nature and Science in Dallas has revealed plans to transform four surrounding acres into an outdoor science destination. Designed by Morphosis and Michael Van Valkenburgh Associates, the project replaces surface parking with green space.",
       "content": "The Perot Museum of Nature and Science in Dallas has unveiled plans to transform four acres surrounding its building into an outdoor science destination. Morphosis, designer of the original museum, leads the project alongside landscape architect Michael Van Valkenburgh Associates. Spanning approximately 60,000 square feet, the campus expansion will feature about 25 large-scale exhibits and 40 learning stations exploring natural forces such as wind, water, and weather. Planned attractions include a fire tornado, a giant water vortex, and a cloud maze. Shade trees, native plantings, and a pollinator habitat are integrated into the design. In addition to outdoor exhibits, the project includes a redesigned entrance and lobby, expanded educational, dining, and event spaces, and a new parking garage. The expansion forms part of the museum's $185 million Curiosity Unbound capital campaign, which has raised $135 million to date. Construction is expected to begin in early 2027 and reach completion in late 2028."
+    },
+    {
+      "id": "9897858f56ffe66bebae",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-10-27T05:01:54.000Z",
+      "url": "https://wwd.com/fashion-news/designer-luxury/gallery/bernard-arnault-craftsmanship-creativity-passion-1239381237/",
+      "image": "https://wwd.com/wp-content/uploads/2026/10/bernard-arnault-lvmh-passion-wwd-honors-ctsy-011.jpg?crop=0px%2C145px%2C1366px%2C765px&resize=1000%2C563",
+      "originalTitle": "Bernard Arnault on Craftsmanship, Creativity and Passion [PHOTOS] - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Photographs Highlighting Bernard Arnault, Craftsmanship, and Creativity Across LVMH",
+      "excerpt": "Newly released photographs trace Bernard Arnault s family background, workshop craftsmanship, and collaborations with architect Frank Gehry.",
+      "content": "A newly published visual collection sheds light on Bernard Arnault s personal history and professional engagements. The archival frames feature a childhood photograph of Arnault with his mother, Marie Josèphe Savinel, in 1950, alongside a 1953 portrait with his sister, Dominique, a 1958 family portrait, and an image with his grandfather at the family company around 1959. The collection also includes a 1967 photograph with his grandmother, Elisa Jeanne Gachon, and a 1969 portrait from his time at Ecole Polytechnique. Among the images are photographs of Arnault alongside architect Frank Gehry in front of the Fondation Louis Vuitton in Paris, as well as shots at the Institut de France de Paris. Additionally, the documented visuals encompass scenes from inside the Berluti atelier during the 2026 LVMH Journées Particulières, appearances by Antoine Arnault with the Chaumet team, and interior views of Tiffany and Bvlgari ateliers."
     },
     {
       "id": "040bd69e3792bbc97a1e",
@@ -420,24 +438,6 @@
       "content": "Approaching its 10th anniversary, luxury handbag brand DeMellier has opened its inaugural stand-alone store in London's Sloane Square. Founder Mireia Llusia-Lindh collaborated with residential architect Nicolas Schuybroek to fashion a 3,230-square-foot space across two floors that mimics a stylish home rather than a traditional retail environment. The ground floor resembles a living room where handbags are displayed on marble shelves, while the lower level features a dining table format and a craft corner displaying leather-cutting tools, needles, and artisan films. The interior incorporates oak floors, mineral plaster walls, and abstract paintings by British artist Susan Gunn. Operating primarily as an online business that accounts for 80 percent of its sales, the profitable company closed its financial year with 56 million pounds in revenue. DeMellier employs responsibly sourced leather and contributes a portion of every sale to SOS Children’s Villages through its philanthropic initiative to support children in need."
     },
     {
-      "id": "5b95cfeead07210cc803",
-      "category": "Fashion & Luxury",
-      "source": "Monocle",
-      "sourceDomain": "monocle.com",
-      "publishedAt": "2026-10-21T17:48:00.000Z",
-      "url": "https://monocle.com/design/global-design-directory-2026-architects-designers-to-book/",
-      "image": "https://monocle.com/wp-content/uploads/2026/10/2-%C2%A9Natthawut-Taeja_SN_0213_Moonler-1_CROP.jpeg",
-      "originalTitle": "Our ‘Design Directory’ 2026: The architects, studios and designers to know around the world - Monocle",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Global Design Industry and Architectural Landscape Highlighted in International Directory",
-      "excerpt": "Monocle magazine's new design directory compiles European architects, studios and designers who combine local craftsmanship and regional vernaculars with innovative solutions to shape global industry standards.",
-      "content": "The global design industry continues to expand with a new international directory celebrating the firms, studios and individuals at the top of their craft. Europe's architectural and design landscape draws upon a rich history ranging from ancient structures to modernist masterpieces, with contemporary practitioners utilizing these foundations for adaptive reuse and circular economies. In Austria, architectural practices integrate regional timber-building traditions and exacting craftsmanship, alongside civic projects like Vienna's hybrid timber market hall. Belgium's modern design scene features climate-conscious landscape architecture and mixed-use urban blocks. Czechia stands out for its adaptive reuse initiatives and community-minded civic infrastructure. Denmark maintains its leadership in functional minimalism through material-focused interiors and utilitarian objects, while Finland celebrates natural materials and human-centred design. France combines haute-couture craftsmanship with technological innovations to produce sculptural interiors, sustainable architecture and cinematic spaces. Germany's contemporary scene leads in efficient architecture and regional material usage, anchored by Berlin studios focusing on community capacity and human scale. Greece blends classical antiquity with modern regionalism across large-scale developments. Together, these international practitioners shape global standards by honouring local vernaculars."
-    },
-    {
       "id": "169bce9b8820c03c8cda",
       "category": "Exhibitions",
       "source": "La Biennale di Venezia",
@@ -490,24 +490,6 @@
       "title": "Obama Presidential Center Reaches $1 Billion in Total Costs",
       "excerpt": "The total cost of the Barack Obama Presidential Center in Chicago has reached approximately $1 billion, compared to its original $350 million budget.",
       "content": "The campus cost of the Barack Obama Presidential Center on Chicago's South Side has reached $1 billion. According to the latest filing from the non-profit Obama Foundation, this latest figure is about $91 million above the September projection of $909 million, excluding $123 million in publicly financed infrastructure improvements. Emily Bittner, the foundation's vice president of communications, stated that the costs are raised through private contributions. The foundation stated it has no outstanding disputed charges with Lakeside Alliance, the joint venture contractor that completed the main building. The project's budget was originally announced as $350 million, jumped to $500 million when design was completed in 2017, and reached $850 million in early September before the latest filing. The recent increases were attributed to additional construction scope such as the Home Court basketball center, public art, and insurance."
-    },
-    {
-      "id": "d3325d0133864a05d732",
-      "category": "Exhibitions",
-      "source": "Art Basel",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-10-16T17:30:00.000Z",
-      "url": "https://www.artbasel.com/stories/laurent-dumas-film-french-collector-renault-large-emerige",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/LD1______Newsletter_Thumbnail___Play_Button___729x435.jpg",
-      "originalTitle": "Meet the collectors | Laurent Dumas - Art Basel",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 30,
-      "brandFit": 85,
-      "title": "New Contemporary Art Center Le Large Opens in Boulogne-Billancourt",
-      "excerpt": "Emerige real estate group opens Le Large in Boulogne-Billancourt, launching its inaugural contemporary art exhibition titled Moteur Imaginaire.",
-      "content": "A new contemporary art center dedicated to showcasing excellence, Le Large, opens on the western edge of Greater Paris in Boulogne-Billancourt. Established by the real estate group Emerige, the center focuses particularly on artists living and working in France. For its inaugural exhibition, titled Moteur Imaginaire, the venue explores the history of Île Seguin, which served as a major manufacturing site for the French car manufacturer Renault until its closure in 1992. Italian curator Cecilia Alemani has brought together around 60 artists for the exhibition, including Neïl Beloufa, Bianca Bondi, Théo Mercier, Jean-Luc Moulène, and Laure Prouvost. The exhibition aims to present the carmaker's art collection, which is rarely exhibited in France, to a broader public, examining the evolution of machines and human interaction. The inaugural exhibition runs from 17 October 2026 to 7 March 2027. Additionally, Laurent Dumas will participate in related conversation events as part of seasonal cultural programmes."
     }
   ]
 }

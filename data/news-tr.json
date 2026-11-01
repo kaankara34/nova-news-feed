@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-10-31T03:27:58.546Z",
+  "generatedAt": "2026-11-01T03:31:09.565Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 4,
+    "Exhibitions": 3,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,9 +35,9 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 4,
+      "count": 3,
       "target": 4,
-      "targetMet": true
+      "targetMet": false
     },
     "Galleries & Museums": {
       "count": 5,
@@ -75,7 +75,7 @@
       "targetMet": true
     }
   },
-  "total": 24,
+  "total": 23,
   "articles": [
     {
       "id": "f4f636d26becfca55978",
@@ -124,12 +124,12 @@
       "originalTitle": "herzog & de meuron to convert former birkenstock warehouse into the eames institute museum - Designboom",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
+      "editorialScore": 85,
       "technicalValue": 80,
       "brandFit": 90,
-      "title": "Eski Birkenstock Kampüsü Eames Enstitüsü Müzesi Olacak",
-      "excerpt": "Novato, Kaliforniya'da bulunan eski Birkenstock kampüsü, Herzog & de Meuron tasarımıyla Eames Enstitüsü Müzesi'ne dönüştürülecek. Projenin 2030 yılında açılması planlanıyor.",
-      "content": "Kaliforniya'nın Novato kentindeki yaklaşık 88 dönümlük eski Birkenstock kampüsü, Eames Enstitüsü Müzesi'ne dönüştürülmek üzere yeniden tasarlanıyor. Projenin mimarlığını Herzog & de Meuron üstlenirken, uygulama mimarı olarak San Francisco merkezli EHDD, peyzaj tasarımı için ise Field Operations görev yapıyor. Yapının en belirgin unsuru olan ve Jan Lubicz-Nycz tarafından tasarlanan hiperbolik paraboloid kabuk çatısı korunacak. Proje; sergi alanları, atölyeler, bir tiyatro salonu ve birbirine bağlı 10 bahçeyi içeren bir kültürel odak noktası oluşturmayı hedefliyor. İç mekanda, çatı geometrisini görünür kılan merkezi bir salonun yanı sıra çelik kaplı yansıtıcı bir köprü yer alacak. Ziyaretçilerin üretim süreçlerini gözlemleyebilmesi amacıyla ahşap ve seramik stüdyoları esnek galeri alanlarıyla buluşturulacak. Enstitünün 2025 yılında mülkiyeti devralmasının ardından master plan Novato Şehri'ne sunuldu. Büyük inşaat çalışmalarının 2028 yılında başlaması ve müzenin 2030'da açılması planlanıyor."
+      "title": "Herzog & de Meuron, California'daki Eski Birkenstock Kampüsünü Tasarlıyor",
+      "excerpt": "Herzog & de Meuron, Kaliforniya'nın Novato kentindeki eski bir Birkenstock kampüsünü Eames Enstitüsü Müzesi'ne dönüştürüyor. Proje için planlar Novato şehrine sunuldu.",
+      "content": "Kaliforniya'nın Novato kentinde bulunan eski bir Birkenstock kampüsü, Eames Sonsuz Merak Enstitüsü'nün gelecekteki müzesi olmak üzere yeniden tasarlanıyor. Herzog & de Meuron'un imzasını taşıyan projede, uygulama mimarı olarak San Francisco merkezli EHDD, peyzaj tasarımında ise Field Operations yer alıyor. Yaklaşık 88 dönümlük arazi üzerine kurulacak olan müze; sergi alanları, atölyeler, bir tiyatro salonu ve bahçeleri bünyesinde barındıracak. Yapının en dikkat çekici unsuru olan hiperbolik paraboloid kabuklardan oluşan çatı örtüsü korunacak. Müzenin ana yapısı orijinal olarak McGraw-Hill yayınevi için Jan Lubicz-Nycz tarafından tasarlanmıştı. İç mekân, çatı geometrisini görünür kılan geniş bir merkezi salon etrafında şekillendirilecek. Projenin ana planı Novato şehrine sunulurken, ana inşaat çalışmalarına 2028 yılında başlanması ve müzenin 2030 yılında açılması hedefleniyor."
     },
     {
       "id": "f56df63b0c7202cf1ba5",
@@ -142,12 +142,12 @@
       "originalTitle": "MoMA, Centre Pompidou, and M+ Will Treat Their Holdings as One Collection in Unprecedented Alliance - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 45,
-      "brandFit": 90,
-      "title": "MoMA, Centre Pompidou ve M+ Müzelerinden Tarihi Kültür İttifakı",
-      "excerpt": "New York Modern Sanat Müzesi, Centre Pompidou ve Hong Kong'daki M+ müzesi, koleksiyonlarını ortak bir havuzda birleştiren benzeri görülmemiş küresel bir kültürel ortaklık duyurdu.",
-      "content": "New York Modern Sanat Müzesi, Paris'teki Centre Pompidou ve Hong Kong merkezli M+, varlıklarını ortak bir koleksiyon olarak yönetmek üzere geniş kapsamlı bir kültürel ittifak kurduklarını açıkladı. Üç kıtaya yayulan personelin küratörlüğünü yapacağı ortak koleksiyon, yüz binlerce eser ve kapsamlı arşivleri kapsayacak. Kurumlar, mevcut verilere göre yıllık 10 milyon ziyaretçi ve 125 milyon çevrim içi izleyici kitlesine ulaşıyor. İş birliği kapsamında 2027 sonundan itibaren M+ koleksiyonundan önemli eserler MoMA galerilerinde sergilenecek ve 2028'de MoMA bünyesinde daimi bir Centre Pompidou galerisi açılacak. Ayrıca kurumlar önümüzdeki beş yıl boyunca çağdaş sanat kavramını inceleyen ortak bir sergi düzenleyecek ve araştırmalardan korunma çalışmalarına kadar birçok alanda ortak adımlar atacak. Üç müze direktörü, departman başkanları ve küratörlerden oluşan ortak bir yönlendirme komitesi aylık olarak toplanacak."
+      "editorialScore": 88,
+      "technicalValue": 70,
+      "brandFit": 85,
+      "title": "MoMA, Centre Pompidou ve M+ Ortak Koleksiyon İçin Anlaştı",
+      "excerpt": "New York Modern Sanat Müzesi, Centre Pompidou ve Hong Kong'daki M+ müzeleri, koleksiyonlarını paylaşılan tek bir havuz olarak yönetmek üzere benzeri görülmemiş kültürel bir ittifak duyurdu.",
+      "content": "Hong Kong'daki M+, New York Modern Sanat Müzesi (MoMA) ve Paris'teki Centre Pompidou, koleksiyonlarını üç kıtaya yayılmış küratörler eşliğinde ortak bir havuz olarak değerlendireceklerini duyurdu. Ortak koleksiyon yüz binlerce nesneyi kapsarken, M+ müzesi ise yaklaşık 8 bin objeye ev sahipliği yapıyor. Girişim kapsamında, 2027 sonundan itibaren M+ koleksiyonundan seçilen eserler MoMA galerilerinde uzun vadeli ödünç olarak sergilenecek. 2028 yılında ise MoMA bünyesinde bir Centre Pompidou galerisi açılacak. Kurumlar önümüzdeki beş yıl içinde çağdaş kavramını inceleyen ortak bir sergi düzenleyecek ve ortak bir yönlendirme komitesi oluşturacak. Binadan ötürü şu an kapalı olan Centre Pompidou'nun 2030 yılında yeniden açılması planlanıyor. Yöneticiler, bu iş birliğinin ortak sergilerin ötesinde kalıcı bir program oluşturmayı ve sevkiyat gibi lojistik süreçlerde sürdürülebilirliği artırmayı amaçladığını belirtti."
     },
     {
       "id": "c6d54cdfae385823b2a4",
@@ -178,30 +178,30 @@
       "originalTitle": "New York’s Socrates Sculpture Park rebuilds for resilience and expands - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 75,
-      "brandFit": 90,
-      "title": "New York'taki Socrates Heykel Parkı Dayanıklılık Çalışmalarıyla Genişliyor",
-      "excerpt": "New York'un Astoria sahilindeki Socrates Heykel Parkı, deniz seviyesinin yükselmesine karşı yürütülen sahil duvarı inşaatı sürerken güney kısmını dev heykellerle genişletiyor.",
-      "content": "New York'taki Socrates Heykel Parkı, 2012 yılında yaşanan Süper Fırtına Sandy sonrası sular altında kalmasının ardından kıyı şeridini güçlendirme çalışmalarına devam ediyor. Federal Acil Durum Yönetim Kurumu fonlarıyla yürütülen sahil duvarı inşası nedeniyle parkın kampüsü gelecek ilkbahara kadar kapalı kalacak. Park, 40. yıl dönümü vesilesiyle güney ucundaki kullanılmayan bir alanı dönüştürerek The Point adını verdiği 1 dönümlük yeni bir alanı 31 Ekim'de ziyarete açacak. Bu yeni alanda, parkın kurucu sanatçısı Mark di Suvero'nun uzun süreli yerleştirmesi olarak üç anıtsal heykeli sergilenecek. 1986 yılında sanatçılar ve topluluk üyeleri tarafından kurulan park, aynı zamanda yerel topluluk için iş gücü geliştirme programlarını yeniden hayata geçirdi. İcra direktörü Shaun Leonardo, iklim direnci ve taşkın azaltma çalışmalarının parkın sorumluluklarının merkezinde yer aldığını belirtti."
+      "editorialScore": 90,
+      "technicalValue": 88,
+      "brandFit": 95,
+      "title": "Socrates Heykel Parkı İklim Direnci İçin Genişliyor",
+      "excerpt": "New York'taki Socrates Heykel Parkı, sahil duvarı inşası nedeniyle kısmen kapanırken, güney ucunda Mark di Suvero'nun anıtsal heykellerini içeren bir dönüm araziyi ekim ayı sonunda açmaya hazırlanıyor.",
+      "content": "New York City Park ve Rekreasyon Departmanı, 2012 yılındaki Süper Fırtına Sandy sırasında sular altında kalan Queens sahilindeki Socrates Heykel Parkı'nda sahil duvarı inşasını başlattı. Federal Acil Durum Yönetim Ajansı fonlarıyla yürütülen bu çalışmalar nedeniyle parkın beş dönümlük alanının büyük kısmı gelecek ilkbahara kadar kapalı kalacak. Eski bir çöp depolama alanından yeşil alana dönüştürülen park, kuruluşunun 40. yıl dönümünde güney ucundaki terk edilmiş depolama alanını genişleterek The Point adını verdiği 1 dönümlük yeni alanı 31 Ekim'de açacak. Bu alanda parkın kurucu sanatçısı Mark di Suvero'nun 1995 ve 2017 yılları arasında oluşturduğu üç büyük ölçekli heykeli sergilenecek. İcra direktörü Shaun Leonardo, bu dönüşümün parkın geleceğini kuruş hikayesiyle bağladığını belirtti. Ayrıca Ford Foundation ve Urban Upbound destekleriyle Astoria Houses sakinlerine yönelik iş gücü geliştirme programı yeniden başlatıldı. Park yönetimi, toprak rehabilitasyonu, taşkın azaltma ve yerli bitkilerin yetiştirilmesi gibi iklim direnci çalışmalarını sürdürüyor."
     },
     {
-      "id": "a95ff89fb13519a4e2f5",
+      "id": "15c4158ac54ebc1026b1",
       "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-10-29T13:00:02.315Z",
-      "url": "https://www.theartnewspaper.com/2026/10/29/london-national-gallery-to-host-largest-ever-exhibition-devoted-to-renaissance-master-piero-della-francesca",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/392a903e3cbb6ac645c1e85eba0048a232723a92-2357x2376.jpg?rect=0,481,2357,1414&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Largest ever Piero della Francesca exhibition to open at London’s National Gallery - The Art Newspaper",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-10-29T15:13:46.000Z",
+      "url": "https://www.artnews.com/art-news/market/nahmads-wassily-kandinsky-christies-consignor-1234804168/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/10/Wassily-Kandinsky-Betonte-Ecken-1000.jpg?w=1000",
+      "originalTitle": "Art Dealer Family the Nahmads Are the Consignors Behind $80 M. Kandinsky Set to Break a Record at Christie’s - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 40,
+      "technicalValue": 60,
       "brandFit": 90,
-      "title": "Londra'daki Ulusal Galeri'de Tarihin En Kapsamlı Piero della Francesca Sergisi Açılacak",
-      "excerpt": "Londra'daki Ulusal Galeri, İtalyan Rönesans ustası Piero della Francesca'nın bugüne kadarki en büyük sergisine 2027 yılının sonbaharında ev sahipliği yapmaya hazırlanıyor.",
-      "content": "Londra'daki Ulusal Galeri, İtalyan Rönesans ressamı Piero della Francesca'nın eserlerinden oluşan tarihin en kapsamlı sergisini 2 Ekim 2027 ile 30 Ocak 2028 tarihleri arasında ziyaretçilerle buluşturacak. Sergi, sanatçının çalışmalarını renk, tasarım, mekan, perspektif, anlatı ve ışık olmak üzere yedi yapı taşı etrafında inceleyecek. Etkinlikte, Floransa, Perugia ve Massachusetts'teki kurumlardan ödünç alınan tablolar ve el yazmalarının yanı sıra galeri koleksiyonundan üç önemli eser da yer alacak. Sergi ayrıca Arezzo'daki bir şapelde bulunan freskin dijital versiyonunu da içerecek. Sergi küratörlüğünü Laura Llewellyn ve Machtelt Brüggen Israëls üstlenirken, finansal destek Intesa Sanapolo bankası ile hayırsever John J. Studzinski tarafından sağlanıyor. Sanatçının perspektif teorisi üzerine yazdığı risale ve matematiksel yönü de serginin arka planını oluşturuyor. Daha önce St. Petersburg'daki State Hermitage Müzesi 2018 yılında 11 eserden oluşan bir sergi düzenlemişti."
+      "title": "Nahmad Ailesi, Christie's Müzayedesinde Rekor Kırmaya Hazırlanan Kandinsky Tablosunun Sahibi Oldu",
+      "excerpt": "New York'ta düzenlenecek müzayedede 60 milyon ile 80 milyon dolar arasında alıcı bulması beklenen Wassily Kandinsky'nin Betonte Ecken tablosunun arkasındaki ismin Nahmad ailesi olduğu açıklandı.",
+      "content": "Kasım ayındaki büyük sonbahar müzayedeleri yaklaşırken, 1922-1923 yıllarında Weimar'daki Bauhaus okulunda üretilen renkli soyutlama tablosu Betonte Ecken'in konsinye sahibinin Nahmad ailesi olduğu bildirildi. 60 milyon ila 80 milyon dolar arasında bir tahminle Christie's New York'un kasım satışlarındaki en yüksek fiyatlı lotu olan eser, sanatçının 2023 yılında 44,8 milyon dolara satılan önceki açık artırma rekorunu kırmasını garanti eden bir üçüncü taraf garantisi taşıyor. Binlerce sanat eserine sahip olduğu bilinen ve Picasso koleksiyonuyla tanınan Nahmad ailesinin eseri, geçmişte çeşitli sergi kataloglarında yer almıştı. Eserin mülkiyet geçmişi 1926 yılında Berlin'deki Jacob Hecht Müzayede Evi'ne kadar uzanıyor ve yıllar içinde Hilla Rebay ile Solomon R. Guggenheim Müzesi gibi önemli duraklardan geçmiş bulunuyor. Christie's konu hakkında yorum yapmaktan kaçınırken, Nahmad ailesi basın saatine kadar herhangi bir yanıt vermedi."
     },
     {
       "id": "528bc8570ed60c022398",
@@ -251,11 +251,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 86,
-      "technicalValue": 85,
-      "brandFit": 94,
-      "title": "Kengo Kuma'nın Kopenhag'daki Su Kültür Evi Aralık Ayında Açılıyor",
-      "excerpt": "Kengo Kuma & Associates tasarımı KAI Su Kültür Evi, Kopenhag'ın kağıt adasında 5 Aralık 2026 tarihinde kapılarını açacak. Liman kenarındaki 5.800 metrekarelik tesis, beş tuğla kule ve on yüzme havuzu barındırıyor.",
-      "content": "Kengo Kuma & Associates imzası taşıyan KAI Su Kültür Evi, Kopenhag'daki Papirøen adasında 5 Aralık 2026 tarihinde açılıyor. Liman cephesinde yer alan 5.800 metrekarelik tesis, zemin seviyesindeki cam şeridin üzerinden yükselen beş düzensiz tuğla kulesiyle dikkat çekiyor. Yaklaşık 300.000 el yapımı tuğlanın kullanıldığı kuleler, iç mekan düzenlerine göre şekillendirildi. Binada fitness havuzu, eğitim havuzu ve çocuk havuzları dahil olmak üzere toplam on yüzme havuzu yer alıyor. Birinci katta, tuğla hacimler arasında açık havada yüzme imkanı sunan Valley Pool adında açık hava havuzu bulunuyor. Aynı katta Kopenhag Limanı manzaralı ısıtmalı bir açık hava onseni de yer alıyor. Yıl boyunca kullanıma uygun olan bu havuzlar, 250 metre derinliğindeki on sondaj kuyusuna bağlı bir toprak kaynaklı ısı pompası sistemiyle destekleniyor. Zemin katta şeffaf alt seviye limanla görsel bir bağlantı kurarken, binanın açılışının ardından 2027 yılının başlarında ahşap bir iskelenin halka açık yüzme alanlarına erişim sağlaması bekleniyor."
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Kengo Kuma'nın Kopenhag'daki Su Kültür Evi Açılışa Hazırlanıyor",
+      "excerpt": "Kengo Kuma & Associates tasarımı KAI Su Kültür Evi, Kopenhag'ın kağıt adasında beş tuğla kule ve on yüzme havuzuyla aralık ayında açılıyor.",
+      "content": "Kengo Kuma & Associates imzasını taşıyan KAI Su Kültür Evi, Kopenhag'ın Papirøen liman bölgesinde 5 Aralık 2026 tarihinde kapılarını açacak. Şehrin liman cephesinde yer alan 5.800 metrekarelik spa tesisi, on adet yüzme havuzunu barındırıyor. Proje, zemin seviyesindeki cam şeridin üzerinden yükselen beş düzensiz tuğla kulesiyle dikkat çekiyor. Yaklaşık 300.000 el yapımı tuğlanın kapladığı eğimli duvarlar, gün ışığını yakalayan basamaklı bir dokuya sahip. Cephe üzerindeki farklı boyutlardaki 403 pencere, banyo alanlarına gün ışığı sağlarken liman manzarasını çerçeveliyor. En yüksek hacim olan Kültür Kulesi, kültürel etkinlikler ve topluluk buluşmaları için ayrıldı. En dikkat çekici unsurlardan biri olan Valley Havuzu, beş tuğla kule arasında birinci katta yer alan açık havuz olarak tasarlandı. Aynı katta, Japon banyo geleneklerinden ilham alan ısıtmalı açık hava onseni de bulunuyor. Zemin seviyesinde 25 metrelik fitness havuzu, bir eğitim havuzu ve çocuk havuzları yer alırken üst katlarda soğuk daldırma havuzu, saunalar ve buhar banyosu hizmet verecek. Tesisin enerji ihtiyacı, 250 metre derinliğindeki on sondaj kuyusuna bağlanan toprak kaynaklı ısı pompası sistemiyle destekleniyor."
     },
     {
       "id": "97b33632235ece868e6b",
@@ -304,12 +304,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
+      "editorialScore": 90,
+      "technicalValue": 85,
       "brandFit": 95,
-      "title": "Ünlü Mimar Michele Bönan Ellinci Yılına Girerken Lüks Tasarım Anlayışını Anlatıyor",
-      "excerpt": "Yarım asırlık kariyere sahip Floransalı mimar Michele Bönan, lüks otelcilikte mahremiyetin, zanaatkârlığın ve kişiye özel aidiyet duygusunun önem kazandığını vurguluyor.",
-      "content": "Floransalı mimar Michele Bönan, İtalyan zanaatkârlığını, çağdaş sanatı ve antikaları bir araya getiren estetik anlayışıyla yaklaşık 50 yıldır otel ve konut projeleri tasarlıyor. Rocco Forte Hotels, Lungarno Collection, Casa Cipriani ve J.K. Place gibi tanınmış markalarla çalışan mimar, lüks tanımının değiştiğini belirtiyor. Misafirlerin artık kusursuz ihtişam yerine zindelik, mahremiyet, mükemmel hizmet ve konfor aradığını ifade eden Bönan, otellerin ve konutların ev hissiyatı vermesi gerektiğini savunuyor. Florence'daki ilk butik otel konseptinden Capri, Roma ve Paris projelerine uzanan süreçte, her mekânı özel bir konut gibi ele aldığını kaydediyor. Roma'daki Via dei Prefetti üzerinde yer alan 18. yüzyıldan kalma bir palazzo içindeki 12 dairelik Casa J.K. Place Roma projeleri arasında öne çıkıyor. Mermer zeminler, özel tasarım mobilyalar ve tarihi detaylarla donatılan bu yapının yanı sıra, Napoli'deki tarihi Palazzo dei Principi Caravita di Sirignano da 2027 yılı açılışı için hazırlanıyor. Oğlu Sky Bönan ile birlikte Michele Bonan Interiors koleksiyonunu da yürüten tasarımcı, her projeyi bir film senaryosu gibi kurguladığını ve özgün ruhu korumanın esas olduğunu belirtiyor."
+      "title": "Mimar Michele Bönan Otel Tasarımında Elli Yıllık Mirasını Sürdürüyor",
+      "excerpt": "Elli yılı aşkın süredir otel tasarlayan Florikalı mimar Michele Bönan, lüks anlayışının evrildiğini ve konukların artık ihtişamdan ziyade wellness ile gizlilik aradığını belirtiyor.",
+      "content": "Otelleri rahat konaklama alanlarına dönüştüren Floransalı mimar Michele Bönan, yaklaşık 50 yıldır sürdürdüğü meslek hayatında lüks tanımının değiştiğini vurguluyor. Bönan, konukların artık kişisel olmayan ihtişam yerine wellness, gizlilik ve aidiyet duygusu aradığını ifade ediyor. İtalyan işçiliği, antikalar ve özel mobilyaları bir araya getiren estetik anlayışıyla tanınan mimar, Rocco Forte Hotels ve J.K. Place gibi projelerde yer aldı. Son olarak Roma'daki Via dei Prefetti üzerinde 18. yüzyıldan kalma bir palazzo içinde yer alan 12 dairelik Casa J.K. Place Roma konseptini hayata geçirdi. Bönan, 2021 yılında oğlu Sky Bönan ile birlikte Michele Bonan Interiors koleksiyonunu kurdu. Mimarlık çalışmalarına devam eden Bönan, Naples'teki Riviera di Chiaia'da yer alan ve temeli 1535 yılında atılan tarihi Palazzo dei Principi Caravita di Sirignano'yu 2027 yılında açılmak üzere yeniden tasarlıyor."
     },
     {
       "id": "31f334ff38863b5cccae",
@@ -328,6 +328,24 @@
       "title": "Perot Doğa ve Bilim Müzesi Kampüs Genişleme Tasarımını Açıkladı",
       "excerpt": "Dallas'taki Perot Doğa ve Bilim Müzesi, binanın etrafındaki dört dönümlük alanı açık hava bilim merkezine dönüştürme planlarını açıkladı. Morphosis ve Michael Van Valkenburgh Associates tarafından tasarlanan proje, otopark alanını yeşil alana çevirecek.",
       "content": "Dallas'taki Perot Doğa ve Bilim Müzesi, binayı çevreleyen dört dönümlük alanı açık hava bilim merkezine dönüştürme planlarını kamuoyuyla paylaştı. Orijinal müze binasını tasarlayan Morphosis, peyzaj mimarlığını üstlenen Michael Van Valkenburgh Associates ile birlikte projeye liderlik ediyor. Yaklaşık 60.000 metrekarelik alanı kapsayacak genişleme projesi; rüzgar, su ve hava durumu gibi doğal kuvvetleri konu alan yaklaşık 25 büyük ölçekli sergi ve 40 öğrenme istasyonu barındıracak. Planlanan cazibe merkezleri arasında bir ateş hortumu, dev bir su girdabı ve bulut labirenti yer alıyor. Projede gölgelik ağaçlar, yerli bitki örtüsü ve tozlaştırıcı habitatı da bulunuyor. Açık hava sergilerinin yanı sıra çalışma, yenilenmiş bir giriş ve lobi, genişletilmiş eğitim, yemek ve etkinlik alanları ile yeni bir otopark garajını da kapsıyor. Genişleme, 185 milyon dolarlık Curiosity Unbound sermaye kampanyasının bir parçası olarak yürütülüyor ve şu ana kadar 135 milyon dolar toplandı. İnşaatın 2027'nin başlarında başlaması ve 2028'in sonlarında tamamlanması öngörülüyor."
+    },
+    {
+      "id": "9897858f56ffe66bebae",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-10-27T05:01:54.000Z",
+      "url": "https://wwd.com/fashion-news/designer-luxury/gallery/bernard-arnault-craftsmanship-creativity-passion-1239381237/",
+      "image": "https://wwd.com/wp-content/uploads/2026/10/bernard-arnault-lvmh-passion-wwd-honors-ctsy-011.jpg?crop=0px%2C145px%2C1366px%2C765px&resize=1000%2C563",
+      "originalTitle": "Bernard Arnault on Craftsmanship, Creativity and Passion [PHOTOS] - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Bernard Arnault ve LVMH Markalarının Zanaatkarlık ve Yaratıcılık Odaklı Fotoğrafları",
+      "excerpt": "Yayınlanan yeni fotoğraflar, Bernard Arnault un aile geçmişini, zanaatkarlık atölyelerini ve mimar Frank Gehry ile olan birlikteliklerini gözler önüne seriyor.",
+      "content": "Yayınlanan görsel bir seçki, Bernard Arnault un kişisel geçmişine ve iş yaşamına ışık tutuyor. Arşive ait kareler arasında, Arnault un 1950 yılında annesi Marie Josèphe Savinel ile olan çocukluk fotoğrafı, 1953 yılında kız kardeşi Dominique ile çekilen karesi, 1958 yılında ailesiyle olan portresi ve 1959 civarında aile şirketindeki büyükbabasıyla görüldüğü anlar yer alıyor. Koleksiyonda ayrıca 1967 yılında büyükannesi Elisa Jeanne Gachon ile çekilen bir fotoğraf ve 1969 yılında Ecole Polytechnique dönemine ait bir kare de bulunuyor. Görseller arasında, Paris teki Fondation Louis Vuitton binasının önünde mimar Frank Gehry ile birlikte çekilmiş fotoğraflar ile Institut de France de Paris teki kareler de dikkat çekiyor. Bunun yanı sıra, 2026 yılındaki LVMH Journées Particulières etkinlikleri kapsamında Berluti atölyesinin içi, Antoine Arnault ve Chaumet ekibinin bir arada bulunduğu anlar ile Tiffany ve Bvlgari atölyelerinden görüntüler de paylaşılan fotoğraflar arasında yer alıyor."
     },
     {
       "id": "040bd69e3792bbc97a1e",
@@ -420,24 +438,6 @@
       "content": "Onuncu yilina yaklaşan luks el cantasi markasi DeMellier, Londra'daki Sloane Square'de bulunan ilk bagimsiz magazasini musterilerle bulusturdu. Kurucu Mireia Llusia-Lindh, konut mimari Nicolas Schuybroek ile birlikte calisarak magazanin sik bir ev gibi hissettirmesini amaclayan bir alan tasarladi. Iki kata yayilan 3 bin 230 metrekarelik alan; oturma odasi ve yemek odasi konseptleriyle duzenlendi ve musterilere tasarimlari yakindan inceleme firsati sunuyor. Alt katta yer alan zanaat koshesinde ise cantalarin yapiminda kullanilan aletler ve dikis teknikleri sergilenirken, zanaatkarlarin calismalarini gosteren bir film yayinlaniyor. Dogal malzemeler, ahsap zeminler ve ozel mobilyalarla donatilan mekanin dekorasyonunda sanatci Susan Gunn'in eserleri yer aliyor. Temmuz ayinda sona eren mali yilinda 56 milyon sterlin gelir elde eden ve karliligini koruyan sirket, satislarinin yuzde 80'ini cevirrimici kanallar uzerinden gerceklestiriyor. Surdurulebilir materyaller kullanan marka, her satisindan elde ettigi gelirin bir kismini SOS Children’s Villages girisimi araciligiyla ihtiyac sahibi cocuklarin saglik ve asilari icin bagisliyor."
     },
     {
-      "id": "5b95cfeead07210cc803",
-      "category": "Fashion & Luxury",
-      "source": "Monocle",
-      "sourceDomain": "monocle.com",
-      "publishedAt": "2026-10-21T17:48:00.000Z",
-      "url": "https://monocle.com/design/global-design-directory-2026-architects-designers-to-book/",
-      "image": "https://monocle.com/wp-content/uploads/2026/10/2-%C2%A9Natthawut-Taeja_SN_0213_Moonler-1_CROP.jpeg",
-      "originalTitle": "Our ‘Design Directory’ 2026: The architects, studios and designers to know around the world - Monocle",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Küresel Tasarım Endüstrisi ve Mimarlık Dünyası Uluslararası Rehberde Buluştu",
-      "excerpt": "Monocle dergisinin yeni tasarim rehberi, yerel zanaati ve yerel malzemeleri yenilikci cozumlerle birlestirerek kuresel endustri standartlarini belirleyen avrupali mimarlari, stundulari ve tasarimcillari bir araya getirdi.",
-      "content": "Kuresel tasarim endustrisi, yerel zanaatleri ve bolgesel gelenekleri birlestiren yeni tasarim rehberiyle genislemeye devam ediyor. Avrupa mimarlik ve tasarim peyzaji, antik kalintilardan modernist eserlere kadar zengin bir tarihe dayanirken, cagdas tasarimcilar bu temeli uyarlamali yeniden kullanim ve dongusel ekonomiler olusturmak icin kullaniyor. Avusturya'da ahsap insaat geleneklerinden ilham alan stundular ve kamusal alanlar tasarlayan mimarlarone plana cikiyor. Ornegin, Viyana'daki Naschmarkt hibrit bir ahsap pazar binasi olarak tamamlandi. Belçika'da ise iklim odakli peyzaj mimarligi ve karma kullanimli sehir bloklari dikkat cekiyor. Çekya, tarihi yapilari yenileme ve kamusal alanlari dönüstürme konusunda onculuk yapiyor. Danimarka'da yeni nesil tasarimcilar islevsel minimalizm mirasini surdururken, Finlandiya dogal malzemeleri ve insani merkeze alan tasarimlari benimsiyor. Fransa, haute-couture zanaatkarligini yeni teknolojilerle harmanlayan heykelsi mimari ve ic mekanlara ev sahipligi yapiyor. Almanya'da ise verimli mimari ve bolgesel malzemelerin kullanimina odaklanan stundular one cikiyor. Yunanistan'da klasik antik cag ile bolgesel cizgiler bir araya gelerek cagdas tasarim sahnesini tanimliyor. Bu uluslararasi rehberde yer alan pek cok mimar ve yaratici stundu, yerel kosullari ve geleneksel yontemleri cagdas ihtiyaclara uyarlayarak sektorun gelecegini bicimlendiriyor ve uluslararasi alanda standartlari belirlemeye devam ediyor."
-    },
-    {
       "id": "169bce9b8820c03c8cda",
       "category": "Exhibitions",
       "source": "La Biennale di Venezia",
@@ -490,24 +490,6 @@
       "title": "Obama Başkanlık Merkezi Maliyeti 1 Milyar Dolara Ulaştı",
       "excerpt": "Chicago'daki Barack Obama Başkanlık Merkezi'nin toplam maliyeti yaklaşık 1 milyar dolara ulaştı. Projenin orijinal bütçesi ise 350 milyon dolar olarak açıklanmıştı.",
       "content": "Chicago'nun Güney Yakası'nda yer alan Barack Obama Başkanlık Merkezi'nin kampüs maliyeti 1 milyar dolara ulaştı. Kar amacı gütmeyen Obama Vakfı tarafından paylaşılan son rapora göre, bu rakam eylül ayındaki 909 milyon dolarlık projeksiyondan 91 milyon dolar daha yüksek olup, kamu tarafından finanse edilen 123 milyon dolarlık altyapı iyileştirmelerini kapsamıyor. Vakıf iletişim başkan yardımcısı Emily Bittner, maliyetlerin özel katkılarla karşılandığını belirtti. Projenin ana binasını tamamlayan ortak girişim müteahhidi Lakeside Alliance ile vakıf arasında çözülmemiş bir anlaşmazlık bulunmadığı ifade edildi. Orijinal bütçesi 350 milyon dolar olan projenin maliyeti, tasarımın tamamlandığı 2017 yılında 500 milyon dolara, eylül ayının başlarında ise 850 milyon dolara yükselmişti. Son artışların Home Court basketbol merkezi, kamu sanatı ve sigorta gibi ek inşaat kapsamından kaynaklandığı bildirildi."
-    },
-    {
-      "id": "d3325d0133864a05d732",
-      "category": "Exhibitions",
-      "source": "Art Basel",
-      "sourceDomain": "artbasel.com",
-      "publishedAt": "2026-10-16T17:30:00.000Z",
-      "url": "https://www.artbasel.com/stories/laurent-dumas-film-french-collector-renault-large-emerige",
-      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/LD1______Newsletter_Thumbnail___Play_Button___729x435.jpg",
-      "originalTitle": "Meet the collectors | Laurent Dumas - Art Basel",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 30,
-      "brandFit": 85,
-      "title": "Boulogne-Billancourt'da Yeni Çağdaş Sanat Merkezi Le Large Kapılarını Açıyor",
-      "excerpt": "Emerige grubunun kurduğu Le Large, Fransa'nın batısındaki Boulogne-Billancourt'da kapılarını açarak ilk sergisi Moteur Imaginaire'i sanatseverlerle buluşturuyor.",
-      "content": "Fransa'nın başkenti Paris'in batısındaki Boulogne-Billancourt'da yeni bir çağdaş sanat merkezi olan Le Large ziyarete açılıyor. Emerige gayrimenkul grubunun kurduğu merkez, Fransa'da yaşayan ve üreten sanatçılara odaklanarak mükemmeliyeti sergilemeyi amaçlıyor. Açılış sergisi Moteur Imaginaire, uzun yıllar Fransız otomobil üreticisi Renault'nun fabrikasına ev sahipliği yapan ve 1992 yılında kapanan Île Seguin'in tarihine odaklanıyor. Serginin küratörlüğünü 59. Venedik Bienali'nin sanat direktörlüğünü yapan İtalyan küratör Cecilia Alemani üstleniyor. Sergi için Neïl Beloufa, Bianca Bondi, Théo Mercier, Jean-Luc Moulène ve Laure Prouvost'un aralarında bulunduğu yaklaşık 60 sanatçının eseri bir araya getirildi. Otomobil üreticisinin Fransa'da nadiren sergilenen sanat koleksiyonunu geniş bir kitleyle buluşturmayı hedefleyen sergi, 17 Ekim 2026 ile 7 Mart 2027 tarihleri arasında gezilebilecek. Merkez aynı zamanda ekim ayında düzenlenecek konuşma programları kapsamında sanatçı buluşmalarına da ev sahipliği yapacak."
     }
   ]
 }
