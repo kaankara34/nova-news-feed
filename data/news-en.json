@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-11-07T03:28:41.850Z",
+  "generatedAt": "2026-11-08T03:29:21.396Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -78,6 +78,24 @@
   "total": 21,
   "articles": [
     {
+      "id": "9b4c50224998f1eb5445",
+      "category": "Art & Exhibitions",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-11-07T10:00:00.000Z",
+      "url": "https://www.artnews.com/art-news/artists/doris-salcedo-blind-white-cube-house-hair-1234804779/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/11/O_1_01.jpg?w=1024",
+      "originalTitle": "How Going Blind Made Doris Salcedo’s Art Bigger and Better - ARTnews.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 65,
+      "brandFit": 85,
+      "title": "How Losing Vision Shifted Doris Salcedo Toward Large-Scale Collaboration",
+      "excerpt": "Diagnosed with a rare genetic eye condition that left her legally blind, Colombian artist Doris Salcedo has shifted from solo improvisation to large-scale collaborative works created with assistants.",
+      "content": "Diagnosed with Stargardt disease at age 31, Colombian artist Doris Salcedo gradually lost her central vision and is now legally blind. While she initially mourned the loss of independent studio improvisation, this transition led her to work closely with assistants and collaborators, including architect Carlos Granada. Her upcoming exhibition at White Cube Gallery in New York features a nearly 30-foot-tall house woven entirely from human hair, a painstaking collaborative process that took dozens of assistants three years to complete. Salcedo notes that such monumental works would be impossible to accomplish alone. Known for monumental anti-monuments such as Fragmentos—which incorporated melted weapons from the FARC guerrilla group to commemorate a Colombian peace agreement—Salcedo's recent works address global housing crises and forced displacement, specifically focusing on the deliberate destruction of homes in conflict zones such as Ukraine, Gaza, Syria, and Sudan. By transforming delicate human hair into sturdy structural forms, her work aims to reflect both the vulnerability and resilience of displaced populations."
+    },
+    {
       "id": "77bb5e5994120b0e3fce",
       "category": "Architecture & Design",
       "source": "Architectural Record",
@@ -150,6 +168,24 @@
       "content": "Italian entrepreneurs Sandra Vezza and her son Charley Vezza are establishing a new contemporary art hub in Monforte d'Alba, located in northern Italy's Langhe wine region. The initiative will develop a site-specific public art trail over the next decade through the woodland surrounding the medieval San Pietro monastery ruins. Opening next September, the project will be inaugurated with large-scale installations by US artist Kathleen Ryan and Italian sculptor Alessandro Pessoli. Flavio del Monte, former institutional relations director at Milan's Massimo de Carlo gallery, will oversee the project, which invites artists annually to engage with the site's history and landscape. Funded by Sandra and Charley Vezza with confidential budget costs, the permanently installed artworks will be housed on site for the public with free admission."
     },
     {
+      "id": "f7269de30d7d95cb246b",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-11-06T15:26:59.000Z",
+      "url": "https://www.designboom.com/architecture/powerhouse-parramatta-steel-lattice-museum-opens-art-es-devlin-james-turrell-sydney-australia/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/oma-powerhouse-parramatta-australia-opening-images-designboom-FB.jpg",
+      "originalTitle": "powerhouse parramatta's steel-latticed museum opens with art by es devlin and james turrell - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 84,
+      "brandFit": 86,
+      "title": "Powerhouse Parramatta Opens New Cultural Institution and Museum Building",
+      "excerpt": "Designed by Moreau Kusunoki and Genton, Powerhouse Parramatta opens on November 7th, 2026. As New South Wales' largest museum, the facility launches with five inaugural exhibitions featuring installations by Es Devlin and James Turrell.",
+      "content": "Located along the Parramatta River in Western Sydney, Powerhouse Parramatta officially opens to the public on November 7th, 2026. Designed by architecture studios Moreau Kusunoki and Genton, the cultural building stands as the largest museum ever built in New South Wales. Encompassing over 18,000 square meters of public and exhibition space, the institution brings together collections spanning art, design, science, and technology. More than 3,000 objects are presented across five inaugural exhibitions, including a presentation developed with OMA/AMO. The building features a distinctive white steel structural lattice that enables expansive, column-free interiors. The opening program includes The Turning, a multi-work exhibition by British artist Es Devlin exploring human perception and memory, and Shangri La, a monumental light installation by American artist James Turrell. Alongside the galleries, the project introduces waterfront public spaces, a rooftop garden, and an observatory. The opening initiates a 23-day festival of performances, workshops, and public conversations across the new cultural facilities."
+    },
+    {
       "id": "0fffef7010a3ba71c40b",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -178,12 +214,12 @@
       "originalTitle": "2028 Whitney Biennial to Be Curated by Meg Onli and Zack Winokur - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 80,
-      "title": "Whitney Museum Names Meg Onli and Zack Winokur as Curators for the 2028 Biennial",
-      "excerpt": "The Whitney Museum has appointed museum curator Meg Onli and director Zack Winokur to curate the 2028 Biennial. Opening in March 2028, the upcoming edition aims to explore new cross-disciplinary possibilities and artistic practices.",
-      "content": "The Whitney Museum has named museum curator Meg Onli and director Zack Winokur as the curators for its upcoming 83rd Biennial, scheduled to open in March 2028. Onli previously co-curated the 2024 edition titled Even Better Than the Real Thing alongside Chrissie Iles, after joining the museum as a curator-at-large in 2023 and holding prior roles at the Underground Museum in Los Angeles. Winokur is the cofounder of the American Modern Opera Company, has directed productions at Opera Philadelphia, and served as the former artistic director of Little Island, an off-site venue for the 2026 Whitney Biennial. Whitney director Scott Rothkopf noted that Onli and Winokur bring expansive perspectives on contemporary artistic practice and a shared commitment to fostering experimentation. In statements regarding their appointment, both curators emphasized a shared desire to center artists, objects, and people, promising a distinct collaborative approach and a renewed vision for the prominent national art exhibition."
+      "editorialScore": 82,
+      "technicalValue": 55,
+      "brandFit": 85,
+      "title": "Meg Onli and Zack Winokur Named Curators of the 2028 Whitney Biennial",
+      "excerpt": "The Whitney Museum has appointed Whitney curator Meg Onli and director Zack Winokur as the curators for the 83rd edition of the Whitney Biennial, scheduled to open in March 2028.",
+      "content": "The Whitney Museum has named the curators for its next Biennial, appointing Whitney curator Meg Onli and director Zack Winokur to lead the 83rd edition of the prominent exhibition. Scheduled to open in March 2028, the event marks Onli's second time co-curating the exhibition, having previously partnered with Chrissie Iles for the 2024 edition. Onli joined the Whitney as a curator-at-large in 2023 and currently serves as the Nancy and Fred Poses Curator, alongside co-curating a retrospective for Roy Lichtenstein at the museum. Winokur is the cofounder of the American Modern Opera Company and has directed numerous productions across opera, theater, dance, and visual arts, in addition to serving as the former artistic director of Little Island. According to a press release announcing their appointment, the pair bring expansive perspectives on contemporary artistic practice and a shared commitment to fostering cross-disciplinary experimentation. Whitney director Scott Rothkopf highlighted their distinct approaches, stating that their partnership promises a radical new vision for the 2028 Biennial."
     },
     {
       "id": "2c171cc7e0c8426e2cc8",
@@ -240,24 +276,6 @@
       "content": "In February 1884, Émile Zola descended into a coalmine in Anzin, Northern France, to conduct research for his 1885 novel Germinal. Frederick Brown, in his 1995 biography of Zola, noted that the writer's stout physique made underground exploration particularly inconvenient. Similarly, English art critic and novelist John Berger descended into a pit in Creswell on the Nottinghamshire-Derbyshire border for his rarely screened 1973 BBC documentary Germinal. Berger, an avowed Marxist, observed in the documentary that the underground air was hot and silted with coal dust, leaving less space for the body. Berger surmised that Zola, despite his working-class sympathies, must have felt self-conscious living as a wealthy and successful author in a villa near Paris. Both writers shared several biographical parallels, including writing for periodicals and maintaining homes in the French countryside. While Zola earned significant royalties from depicting the struggles of the poor in his writing, Berger's engagement with disenfranchised groups followed his Booker Prize-winning novel G. In his televised homage, Berger recited passages from Zola's novel concerning the vengeance of the working class as residents of Creswell went about their daily lives."
     },
     {
-      "id": "7386247b57047476e6c8",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-11-05T15:00:00.000Z",
-      "url": "https://www.theartnewspaper.com/2026/11/05/ica-miami-taps-gensler-to-renovate-new-building",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/7d4774ee31b9dd74bfcddde95fd8cbc66dc09204-2000x1116.png?rect=70,0,1860,1116&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "ICA Miami selects architect to renovate recently acquired building - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "ICA Miami Selects Architecture Firm Gensler to Renovate New Building",
-      "excerpt": "The Institute of Contemporary Art, Miami has appointed Gensler to renovate a 30,000-sq.-ft building, doubling its exhibition space.",
-      "content": "The Institute of Contemporary Art, Miami has appointed the global architecture firm Gensler to renovate a 30,000-sq.-ft building acquired in 2024, doubling its exhibition space. Located near its current venue, the new wing is scheduled to open in late 2027 as the museum marks its tenth anniversary. Formerly housing the De la Cruz Collection, the site was acquired for $25m and has since hosted educational programmes. The renovation forms part of a $40m capital campaign supported entirely by private funds. Eight new galleries on the first and second floors will house the museum's first permanent display of its collection of over 2,000 works. The entire third floor will be dedicated to public programming, including talks, symposia, and performances. The design also features a reimagined transparent façade, a redesigned lobby, outdoor social spaces, a sculpture deck, and an expanded café."
-    },
-    {
       "id": "b728ce0719e3d32deb72",
       "category": "Architecture & Design",
       "source": "Designboom",
@@ -305,29 +323,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 90,
-      "brandFit": 80,
-      "title": "Sharjah Design Centre Scheduled to Open in 2029",
-      "excerpt": "Scheduled to open in 2029 in the United Arab Emirates, the Sharjah Design Centre will unite material research, prototyping, and public programs within a dedicated institution.",
-      "content": "Established in the United Arab Emirates, the Sharjah Design Centre is scheduled to open in 2029 as part of the Sharjah Creative Quarter. Designed by Taller de Arquitectura – Mauricio Rocha in collaboration with architect Daniel Rosselló, the institution will integrate specialist laboratories, research facilities, production spaces, and public programmes. Led by Sheikha Hind bint Majid Al Qasimi, the centre aims to connect designers, manufacturers, researchers, and entrepreneurs through a framework for material experimentation and knowledge exchange. The building's architecture responds to the local climate by integrating vernacular principles, contemporary technology, and rammed earth construction to reduce environmental impact. Facilities will include seven specialist laboratories dedicated to textiles, rapid prototyping, glass, ceramics, jewellery, metal, and wood, alongside a Material Library and Digital Archive. The centre is already conducting research collaborations with Atelier LUMA and the American University of Sharjah, investigating locally sourced and waste-based materials such as salt, limestone, sand, clay, and wool."
-    },
-    {
-      "id": "77ec3f075f2bd8615078",
-      "category": "Architecture & Design",
-      "source": "Designboom",
-      "sourceDomain": "designboom.com",
-      "publishedAt": "2026-11-02T19:10:52.000Z",
-      "url": "https://www.designboom.com/architecture/matteo-thun-72-apartments-milan-iconic-brutalist-torre-velasca-interior-residences/",
-      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/torre-velasca-matteo-thun-partners-interiors-milan-italy-designboom-FB.jpg",
-      "originalTitle": "milan’s brutalist torre velasca gets interior apartment makeover by matteo thun - Designboom",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Matteo Thun and Partners Completes Interior Design for Historic Torre Velasca in Milan",
-      "excerpt": "Milans iconic Torre Velasca prepares for a new residential chapter featuring 72 residences, suites, and duplex penthouses spanning floors 19 through 26.",
-      "content": "The interiors for 72 residential units spanning floors 19 through 26 of Milans Torre Velasca have been designed by Matteo Thun & Partners. Originally designed by BBPR and completed in 1958, the building is scheduled to open in phases beginning in fall. The project preserved original kitchen and bathroom tiles, historic doors, window frames, and loggias. To address low ceilings and compact rooms, the studio introduced reflective finishes and adjusted floor plans to accommodate larger showers and walk-in closets. Working with Italys Ministry of Culture, architects partially removed a kitchen wall to introduce a cocktail counter connecting cooking and living spaces. The material palette draws from the buildings architecture, featuring custom dusty pink wall coverings developed with Dedar, inspired by exterior plaster. These are paired with mustard-yellow sofas for Molteni, stone-finish coffee tables, and furnishings by Italian designers. The residences and communal spaces form part of a redevelopment preserving the mixed-use character of the tower. While offices occupy lower floors, the upper residences operate under METT Milan Torre Velasca, providing accommodation for short and long stays."
+      "technicalValue": 82,
+      "brandFit": 88,
+      "title": "Sharjah Design Centre Unveils Plans for Rammed Earth Building Opening in 2029",
+      "excerpt": "Scheduled to open in 2029 within the Sharjah Creative Quarter in the UAE, the Sharjah Design Centre is designed by Taller de Arquitectura – Mauricio Rocha and Daniel Rosselló to feature specialized laboratories and material research facilities.",
+      "content": "Part of the Sharjah Creative Quarter in the United Arab Emirates, the Sharjah Design Centre is scheduled to open in 2029. Designed by Taller de Arquitectura – Mauricio Rocha in collaboration with architect Daniel Rosselló, the building incorporates rammed earth construction to reduce environmental impact. Led by Sheikha Hind bint Majid Al Qasimi, the institution will house seven specialist laboratories dedicated to textiles, rapid prototyping, glass, ceramics, jewelry, metal, and wood, alongside a Material Library and Digital Archive. Aiming to connect design research with manufacturing and professional practice, the center will offer workshops, residencies, and collaborative programs. The facility is already engaged in material research partnerships with Atelier LUMA and the American University of Sharjah through initiatives such as Theatrum Al Kimiya, which investigates locally sourced and waste-based materials including salt, clay, and agricultural residues."
     },
     {
       "id": "c9b66a50e599e940c3d1",
@@ -448,12 +448,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Hotel Designer Michele Bönan Approaches Fifty Years in Business",
-      "excerpt": "Italian architect Michele Bönan reflects on nearly 50 years of hotel design, noting that luxury has evolved from impersonal grandeur toward wellness, privacy, and belonging.",
-      "content": "Italian architect Michele Bönan has spent nearly 50 years turning grandiose spaces into cozy, sophisticated environments through an eclectic blend of Italian craftsmanship, contemporary art, and bespoke furnishings. Having collaborated with brands such as Rocco Forte Hotels, Lungarno Collection, and J.K. Place, Bönan observes that the definition of luxury has evolved. Guests now seek wellness, privacy, and a sense of belonging rather than impersonal grandeur, prioritizing excellent service, discretion, and a good night's sleep. Launching his career after designing tennis player Adriano Panatta's estate in the 1980s, Bönan helped shape the boutique hotel concept with J.K. Place, expanding from Florence to Capri, Rome, and Paris. His recent work includes the May opening of Casa J.K. Place Roma, featuring 12 residences inside an 18th-century Roman palazzo designed with Roman and Art Deco elements. Bönan also left his mark on Portrait Milano and membership spaces like Casa Cipriani. Alongside his son Sky Bönan, he launched the Michele Bonan Interiors collection in 2021. Currently, Bönan is working on the restoration of the historic Palazzo dei Principi Caravita di Sirignano in Naples, scheduled to open in 2027."
+      "editorialScore": 86,
+      "technicalValue": 84,
+      "brandFit": 92,
+      "title": "Italian Architect Michele Bönan Reflects on Five Decades of Design",
+      "excerpt": "Florence-based architect Michele Bönan shares his design philosophy focused on privacy, craftsmanship, and a sense of belonging across five decades of hospitality projects.",
+      "content": "Having designed luxury hotels and residences for over 50 years, Florence-based architect Michele Bönan notes that the definition of luxury has evolved, with guests increasingly seeking wellness, privacy, and a sense of belonging over impersonal grandeur. Known for an eclectic aesthetic blending Italian craftsmanship, contemporary art, antiques, and bespoke furnishings, Bönan has worked with brands including Rocco Forte Hotels, the Lungarno Collection, Casa Cipriani, and J.K. Place. His career was launched in the 1980s following the publication of an estate he designed in Architectural Digest. In May, his aesthetic took shape at the 12 residences of Casa J.K. Place Roma, situated within an 18th-century Roman palazzo featuring bronzed-steel kitchens, statuario marble floors, and an on-site Italian restaurant named Al Ventidue. Having launched the Michele Bonan Interiors collection in 2021 with his son Sky Bönan, the architect is currently working on transforming the historic Palazzo dei Principi Caravita di Sirignano in Naples, scheduled to open in 2027."
     }
   ]
 }

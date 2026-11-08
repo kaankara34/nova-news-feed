@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-11-07T03:28:41.850Z",
+  "generatedAt": "2026-11-08T03:29:21.396Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -78,6 +78,24 @@
   "total": 21,
   "articles": [
     {
+      "id": "9b4c50224998f1eb5445",
+      "category": "Art & Exhibitions",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-11-07T10:00:00.000Z",
+      "url": "https://www.artnews.com/art-news/artists/doris-salcedo-blind-white-cube-house-hair-1234804779/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/11/O_1_01.jpg?w=1024",
+      "originalTitle": "How Going Blind Made Doris Salcedo’s Art Bigger and Better - ARTnews.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
+      "technicalValue": 65,
+      "brandFit": 85,
+      "title": "Görme Yetisini Kaybeden Sanatçı Doris Salcedo Kollektif Üretime Odaklanıyor",
+      "excerpt": "Stargardt hastalığı nedeniyle görme yetisini büyük ölçüde kaybeden Kolombiyalı sanatçı Doris Salcedo, asistanları ve uzmanlarla yürüttüğü kollektif çalışmalarla anıtsal heykeller üretmeye devam ediyor.",
+      "content": "Stargardt hastalığı tanısı aldıktan sonra merkezi görme yetisini yitiren ve bugün yasal olarak kör olan Kolombiyalı sanatçı Doris Salcedo, sanat üretim sürecini tamamen değiştirdi. Daha önce heykellerini tek başına üreten Salcedo, koşulların değişmesiyle birlikte asistanlar ve mimar Carlos Granada gibi isimlerle kollektif çalışmaya yöneldi. New York'taki White Cube Gallery'de sergileyeceği, insan saçından dokunmuş yaklaşık 9 metre yüksekliğindeki ev şeklindeki heykeli, onlarca asistanın üç yıl süren ortak emeğiyle hazırlandı. Sanatçı, bu anıtsal ölçekteki çalışmaların tek bir kişinin tek başına gerçekleştiremeyeceği kadar büyük olduğunu belirtiyor. Daha önce Kolombiya'daki barış anlaşmasını anmak üzere FARC gerillalarına ait eritilmiş silahları kullandığı Fragmentos projesini hayata geçiren Salcedo, yeni eserlerinde küresel konut krizine ve şiddet içeren yerinden edilmelere odaklanıyor. Ukrayna, Gazze, Suriye ve Sudan'daki çatışmalara dikkat çeken sanatçı, domicide yani bilinçli ev yıkımları konusunu ele alıyor. Eserlerinde insan saçını yapısal bir malzeme olarak kullanan Salcedo, mağdurların kırılganlığını olduğu kadar direncini de simgelemeyi amaçlıyor."
+    },
+    {
       "id": "77bb5e5994120b0e3fce",
       "category": "Architecture & Design",
       "source": "Architectural Record",
@@ -150,6 +168,24 @@
       "content": "İtalyan girişimci Sandra Vezza ve oğlu Charley Vezza, İtalya'nın kuzeyindeki Langhe şarap bölgesinde yer alan Monforte d'Alba'da yeni bir çağdaş sanat merkezi kurmaya hazırlanıyor. Proje kapsamında, Colle San Pietro tepesindeki ormanlık alanda on yıllık bir sürece yayılacak açık hava sanat rotası oluşturulacak. 2027 yılının eylül ayında açılması planlanan merkezin ilk sergisi için Amerikalı heykeltıraş Kathleen Ryan ve İtalyan sanatçı Alessandro Pessoli sahneye özel büyük ölçekli eserler üretecek. Massimo de Carlo galerisinin eski kurumsal ilişkiler direktörü Flavio del Monte'nin yöneteceği projede, her yıl davet edilen sanatçılar bölgenin doğası ve tarihiyle etkileşime giren işler ortaya koyacak. Vezza ailesi tarafından finanse edilecek eserlerin bütçe maliyetleri gizli tutulurken, üretilen tüm yapıtların kalıcı olarak arazide sergileneceği ve ziyaretçilere ücretsiz sunulacağı açıklandı."
     },
     {
+      "id": "f7269de30d7d95cb246b",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-11-06T15:26:59.000Z",
+      "url": "https://www.designboom.com/architecture/powerhouse-parramatta-steel-lattice-museum-opens-art-es-devlin-james-turrell-sydney-australia/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/oma-powerhouse-parramatta-australia-opening-images-designboom-FB.jpg",
+      "originalTitle": "powerhouse parramatta's steel-latticed museum opens with art by es devlin and james turrell - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 84,
+      "brandFit": 86,
+      "title": "Powerhouse Parramatta Kültür Kurumu Yeni Müze Binasıyla Açılıyor",
+      "excerpt": "Moreau Kusunoki ve Genton tasarımıyla inşa edilen Powerhouse Parramatta, 7 Kasım 2026 tarihinde kapılarını açıyor. New South Wales bölgesinin en büyük müzesi, Es Devlin ve James Turrell’in eserlerini içeren beş açılış sergisine ev sahipliği yapıyor.",
+      "content": "Batı Sidney'deki Parramatta Nehri kıyısında konumlanan Powerhouse Parramatta, 7 Kasım 2026 tarihinde resmi olarak ziyaretçilerini kabul etmeye başlıyor. Moreau Kusunoki ve Genton ortaklığıyla tasarlanan yapı, New South Wales eyaletinde inşa edilen en büyük müze olma özelliğini taşıyor. 18.000 metrekareden fazla kamusal ve sergi alanına sahip olan müze, sanat, tasarım, bilim ve teknoloji koleksiyonlarını bir araya getiriyor. Açılış kapsamında 3.000'den fazla nesne sergilenirken, OMA/AMO iş birliğiyle hazırlanan bir bölüm de dahil olmak üzere beş farklı sergi yer alıyor. Mimari tasarım, beyaz çelik kafes dış iskeleti sayesinde kolonsuz ve esnek iç mekanlar sunuyor. Açılış programı kapsamında İngiliz sanatçı Es Devlin'in insan algısı ve hafızasını konu alan The Turning sergisi ile Amerikalı sanatçı James Turrell'in ışık enstalasyonu Shangri La ziyaretçilerle buluşuyor. Binanın tamamlanmasıyla birlikte nehir kenarındaki peyzaj alanları, teras bahçesi ve gözlemevi de kamusal kullanıma açılıyor. Açılışı takip eden 23 gün boyunca çeşitli performanslar, atölyeler ve kültürel etkinlikler düzenlenecek."
+    },
+    {
       "id": "0fffef7010a3ba71c40b",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -178,12 +214,12 @@
       "originalTitle": "2028 Whitney Biennial to Be Curated by Meg Onli and Zack Winokur - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 80,
-      "title": "Whitney Müzesi 2028 Bienali Küratörleri Olarak Meg Onli ve Zack Winokur'u Görevlendirdi",
-      "excerpt": "Whitney Müzesi, ülkenin önde gelen sanat etkinliklerinden biri olan 2028 Bienali'nin küratörleri olarak müze küratörü Meg Onli ve direktör Zack Winokur'un atandığını duyurdu. Mart 2028'de kapılarını açacak sergi, disiplinler arası yeni olasılıkları keşfetmeyi hedefliyor.",
-      "content": "Whitney Müzesi, 83. kez düzenlenecek olan Bienal için müze küratörü Meg Onli ve yönetmen Zack Winokur'u küratör olarak belirledi. Mart 2028'de açılacak olan sergi, ülkenin en önemli bienallerinden biri olma özelliğini taşıyor. Meg Onli, 2024 yılında Chrissie Iles ile birlikte Even Better Than the Real Thing başlıklı bienalin eş küratörlüğünü üstlenmişti. 2023 yılında Whitney'de çalışmaya başlayan Onli, Los Angeles'taki Underground Museum'da da eş yöneticilik ve küratörlük yapmıştı. Zack Winokur ise American Modern Opera Company'nin kurucu ortağı olup, Lincoln Center'da festivaller düzenlemiş ve Opera Philadelphia gibi kurumlarda yapımlar yönetmiştir. Winokur ayrıca yakın zamanda kapanan 2026 Whitney Bienali'nin mekân dışı alanı olan Little Island'ın eski sanatsal direktörlüğünü yürütmüştür. Whitney Müzesi direktörü Scott Rothkopf, Onli ve Winokur'un sanatçıları destekleme konusundaki kararlılıklarına ve ortak çalışmalarına dikkat çekerek, ikilinin 2028 Bienali için radikal yeni bir vizyon vadettiğini belirtti. Yapılan ortak açıklamada, küratörlerin sanatçılara alan açma ve disiplinler arası ortaklık kurma taahhütlerine vurgu yapıldı."
+      "editorialScore": 82,
+      "technicalValue": 55,
+      "brandFit": 85,
+      "title": "2028 Whitney Biennali Küratörleri Olarak Meg Onli ve Zack Winokur Atandı",
+      "excerpt": "Whitney Müzesi, 83. kez düzenlenecek Whitney Biennali'nin küratörleri olarak müze küratörü Meg Onli ve direktör Zack Winokur'un atandığını duyurdu. Mart 2028'de açılması planlanan sergi, sanat pratiklerine dair genişperspektifler sunmayı hedefliyor.",
+      "content": "Whitney Müzesi, ülkenin en önemli bienallerinden biri olan Whitney Biennali'nin bir sonraki edisyonu için küratörlerini açıkladı. Müze küratörü Meg Onli ve direktör Zack Winokur, serginin hazırlıklarını üstlenecek isimler olarak belirlendi. Bienalin 83. edisyonu Mart 2028'de izleyiciyle buluşacak. Onli, daha önce Chrissie Iles ile birlikte 2024 bienalinin eş küratörlüğünü üstlenmişti. 2023 yılında Whitney'de serbest küratör olarak göreve başlayan Onli, 2024'te Nancy and Fred Poses Küratörü unvanına getirilmişti. Sanatçı Alex Da Corte ile birlikte müzede Roy Lichtenstein retrospektifinin de eş küratörlüğünü yürüten Onli, çağdaş sanat alanındaki çalışmalarıyla tanınıyor. Bienalin diğer küratörü Zack Winokur ise American Modern Opera Company'nin kurucu ortağı olup Lincoln Center'da festivaller düzenlemiş, opera, tiyatro, dans ve görsel sanatlar alanlarında projeler yönetmiştir. Ayrıca 2026 Whitney Biennali'nin mekânlarından biri olan Little Island'ın eski sanat direktörlüğünü yürütmüştür. Müze direktörü Scott Rothkopf, ikilinin sanatsal programcılık ve küratörlük alanlarındaki yenilikçi yaklaşımlarının 2028 Bienali için radikal bir vizyon vadettiğini belirtmiştir. Basın açıklamasında Onli ve Winokur'un güncel sanat pratiklerine geniş bir perspektifle yaklaştığı ve disiplinler arası keşifleri desteklediği ifade edilmiştir."
     },
     {
       "id": "2c171cc7e0c8426e2cc8",
@@ -240,24 +276,6 @@
       "content": "Émile Zola, 1885 yılında yayımlanan Germinal romanının hazırlıkları kapsamında 1884 Şubat ayında Fransa'nın kuzeyindeki Anzin maden ocağına inerek araştırmalar yaptı. 1995 yılında yazarın biyografisini kaleme alan Frederick Brown, Zola'nın iri yapısının yer altındaki dar alanlarda kendisine zorluk çıkardığını belirtmiştir. Benzer şekilde, İngiliz sanat eleştirmeni ve romancı John Berger de 1973 tarihli Germinal adlı belgeselinde Nottinghamshire ve Derbyshire sınırındaki Creswell maden ocağına inmiştir. Marksist kimliğiyle tanınan Berger, belgeselde yer altındaki havanın kömür tozuyla dolu olduğunu ve alanın daraldığını gözlemlemiştir. Berger, Zola'nın işçi sınıfına duyduğu sempatiye rağmen başarılı ve zengin bir yazar olarak Paris yakınlarındaki bir villada yaşadığını, bu durumun zıtlık oluşturduğunu belirtmiştir. Her iki yazarın yaşamında da benzerlikler bulunmakta olup, her ikisi de süreli yayınlar için yazmış ve Fransa kırsalında evler edinmiştir. Zola, yoksulluğu ve işçi sınıfının yaşadığı sıkıntıları ele alan eserleriyle telif gelirleri elde ederken, Berger de Booker Ödülü kazandığı G. adlı romanının ardından benzer temalara yönelmiştir. Berger'in televizyon için hazırladığı bu çalışmada, işçi sınıfının direnişini ve intikamını anlatan bölümlere yer verilmiştir."
     },
     {
-      "id": "7386247b57047476e6c8",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-11-05T15:00:00.000Z",
-      "url": "https://www.theartnewspaper.com/2026/11/05/ica-miami-taps-gensler-to-renovate-new-building",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/7d4774ee31b9dd74bfcddde95fd8cbc66dc09204-2000x1116.png?rect=70,0,1860,1116&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "ICA Miami selects architect to renovate recently acquired building - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "ICA Miami, yeni binasının renovasyonu için mimarlık firması Gensler'i seçti",
-      "excerpt": "Miami Çağdaş Sanat Enstitüsü, sergi ve kamusal program alanını iki katına çıkaracak 30 bin metrekarelik binanın renovasyonu için Gensler'i görevlendirdi.",
-      "content": "Miami Çağdaş Sanat Enstitüsü, 2024 yılında satın aldığı 30 bin metrekarelik binayı yenilemek üzere küresel mimarlık firması Gensler ile anlaştı. Mevcut binanın yakınındaki yeni kanadın, müzenin mevcut konumundaki 10. yılını kutlayacağı 2027 yılının sonlarında açılması planlanıyor. Daha önce De la Cruz Koleksiyonu'na ev sahipliği yapan yapı, 25 milyon dolarlık satın alma sonrasında eğitim programları için kullanılıyordu. İnşaat başladığında bina kapanacak ve renovasyon tamamen özel fonlarla desteklenen 40 milyon dolarlık sermaye kampanyasının bir parçası olacak. Tasarım kapsamında, birinci ve ikinci katlarda sekiz yeni galeri yer alacak. Bu alanlar, müzenin 2000'den fazla eser içeren daimi koleksiyonunun ilk kez kalıcı olarak sergilenmesine ev sahipliği yapacak. Üçüncü kat ise konuşmalar, sempozyumlar ve performanslar gibi kamusal etkinliklere ayrılacak. Projede ayrıca şeffaf bileşenlere sahip yenilenmiş bir cephe, lobinin yeniden tasarımı, bir heykel güvertesi ve genişletilmiş kafe yer alıyor."
-    },
-    {
       "id": "b728ce0719e3d32deb72",
       "category": "Architecture & Design",
       "source": "Designboom",
@@ -305,29 +323,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 90,
-      "brandFit": 80,
-      "title": "Sharjah Tasarım Merkezi 2029 Yılında Kapılarını Açmaya Hazırlanıyor",
-      "excerpt": "Birleşik Arap Emirlikleri'nde yer alan Sharjah Tasarım Merkezi, malzeme araştırmaları, prototip üretimi ve kamusal programları bir araya getiren yeni bir kurum olarak 2029 yılında açılacak.",
-      "content": "Birleşik Arap Emirlikleri'nde kurulan Sharjah Tasarım Merkezi, 2029 yılında Sharjah Kreatif Bölgesi bünyesinde faliyete geçecek. Tasarımı Taller de Arquitectura – Mauricio Rocha ve mimar Daniel Rosselló iş birliğiyle hazırlanan kurum; uzmanlık laboratuvarları, araştırma tesisleri, üretim alanları ve kamusal programları tek bir çatı altında toplayacak. Sheikha Hind bint Majid Al Qasimi liderliğindeki merkez, tasarımcıları, üreticileri, araştırmacıları ve girişimcileri malzeme deneyi ve bilgi alışverişi çerçevesinde buluşturmayı amaçlıyor. Binanın mimarisi, yerel malzemeleri ve çağdaş teknolojileri bir araya getirerek yerel iklime yanıt veriyor. Projede çevresel etkiyi azaltmak amacıyla sıkıştırılmış toprak inşaat yöntemi kullanılıyor. Merkezde tekstil, hızlı prototipleme, cam, seramik, mücevher, metal ve ahşap alanlarında yedi uzman laboratuvarın yanı sıra bir Malzeme Kütüphanesi ve Dijital Arşiv de yer alacak. Kurum ayrıca Atelier LUMA ve Sharjah Amerikan Üniversitesi ile yerel malzeme araştırmaları yürüterek tuz, kireç taşı, kum, kil ve yün gibi yerel ve atık bazlı malzemeleri incelemeyi sürdürüyor."
-    },
-    {
-      "id": "77ec3f075f2bd8615078",
-      "category": "Architecture & Design",
-      "source": "Designboom",
-      "sourceDomain": "designboom.com",
-      "publishedAt": "2026-11-02T19:10:52.000Z",
-      "url": "https://www.designboom.com/architecture/matteo-thun-72-apartments-milan-iconic-brutalist-torre-velasca-interior-residences/",
-      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/torre-velasca-matteo-thun-partners-interiors-milan-italy-designboom-FB.jpg",
-      "originalTitle": "milan’s brutalist torre velasca gets interior apartment makeover by matteo thun - Designboom",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Matteo Thun ve Partners, Milanonun Tarihi Torre Velasca Gökdeleninde İç Mekan Tasarımını Tamamladı",
-      "excerpt": "Milanonun ikonik yapısı Torre Velasca, 19 ila 26. katlar arasında yer alan 72 rezidans, süit ve dubleks çatı katı dairesiyle yeni konut dönemine hazırlanıyor.",
-      "content": "Milandaki tarihi Torre Velasca gökdeleninin 19 ve 26. katları arasında yer alan 72 dairelik konut projesinin iç mekanları Matteo Thun & Partners tarafından tasarlandı. Aslen BBPR tarafından tasarlanan ve 1958 yılında tamamlanan yapı, sonbaharda kademeli olarak açılmaya hazırlanıyor. Proje kapsamında mutfak ve banyo fayansları, tarihi kapılar, pencere çerçeveleri ve orijinal loggialar korundu. Düşük tavanlar ve kompakt odalar nedeniyle stüdyo, gün ışığını yansıtan parlak bitişler kullandı ve daha büyük duşlar ile giyinme odaları için planları düzenledi. İtalya Kültür Bakanlığı ile çalışılarak bir mutfak duvarı kısmen kaldırıldı ve yemek alanı ile mutfağı bağlayan bir kokteyl tezgahı eklendi. Malzeme paleti binanın mimarisinden ilham alırken, Dedar iş birliğiyle dış cephe sıvasından esinlenen pembe duvar kaplamaları geliştirildi. Bu dokular Molteni için tasarlanan hardal sarısı kanepeler, taş bitişli sehpalar ve çeşitli İtalyan tasarım parçalarıyla tamamlandı. Yapıdaki rezidanslar ve ortak alanlar, binanın karma kullanım karakterini sürdüren bir genişlemenin parçası olarak planlandı. Binanın alt katlarında ofisler yer almaya devam ederken, üst katlardaki konutlar METT Milan Torre Velasca kapsamında kısa ve uzun süreli konaklamalara ev sahipliği yapacak."
+      "technicalValue": 82,
+      "brandFit": 88,
+      "title": "Sharjah Tasarım Merkezi Sıkıştırılmış Toprak Yapısıyla 2029'da Açılacak",
+      "excerpt": "Birleşik Arap Emirlikleri'ndeki Sharjah Tasarım Merkezi, 2029 yılında Sharjah Kreatif Bölgesi kapsamında açılacak. Taller de Arquitectura – Mauricio Rocha ve Daniel Rosselló tasarımı olan merkez, yerel malzeme araştırmaları ve yedi uzman laboratuvar barındıracak.",
+      "content": "Birleşik Arap Emirlikleri'nde yer alan Sharjah Kreatif Bölgesi bünyesinde kurulan Sharjah Tasarım Merkezi, 2029 yılında kapılarını açmaya hazırlanıyor. Taller de Arquitectura – Mauricio Rocha ve mimar Daniel Rosselló tarafından tasarlanan yapı, çevresel etkiyi azaltmak amacıyla sıkıştırılmış toprak inşaat tekniklerini kullanıyor. Şeyha Hind bint Majid Al Qasimi liderliğindeki merkez; tekstil, hızlı prototipleme, cam, seramik, mücevher, metal ve ahşap alanlarında yedi uzman laboratuvarın yanı sıra bir Malzeme Kütüphanesi ve Dijital Arşiv içerecek. Tasarım araştırmalarını üretim kapasiteleriyle buluşturmayı hedefleyen kurum; atölyeler, atölye çalışmaları, misafirlik programları ve mesleki gelişim faaliyetleri düzenleyecek. T merkez, Atelier LUMA ve Sharjah Üniversitesi iş birliğiyle tuz, kil, yerel bitki atıkları ve geri dönüştürülmüş malzemeler üzerine araştırmalar yürüten Theatrum Al Kimiya girişimine ev sahipliği yapıyor."
     },
     {
       "id": "c9b66a50e599e940c3d1",
@@ -448,12 +448,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Otellerin Ustası Michele Bönan Ellinci Yılına Giriyor",
-      "excerpt": "Elli yılı aşkın süredir otel tasarımı yapan İtalyan mimar Michele Bönan, lüks anlayışının zenginlikten ziyade mahremiyet, zindelik ve aidiyet duygusuna evrildiğini belirtiyor.",
-      "content": "İtalyan mimar Michele Bönan, elli yıla yaklaşan kariyerinde ihtişamlı sarayları ve otelleri samimi yaşam alanlarına dönüştürmesiyle tanınıyor. İtalyan zanaatkârlığını çağdaş sanat, antika eserler ve kişiye özel mobilyalarla harmanlayan tasarımcı, Rocco Forte Hotels, Lungarno Collection ve J.K. Place gibi markalarla çalıştı. Bönan'a göre lüks tanımı zamanla değişti; misafirler artık gösterişten ziyade kusursuz hizmet, gizlilik, konfor ve iyi bir uyku deneyimi arıyor. İlk büyük fırsatını 1980'lerde Adriano Panatta'nın mülkünü tasarlayarak yakalayan mimar, J.K. Place markasının Floransa'dan Floransa, Capri, Roma ve Paris gibi şehirlere büyümesine öncülük etti. Mayısta Roma'da açılan 12 dairelik Casa J.K. Place Roma projesini gerçekleştiren Bönan, 18. yüzyıldan kalma bir binayı Roma ile Art Deco esintileriyle yeniden yorumladı. Tasarımcı ayrıca Milano'daki Portrait Milano oteli ve Venedik estetiğini yansıtan Casa Cipriani gibi projelere de imza attı. 2021'de oğlu Sky Bönan ile Michele Bonan Interiors koleksiyonunu kuran mimar, 2027 yılında açılması planlanan Napoli'deki tarihi Palazzo dei Principi Caravita di Sirignano sarayının restorasyon çalışmalarını sürdürüyor."
+      "editorialScore": 86,
+      "technicalValue": 84,
+      "brandFit": 92,
+      "title": "İtalyan Mimar Michele Bönan Beş On Yıllık Kariyerini Değerlendiriyor",
+      "excerpt": "Yarım asırlık kariyere sahip Floransalı mimar Michele Bönan, lüks otel ve rezidans projelerinde mahremiyet, zanaatkarlık ve aidiyet duygusunu ön planda tutan tasarım felsefesini anlatıyor.",
+      "content": "Yarım asrı aşkın süredir lüks otel ve konut projelerine imza atan Floransalı mimar Michele Bönan, günümüzde lüks tanımının değiştiğini ve misafirlerin ihtişam yerine zindelik, mahremiyet ve aidiyet aradığını belirtiyor. İtalyan zanaatkarlığı, çağdaş sanat, antikalar ve özel üretim mobilyaları harmanlayan kendine has estetiğiyle tanınan Bönan; Rocco Forte Hotels, Lungarno Collection, Casa Cipriani ve J.K. Place gibi markalarla çalıştı. Kariyeri 1980'lerde Architectural Digest dergisinde yayımlanan eviyle ivme kazanan mimar, projelerinde her mekana özel bir ruh katmayı amaçlıyor. Mayıs ayında Via dei Prefetti'de açılan 12 dairelik Casa J.K. Place Roma rezidansları, 18. yüzyıldan kalma bir Roma palazzosunda yer alıyor. Bronz çelik mutfaklar, Calacatta ve statuario mermerler ile Art Deco esintileri taşıyan yapıda, Al Ventidue adlı İtalyan restoranı da bulunuyor. Ayrıca 2021 yılında oğlu Sky Bönan ile birlikte Michele Bonan Interiors koleksiyonunu kuran mimar, 2027 yılında açılması planlanan Napoli'deki tarihi Palazzo dei Principi Caravita di Sirignano projeleri üzerinde çalışmaya devam ediyor."
     }
   ]
 }
