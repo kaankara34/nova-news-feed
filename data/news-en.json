@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-11-08T03:29:21.396Z",
+  "generatedAt": "2026-11-09T03:31:35.130Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 1,
+    "Exhibitions": 2,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,7 +35,7 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 1,
+      "count": 2,
       "target": 4,
       "targetMet": false
     },
@@ -75,8 +75,26 @@
       "targetMet": true
     }
   },
-  "total": 21,
+  "total": 22,
   "articles": [
+    {
+      "id": "227ac1b99f6982906e8b",
+      "category": "Architecture & Design",
+      "source": "Dezeen",
+      "sourceDomain": "dezeen.com",
+      "publishedAt": "2026-11-08T06:00:00.000Z",
+      "url": "https://www.dezeen.com/2026/11/08/matteo-thun-torre-velasca-interiors/",
+      "image": "https://static-2026.dezeen.com/uploads/2026/11/matteo-thun-torre-velasca-interiors_dezeen_2364_col_sq.jpg",
+      "originalTitle": "Matteo Thun designs Torre Velasca interiors using “the building itself as the starting point” - Dezeen",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 75,
+      "brandFit": 95,
+      "title": "Matteo Thun Designs New Interiors for Historic Torre Velasca in Milan",
+      "excerpt": "Italian architect Matteo Thun has redesigned the interiors of seventy-two flats on the upper floors of Milan's iconic Torre Velasca skyscraper, drawing inspiration from the building's original materials and colours.",
+      "content": "Italian architect Matteo Thun based his interior design for 72 flats on the upper floors of Milan's iconic Torre Velasca tower on the building's original materials and colours. The suites and duplex penthouses within the skyscraper, built in the 1950s by the BBPR studio, were approached with a focus on reinterpretation. The design team preserved original details including doors, window frames, loggias, and tiles in bathrooms and kitchens. These elements were juxtaposed with custom modern furniture and design references spanning the 1950s to the 1980s. The colour palette was derived directly from the pink plaster on Torre Velasca's facade and the blue and green floor tiles found in the loggias. Living rooms feature pale pink wall coverings that resemble the building's facade, while darker shades of green and blue define entrance areas and bedrooms. In addition to the apartments, Thun designed the reception, lobby, and ground-floor corridors, describing the undertaking as an architectural lesson for his studio."
+    },
     {
       "id": "9b4c50224998f1eb5445",
       "category": "Art & Exhibitions",
@@ -109,9 +127,9 @@
       "editorialScore": 85,
       "technicalValue": 80,
       "brandFit": 90,
-      "title": "Berkshire Glade Designed as a Multigenerational Home in Massachusetts Completed",
-      "excerpt": "Located in the Berkshire hills of Massachusetts, Berkshire Glade was designed by Turkel Design as a primary residence and guest house. Completed in May 2025, the 6,510-square-foot home was constructed using prefabricated components.",
-      "content": "Situated in the Berkshire hills of western Massachusetts, Berkshire Glade was planned both as a multigenerational vacation home and as a future full-time residence for a couple. Designed by Turkel Design, the project consists of two distinct forms overlooking a tree-lined hillside and framing views of Mount Washington. The primary residence and the guest house are joined by a covered porch anchored by a fireplace. The project encompasses 6,510 square feet on a 120-acre site. Light wells and generous expanses of glass were utilized in the design to draw natural daylight inward. At the heart of the main building is a communal great room oriented toward the landscape, while private suites accommodate multiple generations. The engineered-wood structure of the home relies on Douglas fir glue-laminated beams and thermally modified hemlock. The exterior is clad in shou sugi ban, a Japanese charred wood resistant to rot and insects. Wall, roof, and floor systems, doors, windows, and custom built-in furniture were fabricated as a package in a climate-controlled facility and shipped to the site for assembly. The project was completed in May 2025."
+      "title": "Berkshire Glade Multi-Generational Residence Completed in Massachusetts",
+      "excerpt": "Located in the Berkshire hills of Massachusetts, Berkshire Glade was designed by Turkel Design as a multigenerational vacation home and future residence. Completed in May 2025, the 6,510-square-foot project comprises a primary residence and a guest house.",
+      "content": "Situated in the Berkshire hills of western Massachusetts, the Berkshire Glade project was designed as a multigenerational vacation home and future permanent residence for a couple with careers in New York and Boston. Spanning 6,510 square feet, the structure designed by Turkel Design overlooks a wooded hillside and Mount Washington. The design links two distinct volumes, a primary residence and a guest house, through a covered porch anchored by a fireplace. This layout balances shared family gatherings with individual privacy. The engineered wood structure relies on Douglas fir glue-laminated beams and thermally modified hemlock. The exterior is clad in Japanese charred wood known as shou sugi ban, which offers resistance to rot and insects. Wall systems, roofing, flooring, windows, doors, and custom cabinetry were fabricated as a package in a climate-controlled facility and shipped to the site for precision assembly. Built on a 120-acre site, the project reached completion in May 2025."
     },
     {
       "id": "b9588ea939ccb22dc975",
@@ -215,11 +233,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 82,
-      "technicalValue": 55,
-      "brandFit": 85,
-      "title": "Meg Onli and Zack Winokur Named Curators of the 2028 Whitney Biennial",
-      "excerpt": "The Whitney Museum has appointed Whitney curator Meg Onli and director Zack Winokur as the curators for the 83rd edition of the Whitney Biennial, scheduled to open in March 2028.",
-      "content": "The Whitney Museum has named the curators for its next Biennial, appointing Whitney curator Meg Onli and director Zack Winokur to lead the 83rd edition of the prominent exhibition. Scheduled to open in March 2028, the event marks Onli's second time co-curating the exhibition, having previously partnered with Chrissie Iles for the 2024 edition. Onli joined the Whitney as a curator-at-large in 2023 and currently serves as the Nancy and Fred Poses Curator, alongside co-curating a retrospective for Roy Lichtenstein at the museum. Winokur is the cofounder of the American Modern Opera Company and has directed numerous productions across opera, theater, dance, and visual arts, in addition to serving as the former artistic director of Little Island. According to a press release announcing their appointment, the pair bring expansive perspectives on contemporary artistic practice and a shared commitment to fostering cross-disciplinary experimentation. Whitney director Scott Rothkopf highlighted their distinct approaches, stating that their partnership promises a radical new vision for the 2028 Biennial."
+      "technicalValue": 60,
+      "brandFit": 80,
+      "title": "Whitney Museum Appoints Meg Onli and Zack Winokur to Curate 2028 Biennial",
+      "excerpt": "The Whitney Museum has named museum curator Meg Onli and director Zack Winokur as the curators for the upcoming 83rd edition of the Whitney Biennial, opening in March 2028.",
+      "content": "The Whitney Museum announced the curatorial team for the upcoming 83rd edition of its biennial, scheduled to open in March 2028. Museum curator Meg Onli and director Zack Winokur have been appointed as co-curators for the exhibition. Onli, who previously co-curated the 2024 edition, joined the Whitney as a curator-at-large in 2023. Her background includes serving as co-director and curator of the Underground Museum in Los Angeles, and she is currently co-curating a retrospective for Roy Lichtenstein at the Whitney alongside artist Alex Da Corte. Winokur is the co-founder of the American Modern Opera Company and has directed numerous productions across opera, theater, and dance. Whitney director Scott Rothkopf stated that the partnership between Onli and Winokur promises a radical new vision for the 2028 Biennial. Both curators expressed enthusiasm for fostering experimentation and supporting artists across disciplines as preparations begin for the major exhibition, which follows the conclusion of the 2026 iteration."
     },
     {
       "id": "2c171cc7e0c8426e2cc8",
@@ -250,12 +268,12 @@
       "originalTitle": "Circularity Cabin by Takaaki Fuji + Yuko Fuji Architecture - Architectural Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 85,
       "technicalValue": 80,
-      "brandFit": 88,
-      "title": "A Sustainable Timber Residence in Zushi Designed for Dismantling and Relocation",
-      "excerpt": "Designed by Takaaki Fuji and Yuko Fuji Architecture in Zushi, the Circularity Cabin was built to be dismantled and reassembled elsewhere due to a planned road widening.",
-      "content": "Constructed in Zushi, Kanagawa Prefecture, Japan, the Circularity Cabin serves as a primary residence for a couple and their young child. Roughly half of the 615-square-foot site lies within the right-of-way of a planned road widening, prompting architects Takaaki Fuji and Yuko Fuji Architecture to design a two-story home that can be unbolted, stored, and reconstructed elsewhere. Completed in March 2023 with a total construction cost of $104,000, the building avoids adhesives and cut joinery entirely, relying instead on bolts and screws connecting stock lumber sections. Because the street side faces a busy arterial road, light and ventilation enter through clerestory windows whose orientations were determined using computational fluid dynamics. The interior features exposed structural elements and a slatted second-floor deck, allowing residents to easily read and repair the assembly themselves. Mineral-based structural boards were used as sheathing instead of plywood, while exterior walls feature vertical sawara cypress boarding."
+      "brandFit": 90,
+      "title": "Circularity Cabin Designed for Disassembly Completed in Zushi, Japan",
+      "excerpt": "Designed by Takaaki Fuji and Yuko Fuji Architecture in Zushi, Circularity Cabin was built to be unbolted and relocated due to a planned road widening project. Completed in March 2023, the 642-square-foot home uses bolts and screws without adhesives.",
+      "content": "Located in a valley in Zushi, south of Tokyo, the Circularity Cabin was designed as a primary residence for a couple and their young child. Because approximately half of the site lies within a planned road widening zone, the building was engineered to be unbolted, stored, and reconstructed elsewhere before its materials wear out, or returned to the timber market. Spanning 642 square feet across two floors, the house designed by Takaaki Fuji and Yuko Fuji Architecture is assembled entirely from stock lumber joined solely with bolts and screws, avoiding adhesives or cut joinery. The structure employs three stock lumber sections. Paired beams stack rather than interlock, allowing a single wrench to free any joint. While the street-facing side features a solid wooden wall, fresh air enters through clerestory windows and descends via a slatted second-floor deck. Built on a 615-square-foot lot, the project had a construction cost of $104,000 and was completed in March 2023."
     },
     {
       "id": "2607d5ff008b4b120e79",
@@ -276,6 +294,24 @@
       "content": "In February 1884, Émile Zola descended into a coalmine in Anzin, Northern France, to conduct research for his 1885 novel Germinal. Frederick Brown, in his 1995 biography of Zola, noted that the writer's stout physique made underground exploration particularly inconvenient. Similarly, English art critic and novelist John Berger descended into a pit in Creswell on the Nottinghamshire-Derbyshire border for his rarely screened 1973 BBC documentary Germinal. Berger, an avowed Marxist, observed in the documentary that the underground air was hot and silted with coal dust, leaving less space for the body. Berger surmised that Zola, despite his working-class sympathies, must have felt self-conscious living as a wealthy and successful author in a villa near Paris. Both writers shared several biographical parallels, including writing for periodicals and maintaining homes in the French countryside. While Zola earned significant royalties from depicting the struggles of the poor in his writing, Berger's engagement with disenfranchised groups followed his Booker Prize-winning novel G. In his televised homage, Berger recited passages from Zola's novel concerning the vengeance of the working class as residents of Creswell went about their daily lives."
     },
     {
+      "id": "e5d6563cf80d97c8b679",
+      "category": "Exhibitions",
+      "source": "La Biennale di Venezia",
+      "sourceDomain": "labiennale.org",
+      "publishedAt": "2026-11-05T13:42:53.000Z",
+      "url": "https://www.labiennale.org/en/agenda/morocco-pavilion-declosion",
+      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/marocco1.jpg?itok=sVX55Pfp",
+      "originalTitle": "Biennale Arte 2026 | Morocco Pavilion: DECLOSION - La Biennale di Venezia",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 86,
+      "technicalValue": 65,
+      "brandFit": 90,
+      "title": "Venice Biennale 2026 Morocco Pavilion Announces Declosion Performance",
+      "excerpt": "Scheduled for the Arsenale during the 2026 Venice Biennale, the Morocco Pavilion will present the performance Declosion, drawing on the cosmology of Hesiod's Theogony.",
+      "content": "As part of the 2026 Venice Biennale, the Morocco Pavilion at the Arsenale will host the performance titled Declosion. Drawing from the chaos narrative in Hesiod's Theogony, the performance invokes Clotho, the figure who spins the thread of life. Engaging in a dialogue with Amina Agueznay's artwork, the event explores the cyclical rhythm of existence spanning birth, life, and death. Featuring performer Inès Abergel within the installation Asǝṭṭa, the work reveals the transition from emptiness to fullness and nonbeing to being. Artistic support for the performance is provided by Amina Agueznay, with music composition by Guilain Delanoue. Movement advisors include Alice Dardenne and Romane Piffaut, while scenography is advised by Amine Slimani and Federico Urso. Objects for the installation are crafted by Malika Benmoumen, Mahdia Anoufr, Koltoum Gaddem, Khaddouj Alja, and Florian SôngNguyen. The performance is scheduled for November 21, 2026, from 16:30 to 16:50."
+    },
+    {
       "id": "b728ce0719e3d32deb72",
       "category": "Architecture & Design",
       "source": "Designboom",
@@ -286,12 +322,12 @@
       "originalTitle": "making room for nature: the urban landscapes of kongjian yu - Designboom",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
+      "editorialScore": 88,
       "technicalValue": 82,
-      "brandFit": 86,
-      "title": "Urban Landscape Projects in China Examine Climate Adaptation and Ecological Restoration",
-      "excerpt": "A new book by Harvard professor Charles Waldheim examines 60 urban landscape and climate adaptation experiments realized by landscape architect Kongjian Yu and his practice Turenscape in China.",
-      "content": "In Landscapes for Adaptation: Evidence from China, Harvard professor Charles Waldheim examined 60 built experiments realized by Chinese landscape architect Kongjian Yu and his practice Turenscape over the past two decades. The book documents the performance of these projects in responding to floods, climate volatility, and ecological change. Located along the Huangpu River in Shanghai, Houtan Park stands out as an example of this approach. Established on a former industrial and shipyard site, the 14-hectare park was completed in 2010. A constructed wetland within the park was designed to treat river water, improve its quality, and contribute to flood management. Meanwhile, the 12-hectare Yichang Yunhe Park in Hubei province transformed abandoned fish ponds into a green sponge fabric in 2013. The projects demonstrate how urban infrastructure can integrate with natural processes."
+      "brandFit": 92,
+      "title": "Urban Landscape Projects in China Examine Climate Adaptation and Ecological Transformation",
+      "excerpt": "A book authored by Harvard professor Charles Waldheim examines sixty landscape architecture experiments realized by Turenscape, documenting how these projects respond to climate change and flooding.",
+      "content": "In Landscapes for Adaptation: Evidence from China, Harvard professor Charles Waldheim examines sixty built experiments realized in China. The projects executed by Turenscape over the past two decades address how landscape architecture can respond to climate volatility, floods, and ecological change. Turenscape founder Kongjian Yu advocates that urban development should work with natural processes, utilizing water, vegetation, and ecological systems as infrastructure. In Shanghai, Houtan Park transforms an industrially degraded site into an ecological and public space. A constructed wetland within the park uses terraces and aquatic plants to treat river water and support flood management. Similarly, Yichang Yunhe Park in Hubei province transforms twelve abandoned fish ponds into a green sponge that cleanses polluted canal water. The Yinzhou Central River Transformation in Ningbo restores an urban waterway with wetland planting along its banks. These projects demonstrate how existing urban infrastructure can revive ecological functions. However, the success of such interventions depends on factors such as long-term maintenance, water quality, habitat connectivity, and social impacts on local communities. Understanding cities as shared habitats requires evaluating them not solely by their capacity to protect people, but by the relationships they foster among different life forms."
     },
     {
       "id": "ad13f367e9cbf89e72dc",
@@ -310,24 +346,6 @@
       "title": "The Architecture Drawing Prize Announces 11 Recipients for Its 2026 Edition",
       "excerpt": "Now in its ninth edition, The Architecture Drawing Prize has announced 11 recipients selected from 168 entries worldwide. The overall recipient will be announced in London in early 2027.",
       "content": "Co-curated by Make Architects, Sir John Soane's Museum, and the World Architecture Festival, The Architecture Drawing Prize has announced the 11 recipients of its ninth edition. Selected from 168 entries from around the world, the special prize for hand-drawing was awarded to Ross Cameron for his pencil drawing of scaffolding at the Glasgow School of Art. The recognized works engage with subjects including memory, housing, climate, and myth. Notable entries include Ioana Enache's The People's Palace, Bojana Sićović's Urban Scenography, and Javier García Goicoechea's project. The drawings were evaluated by a professional jury comprising Ken Shuttleworth, Ben Langlands, Nikki Bell, Lily Jencks, Federica Minozzi, Narinder Singh Sagoo, Erin McKellar, and Paul Finch. Selected drawings will be displayed at the World Architecture Festival in Florida from November 18 to 20, 2026. The overall recipient will be announced at Sir John Soane's Museum in London, where an exhibition will run from January 27 to February 28, 2027."
-    },
-    {
-      "id": "ab4e425055e454fd33f2",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-11-03T06:30:00.000Z",
-      "url": "https://www.archdaily.com/1187994/sharjah-design-centre-unveils-plans-for-rammed-earth-building-opening-in-2029",
-      "image": "https://images.adsttc.com/media/images/6ae9/ac5d/d5ab/1b01/886e/5911/large_jpg/sharjah-design-centre-unveils-plans-for-rammed-earth-building-opening-in-2029_2.jpg?1793698916",
-      "originalTitle": "Sharjah Design Centre Unveils Plans for Rammed Earth Building Opening in 2029 - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 82,
-      "brandFit": 88,
-      "title": "Sharjah Design Centre Unveils Plans for Rammed Earth Building Opening in 2029",
-      "excerpt": "Scheduled to open in 2029 within the Sharjah Creative Quarter in the UAE, the Sharjah Design Centre is designed by Taller de Arquitectura – Mauricio Rocha and Daniel Rosselló to feature specialized laboratories and material research facilities.",
-      "content": "Part of the Sharjah Creative Quarter in the United Arab Emirates, the Sharjah Design Centre is scheduled to open in 2029. Designed by Taller de Arquitectura – Mauricio Rocha in collaboration with architect Daniel Rosselló, the building incorporates rammed earth construction to reduce environmental impact. Led by Sheikha Hind bint Majid Al Qasimi, the institution will house seven specialist laboratories dedicated to textiles, rapid prototyping, glass, ceramics, jewelry, metal, and wood, alongside a Material Library and Digital Archive. Aiming to connect design research with manufacturing and professional practice, the center will offer workshops, residencies, and collaborative programs. The facility is already engaged in material research partnerships with Atelier LUMA and the American University of Sharjah through initiatives such as Theatrum Al Kimiya, which investigates locally sourced and waste-based materials including salt, clay, and agricultural residues."
     },
     {
       "id": "c9b66a50e599e940c3d1",
@@ -448,12 +466,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 86,
-      "technicalValue": 84,
-      "brandFit": 92,
-      "title": "Italian Architect Michele Bönan Reflects on Five Decades of Design",
-      "excerpt": "Florence-based architect Michele Bönan shares his design philosophy focused on privacy, craftsmanship, and a sense of belonging across five decades of hospitality projects.",
-      "content": "Having designed luxury hotels and residences for over 50 years, Florence-based architect Michele Bönan notes that the definition of luxury has evolved, with guests increasingly seeking wellness, privacy, and a sense of belonging over impersonal grandeur. Known for an eclectic aesthetic blending Italian craftsmanship, contemporary art, antiques, and bespoke furnishings, Bönan has worked with brands including Rocco Forte Hotels, the Lungarno Collection, Casa Cipriani, and J.K. Place. His career was launched in the 1980s following the publication of an estate he designed in Architectural Digest. In May, his aesthetic took shape at the 12 residences of Casa J.K. Place Roma, situated within an 18th-century Roman palazzo featuring bronzed-steel kitchens, statuario marble floors, and an on-site Italian restaurant named Al Ventidue. Having launched the Michele Bonan Interiors collection in 2021 with his son Sky Bönan, the architect is currently working on transforming the historic Palazzo dei Principi Caravita di Sirignano in Naples, scheduled to open in 2027."
+      "editorialScore": 85,
+      "technicalValue": 85,
+      "brandFit": 95,
+      "title": "Hotel Designer Michele Bönan Discusses His Career and New Projects",
+      "excerpt": "Having designed over 50 hotels, Florentine architect Michele Bönan noted that the definition of luxury has evolved and announced a new palace project in Naples.",
+      "content": "Designing hotels for over 50 years, Florentine architect Michele Bönan stated that the definition of luxury in the hospitality sector has changed, with guests increasingly seeking privacy, wellness, and a sense of belonging. Blending Italian craftsmanship with contemporary art and antiques, Bönan has created projects for brands such as Rocco Forte Hotels, the Lungarno Collection, and J.K. Place. Having recently completed the 12 residences of Casa J.K. Place Roma on Via dei Prefetti in Rome, the architect announced he is preparing the Palazzo dei Principi Caravita di Sirignano in Naples, with its cornerstone laid in 1535, to open in 2027. The historic property, long used as an insurance company hub, is slated to be transformed to evoke the feeling of a prince's house. Having launched the Michele Bonan Interiors collection in 2021 with his son Sky Bonan, the designer emphasizes treating every project with the warmth of a home."
     }
   ]
 }

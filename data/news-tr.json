@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-11-08T03:29:21.396Z",
+  "generatedAt": "2026-11-09T03:31:35.130Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -19,7 +19,7 @@
   ],
   "categoryCounts": {
     "Art & Exhibitions": 5,
-    "Exhibitions": 1,
+    "Exhibitions": 2,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
     "Construction": 1,
@@ -35,7 +35,7 @@
       "targetMet": true
     },
     "Exhibitions": {
-      "count": 1,
+      "count": 2,
       "target": 4,
       "targetMet": false
     },
@@ -75,8 +75,26 @@
       "targetMet": true
     }
   },
-  "total": 21,
+  "total": 22,
   "articles": [
+    {
+      "id": "227ac1b99f6982906e8b",
+      "category": "Architecture & Design",
+      "source": "Dezeen",
+      "sourceDomain": "dezeen.com",
+      "publishedAt": "2026-11-08T06:00:00.000Z",
+      "url": "https://www.dezeen.com/2026/11/08/matteo-thun-torre-velasca-interiors/",
+      "image": "https://static-2026.dezeen.com/uploads/2026/11/matteo-thun-torre-velasca-interiors_dezeen_2364_col_sq.jpg",
+      "originalTitle": "Matteo Thun designs Torre Velasca interiors using “the building itself as the starting point” - Dezeen",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 75,
+      "brandFit": 95,
+      "title": "Matteo Thun, Milanodaki Tarihi Torre Velasca İçin Yeni İç Mekanlar Tasarladı",
+      "excerpt": "İtalyan mimar Matteo Thun, Milano'nun simgesel gökdeleni Torre Velasca'nın üst katlarındaki yetmiş iki dairenin iç mekanlarını binanın orijinal malzeme ve renklerinden ilham alarak yeniden tasarladı.",
+      "content": "İtalyan mimar Matteo Thun, Milano'nun ikonik kulesi Torre Velasca'nın üst katlarında yer alan 72 dairenin iç mekanlarını tasarlarken binanın orijinal malzeme ve renklerini temel almıştır. BBPR stüdyosu tarafından 1950'lerde inşa edilen gökdelendeki süitler ve dubleks çatı katları, yeniden yorumlama odaklı bir yaklaşımla ele alınmıştır. Tasarım ekibi, kapılar, pencere çerçeveleri, logjalar ile mutfak ve banyolardaki karolar dahil olmak üzere orijinal detayları korumuştur. Bu öğeler, özel olarak tasarlanmış modern mobilyalar ve 1950'ler ile 1980 arasındaki dönemlere uzanan tasarım referanslarıyla birleştirilmiştir. Renk paleti doğrudan Torre Velasca'nın cephesindeki pembe sıva ile logjalardaki mavi ve yeşil yer karolarından türetilmiştir. Oturma odalarında, binanın pembe cephesini yansıtan soluk pembe tonlarında kadavralar ve özel duvar kaplamaları kullanılmıştır. Giriş alanları ve yatak odalarında ise yeşil ve mavinin daha koyu tonları tercih edilmiştir. Dairelerin yanı sıra resepsiyon, lobiyi ve zemin kattaki koridorları da tasarlayan Thun, bu sürecin stüdyosu için ayırt edici bir mimarlık dersine dönüştüğünü belirtmiştir."
+    },
     {
       "id": "9b4c50224998f1eb5445",
       "category": "Art & Exhibitions",
@@ -110,8 +128,8 @@
       "technicalValue": 80,
       "brandFit": 90,
       "title": "Massachusetts'te Çok Nesilli Yaşam İçin Tasarlanan Berkshire Glade Evi Tamamlandı",
-      "excerpt": "Massachusetts'in Berkshire tepelerinde yer alan Berkshire Glade, Turkel Design tarafından ana konut ve konuk evi olarak tasarlandı. May 2025'te tamamlanan 6.510 feet karelik yapı, prefabrike bileşenlerle inşa edildi.",
-      "content": "Massachusetts'in batısındaki Berkshire tepelerinde konumlanan Berkshire Glade, bir çift için hem çok nesilli bir tatil evi hem de gelecekteki tam zamanlı ikametgahı olarak planlandı. Turkel Design imzasını taşıyan proje, ağaçlarla kaplı bir yamaca bakan ve Mount Washington manzarasını çerçeveleyen iki farklı formdan oluşuyor. Ana konut ve konuk evi, şömineli kapalı bir verنده ile birbirine bağlanıyor. Proje büyüklüğü 6.510 feet kare olan yapının alanı 120 dönüm olarak açıklandı. Tasarımda doğal ışıktan yararlanmak amacıyla ışık bacaları ve geniş cam cepheler kullanıldı. Ana binanın merkezinde peyzaja yönelen büyük bir ortak alan yer alırken, özel süitler farklı nesillerin ihtiyaçlarına uyum sağlıyor. Yapının mühendislik ürünü ahşap strüktüründe Douglas köknarı lamine kirişler ve ısıl işlem görmüş hemlock ağacı tercih edildi. Dış cephe kaplamasında ise çürümeye ve böceklere dirençli shou sugi ban adı verilen Japon kömürleştirilmiş ahşabı kullanıldı. Duvar, çatı ve zemin sistemleri, kapılar, pencereler ile özel mobilyalar iklim kontrollü bir tesiste paket olarak üretilerek montaj için sahaya sevk edildi. Proje Mayıs 2025'te tamamlandı."
+      "excerpt": "Massachusetts'in Berkshire tepelerinde yer alan Berkshire Glade, Turkel Design tarafından çok nesilli bir tatil evi ve gelecekteki tam zamanlı konut olarak tasarlandı. Mayıs 2025'te tamamlanan 6.510 fitkarelik proje, ana bina ve misafir evinden oluşuyor.",
+      "content": "Massachusetts'in batısındaki Berkshire tepelerinde konumlanan Berkshire Glade projesi, New York ve Boston'da kariyerlerini sürdüren bir çift için çok nesilli bir tatil evi ve gelecekteki daimi konut olarak tasarlandı. Turkel Design imzasını taşıyan 6.510 fitkarelik yapı, ormanlık bir yamaç ile Mount Washington manzarasına bakan bir arazi üzerinde yer alıyor. Tasarım, ana konut ve misafir evi olmak üzere iki farklı hacmi, şömineli üstü örtülü bir verandayla birbirine bağlıyor. Bu düzenleme, aile üyelerine hem ortak alanlar hem de mahremiyet sunuyor. Projenin mühendislik ahşap strüktüründe Douglas köknarı lamine kirişler ve termal olarak modifiye edilmiş hemlok kullanıldı. Yapının dış cephesi çürüme ile böceklere karşı dayanıklı shou sugi ban adı verilen Japon kömürleştirilmiş ahşabıyla kaplandı. Duvar sistemleri, çatı ve döşeme sistemleri, pencereler, kapılar ile özel mobilyalar kontrollü bir tesiste paket olarak üretilerek hassas montaj için şantiyeye sevk edildi. 120 dönümlük arazi üzerine kurulan yapı Mayıs 2025'te tamamlandı."
     },
     {
       "id": "b9588ea939ccb22dc975",
@@ -215,11 +233,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 82,
-      "technicalValue": 55,
-      "brandFit": 85,
-      "title": "2028 Whitney Biennali Küratörleri Olarak Meg Onli ve Zack Winokur Atandı",
-      "excerpt": "Whitney Müzesi, 83. kez düzenlenecek Whitney Biennali'nin küratörleri olarak müze küratörü Meg Onli ve direktör Zack Winokur'un atandığını duyurdu. Mart 2028'de açılması planlanan sergi, sanat pratiklerine dair genişperspektifler sunmayı hedefliyor.",
-      "content": "Whitney Müzesi, ülkenin en önemli bienallerinden biri olan Whitney Biennali'nin bir sonraki edisyonu için küratörlerini açıkladı. Müze küratörü Meg Onli ve direktör Zack Winokur, serginin hazırlıklarını üstlenecek isimler olarak belirlendi. Bienalin 83. edisyonu Mart 2028'de izleyiciyle buluşacak. Onli, daha önce Chrissie Iles ile birlikte 2024 bienalinin eş küratörlüğünü üstlenmişti. 2023 yılında Whitney'de serbest küratör olarak göreve başlayan Onli, 2024'te Nancy and Fred Poses Küratörü unvanına getirilmişti. Sanatçı Alex Da Corte ile birlikte müzede Roy Lichtenstein retrospektifinin de eş küratörlüğünü yürüten Onli, çağdaş sanat alanındaki çalışmalarıyla tanınıyor. Bienalin diğer küratörü Zack Winokur ise American Modern Opera Company'nin kurucu ortağı olup Lincoln Center'da festivaller düzenlemiş, opera, tiyatro, dans ve görsel sanatlar alanlarında projeler yönetmiştir. Ayrıca 2026 Whitney Biennali'nin mekânlarından biri olan Little Island'ın eski sanat direktörlüğünü yürütmüştür. Müze direktörü Scott Rothkopf, ikilinin sanatsal programcılık ve küratörlük alanlarındaki yenilikçi yaklaşımlarının 2028 Bienali için radikal bir vizyon vadettiğini belirtmiştir. Basın açıklamasında Onli ve Winokur'un güncel sanat pratiklerine geniş bir perspektifle yaklaştığı ve disiplinler arası keşifleri desteklediği ifade edilmiştir."
+      "technicalValue": 60,
+      "brandFit": 80,
+      "title": "Whitney Müzesi 2028 Bienali İçin Meg Onli ve Zack Winokur'u Görevlendirdi",
+      "excerpt": "Whitney Müzesi, 2028 yılının mart ayında kapılarını açacak olan 83. Whitney Bienali'nin küratörlüğünü müze küratörü Meg Onli ve direktör Zack Winokur'un üstleneceğini açıkladı.",
+      "content": "Whitney Müzesi, ülkenin en önemli bienallerinden biri olan ve 2028 yılının mart ayında gerçekleşecek olan 83. sergi için küratör kadrosunu duyurdu. Müze küratörü Meg Onli ve direktör Zack Winokur, serginin ortak küratörleri olarak atandı. 2024 yılındaki bienalin de ortak küratörlüğünü üstlenen Onli, Whitney Müzesi'ndeki görevine 2023 yılında küratör-at-large olarak katılmıştı. Daha önce Los Angeles'taki Underground Museum'da eş direktörlük ve küratörlük yapan Onli, sanatçı Alex Da Corte ile birlikte müzede halihazırda devam eden Roy Lichtenstein retrospektifinin de ortak küratörleri arasında yer alıyor. Serginin diğer küratörü Winokur ise American Modern Opera Company'nin kurucu ortağı olup, Lincoln Center'da 2025 yılında festivaller düzenlemiş ve çeşitli opera, tiyatro ile dans prodüksiyonlarında yönetmenlik yapmıştır. Whitney Müzesi direktörü Scott Rothkopf, ikilinin iş birliğinin 2028 Bienali için radikal ve yeni bir vizyon vadedeceğini belirtirken, Onli ve Winokur ise sanatçıları destekleme ve disiplinler arası keşifler yapma konusundaki ortak taahhütlerini vurguladılar. Bu duyuru, 2026 yılındaki bienalin sona ermesinden kısa bir süre sonra geldi."
     },
     {
       "id": "2c171cc7e0c8426e2cc8",
@@ -250,12 +268,12 @@
       "originalTitle": "Circularity Cabin by Takaaki Fuji + Yuko Fuji Architecture - Architectural Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 85,
       "technicalValue": 80,
-      "brandFit": 88,
-      "title": "Zushi'de Sökülüp Taşınabilir Şekilde Tasarlanan Sürdürülebilir Ahşap Konut",
-      "excerpt": "Takaaki Fuji ve Yuko Fuji Architecture tarafından Zushi'de inşa edilen Circularity Cabin, gelecekteki bir yol genişletme çalışması nedeniyle sökülüp başka bir yerde yeniden kurulabilecek şekilde tasarlandı.",
-      "content": "Japonya'nın Kanagawa prefektörlüğündeki Zushi kasabasında inşa edilen Circularity Cabin, bir çift ve küçük çocukları için birincil konut olarak tasarlandı. Yaklaşık yarısının planlı bir yol genişletme sahasında yer alması nedeniyle yapı, malzemeleri yıpranmadan sökülebilecek, depolanabilecek ve başka bir yerde yeniden kurulabilecek şekilde planlandı. Mart 2023'te tamamlanan evin toplam inşaat maliyeti 104.000 dolar olarak gerçekleşti. Tasarım ekibi, yapının ömrünün ne kadar ayakta kalacağıyla değil, parçalarının söküm sürecine ne kadar dayanıklı olduğuyla ölçülmesi gerektiğini savundu. Bu doğrultuda yapıda yapıştırıcı veya kesme birleşim detayları kullanılmadı; tüm ahşap elemanlar cıvata ve vidalarla birleştirildi. Sokak tarafı sağır bir ahşap duvarla kapatılırken, iç mekana ışık ve hava akışı vadi rüzgarlarını hesaba katan üç küçük shed çatıdaki kliser pencereleri aracılığıyla sağlandı. Yapının strüktüründe yalnızca üç standart kereste kesiti tercih edildi ve kat planları mevsime göre değiştirilebilecek esneklikte kurgulandı. Projenin yapısal kılıfında kontrplak yerine mineral esaslı yapı levhaları kullanılırken, dış cephede dikey sawara selvisi kaplamaya yer verildi."
+      "brandFit": 90,
+      "title": "Japonya'nın Zushi Kentinde Sökülüp Taşınabilir Olarak Tasarlanan Circularity Cabin Tamamlandı",
+      "excerpt": "Takaaki Fuji ile Yuko Fuji Architecture tarafından Zushi'de tasarlanan Circularity Cabin, planlanan bir yol genişletme projesi nedeniyle sökülüp başka bir yere taşınabilecek şekilde inşa edildi. Mart 2023'te tamamlanan 642 fitkarelik ev, yapıştırıcı kullanılmadan cıvata ve vidalarla birleştirildi.",
+      "content": "Tokyo'nun güneyindeki Zushi vadisinde yer alan Circularity Cabin, bir çift ile küçük çocukları için ana konut olarak tasarlandı. Yaklaşık yarısının gelecekteki bir yol genişletme alanı içinde kalması nedeniyle, yapı ömrü dolmadan sökülüp başka bir yere taşınabilecek ya da parçaları ahşap piyasasına dönebilecek şekilde planlandı. Takaaki Fuji ile Yuko Fuji Architecture imzası taşıyan 642 fitkarelik iki katlı ev, yapıştırıcı veya kesme birleşimler olmaksızın yalnızca cıvata ve vidalarla birleştirildi. Tasarımcılar, yapının inşasında üç standart kereste kesiti kullandı. Çift katlı kirişler sütunları birbirine kenetlemek yerine üst üste bindirdiğinden, tek bir anahtar herhangi bir bağlantı elemanının sökülmesine olanak tanıyor. Yapının sokak cephesi katı ahşap bir duvarla kapatılırken, tavan penceresinden giren temiz hava ızgaralı ikinci kat döşemesi aracılığıyla zemin kata ulaşıyor. 615 fitkarelik arsa üzerindeki projenin toplam inşaat maliyeti 104.000 dolar olarak gerçekleşti ve yapı Mart 2023'te tamamlandı."
     },
     {
       "id": "2607d5ff008b4b120e79",
@@ -276,6 +294,24 @@
       "content": "Émile Zola, 1885 yılında yayımlanan Germinal romanının hazırlıkları kapsamında 1884 Şubat ayında Fransa'nın kuzeyindeki Anzin maden ocağına inerek araştırmalar yaptı. 1995 yılında yazarın biyografisini kaleme alan Frederick Brown, Zola'nın iri yapısının yer altındaki dar alanlarda kendisine zorluk çıkardığını belirtmiştir. Benzer şekilde, İngiliz sanat eleştirmeni ve romancı John Berger de 1973 tarihli Germinal adlı belgeselinde Nottinghamshire ve Derbyshire sınırındaki Creswell maden ocağına inmiştir. Marksist kimliğiyle tanınan Berger, belgeselde yer altındaki havanın kömür tozuyla dolu olduğunu ve alanın daraldığını gözlemlemiştir. Berger, Zola'nın işçi sınıfına duyduğu sempatiye rağmen başarılı ve zengin bir yazar olarak Paris yakınlarındaki bir villada yaşadığını, bu durumun zıtlık oluşturduğunu belirtmiştir. Her iki yazarın yaşamında da benzerlikler bulunmakta olup, her ikisi de süreli yayınlar için yazmış ve Fransa kırsalında evler edinmiştir. Zola, yoksulluğu ve işçi sınıfının yaşadığı sıkıntıları ele alan eserleriyle telif gelirleri elde ederken, Berger de Booker Ödülü kazandığı G. adlı romanının ardından benzer temalara yönelmiştir. Berger'in televizyon için hazırladığı bu çalışmada, işçi sınıfının direnişini ve intikamını anlatan bölümlere yer verilmiştir."
     },
     {
+      "id": "e5d6563cf80d97c8b679",
+      "category": "Exhibitions",
+      "source": "La Biennale di Venezia",
+      "sourceDomain": "labiennale.org",
+      "publishedAt": "2026-11-05T13:42:53.000Z",
+      "url": "https://www.labiennale.org/en/agenda/morocco-pavilion-declosion",
+      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/marocco1.jpg?itok=sVX55Pfp",
+      "originalTitle": "Biennale Arte 2026 | Morocco Pavilion: DECLOSION - La Biennale di Venezia",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 86,
+      "technicalValue": 65,
+      "brandFit": 90,
+      "title": "Venedik Bienali 2026 Fas Pavyonu Declosion Performansını Duyurdu",
+      "excerpt": "Venedik Bienali 2026 kapsamında Arsenale'de gerçekleşecek Fas Pavyonu, Hesiodos'un Teogonya kozmolojisinden ilham alan Declosion performansını izleyiciyle buluşturacak.",
+      "content": "Venedik Bienali 2026 programı kapsamında Arsenale'de gerçekleştirilecek Fas Pavyonu, Declosion başlıklı performansa ev sahipliği yapacak. Hesiodos'un Teogonya eserindeki kaos anlatısından ilham alan bu performans, yaşamın ipliğini eğiren Klotho figürüne odaklanıyor. Amina Agueznay'ın sanat eserleriyle diyalog kuran etkinlik, doğum, yaşam ve ölüm döngüsünü ele alıyor. Inès Abergel'in performansıyla hayat bulan Asǝṭṭa yerleştirmesi, boşluktan doluluğa, yokluktan varlığa geçiş sürecini sergiliyor. Etkinliğin sanatsal destekleyici Amina Agueznay olurken, müzik kompozisyonunu Guilain Delanoue üstleniyor. Hareket danışmanlığını Alice Dardenne ve Romane Piffaut yürütüyor. Sahne tasarımı danışmanlığını Amine Slimani ile Federico Urso paylaşırken, nesne üretiminde Malika Benmoumen, Mahdia Anoufr, Koltoum Gaddem, Khaddouj Alja ve Florian SôngNguyen görev alıyor. Performans 21 Kasım 2026 tarihinde saat 16:30 ile 16:50 arasında izlenebilecek."
+    },
+    {
       "id": "b728ce0719e3d32deb72",
       "category": "Architecture & Design",
       "source": "Designboom",
@@ -286,12 +322,12 @@
       "originalTitle": "making room for nature: the urban landscapes of kongjian yu - Designboom",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
+      "editorialScore": 88,
       "technicalValue": 82,
-      "brandFit": 86,
-      "title": "Çin'deki Kentsk Peyzaj Projeleri İklim Uyumunu ve Ekolojik Onarımı İnceliyor",
-      "excerpt": "Harvard profesörü Charles Waldheim'ın yeni kitabında, peyzaj mimarı Kongjian Yu ve Turenscape ekibinin Çin'de gerçekleştirdiği 60 kentsel peyzaj ve iklim uyum deneyi inceleniyor.",
-      "content": "Harvard profesörü Charles Waldheim, Landscapes for Adaptation: Evidence from China adlı kitabında, Çin'li peyzaj mimarı Kongjian Yu ve ofisi Turenscape'in son yirmi yılda gerçekleştirdiği 60 yapılı deneyi inceledi. Kitap, projelerin sel baskınlarına, iklim dalgalanmalarına ve ekolojik değişimlere karşı performansını belgeliyor. Shanghai'da Huangpu Nehri kıyısında yer alan Houtan Park, bu yaklaşımın örneklerinden biri olarak öne çıkıyor. Eski bir sanayi ve tersane alanında kurulan 14 hektarlık park, 2010 yılında tamamlandı. Park bünyesindeki yapay sulak alan, nehir suyunu arıtarak kalitesini artırmak ve sel yönetimine katkı sağlamak amacıyla tasarlandı. Hubei eyaletindeki 12 hektarlık Yichang Yunhe Park ise 2013 yılında terk edilmiş balık havuzlarını yeşil sünger dokuya dönüştürdü. Projeler, kentsel altyapının doğal süreçlerle nasıl bütünleşebileceğini gösteriyor."
+      "brandFit": 92,
+      "title": "Çin'deki Kentsel Peyzaj Projeleri İklim Uyumunu ve Ekolojik Dönüşümü İnceliyor",
+      "excerpt": "Harvard profesörü Charles Waldheim tarafından kaleme alınan bir kitap, Turenscape tarafından gerçekleştirilen altmış peyzaj mimarlığı deneyini inceleyerek bu projelerin iklim değişikliğine ve sellerle mücadeleye nasıl yanıt verdiğini belgeliyor.",
+      "content": "Harvard profesörü Charles Waldheim, Landscapes for Adaptation: Evidence from China adlı kitabında, Çin'de hayata geçirilen altmış inşa edilmiş deneyi incelemektedir. Turenscape tarafından son 2 yıl içinde gerçekleştirilen projeler, peyzaj mimarlığının iklim dalgalanmaları, seller ve ekolojik değişimlerle nasıl başa çıkabileceğini ele almaktadır. Turenscape'in kurucusu Kongjian Yu, kentsel gelişimin doğal süreçlerle birlikte çalışması gerektiğini savunarak suyu, bitki örtüsünü ve ekolojik sistemleri altyapı unsuru olarak kullanmaktadır. Şanghay'daki Houtan Park, endüstriyel olarak tahrip edilmiş bir alanı ekolojik ve kamusal bir alana dönüştürmektedir. Park içindeki yapay sulak alan, nehir suyunu arıtmak ve sel yönetimi sağlamak amacıyla teraslar ve su bitkileri kullanmaktadır. Benzer bir yaklaşımla Hubei eyaletindeki Yichang Yunhe Parkı, on iki terk edilmiş balık havuzunu kirli su kanalını temizleyen yeşil bir süngere dönüştürmektedir. Ningbo'daki Yinzhou Merkez Nehir Dönüşümü ise kentsel bir su yolunu kıyı bitkilendirmesiyle restore etmektedir. Bu tür projeler, kentsel altyapının ekolojik işlevleri yeniden canlandırabileceğini göstermektedir. Ancak bu girişimlerin başarısı, uzun vadeli bakım, su kalitesi, habitat bağlantısı ve topluluklar üzerindeki sosyal etkiler gibi faktörlere bağlıdır. Şehirlerin ortak yaşam alanları olarak anlaşılması, onların yalnızca insanları koruma kapasitesiyle değil, farklı yaşam formları arasında kurdukları ilişkilerle değerlendirilmesini gerektirmektedir."
     },
     {
       "id": "ad13f367e9cbf89e72dc",
@@ -310,24 +346,6 @@
       "title": "Mimari Çizim Ödülü 2026 Edisyonunun 11 Kazananını Açıkladı",
       "excerpt": "Dokuzuncusu düzenlenen Mimari Çizim Ödülü, dünya genelinden 168 başvuru arasından seçilen 11 kazananı duyurdu. Büyük ödülün sahibi 2027 başlarında Londra'da ilan edilecek.",
       "content": "Make Architects, Sir John Soane Müzesi ve Dünya Mimarlık Festivali ortaklığıyla düzenlenen Mimari Çizim Ödülü, dokuzuncu edisyonunun 11 kazananını açıkladı. Bu yıl 168 küresel başvuru arasından yapılan seçmelerde, el çizimi dalındaki özel ödül, Glasgow Sanat Okulu'nu saran iskeleyi çizen Ross Cameron'a verildi. Sergilenen projeler arasında bellek, konut, iklim, mit ve kamusal danışma gibi geniş bir konu yelpazesi yer alıyor. Ioana Enache'nin İnsanların Sarayı, Bojana Sićović'in Kentsel Senografisi ve Javier García Goicoechea'nın çalışması ödüle layık görülen projeler arasında bulunuyor. Eserler; Ken Shuttleworth, Ben Langlands, Nikki Bell, Lily Jencks, Federica Minozzi, Narinder Singh Sagoo, Erin McKellar ve Paul Finch'ten oluşan jüri tarafından değerlendirildi. Seçilen çizimler, 18-20 Kasım 2026 tarihleri arasında Florida'da düzenlenecek Dünya Mimarlık Festivali'nde sergilenecek. Genel kazanan ise 27 Ocak - 28 Şubat 2027 tarihleri arasında Londra'daki Sir John Soane Müzesi'nde düzenlenecek sergi kapsamında duyurulacak."
-    },
-    {
-      "id": "ab4e425055e454fd33f2",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-11-03T06:30:00.000Z",
-      "url": "https://www.archdaily.com/1187994/sharjah-design-centre-unveils-plans-for-rammed-earth-building-opening-in-2029",
-      "image": "https://images.adsttc.com/media/images/6ae9/ac5d/d5ab/1b01/886e/5911/large_jpg/sharjah-design-centre-unveils-plans-for-rammed-earth-building-opening-in-2029_2.jpg?1793698916",
-      "originalTitle": "Sharjah Design Centre Unveils Plans for Rammed Earth Building Opening in 2029 - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 82,
-      "brandFit": 88,
-      "title": "Sharjah Tasarım Merkezi Sıkıştırılmış Toprak Yapısıyla 2029'da Açılacak",
-      "excerpt": "Birleşik Arap Emirlikleri'ndeki Sharjah Tasarım Merkezi, 2029 yılında Sharjah Kreatif Bölgesi kapsamında açılacak. Taller de Arquitectura – Mauricio Rocha ve Daniel Rosselló tasarımı olan merkez, yerel malzeme araştırmaları ve yedi uzman laboratuvar barındıracak.",
-      "content": "Birleşik Arap Emirlikleri'nde yer alan Sharjah Kreatif Bölgesi bünyesinde kurulan Sharjah Tasarım Merkezi, 2029 yılında kapılarını açmaya hazırlanıyor. Taller de Arquitectura – Mauricio Rocha ve mimar Daniel Rosselló tarafından tasarlanan yapı, çevresel etkiyi azaltmak amacıyla sıkıştırılmış toprak inşaat tekniklerini kullanıyor. Şeyha Hind bint Majid Al Qasimi liderliğindeki merkez; tekstil, hızlı prototipleme, cam, seramik, mücevher, metal ve ahşap alanlarında yedi uzman laboratuvarın yanı sıra bir Malzeme Kütüphanesi ve Dijital Arşiv içerecek. Tasarım araştırmalarını üretim kapasiteleriyle buluşturmayı hedefleyen kurum; atölyeler, atölye çalışmaları, misafirlik programları ve mesleki gelişim faaliyetleri düzenleyecek. T merkez, Atelier LUMA ve Sharjah Üniversitesi iş birliğiyle tuz, kil, yerel bitki atıkları ve geri dönüştürülmüş malzemeler üzerine araştırmalar yürüten Theatrum Al Kimiya girişimine ev sahipliği yapıyor."
     },
     {
       "id": "c9b66a50e599e940c3d1",
@@ -448,12 +466,12 @@
       "originalTitle": "Michele Bönan Has Been Designing Hotels for Over 50 Years. And Is Still at the Top of His Game - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 86,
-      "technicalValue": 84,
-      "brandFit": 92,
-      "title": "İtalyan Mimar Michele Bönan Beş On Yıllık Kariyerini Değerlendiriyor",
-      "excerpt": "Yarım asırlık kariyere sahip Floransalı mimar Michele Bönan, lüks otel ve rezidans projelerinde mahremiyet, zanaatkarlık ve aidiyet duygusunu ön planda tutan tasarım felsefesini anlatıyor.",
-      "content": "Yarım asrı aşkın süredir lüks otel ve konut projelerine imza atan Floransalı mimar Michele Bönan, günümüzde lüks tanımının değiştiğini ve misafirlerin ihtişam yerine zindelik, mahremiyet ve aidiyet aradığını belirtiyor. İtalyan zanaatkarlığı, çağdaş sanat, antikalar ve özel üretim mobilyaları harmanlayan kendine has estetiğiyle tanınan Bönan; Rocco Forte Hotels, Lungarno Collection, Casa Cipriani ve J.K. Place gibi markalarla çalıştı. Kariyeri 1980'lerde Architectural Digest dergisinde yayımlanan eviyle ivme kazanan mimar, projelerinde her mekana özel bir ruh katmayı amaçlıyor. Mayıs ayında Via dei Prefetti'de açılan 12 dairelik Casa J.K. Place Roma rezidansları, 18. yüzyıldan kalma bir Roma palazzosunda yer alıyor. Bronz çelik mutfaklar, Calacatta ve statuario mermerler ile Art Deco esintileri taşıyan yapıda, Al Ventidue adlı İtalyan restoranı da bulunuyor. Ayrıca 2021 yılında oğlu Sky Bönan ile birlikte Michele Bonan Interiors koleksiyonunu kuran mimar, 2027 yılında açılması planlanan Napoli'deki tarihi Palazzo dei Principi Caravita di Sirignano projeleri üzerinde çalışmaya devam ediyor."
+      "editorialScore": 85,
+      "technicalValue": 85,
+      "brandFit": 95,
+      "title": "Otelleri Tasarlayan Michele Bönan Kariyerini ve Yeni Projelerini Anlatıyor",
+      "excerpt": "Elliden fazla otel tasarlayan Florikalı mimar Michele Bönan, lüks anlayışının evrildiğini ve Napoli'de yeni bir saray projesi hazırladığını belirtti.",
+      "content": "Elliyi aşkın yıldır otel tasarımı gerçekleştiren Florikalı mimar Michele Bönan, konaklama sektöründe lüks tanımının değiştiğini ve misafirlerin artık mahremiyet, zindelik ile aidiyet hissi aradığını ifade etti. İtalyan zanaatkarlığını çağdaş sanat ve antika unsurlarla harmanlayan Bönan, Rocco Forte Hotels, Lungarno Collection ve J.K. Place gibi markalar için projeler üretti. Roma'daki Via dei Prefetti üzerinde yer alan on iki dairelik Casa J.K. Place Roma rezidanslarını hayata geçiren mimar, 1535 yılında temelleri atılan Napoli'deki Palazzo dei Principi Caravita di Sirignano'yu 2027 yılında açmak üzere hazırladığını açıkladı. Sigorta şirketi merkezi olarak kullanılan bu tarihi yapıyı bir prens konağı hissi verecek şekilde dönüştürmeyi amaçlıyor. Oğlu Sky Bönan ile birlikte 2021 yılında Michele Bönan Interiors koleksiyonunu kuran tasarımcı, her projeyi bir evin sıcaklığıyla ele aldığını vurguluyor."
     }
   ]
 }
