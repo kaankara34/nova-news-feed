@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-11-10T03:30:29.178Z",
+  "generatedAt": "2026-11-11T03:31:51.181Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -96,6 +96,24 @@
       "content": "A new generation of architects in Mexico is shaping a distinct design language by reinterpreting the construction principles of ancient Aztec, Maya, and other Mesoamerican peoples. A new book by writer and curator Su Wu documents how these ancient ideas are manifesting within private residential projects across the country. While Mesoamerican motifs previously appeared in large cultural institutions, their integration into private homes marks a shift toward deeply personal architectural efforts. Among the featured projects are Fernanda Canales's geometrically precise Casa 720 and Casa Bernal by Marcos Ruiz and Emmanuel Picault, which is oriented in relation to the Peña de Bernal monolith. Additional residential works highlighted include Juan O’Gorman's home for composer Conlon Nancarrow and a project by Pedro Reyes and Carla Fernández. Furthermore, artist Geraz Ato's hand-carved dwelling near Teotihuacán incorporates iconography and migration scenes referencing the region's ancient past. These residences demonstrate that Mesoamerican design principles remain relevant and active within contemporary private architecture."
     },
     {
+      "id": "200d9b877c419522708d",
+      "category": "Art & Exhibitions",
+      "source": "ARTnews.com",
+      "sourceDomain": "artnews.com",
+      "publishedAt": "2026-11-09T21:42:53.000Z",
+      "url": "https://www.artnews.com/art-news/news/getty-conservation-earthquake-damaged-church-peru-1234805336/",
+      "image": "https://www.artnews.com/wp-content/uploads/2026/11/Church-of-Santo-Tomas-de-Aquino-Getty-1.jpg?w=1024",
+      "originalTitle": "Getty Pitches In on First-Ever Conservation of an Earthquake-Damaged 17th-Century Church in the Andean Highlands of Peru - ARTnews.com",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 90,
+      "brandFit": 90,
+      "title": "Getty to Assist in First Conservation of Damaged Peruvian Church",
+      "excerpt": "The Getty is partnering with local authorities to undertake the first-ever conservation project on the 17th-century Church of Santo Tomás de Aquino in Peru's Cusco region.",
+      "content": "The Getty is working with local authorities on the first-ever conservation project for the 17th-century earthen Church of Santo Tomás de Aquino, located in the Andean highlands of Peru's Cusco region. The Peruvian government has allocated $5 million to a multi-year initiative to strengthen the earthquake-damaged structure and safeguard its collection of over 300 cultural objects, including 17th- and 18th-century paintings, gilded wooden retablos, and textiles. Construction is set to begin in 2027, utilizing the Getty Conservation Institute's Seismic Retrofitting Project methodologies. Among the notable works in the collection is a series of eight large easel paintings by Italian Jesuit artist Bernardo Bitti, created in Cusco in the late 1590s and previously thought to be lost. One painting from the series, \"La Oración en el huerto,\" will be transferred to the Getty in 2027 for scientific analysis and conservation treatment. Experts note that the collection offers a rare research opportunity because it shows no evidence of prior restoration."
+    },
+    {
       "id": "07fe6a2a6aedd49f47e5",
       "category": "Art & Exhibitions",
       "source": "ARTnews.com",
@@ -125,11 +143,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 60,
-      "brandFit": 90,
-      "title": "Metropolitan Museum of Art Opens Major Krasner and Pollock Exhibition",
-      "excerpt": "The Metropolitan Museum of Art is hosting Krasner and Pollock: Past Continuous, an exhibition exploring the artistic relationship and careers of Lee Krasner and Jackson Pollock, on view until 31 January 2027.",
-      "content": "The Metropolitan Museum of Art in New York is presenting a major exhibition examining the lives and works of mid-century artists Lee Krasner and Jackson Pollock. Curated by David Breslin and Brinda Kumar, Krasner and Pollock: Past Continuous explores the deep codependency and distinct artistic trajectories of the couple. The exhibition aims to elevate Krasner's work to a primary focus alongside Pollock's monumental output, displaying her 1950s collages and later abstractions in dialogue with his signature drip paintings. The presentation highlights their meeting in 1942, their subsequent relocation to Springs, and the complex balance of supporting Pollock's career while maintaining their respective practices. Exhibition spaces transition from intimate, dark-walled galleries echoing their former studios to a high-ceilinged room overlooking Central Park where Pollock's Convergence and Autumn Rhythm are displayed near Krasner's key collage works. Featuring loans and collection pieces, the exhibition runs until 31 January 2027, with tickets priced at 30 dollars."
+      "technicalValue": 45,
+      "brandFit": 80,
+      "title": "Krasner and Pollock Exhibition Opens at the Metropolitan Museum of Art in New York",
+      "excerpt": "The Metropolitan Museum of Art presents an exhibition examining the artistic and relational ties between Lee Krasner and Jackson Pollock. The show remains on view until January 31, 2027.",
+      "content": "The Metropolitan Museum of Art in New York presents Krasner and Pollock: Past Continuous, an exhibition exploring the works of Lee Krasner and Jackson Pollock. Curated by David Breslin and Brinda Kumar, the exhibition examines the artistic interaction between the two mid-century artists while seeking to establish a primary focus on Krasner's output. The display juxtaposes Krasner's 1950s collage works with Pollock's monumental drip paintings within carefully structured gallery spaces. The curators emphasize Krasner's supportive role in Pollock's career alongside her independent experimental approach. The exhibition features eight collage paintings that Krasner originally exhibited at the Stable Gallery in 1955. Critics including Holland Cotter and Karen Wilkin have noted that the exhibition offers a necessary historical reassessment of both painters. The exhibition at the Metropolitan Museum of Art is open until January 31, 2027, with tickets priced at $30."
     },
     {
       "id": "132ba6a95faafe0d3d0c",
@@ -142,12 +160,12 @@
       "originalTitle": "Art Gallery of Ontario sets opening date for $73m new wing - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 95,
-      "title": "Art Gallery of Ontario Sets Opening Date for New Wing",
-      "excerpt": "The Art Gallery of Ontario in Toronto has announced that the Dani Reiss Modern and Contemporary Gallery wing will open to the public on 25 September 2027.",
-      "content": "The Art Gallery of Ontario in Toronto has announced that its new Dani Reiss Modern and Contemporary Gallery will open to the public on 25 September 2027. The 73.4m dollar, five-storey expansion adds 40,000 square feet of space, increasing the museum's display capacity by roughly 30%. Designed through a collaboration between Diamond Schmitt, Selldorf Architects, and Two Row Architect, the wing will house modern and contemporary works from a collection that has expanded by approximately 18,000 pieces over the past decade. Recent acquisitions include significant gifts from the Philip B. Lind estate and collectors Carol and Morton Rapp. The expansion project was initiated by a lead gift from art collector and executive Dani Reiss, and is fully funded through community contributions alongside federal and provincial government support. Outgoing director Stephan Jost stated that the new gallery highlights the institution's global standing."
+      "editorialScore": 90,
+      "technicalValue": 85,
+      "brandFit": 90,
+      "title": "Art Gallery of Ontario Sets Opening Date for New C$100m Wing",
+      "excerpt": "The Art Gallery of Ontario in Toronto has announced that its new C$100m Dani Reiss Modern and Contemporary Gallery will open on September 25, 2027.",
+      "content": "The Art Gallery of Ontario (AGO) in Toronto has announced that its new five-storey, C$100m Dani Reiss Modern and Contemporary Gallery will open to the public on September 25, 2027. First made public in April 2022, the 40,000-square-foot expansion increases the museum's display space by roughly 30 percent, including 5,000 square feet of gallery spaces with 23-foot-tall ceilings. The new wing addresses the growth of the museum's modern and contemporary collection, which has expanded by about 18,000 pieces over the past decade, including recent acquisitions and gifts from the estates of Philip B. Lind, Peter Hujar, and collectors Carol and Morton Rapp. Sparked by a lead gift of C$35m from art collector and Canada Goose chief executive Dani Reiss, the project is now fully funded through community contributions and support from the governments of Ontario and Canada. Designed through a collaboration among architecture firms Diamond Schmitt, Selldorf Architects, and Two Row Architect, the sustainable building overlooks downtown Toronto's Grange Park."
     },
     {
       "id": "10d64150495b482a0ef7",
@@ -178,12 +196,30 @@
       "originalTitle": "Matteo Thun designs Torre Velasca interiors using “the building itself as the starting point” - Dezeen",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
+      "editorialScore": 85,
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Matteo Thun Completes Interior Design for Torre Velasca",
+      "excerpt": "Italian architect Matteo Thun has designed the interiors for 72 flats and common areas in Milan's Torre Velasca, drawing inspiration from the tower's original materials.",
+      "content": "Italian architect Matteo Thun has completed a comprehensive interior design project for Milan's iconic Torre Velasca, originally constructed in the 1950s by the BBPR architectural practice. Thun's studio designed 72 apartments across the upper floors, ranging from suites to duplex penthouses, alongside ground-floor common areas including the lobby, reception, and corridors. The design approach centered on reinterpreting the original materials and color palette of the skyscraper rather than introducing contrast. Original elements such as doors, windows, loggias, and bathroom tiles were preserved and juxtaposed with contemporary furniture and historic design references. Custom pink wall coverings in the living areas reflect the hue of the tower's facade plaster, while darker blue and green tones define the entrance and bedroom zones. The architect described the commission as a foundational lesson in architectural preservation and context."
+    },
+    {
+      "id": "049817215d4b5e56ce33",
+      "category": "Architecture & Design",
+      "source": "Wallpaper*",
+      "sourceDomain": "wallpaper.com",
+      "publishedAt": "2026-11-08T06:00:00.000Z",
+      "url": "https://www.wallpaper.com/architecture/wood-city-stockholm-oskar-norelius-white-arkitekter-interview",
+      "image": "https://cdn.mos.cms.futurecdn.net/EUM6yjYXXLmZ6yco26vCei-2560-80.jpg",
+      "originalTitle": "Is wood the future of urban architecture? - Wallpaper*",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 80,
       "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Matteo Thun Designs New Interiors for Torre Velasca Using Original Materials",
-      "excerpt": "Italian architect Matteo Thun has redesigned the interiors of 72 flats in the upper floors of Milan's iconic Torre Velasca, drawing inspiration from the tower's original materials and colors.",
-      "content": "Italian architect Matteo Thun designed the interiors of 72 flats, ranging from suites to duplex penthouses, on the upper floors of Milan's Torre Velasca. Approaching the skyscraper built in the 1950s by BBPR, Thun focused on reinterpretation while preserving original details such as doors, window frames, loggias, and tiles in bathrooms and kitchens. These preserved elements were juxtaposed with modern furniture and design references spanning the 1950s to the 1980s. The interior color palette was directly informed by the original hues of Torre Velasca. Custom velvet wall coverings in pale pink, resembling the tower's facade plaster, were applied in the living rooms. Darker shades of green and blue define entrance areas and bedrooms. Alongside the apartments, Thun also designed the interior of the ground floor reception, lobby, and corridors, describing the project as an architectural lesson in making the original character relevant today."
+      "brandFit": 85,
+      "title": "Urban Architecture and the Expanding Role of Timber in Sustainable Design",
+      "excerpt": "Architecture studios are scaling up timber structures to mitigate global carbon emissions. Projects such as Wood City in Stockholm and a new development in Amsterdam highlight the expanding applications of wood.",
+      "content": "With the construction industry accounting for 37% to 40% of global carbon emissions, architectural studios are increasingly turning to timber as an alternative to conventional methods. Oskar Norelius, CEO of White Arkitekter, notes that timber architecture is no longer restricted to experimental, one-off projects, but is being scaled up for high-rises and large-scale developments. Wood City, a major development spanning 250,000 square meters in Sickla on the outskirts of Stockholm, is currently progressing through a 15-year master plan. The first block of the project utilizes a combination of cross-laminated timber and glulam. According to Norelius, while Sweden currently has an overcapacity of local timber resources, the primary challenge lies in the industry's risk aversion and the necessity for ongoing collaboration and innovation. The studio also recently won a development in Amsterdam comprising 500 homes across 20 buildings constructed from mass timber and biomaterials. Alongside timber, the practice explores bio-based materials such as hemp, clay, and lime chalk plaster, while integrating landscape architecture into its technical projects."
     },
     {
       "id": "9b4c50224998f1eb5445",
@@ -232,30 +268,12 @@
       "originalTitle": "Edgar Degas | Promenade beside the Sea | L819 - The National Gallery, London",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
-      "technicalValue": 40,
+      "editorialScore": 80,
+      "technicalValue": 65,
       "brandFit": 85,
-      "title": "Edgar Degas's Early Work Promenade beside the Sea on Display in London",
-      "excerpt": "Held in the collection of The National Gallery, Edgar Degas's oil sketch Promenade beside the Sea, painted around 1860, reflects the artist's early explorations of equine movement.",
-      "content": "Promenade beside the Sea by Edgar Degas, on display at The National Gallery, is an early oil sketch created around 1860, shortly after the artist established his first studio in Paris. The artwork depicts an elegantly attired couple on horseback riding along the coast at sunset. The gentleman wears black and a top hat, while the lady sits side-saddle in a dark riding habit, set in the Bay of Naples, an area Degas visited on multiple occasions. The theme of horse and rider is a recurrent subject through which Degas explored movement and motion. The artist suggests the gait of the horses using open brushwork. Although giving the impression of an outdoor study, the work was likely produced in the studio using earlier preparatory sketches. Measuring 22.5 by 32.5 cm and executed in oil on canvas, the piece is part of the Gere Collection on long-term loan to The National Gallery."
-    },
-    {
-      "id": "589e0899c186dd7e17b9",
-      "category": "Art & Exhibitions",
-      "source": "ARTnews.com",
-      "sourceDomain": "artnews.com",
-      "publishedAt": "2026-11-06T18:17:13.000Z",
-      "url": "https://www.artnews.com/art-news/news/romes-galleria-borghese-opens-competition-extension-1234804922/",
-      "image": "https://www.artnews.com/wp-content/uploads/2026/11/GettyImages-1322406378.jpg?w=1024",
-      "originalTitle": "Rome’s Galleria Borghese’s $11.15 M. Extension Is Moving Forward Despite Pushback - ARTnews.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Rome's Galleria Borghese Moves Forward With $11.15 Million Extension Despite Strong Backlash",
-      "excerpt": "Rome's 17th-century Galleria Borghese museum is advancing an 11.15 million dollar extension project to address tourist influx, drawing sharp criticism and pushback from heritage groups and politicians alike.",
-      "content": "Rome's 17th-century museum Galleria Borghese has launched an architectural competition for a 3,000-square-meter extension to address an influx of 700,000 annual visitors. Museum director Francesca Cappelletti noted that despite a daily cap of 2,000 visitors and online booking requirements, international groups daily find themselves unable to enter. Supported by Rome's Ministry of Cultural Heritage and the municipality, the project is estimated to cost 11.15 million dollars. It aims to exhibit stored works, host exhibitions, and open a restaurant, bookstore, and laboratory. Cappelletti stated that the solution must involve a contemporary structure without altering existing heritage. The competition is organized by engineering firm Proger Spa, with an independent jury selecting the winner in May 2027. However, the plan has encountered severe backlash. Alix van Buren, president of the Friends of the Villa Borghese association, called the proposal a grotesque blasphemy. Michele Campisi of heritage group Italia Nostra termed the plans bizarre, while art history professor Tomaso Montanari described the extension as moronic. Fabio Rampelli, vice-president of Italy's lower house of parliament, publicly called for Cappelletti's resignation over the controversial proposal."
+      "title": "Edgar Degas's Promenade beside the Sea on Display at National Gallery London",
+      "excerpt": "Edgar Degas's 1860 early oil sketch Promenade beside the Sea, depicting the Bay of Naples, is on view at The National Gallery in London, reflecting the artist's early explorations of movement and equine subjects.",
+      "content": "The National Gallery in London houses Promenade beside the Sea by Edgar Degas, an early oil sketch produced around 1860. The artwork depicts an elegantly attired couple on horseback riding along the coast against cliffs beneath a rosy sky, with a gentleman in black and top hat alongside a lady in a dark riding habit sitting side-saddle. The location corresponds to the Bay of Naples, an area visited by Degas during trips to see his Italian family. Equine themes recur throughout the artist's oeuvre, and this piece represents an early exploration of movement through open brushwork. Although appearing as an outdoor study, the painting was likely created in his studio using preparatory drawings, including notebook sketches from Paris. Measuring 22.5 by 32.5 centimeters, the oil-on-canvas work is on long-term loan from the Gere Collection and is exhibited in Room 39 of the gallery."
     },
     {
       "id": "f7269de30d7d95cb246b",
@@ -269,11 +287,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 82,
-      "brandFit": 90,
-      "title": "New Museum Building in Parramatta Opens Its Doors With Five Exhibitions",
-      "excerpt": "Designed by Moreau Kusunoki and Genton, Powerhouse Parramatta opens to the public on November 7, 2026. The new cultural institution welcomes its first visitors with five exhibitions, including installations by Es Devlin and James Turrell.",
-      "content": "Situated along the Parramatta River in Western Sydney, Australia, Powerhouse Parramatta officially opens its doors on November 7, 2026. Designed by French and Japanese architecture studio Moreau Kusunoki alongside Australian practice Genton, the building features a white structural lattice exoskeleton. Spanning over 18,000 square meters of public and exhibition space, the institution stands as the largest museum ever built in New South Wales. The opening program presents more than 3,000 objects across five inaugural exhibitions, featuring immersive works by British artist Es Devlin and American artist James Turrell. Devlin’s exhibition, The Turning, explores human perception and collective memory, while Turrell contributes the light installation Shangri La as part of the Task Eternal series. Additional presentations include The Mall, developed with OMA/AMO to examine the cultural history of shopping centers, a First Nations-led exhibition titled Overflow, and a children's presentation named The Dark. Alongside its gallery spaces, the project introduces a waterfront landscaped square, a rooftop garden, and an observatory."
+      "technicalValue": 86,
+      "brandFit": 89,
+      "title": "Steel-Latticed Powerhouse Parramatta Museum Opens in Western Sydney",
+      "excerpt": "Powerhouse Parramatta, the largest museum built in New South Wales, opens in Western Sydney within a steel-latticed building designed by Moreau Kusunoki and Genton, featuring inaugural installations by Es Devlin and James Turrell.",
+      "content": "Situated along the Parramatta River in Western Sydney, the new cultural venue Powerhouse Parramatta opens to the public. Designed by Moreau Kusunoki and Genton, the building features two large volumes enclosed by a white structural lattice that enables expansive, column-free interiors. Spanning over 18,000 square meters of exhibition and public space, the institution stands as the largest museum ever built in New South Wales. The inaugural program presents more than 3,000 objects across five exhibitions. Among them are British artist Es Devlin's major presentation exploring human perception and nature, and American artist James Turrell's monumental light installation altering spatial perception. Additional exhibitions developed with OMA/AMO and other groups complete the opening lineup. The architectural project also incorporates waterfront public spaces, a landscaped square, a rooftop garden, and an observatory. A 23-day festival of performances and workshops accompanies the opening of the institution."
     },
     {
       "id": "0fffef7010a3ba71c40b",
@@ -310,24 +328,6 @@
       "title": "Essex County Wynona Lipman Family Courthouse Wins Recognition",
       "excerpt": "Built in Newark, the 266,000-square-foot, eight-story Essex County Wynona Lipman Family Courthouse consolidates previously dispersed family courts into a central location.",
       "content": "Situated in Newark, the 266,000-square-foot, eight-story Essex County Wynona Lipman Family Courthouse consolidates previously dispersed family and children courts, probation services, and domestic violence units into a central urban location. The primary public entry is carved out under the upper floors to form a plaza as an extension of the streetscape. According to the submission, family courts require a de-escalating environment, addressed here by a multicolor art-glass two-story translucent screen on the public street wall and separate child-friendly playrooms in waiting areas. Constructing the massive complex in downtown Newark required meticulous coordination, including working within strict property lines, managing daily traffic flows, and minimizing disruptions to neighbors. The interior design divides spaces to separate hostile parties while accommodating sensitive zones, and integrates modern security with separate private entry points, holding cells, secure sallyports, and underground parking for judges. To counter unpredictable conditions, the project team relied on daily meetings and constant communication, allowing project managers, superintendents, and safety managers to address obstacles, coordinate daily tasks, and adapt in real time alongside cooperation with the city of Newark."
-    },
-    {
-      "id": "c6d54cdfae385823b2a4",
-      "category": "Architecture & Design",
-      "source": "Architectural Record",
-      "sourceDomain": "architecturalrecord.com",
-      "publishedAt": "2026-11-05T17:22:28.000Z",
-      "url": "https://www.architecturalrecord.com/articles/18506-circularity-cabin-by-takaaki-fuji-yuko-fuji-architecture",
-      "image": "https://www.architecturalrecord.com/ext/resources/news/2026/%2AOctober/Circularity-Cabin/Circularity-Cabin.jpeg?height=635&t=1793392676&width=1200",
-      "originalTitle": "Circularity Cabin by Takaaki Fuji + Yuko Fuji Architecture - Architectural Record",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Circularity Cabin Designed for Disassembly Completed in Zushi, Japan",
-      "excerpt": "Designed by Takaaki Fuji and Yuko Fuji Architecture in Zushi, Circularity Cabin was built to be unbolted and relocated due to a planned road widening project. Completed in March 2023, the 642-square-foot home uses bolts and screws without adhesives.",
-      "content": "Located in a valley in Zushi, south of Tokyo, the Circularity Cabin was designed as a primary residence for a couple and their young child. Because approximately half of the site lies within a planned road widening zone, the building was engineered to be unbolted, stored, and reconstructed elsewhere before its materials wear out, or returned to the timber market. Spanning 642 square feet across two floors, the house designed by Takaaki Fuji and Yuko Fuji Architecture is assembled entirely from stock lumber joined solely with bolts and screws, avoiding adhesives or cut joinery. The structure employs three stock lumber sections. Paired beams stack rather than interlock, allowing a single wrench to free any joint. While the street-facing side features a solid wooden wall, fresh air enters through clerestory windows and descends via a slatted second-floor deck. Built on a 615-square-foot lot, the project had a construction cost of $104,000 and was completed in March 2023."
     },
     {
       "id": "e5d6563cf80d97c8b679",
@@ -394,12 +394,12 @@
       "originalTitle": "At High Point Market, Designers Celebrate a Major Theodore Alexander Milestone With AD - Architectural Digest",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
-      "technicalValue": 80,
+      "editorialScore": 80,
+      "technicalValue": 75,
       "brandFit": 90,
-      "title": "Theodore Alexander and Architectural Digest Celebrate 30th Anniversary at High Point Market",
-      "excerpt": "Furniture manufacturer Theodore Alexander celebrated its 30th anniversary with a special party at High Point Market. The gathering also honored company founder Paul Maitland Smith, who passed away this fall.",
-      "content": "At High Point Market, a towering 15-foot Chippendale-style chair stood outside Theodore Alexander to mark the furniture manufacturer's 30th anniversary. Co-hosted by AD PRO Senior Editor Mel Studach, Alexa Hampton, Rasheeda Gray, and Lisa Shaffer, the October 16 anniversary party spanned the showroom's four floors and rooftop patio. During her opening remarks, Studach paid tribute to company founder Paul Maitland Smith, who passed away earlier this fall at age 90, highlighting the brand's legacy rooted in craftsmanship. Attendees explored the lower-level floors to view new seasonal collections including Voyager, Greenwich, and Heritage, the latter of which re-introduces Maitland Smith's archival designs in refreshed proportions and finishes. The brand has experienced a recent expansion, including the summer opening of a 40,000-square-foot flagship showroom in Manhasset, New York, featuring over 6,000 SKUs and made-to-order customization capabilities. As the event concluded, departing guests received a miniature polished brass keychain version of the signature Pentreath chair."
+      "title": "Furniture Manufacturer Theodore Alexander Celebrates Its Thirtieth Anniversary",
+      "excerpt": "Known for its artisan roots, furniture manufacturer Theodore Alexander marked its 30th anniversary with a major celebration during the High Point Market event.",
+      "content": "Furniture manufacturer Theodore Alexander celebrated its 30th anniversary with a gathering during the High Point Market event. The entrance featured a towering 15-foot Chippendale-style Pentreath chair outside the showroom. AD PRO Senior Editor Mel Studach delivered opening remarks paying homage to company founder Paul Maitland Smith, who passed away earlier this fall at age 90. Attendees explored the showroom's four floors, including lower-level displays of new collections such as Voyager, Greenwich, and Heritage, the latter of which reintroduces archival Maitland Smith designs with refreshed proportions. Earlier this summer, the furniture maker opened a 40,000-square-foot flagship showroom in Manhasset, New York, featuring over 6,000 SKUs and highlighting the company's workshop artisan capabilities. Departing guests received a polished brass miniature replica of the signature Pentreath chair cast as a keychain."
     },
     {
       "id": "8b17140e66d39923f799",
