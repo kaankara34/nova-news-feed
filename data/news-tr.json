@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-11-15T03:30:03.783Z",
+  "generatedAt": "2026-11-16T03:35:45.815Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -82,18 +82,36 @@
       "category": "Architecture & Design",
       "source": "Architectural Record",
       "sourceDomain": "architecturalrecord.com",
-      "publishedAt": "2026-11-14T01:03:14.000Z",
+      "publishedAt": "2026-11-15T01:38:28.000Z",
       "url": "https://www.architecturalrecord.com/articles/18524-best-building-envelope-and-cladding-products-of-2026",
       "image": "https://www.architecturalrecord.com/ext/resources/Issues/2026/11-November/2611-record-products-rbe-collage.jpg?height=635&t=1794590108&width=1200",
       "originalTitle": "Best Building Envelope & Cladding Products of 2026 - Architectural Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 95,
+      "brandFit": 90,
+      "title": "2026 Yılının Öne Çkan Yapı Kabuğu ve Cephe Ürünleri",
+      "excerpt": "Mimari yayın organı Architectural Record, 2026 yılının en başarılı yapı kabuğu ve cephe ürünlerini derledi. Seçkide yenilikçi yalıtım sistemleri, ahşap kaplamalar ve gölgelik çözümleri yer alıyor.",
+      "content": "Mimarlık sektörünün önde gelen yayınlarından biri, 2026 yılının en başarılı yapı kabuğu ve cephe ürünlerini duyurdu. Seçkide yer alan ürünler arasında, Arktura'nın dış cephelere uyarlanan delikli alüminyum paneli ve ısı yalıtımı sağlayan ayarlanabilir fiber takviyeli polimer braket sistemi dikkat çekiyor. Sürdürülebilir şekilde tedarik edilen Japon sediri kaplamaları ile kereste alternatifleri de malzeme çeşitliliğine katkı sağlıyor. Kingspan firmasının yüksek ısıl performans sunan elyafsız fenolik yalıtım serisi ve Carlisle SynTech markasının geri dönüştürülmüş içerikli çatı yalıtım levhası teknik çözümler arasında öne çıkıyor. BŌK Modern ise pencere flanşına doğrudan monte edilen braketsiz güneş kırıcı sistemleriyle dış cephe uygulamalarına pratiklik kazandırıyor. Heintges firmasından Jamison Guest, yeni yüzey bitişlerinin mimarlara zengin bir renk ve doku paleti sunduğunu belirtiyor. Bu ürünler, sürdürülebilirlik odaklı projelerde ve yüksek performanslı yapı kabuğu tasarımlarında mimarlara yeni teknik imkanlar sağlamayı hedefliyor."
+    },
+    {
+      "id": "49a3dd2249b01b86949b",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-11-13T19:10:47.000Z",
+      "url": "https://www.designboom.com/architecture/kengo-kuma-circular-thatched-house-timber-earth-japan/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/kengo-kuma-kagaku-no-sato-main-house-project-japan-designboom-FB.jpg",
+      "originalTitle": "kengo kuma builds a circular thatched house from local timber and earth in japan - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 92,
-      "brandFit": 85,
-      "title": "2026 Yılının Öne Çıkan Cephe ve Kaplama Ürünleri",
-      "excerpt": "Mimari alanda 2026 yılının en iyi cephe ve kaplama ürünleri sıralandı. Seçkide ısı yalıtımı, yenilikçi ahşap yüzeyler, güneş kırıcı sistemler ve dayanıklı paneller yer alıyor.",
-      "content": "Mimari Tasarım alanında 2026 yılının en iyi yapı kabuğu ve cephe ürünleri duyuruldu. Seçkide yer alan Arktura’nın Vapor koleksiyonuna ait delikli alüminyum paneller, iç mekanlar, cepheler ve saçaklar arasında süreklilik sağlarken dört farklı boyutta ve altmıştan fazla kaplama seçeneğiyle sunuluyor. Havalandırmalı yağmur perdesi cepheler için geliştirilen exoTHERM ise sürekli yalıtımlı, ayarlanabilir fiber takviyeli polimer bir braket olarak düşük iletkenliğiyle öne çıkıyor. Nakamoto Forestry tarafından sunulan CVG Sugi, sürdürülebilir şekilde hasat edilen Japon sedir kaplamasıyla dikkat çekerken, Sicaro markalı radyata çamı planklar fabrikada ön yağlanmış olarak geliyor ve 55 yıllık bir garanti sunuyor. Kingspan’ın fiber içermeyen termoset fenolik yalıtım sistemi Kooltherm K100 Serisi, inceden kalın yapı elemanlarına kadar yüksek ısıl performans sağlamak üzere tasarlandı. Carlisle SynTech üretimi ThermaThin çatı yalıtım levhası ise yüzde 34'e varan geri dönüştürülmüş içerik barındırıyor. BŌK Modern tasarımı olan Simple Mount Sunshades, doğrudan pencere flanşı dışına monte edilen braketsiz gölgelikler olarak alüminyum veya hava koşullarına dayanıklı çelik seçenekleriyle projeye özel tasarlanabiliyor."
+      "technicalValue": 85,
+      "brandFit": 92,
+      "title": "Kengo Kuma, Japonya'da Geleneksel Malzemelerle Yuvarlak Saz Damlı Ev Tamamladı",
+      "excerpt": "Kengo Kuma and Associates, Ibaraki Prefektüründe yerel orman ürünleri ve toprak kullanarak 137 metrekarelik Kagaku no Sato Ana Evi'ni tamamladı. Yapı, 2026 Ahşap Tasarım Ödülleri'nde Teşvik Ödülü aldı.",
+      "content": "Kengo Kuma and Associates, Japonya'nın Ibaraki Prefektüründe Kagaku no Sato Main House projesini tamamladı. Tarım ve ormancılığın bir arada bulunduğu satoyama peyzajını yenileme projesinin merkezinde yer alan 137 metrekarelik ahşap yapı, 2026 Ahşap Tasarım Ödülleri'nde Jüri Başkanlığı Teşvik Ödülü'ne layık görüldü. Tasarımın en belirgin unsuru, rüzgar akımlarına ve güneş ışığına yanıt veren asimetrik eğriye sahip devasa saz damı oldu. Çatının iskeletini, orman seyreltme çalışmalarından elde edilen ve dijital taramayla şekillendirilen 28 adet ahşap kütük oluşturuyor. Yapım sürecinde pirinç samanı, kamış ve otlardan oluşan yaklaşık 5000 demet kullanıldı. İç mekan ile çevreyi birbirine bağlayan zeminler, binanın önündeki tarladan toplanan toprağın sıkıştırılmasıyla elde edilen tataki tekniğiyle yapıldı. Duvarlarda ayrıca Ibaraki Prefektüründe geleneksel yöntemlerle üretilen washi kağıdı hurma taneni ile renklendirilerek kullanıldı. Çatının en yüksek noktasında yer alan ve bitkilerle kaplanan shibamune adı verilen ot örtülü mahya, yapının mevsimsel döngülere uyum sağlamasına imkan tanıyor. Proje, geleneksel zanaat ile dijital teknolojiyi bir araya getiren özgün bir mimari yaklaşım sunuyor."
     },
     {
       "id": "a363c59b06ca2add840e",
@@ -124,12 +142,12 @@
       "originalTitle": "How Frieze became the latest step in Abu Dhabi's cultural masterplan - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 70,
+      "editorialScore": 82,
+      "technicalValue": 75,
       "brandFit": 85,
-      "title": "Abu Dabi Kültür Planının Yeni Adımı Olarak Frieze Fuarı Başlıyor",
-      "excerpt": "Bölgesel sanatçıları desteklemeyi ve şehriküresel bir merkez haline getirmeyi amaçlayan ilk Frieze Abu Dabi fuarı, Saadiyat Adası'ndaki Manarat Al Saadiyat'ta kapılarını açıyor.",
-      "content": "Birlikte iki on yılı aşkın süredir devam eden kültürel kalkınma hamlelerinin ardından, Frieze'in Orta Doğu'daki ilk fuarı Abu Dabi'de düzenleniyor. Abu Dabi Kültür ve Turizm Departmanı ortaklığıyla hayata geçirilen Frieze Abu Dhabi, 19-22 Kasım tarihleri arasında Manarat Al Saadiyat'ta gerçekleştiriliyor. Abu Dabi'deki sanat fuarı, 2007 yılında ArtParis Abu Dhabi adıyla başlamış, daha sonra Abu Dabi Art adını alarak Manarat Al Saadiyat'a taşınmıştı. Fuarın yönü zaman içinde Batılı galerilerin ağırlıkta olduğu bir yapıdan Arap bölgesine ve Küresel Güney'e yöneldi. Bölgedeki galerilerin istikrarlı çabaları sayesinde Arap dünyasından sanat eserleri uluslararası alanda daha fazla tanınırlık kazanmaya başladı. Dyala Nusseibeh'in yönettiği fuar, yerel ve bölgesel pazarı küresel pazarla daha iyi entegre etmeyi hedefliyor. Etkinlik, Abu Dabi'nin son dönemde açılan müzeleri ve Guggenheim Abu Dhabi gibi projeleri içeren geniş kültürel planının bir parçasını oluşturuyor. Frieze'in ana şirketi Mari'nin yatırımcıları arasında Abu Dabi egemen servet fonu Mubadala da yer alıyor. Fuar, bölgedeki sanatsal görünürlüğü artırmanın yanı sıra Abu Dabi'nin küresel elitler için bir cazibe merkezi olma konumunu güçlendirmeyi amaçlıyor."
+      "title": "Frieze Abu Dhabi, Emirlik Kültür Stratejisinin Yeni Adımı Olarak Başlıyor",
+      "excerpt": "Abu Dabi Kültür ve Turizm Departmanı ortaklığıyla düzenlenen ilk Frieze Abu Dabi fuarı, bölge sanatını uluslararası platforma taşımayı ve şehri küresel bir kültür merkezi haline getirmeyi hedefliyor.",
+      "content": "Abu Dabi'deki Manarat Al Saadiyat kültür merkezinde düzenlenen ilk Frieze Abu Dabi fuarı, kasım ayında kapılarını açıyor. Abu Dabi Art fuarının yerini alan bu etkinlik, Abu Dabi Kültür ve Turizm Departmanı ile uluslararası fuar organizatörü Frieze arasındaki bir ortaklık olarak hayata geçirildi. Abu Dabi'nin son on yılda sanat alanında kaydettiği gelişmeleri takip eden bu yeni ortaklık, bölgedeki sanatçılara uluslararası görünürlük kazandırmayı ve yerel pazarı küresel pazarla entegre etmeyi amaçlıyor. 2025 verilerine göre BAE, Orta El ve Kuzey Afrika sanat alıcılarının yüzde 45'ini oluştururken, fuar yönetimi bu tabanı genişletmeyi hedefliyor. Saadiyat Kültür Bölgesi'nde yakın zamanda açılan müzelerin yanı sıra, 11 Aralık'ta kapılarını açması planlanan Guggenheim Abu Dhabi de sahadaki kültürel altyapıyı destekliyor. Frieze'in ana şirketi Mari'nin arkasında, Abu Dabi'nin egemen varlık fonu Mubadala ve Silver Lake gibi yatırım firmalarının uzun vadeli finansal iş birlikleri yer alıyor. Frieze Abu Dhabi, bölgedeki galeri ve sanatçıların uluslararası alanda tanınırlığını artırmayı ve Batılı galerilere yeni koleksiyonerler kazandırmayı amaçlayan bir etkinlik olarak kurgulandı."
     },
     {
       "id": "530d11f8d5636d531152",
@@ -145,9 +163,9 @@
       "editorialScore": 85,
       "technicalValue": 78,
       "brandFit": 90,
-      "title": "Kengo Kuma'nın Mimari Anlayışı: Geleneksel Estetik ve Doğal Malzemeler",
-      "excerpt": "Japon mimar Kengo Kuma, projelerinde doğal malzemeleri, insan ölçeğini ve çevreyle uyumu ön planda tutan bir tasarım felsefesi benimsiyor.",
-      "content": "Dünyaca tanınan Japon mimar Kengo Kuma, çocukluğunda Tokyo yakınlarında ahşap bir evde büyümesinden ve Kenzo Tange'nin 1964 Tokyo Olimpiyatları için tasarladığı yapısından etkilendi. Kuma ve ekibi, projelerinde ahşap, bambu, kağıt ve taş gibi doğal malzemeleri kullanarak yapının çevreyle bütünleşmesini hedefliyor. Mimarlık anlayışında, yapının çevresine hakim olmak yerine ona uyum sağlaması gerektiğini savunan anti-nesne ve kaybolan mimari kavramları öne çıkıyor. Kuma'nın Tokyo'daki Nezu Müzesi, İskoçya'daki V&A Dundee ve Aichi'deki GC Prostho Müzesi Araştırma Merkezi gibi birçok farklı ülkede ve Japonya genelinde dikkat çeken yapıları bulunuyor. Tasarımlarında geleneksel Japon zanaatkarlığına, ritmik detaylara ve ışık oyunlarına yer veren stüdyo, Tokyo, Paris, Şanghay, Pekin ve Seoul'deki ofisleriyle çalışmalarını sürdürüyor. Sanatçının eserleri arasında özel konutlar, müzeler, kamusal alanlar ve oteller yer alıyor."
+      "title": "Kengo Kuma'nın Geleneksel Estetik ve Doğayla Şekillenen Mimari Anlayışı",
+      "excerpt": "Dünyaca ünlü Japon mimar Kengo Kuma, projelerinde ahşap, taş ve kağıt gibi doğal malzemeleri kullanarak doğayla bütünleşen, minimalist ve insan ölçeğinde mekanlar tasarlıyor.",
+      "content": "Dünyaca ünlü Japon mimar Kengo Kuma, geleneksel Japon estetiğini modern ve zanaatkarlığa dayalı bir yaklaşımla birleştiriyor. Çocukluğunda dedesinin ahşap evinde geçen yıllarından ve Kenzo Tange'nin Yoyogi Ulusal Spor Salonu'ndan etkilenen Kuma, Tokyo Üniversitesi'nde eğitim aldı ve Columbia Üniversitesi'nde misafir araştırmacı olarak bulundu. Kengo Kuma & Associates stüdyosunu kuran mimar, yapılarda tahta, bambu, kağıt ve taş gibi doğal malzemelere odaklanıyor. Tasarımlarında yapının çevresiyle bütünleşmesini savunan mimar, bu yaklaşımı anti-object ve makeru kenchiku kavramlarıyla ifade ediyor. Kuma, mimarinin çevreye hakim olmaktan ziyade peyzajla uyum sağlaması gerektiğini savunuyor. V&A Dundee, Nezu Müzesi, Japan National Stadium ve Great Bamboo Wall projelerinde ahşap latalar, örgü sistemleri ve katmanlı yapılar ön plana çıkıyor. Son dönemde Capella Kyoto oteli ve Kannabiyama Gözlemevi gibi projeleri hayata geçiren stüdyo, Tokyo, Paris, Shanghai, Beijing ve Seoul ofisleriyle çalışmalarını sürdürüyor."
     },
     {
       "id": "3aed6042ec2d061159fd",
@@ -160,12 +178,12 @@
       "originalTitle": "AI helps conservators uncover lost details in William Merritt Chase painting - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 88,
-      "title": "Yapay Zeka, William Merritt Chase Tablosunun Kayıp Detaylarını Ortaya Çıkardı",
-      "excerpt": "New York'taki Parrish Art Museum koleksiyonunda yer alan William Merritt Chase'in A Comfortable Corner adlı tablosu, yapay zeka destekli bir restorasyon sürecinden geçti. Eser, 14 Kasım - 21 Mart 2027 tarihleri arasında sergilenecek.",
-      "content": "New York'taki Parrish Art Museum koleksiyonundaki William Merritt Chase'e ait yaklaşık 1888 tarihli A Comfortable Corner tablosu, yapay zekanın yardımıyla restore edildi. Eser, 14 Kasım - 21 Mart 2027 tarihleri arasında müzedeki yeni sergide izleyiciyle buluşacak. Tablo, geçmişte özellikle 1960'lardaki müdahaleler nedeniyle kalın bir astarlama, rötuş ve düzensiz vernikler gibi değişikliklere uğramıştı. Modern Art Conservation stüdyosundan conservator Suzanne Siano ve ekibi, tablonun sergiye hazırlanması için çalışırken 1960'lardaki restorasyondan öncesine ait siyah-beyaz bir fotoğraftan yararlandı. Tarihi fotoğraf ile renkli bir görüntüyü birleştiren yapay zeka araçları, iki görsel arasındaki farklılıkları gösteren bir kompozit oluşturulmasında kullanıldı. Süreçte yapay zekanın hızından faydalanılırken, tablonun solmuş imzası ve kompozisyondaki kayıp detaylar tespit edildi. Siano, yapay zekanın araştırmalarda değerli bir araç olduğunu, ancak nihai koruma kararlarının uzmanlar tarafından ultraviyole görüntüleme, malzeme bilgisi ve sanat tarihi eşliğinde verildiğini vurguladı."
+      "editorialScore": 82,
+      "technicalValue": 70,
+      "brandFit": 85,
+      "title": "Yapay Zeka William Merritt Chase Tablosundaki Kayıp Detayları Ortaya Çıkardı",
+      "excerpt": "New York'taki Parrish Art Museum'da sergilenecek olan William Merritt Chase'in 1888 tarihli tablosu, yapay zeka destekli bir restorasyon sürecinden geçti. Çalışma, eserin geçmiş müdahalelerini ve kayıp kompozisyon detaylarını gün yüzüne çıkardı.",
+      "content": "William Merritt Chase'in 1888 civarında yaptığı A Comfortable Corner adlı tablo, New York'taki Parrish Art Museum'da düzenlenecek sergi öncesinde Modern Art Conservation ekibi tarafından restore edildi. Restorasyon sürecinde, geçmişteki müdahalelerin yüzeyi ve kompozisyonu nasıl değiştirdiğini anlamak için yapay zekadan yararlanıldı. 1960'lardaki önceki onarımlar sırasında tablonun boyutunun küçültüldüğü, bazı detayların kaybolduğu ve imzanın üzerinin örtüldüğü tarihi bir fotoğraf sayesinde tespit edildi. Yapay zeka, siyah-beyaz tarihi fotoğraf ile renkli güncel görseli hızlı bir şekilde birleştirerek uzmanların farklılıkları incelemesine olanak sağlayan bir kompozit görüntü oluşturdu. Bank of America desteğiyle yürütülen projede konservatör Suzanne Siano, yapay zekanın araştırmalarda hız kazandıran faydalı bir araç olduğunu, ancak nihai kararların ultraviyole görüntüleme, malzeme bilgisi ve titiz bir manuel inceleme birleşimiyle insanlar tarafından alındığını vurguladı. Restore edilen eser, 14 Kasım - 21 Mart 2027 tarihleri arasında müzede sergilenecek."
     },
     {
       "id": "d5e6041020d06af09932",
@@ -178,12 +196,12 @@
       "originalTitle": "How Does an Artist Know When She’s Done? A Major Marisa Merz Retrospective Turns the Question on Its Head - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 60,
-      "brandFit": 85,
-      "title": "Marisa Merz’in Doğumunun Yüzüncü Yılında Turin’de Kapsamlı Retrospektif Sergileniyor",
-      "excerpt": "İtalyan sanatçı Marisa Merz’in doğumunun yüzüncü yılı vesilesiyle Turin’deki üç kurumda kapsamlı bir retrospektif sergi düzenleniyor. Sergiler, sanatçının elli yılı aşkın süreyi kapsayan eserlerini ve kaçamak sanatsal duruşunu bir araya getiriyor.",
-      "content": "İtalyan sanatçı Marisa Merz’in doğumunun yüzüncü yılı nedeniyle Turin’deki üç farklı kurumda La danza delle ore başlıklı geniş kapsamlı bir retrospektif sergi açıldı. Arte Povera hareketinin tek kadın üyesi olarak bilinen Merz, geleneksel olmayan malzemeleri ve ev işçiliğini eserlerine dahil etmesiyle tanınıyor. Galleria d’Arte Moderna e Contemporanea Torino stüdyo ile ev arasındaki ilişkiyi öne çıkarırken, Fondazione Merz malzeme denemelerini, Castello di Rivoli ise mekânla kurulan metafiziksel bağı inceliyor. Sergiler kronolojik bir sırayı takip etmiyor; çünkü sanatçının biyografisi ve eserlerinin tarihlendirilmesi büyük ölçüde gizemini koruyor. Turin’de doğan sanatçı, Fiat’ta çalışan bir babanın kızı olarak dünyaya geldi ve kariyeri boyunca eserlerini tamamlanmış kabul etmekten kaçındı. 1966 tarihli The Living Sculpture ve 1970'lerden kalma pişmemiş kil Testine serisi gibi çalışmaları, zaman içinde değişen geçici niteliklerini koruyor. Retrospektif kapsamında ayrıca Leonor Antunes, Thea Djordjadze, Miriam Cahn gibi çağdaş kadın sanatçıların eserleri Merz ile diyalog kuracak şekilde sergileniyor. Tacita Dean ise sanatçının dairesinde ve stüdyosunda çektiği 16 mm film ve fotoğraflarla sergiye katkıda bulundu. Eleştirmen Germano Celant'ın belirttiği gibi, Merz'in sanatı tanımlandığı anda kaçan bir yapı sergiliyor."
+      "editorialScore": 85,
+      "technicalValue": 50,
+      "brandFit": 90,
+      "title": "Torino'da Marisa Merz'in Yaratıcı Dünyasına Kapsamlı Bir Bakış",
+      "excerpt": "İtalyan sanatçı Marisa Merz'in doğumunun yüzüncü yılı vesilesiyle hazırlanan kapsamlı retrospektif sergi, Torino'daki üç farklı kurumda sanatçının kırk yılı aşkın üretimini izleyicilerle buluşturuyor.",
+      "content": "İtalyan sanatçı Marisa Merz'in doğumunun yüzüncü yılı nedeniyle Torino'da üç farklı kurumda geniş kapsamlı bir retrospektif sergi düzenlendi. \"Marisa Merz: La danza delle ore (Saatlerin Dansı)\" adı verilen sergi, sanatçının elli yılı aşkın süredir devam eden üretimini izleyicilerle buluşturuyor. Galleria d’Arte Moderna e Contemporanea Torino stüdyo ile ev arasındaki ilişkiye odaklanırken, Fondazione Merz malzeme denemelerini, Castello di Rivoli ise mekânla kurulan metafizik bağı ele alıyor. Sanatçının biyografisindeki gizem, kronolojik olmayan sergi kurgusuna da yansıyor. 1926 yılında Torino'da doğan ve Arte Povera akımının tek kadın üyesi olan Merz, geleneksel olmayan malzemeler kullanarak ev içi emeği ve maddeselliği eserlerine taşıdı. İlk ve en bilinen enstalasyonu olan 1966 tarihli The Living Sculpture (Yaşayan Heykel) gibi eserlerinde tamamlanmamışlık hissi öne çıkıyor. 1970'lerden itibaren kil, alüminyum, parafin ve kağıt gibi malzemelerle çalışan sanatçının sergilenen yapıtlarında, stüdyosundan kalan notlar ve Post-it'ler de yer alıyor. Sergide ayrıca Tacita Dean'in sanatçının evinde ve stüdyosunda çektiği 16 mm'lik film diptiği ile Leonor Antunes, Thea Djordjadze ve Miriam Cahn gibi çağdaş kadın sanatçıların yapıtları da izleyiciye sunuluyor."
     },
     {
       "id": "3ebfdf9863dc62f28984",
@@ -204,6 +222,24 @@
       "content": "Suudi Arabistan'ın başkenti Riyad'da hayata geçirilmesi planlanan RIYMAR Towers projesi için düzenlene uluslararası mimari yarışmanın sonucunda Alman mimarlık ofisi JSWD'nin konsepti seçildi. King Fahd Yolu ile Olaya Caddesi'nin kesişim yakınında, Riyadh Gallery kompleksinin bitişiğinde konumlanan proje; konut, otel, ofis, perakende ve eğlence fonksiyonlarını barındıran karma kullanımlı bir yapı kompleksi olarak tasarlandı. Bu girişim, Suudi Arabistan'ın turizm, kültürel gelişim ve konut sahipliğini artırma hedeflerini içeren Vizyon 2030 programı çerçevesinde konumlandırılıyor. JSWD'nin kazanan konsept tasarımı, Tuğvayk Dağları'nın jeolojik oluşumlarından ve Diriyah'ın tarihi kentsel dokusundan esinleniyor. Tasarım, kaya oluşumlarını andıran dikey formlu hacimleri ve farklı seviyelerde yer alan peyzajlı terasları bir araya getiriyor. Davet usulüyle gerçekleştirilen yarışmanın finalinde BAE'den Aedas ve AtkinsRéalis, Almanya'dan JSWD, İspanya'dan Mesura ve İngiltere'den ZHA yer aldı. Projenin danışman ekibinde peyzaj tasarımı için LAND, iç mimari için NAME Architecture, statik mühendisliği için schlaich bergermann partner ve mekanik-elektrik mühendisliği için Buro Happold bulunuyor. Projenin alan büyüklüğü, bina yükseklikleri ve inşaat takvimine ilişkin ayrıntılar henüz açıklanmadı."
     },
     {
+      "id": "a1e699de0f42cd9549a7",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-11-12T20:05:34.000Z",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/fragonard-hosts-centenary-birthday-exhibition-paris-mint-1239413451/",
+      "image": "https://wwd.com/wp-content/uploads/2026/11/37_100-ans-de-collections-de-savoir-faire.jpg?crop=0px%2C574px%2C8640px%2C4848px&resize=1000%2C563",
+      "originalTitle": "Fragonard Hosts Centenary Birthday Exhibition at the Paris Mint - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 88,
+      "technicalValue": 75,
+      "brandFit": 86,
+      "title": "Fragonard, Paris Darphanesi'nde Yüzüncü Yıl Sergisi Düzenliyor",
+      "excerpt": "Grasse merkezli koku ve yaşam tarzı markası Fragonard, Paris Darphanesi'nde 250'den fazla eser ve objenin yer aldığı yüzüncü yıl sergisini halka açıyor.",
+      "content": "Fransa'nın Grasse kentinde kurulan koku ve yaşam tarzı markası Fragonard, yüzüncü yılını Paris Darphanesi'nde düzenlenen kapsamlı bir sergiyle kutluyor. \"Fragonard: 100 Yıllık Koleksiyonlar ve Zanaat\" adı verilen etkinlik, markanın miras koleksiyonundan derlenen 250'den fazla eser ve objeyi bir araya getiriyor. Sergi, 17 Ocak 2027 tarihine kadar ziyaretçilere açık kalacak. Şirket CEO'su Agnès Costa Webster, aile koleksiyonuna ait Grasse'daki tabloların ilk kez Paris'e getirildiğini belirtti. 18. yüzyıl sarayı niteliğindeki Hôtel de la Monnaie'de kurulan sergi; tablolar, parfüm şişeleri, kıyafetler, gümüş eşyalar ve çeşitli kişisel bakım aksesuarlarını kapsıyor. Etkinliğin senografisi Nathalie Crinière tarafından tasarlanırken, sergilenen kokular için Givaudan parfümörü Daniela Andrier 18. yüzyıl reçetelerini yeniden yorumladı. Ziyaretçiler ayrıca sergi alanındaki butikte özel ürünleri inceleyebilir ve rezervasyonla koku yapımı atölyelerine katılabilirler."
+    },
+    {
       "id": "2a139649215efdc3e68f",
       "category": "Construction",
       "source": "Engineering News-Record",
@@ -214,12 +250,12 @@
       "originalTitle": "Eight Dead, 18 Injured in Brooklyn Building Collapse Next to Construction Site - Engineering News-Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 40,
-      "technicalValue": 50,
-      "brandFit": 30,
-      "title": "Brooklyn'de İnşaat Alanına Çöken Bina Sonucu 8 Kişi Hayatını Kaybetti",
-      "excerpt": "New York'un Brooklyn ilçesinde bir inşaat sahasına bitişik binanın çökmesi sonucu sekiz kişi yaşamını yitirdi, 18 kişi yaralandı. Olayla ilgili resmi incelemeler başlatıldı.",
-      "content": "New York'un Brooklyn bölgesinde 11 Kasım tarihinde meydana gelen olayda, üç katlı tarihi bir bina yan taraftaki kazı alanına çöktü. Kazada iki çocuk ve iki inşaat işçisinin de aralarında bulunduğu sekiz kişi hayatını kaybederken, 18 kişi yaralandı. İtfaiye ekipleri arama kurtarma çalışmalarını tamamladı. Belediye Başkanı Zohran Mamdani, projeyle bağlantılı şirketlerin yaklaşık 100 şantiyesinde güvenlik denetimleri yapılması talimatını verdi. New York Başsavcısı Letitia James, Binalar Departmanı'nın tam kapsamlı bir soruşturma yürüteceğini, Brooklyn Bölge Savcısı Eric Gonzalez'in ise ayrı bir soruşturma başlattığını açıkladı. Proje için hazırlanan jeoteknik raporlar, bitişik binaların temel güçlendirmesine ihtiyaç duyduğunu ve kazı çalışmalarından olumsuz etkilenebileceğini belirtmişti. Yapılan ön incelemelerde binanın dış cephelerinde çatlaklar olduğu belgelenmişti. Onaylanan destek planlarında optik ölçümler ve titreşim izleme sistemleri öngörülmüştü. Ancak çökmeden hemen önce bu önlemlerin sahada tam olarak uygulanıp uygulanmadığı ve kazının kesin nedeni yürütülen soruşturmalar sonucunda netlik kazanacak. Şantiye daha önce de denetim geçirdi."
+      "editorialScore": 30,
+      "technicalValue": 40,
+      "brandFit": 20,
+      "title": "Brooklyn'de Bina Çökmesi Sonucu 8 Kişi Hayatını Kaybetti",
+      "excerpt": "New York'un Brooklyn ilçesinde inşaat sahasının yanındaki bir binanın çökmesi sonucu 8 kişi yaşamını yitirdi, 18 kişi yaralandı. Olayla ilgili resmi soruşturmalar başlatıldı.",
+      "content": "Brooklyn'deki Flatbush Caddesi üzerinde bulunan 96 yıllık üç katlı bina, yeni bir proje için kazı çalışması yapılan bitişik inşaat sahasına çöktü. Kazada aralarında çocukların ve inşaat işçilerinin de bulunduğu 8 kişi hayatını kaybetti, 18 kişi yaralandı. İtfaiye ekipleri arama kurtarma çalışmalarını tamamladı. Proje jeoteknik raporunda, bitişik binaların temel altı yalıtımı gerektirdiği ve kazı titreşimlerinin yapıları olumsuz etkileyebileceği uyarısında bulunulmuştu. Mart ayında yapılan ön inşaat incelemesinde binanın kuzey cephesi zayıf olarak derecelendirilmiş, diğer cephelerde ise çatlaklar tespit edilmişti. Onaylı iksa projelerinde belirli eşiklere sahip izleme sistemleri öngörülmüştü. Ancak çökmeden önceki son hareket ve titreşim okumalarının ne olduğu ya da binanın temel altı yalıtımının yapılıp yapılmadığı mevcut kayıtlardan anlaşılamadı. Belediye Başkanı Zohran Mamdani, ilgili şirketlerin yaklaşık 100 şantiyesinde güvenlik denetimleri yapılmasını emretti. New York Başsavcısı Letitia James, Bina Departmanı'nın tam çaplı bir soruşturma yürüteceğini, Brooklyn Bölge Savcısı Eric Gonzalez'in de ayrı bir soruşturma başlattığını açıkladı. İnşaat sahasında daha önce yıkım aşamasında da durdurma emirleri verildiği kaydedildi."
     },
     {
       "id": "59cbcf2b3a22a5e15e0f",
@@ -232,12 +268,12 @@
       "originalTitle": "Designers’ Creative Freedom Unveiled at Molteni Museum Exhibit - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 92,
+      "editorialScore": 90,
       "technicalValue": 88,
       "brandFit": 95,
-      "title": "Molteni Müzesi Sergisi Tasarımcılara Yaratıcı Özgürlük Tanıyor",
-      "excerpt": "İtalya'daki Molteni Müzesi'nin yeni sergisi, tanınmış mimar ve tasarımcılara ticari kaygılardan uzak bir şekilde mevcut mobilya parçalarını yeniden yorumlama imkanı sunuyor.",
-      "content": "İtalya'nın Giussano kentindeki Molteni Müzesi, yaşayan tasarımcıların ticari ve mühendislik kaygıları olmaksızın özgün eserler ortaya koymasını amaçlayan yeni bir sergi başlattı. Sergide, Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA ve Patricia Urquiola gibi uluslararası alanda tanınan mimar ve tasarımcıların çalışmaları yer alıyor. İsrailli sanatçı Ron Gilad'ın öncülüğünde hayata geçirilen projede, mevcut mobilya parçaları ve mutfak tasarımları sanatsal bir bakış açısıyla yeniden ele alındı. Mimarlık ofisleri ve tasarımcılar, malzeme deneyleri yaparak geleneksel formları dönüştürdü. Örneğin, Herzog & de Meuron renkli ve şişme yastıklar kullanarak sandalyeleri yeniden tasarlarken, OMA ise masa koleksiyonlarını farklı bir estetik anlayışla yorumladı. Bir yıl boyunca müzede ziyarete açık kalacak serginin daha sonra uluslararası düzeyde farklı şehirleri ziyaret etmesi planlanıyor."
+      "title": "Molteni Müzesi Sergisi Tasarımcıların Yaratıcı Özgürlüğünü Sergiliyor",
+      "excerpt": "Molteni Müzesi'nin yeni sergisi, tasarımcılara ticari kaygılar olmadan benzersiz ve deneysel eserler üretme özgürlüğü tanıyor. Giussano'daki sergi bir yıl boyunca ziyaretçilere açık olacak.",
+      "content": "İtalya'nın Giussano kentindeki Molteni Kompleksi'nde açılan yeni müze sergisi, yaşayan tasarımcılara ticari ve mühendislik karmaşıklıklarını düşünmeden özgürce eser üretme imkanı sunuyor. İsrailli sanatçı Ron Gilad'ın öncülüğünde hayata geçirilen sergide, Molteni Group bünyesindeki markaların mevcut parçaları başlangıç noktası olarak kullanıldı. Sergide Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, AMDL Circle, Foster + Partners Industrial Design, Patricia Urquiola, Luca Meda ve Vincent Van Duysen gibi tanınmış isimlerin tasarımları yer alıyor. Herzog & de Meuron, özel basım sandalyelere şeker renkli şişme yastıklar ekleyerek geleneksel zanaatkarlığı oyuncu unsurlarla buluşturdu. Ron Gilad, Luca Meda'nın mutfak tasarımını dört musluklu şiirsel bir çeşmeye dönüştürürken, OMA ise Principles koleksiyonundaki masaları malzeme denemeleriyle sürreal bir yaklaşımla yeniden yorumladı. AMDL Circle stüdyosu da iş masası sistemini kırkayak formunu anımsatan vahşi kıvrımlarla yeniden hayata geçirdi. Molteni Group, bir yıl boyunca açık kalacak serginin ardından dünyanın farklı şehirlerinde de sergilenmesinin planlandığını bildirdi."
     },
     {
       "id": "77bb5e5994120b0e3fce",
@@ -366,24 +402,6 @@
       "content": "İtalyan moda evi Loro Piana, New York'taki The Brant Foundation'da 2025 Yılı Kaşmir Ödülleri'ni sahipleriyle buluşturdu. Etkinlikte 12.89 mikron inceliğe sahip lif ödüllendirilirken, şirketin köklü tarihini ve zanaatkârlığını konu alan \"Master of Cashmere\" sergisi de ziyaretçilere açıldı. 2015 yılında hayata geçirilen ödül programı, kaşmir lifi inceliğinin artırılmasına katkı sağladı. Şirket yöneticileri, ödüllerin İç Moğolistan'daki yetiştiricilerin emeklerini ve nesiller boyu aktarılan gelenekleri onurlandırmayı amaçladığını belirtti. On birinci kez düzenlenen organizasyonda, İç Moğolistan'dan üç çift kaşmir üreticisi ödüllendirildi. Birincilik ödülü 12.89 mikron çapında ve 135.8 kilogram yağlı kaşmira verildi. İkinci ödül 87.1 kilogram kaşmir için 13.01 mikronda, üçüncü ödül ise 116 kilogram kaşmir için 13.04 mikronda gerçekleşti. Mikron, bir milimetrenin binde birine eşit olan lif inceliği birimini ifade ediyor. Kıyaslama açısından bir insan saçı 70 mikron kalınlığında bulunuyor. Kazananlara her yıl üretilen lif miktarına göre finansal ödül ve kaşmir toplama sürecini simgeleyen gümüş tarak sunuluyor. Şirket yetkilileri ayrıca Alashan keçisinin korunmasını destekleyen selective breeding programı ve Sukhbaatar Eyaleti'ndeki bozkırları korumayı hedefleyen Resilient Threads girişimine dikkat çekti."
     },
     {
-      "id": "cd9620fa43cf17e0423e",
-      "category": "Architecture & Design",
-      "source": "Wallpaper*",
-      "sourceDomain": "wallpaper.com",
-      "publishedAt": "2026-11-11T17:00:00.000Z",
-      "url": "https://www.wallpaper.com/design-interiors/bjeke-casteleyn-home-belgium-interior-design",
-      "image": "https://cdn.mos.cms.futurecdn.net/23H3aTbpc9cHNzkj3PY85B-1920-80.jpg",
-      "originalTitle": "This Belgian designer’s home is a ‘winterised’ take on California modernism - Wallpaper*",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 75,
-      "brandFit": 95,
-      "title": "Belçikalı Tasarımcı Kaliforniya Modernizmini Kırsal Evine Uyarladı",
-      "excerpt": "Belçikalı iç mimar Bieke Casteleyn, kırsal alandaki aile konutunu tasarlarken Kaliforniya'nın orta yüzyıl modernizmini ülkenin serin iklimine uyarladı.",
-      "content": "Belçika'nın düzlık kırsal bölgesinde yer alan konut, Kaliforniya modernizminin kış şartlarına uyarlanmış bir yorumu olarak öne çıkıyor. Tek bir katta kurulan evde sıcak ahşap tonları doğal ışıkla buluşurken, dış cephede manzara ile uyum sağlaması için gri-yeşil tonlarında taşlar tercih edildi. Düz çatısı ise yeşil çevreyle bütünleşmesi amacıyla çimle kaplandı. Projede yaşam alanları, peyzaja açılan uzun bir koridorla özel kanattan ayrılıyor. Tasarımcı, geniş cam cephelerin getirdiği açıklık hissini sıcak tonlar ve dokulu malzemelerle dengeledi. İç mekandaki eşyaların yerleşimi klasik bir düzenden ziyade, koleksiyon parçaları ve aileden kalan antika objelerin etrafında şekillendirildi. Evin farklı noktalarında çatıdan uzanan bir ağaç için bırakılan dairesel boşluklar ve gölet üzerindeki ahşap iskele gibi detaylar doğayla bağı güçlendiriyor."
-    },
-    {
       "id": "7e34ebdc972b8ec6f34a",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -420,24 +438,6 @@
       "content": "Art Basel Miami Beach, çağdaş sanatın önemli isimlerini ve yenilikçi sunumları bir araya getiren programıyla kapılarını açıyor. Bölgenin önde gelen sanat fuarı, modern başyapıtları ve yükselen yetenekleri aynı platformda buluşturuyor. Dijital dönemin sanatına ayrılan Zero 10 platformu, bugüne kadarki en geniş sunumu olan Generation sergisiyle geri dönüyor. Karen Archey ve Eli Scheinman tarafından küratörlüğü üstlenen sergi, 19 proje aracılığıyla dijital teknolojiler ile geleneksel sanat formları arasındaki bağlantıları inceliyor. Algoritmik sanat, sürükleyici ortamlar, resim, heykel ve tekstil gibi alanları kapsayan seçkide Sarah Meyohas, Jon Rafman ve Studio Drift gibi isimlerin eserleri yer alıyor. Refik Anadol'un Yawanawá topluluğuyla gerçekleştirdiği iş birliği, Amazon bölgesine ait sanat eserlerini, müziği ve hava durumu verilerini dijital görüntülere dönüştürüyor. Harm van den Dorpel'in çalışmaları ise tarihi geometrik çizimlerden ilham alıyor."
     },
     {
-      "id": "31906f68bca1961b3587",
-      "category": "Fashion & Luxury",
-      "source": "WWD",
-      "sourceDomain": "wwd.com",
-      "publishedAt": "2026-11-10T15:28:42.000Z",
-      "url": "https://wwd.com/home-design/home-decor/henge-tableware-glassware-home-fragrances-launch-1239408486/",
-      "image": "https://wwd.com/wp-content/uploads/2026/11/Henge_HomeCollection_04.jpeg?w=1000&h=563&crop=1",
-      "originalTitle": "Italian Design Firm Henge Expands Into Tableware, Fragrances - WWD",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "İtalyan Mobilya Tasarım Firması Henge Sofra ve Koku Pazarına Giriş Yaptı",
-      "excerpt": "Milano merkezli lüks mobilya firması Henge, doğal taş, cam ve metal malzemelerle tasarlanan ilk sofra, cam eşya ve ev kokusu koleksiyonunu tanıttı.",
-      "content": "İtalyan lüks mobilya üreticisi Henge, aydınlatma ve mobilya alanındaki ürün yelpazesini sofra takımları, cam eşyalar ve ev kokularını kapsayacak şekilde genişletti. Milano merkezli şirket, doğal doku ve renklerle şekillenen ilk ev koleksiyonunun taş, cam ve metal malzemelere dayandığını açıkladı. Koleksiyonda Ugo Cacciatori tasarımı Murano camı bardak ve karafların yanı sıra Yabu Pushelberg imzasını taşıyan gümüş ve altın dökümlü tepsiler yer alıyor. Fransızca rüya görmek anlamına gelen rêver kelimesinden türetilen Rever tabaklar ise Carrara'da Rouge Languedoc, Napoléon ve Gris Cévenol mermerlerinden el işçiliğiyle üretildi. Şirket ayrıca Milano'daki Via della Spiga showroom'unun adresine atıfta bulunan Henge Fragrance #34 ile ev kokuları kategorisine adım attı. Bergamot, limon ve yasemin notalarını frankincense, tütün ve deri ile harmanlayan bu koku serisi de koleksiyona eklendi. Benzer şekilde Molteni & C ve Cassina gibi diğer İtalyan tasarım firmaları da lüks ürün yelpazelerini daha küçük ölçekli objelerle genişletiyor."
-    },
-    {
       "id": "909a50f1a9622b350292",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -466,12 +466,12 @@
       "originalTitle": "Miami Beach Director and Mendes Wood DM founders on the fair's bold new changes - Art Basel",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
+      "editorialScore": 80,
+      "technicalValue": 45,
       "brandFit": 90,
-      "title": "Art Basel Miami Beach Yeni Düzenlemelerle 24. Yılına Hazırlanıyor",
-      "excerpt": "Yirmidördüncü yılını kutlayan Art Basel Miami Beach, galerilerin daha kolay gezilebilmesi ve katılımcılara odaklı bir ortam yaratılması amacıyla fuar alanında köklü değişikliklere gidiyor.",
-      "content": "Yirmidördüncü yılına yaklaşan Art Basel Miami Beach, galeri yerleşim düzeninde ve fuar planında önemli yenilikler yapmaya hazırlanıyor. Fuar Direktörü Bridget Finn, katılımcılardan gelen geri bildirimler doğrultusunda mavi çipli galerilerin tek bir alanda toplanmak yerine fuar geneline yayıldığını belirtti. Bu düzenlemenin temel amacı, koleksiyoncuların fuarı daha rahat gezmesini sağlamak ve her galeri sunumuna hak ettiği dikkati kazandırmak. Yeni konfigürasyon kapsamında plazalar beşten dörde düşürülerek daha simetrik bir yapı oluşturuldu ve geçiş yolları yeniden tasarlandı. Mendes Wood DM galeri kurucuları Matthew Wood ve Pedro Mendes ise Miami’nin Kuzey Amerika, Latin Amerika ve Karayipler arasındaki kültürel hareketliliği yansıtan benzersiz konumuna dikkat çekti. Fuar, Aralık 2026 tarihlerinde kapılarını açacak. Yönetim ekibi, başarıyı galerilerin ticari ve ilişkisel kazanımlarıyla ölçmeyi hedefliyor. Katılımcılar, uzun vadeli sürekliliğin ve yeni keşiflerin önemini vurgularken, hazırlık süreçlerinin aylar sürdüğünü ifade ediyor. Etkinlik, hem sanatsal keşiflere hem de kayda değer finansal işlemlere ev sahipliği yapmaya devam ediyor."
+      "title": "Art Basel Miami Beach 24. Yılı İçin Yeni Düzenlemelere Gidiyor",
+      "excerpt": "24. yılına yaklaşan Art Basel Miami Beach, daha odaklı bir galeri seçkisi ve sergi alanı planında büyük değişiklikler içeren yenilikler duyurdu. Fuar direktörü Bridget Finn ve galeri kurucuları değişikliklerin detaylarını paylaştı.",
+      "content": "Yirmi dördüncü yılını kutlayan Art Basel Miami Beach, sergi alanı yerleşiminde ve galeri dağılımında yenilikçi değişiklikler yapıyor. Fuar Direktörü Bridget Finn, katılımcı galerilerden gelen geri bildirimler doğrultusunda koleksiyonerlerin fuarı daha rahat gezinmesini ve galeri sunumlarının hak ettiği ilgiyi görmesini amaçladıklarını belirtti. Yeni konfigürasyon kapsamında beş plaza yerine dört plaza yer alırken, daha dengeli görüş hatları oluşturuldu. Mendes Wood DM kurucuları Matthew Wood ve Pedro Mendes, Miami'nin Kuzey Amerika, Latin Amerika ve Karayipler arasındaki kültürel hareketliliğin merkezinde yer aldığını vurguladı. Fuar, 4-6 Aralık 2026 tarihlerinde gerçekleştirilecek. Başarı kriteri olarak galerilerin başarısını ve yeni bağlantıların kurulmasını esas alan organizasyon, katılımcıların yeni koleksiyonerlerle buluşmasını hedefliyor. Fuarın başarısı katılımcı galerilerin ticari ve sanatsal etkileşimleriyle ölçülürken, uzun vadeli süreklilik ve keşif ruhu ön planda tutuluyor."
     },
     {
       "id": "b9588ea939ccb22dc975",

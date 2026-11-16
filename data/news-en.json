@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-11-15T03:30:03.783Z",
+  "generatedAt": "2026-11-16T03:35:45.815Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -82,18 +82,36 @@
       "category": "Architecture & Design",
       "source": "Architectural Record",
       "sourceDomain": "architecturalrecord.com",
-      "publishedAt": "2026-11-14T01:03:14.000Z",
+      "publishedAt": "2026-11-15T01:38:28.000Z",
       "url": "https://www.architecturalrecord.com/articles/18524-best-building-envelope-and-cladding-products-of-2026",
       "image": "https://www.architecturalrecord.com/ext/resources/Issues/2026/11-November/2611-record-products-rbe-collage.jpg?height=635&t=1794590108&width=1200",
       "originalTitle": "Best Building Envelope & Cladding Products of 2026 - Architectural Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 95,
+      "brandFit": 90,
+      "title": "Highlighting Notable Building Envelope and Cladding Products for 2026",
+      "excerpt": "Architectural Record has published its selection of the best building envelope and cladding products for 2026, featuring innovative insulation systems, timber options, and shading solutions.",
+      "content": "A prominent architecture publication has released its selection of standout building envelope and cladding products for 2026. The compilation features Arktura's perforated aluminum panel adapted for exterior applications and an adjustable fiber-reinforced polymer bracket system designed for ventilated rainscreen facades by exo-surfaces. Sustainable Japanese cedar cladding and fortified radiata pine planks add natural material alternatives with enhanced dimensional stability. Technical solutions also include Kingspan's fiber-free thermoset phenolic insulation series, offering high thermal performance in thinner assemblies, alongside Carlisle SynTech's polyiso roof insulation board containing recycled content. Additionally, BŌK Modern presents bracketless sunshades that attach directly outside window flanges to simplify installation. Jamison Guest, a principal at Heintges, notes that these newly available finishes provide architects with an expanded palette of colors and textures, supported by established service expectations across diverse project typologies."
+    },
+    {
+      "id": "49a3dd2249b01b86949b",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-11-13T19:10:47.000Z",
+      "url": "https://www.designboom.com/architecture/kengo-kuma-circular-thatched-house-timber-earth-japan/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/kengo-kuma-kagaku-no-sato-main-house-project-japan-designboom-FB.jpg",
+      "originalTitle": "kengo kuma builds a circular thatched house from local timber and earth in japan - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
       "editorialScore": 88,
-      "technicalValue": 92,
-      "brandFit": 85,
-      "title": "Highlighting the Best Building Envelope and Cladding Products for 2026",
-      "excerpt": "The top building envelope and cladding products for 2026 have been highlighted, featuring thermal insulation, innovative wood surfaces, sunshade systems, and durable panels.",
-      "content": "The top building envelope and cladding products for 2026 have been released. Arktura’s perforated aluminum panels extend its Vapor collection to exterior applications, offering multiple sizes and finishes with optional integrated lighting. For ventilated rainscreen facades, exoTHERM provides an adjustable fiber-reinforced polymer bracket with low thermal conductivity. Nakamoto Forestry’s CVG Sugi offers sustainably harvested Japanese cedar cladding with enhanced dimensional stability, while Sicaro fortified radiata pine planks arrive pre-oiled with a 55-year above-ground warranty. Kingspan’s Kooltherm K100 Series delivers high thermal performance in thinner assemblies using fiber-free thermoset phenolic insulation. Carlisle SynTech’s ThermaThin roof insulation board provides an R-value of 7 with up to 34% recycled content by weight. Additionally, BŌK Modern introduced Simple Mount Sunshades, a bracketless shade system that attaches outside the window flange using laser-cut architectural patterns in aluminum or weathering steel."
+      "technicalValue": 85,
+      "brandFit": 92,
+      "title": "Kengo Kuma Completes Circular Thatched House from Local Timber and Earth in Japan",
+      "excerpt": "Kengo Kuma and Associates has completed the 137-square-meter Kagaku no Sato Main House in Ibaraki Prefecture, utilizing local timber and compacted earth. The project received an Encouragement Award at the 2026 Wood Design Awards.",
+      "content": "Kengo Kuma and Associates has completed the Kagaku no Sato Main House in Ibaraki Prefecture, Japan. Serving as the centerpiece for a regional satoyama restoration initiative, the 137-square-meter wooden structure received the Encouragement Award at the 2026 Wood Design Awards. The building features an expansive thatched roof designed with an asymmetric curvature to respond to prevailing winds and sunlight. Twenty-eight timber logs, harvested through regional forest thinning and individually 3D-scanned, form the radial structural shell beneath the thatch. Approximately 5,000 bundles of rice straw, reeds, and grasses were installed by skilled workers to complete the continuous roof surface. Below the deep eaves, a continuous tataki floor made from compacted field earth connects the interior with the surrounding landscape. The walls incorporate local materials including washi paper treated with persimmon tannin to achieve rich brown tones. At the crest of the roof, a traditional grass-covered ridge known as a shibamune allows vegetation to grow and change with the seasons. The completed project successfully integrates historical rural building techniques with contemporary digital fabrication methods."
     },
     {
       "id": "a363c59b06ca2add840e",
@@ -124,12 +142,12 @@
       "originalTitle": "How Frieze became the latest step in Abu Dhabi's cultural masterplan - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 70,
+      "editorialScore": 82,
+      "technicalValue": 75,
       "brandFit": 85,
-      "title": "Frieze Fair Launches as the Latest Step in Abu Dhabi Cultural Masterplan",
-      "excerpt": "The inaugural Frieze Abu Dhabi fair opens at Manarat Al Saadiyat on Saadiyat Island, seeking to promote regional artists and position the city as a destination for international collectors.",
-      "content": "Building on over two decades of cultural development in the United Arab Emirates, Frieze is launching its first Middle East fair in Abu Dhabi. Running from November 19 to 22 at Manarat Al Saadiyat, the inaugural Frieze Abu Dhabi is held in partnership with Abu Dhabi's Department of Culture and Tourism. The emirate's art fair originated in 2007 as ArtParis Abu Dhabi before rebranding as Abu Dhabi Art and moving to Saadiyat Island. Over time, the focus shifted from heavy reliance on Western blue-chip galleries toward stronger representation of the Arab region and the Global South. Sustained efforts by regional galleries have increased the institutional backing and international recognition for art from the Arab world. Directed by Dyala Nusseibeh, the fair aims to integrate the regional market more closely into the global art network. The launch coincides with broader cultural developments in the emirate, including the forthcoming Guggenheim Abu Dhabi and other museums in the Saadiyat Cultural District. Frieze's parent company, Mari, maintains financial backing linked to Abu Dhabi through strategic investors such as the sovereign wealth fund Mubadala. The partnership aligns with Abu Dhabi's wider strategy to establish itself as a prominent destination for international cultural events and global elites."
+      "title": "Frieze Abu Dhabi Debuts as the Latest Step in the Emirate's Cultural Strategy",
+      "excerpt": "Organized in partnership with the Abu Dhabi Department of Culture and Tourism, the inaugural Frieze Abu Dhabi fair aims to elevate regional art globally and position the city as a cultural hub.",
+      "content": "The inaugural Frieze Abu Dhabi art fair opens this month at the Manarat Al Saadiyat cultural hub on Saadiyat Island, taking over from the long-running Abu Dhabi Art fair. Established as a partnership between Frieze and Abu Dhabi's Department of Culture and Tourism, the fair seeks to promote regional artists and better integrate the local market into the global art ecosystem. According to fair director Dyala Nusseibeh, the United Arab Emirates accounted for 45% of all Middle East and North African art buyers in 2025, with growing private collector numbers across the emirate. The fair arrives alongside recent museum openings in the Saadiyat Cultural District, leading up to the scheduled opening of the Guggenheim Abu Dhabi on December 11. Frieze operates under Mari, a live-events business backed by investments from Abu Dhabi's sovereign wealth fund Mubadala and Silver Lake. The event aims to provide greater international exposure for galleries and artists from the Arab world and South Asia, while granting Western galleries access to a new cohort of collectors in the region."
     },
     {
       "id": "530d11f8d5636d531152",
@@ -145,9 +163,9 @@
       "editorialScore": 85,
       "technicalValue": 78,
       "brandFit": 90,
-      "title": "Kengo Kuma's Architectural Vision: Traditional Aesthetics and Natural Materials",
-      "excerpt": "Japanese architect Kengo Kuma embraces a design philosophy that prioritizes natural materials, human scale, and environmental harmony across his projects.",
-      "content": "Globally recognized Japanese architect Kengo Kuma was influenced during his childhood by growing up in a traditional wooden house near Tokyo and seeing Kenzo Tange's structure for the 1964 Tokyo Olympics. Kuma and his studio utilize natural materials such as wood, bamboo, paper, and stone to integrate structures with their environments. His architectural philosophy centers on concepts like the anti-object and losing architecture, advocating that buildings should yield to their surroundings rather than dominate the landscape. Kuma's notable projects span Japan and international locations, including the Nezu Museum in Tokyo, V&A Dundee in Scotland, and the GC Prostho Museum Research Center in Aichi. His designs incorporate traditional Japanese craftsmanship, rhythmic joinery, and play of light, with his firm maintaining offices in Tokyo, Paris, Shanghai, Beijing, and Seoul. His extensive portfolio encompasses private residences, museums, public spaces, and hotels."
+      "title": "Kengo Kuma's Architectural Approach Shaped by Traditional Aesthetics and Nature",
+      "excerpt": "Globally celebrated Japanese architect Kengo Kuma designs minimalist, human-scale spaces that integrate with nature, utilizing natural materials such as wood, stone, and paper across his projects.",
+      "content": "Globally celebrated Japanese architect Kengo Kuma combines traditional Japanese aesthetics with a modern, crafted approach. Influenced by his childhood in a traditional wooden house and Kenzo Tange's Yoyogi National Gymnasium, Kuma studied at the University of Tokyo and later visited Columbia University. Establishing Kengo Kuma & Associates, the architect focuses on natural materials such as wood, bamboo, paper, and stone. Advocating that structures should dissolve into their settings rather than dominate them, Kuma outlines these principles through concepts like anti-object and makeru kenchiku. His notable projects, including V&A Dundee, Nezu Museum, Japan National Stadium, and the Great Bamboo Wall, feature rhythmic timber joinery, layered eaves, and light-filtering facades. With recent completions including the Capella Kyoto hotel and Kannabiyama Observatory, the prolific studio operates offices in Tokyo, Paris, Shanghai, Beijing, and Seoul."
     },
     {
       "id": "3aed6042ec2d061159fd",
@@ -160,12 +178,12 @@
       "originalTitle": "AI helps conservators uncover lost details in William Merritt Chase painting - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 88,
-      "title": "Artificial Intelligence Helps Uncover Lost Details in William Merritt Chase Painting",
-      "excerpt": "William Merritt Chase's A Comfortable Corner, part of the Parrish Art Museum collection in New York, underwent an AI-assisted restoration process. The newly restored work will be on display from November 14 to March 21, 2027.",
-      "content": "William Merritt Chase's painting A Comfortable Corner, created around 1888 and housed at the Parrish Art Museum in New York, has been restored with the assistance of artificial intelligence. The newly restored work will be exhibited from November 14 to March 21, 2027. Over the decades, the painting had undergone substantial alterations, particularly during a 1960 restoration that introduced a heavy lining, uneven varnishes, and inpainting. Conservator Suzanne Siano and her team at Modern Art Conservation utilized an early pre-1960s black-and-white photograph as a guide. By combining the historical photograph with a colour image, artificial intelligence helped generate a composite showing areas where the visuals diverged. While the technology provided speed and highlighted discrepancies such as a faint signature and missing compositional details, Siano emphasized that AI served as a research tool. Final conservation choices relied on magnified examination, ultraviolet imaging, and expert assessment by the team."
+      "editorialScore": 82,
+      "technicalValue": 70,
+      "brandFit": 85,
+      "title": "Artificial Intelligence Helps Conservators Uncover Lost Details in Chase Painting",
+      "excerpt": "A William Merritt Chase painting from 1888, destined for exhibition at the Parrish Art Museum in New York, underwent an AI-assisted restoration process that revealed past interventions and lost composition details.",
+      "content": "William Merritt Chase's painting A Comfortable Corner, created around 1888, was restored by Modern Art Conservation prior to an upcoming exhibition at the Parrish Art Museum in New York. Artificial intelligence was employed during the restoration to help determine how past interventions had altered the surface and composition. A historical photograph revealed that the painting had been reduced in size during 1960s repairs, losing compositional details and obscuring the signature. By combining the historical black-and-white image with a contemporary color photograph, AI generated a composite that helped the team pinpoint discrepancies. Supported by a Bank of America grant, conservator Suzanne Siano noted that while AI provided a valuable, rapid research aid, ultimate conservation decisions relied on ultraviolet imaging, material knowledge, and manual examination. The restored artwork goes on display at the museum from November 14 to March 21, 2027."
     },
     {
       "id": "d5e6041020d06af09932",
@@ -178,12 +196,12 @@
       "originalTitle": "How Does an Artist Know When She’s Done? A Major Marisa Merz Retrospective Turns the Question on Its Head - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 60,
-      "brandFit": 85,
-      "title": "A Major Turin Retrospective Marks the Centenary of Italian Artist Marisa Merz",
-      "excerpt": "A sprawling retrospective across three Turin institutions marks the centenary of Italian artist Marisa Merz, bringing together over five decades of her enigmatic and fugitive artistic practice.",
-      "content": "A sprawling retrospective titled La danza delle ore has opened across three institutions in Turin to mark the centenary of Italian artist Marisa Merz. Known as the sole female affiliate of the Arte Povera movement, Merz incorporated domestic labor and nontraditional media into her practice. The Galleria d’Arte Moderna e Contemporanea Torino highlights her superposition of studio and home, Fondazione Merz focuses on material experiments, and Castello di Rivoli explores her metaphysical engagement with space. The exhibitions do not follow a chronological itinerary due to the mysterious nature of her biography and her reluctance to date or title her works. Born in Turin to a father employed by Fiat, Merz struggled to lay her compositions to rest, encoding her belief that completion is tied to death. Works such as her sewn-aluminum Living Sculpture and unfired clay Testine series maintain a provisional, evolving quality. The exhibitions also stage encounters with contemporary women artists including Leonor Antunes, Thea Djordjadze, and Miriam Cahn. Tacita Dean contributed a 16 mm film and photographic series captured inside Merz's apartment and studio near the Porta Palazzo market. As critic Germano Celant observed, Merz's work continually eludes precise definition."
+      "editorialScore": 85,
+      "technicalValue": 50,
+      "brandFit": 90,
+      "title": "A Comprehensive Look at Marisa Merz's Creative World in Turin",
+      "excerpt": "Marking the centenary of Italian artist Marisa Merz's birth, a sweeping retrospective exhibition across three Turin institutions brings together over five decades of her artistic production.",
+      "content": "Marking the centenary of Italian artist Marisa Merz's birth, a sweeping retrospective exhibition titled \"Marisa Merz: La danza delle ore (The Dance of the Hours)\" has opened across three institutions in Turin. The exhibition reviews more than five decades of her work, with the Galleria d’Arte Moderna e Contemporanea Torino focusing on her studio and home, the Fondazione Merz highlighting her material experiments, and the Castello di Rivoli exploring her metaphysical engagement with space. Born in Turin in 1926, Merz was the only female affiliate of the Arte Povera movement and became known for incorporating domestic labor and nontraditional media into her practice. Her work maintains a provisional quality, exemplified by her best-known installation, The Living Sculpture from 1966, and her unfired clay Testine series spanning from the 1970s to the 2010s. The exhibitions feature her aluminium installations, paraffin pools, and abstract graphite and painted physiognomies, alongside notes and Post-its left directly on her drawings. Additionally, the retrospective includes a 16 mm film diptych shot in Merz's apartment by Tacita Dean, alongside works by contemporary female artists such as Leonor Antunes, Thea Djordjadze, and Miriam Cahn."
     },
     {
       "id": "3ebfdf9863dc62f28984",
@@ -204,6 +222,24 @@
       "content": "German practice JSWD has won an international invited competition to design RIYMAR Towers, a mixed-use development planned in Riyadh, Saudi Arabia. Organized by Malcolm Reading Consultants on behalf of RIYMAR Real Estate, the project is situated near King Fahd Road and Olaya Street. The proposed development combines residential, hospitality, office, retail, and leisure spaces, aligning with the objectives of Saudi Arabia's Vision 2030. JSWD's winning design draws references from the Tuwaiq Mountains and the historic urban fabric of Diriyah, featuring vertically articulated volumes alongside landscaped oasis-like terraces. The competition shortlisted five international practices, including Aedas, AtkinsRéalis, JSWD, Mesura, and ZHA. JSWD will proceed with a multidisciplinary team comprising LAND for landscape, NAME Architecture for interiors, schlaich bergermann partner for structural engineering, Buro Happold for MEP, Egis and Omrania as architect of record, priedemann for facades, and Licht Kunst Licht for lighting. Further details regarding project area, heights, and timelines remain unannounced."
     },
     {
+      "id": "a1e699de0f42cd9549a7",
+      "category": "Fashion & Luxury",
+      "source": "WWD",
+      "sourceDomain": "wwd.com",
+      "publishedAt": "2026-11-12T20:05:34.000Z",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/fragonard-hosts-centenary-birthday-exhibition-paris-mint-1239413451/",
+      "image": "https://wwd.com/wp-content/uploads/2026/11/37_100-ans-de-collections-de-savoir-faire.jpg?crop=0px%2C574px%2C8640px%2C4848px&resize=1000%2C563",
+      "originalTitle": "Fragonard Hosts Centenary Birthday Exhibition at the Paris Mint - WWD",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 88,
+      "technicalValue": 75,
+      "brandFit": 86,
+      "title": "Fragonard Hosts Centenary Exhibition at the Paris Mint",
+      "excerpt": "Grasse-based fragrance and lifestyle brand Fragonard is opening a centenary exhibition featuring more than 250 works and objects at the Paris Mint.",
+      "content": "Frane-based fragrance and lifestyle brand Fragonard is celebrating its centenary with a major exhibition at the Paris Mint. Entitled \"Fragonard: 100 Years of Collections and Savoir-Faire,\" the event gathers more than 250 works and objects from the house's heritage collection. The exhibition remains open to the public through Jan. 17, 2027. Company chief executive officer Agnès Costa Webster noted that paintings from the family's collection in Grasse have been brought to Paris for the first time. Hosted at the 18th-century Hôtel de la Monnaie, the multisensory exhibition features paintings, perfume bottles, historic garments, silverware, and personal grooming accessories. The scenography was conceived by Nathalie Crinière, while Givaudan perfumer Daniela Andrier formulated scents based on 18th-century recipes specifically for the event. Visitors can also explore an onsite boutique and attend fragrance-making workshops by reservation."
+    },
+    {
       "id": "2a139649215efdc3e68f",
       "category": "Construction",
       "source": "Engineering News-Record",
@@ -214,12 +250,12 @@
       "originalTitle": "Eight Dead, 18 Injured in Brooklyn Building Collapse Next to Construction Site - Engineering News-Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 40,
-      "technicalValue": 50,
-      "brandFit": 30,
+      "editorialScore": 30,
+      "technicalValue": 40,
+      "brandFit": 20,
       "title": "Eight Dead in Brooklyn Building Collapse Next to Construction Site",
-      "excerpt": "A building collapse into an excavation site in Brooklyn resulted in eight deaths and 18 injuries, prompting multiple official investigations into the tragedy.",
-      "content": "An adjoining three-story building in Brooklyn collapsed into an excavation site on November 11, resulting in eight fatalities and 18 injuries. The dead included two children and two construction workers. Mayor Zohran Mamdani ordered safety inspections at approximately 100 other construction sites connected to the involved entities. New York Attorney General Letitia James announced that the Buildings Department would conduct a full investigation, alongside a separate probe launched by Brooklyn District Attorney Eric Gonzalez. Geotechnical reports prepared prior to the incident had warned that structures abutting the property line required underpinning and could be adversely affected by construction vibration. Preconstruction surveys documented visible cracking on the facades of the affected structure. Approved excavation plans mandated strict monitoring thresholds for building movement, crack gauges and ground vibration. However, available records do not establish whether all required shoring and monitoring measures were fully in place in the field prior to the collapse. The exact cause of the structural failure remains under investigation by municipal authorities."
+      "excerpt": "Eight people were killed and 18 others injured when a three-story building collapsed into an excavation site in Brooklyn, prompting multiple official investigations.",
+      "content": "A 96-year-old three-story building collapsed into an adjacent excavation site on Flatbush Avenue in Brooklyn, resulting in eight fatalities, including two children and two construction workers, and 18 injuries. Rescue operations concluded following the incident. A project geotechnical report had previously indicated that abutting structures required underpinning and warned that excavation vibration could adversely affect them. A March preconstruction survey documented visible cracking and rated the north masonry facade poorly. Approved excavation-support plans prescribed specific monitoring thresholds for movement and vibration. Available records do not establish whether the structure was underpinned or what the final monitoring readings showed before the collapse. Mayor Zohran Mamdani ordered safety inspections at approximately 100 other construction sites associated with the project's firms. New York Attorney General Letitia James announced that the Buildings Department would conduct a full investigation, while Brooklyn District Attorney Eric Gonzalez launched a separate inquiry. City records show the development had faced earlier stop-work orders during demolition phases before excavation began."
     },
     {
       "id": "59cbcf2b3a22a5e15e0f",
@@ -232,12 +268,12 @@
       "originalTitle": "Designers’ Creative Freedom Unveiled at Molteni Museum Exhibit - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 92,
+      "editorialScore": 90,
       "technicalValue": 88,
       "brandFit": 95,
-      "title": "Molteni Museum Exhibition Unveils Creative Freedom for Designers",
-      "excerpt": "A new exhibition at the Molteni Museum in Giussano gives prominent architects and designers the creative freedom to reinterpret existing furniture pieces without commercial constraints.",
-      "content": "The Molteni Museum in Giussano, Italy, has unveiled a new exhibition designed to offer prominent architects and designers creative freedom using existing furniture and kitchen elements as a starting point. Curated to celebrate living creatives, the showcase features works by international practices and designers including Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, and Patricia Urquiola, bypassing commercial and engineering constraints. Contributors experimented with materials and forms, resulting in playful interpretations such as inflatable cushions on special-edition chairs and surreal re-imaginings of table collections. Artist Ron Gilad also contributed a kinetic tribute to late designer Luca Meda. The exhibition will remain on display at the Molteni Compound for one year before embarking on an international tour to a yet-to-be-determined roster of cities worldwide."
+      "title": "Molteni Museum Exhibition Unveils Designers' Creative Freedom",
+      "excerpt": "A new Molteni Museum exhibition gives contemporary designers the creative freedom to produce unique, experimental works using existing brand pieces without commercial constraints.",
+      "content": "Hosted at the Molteni Compound in Giussano, Italy, a new museum exhibition provides living designers with the creative freedom to produce expressive works using existing pieces from Molteni Group brands as a starting point, free from commercial and engineering constraints. Initiated by Israeli artist Ron Gilad, the exhibition features contributions from practices and designers including Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, AMDL Circle, Foster + Partners, Patricia Urquiola, the late Luca Meda, and Vincent Van Duysen. Herzog & de Meuron incorporated candy-colored inflatable cushions into special-edition chairs to blend traditional craftsmanship with playful elements. Ron Gilad transformed a kitchen island into a poetic fountain, while OMA adopted a surreal approach by reinterpreting double-layered tables through material experimentation. AMDL Circle re-envisioned a workspace system with organic, centipede-like contours. Molteni Group stated that the exhibition will remain on display for one year and is expected to travel internationally to a yet-to-be-determined roster of cities."
     },
     {
       "id": "77bb5e5994120b0e3fce",
@@ -366,24 +402,6 @@
       "content": "Italian luxury house Loro Piana hosted the 2025 Cashmere of the Year Award at The Brant Foundation in New York, celebrating a fiber fineness of 12.89 microns. The gathering also unveiled the Master of Cashmere exhibition, showcasing the history and craftsmanship of the company. Established in 2015, the annual award program aims to recognize herders in Inner Mongolia and encourage improvements in fiber quality. The 11th edition honored three couples of cashmere herders. The first prize went to greasy cashmere weighing 135.8 kg with a fiber diameter of 12.89 microns. The second prize was awarded for 87.1 kg at 13.01 microns, and the third for 116 kg at 13.04 microns. A micron represents one-thousandth of a millimeter, while human hair measures 70 microns. Winners receive a financial reward per kilo alongside a silver comb symbolizing the harvesting process. Company leadership highlighted ongoing sustainability initiatives, including selective breeding efforts to preserve the Alashan goat and the Resilient Threads project launched in Mongolia last year to support local biodiversity, herding communities, and steppes in Sukhbaatar Province in partnership with international and academic organizations."
     },
     {
-      "id": "cd9620fa43cf17e0423e",
-      "category": "Architecture & Design",
-      "source": "Wallpaper*",
-      "sourceDomain": "wallpaper.com",
-      "publishedAt": "2026-11-11T17:00:00.000Z",
-      "url": "https://www.wallpaper.com/design-interiors/bjeke-casteleyn-home-belgium-interior-design",
-      "image": "https://cdn.mos.cms.futurecdn.net/23H3aTbpc9cHNzkj3PY85B-1920-80.jpg",
-      "originalTitle": "This Belgian designer’s home is a ‘winterised’ take on California modernism - Wallpaper*",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 75,
-      "brandFit": 95,
-      "title": "Belgian Designer Adapts California Modernism for Her Countryside Home",
-      "excerpt": "Belgian interior architect Bieke Casteleyn adapted California midcentury modernism to her country's cooler climate while designing her family residence.",
-      "content": "Located in a flat countryside area in Belgium, the residence stands as a winterized interpretation of California modernism. Set on a single level, the home pairs warm wood tones with abundant natural light, featuring grey-green exterior stones chosen to blend with the landscape and a grass-covered flat roof. Inside, main living areas are separated from the private wing by a sweeping corridor framed by glass walls. The designer balanced extensive glazing and long sightlines by incorporating warm tones, tactile textures, and organic curves. Rather than fitting furniture into a pre-existing layout, the interior was designed around a collection of vintage pieces, family antiques, and collectible designs. Thoughtful architectural touches, such as a circular roof opening for a growing tree and a deck overlooking a pond, deepen the connection to the surrounding natural environment."
-    },
-    {
       "id": "7e34ebdc972b8ec6f34a",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -420,24 +438,6 @@
       "content": "Art Basel Miami Beach presents a program that unites prominent voices in contemporary art alongside innovative presentations. The regional art fair brings together modern masterpieces and emerging talent on a single platform. The Zero 10 platform, dedicated to digital-era art, returns with Generation, its largest presentation to date. Curated by Karen Archey and Eli Scheinman, the exhibition spans 19 projects and explores connections between digital technologies and traditional art forms. Encompassing algorithmic art, immersive environments, painting, sculpture, and textiles, the presentation highlights works by creators such as Sarah Meyohas, Jon Rafman, and Studio Drift. Refik Anadol's collaboration with the Yawanawá community transforms Amazonian artwork, music, and weather data into evolving digital imagery. Meanwhile, Harm van den Dorpel draws on historical geometric drawings to produce generative pieces that unfold in real time during the event."
     },
     {
-      "id": "31906f68bca1961b3587",
-      "category": "Fashion & Luxury",
-      "source": "WWD",
-      "sourceDomain": "wwd.com",
-      "publishedAt": "2026-11-10T15:28:42.000Z",
-      "url": "https://wwd.com/home-design/home-decor/henge-tableware-glassware-home-fragrances-launch-1239408486/",
-      "image": "https://wwd.com/wp-content/uploads/2026/11/Henge_HomeCollection_04.jpeg?w=1000&h=563&crop=1",
-      "originalTitle": "Italian Design Firm Henge Expands Into Tableware, Fragrances - WWD",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Italian Design Firm Henge Expands Into Tableware and Fragrances",
-      "excerpt": "Milan-based luxury furniture firm Henge has introduced its first collection of tableware, glassware, and home fragrances crafted from stone, glass, and metal.",
-      "content": "Italian luxury furniture maker Henge has expanded its portfolio into tableware, glassware, and home fragrances. The Milan-based company announced that its debut home collection relies on core materials such as stone, glass, and metal, featuring natural textures and hues. The collection includes Murano glass tumblers and a carafe designed by Ugo Cacciatori, alongside cast silver and gold trays by Yabu Pushelberg. Handcrafted in Carrara from Rouge Languedoc, Napoléon, and Gris Cévenol marbles, the Rever plates derive their name from the French word for dreaming. The brand also made its first foray into home fragrances with Henge Fragrance #34, named after its showroom at 34 Via della Spiga in Milan. The scent blends Calabrian bergamot, Sicilian lemon, and jasmine with notes of frankincense, Virginia tobacco, and Russian leather. This expansion aligns with an industry trend where high-end Italian design firms, including Molteni & C and Cassina, introduce smaller, more accessible design objects."
-    },
-    {
       "id": "909a50f1a9622b350292",
       "category": "Galleries & Museums",
       "source": "Victoria and Albert Museum",
@@ -466,12 +466,12 @@
       "originalTitle": "Miami Beach Director and Mendes Wood DM founders on the fair's bold new changes - Art Basel",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 50,
+      "editorialScore": 80,
+      "technicalValue": 45,
       "brandFit": 90,
-      "title": "Art Basel Miami Beach Prepares for its 24th Year with Major Changes",
-      "excerpt": "Celebrating its 24th year, Art Basel Miami Beach is implementing major layout changes to create a more focused environment and help collectors navigate the entire fair more easily.",
-      "content": "Approaching its 24th year, Art Basel Miami Beach is implementing significant updates to its gallery line-up and floor plan. Fair Director Bridget Finn stated that feedback from exhibitors and the selection committee prompted a more focused environment, distributing blue-chip galleries throughout the show rather than concentrating them in one place. The new configuration features four symmetrical plazas instead of five, aiming to help collectors navigate the entire footprint more easily and give each presentation due attention. Mendes Wood DM co-founders Matthew Wood and Pedro Mendes highlighted Miami's unique position as a transition point between North America, Latin America, and the Caribbean. The upcoming edition is scheduled for December 2026. Organizers measure success through the achievements of the galleries, focusing on new connections and lasting continuity. Exhibitors noted that preparations take months, balancing market efficiency with the spirit of artistic discovery."
+      "title": "Art Basel Miami Beach Prepares Bold Changes for 24th Year",
+      "excerpt": "Approaching its 24th year, Art Basel Miami Beach announced innovations including a more focused gallery selection and major floor plan changes. Fair Director Bridget Finn and gallery founders shared details regarding the adjustments.",
+      "content": "Marking its 24th year, Art Basel Miami Beach is implementing innovative changes to its exhibition floor layout and gallery distribution. Fair Director Bridget Finn stated that feedback from participating galleries prompted a more focused environment, allowing collectors to navigate the fair more easily and give presentations proper attention. The new configuration shifts from five plazas to four with a more symmetrical layout. Mendes Wood DM founders Matthew Wood and Pedro Mendes emphasized Miami's unique position at the crossroads of cultural movement between North America, Latin America, and the Caribbean. The fair takes place from December 4 to December 6, 2026. Measuring success through gallery outcomes, the event focuses on helping exhibitors connect with new clients and foster unexpected synergies. While balancing market efficiency and artistic discovery, the fair relies on long-term continuity and meaningful transactions to sustain its international platform."
     },
     {
       "id": "b9588ea939ccb22dc975",
