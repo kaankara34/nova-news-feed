@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "en",
-  "generatedAt": "2026-11-19T03:31:02.806Z",
+  "generatedAt": "2026-11-20T03:31:25.476Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -22,7 +22,7 @@
     "Exhibitions": 5,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
-    "Construction": 4,
+    "Construction": 5,
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
@@ -50,9 +50,9 @@
       "targetMet": true
     },
     "Construction": {
-      "count": 4,
+      "count": 5,
       "target": 5,
-      "targetMet": false
+      "targetMet": true
     },
     "Urban Transformation": {
       "count": 0,
@@ -75,8 +75,80 @@
       "targetMet": true
     }
   },
-  "total": 28,
+  "total": 29,
   "articles": [
+    {
+      "id": "fcc745d601a7228876f4",
+      "category": "Galleries & Museums",
+      "source": "The National Gallery, London",
+      "sourceDomain": "nationalgallery.org.uk",
+      "publishedAt": "2026-11-19T22:13:28.000Z",
+      "url": "https://www.nationalgallery.org.uk/events/in-conversation-morning-pages-james-cahill-reads-from-the-beverly-hills-housewife-21-11-2026",
+      "image": "https://www.nationalgallery.org.uk/events/in-conversation-morning-pages-james-cahill-reads-from-the-beverly-hills-housewife-21-11-2026",
+      "originalTitle": "Morning Pages: James Cahill reads from 'The Beverly Hills Housewife' | Events - The National Gallery, London",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 76,
+      "technicalValue": 70,
+      "brandFit": 80,
+      "title": "Author James Cahill to Read at the National Gallery in London",
+      "excerpt": "Author, critic and art historian James Cahill will read from his latest book on David Hockney during the second event of the Morning Pages series.",
+      "content": "Author, critic and art historian Dr. James Cahill will appear as a guest for the second installment of the Morning Pages series at the National Gallery in London. During the special gathering in the Supporters' House Salon, Cahill will discuss and read from his book titled 'The Beverly Hills Housewife: Hockney's Californian Muse and the World Beyond the Pool', published by Thames & Hudson. The event offers attendees an opportunity to gain insight directly from the author regarding David Hockney's world and artistic legacy. The reading will be followed by a question-and-answer session, along with an opportunity to purchase and have copies signed by the author. Based between London and Los Angeles, Cahill's previous literary works include his debut novel 'Tiepolo Blue', shortlisted for the Author's Club Best First Novel Award, and his second novel 'The Violet Health'. He also contributes articles to publications including Artforum, the Burlington Magazine, the Financial Times, the Los Angeles Times, the Spectator and the Times Literary Supplement."
+    },
+    {
+      "id": "d362228047ece56d89f7",
+      "category": "Art & Exhibitions",
+      "source": "ArtReview",
+      "sourceDomain": "artreview.com",
+      "publishedAt": "2026-11-19T13:15:00.000Z",
+      "url": "https://artreview.com/strain-and-resilience-alma-allen-at-perrotin-paris/",
+      "image": "https://backend.artreview.com/wp-content/uploads/2026/11/F.-Cover_Alma_Allen-copy.png",
+      "originalTitle": "‘Strain and Resilience’: Alma Allen at Perrotin Paris - ArtReview",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 82,
+      "technicalValue": 65,
+      "brandFit": 88,
+      "title": "Alma Allen Presents First Solo Exhibition at Perrotin in Paris",
+      "excerpt": "Perrotin is hosting Alma Allen's first solo exhibition featuring monumental bronze sculptures at its Paris space. Running through December 19, the presentation brings together new works focusing on touch, transformation, and perception.",
+      "content": "Perrotin in Paris is presenting Alma Allen's first solo exhibition with the gallery, featuring a new body of monumental bronze sculptures. On view at the space on impasse Saint-Claude from October 17 through December 19, the exhibition introduces works that explore touch, transformation, memory, and perception. Each sculpture bears the designation Not Yet Titled, reflecting the artist's belief that meaning should remain open. Working with string, clay, or wax, the self-taught sculptor develops small models by hand, a practice originating from his teenage years in Utah. Once completed, these models are scanned, enlarged, and cast in bronze at his home foundry. The resulting twisted and elastic sculptures communicate both strain and resilience, recalling nautical knots and lengths of rope. Alongside freestanding works, the exhibition features bronze wall reliefs with ridged surfaces kneaded by hand. Designed to weather and evolve over time, the bronzes draw together botanical, religious, and art-historical references, connecting the natural world with spiritual traditions. Allen describes his sculptures as apparitions emerging from a curiosity to look beyond the visible surface of reality."
+    },
+    {
+      "id": "5d55f2820c82abcd9c45",
+      "category": "Art & Exhibitions",
+      "source": "The Art Newspaper",
+      "sourceDomain": "theartnewspaper.com",
+      "publishedAt": "2026-11-19T06:42:07.876Z",
+      "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims",
+      "image": "https://cdn.sanity.io/images/cxgd3urn/production/94e8cbb85fb045a7ce74ebb8c7bd1519a8c199ad-1920x2012.jpg?rect=18,328,1664,998&w=1200&h=720&q=85&fit=crop&auto=format",
+      "originalTitle": "Van Gogh painting sells for record $190m at Sotheby’s following Nazi loot claims - The Art Newspaper",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 45,
+      "brandFit": 90,
+      "title": "Van Gogh painting achieves record auction price in New York",
+      "excerpt": "A late work by Vincent van Gogh sold for 190.4 million dollars including fees at Sotheby's, breaking the artist's auction record. A settlement regarding Nazi-era provenance claims had been reached just prior to the sale.",
+      "content": "One of Vincent van Gogh's final paintings from 1890, Blossoming Chestnut Trees, sold for 165 million dollars at a Sotheby's New York auction, reaching 190.4 million dollars with fees to surpass the artist's previous auction record. Long kept out of public view within the Blaquier-Arrieta collection, the artwork's sale followed a settlement announced by Sotheby's a day prior regarding its Nazi-era provenance claims. After nearly five minutes of bidding, the guaranteed work went to a room bidder, becoming the second most valuable object ever sold at Sotheby's. Back-to-back New York sales generated a combined 777.8 million dollars with fees, featuring additional auction records for Mary Cassatt and Aaron Douglas. Aaron Douglas's Harriet Tubman achieved 14.48 million dollars after a seven-minute bidding battle, shattering the artist's previous benchmark. Meanwhile, Paul Cézanne's Arlequin fell short of its estimate at 111 million dollars with fees, and several other lots across the evening's sessions failed to meet expectations or were withdrawn from the auction."
+    },
+    {
+      "id": "0fffef7010a3ba71c40b",
+      "category": "Galleries & Museums",
+      "source": "Victoria and Albert Museum",
+      "sourceDomain": "vam.ac.uk",
+      "publishedAt": "2026-11-18T19:21:59.000Z",
+      "url": "https://www.vam.ac.uk/articles/about-the-constantinople-to-istanbul-one-city-two-empires-exhibition",
+      "image": "https://assets-cdn.vam.ac.uk/2026/11/06/11/28/15/a1a86f83-79e1-4314-aca6-199c0c410f6a/640.jpg",
+      "originalTitle": "About the Constantinople to Istanbul: One City, Two Empires exhibition - Victoria and Albert Museum",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 85,
+      "brandFit": 95,
+      "title": "Constantinople to Istanbul Exhibition at the V&A",
+      "excerpt": "The Victoria and Albert Museum is hosting the Constantinople to Istanbul exhibition, exploring 1600 years of artistic production from the Roman Empire to the Ottomans. The event runs until 9 May 2027.",
+      "content": "Hosted at V&A South Kensington in London, the Constantinople to Istanbul: One City, Two Empires exhibition explores 1600 years of artistic heritage spanning from AD 330 to 1922. Examining the art and design traditions of both the Byzantine and Ottoman empires, the exhibition remains open until 9 May 2027. It showcases more than 200 objects, including textiles, ceramic tiles, mosaics, jewelry, sculptures, and manuscripts. The exhibition is organized into four main sections. The opening section, Roman Beginnings, covers the refounding of the city in AD 330 as the capital of the Roman Empire and highlights structures such as the Hippodrome. Heaven and Earth explores Christian art and Byzantine imperial authority, while Power and Reach examines how the Ottoman court projected authority through luxury materials and grand processions. The final section, Life in the City, presents the city as a cosmopolitan center, detailing daily urban rhythms and 19th-century stylistic shifts. The exhibition also traces the enduring influence of Byzantine and Ottoman art on 19th-century Europe, featuring works by figures such as William Morris."
+    },
     {
       "id": "66367949470846b922fb",
       "category": "Architecture & Design",
@@ -88,12 +160,12 @@
       "originalTitle": "BIG stacks timber volumes with alpine views for new neighborhood in switzerland - Designboom",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
+      "editorialScore": 86,
+      "technicalValue": 84,
       "brandFit": 92,
-      "title": "Bjarke Ingels Group Designs Timber Residential and Hotel Project in Thun",
-      "excerpt": "Bjarke Ingels Group has unveiled plans for four timber-focused buildings combining hotels and residences for the new Siegenthalergut district in Thun, Switzerland.",
-      "content": "Bjarke Ingels Group has announced Nachwachsende Stadt, a four-building timber development designed for the western entrance of the Siegenthalergut district in Thun, Switzerland. Selected through a competition organized by Frutiger AG and the city of Thun, the 13,000-square-meter scheme combines a multi-star hotel structure with residential blocks featuring flexible layouts. The proposal, developed alongside landscape architects August + Margrith Künzel, incorporates stepped facades with deep window grids, terraces overlooking the Bernese Alps, and an internal courtyard with garden paths. Designed for future disassembly to reduce embodied carbon, the timber structures integrate rainwater retention systems and approximately 1,800 square meters of photovoltaic panels. Targeting Switzerland's SNBS Gold sustainability certification, the project is slated to advance through further design stages, with construction potentially beginning in 2028."
+      "title": "Bjarke Ingels Group Unveils Timber Neighborhood Design for Thun, Switzerland",
+      "excerpt": "Bjarke Ingels Group has unveiled plans for Nachwachsende Stadt, a 13,000-square-meter development comprising four timber buildings in Thun, Switzerland.",
+      "content": "Bjarke Ingels Group has revealed plans for Nachwachsende Stadt, a new 13,000-square-meter timber development located in Thun, Switzerland. Selected through a competition organized by Frutiger AG and the city of Thun, the scheme includes two hotels and residential buildings featuring stacked wooden volumes and deep window grids. The development allocates approximately 6,500 square meters for residential uses, 6,000 square meters for hotels, and 400 square meters for commercial activities. At the southwest corner, a combined three-star and four-star hotel structure features shared amenity spaces, outdoor terraces, and a rooftop restaurant. The eastern residential buildings frame a shared garden courtyard with flexible apartment layouts and private balconies. Timber is utilized across all four structures to reduce embodied carbon, with components engineered for future disassembly and reuse. Sustainability measures also include green roofs, rainwater retention systems, and approximately 1,800 square meters of photovoltaic panels. The development is targeting Switzerland's SNBS Gold certification, with construction on the first buildings possible starting in 2028."
     },
     {
       "id": "e33365cf397afd45e4bc",
@@ -124,12 +196,30 @@
       "originalTitle": "EU Countries Renew Call To Exclude Russia from Venice Ahead of 2027 Architecture Biennale - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 60,
-      "brandFit": 82,
-      "title": "Ten European Union Countries Renew Demands to Exclude Russia From Venice Architecture Biennale",
-      "excerpt": "Ten EU nations have urged the European Commission to prevent Russia's participation in the 2027 Venice Architecture Biennale, arguing that Moscow's presence risks normalizing the war in Ukraine.",
-      "content": "Ten European Union nations are demanding sustained efforts from the European Commission to keep Russia out of the 2027 Venice Architecture Biennale. According to a diplomatic note signed by Poland, Austria, Croatia, Denmark, Estonia, Finland, Germany, Latvia, Lithuania, and Sweden, Moscow's presence on the cultural stage risks normalizing its war in Ukraine. The group urged measures ahead of a meeting of EU culture ministers. Russia returned to the Venice Biennale in May for the first time since its 2022 invasion of Ukraine, drawing widespread condemnation. The European Commission previously withdrew a 2 million euro grant after Biennale organizers rejected calls to exclude Moscow. The May exhibition faced protests from dissident groups and temporary pavilion closures across multiple participating countries. Biennale president Pietrangelo Buttafuoco defended the decision, maintaining that the independent institution rejects the exclusion of culture and art. The 2027 Venice Architecture Biennale is scheduled to run from May 8 to November 21, curated by Wang Shu and Lu Wenyu."
+      "editorialScore": 82,
+      "technicalValue": 80,
+      "brandFit": 85,
+      "title": "Ten European Union Countries Renew Call to Exclude Russia from Venice",
+      "excerpt": "Ten European Union countries are demanding sustained efforts from the European Commission to keep Russia out of the 2027 Venice Architecture Biennial. Signatories of a diplomatic note state that Moscow's presence risks normalizing its war on Ukraine.",
+      "content": "According to Rapporteur, ten European Union countries are demanding sustained efforts from the European Commission to keep Russia out of the 2027 Venice Architecture Biennial. A diplomatic note signed by Poland, Austria, Croatia, Denmark, Estonia, Finland, Germany, Latvia, Lithuania, and Sweden states that Moscow's presence on the cultural stage risks normalizing its war on Ukraine, noting there should be no room for normalisation without a just and lasting peace. The group urged the European Union to take measures ahead of a meeting of culture ministers. The European Commission previously suspended a €2 million grant to the Biennale after organizers resisted calls to exclude Moscow, with Biennale president Pietrangelo Buttafuoco defending his decision by stating the organization rejects censorship. During the 2026 art exhibition, the Russian Pavilion became the target of protests and temporary closures across multiple national pavilions. The upcoming Venice Architecture Biennale, curated by Wang Shu and Lu Wenyu under the theme 'Do Architecture — For the Possibility of Coexistence Facing a Real Reality,' is scheduled to open to the public on May 8, 2027, and run through November 21, 2027."
+    },
+    {
+      "id": "63251dd34364c0b8b611",
+      "category": "Construction",
+      "source": "Engineering News-Record",
+      "sourceDomain": "enr.com",
+      "publishedAt": "2026-11-18T15:00:00.000Z",
+      "url": "https://www.enr.com/articles/64333-aom-higher-education-research-utah-state-university-kem-and-carolyn-gardner-learning-and-leadership-building",
+      "image": "https://www.enr.com/ext/resources/Issues/MSSW/2026/November/BP/Utah-State-University.jpg?height=635&t=1794933050&width=1200",
+      "originalTitle": "AOM Higher Education/Research: Utah State University Kem & Carolyn Gardner Learning & Leadership Building - Engineering News-Record",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 40,
+      "technicalValue": 50,
+      "brandFit": 30,
+      "title": "Utah State University Building Receives Mountain States Award",
+      "excerpt": "The Utah State University Kem & Carolyn Gardner Learning & Leadership Building has received an Award of Merit in the ENR Mountain States Best Projects competition.",
+      "content": "The Utah State University Kem & Carolyn Gardner Learning & Leadership Building has received an Award of Merit in the ENR Mountain States Best Projects competition. Submitted by Jacobsen Construction, the project serves as a 44,658-square-foot, three-story academic facility in Logan, Utah, merging five academic centers from the university's Jon M. Huntsman School of Business under one roof. Situated on a constrained site near Highway 89 alongside two other active construction projects, the building was constructed with Jacobsen serving as general contractor and MHTN Architects as lead design firm. The facility features flexible, technology-rich learning spaces designed around a hybrid steel and mass timber system, making it the university's first mass timber building. Exposed glulam columns and cross-laminated timber decking created a light-filled interior inspired by nearby Logan Canyon. The structural system supports the university's carbon neutrality goal by 2040. During design development, teams coordinated with Timberlab to conceal conduit and ductwork within cavities, preserving the visual continuity of the timber."
     },
     {
       "id": "b9c88bef27512826eda2",
@@ -143,11 +233,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 60,
+      "technicalValue": 50,
       "brandFit": 90,
-      "title": "Nan Goldin Debuts Nature-Focused Film in First UK Solo Show in Decades",
-      "excerpt": "American photographer Nan Goldin is premiering new films exploring nature, extinction, and animals at London's Hayward Gallery. The exhibition marks her first institutional solo show in the United Kingdom in over twenty years.",
-      "content": "American photographer Nan Goldin is opening her first institutional solo exhibition in the United Kingdom in over twenty years at London's Hayward Gallery. Running from 24 November to 14 March 2027, the exhibition expands Goldin's compassionate lens from human relationships and queer communities toward the natural world and ecological themes. Four years in the making, the show forms part of the Southbank Centre's 75th-anniversary programme.\n\nThe exhibition's centrepiece is the premiere of You never did anything wrong, Part II (2026), created alongside film-maker David Sherman. The work draws upon 1960s and 70s nature documentaries and damaged soundtracks to present an abstract meditation on animals, land, and impending extinction. It accompanies the 2024 first part, which centres on a solar eclipse. The presentation also includes Stendhal Syndrome, pairing portraits of friends with classical art, and Memory Lost, which addresses addiction and Goldin's activism through the Prescription Addiction Intervention Now group."
+      "title": "Nan Goldin to debut new film exploring nature and extinction in London exhibition",
+      "excerpt": "American photographer Nan Goldin will premiere a new film exploring nature and extinction at London's Hayward Gallery in her first UK solo museum exhibition in over two decades.",
+      "content": "American photographer Nan Goldin will debut her new film exploring nature and impending extinction at London's Hayward Gallery, marking her first institutional solo exhibition in the UK in over two decades. According to chief curator Rachel Thomas, the exhibition extends Goldin's compassionate focus from queer communities and chosen family to the broader natural world. Part of the Southbank Centre's 75th-anniversary programme, the four-year-in-the-making show presents recent and new work rather than serving as a retrospective. The gallery's centrepiece will be the premiere of You never did anything wrong, Part II, created alongside filmmaker David Sherman, which draws on 1960s and 1970s nature documentaries and damaged soundtracks with a score by British musician Mica Levi. The exhibition also features the first part of the project centering on a solar eclipse, alongside other series such as Stendhal Syndrome, which places portraits of friends and lovers in dialogue with classical art, and Memory Lost, which addresses opioid addiction and Goldin's activism. The exhibition runs from 24 November to 14 March 2027."
     },
     {
       "id": "7e34ebdc972b8ec6f34a",
@@ -186,24 +276,6 @@
       "content": "Constructed over the Seine River in France, a pair of pedestrian footbridges named Jules and Jim reconnect the historic centers of Mantes-la-Jolie and Limay. Located about 30 miles west of Paris, the project restores a link lost with the destruction of a medieval bridge during World War II. The design introduces two contemporary crossings, establishing a continuous pedestrian and bicycle route connecting public spaces, parks, and cultural landmarks. The 660-foot Jules bridge spans from Mantes to the Île aux Dames in the middle of the river, utilizing existing masonry piers of the adjacent vehicular crossing to minimize riverbed disruption. The 80-foot Jim bridge connects the island and Limay by spanning extant sections of the medieval crossing. Named after a 1962 film by François Truffaut, the project transforms a historical rupture into a renewed connection. The client for the initiative is the Syndicat Mixte d’aménagement, de gestion et d’entretien des berges de la Seine et Oise. Dietmar Feichtinger Architectes served as the architect, with engineering by Terrell SAS, historic monument consulting by ALEP Architectes, and lighting design by Coup d’éclat."
     },
     {
-      "id": "83daeb87f246bd8a12fd",
-      "category": "Art & Exhibitions",
-      "source": "The Art Newspaper",
-      "sourceDomain": "theartnewspaper.com",
-      "publishedAt": "2026-11-17T12:02:48.573Z",
-      "url": "https://www.theartnewspaper.com/2026/11/17/parthenon-east-pediment-recreated-in-frankfurt-exhibition",
-      "image": "https://cdn.sanity.io/images/cxgd3urn/production/180dfc3d7300d797e8e123a127db658ae78c7937-7072x1354.jpg?rect=2408,0,2257,1354&w=1200&h=720&q=85&fit=crop&auto=format",
-      "originalTitle": "Parthenon’s east pediment, ‘the most famous image of antiquity’, recreated in Frankfurt exhibition - The Art Newspaper",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Parthenon's East Pediment Recreated in Frankfurt Exhibition Following Decades of Research",
-      "excerpt": "The Liebieghaus Sculpture Collection in Frankfurt has reconstructed the destroyed east pediment of the Parthenon using reliefs from Roman sarcophagi lids. The research findings are now on display in a new exhibition.",
-      "content": "The Liebieghaus Sculpture Collection in Frankfurt has reconstructed the destroyed east pediment of the Parthenon, depicting the birth of Athena, following decades of research. Running from 18 November to 25 July 2027, the exhibition showcases the central sculpted ensemble of the ancient temple.\n\nThe research team achieved a breakthrough by investigating figural reliefs on nine Roman sarcophagi lids housed in institutions including the State Hermitage Museum and the Vatican Museums. Utilizing computer technology, the team established a complete match between these reliefs and the remaining fragments of the pediment. The findings revealed previously unknown figures on the pediment, including the Dioscuri horsemen responding to the cosmic cataclysm of Athena's birth.\n\nPrior to the opening, political tensions surfaced regarding loan agreements. The Greek government withdrew its loan of nine marble fragments from the Acropolis Museum because they were to be displayed alongside British Museum pieces. Meanwhile, the British Museum confirmed it would proceed with lending two fragments to the exhibition, which highlights findings based primarily on decades of Liebieghaus research."
-    },
-    {
       "id": "0461161ae0320253c6d2",
       "category": "Architecture & Design",
       "source": "Dezeen",
@@ -214,30 +286,12 @@
       "originalTitle": "Construction underway on Jean Nouvel’s landmark opera house in China - Dezeen",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Construction Work Continues on the Shenzhen Opera House in China",
-      "excerpt": "Designed by French architecture studio Ateliers Jean Nouvel and built in Shenzhen, China, the new opera house is scheduled for completion in 2028.",
-      "content": "French architecture studio Ateliers Jean Nouvel has released construction photographs of the Shenzhen Opera House located on the Shekou Peninsula in China. Spanning 250,000 square meters, the cultural landmark is scheduled for completion in 2028. The design, which won an international architecture competition, features an elongated, wavy roofscape reflecting the site's connection to the bay. Conceived by Pritzker Prize-winning architect Jean Nouvel, the facility includes a 2,300-seat concert hall with a horseshoe-shaped plan, an 1,800-seat theatre, and an 800-seat venue. Additional facilities comprise a 400-seat multifunctional theatre, cultural spaces, backstage areas, offices, and performers' apartments. To connect the interior architecture with the surrounding water, iridescent materials such as mother-of-pearl are planned for the interior surfaces. The published construction images visualize the substantial scale of the waterfront development and its performance halls."
-    },
-    {
-      "id": "d6f2c20fed39a2be6b7b",
-      "category": "Art & Exhibitions",
-      "source": "ARTnews.com",
-      "sourceDomain": "artnews.com",
-      "publishedAt": "2026-11-17T02:08:25.000Z",
-      "url": "https://www.artnews.com/art-news/market/yayoi-kusama-infinity-net-painting-record-sale-sothebys-1234806198/",
-      "image": "https://www.artnews.com/wp-content/uploads/2026/11/kusama.jpg?w=1000",
-      "originalTitle": "Yayoi Kusama ‘Infinity Net’ Painting Sells for $15.1 M. at Sotheby’s, Setting a Record - ARTnews.com",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 45,
+      "editorialScore": 85,
+      "technicalValue": 88,
       "brandFit": 85,
-      "title": "Yayoi Kusama Painting Sets New Auction Record at Sotheby's",
-      "excerpt": "A 1960 \"Infinity Net\" painting by Yayoi Kusama sold for $15.1 million at Sotheby's in New York, setting a new auction record for the artist.",
-      "content": "Just months after the death of Yayoi Kusama, her 1960 painting titled No. 3P.B. sold at a Sotheby's auction in New York for a hammer price of $12.5 million, reaching $15.1 million with fees to set a new auction record for the artist. The work sold following a brief bidding war conducted by phone representatives over the course of four minutes across 10 bids. The hammer price placed the canvas squarely within its presale estimate of $10 million to $15 million. Standing over five feet tall, the crimson canvas is an early example of Kusama's large-scale monochrome abstractions covered in thousands of looping brushstrokes known as the \"Infinity Net\" series. Later in the same evening, another painting from the series, dating to 2011, sold for $3.06 million with fees. Since Kusama passed away in August at the age of 97, nearly 30 of her works have appeared at major auction houses. Her previous record was established in 2022 by a white \"Infinity Net\" painting that achieved $10.5 million with fees at Phillips New York."
+      "title": "Construction Progress Visualized for Jean Nouvel's Shenzhen Opera House in China",
+      "excerpt": "Ateliers Jean Nouvel has released photographs revealing construction progress on the 250,000-square-meter Shenzhen Opera House in China.",
+      "content": "French architecture studio Ateliers Jean Nouvel has shared photographs revealing ongoing construction on the Shenzhen Opera House in China, which is scheduled for completion in 2028. Situated on the Shekou Peninsula overlooking Shenzhen Bay, the 250,000-square-meter cultural landmark features an elongated, wavy roofscape reflecting its waterfront setting. The complex stems from a winning competition entry designed by Pritzker Prize-winning architect Jean Nouvel's studio. Facilities within the expansive development include a 2,300-seat concert hall with a horseshoe-shaped plan, an 1,800-seat theatre, an 800-seat venue, and a 400-seat multifunctional theatre. Additional spaces comprise cultural areas, backstage facilities, offices, and performer apartments. To connect the structure visually with the surrounding water, interior spaces are planned to feature iridescent materials such as mother-of-pearl. Nouvel previously described the use of lustrous nacreous reflections as a poetic representation of the meeting between the sea, light, and auditorium spaces."
     },
     {
       "id": "6143a8fecbe19316a97f",
@@ -251,11 +305,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 90,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Tree-Top Sauna Named Architecture Project of the Year at Dezeen Awards 2026",
-      "excerpt": "Located in a Kanagawa forest, the Daichi Silent River Tree Sauna has been named architecture project of the year at the ninth Dezeen Awards, praised for integrating architecture with nature.",
-      "content": "Nineteen architecture category winners across 11 countries were announced at the ninth annual Dezeen Awards ceremony in London. Situated within a forest in Kanagawa, the Daichi Silent River Tree Sauna claimed both the leisure and wellness category win and the overall project of the year award. The master jury commended the minimalist, biophilic project for its spiritual touch. Additionally, Amami House on Amami Ōshima won urban house of the year for sustainable off-grid living, while Jiang Deng Lu in China took the rural house prize. La Querola in Andorra won housing project of the year, Zando Central Market in Kinshasa won the civic category, and the Ismaili Center in Houston secured the cultural project award. The winning designs highlighted sustainable material use, local craft traditions, and community engagement across global contexts."
+      "technicalValue": 85,
+      "brandFit": 92,
+      "title": "Dezeen Awards 2026 Announces Architecture Winners and Project of the Year",
+      "excerpt": "A treehouse sauna project located in Kanagawa has been named the overall architecture project of the year at the ninth annual Dezeen Awards.",
+      "content": "Nineteen architecture category winners across 11 different countries were announced during the ninth annual Dezeen Awards ceremony in London. The Daichi Silent River Tree Sauna project, located in Kanagawa, Japan, received the leisure and wellness category win and was subsequently named the overall architecture project of the year. The master jury commended the biophilic structure for offering a spiritual connection between humans and nature. Additional category winners announced during the event included Sakai Architects' off-grid Amami House on Amami Ōshima island for urban house, Shisuo Design Office's Jiang Deng Lu in Anhui, China, for rural house, and Ribas & Ribas Arquitectos' La Querola in Ordino, Andorra, for housing project. Other winners included Aatismo's Haniyasu House for renovation, ZAV Architects' Golmorad for extension, Think Tank Architecture's Zando Central Market for civic architecture, and Farshid Moussavi Architecture's Ismaili Center Houston for cultural project of the year."
     },
     {
       "id": "e8abaf74b9d58f11b0c7",
@@ -294,6 +348,24 @@
       "content": "The Samuel Oschin Air and Space Center has opened at the California Science Center in Los Angeles, housing the retired space shuttle Endeavor. Having completed its final mission in June 2011, Endeavor is the world's only space shuttle exhibited in the vertical launch configuration, complete with boosters and an external tank. Designed by ZGF Architects and built by general contractor MATT Construction, the 200-foot-tall curvilinear stainless-steel structure required complex seismic analysis and intricate steel node assembly. Engineering teams utilized specialized scaffolding and commercial cranes to maneuver components without damaging the fragile thermal silica tiles on the shuttle. To comply with Exposition Park campus height limits, the facility was designed 25 feet below grade, completing a multi-year effort to establish a permanent home for the spacecraft."
     },
     {
+      "id": "0f4edde0745f1f5f8488",
+      "category": "Exhibitions",
+      "source": "Art Basel",
+      "sourceDomain": "artbasel.com",
+      "publishedAt": "2026-11-16T08:00:00.000Z",
+      "url": "https://www.artbasel.com/miami-beach/highlights",
+      "image": "https://res.cloudinary.com/dqzqcuqf9/image/upload/v1546932493/ab-og-image.png",
+      "originalTitle": "Miami Beach: Highlights - Art Basel",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 40,
+      "brandFit": 90,
+      "title": "Art Basel Miami Beach 2026 Gathers the International Art World",
+      "excerpt": "Held at the cultural crossroads of the Americas from December 4 to 6, 2026, Art Basel Miami Beach unites leading figures in modern and contemporary art with digital art projects and discussions.",
+      "content": "Situated at the cultural crossroads of the Americas, Art Basel Miami Beach prepares to unite the international art world from December 4 to 6, 2026. The region's leading art fair brings together established galleries, emerging talent, and daring new presentations, spanning Modern masterpieces, contemporary trailblazers, and new frontiers in digital art. The fair's digital art platform, Zero 10, returns with Generation, its largest presentation to date, curated by Karen Archey and Eli Scheinman. Spanning 19 projects, the exhibition explores connections between digital technologies and traditional art forms through works by Sarah Meyohas, Jon Rafman, and Studio DRIFT. Refik Anadol's collaboration with the Yawanawá community transforms Amazonian artwork and weather data into digital imagery, while Harm van den Dorpel's work draws on historical geometric drawings. The Conversations talks program features discussions on patronage, the art market, and the intersection of art and technology. Panels include appearances by Jeff Koons, Julie Mehretu, Kevin Love, Crystal Dunn, Keith Rivers, and Swizz Beatz, with all sessions free and open to the public."
+    },
+    {
       "id": "6d1eb262743e18dc858b",
       "category": "Architecture & Design",
       "source": "ArchDaily",
@@ -304,12 +376,12 @@
       "originalTitle": "Kashef Chowdhury/URBANA Receives the First Ambasz–MoMA Annual Prize for Nature–Reconciled Architecture - ArchDaily",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 85,
-      "brandFit": 95,
-      "title": "Kashef Chowdhury and URBANA Receive the First Ambasz-MoMA Prize for Nature-Reconciled Architecture",
-      "excerpt": "The Museum of Modern Art has selected Kashef Chowdhury/URBANA for the inaugural Ambasz-MoMA Annual Prize for Nature-Reconciled Architecture for the Friendship Centre project in Gaibandha. The $200,000 award is shared between the architect and Argentina's Fundación Gran Chaco.",
-      "content": "The Museum of Modern Art selected Kashef Chowdhury/URBANA for the inaugural Ambasz-MoMA Annual Prize for Nature-Reconciled Architecture for the design of the Friendship Centre, a rural training facility in Gaibandha, Bangladesh. Described by MoMA as the largest award for a single architecture project, the prize aims to recognize architectural practice while supporting environmental action. The $200,000 award is shared between the architect and Fundación Gran Chaco, a nonprofit organization in Formosa, Argentina, to plant trees in the Gran Chaco forest. The project was chosen from nearly 140 international entries by a jury comprising MoMA representatives and external members based on rigor, creative engagement with the natural environment, and alignment with the institute's mission. Completed in 2011, the Friendship Centre responds to seasonal flooding and earthquakes in the Jamuna River delta using a compacted earthen embankment and handcrafted local clay bricks. The layout reflects the nearby third-century BCE ancient city of Mahasthangarh while integrating green roofs and rainwater harvesting pools. The award will be presented during a ceremony at MoMA on December 12, 2026."
+      "editorialScore": 85,
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Kashef Chowdhury/URBANA Wins Inaugural MoMA Nature Prize",
+      "excerpt": "The Museum of Modern Art has selected Kashef Chowdhury/URBANA for the first Ambasz–MoMA Annual Prize for Nature–Reconciled Architecture for the Friendship Centre in Bangladesh.",
+      "content": "The Museum of Modern Art has selected Dhaka-based architectural office Kashef Chowdhury/URBANA as the recipient of the first Ambasz–MoMA Annual Prize for Nature–Reconciled Architecture for the Friendship Centre in Gaibandha, Bangladesh. Described by MoMA as the largest award for a single architecture project, the prize aims to recognize architectural practice while supporting tangible environmental action. The 200,000 dollar award is shared between the architect and the Fundación Gran Chaco, a nonprofit organization in Formosa, Argentina, which will plant trees in the Gran Chaco forest. Administered through the Emilio Ambasz Institute, the prize honors architecture that merges environmental adaptation, historical continuity, and community sensitivity. Completed in 2011 in the flood-prone Jamuna River delta, the Friendship Centre provides a rural training facility handcrafted mostly with local clay bricks, drawing spatial inspiration from the ancient city of Mahasthangarh. Selected from nearly 140 international projects by a five-member jury, the award will be presented during a ceremony at MoMA on December 12, 2026."
     },
     {
       "id": "3ca02732a6b6d5fd4194",
@@ -361,9 +433,9 @@
       "editorialScore": 30,
       "technicalValue": 40,
       "brandFit": 20,
-      "title": "Eight Dead in Brooklyn Building Collapse Next to Construction Site",
-      "excerpt": "Eight people were killed and 18 others injured when a three-story building collapsed into an excavation site in Brooklyn, prompting multiple official investigations.",
-      "content": "A 96-year-old three-story building collapsed into an adjacent excavation site on Flatbush Avenue in Brooklyn, resulting in eight fatalities, including two children and two construction workers, and 18 injuries. Rescue operations concluded following the incident. A project geotechnical report had previously indicated that abutting structures required underpinning and warned that excavation vibration could adversely affect them. A March preconstruction survey documented visible cracking and rated the north masonry facade poorly. Approved excavation-support plans prescribed specific monitoring thresholds for movement and vibration. Available records do not establish whether the structure was underpinned or what the final monitoring readings showed before the collapse. Mayor Zohran Mamdani ordered safety inspections at approximately 100 other construction sites associated with the project's firms. New York Attorney General Letitia James announced that the Buildings Department would conduct a full investigation, while Brooklyn District Attorney Eric Gonzalez launched a separate inquiry. City records show the development had faced earlier stop-work orders during demolition phases before excavation began."
+      "title": "Eight Dead and 18 Injured in Brooklyn Building Collapse Near Construction Site",
+      "excerpt": "An adjoining 96-year-old three-story building collapsed into an excavation site in Brooklyn, New York, leaving 8 people dead and 18 injured. Authorities have launched multiple investigations into the incident.",
+      "content": "On November 11, a three-story building collapsed into an adjoining excavation site in the Brooklyn borough of New York, resulting in 8 fatalities and 18 injuries. Officials confirmed the dead included two children and two construction workers, while the Fire Department concluded rescue operations on November 12. City records list Townhouse Builders as the general contractor for the project at 2625 Bedford Ave. A project geotechnical report had warned that abutting structures required underpinning and that construction-related vibrations could adversely affect neighboring properties. A March 5 preconstruction survey documented visible cracking at 1321 Flatbush Ave., rating its north masonry facade as poor and its other facades as fair. Area residents reported feeling heavy impacts and shaking while construction was underway next door. Mayor Zohran Mamdani ordered safety inspections at approximately 100 other construction sites linked to companies involved in the project. New York Attorney General Letitia James stated that the Buildings Department would conduct a full investigation, alongside a separate probe launched by Brooklyn District Attorney Eric Gonzalez. The exact cause of the structural collapse remains undetermined pending the conclusion of ongoing investigations by municipal authorities."
     },
     {
       "id": "59cbcf2b3a22a5e15e0f",
@@ -379,9 +451,9 @@
       "editorialScore": 88,
       "technicalValue": 85,
       "brandFit": 92,
-      "title": "Molteni Museum Exhibition Gives Designers Creative Freedom",
-      "excerpt": "A new exhibition at the Molteni Museum in Giussano, Italy, invites prominent designers and architects to reinterpret existing brand furniture into unique, expressive works of art free from commercial constraints.",
-      "content": "The Molteni Museum at the Molteni Compound in Giussano, Italy, has launched an exhibition giving living designers and architects the freedom to transform existing brand furniture into unique artistic works without commercial constraints. The showcase features contributions from international practices and creators, including Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, AMDL Circle, Foster + Partners Industrial Design, Patricia Urquiola, the late Luca Meda, and Vincent Van Duysen. Herzog & de Meuron reinterpreted a special-edition chair with candy-colored inflatable cushions, while Ron Gilad transformed a kitchen island into a poetic fountain with four faucets as a tribute to Luca Meda. The OMA firm experimented with materials to redesign tables from the Principles collection, and AMDL Circle re-imagined workstation systems into surreal, centipede-like contours. The exhibition will remain on display for one year and is expected to travel internationally."
+      "title": "Molteni Museum Exhibition Unveils Creative Freedom for International Designers",
+      "excerpt": "The Molteni Museum in Giussano, Italy, has unveiled a new exhibition giving prominent architects and designers the creative freedom to produce expressive works using existing brand elements without commercial constraints.",
+      "content": "Hosted at the Molteni Compound in Giussano, Italy, the Molteni Museum opened a new exhibition designed to offer furniture industry creators the rare opportunity to produce expressive, unconstrained works. Using existing pieces from Molteni Group brands as a starting point, the showcase celebrates living creatives rather than historical icons, removing the traditional boundaries of commerce and engineering complexity. Participating practices and designers include Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, AMDL Circle, Foster + Partners Industrial Design, Patricia Urquiola, Ron Gilad, and Vincent Van Duysen. Israeli artist Ron Gilad created a poetic fountain with four faucets as a tribute to late designer Luca Meda, while Herzog & de Meuron reinterpreted a special-edition chair with playful, candy-colored inflatable cushions. Rotterdam-based OMA approached the Principles collection through material experimentation, joined by AMDL Circle's surreal interpretation of the MDL System. Accompanied by video installations produced by Muse Factory of Projects, the exhibition will remain on display at the museum for one year before embarking on an international tour to a to-be-determined roster of cities."
     },
     {
       "id": "1ced34583d4e10dfda7f",
@@ -456,24 +528,6 @@
       "content": "La Biennale di Venezia hosts the lecture performance Bladder Diplomacy at Tese dei Soppalchi on 18 November 2026, running from 16:00 to 17:20. The event weaves stories of international diplomacy and the cultivation of potatoes and tomatoes in the eastern Mediterranean together with personal family narratives. The work examines radical interventions in the natural environment and nutritional habits introduced to the region by modernization and globalized agribusiness. Lebanese artists Ziad Antar, Hatem Imam, and Nayla Mabsout collaborate on the performance, drawing a satirical puzzle of malicious weeds, civil wars, and the resilience of indigenous seeds. The script is written by Ziad Antar, directed by Hatem Imam, and features video by Nayla Mabsout, with Ziad Antar and Nayla Mabsout performing. Visitors must hold a valid admission ticket to Biennale Arte 2026 in order to attend the scheduled event."
     },
     {
-      "id": "46ffb1271876591e5645",
-      "category": "Exhibitions",
-      "source": "La Biennale di Venezia",
-      "sourceDomain": "labiennale.org",
-      "publishedAt": "2026-11-12T10:39:46.000Z",
-      "url": "https://www.labiennale.org/en/agenda/clarissa-herbst-dominique-rust-whiteout",
-      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/performances-lectures-13-22-nov.jpg?itok=7alBE4Lj",
-      "originalTitle": "Biennale Arte 2026 | CLARISSA HERBST & DOMINIQUE RUST | Whiteout - La Biennale di Venezia",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 90,
-      "title": "Clarissa Herbst and Dominique Rust Present Whiteout Performance at Biennale Arte 2026",
-      "excerpt": "Dominique Rust and Clarissa Herbst, alongside Michael Wolf, present the Whiteout performance at Sala d’Armi E during Biennale Arte 2026.",
-      "content": "Scheduled for 17 November 2026 from 14:00 to 14:45 at Sala d’Armi E, the performance titled Whiteout is presented as part of Biennale Arte 2026. The performance utilizes the Duchampian concept of the inframince to explore boundary states between bodies, cultural entities, and moments in time. Dominique Rust and Clarissa Herbst, alongside Michael Wolf, have collaborated for many years on performance projects that combine scripted elements with improvisation. Whiteout was developed within the context of Rust and Herbst’s project for In Minor Keys at Casetta Scaffali within the Arsenale. The installation revisits Parfumerie, an artist-led urban experiment held in Zurich in the late 1980s. Comprising mostly illegal and ad hoc club nights, Parfumerie previously established a space for collective joy. The event features performers Dominique Rust and Michael Wolf, scenography and video by Clarissa Herbst, and music composition by Martin Schütz. Visitors must hold a valid admission ticket to Biennale Arte 2026 to attend."
-    },
-    {
       "id": "98b2ce6ac2d44ac85c17",
       "category": "Fashion & Luxury",
       "source": "WWD",
@@ -486,10 +540,10 @@
       "contentMode": "full-source",
       "editorialScore": 86,
       "technicalValue": 82,
-      "brandFit": 92,
-      "title": "Loro Piana Celebrates Finest Cashmere and Stages New York Exhibition",
-      "excerpt": "Loro Piana celebrates cashmere with a fineness of 12.89 microns through the 2025 Cashmere Award held at The Brant Foundation in New York, alongside the Master of Cashmere exhibition.",
-      "content": "Held at The Brant Foundation in New York, the 2025 Loro Piana Cashmere of the Year Award honored fiber with a fineness of 12.89 microns. The event also unveiled the Master of Cashmere exhibition, highlighting the brand's history and manufacturing expertise. Deputy chairman Pier Luigi Loro Piana stated that his journey in China began in the 1980s, building strong trust-based relationships with local communities. Chief executive officer Frédéric Arnault emphasized that cashmere lies at the heart of the brand's identity. The 11th edition of the award honored three couples of cashmere herders from Inner Mongolia, with the first prize bestowed for a fiber diameter of 12.89 microns. Loro Piana carries out various initiatives to strengthen the ecosystem and combat desertification in Mongolia. The company also inaugurated a new knitwear facility in Ghemme, Italy, in September."
+      "brandFit": 90,
+      "title": "Loro Piana Celebrates Finest Cashmere and Unveils Exhibition in New York",
+      "excerpt": "Held in New York, the 2025 cashmere awards honored exceptionally fine fibers while an immersive exhibition showcased the Italian house's heritage.",
+      "content": "The 2025 Loro Piana Cashmere of the Year Award celebrated a fiber fineness of 12.89 microns at an event held on Tuesday at The Brant Foundation in New York. The gathering also marked the unveiling of the “Master of Cashmere” exhibition, highlighting the Italian house's heritage and craftsmanship. Established in 2015, the annual accolade has contributed to improving the fineness of the fiber. The 11th edition honored three pairs of cashmere herders from Inner Mongolia. The first prize went to greasy cashmere weighing 135.8 kg with a 12.89 micron diameter, followed by the second prize for 87.1 kg at 13.01 microns and the third for 116 kg at 13.04 microns. A micron equals one-thousandth of a millimeter, whereas human hair measures 70 microns. Winners receive a financial reward per kilo alongside a silver comb symbolizing the gathering process. Executives emphasized that cashmere remains central to the brand identity. Through selective breeding programs and regional initiatives, the company aims to support herding communities and preserve local biodiversity. Loro Piana has been controlled by LVMH Moët Hennessy Louis Vuitton since 2013."
     },
     {
       "id": "909a50f1a9622b350292",
@@ -526,42 +580,6 @@
       "title": "Tivoli Landscape Attributed to Camille Corot at the National Gallery",
       "excerpt": "A work thought to be by French artist Camille Corot from around 1826 in Italy is held in the National Gallery collection, featuring architectural sections and light contrasts.",
       "content": "French artist Camille Corot produced 200 drawings and 150 oil studies during his stay in Italy between 1825 and 1828. Due to the scarcity of signatures on these sketches, attributions remain uncertain. The work titled Staircase in the Villa of Maecenas, Tivoli presents a visually satisfying vista from giant doors towards light coming through upper windows. Tivoli, a town northeast of Rome, was a frequent destination for artists due to its dramatic landscape. While signed Corot on the lower right, the sketch also bears the signature Granet in a likely more recent hand. Measuring 29.7 by 21.5 centimetres, the oil on paper laid on canvas is part of the Gere Collection on long-term loan to the National Gallery and is not currently on display. Corot's dedication to close observation of nature significantly influenced the later Impressionist approach to landscape painting."
-    },
-    {
-      "id": "b9588ea939ccb22dc975",
-      "category": "Galleries & Museums",
-      "source": "The National Gallery, London",
-      "sourceDomain": "nationalgallery.org.uk",
-      "publishedAt": "2026-11-07T00:54:00.000Z",
-      "url": "https://www.nationalgallery.org.uk/paintings/edgar-degas-promenade-beside-the-sea",
-      "image": "https://www.nationalgallery.org.uk/paintings/edgar-degas-promenade-beside-the-sea",
-      "originalTitle": "Edgar Degas | Promenade beside the Sea | L819 - The National Gallery, London",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 80,
-      "technicalValue": 60,
-      "brandFit": 85,
-      "title": "Edgar Degas Painting Promenade beside the Sea at The National Gallery",
-      "excerpt": "Edgar Degas's early oil sketch Promenade beside the Sea, created around 1860 and depicting the Bay of Naples, is held at The National Gallery in London.",
-      "content": "Created around 1860 by Edgar Degas, Promenade beside the Sea stands as an early oil sketch exploring the recurrent theme of horses and riders. The artwork depicts an elegantly attired couple on horseback riding along a coastal route towards cliffs. A gentleman in black with a top hat and a lady sitting side-saddle in a dark riding habit make their way past coastal vegetation. The setting has been identified as the Bay of Naples, a location Degas visited during trips to see his Italian family. Open brushwork conveys the movement of the horses' gait, while impasto captures the energy of breaking waves. Measuring 22.5 by 32.5 centimeters, the oil on canvas is on long-term loan from the Gere Collection to The National Gallery in London, cataloged under inventory number L819. Evidence indicates the left-hand section derives from a notebook sketch housed in Paris. The composition reflects the artist's lifelong interest in movement and motion prior to the emergence of the Impressionist group."
-    },
-    {
-      "id": "0fffef7010a3ba71c40b",
-      "category": "Galleries & Museums",
-      "source": "Victoria and Albert Museum",
-      "sourceDomain": "vam.ac.uk",
-      "publishedAt": "2026-11-06T14:49:08.000Z",
-      "url": "https://www.vam.ac.uk/articles/about-the-constantinople-to-istanbul-one-city-two-empires-exhibition",
-      "image": "https://assets-cdn.vam.ac.uk/2026/11/06/11/28/15/a1a86f83-79e1-4314-aca6-199c0c410f6a/640.jpg",
-      "originalTitle": "About the Constantinople to Istanbul: One City, Two Empires exhibition - Victoria and Albert Museum",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 50,
-      "brandFit": 90,
-      "title": "V&A Museum Explores Byzantine and Ottoman Legacy in Major Exhibition",
-      "excerpt": "The Victoria and Albert Museum is hosting Constantinople to Istanbul: One City, Two Empires, an exhibition exploring 1,600 years of artistic production from AD 330 to 1922.",
-      "content": "V&A South Kensington in London is presenting Constantinople to Istanbul: One City, Two Empires, an exhibition spanning the period from AD 330 to 1922. The exhibition examines the art and design traditions of both the Byzantine and Ottoman empires, highlighting their creative legacy that shaped the Mediterranean and beyond. Spread across four main sections, the exhibition features over 200 objects, including rare decorative arts, fine silks, textiles, ceramic tiles, mosaics, precious metalwork, jewelry, sculpture, architectural furnishings, manuscripts, and paintings. The first section, Roman Beginnings, explores the refounding of the city in AD 330 as the capital of the Roman Empire under Constantine the Great, focusing on its infrastructure and the Hippodrome. Heaven and Earth, the second section, explores how art and architecture served Christianity. Power and Reach examines how the Ottoman court projected authority through visual spectacle and luxury materials, while the final section, Life in the City, investigates the city's cosmopolitan character, religious coexistence, and 19th-century shifts in style. The exhibition remains open until 9 May 2027."
     },
     {
       "id": "2c171cc7e0c8426e2cc8",
