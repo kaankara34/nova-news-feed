@@ -4,7 +4,7 @@
   "editorialPolicy": "NOVA Verified Premium Editorial Feed",
   "aiModel": "gemini-3.5-flash-lite",
   "language": "tr",
-  "generatedAt": "2026-11-20T03:31:25.476Z",
+  "generatedAt": "2026-11-21T03:31:02.703Z",
   "retentionDays": 15,
   "categories": [
     "Art & Exhibitions",
@@ -22,7 +22,7 @@
     "Exhibitions": 5,
     "Galleries & Museums": 5,
     "Architecture & Design": 6,
-    "Construction": 5,
+    "Construction": 4,
     "Urban Transformation": 0,
     "Kadıköy": 0,
     "Technical & Legal": 0,
@@ -50,9 +50,9 @@
       "targetMet": true
     },
     "Construction": {
-      "count": 5,
+      "count": 4,
       "target": 5,
-      "targetMet": true
+      "targetMet": false
     },
     "Urban Transformation": {
       "count": 0,
@@ -75,8 +75,44 @@
       "targetMet": true
     }
   },
-  "total": 29,
+  "total": 28,
   "articles": [
+    {
+      "id": "99853ab39829015a39dd",
+      "category": "Architecture & Design",
+      "source": "Designboom",
+      "sourceDomain": "designboom.com",
+      "publishedAt": "2026-11-20T21:35:56.000Z",
+      "url": "https://www.designboom.com/architecture/angelo-renna-eight-principles-welcoming-non-human-life-back-into-our-cities-guest-essays/",
+      "image": "https://www.designboom.com/twitterimages/uploads/2026/11/lesser-houses-2-angelo-renna-designboom-1200-1.jpg",
+      "originalTitle": "angelo renna’s eight principles for welcoming non-human life back into our cities - Designboom",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 80,
+      "brandFit": 90,
+      "title": "Kentsel Tasarımda İnsan Dışı Yaşamı Destekleyen Sekiz Temel İlke",
+      "excerpt": "Tasarımcı Angelo Renna, şehirlerin kentsel ekosistemlerini diğer canlı türleriyle paylaşması için sekiz maddelik bir rehber yayımladı. İlkeler arasında doğal yeşil alanların bırakılması, çim biçmenin azaltılması ve su kaynaklarının sağlanması yer alıyor.",
+      "content": "Son elli yılda insan faaliyetleri küresel yaban hayatı popülasyonunun üçte ikisinden fazlasının kaybolmasına yol açarken, tasarımcı Angelo Renna kentsel alanların diğer canlı türleriyle paylaşılması için sekiz ilkeden oluşan bir rehber yayımladı. Öne sürülen yaklaşımlar arasında kentsel ekosistemlerin doğal yollarla gelişmesine izin verilmesi, çim biçme sıklığının azaltılması ve ölü ağaç kütüklerinin ekosisteme kazandırılması bulunuyor. Araştırmalar, yoğun çim bakımının bitki ve omurgasız çeşitliliğini azalttığını gösteriyor. Bunun yanı sıra kurbağalar ve diğer amfibiler için su kaynaklarının sağlanması, delikli ve gözenekli yapı malzemeleriyle mikro habitatlar yaratılması öneriliyor. Monokültür bitkilendirme yerine çok türülü toplulukların tercih edilmesi, kentsel alanların çevresel stres faktörlerine karşı direncini artırıyor. Bu rehber, şehirlerin gelecekte yalnızca insan odaklı bir gelişim süreci olarak değil, farklı türlerin ortak yaşam alanında birlikte evrimleştiği mekânlar olarak tasarlanması gerektiğini savunuyor."
+    },
+    {
+      "id": "7deb214730d290e3fd92",
+      "category": "Architecture & Design",
+      "source": "ArchDaily",
+      "sourceDomain": "archdaily.com",
+      "publishedAt": "2026-11-20T06:45:00.000Z",
+      "url": "https://www.archdaily.com/1188585/connecting-old-and-new-through-a-ceramic-facade",
+      "image": "https://images.adsttc.com/media/images/6af6/d9cf/8074/f401/89de/eb58/large_jpg/a-new-ceramic-skin-for-the-refurbishment-and-extension-of-htbas-industrial-complex_7.jpg?1794562526",
+      "originalTitle": "Connecting Old and New Through a Ceramic Facade - ArchDaily",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 90,
+      "brandFit": 90,
+      "title": "Beniel'deki Endüstriyel Tesis Seramik Cepheyle Yeniden Düzenlendi",
+      "excerpt": "Martín Lejarraga bürosu, Beniel'deki HTBA endüstriyel kompleksini yeniledi. Proje için FAVEKER tarafından geliştirilen seramik dış cephe, farklı yapılara ortak bir kimlik kazandırdı.",
+      "content": "İlaç, gıda ve beslenme endüstrileri için biyoaktif bileşenler üreten HTBA tesisinde gerçekleştirilen yenileme ve genişletme çalışmaları, üretim mantığına uyum sağlayan yeni bir seramik zarf ile ifade edildi. Giriş bölgesindeki iki bina, FAVEKER tarafından proje için özel olarak geliştirilen beyaz seramik havalandırmalı cephe ile kaplandı. Brooklyn ve Sidney adı verilen üç boyutlu ekstrüde seramik parçalar, yüzeyde derinlik ve hareket yaratarak gün ışığının yansımalarına olanak tanıyor. Ofis binasında 647.64 m² ve soyunma odası pavyonunda 351.20 m² olmak üzere toplam 998.84 m² seramik cephe uygulandı. FTS 505 dikey montaj sistemiyle yerleştirilen parçalar, binanın oranlarını vurgulayan kesintisiz bir dizi oluşturuyor. Üzerine yerleştirilen kırmızı metal korniş ise kurum rengini yansıtarak seramik yüzeyle kontrast oluşturuyor. Proje için özel olarak tasarlanan bu seramik çözümler, uygulamanın ardından üreticinin kataloğuna eklendi."
+    },
     {
       "id": "fcc745d601a7228876f4",
       "category": "Galleries & Museums",
@@ -100,18 +136,36 @@
       "category": "Art & Exhibitions",
       "source": "ArtReview",
       "sourceDomain": "artreview.com",
-      "publishedAt": "2026-11-19T13:15:00.000Z",
+      "publishedAt": "2026-11-19T14:37:14.000Z",
       "url": "https://artreview.com/strain-and-resilience-alma-allen-at-perrotin-paris/",
       "image": "https://backend.artreview.com/wp-content/uploads/2026/11/F.-Cover_Alma_Allen-copy.png",
       "originalTitle": "‘Strain and Resilience’: Alma Allen at Perrotin Paris - ArtReview",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
-      "technicalValue": 65,
-      "brandFit": 88,
-      "title": "Alma Allen Paris'teki Perrotin Galerisinde İlk Kişisel Sergisini Açıyor",
-      "excerpt": "Perrotin, Paris'teki mekanında heykeltıraş Alma Allen'ın anıtsal bronz heykellerden oluşan ilk kişisel sergisine ev sahipliği yapıyor. 17 Aralık'a kadar sürecek etkinlik, sanatçının dokunma ve algı üzerine odaklanan yeni eserlerini bir araya getiriyor.",
-      "content": "Paris'teki Perrotin Galerisi, heykeltıraş Alma Allen'ın anıtsal bronz heykellerden oluşan ilk kişisel sergisini ziyaretçilerle buluşturuyor. Saint-Claude Sokağı'ndaki mekanda 17 Ekim ile 19 Aralık tarihleri arasında yer alan sergi, dokunma, dönüşüm, hafıza ve algı gizemlerini irdeleyen bir grup eseri bir araya getiriyor. Tüm heykeller, sanatçının anlamın açık uçlu kalması gerektiği inancını yansıtan ve kasıtlı olarak bitmemiş bir tanım sunan Not Yet Titled adını taşıyor. Utah'taki gençlik yıllarında cep bıçağıyla oyma yapmaya başlayan kendi kendini yetiştirmiş sanatçı, çalışmalarına ip, kil veya balmumu kullanarak küçük modellerle başlıyor. Tamamlanan bu küçük modeller daha sonra taranarak büyütülüyor ve sanatçının evindeki dökümhanede bronza dönüştürülüyor. Eserler, su akıntılarında çekilen halatları veya denizci düğümlerini anımsatan bükülmüş ve esnek formlarıyla hem gerilim hem de direnç iletiyor. Sergide, elle yoğrulmuş malzemelerin görünümünü taşıyan bronz duvar kabartmaları da yer alıyor. Patinaları zamanla derinleşecek şekilde tasarlanan bronz eserler, botanik, dini ve sanat tarihi referanslarını bir araya getirerek doğa dünyasını ruhani geleneklerle buluşturuyor. Allen, heykellerini görünür gerçekliğin ötesine bakma merakından doğan hayaletler olarak tanımlıyor."
+      "editorialScore": 76,
+      "technicalValue": 55,
+      "brandFit": 82,
+      "title": "Alma Allen'in Paris'teki İlk Kişisel Sergisi Perrotin'de Ziyaretçilerle Buluşuyor",
+      "excerpt": "Perrotin, Paris'teki mekanında Alma Allen'ın anıtsal bronz heykellerden oluşan ilk kişisel sergisine ev sahipliği yapıyor. 19 Aralık'a kadar süren sergi, dokunma, hafıza ve algı temalarını işliyor.",
+      "content": "Perrotin, galeri mekanında Alma Allen'ın anıtsal bronz heykellerini içeren ilk kişisel sergisini sunuyor. 17 Ekim - 19 Aralık tarihleri arasında açık olan sergi, dokunma, dönüşüm, hafıza ve algı gizemlerini inceleyen bir grup çalışmayı bir araya getiriyor. Henüz İsimlendirilmemiş adını taşıyan heykeller, anlamın açık uçlu kalması gerektiği inancını yansıtıyor. Kökleri, tohum kapsüllerini, fosilleri ve kabukları anımsatan formlar, tek bir sınıflandırmaya direniyor. Utah'taki gençlik yıllarında cep bıçağıyla oymaya başlayan sanatçı, küçük modelleri el yoluyla geliştiriyor. Tamamlanan bu modeller daha sonra taranarak büyütülüyor ve sanatçının evindeki dökümhanede bronza dönüştürülüyor. Eserler gerilim ve dayanıklılığı aynı anda iletirken, kıvrımlı yapılarıyla su akıntılarına kapılmış halatları hatırlatıyor. Venedik'te geçirdiği sürenin ve suyla çevrili olmanın önem taşıdığı deneyimlerin ardından şekillendirilen bazı parçalar, teknede geliştirildi. Sergide ayrıca el ile yoğrulmuş malzemelerin görünümünü taşıyan bronz duvar kabartmaları da yer alıyor. Parlatılmış bronz patinalarının zamanla derinleşmesi ve taşın hava koşullarından etkilenmesini yansıtması amaçlanıyor. Sanatçının yeni eserleri fiziksel ile gizemli arasındaki alanda konumlanarak izleyicileri zamanla ortaya çıkabilecek anlamlara açık kalmaya davet ediyor."
+    },
+    {
+      "id": "b0f739263998f907e787",
+      "category": "Exhibitions",
+      "source": "Art Basel",
+      "sourceDomain": "artbasel.com",
+      "publishedAt": "2026-11-19T13:48:26.000Z",
+      "url": "https://www.artbasel.com/stories/art-basel-announces-further-highlights-of-its-2026-miami-beach-edition-1",
+      "image": "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/q_auto,w_500/https://d2u3kfwd92fzu7.cloudfront.net/asset/news/Frame_36__3_.png",
+      "originalTitle": "Art Basel announces further highlights of its 2026 Miami Beach edition - Art Basel",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 90,
+      "technicalValue": 75,
+      "brandFit": 95,
+      "title": "Art Basel Miami Beach 2026 Edisyonunun Öne Çıkan Ayrıntılarını Açıkladı",
+      "excerpt": "Art Basel Miami Beach, 4-6 Aralık 2026 tarihlerinde gerçekleştirilecek etkinlik için galeriler, Conversations programı ve Zero 10 girişimi kapsamındaki yeni kurumsal iş birliklerini duyurdu.",
+      "content": "Art Basel Miami Beach, 2026 edisyonu için yeni galeri sunumlarını, Conversations programını, Zero 10: Generation için yeni kurumsal girişimleri ve ortaklarla geliştirilen sanatçı odaklı projeleri açıkladı. Küresel Lider Ortağı UBS olan etkinlik, 2-3 Aralık tarihlerindeki VIP önizleme günlerinin ardından 4-6 Aralık 2026 tarihlerinde Miami Beach Kongre Merkezi'nde düzenlenecek. 40'tan fazla ülke ve bölgeden 272 katılımcıyı bir araya getiren fuar, önde gelen galerileri uluslararası koleksiyonerler, küratörler ve kurumsal liderlerle buluşturuyor. Bu yılki edisyon, katılımcıların, koleksiyonerlerin ve Seçim Komitesi'nin geri bildirimleriyle şekillendirilen yeniden yapılandırılmış fuar alanı düzenini sunuyor. Galeriler sektörü, Latin Amerika ve Karayipler dahil olmak üzere Amerikan kıtasından öncü sanatsal programları Avrupa, Asya ve diğer bölgelerden galerilerle diyalog içinde bir araya getiriyor. Yeni duyurulan sunumlar arasında Mendes Wood DM'nin Brezilyalı sanatçı Rosana Paulino'nun ilk bronz heykelini sunması, Gladstone'un Wangechi Mutu'nun anıtsal bronz heykelini sergilemesi ve David Kordansky Gallery'nin Rashid Johnson ile Huma Bhabha'nın eserlerine yer vermesi bulunuyor. Ayrıca Spinello Projects galeri sektöründeki ilk katılımını gerçekleştirirken, Zero 10 girişimi dijital dönemin sanatına yönelik olarak Miami Beach'e geri dönüyor."
     },
     {
       "id": "5d55f2820c82abcd9c45",
@@ -125,11 +179,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 85,
-      "technicalValue": 45,
-      "brandFit": 90,
-      "title": "Van Gogh tablosu New York'taki müzayedede rekor fiyatla alıcı buldu",
-      "excerpt": "Vincent van Gogh'un son dönemine ait eseri, Sotheby's müzayedesinde vergiler dahil 190.4 milyon dolara satılarak sanatçının açık artırma rekorunu kırdı. Satış öncesinde Nazi dönemine ait kökenine ilişkin iddialar nedeniyle bir uzlaşmaya varılmıştı.",
-      "content": "Vincent van Gogh'un son tablolarından biri olan 1890 tarihli Blossoming Chestnut Trees, Sotheby's New York müzayedesinde 165 milyon dolar çekiç fiyatıyla ve vergiler dahil 190.4 milyon dolara alıcı bularak sanatçının önceki açık artırma rekorunu geride bıraktı. Arjantinli şeker sanayisi mirasçısı ailenin koleksiyonunda uzun süre kamu gözünden uzak kalan eserin satışı öncesinde, önceki sahiplerinin varisleri ile bir uzlaşma sağlandığı duyurulmuştu. Yaklaşık beş dakika süren teklif yarışmasının ardından salondaki bir alıcıya giden eser, Sotheby's tarihinde satılan en değerli ikinci nesne konumuna geldi. Arka arkaya düzenlenen New York müzayedeleri toplamda vergiler dahil 777.8 milyon dolarlık gelir elde ederken, Mary Cassatt ve Aaron Douglas'ın eserleri de kendi kategorilerinde yeni açık artırma rekorları kırdı. Aaron Douglas'ın Harriet Tubman adlı tablosu, yedi dakikalık bir çekişmenin ardından 14.48 milyon dolara satılarak sanatçının önceki rekorunu katladı. Buna karşın Paul Cézanne'ın Arlequin adlı çalışması 111 milyon dolarla tahminin altında kalırken, koleksiyondaki bazı eserler alıcı bulamadı ya da geri çekildi."
+      "technicalValue": 40,
+      "brandFit": 80,
+      "title": "Van Gogh tablosu New York'taki müzayedede 190.4 milyon dolara alıcı buldu",
+      "excerpt": "Vincent van Gogh'un son dönem eserlerinden biri, Sotheby's müzayedesinde masraflarla birlikte 190.4 milyon dolara satılarak sanatçının rekorunu kırdı. Satış öncesinde Nazi dönemine ait mülkiyet iddiaları üzerine bir uzlaşmaya varılmıştı.",
+      "content": "Vincent van Gogh'un son tablolarından biri olan 1890 tarihli Blossoming Chestnut Trees, New York'taki Sotheby's müzayedesinde 165 milyon dolar çekiç fiyatıyla ve masraflar dahil 190.4 milyon dolara satılarak sanatçının önceki müzayede rekorunu geride bıraktı. Eser, Arjantinli sugar endüstrisi ailesi Blaquier-Arrieta koleksiyonundan uzun süre kamuoyundan saklandıktan sonra satışa çıkarıldı. Satıştan sadece bir gün önce, eserin Nazi dönemi geçmişine dair sorular üzerine Blaquier varisleri ile önceki sahipleri Hedwig ve Samuel Fischer'in varisleri arasında bir anlaşmaya varıldığı duyuruldu. Yaklaşık 5 dakika süren rekabetin ardından oda içindeki bir alıcıya giden eser, Sotheby's tarihinde satılan en değerli ikinci obje ve müzayedede satılan en değerli dördüncü tablo konumuna geldi. Arka arkaya düzenlenen New York müzayedeleri toplamda 777.8 milyon dolar hasılat elde ederken, Mary Cassatt ve Aaron Douglas eserleri de kendi kategorilerinde yeni müzayede rekorları kırdı. Douglas'ın Harriet Tubman tablosu tahmini değerini aşarak 14.48 milyon dolara alıcı bulurken, elde edilen gelir Bennett College'a aktarılacak. Cassatt'ın Summertime tablosu ise masraflarla birlikte 13.3 milyon dolara satıldı."
     },
     {
       "id": "0fffef7010a3ba71c40b",
@@ -143,11 +197,11 @@
       "originalLanguage": "en",
       "contentMode": "full-source",
       "editorialScore": 90,
-      "technicalValue": 85,
+      "technicalValue": 75,
       "brandFit": 95,
-      "title": "Victoria and Albert Müzesi'nde İstanbul Sergisi",
-      "excerpt": "Victoria and Albert Müzesi, Roma İmparatorluğu'ndan Osmanlı'ya kadar 1.600 yıllık sanatsal üretimi inceleyen Constantinople to Istanbul sergisine ev sahipliği yapıyor. Etkinlik 9 Mayıs 2027 tarihine kadar ziyaret edilebilecek.",
-      "content": "Londra'daki V&A South Kensington'da düzenlenen Constantinople to Istanbul: One City, Two Empires sergisi, AD 330 ile 1922 yılları arasındaki dönemi kapsayan 1.600 yıllık sanatsal mirası inceliyor. Bizans ve Osmanlı imparatorluklarının sanat ve tasarım geleneklerini ele alan sergi, 9 Mayıs 2027 tarihine kadar sürecek. Etkinlikte ipekler, seramik karolar, mozaikler, takılar, heykeller ve el yazmaları dahil olmak üzere 200'den fazla eser sergileniyor. Sergi dört ana bölümden oluşuyor. İlk bölüm olan Roman Beginnings, kentin AD 330 yılında Roma İmparatorluğu'nun başkenti olarak yeniden kurulmasını ve Hipodrom gibi yapıları ele alıyor. Heaven and Earth bölümü Hristiyanlık sanatını ve Bizans dönemini incelerken, Power and Reach ise Osmanlı sarayının görkemli kamusal törenlerde kullandığı lüks malzemeleri ve görsel ihtişamı konu alıyor. Son bölüm olan Life in the City ise kentin kozmopolit yapısını, kamusal yaşam ritüellerini ve 19. yüzyıldaki değişimleri ziyaretçilere aktarıyor. Sergi, aynı zamanda bu sanatsal birikimin 19. yüzyıl Avrupası'na ve William Morris gibi isimlere olan etkisini de gözler önüne seriyor."
+      "title": "Victoria and Albert Müzesi'nde Constantinople'dan Istanbul'a Sergisi Ziyarete Açık",
+      "excerpt": "Victoria and Albert Müzesi, Konstantinopolis'ten İstanbul'a: Bir Şehir, İki İmparatorluk sergisi ile Bizans ve Osmanlı dönemlerine ait 1600 yıllık sanat üretimini inceleyen 200'den fazla eseri sanatseverlerle buluşturuyor.",
+      "content": "Victoria and Albert Müzesi, 9 Mayıs 2027 tarihine kadar ziyaret edilebilecek kapsamlı bir sergiye ev sahipliği yapıyor. Konstantinopolis'ten İstanbul'a: Bir Şehir, İki İmparatorluk başlıklı etkinlik, MS 330 ile 1922 yılları arasındaki 1600 yıllık sanatsal üretimi mercek altına alıyor. Akdeniz dünyasını ve ötesini şekillendiren imparatorluk başkentinin yaratıcı mirasını inceleyen sergi, Bizans ve Osmanlı dönemlerinin bağlantılı geleneklerini ele alıyor. Etkinlik kapsamında ince ipekler, seramik karolar, mozaikler, kıymetli metal işleri, mücevherler, heykeller, yazmalar ve tablolar gibi 200'den fazla nadide obje sergileniyor. Sergi dört ana bölümden oluşuyor: Roma Dönemi Başlangıçları, Cennet ve Yeryüzü, Güç ve Erişim ile Şehirde Yaşam. İlk bölüm kentin MS 330'da Roma İmparatorluğu'nun başkenti olarak yeniden kurulmasını ele alırken, ikinci bölüm Hristiyanlık için üretilen sanat ve mimariyi inceliyor. Üçüncü bölüm Osmanlı sarayının ihtişamlı görsel gösterilerini aktarırken, son bölüm ise farklı diller, inançlar ve sanat geleneklerini barındıran kozmopolit şehir yaşamını ziyaretçilere sunuyor. Sergi, Bizans ve Osmanlı sanatının 19. yüzyıl Avrupası üzerindeki etkileriyle sona eriyor."
     },
     {
       "id": "66367949470846b922fb",
@@ -196,12 +250,12 @@
       "originalTitle": "EU Countries Renew Call To Exclude Russia from Venice Ahead of 2027 Architecture Biennale - ARTnews.com",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 82,
+      "editorialScore": 85,
       "technicalValue": 80,
-      "brandFit": 85,
-      "title": "On Avrupa Birliği Ülkesi Rusya'nın Venedik Bienali'nden Hariç Tutulmasını İstiyor",
-      "excerpt": "On Avrupa Birliği üyesi ülke, Rusya'nın 2027 Venedik Mimarlık Bienali'ne katılımının engellenmesi için Avrupa Komisyonu'ndan kararlı adımlar atılmasını talep ediyor. Diplomatik nota imzacısı ülkeler, Moskova'nın varlığının Ukrayna savaşını normalleştirme riski taşıdığını belirtiyor.",
-      "content": "Rapporteur'un aktardığına göre, on Avrupa Birliği ülkesi Avrupa Komisyonu'ndan 2027 Venedik Mimarlık Bienali'nde Rusya'nın yer almaması için daha fazla ve sürdürülebilir çaba göstermesini talep ediyor. Polonya, Avusturya, Hırvatistan, Danimarka, Estonya, Finlandiya, Almanya, Letonya, Litvanya ve İsveç tarafından imzalanan diplomatik nota, Ukrayna'da adil ve kalıcı bir barış sağlanmadığı sürece Moskova'nın uluslararası kültürel etkinliklere katılımının normalleştirilmesine yer olmaması gerektiğini vurguluyor. Grup, AB kültür bakanlarının toplantısı öncesinde birliğin önlem almasını istedi. Bienal başkanı Pietrangelo Buttafuoco daha önce kültürün siyasetin üzerinde olduğu iddiasını reddeden açık mektupların hedefi olmuştu. Avrupa Komisyonu, Moskova'nın dışlanması yönündeki çağrılara katılarak bienale sağlanan 2 milyon euroluk hibeyi temmuz ayında askıya almıştı. Bienal yönetimi ise kültür ve sanatın hiçbir dışlanma veya sansür biçimini kabul etmediğini açıklamıştı. 2026 yılındaki sergiler sırasında Rusya Pavyonu protestolara sahne olmuş ve bazı ülke pavyonları geçici olarak kapanmıştı. Gelecek Venedik Mimarlık Bienali, Wang Shu ve Lu Wenyu küratörlüğünde 8 Mayıs 2027 tarihinde ziyarete açılacak ve 21 Kasım 2027 tarihine kadar devam edecek."
+      "brandFit": 90,
+      "title": "On Avrupa Birliği ülkesi Rusya'nın Venedik Bienali'nden dışlanmasını talep ediyor",
+      "excerpt": "On Avrupa Birliği üyesi ülke, Ukrayna'daki savaşın normalleşmesini önlemek amacıyla 2027 Venedik Mimarlık Bienali'nden Rusya'nın dışlanması için Avrupa Komisyonu'na çağrıda bulundu.",
+      "content": "Polonya, Avusturya, Hırvatistan, Danimarka, Estonya, Finlandiya, Almanya, Letonya, Litvanya ve İsveç'ten oluşan on Avrupa Birliği üyesi ülke, 2027 Venedik Mimarlık Bienali'nde Rusya'nın yer almaması için Avrupa Komisyonu'ndan sürekli çaba talep etti. Diplomatik nota imza atan grup, Ukrayna'da adil ve kalıcı bir barış sağlanana kadar uluslararası spor ve kültür etkinliklerinde Rusya'nın varlığının normalleştirilmesine yer olmaması gerektiğini belirtti. Rusya, 2022'deki Ukrayna işgalinin ardından ara verdiği katılımın ardından Mayıs ayında Venedik Bienali'ne geri dönmüş, bu durum uluslararası alanda tepkilere yol açmıştı. Avrupa Komisyonu, Moskova'nın dışlanması yönündeki çağrılara destek vererek bienale yönelik 2 milyon euroluk hibesini Temmuz ayında askıya almıştı. Bienal başkanı Pietrangelo Buttafuoco ise kültür ve sanatın dışlanmasını reddettiklerini belirterek kararını savundu. 2027 Venedik Mimarlık Bienali, ön izleme günlerinin ardından 8 Mayıs - 21 Kasım 2027 tarihleri arasında gerçekleştirilecek ve ana tema olarak Wang Shu ile Lu Wenyu küratörlüğünde Do Architecture başlığı işlenecek."
     },
     {
       "id": "63251dd34364c0b8b611",
@@ -214,12 +268,12 @@
       "originalTitle": "AOM Higher Education/Research: Utah State University Kem & Carolyn Gardner Learning & Leadership Building - Engineering News-Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 40,
-      "technicalValue": 50,
-      "brandFit": 30,
-      "title": "Utah State Üniversitesi'ndeki Yeni Bina Ödüle Layık Görüldü",
-      "excerpt": "Jacobsen Construction tarafından inşa edilen Utah State Üniversitesi Kem ve Carolyn Gardner Öğrenme ve Liderlik Binası, ENR Mountain States Ödülleri'nde Başarı Ödülü aldı.",
-      "content": "Jacobsen Construction tarafından inşa edilen Utah State University Kem & Carolyn Gardner Learning & Leadership Building, ENR Mountain States Best Projects programında Başarı Ödülü'ne layık görüldü. Logan, Utah'ta yer alan 44.658 feet kare büyüklüğündeki üç katlı akademik tesis, Jon M. Huntsman İşletme Okulu'na bağlı beş akademik merkezi tek çatı altında topluyor. Yoğun bir otoyol kenarında ve diğer iki aktif şantiyenin bulunduğu sıkışık bir alanda inşa edilen projede, Jacobsen Construction genel yüklenici olarak görev yaptı. MHTN Architects tarafından tasarlanan yapı, esnek ve teknoloji odaklı öğrenim alanları sunuyor. Hibrit çelik ve ahşap kütle sisteminin kullanıldığı bu yapı, üniversitenin ilk ahşap kütleli binası olma özelliğini taşıyor. Açıkta kalan glulam kolonlar ve çapraz lamine ahşap kaplama, Logan Kanyonu'ndan ilham alan aydınlık bir iç mekân yarattı. Ahşap kütle yapısı aynı zamanda üniversitenin 2040 yılına kadar karbon nötr olma hedefini destekliyor. Tasarım ve inşaat süreci boyunca kanal ve boru hatları gizlenerek ahşap malzemenin görsel bütünlüğü korundu."
+      "editorialScore": 75,
+      "technicalValue": 80,
+      "brandFit": 70,
+      "title": "Utah Eyalet Üniversitesi Kampüsünde Ödüllü Akademik Yapı Tamamlandı",
+      "excerpt": "Utah Eyalet Üniversitesi'nin Jon M. Huntsman İşletme Okulu bünyesindeki beş merkezi tek çatı altında birleştiren yeni akademik tesisi, 2026 Mountain States En İyi Projeler Ödülü'ne layık görüldü.",
+      "content": "Logan kentinde inşa edilen ve üç katlı olan 44.658 feet kare büyüklüğündeki yapı, MHTN Architects tarafından tasarlandı. Sitedeki diğer iki aktif şantiyeyle paylaşılan dar bir koridorda yükselen proje, eyalet tedarik kuralları kapsamında ayrı ayrı ihale edildi. Jacobsen Construction tüm projelerde müteahhit olarak görev üstlendi. Tasarımda kullanılan hibrit çelik ve masif ahşap sistemi, yapıyı üniversitenin ilk masif ahşap binası haline getirdi. Açıkta kalan glulam kolonlar ile çapraz lamine ahşap kaplama, Logan Kanyonu'ndan ilham alan aydınlık bir iç mekan atmosferi yarattı. Masif ahşap yapı, aynı zamanda kurumun 2040 yılına kadar karbon nötr olma hedefini destekliyor. Ekip, boru hatları ve havalandırma kanallarını gizleyerek ahşap dokunun görsel bütünlüğünü korumak adına Timberlab ile özel detaylar geliştirdi. Proje sahibi Utah Eyalet Üniversitesi olarak kayıtlara geçerken, çalışmalar yapısal mühendislikte BHB Structural ve sivil mühendislikte Cache Landmark Engineering imzası taşıdı."
     },
     {
       "id": "b9c88bef27512826eda2",
@@ -232,12 +286,12 @@
       "originalTitle": "Nan Goldin to debut new film exploring nature and extinction in first UK solo museum show in over two decades - The Art Newspaper",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
+      "editorialScore": 82,
       "technicalValue": 50,
-      "brandFit": 90,
-      "title": "Nan Goldin, Londra'daki sergide doğa ve yok oluş temalı yeni filmini sunacak",
-      "excerpt": "Amerikalı fotoğrafçı Nan Goldin, Londra'daki Hayward Gallery'de yirmi yılı aşkın süredir düzenleyeceği ilk İngiltere solo müze sergisinde doğa ve yok oluşu ele alan yeni filminin prömiyerini gerçekleştirecek.",
-      "content": "Amerikalı fotoğrafçı Nan Goldin, Londra'daki Hayward Gallery'de düzenlenecek sergide, doğa ve yaklaşan yok oluş temalarını işleyen yeni filminin ilk gösterimini yapacak. Küratör Rachel Thomas'a göre sergi, sanatçının queer topluluklar ve seçilmiş aileler üzerine kurduğu şefkat odaklı yaklaşımını doğal dünyaya genişletiyor. Güneybank Merkezi'nin 75. yıl programının bir parçası olan etkinlik, sanatçının 2002 yılından bu yana İngiltere'deki ilk kurumsal solo sergisi olma özelliğini taşıyor. Serginin merkezinde, film yapımcısı David Sherman ile birlikte hazırlanan ve 1960 ile 70'lerden kalma 16 milimetrelik doğa belgeselleri ile hasarlı ses kayıtlarından yararlanan You never did anything wrong, Part II yer alıyor. Britanyalı müzisyen Mica Levi'nin müziklerini yaptığı eser, doğayı açıklamak için kullanılan materyalleri hayvanlar ve arazi üzerine soyut bir meditasyona dönüştürüyor. Sergi ayrıca güneş tutulmasını merkeze alan birinci bölümü, sanatçının arkadaşlarını klasik sanatla buluşturan Stendhal Syndrome serisini ve bağımlılık konusunu ele alan Memory Lost çalışmalarını bir araya getiriyor. Etkinlik, 24 Kasım ile 14 Mart 2027 tarihleri arasında ziyaretçileri ağırlayacak."
+      "brandFit": 85,
+      "title": "Nan Goldin, Londra Hayward Galerisi'nde Yeni Filmini Sergileyecek",
+      "excerpt": "ABD'li fotoğrafçı Nan Goldin, yirmi yılı aşkın süredir Birleşik Krallık'taki ilk solo müze sergisinde doğa ve yok oluş temalı yeni bir film prömiyeri yapmaya hazırlanıyor.",
+      "content": "ABD'li fotoğrafçı Nan Goldin, yirmi yılı aşkın süredir Birleşik Krallık'taki ilk kurumsal solo sergisi kapsamında Londra'daki Hayward Galerisi'nde yeni bir film prömiyeri gerçekleştirecek. Southbank Centre'ın 75. yıl programının bir parçasını oluşturan sergi, 24 Kasım ile 14 Mart 2027 tarihleri arasında ziyaretçileri ağırlayacak. Hayward'ın baş küratörü Rachel Thomas'ın aktardığına göre sergide yer alan eserler, sanatçının topluluklar ve seçilmiş aileler üzerindeki odak noktasını doğa dünyasını da kucaklayacak şekilde genişlettiğini gösteriyor. Serginin merkezinde, film yapımcısı David Sherman ile ortaklaşa hazırlanan ve 1960 ile 70'lerden kalma 16mm doğa belgeselleri ile hasarlı film ses kayıtlarından yararlanan \"You never did anything wrong, Part II\" adlı yapımın prömiyeri yer alacak. Britanyalı müzisyen Mica Levi'nin özgün bir beste hazırladığı bu çalışma, hayvanlar, toprak ve yaklaşan yok oluş üzerine soyut bir meditasyon sunuyor. Etkinlikte ayrıca bir güneş tutulmasını merkezine alan 2024 tarihli birinci bölüm, klasik sanatla arkadaş portrelerini buluşturan \"Stendhal Syndrome\" ve bağımlılık meselesine dönen \"Memory Lost\" adlı çalışmalar da sergilenecek."
     },
     {
       "id": "7e34ebdc972b8ec6f34a",
@@ -286,12 +340,12 @@
       "originalTitle": "Construction underway on Jean Nouvel’s landmark opera house in China - Dezeen",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 88,
-      "brandFit": 85,
-      "title": "Çin'deki Shenzhen Operası İnşaatı Fotoğraflarla Görüntülendi",
-      "excerpt": "Ateliers Jean Nouvel stüdyosu, Çin'in Shenzhen kentinde inşa edilen 250 bin metrekarelik dev opera binasının şantiye fotoğraflarını paylaştı.",
-      "content": "Fransız mimarlık stüdyosu Ateliers Jean Nouvel, Çin'in Shekou Yarımadası'nda yükselen Shenzhen Opera House projesinin inşaat aşamasındaki fotoğraflarını paylaştı. 2028 yılında tamamlanması planlanan yapı, dalgalı çatı peyzajı ile dikkat çekiyor. Uluslararası mimarlık yarışmasını kazanarak hayata geçirilen 250 bin metrekarelik kültür yapısı; 2.300 kişilik konser salonu, 1.800 kişilik tiyatro ve 800 kişilik performans salonunu bünyesinde barındırıyor. Projede ayrıca 400 koltuklu çok işlevli bir tiyatro, kültürel alanlar, kulisler, sanatçı daireleri ve ofisler yer alıyor. Tasarımın denize bakan cephe bağlantısını güçlendirmek amacıyla iç mekanlarda sedef gibi yanardöner malzemelerin kullanılacağı belirtiliyor. Jean Nouvel, ana foyede nacreous malzeme kullanılarak deniz, müzik ve ışık buluşmasının şiirselleştirileceğini ifade etmişti. Proje, şehrin yeni kültürel odak noktalarından biri olmayı hedefliyor."
+      "editorialScore": 88,
+      "technicalValue": 85,
+      "brandFit": 90,
+      "title": "Jean Nouvel'in Çin'deki Opera Binası Projesinde İnşaat İlerliyor",
+      "excerpt": "Ateliers Jean Nouvel stüdyosu, Çin'in Shenzhen kentinde inşa edilen dev opera binasının şantiye fotoğraflarını paylaştı. 2028 yılında tamamlanması planlanan yapı, dalgalı çatı peyzajı ve geniş olanaklarıyla dikkat çekiyor.",
+      "content": "Fransız mimarlık stüdyosu Ateliers Jean Nouvel, Çin'in Shenzhen kentinde yükselen dev opera binasının şantiye aşamasındaki son durumunu gözler önüne seren fotoğraflar paylaştı. Shenzhen Körfezi'ne bakan Shekou Yarımadası'nda konumlanan yapının 2028 yılında tamamlanması öngörülüyor. Pritzker Ödüllü mimar Jean Nouvel'in stüdyosu tarafından tasarlanan 250 bin metrekarelik kültür yapısı, denizle olan bağını simgeleyen dalgalı ve uzatılmış bir çatı peyzajıyla tanımlanıyor. Şantiye görselleri; at nalı planlı ana konser salonu, bin kişilik tiyatro ve 800 kişilik mekân dahil olmak üzere projede yer alan tesislerin ölçeğini ortaya koyuyor. Uluslararası bir mimarlık yarışmasını kazanarak hayata geçirilen projede ayrıca çok işlevli bir tiyatro salonu, kulis alanları, sanatçı daireleri ve idari ofisler bulunuyor. Yapının suyla olan bağını güçlendirmek amacıyla iç mekânlarda sedef gibi iridesan materyallerin kullanılması bekleniyor. 1994 yılında kurulan Fransız mimarlık stüdyosunun son dönemdeki diğer çalışmaları arasında Andorra'daki La Querola konut projesi de yer alıyor. Uluslararası alanda tanınan stüdyo, Shenzhen'deki bu yeni yapıyla kentin kültürel simgelerinden birini inşa etmeyi sürdürüyor."
     },
     {
       "id": "6143a8fecbe19316a97f",
@@ -306,10 +360,10 @@
       "contentMode": "full-source",
       "editorialScore": 90,
       "technicalValue": 85,
-      "brandFit": 92,
-      "title": "2026 Dezeen Mimarlık Ödülleri Sahiplerini Buldu ve Yılın Projesi Seçildi",
-      "excerpt": "Kanagawa'da bulunan ağaç ev sauna projesi, dokuzuncu kez düzenlenen Dezeen Mimarlık Ödülleri'nde yılın en iyi mimari projesi seçildi.",
-      "content": "Londra'da düzenlenen dokuzuncu Dezeen Mimarlık Ödülleri töreninde 11 farklı ülkeden 19 kategori kazananı duyuruldu. Japonya'nın Kanagawa bölgesinde yer alan Daichi Silent River Tree Sauna projesi, hem eğlence ve sağlıklı yaşam kategorisinde birincilik elde etti hem de genel değerlendirmede yılın mimarlık projesi seçildi. Orman dokusuyla bütünleşen yapı, jüri tarafından insan ile doğa arasında ruhsal bir bağ kurduğu gerekçesiyle övgü aldı. Ödül töreninde ayrıca kırsal ve kentsel konut, konut geliştirme, yenileme, uzantı, sivil mimari ve kültür kategorilerinde kazanan projeler ilan edildi. Japonya'nın Amami Ōshima adasında yer alan off-grid konut Amami House kentsel konut ödülünü alırken, Çin'in Anhui kentindeki Jiang Deng Lu kırsal konut kategorisinde ödüle layık görüldü. Andorra'daki La Querola konut projesi, İran'daki Golmorad uzantı projesi, Kongo Demokratik Cumhuriyeti'ndeki Zando Central Market sivil proje ödülü ve ABD'deki Ismaili Center Houston kültürel proje ödülü alan diğer yapılar arasında yer aldı."
+      "brandFit": 90,
+      "title": "Dezen Awards 2026 Mimarlık Alanında Yılın Projesi Sahibini Buldu",
+      "excerpt": "Japonya'nın Kanagawa bölgesindeki Silent River Tree Sauna, dokuzuncu Dezeen Awards töreninde yılın mimarlık projesi seçildi. Ödül, leisure and wellness kategorisinde de birincilik elde etti.",
+      "content": "Dokuzuncu yıllık Dezeen Awards töreninde, mimarlık sektörünün en iyi projeleri açıklandı. Kanagawa ormanlarında yer alan Daichi Silent River Tree Sauna, 2026 yılının mimarlık projesi seçilirken aynı zamanda eğlence ve sağlıklı yaşam kategorisinde de birincilik elde etti. Juri üyeleri projeyi minimal ve manevi dokunuşlara sahip, doğa ile insan arasında ruhani bir bağ kuran bir yapı olarak tanımladı. Ödül kazanan diğer projeler arasında Japonya'da Sakai Architects tarafından tasarlanan Amami House, Çin'de Shisuo Design Office'in imzasını taşıyan Jiang Deng Lu ve Andorra'da Ribas & Ribas Arquitectos tarafından yapılan La Querola yer aldı. Ayrıca İran'da ZAV Architects tarafından yapılan Golmorad uzantısı, Demokratik Kongo Cumhuriyeti'nde Zando Central Market ve Amerika Birleşik Devletleri'nde Ismaili Center Houston ödül alan diğer yapılar arasındabulundu."
     },
     {
       "id": "e8abaf74b9d58f11b0c7",
@@ -340,12 +394,12 @@
       "originalTitle": "Building a Permanent Home for a Space Shuttle Was an Engineering Endeavor - Engineering News-Record",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 75,
+      "editorialScore": 80,
       "technicalValue": 85,
-      "brandFit": 80,
-      "title": "Emekliye Ayrılan Uzay Mekiği Endeavor İçin Kalıcı Sergi Alanı Açıldı",
-      "excerpt": "Los Angeles'taki California Science Center bünyesinde inşa edilen 450 milyon dolarlık Samuel Oschin Air and Space Center, dikey konumdaki Endeavor uzay mekiğine ev sahipliği yapmaya başladı.",
-      "content": "Los Angeles'taki California Science Center bünyesinde yer alan 450 milyon dolar maliyetli Samuel Oschin Air and Space Center kapılarını açtı. Son uçuşunu 2011 yılında gerçekleştiren Endeavor uzay mekiği, yörünge aracı, roketleri ve harici tankıyla birlikte dünyada fırlatma pozisyonunda sergilenen tek uzay aracı olma özelliğini taşıyor. ZGF Architects ve genel müteahhit MATT Construction tarafından tasarlanan 60 metrelik eğrisel yapı, sismik analizler ve çelik çatı konstrüksiyonu açısından önemli mühendislik zorluklarını beraberinde getirdi. Projede, füze istifine zarar vermemek amacıyla özel iskele sistemleri ve ticari vinçler kullanıldı. Yapının inşası sırasında termal silika karoların hassasiyeti nedeniyle 400 işçi güvenlik protokollerine bağlı kaldı. Exposition Park kampüsündeki yükseklik sınırlamalarına uyum sağlamak için bina zeminin 7 metre altına inşa edildi."
+      "brandFit": 75,
+      "title": "Los Angeles'ta Uzay Mekiği Endeavour İçin Yeni Merkez Tamamlandı",
+      "excerpt": "California Science Center bünyesinde inşa edilen 450 milyon dolarlık Samuel Oschin Air and Space Center kapılarını açtı. Emekli uzay mekiği Endeavour, dikey fırlatma pozisyonunda sergilenen dünyadaki tek örnek konumunda.",
+      "content": "California Science Center bünyesinde yer alan 200 bin metrekarelik Samuel Oschin Air and Space Center tamamlandı. Son görevini 2011 yılında gerçekleştiren Endeavour uzay mekiği, iki katı yakıt roketi ve dış tankıyla birlikte dikey fırlatma pozisyonunda sergileniyor. ZGF Architects, MATT Construction ve mühendislik ekipleri, mekiğin geometrisine uygun 200 feet yüksekliğinde paslanmaz çelik bir yapı tasarladı. Projede yer alan Arup, sismik riskleri azaltmak amacıyla performans odaklı sismik analiz uygularken, üçlü sürtünmeli sarkaç yalıtım yatakları temeli betondan ayırdı. Yapının alt üçte birlik kısmında maliyet tasarrufu için püskürtme beton kullanılırken, üst kısımda 3D yazılımlarla tasarlanan çelik diyagrid sistem tercih edildi. Çelik kafes yapının montajı için geçici destek kuleleri kuruldu ve çalışmalar sırasında hassas güvenlik önlemleri uygulandı. Tesisin yüksekliği, çevre kampüsteki diğer yapıları gölgelememesi için zemin kotunun 25 feet altında tasarlandı."
     },
     {
       "id": "0f4edde0745f1f5f8488",
@@ -364,42 +418,6 @@
       "title": "Art Basel Miami Beach 2026 Çağdaş Sanat Dünyasını Bir Araya Getiriyor",
       "excerpt": "Amerika'nın kültürel kavşak noktasında düzenlenen Art Basel Miami Beach, 4-6 Aralık 2026 tarihlerinde modern ve çağdaş sanatın önde gelen isimlerini dijital sanat odaklı projeler ve söyleşi programlarıyla buluşturuyor.",
       "content": "Amerika'nın kültürel kavşak noktasında yer alan Art Basel Miami Beach, 4-6 Aralık 2026 tarihlerinde uluslararası sanat dünyasını bir araya getirmeye hazırlanıyor. Bölgenin önde gelen sanat fuarı, kurulmuş galeriler ile yükselen yetenekleri ve cesur yeni sunumları aynı sahnede buluşturacak. Program, modern başyapıtları, çağdaş öncüleri ve dijital sanatın yeni sınırlarını kapsayacak. Fuarın dijital sanat platformu Zero 10, Karen Archey ve Eli Scheinman küratörlüğünde 19 projeyle bugüne kadarki en büyük sunumu olan Generation'ı gerçekleştirecek. Sunum; algoritmik sanat, sürükleyici ortamlar, resim, heykel ve tekstil alanlarında Sarah Meyohas, Jon Rafman ve Studio DRIFT gibi isimlerin eserlerini bir araya getirecek. Refik Anadol'un Yawanawá topluluğuyla iş birliği, Amazon sanatını ve hava durumu verilerini dijital görüntülere dönüştürürken, Harm van den Dorpel'in çalışmaları geometrik çizimlerden yararlanıyor. Fuarın söyleşi programı Conversations, sanat ve teknoloji, sanat piyasası ve koleksiyonerlik üzerine paneller sunacak. Jeff Koons, Julie Mehretu, Kevin Love, Crystal Dunn, Keith Rivers ve Swizz Beatz gibi isimlerin katıldığı oturumlar halka açık ve ücretsiz olarak gerçekleştirilecek."
-    },
-    {
-      "id": "6d1eb262743e18dc858b",
-      "category": "Architecture & Design",
-      "source": "ArchDaily",
-      "sourceDomain": "archdaily.com",
-      "publishedAt": "2026-11-16T08:00:00.000Z",
-      "url": "https://www.archdaily.com/1188667/kashef-chowdhury-urbana-receives-the-first-ambasz-moma-annual-prize-for-nature-reconciled-architecture",
-      "image": "https://images.adsttc.com/media/images/6afa/00de/c23f/1f01/895a/ff4b/large_jpg/kashef-chowdhury-urbana-receives-the-inaugural-ambasz-moma-annual-prize-for-nature-reconciled-architecture_4.jpg?1794769143",
-      "originalTitle": "Kashef Chowdhury/URBANA Receives the First Ambasz–MoMA Annual Prize for Nature–Reconciled Architecture - ArchDaily",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 80,
-      "brandFit": 90,
-      "title": "Kashef Chowdhury/URBANA MoMA Ödülünü Kazandı",
-      "excerpt": "New York Modern Sanatlar Müzesi, Gaibandha'daki Friendship Centre projesiyle Kashef Chowdhury/URBANA'yı ilk Ambasz–MoMA Yıllık Doğayla Uzlaşan Mimarlık Ödülü'ne layık buldu.",
-      "content": "New York Modern Sanatlar Müzesi, Bangladeş'in Gaibandha bölgesindeki kırsal eğitim tesisi olan Friendship Centre tasarımı nedeniyle Kashef Chowdhury/URBANA ofisini ilk Ambasz–MoMA Yıllık Doğayla Uzlaşan Mimarlık Ödülü'nün sahibi olarak belirledi. Müze tarafından tek bir mimari projeye verilen en büyük ödül olarak tanımlanan bu girişim, mimari pratiği takdir etmeyi ve somut çevresel eylemleri desteklemeyi amaçlıyor. Bu kapsamda 200.000 dolarlık ödül, mimar ile Arjantin'in Formosa eyaletindeki Gran Chaco ormanlarında ağaç dikim çalışmalarını yürüten Fundación Gran Chaco adlı kâr amacı gütmeyen kuruluş arasında paylaştırılacak. Emilio Ambasz Enstitüsü tarafından desteklenen ödül, çevresel uyum, tarihsel süreklilik ve hizmet ettiği topluluklara karşı hassasiyet gösteren projeleri ödüllendiriyor. Jamuna Nehrideltasında yer alan ve sel riski ile depremlere karşı hassas olan 2011 yapımı Friendship Centre, yerel kil tuğlalarla inşa edildi ve çevredeki üçüncü yüzyıldan kalma antik kent Mahasthangarh'tan ilham aldı. Yaklaşık 140 uluslararası proje arasından seçilen ödül, 12 Aralık 2026 tarihinde düzenlenecek bir törenle sahiplerine takdim edilecek."
-    },
-    {
-      "id": "3ca02732a6b6d5fd4194",
-      "category": "Architecture & Design",
-      "source": "Architectural Record",
-      "sourceDomain": "architecturalrecord.com",
-      "publishedAt": "2026-11-15T01:38:28.000Z",
-      "url": "https://www.architecturalrecord.com/articles/18524-best-building-envelope-and-cladding-products-of-2026",
-      "image": "https://www.architecturalrecord.com/ext/resources/Issues/2026/11-November/2611-record-products-rbe-collage.jpg?height=635&t=1794590108&width=1200",
-      "originalTitle": "Best Building Envelope & Cladding Products of 2026 - Architectural Record",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 90,
-      "technicalValue": 95,
-      "brandFit": 90,
-      "title": "2026 Yılının En İyi Bina Kabuğu ve Cephe Ürünleri",
-      "excerpt": "Architectural Record, mimari projeler için geliştirilen 2026 yılının en iyi bina kabuğu, yalıtım ve cephe kaplama ürünlerini seçti. Listede delikli alüminyum paneller, ahşap kaplamalar ve yüksek performanslı yalıtım sistemleri yer alıyor.",
-      "content": "Mimarlık yayın organı Architectural Record, 2026 yılının en iyi bina kabuğu ve cephe kaplama ürünlerini seçti. Seçkide yer alan ürünler arasında Arktura’nın iç ve dış mekanlarda kullanılabilen delikli alüminyum paneli Vapor ve havalandırmalı yağmur perdesi cepheler için geliştirilen ayarlanabilir fiber takviyeli polimer dirsek exoTHERM bulunuyor. Ahşap kategorisinde ise sürdürülebilir şekilde hasat edilen Japon sediri CVG Sugi ve 55 yıl garantili fortifiye edilmiş radiata çamı plank Sicaro dikkat çekiyor. Koleksiyonda ayrıca Kingspan’ın yüksek ısıl performans sunan fiber içermeyen termoset fenolik yalıtım sistemi Kooltherm K100 Serisi, Carlisle SynTech markasının yüzde 34 geri dönüştürülmüş içerik barındıran polyiso çatı yalıtım levhası ThermaThin ve BŌK Modern’in braketsiz pencere siperliği Simple Mount yer alıyor. Isıl olarak değiştirilmiş ahşaplardan oluşan Lunawood 2026 Koleksiyonu ise kategorisinde en iyiler arasında gösterildi."
     },
     {
       "id": "a1e699de0f42cd9549a7",
@@ -448,12 +466,12 @@
       "originalTitle": "Designers’ Creative Freedom Unveiled at Molteni Museum Exhibit - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 85,
-      "brandFit": 92,
-      "title": "Molteni Müzesi Sergisi Tasarımcıların Yaratıcı Özgürlüğünü Ziyaretçilerle Buluşturuyor",
-      "excerpt": "İtalya'nın Giussano kasabasındaki Molteni Müzesi, mimarlar ve tasarımcılara ticari kaygılardan uzakta özgün eserler üretme fırsatı sunan yeni sergisini ziyaretçilere açtı. Bir yıl boyunca sergilenecek eserler farklı şehirleri de dolaşacak.",
-      "content": "İtalya'nın Giussano kentindeki Molteni Kampüsü'nde yer alan Molteni Müzesi, mobilya sektöründeki tasarımcılara ticari ve mühendislik kısıtlamaları olmadan özgün eserler yaratma alanı tanıyan yeni sergisini tanıttı. Molteni&C, UniFor ve Citterio markalarına ait mevcut parçalardan yola çıkılarak hazırlanan sergi, yaşayan yaratıcıları ve güncel iş birliklerini ön plana çıkarmayı amaçlıyor. Sergi kapsamında Herzog & de Meuron, Jean Nouvel, Naoto Fukasawa, OMA, AMDL Circle, Foster + Partners Industrial Design, Patricia Urquiola, Ron Gilad ve Vincent Van Duysen gibi uluslararası alanda tanınan isimlerin tasarımları yer aldı. İsralli sanatçı Ron Gilad, Luca Meda'nın mutfak tasarımına saygı duruşu niteliğinde dört musluklu poetik bir çeşme tasarlarken, Herzog & de Meuron geleneksel işçiliği oyuncu unsurlarla birleştiren özel üretim sandalyeler sergiledi. OMA stüdyosu ise Principles koleksiyonunu malzeme deneyleriyle yeniden yorumladı. Muse Factory of Projects tarafından hazırlanan video enstalasyonlarının da eşlik ettiği serginin bir yıl boyunca Molteni Müzesi'nde kalması ve ilerleyen süreçte dünya genelinde farklı şehirlere seyahat etmesi planlanıyor."
+      "editorialScore": 86,
+      "technicalValue": 82,
+      "brandFit": 94,
+      "title": "Molteni Müzesi Sergisi Tasarımcıların Yaratıcı Özgürlüğünü Sergiliyor",
+      "excerpt": "Giussano'daki Molteni Müzesi'nin yeni sergisi, tanınmış mimar ve tasarımcıların ticari kaygılardan uzak şekilde mevcut mobilya parçalarını yeniden yorumlamasına olanak tanıdı.",
+      "content": "İtalya'nın Giussano kentindeki Molteni Compound'da açılan sergi, tasarımcılara Molteni Group bünyesindeki markalara ait mevcut parçaları başlangıç noktası alarak benzersiz eserler üretme fırsatı sundu. Sanatçı Ron Gilad, amaçlarının geçmişteki ikonlar yerine yaşayan yaratıcıları kutlamak ve onlara mühendislik karmaşıklığı ile ticareti düşünmeme özgürlüğü vermek olduğunu belirtti. Sergide Herzog & de Meuron, Porta Volta özel seri sandalyesini şeker renkli şişme yastıklarla birleştirdi. Ron Gilad, Luca Meda'nın mutfak adasını dört musluklu şiirsel bir çeşmeye dönüştürdü. OMA ise Principles koleksiyonundaki çift katlı masayı malzeme deneyleriyle yeniden yorumladı. AMDL Circle, MDL Sistemini kırkayak benzeri vahşi kıvrımlarla şekillendirdi. Muse Factory of Projects tarafından hazırlanan video enstalasyonları, malzeme ve zanaatkarlığın yeni olasılıklarını gösterdi. Bir yıl boyunca sergide kalacak olan eserlerin daha sonra dünya çapında farklı şehirlere seyahat etmesi bekleniyor."
     },
     {
       "id": "1ced34583d4e10dfda7f",
@@ -474,6 +492,24 @@
       "content": "Venedik Biennaji kapsamında 21 Kasım 2026 tarihinde düzenlenecek etkinlikte Tarek El-Ariss konuk olacak. Teatro Piccolo Arsenale'de saat 16:00 ile 17:30 arasında gerçekleşecek buluşmanın moderatörlüğünü Rasha Salti üstlenecek. Etkinlikte, krizler ve savaşların çevreye verdiği zararların yanı sıra doğa kavramına bakış açımızı nasıl sarstığı ele alınacak. Lübnan'daki savaş döneminde banyo için su kavanozlarında biriktirilen günlük sahnelerden yola çıkılacak konuşma; su ve yeşilliğin Eden Bahçesi'nden Yunan ile İslam geleneklerine uzanan mitolojilerini ve tarihlerini inceleyecek. Vaha figürünün yinelenen bir fantezi olarak ele alınacağı oturumda, çevresel pratiklerin her zaman bilinçli etik tercihlerden doğmadığı; alışkanlık, korku veya hayatta kalma çabasıyla zorunlu olarak ortaya çıkabileceği vurgulanacak. Sürdürülebilirlik kavramı, saflık ve kontrol politikalarını sorgulayan, alternatif gelecekelere odaklanan bir müzakere olarak yeniden çerçevelenecek. Etkinliğe giriş salon kapasitesi dolana kadar ücretsiz olacak."
     },
     {
+      "id": "4539e8c55a478ca390a0",
+      "category": "Exhibitions",
+      "source": "La Biennale di Venezia",
+      "sourceDomain": "labiennale.org",
+      "publishedAt": "2026-11-12T11:57:57.000Z",
+      "url": "https://www.labiennale.org/en/agenda/lerato-shadi-unfolding",
+      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/performances-lectures-13-22-nov.jpg?itok=7alBE4Lj",
+      "originalTitle": "Biennale Arte 2026 | LERATO SHADI | Unfolding - La Biennale di Venezia",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 70,
+      "brandFit": 90,
+      "title": "Lerato Shadi'nin Unfolding Performansı Biennale Arte 2026'da Sahnelenecek",
+      "excerpt": "Lerato Shadi'nin hafıza ve kolektif süreçleri merkeze alan Unfolding başlıklı performansı, 21 Kasım 2026 tarihinde Biennale Arte 2026 kapsamında izleyiciyle buluşacak.",
+      "content": "Bellek, görünürlük ve kolektif süreçler etrafında şekillenen Unfolding, anlamın bedenler aracılığıyla nasıl üretilip aktarıldığını inceleyen bir performans olarak kurgulandı. Etkinlik, 21 Kasım 2026 tarihinde saat 12:00 ile 12:40 arasında Sala d’Armi E alanında gerçekleştirilecek. Eser, bir grup katılımcının sahneye çıkarak taşı kırmızı yünle sarması ve bu nesneyi bir sonraki katılımcıya devretmesi temelinde ilerleyen bir röle yapısıyla sahneleniyor. Tekrarlanan bu eylem sayesinde nesne zamanla biçim değiştiriyor, dokunuşların ve çok sayıda elin izlerini topluyor. Sarmak eylemi koruma ve bağ kurma jestine dönüşürken, taşın aktarımı ise bireysel olmaktan ziyade kolektif olarak taşınan bilgi biçimlerini ve tarihleri yansıtıyor. Camille Badirou, Trovania Dellile, Viviana Medina, Rebecca Pokua Korang ve sanatçının kendisinin yer aldığı performans için geçerli bir Biennale Arte 2026 giriş bileti gerekecek."
+    },
+    {
       "id": "0f428e02118b7cb3dcf5",
       "category": "Exhibitions",
       "source": "La Biennale di Venezia",
@@ -492,42 +528,6 @@
       "content": "Frieda Ekotto, Otobong Nkanga ve Ibrahim Mahama'nın pratiklerinde yer alan toplama, sarma, onarma ve yenileme eylemlerini ele alan bir konferans verecek. Etkinlik, 20 Kasım 2026 tarihinde saat 16:00 ile 17:30 arasında Teatro Piccolo Arsenale'de düzenlenecek. Konuşma, bu süreçlerin kaynak çıkarımının bozmayı amaçladığı toprak, beden ve topluluk arasındaki ilişkilere malzeme, emek ve zaman yönlendirdiğini inceleyecek. Açıklamaya göre bu eylemler, yalnızca birer direniş eylemi olarak görüldüğünde anlam kazanan bir dayanışma biçimi oluşturuyor. İtaatsizliği dayanışmanın temeli olarak ele alan sunum, her iki sanatçının çalışmalarını spekülasyona değil ilişkiye dayanan bir yazarlık modeline yönelen bir meydan okuma olarak yeniden çerçeveliyor. Konuşmanın sunumunu ve moderatörlüğünü Rasha Salti üstlenecek. Girişlerin ücretsiz olduğu etkinlik, salon kapasitesi dolana kadar izlenebilecek."
     },
     {
-      "id": "3abcc0b8e1e6e8ed3964",
-      "category": "Exhibitions",
-      "source": "La Biennale di Venezia",
-      "sourceDomain": "labiennale.org",
-      "publishedAt": "2026-11-12T10:55:33.000Z",
-      "url": "https://www.labiennale.org/en/agenda/rana-el-nemr-newborn-birthchart",
-      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/performances-lectures-13-22-nov.jpg?itok=7alBE4Lj",
-      "originalTitle": "Biennale Arte 2026 | RANA EL NEMR | The Newborn Birthchart - La Biennale di Venezia",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 40,
-      "brandFit": 90,
-      "title": "Rana El Nemr, Biennale Arte 2026 Kapsamında The Newborn Birthchart Gösterisini Sunuyor",
-      "excerpt": "Rana El Nemr’in iki parçalı yerleştirmesi The Newborn Birthchart, Biennale Arte 2026 kapsamında Arsenale'de izleyiciyle buluşuyor. Etkinlik, kamusal hikayeleri ve sesleri bir araya getiriyor.",
-      "content": "Biennale Arte 2026 kapsamında gerçekleştirilecek olan The Newborn Birthchart başlıklı etkinlik, 18 Kasım 2026 tarihinde saat 11:00 ile 11:30 arasında Arsenale'de düzenlenecek. Aktif bir eşik olarak tasarlanan çalışma, her ziyareti mekandaki yapıya katkı sağlayan titreşimsel bir unsur olarak kaydediyor. Okumalar, şarkılar, ezgiler ve sanat eserinin kart destesinden ipuçları aracılığıyla performans, izleyicileri bataklıkların, kamış tarlalarının, şekerin, direnişin ve özlemlerin hikayelerini ortaklaşa derlemeye davet ediyor. Görünmeyen ayak izlerini ve geçici potansiyelleri tanık olmak üzere toplanan etkinlik, batık bir güneş ve dışarıya doğru uzanan bir ay barındıran altı metre uzunluğundaki geri dönüştürülmüş plastik perdenin sınırında başlıyor. Bu yapı, henüz doğmamış olanlar için bir takımyıldız işlevi görüyor. Performansçılar arasında Maissa Alameldine, Mariamme Boctor, rana elnemr, Nour Kamel ve Farida Rehab yer alıyor. Etkinliğe katılmak isteyen ziyaretçilerin Biennale Arte 2026 için geçerli bir giriş biletine sahip olması gerekiyor."
-    },
-    {
-      "id": "a12b25affa037dda8414",
-      "category": "Exhibitions",
-      "source": "La Biennale di Venezia",
-      "sourceDomain": "labiennale.org",
-      "publishedAt": "2026-11-12T10:52:14.000Z",
-      "url": "https://www.labiennale.org/en/agenda/ziad-antar-bladder-diplomacy-0",
-      "image": "https://static.labiennale.org/files/styles/seo_thumbnail/public/arte/2026/600x600/performances-lectures-13-22-nov.jpg?itok=7alBE4Lj",
-      "originalTitle": "Biennale Arte 2026 | ZIAD ANTAR | Bladder Diplomacy - La Biennale di Venezia",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 85,
-      "technicalValue": 70,
-      "brandFit": 90,
-      "title": "La Biennale di Venezia'da Ziad Antar'dan Bladder Diplomacy Performansı",
-      "excerpt": "Biennale Arte 2026 kapsamında sahnelenecek Bladder Diplomacy, uluslararası diplomasiyi, Doğu Akdeniz'deki tarım alışkanlıklarını ve kişisel aile hikâyelerini satirsel bir kurguyla bir araya getiriyor.",
-      "content": "La Biennale di Venezia, 18 Kasım 2026 tarihinde Tese dei Soppalchi'de gerçekleştirilecek Bladder Diplomacy etkinliğine ev sahipliği yapıyor. 16:00 ile 17:20 saatleri arasında izleyiciyle buluşacak olan performans, uluslararası diplomasi anlatılarını ve Doğu Akdeniz'de patates ile domates yetiştiriciliğini kişisel aile hikâyeleriyle harmanlıyor. Eser, modernleşme ve küreselleşmiş tarım endüstrisinin doğal çevre ile beslenme alışkanlıkları üzerindeki radikal müdahalelerini ele alıyor. Lübnanlı sanatçılar Ziad Antar, Hatem Imam ve Nayla Mabsout ortaklığında hazırlanan bu lecture performance, kötü niyetli yabani otlar ile iç savaşların yansımalarını ve yerli tohumların direncini mizahi bir bulmaca biçiminde sunuyor. Metni Ziad Antar tarafından yazılan gösterinin yönetmenliğini Hatem Imam üstlenirken, video çalışmalarını Nayla Mabsout yürütüyor ve sahneyi Ziad Antar ile Nayla Mabsout paylaşıyor. Etkinliğe katılmak isteyen ziyaretçilerin Biennale Arte 2026 için geçerli bir giriş biletine sahip olması gerekiyor."
-    },
-    {
       "id": "98b2ce6ac2d44ac85c17",
       "category": "Fashion & Luxury",
       "source": "WWD",
@@ -538,12 +538,30 @@
       "originalTitle": "Loro Piana Celebrates Finest Cashmere, Stages Exhibition - WWD",
       "originalLanguage": "en",
       "contentMode": "full-source",
-      "editorialScore": 86,
-      "technicalValue": 82,
+      "editorialScore": 88,
+      "technicalValue": 85,
+      "brandFit": 95,
+      "title": "Loro Piana New York Sergisinde Kaşmirin İnceliğini Kutladı",
+      "excerpt": "New York'ta düzenlenen Loro Piana Kaşmir Ödülü etkinliği ve sergi, 12.89 mikron inceliğindeki kaşmir elyafını ve Inner Mongolia'lı yetiştiricilerin zanaatkarlığını kutluyor.",
+      "content": "New York'taki The Brant Foundation'da gerçekleştirilen 2025 Loro Piana Yılın Kaşmiri Ödülü, 12.89 mikron inceliğindeki elyafı kutladı. Etkinlik kapsamında ayrıca markanın tarihini ve üretim bilgilerini öne çıkaran Master of Cashmere sergisi açıldı. 2015 yılında başlatılan ödül, kaşmirin inceliğinin artırılmasına katkı sağladı. Şirket genel müdürü Frédéric Arnault, kaşmirin markanın kimliğinin merkezinde yer aldığını belirtti. On birinci edisyonda Inner Mongolia'dan üç çift kaşmir yetiştiricisi ödüllendirildi. Birincilik ödülü 12.89 mikron çapında ve 135.8 kilo yağlı kaşmira verildi. Bir mikron, milimetrenin binde birine eşit bir ölçü birimi olup insan saçı 70 mikron ölçüsündedir. Kazananlar her yıl üretilen elyaf başına mali ödül ve gümüş tarak alıyor. Şirket yöneticisi Pier Luigi Loro Piana, Çin'deki yolculuğunun 1980'lerde başladığını ve yerel topluluklarla güçlü ilişkiler kurduklarını ifade etti. Öte yandan marka, Sukhbaatar Eyaleti'ndeki bozkırları ve biyoçeşitliliği korumak amacıyla geçen yıl Resilient Threads projesini başlattı. Program, Birleşmiş Milletler Çölleşmeyle Mücadele Sözleşmesi, Sustainable Fiber Alliance ve Odyssey Conservation Trust ortaklığıyla yürütülüyor. Eylül ayında ise İtalya'nın Piedmont bölgesinde yeni bir triko kompleksi açıldı."
+    },
+    {
+      "id": "64168d7d2efce87e0877",
+      "category": "Galleries & Museums",
+      "source": "The National Gallery, London",
+      "sourceDomain": "nationalgallery.org.uk",
+      "publishedAt": "2026-11-11T11:37:21.000Z",
+      "url": "https://www.nationalgallery.org.uk/paintings/claude-monet-waterlilies",
+      "image": "https://www.nationalgallery.org.uk/paintings/claude-monet-waterlilies",
+      "originalTitle": "Claude Monet | Waterlilies | L1406 - The National Gallery, London",
+      "originalLanguage": "en",
+      "contentMode": "full-source",
+      "editorialScore": 85,
+      "technicalValue": 70,
       "brandFit": 90,
-      "title": "Loro Piana New York'ta En İnce Kaşmir Ödüllerini ve Sergi Düzenledi",
-      "excerpt": "New York'ta düzenlenen törende 2025 yılının en ince kaşmir ödülleri sahiplerini bulurken, markanın tarihini ve el sanatlarını tanıtan sergi de kapılarını açtı.",
-      "content": "New York'taki The Brant Foundation'da salı günü gerçekleştirilen 2025 Loro Piana Yılın Kaşmiri Ödülü, 12.89 mikron inceliğindeki elyafı kutladı. Etkinlik kapsamında ayrıca markanın tarihini ve zanaatkarlık birikimini gözler önüne seren “Master of Cashmere” sergisi açıldı. 2015 yılında kurulan ödül programı, kaşmirin inceliğinin artırılmasına katkı sağladı. Törende İç Moğolistan'dan gelen üç çift kaşmir yetiştiricisi ödüllendirildi. Birincilik ödülü 12.89 mikron çapında ve 135.8 kilogram yağlı kaşmirlere verildi. İkinci sıra 13.01 mikrondan 87.1 kilogram, üçüncü sıra ise 13.04 mikrondan 116 kilogram yağlı kaşmir ile belirlendi. Bir mikron, bir milimetrenin binde birine eşit bir ölçü birimi olarak tanımlanırken, bir insan saçının kalınlığı 70 mikron ölçülüyor. Kazananlar her yıl üretilen elyaf başına finansal ödülün yanı sıra tarama sürecini simgeleyen gümüş tarak alıyor. Şirket yöneticileri, kaşmirin kimliklerinin merkezinde yer aldığını belirtti. 2009'dan bu yana seçme ıslah programı ile kaliteyi artırmaya çalıştıklarını ifade eden yetkililer, ayrıca Moğolistan'daki ekosistemi güçlendirmeyi amaçlayan projeleri hayata geçirdiklerini aktardı. Loro Piana, 2013'ten bu yana LVMH Moët Hennessy Louis Vuitton bünyesinde faaliyet gösteriyor."
+      "title": "Claude Monet'nin 1905 Tarihli Waterlilies Tablosu Londra'da Sergileniyor",
+      "excerpt": "Claude Monet'nin 1905 yılında yaptığı Waterlilies tablosu, sanatçının Giverny'deki su bahçelerinden ilham alan eserleri arasında yer alıyor. Eser, Londra'daki National Gallery'de sergileniyor.",
+      "content": "Claude Monet, 1883 yılında Paris'in batısındaki Giverny'de bir ev kiraladıktan sonra mülkü satın almış ve zaman içinde araziyi su bahçelerine dönüştürmüştür. Bahçeleri olgunlaştıktan sonra bunları resmetmeye yönelen sanatçı, su bahçesini iki yüzün üzerinde resmin konusu haline getirmiştir. 1905 ile 1908 yılları arasında, havuzun yüzeyini, somut çiçekler ile görünmeyen gökyüzü ve ağaç yansımaları arasındaki kontrastı inceleyen altmıştan fazla görünümünü resmetmiştir. Londra'daki National Gallery'de bulunan Waterlilies, bu dönemin önde gelen örnekleri arasında yer almaktadır. Tabloda yakındaki beyaz çiçekler mor tonlarıyla vurgulanırken, uzaklaşan çiçekler beyaz, sarı, pembe ve kırmızı renklerin basit dokunuşlarıyla işlenmiştir. Su yüzeyi ise menekşe, mavi, turkuaz ve yeşil tonlarından oluşmaktadır. Eser, Monet'nin 1909 yılında Paris'te Durand-Ruel galerisinde düzenlenen sergisinde yer alan kırk sekiz çalışmadan biriydi. 87 x 100 cm boyutlarındaki tuval üzerine yağlı boya çalışma, Kenneth C. Griffin Koleksiyonu'nda bulunmaktadır."
     },
     {
       "id": "909a50f1a9622b350292",
@@ -562,42 +580,6 @@
       "title": "V&A Müzesi, Punk'tan Pop Müziğe Uzanan Kültürel Dönüşümü Sergiliyor",
       "excerpt": "V&A South Kensington, 1972 ve 1985 yılları arasındaki müzik, sanat ve moda patlamasını inceleyen kapsamlı sergisini Mart 2027'de ziyaretçilerle buluşturmaya hazırlanıyor.",
       "content": "V&A South Kensington, 13 Mart 2027 tarihinde kapılarını açacak olan Punk to Pop sergisiyle 1972 ile 1985 yılları arasındaki yaratıcı patlamayı yeniden ele alıyor. Üç ana bölümden oluşan etkinlik, yaklaşık 300 objeyle glam rock ve diskonun estetiğinden punk, goth ve yeni romantikler gibi yeraltı alt kültürlerine, oradan da dijital çağın küresel pop kültürüne uzanan süreci izliyor. Sex Pistols, The Slits, Grace Jones, Blondie, Joy Division ve Wham! gibi sanatçıların eserlerine yer veren sergi, dönemin sanatçılarının siyasi çalkantılara ve toplumsal sıkıntılara karşı geliştirdiği yaratıcı yanıtları gözler önüne seriyor. Ziyaretçiler; Jamie Reid tarafından tasarlanan albüm kapaklarını, Ian Curtis'in el yazısı şarkı sözlerini, Mick Jones'un ilk gitarını ve Andy Warhol'un fotoğraflarını yakından inceleme fırsatı bulacak. Çok duyulu bir deneyim sunan sergi, moda, fotoğrafçılık, müzik videoları ve sahne kostümleri aracılığıyla müziğin bireysellik ve kimlik arayışındaki rolünü kutluyor."
-    },
-    {
-      "id": "5812b348fd8b41c37be3",
-      "category": "Galleries & Museums",
-      "source": "The National Gallery, London",
-      "sourceDomain": "nationalgallery.org.uk",
-      "publishedAt": "2026-11-09T00:49:38.000Z",
-      "url": "https://www.nationalgallery.org.uk/paintings/probably-by-camille-corot-staircase-in-the-villa-of-maecenas-tivoli",
-      "image": "https://www.nationalgallery.org.uk/paintings/probably-by-camille-corot-staircase-in-the-villa-of-maecenas-tivoli",
-      "originalTitle": "Probably by Camille Corot | Staircase in the Villa of Maecenas, Tivoli | L814 - The National Gallery, London",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 88,
-      "technicalValue": 75,
-      "brandFit": 92,
-      "title": "Camille Corot'ya Atfedilen Tivoli Manzarası Londra Ulusal Galerisi'nde",
-      "excerpt": "Fransız sanatçı Camille Corot'nun 1826 yılı civarında İtalya'da yaptığı düşünülen eseri, National Gallery koleksiyonunda yer alıyor. Çalışma, mimari kesitler ve ışık gölge kontrastlarıyla dikkat çekiyor.",
-      "content": "Fransız sanatçı Camille Corot, 1825 ile 1828 yılları arasında İtalya'da bulunduğu dönemde 200 çizim ve 150 yağlı boya çalışma üretti. Genellikle imzasız olan bu çalışmalar nedeniyle eserlerin atıflarında kesinlik her zaman sağlanamamaktadır. Tivoli'deki Maecenas Villası Merdivenleri başlıklı çalışma, kompozisyonun iki yanındaki dev kapılardan pencerelerden süzülen ışığa uzanan karmaşık fakat dengeli bir manzara sunar. Roma'nın kuzeydoğusundaki Tivoli kasabası, dramatik şelalesi ve tarihi yapılarıyla dönemin sanatçılarının ilgisini çeken bir bölgeydi. Eserin alt sağ köşesinde Corot imzası bulunurken, daha yakın tarihli olabileceği düşünülen Granet imzası da yer almaktadır. Gere Koleksiyonu'na ait olan ve National Gallery'de uzun vadeli ödünç olarak bulunan 29,7 çarpı 21,5 santimetre boyutundaki tuval üzerine kağıt yağlı boya eser, şu anda sergilenmemektedir. Sanatçının doğayı doğrudan gözlemleme yaklaşımı, sonraki dönemde Empresyonistlerin manzara resmine olan bakış açısını etkilemiştir."
-    },
-    {
-      "id": "2c171cc7e0c8426e2cc8",
-      "category": "Construction",
-      "source": "Engineering News-Record",
-      "sourceDomain": "enr.com",
-      "publishedAt": "2026-11-05T23:00:00.000Z",
-      "url": "https://www.enr.com/articles/64146-best-government-public-building-essex-county-wynona-lipman-family-courthouse",
-      "image": "https://www.enr.com/ext/resources/Issues/East_Issues/2026/12-Oct/BP2/ECFC-Building.jpg?height=635&t=1793644984&width=1200",
-      "originalTitle": "Best Government/Public Building: Essex County Wynona Lipman Family Courthouse - Engineering News-Record",
-      "originalLanguage": "en",
-      "contentMode": "full-source",
-      "editorialScore": 30,
-      "technicalValue": 40,
-      "brandFit": 35,
-      "title": "Essex County Wynona Lipman Aile Adliyesi Ödül Aldı",
-      "excerpt": "Newark şehrinde inşa edilen 266.000 metrekarelik sekiz katlı Essex County Wynona Lipman Aile Adliyesi, dağınık birimleri tek bir merkezde bir araya getiriyor.",
-      "content": "Newark şehrinde konumlanan 266.000 metrekarelik sekiz katlı Essex County Wynona Lipman Aile Adliyesi, daha önce dağınık halde bulunan çocuk mahkemelerini, denetim serbestlik hizmetlerini ve aile içi şiddet birimlerini tek bir kentsel merkezde topluyor. Binanın kamusal ana girişi, üst katların altında oyularak bir plaza şeklinde tasarlandı ve sıkışık kentsel alanda sokak peyzajının bir uzantısı haline getirildi. Tasarım ekibinin aktardığına göre, geleneksel adliye beklentilerini dengelemek amacıyla kamusal sokak duvarına iki katlı renkli, sanat camından transparan bir ekran yerleştirildi. Ayrıca bekleme alanlarında çocuk dostu oyun odalarına yer verildi. Newark şehir merkezindeki bu devasa kompleksin inşası, sıkı mülkiyet sınırları içinde çalışmayı, günlük trafik akışını yönetmeyi ve komşu şehir bloklarındaki aksamaları en aza indirmeyi gerektiren titiz bir koordinasyon süreci i̇stedi. Tasarım, düşman tarafları ayırmak için iç mekanı bölmeyi ve hassas alanlara uyum sağlamayı zorunlu kıldı. Proje ekibi, zorlu ortamdaki öngörülemeyen koşullarla başa çıkmak için günlük toplantılara ve sürekli iletişime güvendi; bu sayede acil engeller anında ele alındı ve bütçe ile takvim ayarlamalarında hızlı kararlar alındı."
     }
   ]
 }
